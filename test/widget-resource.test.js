@@ -5,7 +5,7 @@ const {
   WIDGET_V2_URIS
 } = require("../dist/bridge-v2/widgets/resources");
 
-test("serves six focused read-only v19 widget resources", async () => {
+test("serves six focused read-only v20 widget resources", async () => {
   const resources = new Map();
   const server = {
     registerResource(name, uri, options, handler) {
@@ -16,12 +16,12 @@ test("serves six focused read-only v19 widget resources", async () => {
   registerWidgetV2Resources(server);
   assert.deepEqual([...resources.keys()].sort(), Object.values(WIDGET_V2_URIS).sort());
   assert.equal(Object.keys(WIDGET_V2_URIS).length, 6);
-  assert.match(WIDGET_V2_URIS.nowPlaying, /\/v19\/now-playing\.html$/);
-  assert.match(WIDGET_V2_URIS.media, /\/v19\/media\.html$/);
-  assert.match(WIDGET_V2_URIS.playlist, /\/v19\/playlist\.html$/);
-  assert.match(WIDGET_V2_URIS.playlistLibrary, /\/v19\/playlist-library\.html$/);
-  assert.match(WIDGET_V2_URIS.queue, /\/v19\/queue\.html$/);
-  assert.match(WIDGET_V2_URIS.zones, /\/v19\/zones\.html$/);
+  assert.match(WIDGET_V2_URIS.nowPlaying, /\/v20\/now-playing\.html$/);
+  assert.match(WIDGET_V2_URIS.media, /\/v20\/media\.html$/);
+  assert.match(WIDGET_V2_URIS.playlist, /\/v20\/playlist\.html$/);
+  assert.match(WIDGET_V2_URIS.playlistLibrary, /\/v20\/playlist-library\.html$/);
+  assert.match(WIDGET_V2_URIS.queue, /\/v20\/queue\.html$/);
+  assert.match(WIDGET_V2_URIS.zones, /\/v20\/zones\.html$/);
 
   for (const uri of Object.values(WIDGET_V2_URIS)) {
     const response = await resources.get(uri).handler();
@@ -43,6 +43,8 @@ test("serves six focused read-only v19 widget resources", async () => {
     assert.match(resource.text, /function renderPlaylistLibrary/);
     assert.match(resource.text, /function renderQueue/);
     assert.match(resource.text, /function renderZones/);
+    assert.match(resource.text, /function renderCatalog/);
+    assert.match(resource.text, /Metadatos can.nicos/);
     assert.match(resource.text, /L.mite seguro/);
 
     assert.doesNotMatch(resource.text, /tools\/call/);
@@ -54,7 +56,11 @@ test("serves six focused read-only v19 widget resources", async () => {
     assert.doesNotMatch(resource.text, /image_data_url/);
     assert.match(resource.text, /art-fallback/);
     assert.deepEqual(resource._meta.ui.csp.connectDomains, []);
-    assert.deepEqual(resource._meta.ui.csp.resourceDomains, ["https://roonia.ipchome.com"]);
+    assert.deepEqual(resource._meta.ui.csp.resourceDomains, [
+      "https://roonia.ipchome.com",
+      "https://coverartarchive.org",
+      "https://archive.org"
+    ]);
     assert.equal(resource._meta["openai/widgetDomain"], "https://roonia.ipchome.com");
   }
 });

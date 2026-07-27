@@ -340,3 +340,142 @@ test("playlist build handles exact non-Latin title and artist identities", async
   assert.equal(result.playlist.tracks_count, 1);
   assert.equal(result.playlist.tracks[0].title, "背徳の人");
 });
+
+test("playlist preflight resolves MusicBrainz before Roon and persists the canonical recording identity", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const roonTrack = mediaTrack("canonical-roon", "Canonical Song", "Canonical Artist", {
+    album: "Canonical Album",
+    durationSeconds: 240
+  });
+  const media = fakeMedia((request) =>
+    request.query === "Canonical Song Canonical Artist" ? [roonTrack] : []
+  );
+  const metadataService = {
+    enrichResult: async (result) => ({
+      result,
+      audio_metadata: {
+        title: result.title,
+        artist: result.artist,
+        album: result.album,
+        duration_seconds: result.duration_seconds,
+        metadata_status: "partial"
+      },
+      report: {
+        observed_at: "2026-07-27T20:00:00.000Z",
+        album_result_id: null,
+        warnings: []
+      }
+    })
+  };
+  let binding = null;
+  const trackCatalogService = {
+    resolve: async (input) => {
+      assert.equal(input.title, "Model Song");
+      assert.equal(input.artist, "Model Artist");
+      return {
+        resolution: { status: "exact" },
+        profile: {
+          status: "exact",
+          reason: "unique_compatible_recording",
+          recording: {
+            musicbrainz_id: "mb-recording-1",
+            title: "Canonical Song",
+            artist_credit: [{ musicbrainz_id: "mb-artist-1", name: "Canonical Artist", join_phrase: "" }],
+            disambiguation: null,
+            duration_seconds: 240,
+            duration_source: "musicbrainz_recording_median",
+            isrcs: ["USAAA2600001"]
+          },
+          composers: ["Composer"],
+          lyricists: ["Lyricist"],
+          genres: [{ name: "rock", count: 2, entity: "recording" }],
+          release_group: null,
+          release: null,
+          work: null,
+          credits: [],
+          cover_art: null,
+          roon_binding: null,
+          provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+          warnings: []
+        }
+      };
+    },
+    bind: (recordingId, result, origin) => {
+      binding = { recordingId, resultId: result.result_id, origin };
+      return {
+        binding_id: "binding-1",
+        recording_id: recordingId,
+        item_key: result.roon_item_key,
+        result_id: result.result_id,
+        source: result.source,
+        canonical_query: `${result.title} ${result.artist}`,
+        reusable: false,
+        playable: true,
+        status: "observed",
+        confidence: "high",
+        selection_origin: origin,
+        observed_at: "2026-07-27T20:00:00.000Z",
+        last_verified_at: "2026-07-27T20:00:00.000Z"
+      };
+    }
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    metadataService,
+    trackCatalogService
+  );
+
+  const result = await builder.prepareCandidate({
+    title: "Model Song",
+    artist_credit: "Model Artist"
+  });
+
+  assert.equal(result.accepted, true);
+  assert.equal(result.candidate.musicbrainz_recording_id, "mb-recording-1");
+  assert.equal(result.track.audio_metadata.recording.musicbrainz_id, "mb-recording-1");
+  assert.equal(result.track.audio_metadata.composer, "Composer");
+  assert.equal(result.track.resolution.catalog_identity.recording.musicbrainz_id, "mb-recording-1");
+  assert.deepEqual(binding, {
+    recordingId: "mb-recording-1",
+    resultId: "canonical-roon",
+    origin: "automatic"
+  });
+  assert.deepEqual(media.searches.map((request) => request.query), ["Canonical Song Canonical Artist"]);
+});
+
+test("playlist preflight sends ambiguous MusicBrainz identities to manual selection without searching Roon", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia([]);
+  const trackCatalogService = {
+    resolve: async () => ({
+      resolution: { status: "conflict" },
+      profile: {
+        status: "ambiguous",
+        reason: "multiple_compatible_recordings",
+        recording: null,
+        warnings: []
+      }
+    })
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    undefined,
+    trackCatalogService
+  );
+
+  const result = await builder.prepareCandidate({
+    title: "Ambiguous Song",
+    artist_credit: "Same Artist"
+  });
+
+  assert.equal(result.accepted, false);
+  assert.equal(result.rejection.status, "manual_required");
+  assert.match(result.rejection.reason, /^musicbrainz_ambiguous:/);
+  assert.equal(media.searches.length, 0);
+});

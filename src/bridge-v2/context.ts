@@ -15,6 +15,7 @@ import { PlaylistCatalogDiagnosticsService } from "../services/playlistCatalogDi
 import { ApiKeyRecord } from "../services/apiKeyService";
 import { Logger } from "../utils/logger";
 import { SystemManagementService } from "../services/systemManagementService";
+import { TrackCatalogService } from "../services/trackCatalogService";
 import type { DownloadedToolImage, ToolFileReference } from "../services/toolFileService";
 
 export type BridgeV2Context = {
@@ -27,6 +28,7 @@ export type BridgeV2Context = {
   playlistMetadataEnrichmentService?: PlaylistMetadataEnrichmentService;
   playlistRepairService?: PlaylistRepairService;
   playlistCatalogDiagnosticsService?: PlaylistCatalogDiagnosticsService;
+  trackCatalogService?: TrackCatalogService;
   systemManagementService?: SystemManagementService;
   zonePresetService: ZonePresetService;
   volumeLimitService: VolumeLimitService;

@@ -1,0 +1,261 @@
+{
+  "schema_version": 2,
+  "generated_from_run": "20260727T171647Z",
+  "policy": "Only classify an unresolved case as manual_required after the targeted Roon evidence shows that the exact MusicBrainz recording cannot be proven. Never substitute a different edit, mix, performance, remaster, split recording, or same-title work.",
+  "cases": [
+    {
+      "case_id": "MBR-000506",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000562",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000589",
+      "reason": "roon_only_exposes_different_anniversary_remix_remaster"
+    },
+    {
+      "case_id": "MBR-000618",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000674",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000730",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000781",
+      "reason": "exact_recording_not_found_in_roon_catalog"
+    },
+    {
+      "case_id": "MBR-000786",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000830",
+      "reason": "musicbrainz_combined_recording_is_split_into_separate_roon_tracks"
+    },
+    {
+      "case_id": "MBR-000842",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-001017",
+      "reason": "requested_live_release_missing_and_roon_candidates_are_studio_versions"
+    },
+    {
+      "case_id": "MBR-001085",
+      "reason": "requested_adele_live_performance_missing_and_live_candidates_are_other_artists"
+    },
+    {
+      "case_id": "MBR-001100",
+      "reason": "requested_adele_live_performance_missing_and_live_candidates_are_other_artists"
+    },
+    {
+      "case_id": "MBR-001180",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001211",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001217",
+      "reason": "exact_named_remix_not_found_in_roon_catalog"
+    },
+    {
+      "case_id": "MBR-001230",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001254",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001260",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001357",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001386",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001403",
+      "reason": "roon_strips_numeric_title_prefix_but_album_evidence_does_not_prove_identity"
+    },
+    {
+      "case_id": "MBR-001404",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001434",
+      "reason": "same_title_candidate_is_ambiguous_without_requested_archive_release_context"
+    },
+    {
+      "case_id": "MBR-001450",
+      "reason": "musicbrainz_combined_archive_recording_not_proven_by_roon_candidates"
+    },
+    {
+      "case_id": "MBR-001484",
+      "reason": "same_title_candidate_is_ambiguous_without_requested_archive_release_context"
+    }
+  ],
+  "groups": [
+    {
+      "evidence_group": "roon_release_and_tracks_missing_l_imprudence",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated",
+      "case_ids": [
+        "MBR-001545",
+        "MBR-001611",
+        "MBR-001669",
+        "MBR-001724",
+        "MBR-001774",
+        "MBR-001827",
+        "MBR-001876",
+        "MBR-001926",
+        "MBR-002012"
+      ]
+    },
+    {
+      "evidence_group": "roon_release_and_tracks_missing_rebuild_the_wall",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix",
+      "case_ids": [
+        "MBR-002642",
+        "MBR-002647",
+        "MBR-002670",
+        "MBR-002683",
+        "MBR-002687",
+        "MBR-002693",
+        "MBR-002700",
+        "MBR-002701",
+        "MBR-002713",
+        "MBR-002732"
+      ]
+    },
+    {
+      "evidence_group": "roon_release_missing_ira_acustico_mtv",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity",
+      "case_ids": [
+        "MBR-002787",
+        "MBR-002808",
+        "MBR-002819",
+        "MBR-002826",
+        "MBR-002850",
+        "MBR-002851",
+        "MBR-002855",
+        "MBR-002857",
+        "MBR-002862",
+        "MBR-002869"
+      ]
+    },
+    {
+      "evidence_group": "roon_release_missing_live_at_river_plate",
+      "reason": "requested_live_release_missing_and_available_candidates_are_studio_versions",
+      "case_ids": [
+        "MBR-002382",
+        "MBR-002403"
+      ]
+    },
+    {
+      "evidence_group": "roon_only_anniversary_remix_sunbather",
+      "reason": "roon_only_exposes_different_anniversary_remix_remaster_or_live_version",
+      "case_ids": [
+        "MBR-001658",
+        "MBR-001762",
+        "MBR-001865"
+      ]
+    },
+    {
+      "evidence_group": "roon_exact_mix_missing_bebel_gilberto_remixed",
+      "reason": "requested_named_mix_missing_and_available_candidates_are_different_mixes",
+      "case_ids": [
+        "MBR-002440",
+        "MBR-002467",
+        "MBR-002495"
+      ]
+    },
+    {
+      "evidence_group": "roon_exact_mix_missing_this_is_the_remix",
+      "reason": "requested_release_or_named_mix_missing_and_available_candidates_are_studio_or_different_mixes",
+      "case_ids": [
+        "MBR-002523",
+        "MBR-002557",
+        "MBR-002560",
+        "MBR-002562",
+        "MBR-002564",
+        "MBR-002566"
+      ]
+    },
+    {
+      "evidence_group": "roon_exact_edit_missing_american_life_mixshow",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_mix_variants",
+      "case_ids": [
+        "MBR-002497",
+        "MBR-002513"
+      ]
+    },
+    {
+      "evidence_group": "roon_exact_mix_unprovable_all_back_to_the_mine",
+      "reason": "candidate_title_is_truncated_and_cannot_prove_the_requested_named_vocal_mix",
+      "case_ids": [
+        "MBR-002529"
+      ]
+    },
+    {
+      "evidence_group": "roon_live_track_missing_mercedes_sosa_argentina",
+      "reason": "requested_live_album_exists_but_exact_live_recording_is_not_exposed_by_track_search_or_verified_tracklist",
+      "case_ids": [
+        "MBR-002336"
+      ]
+    },
+    {
+      "evidence_group": "roon_track_missing_a_foreign_sound",
+      "reason": "requested_cover_album_exists_but_exact_manhattan_recording_is_not_exposed",
+      "case_ids": [
+        "MBR-002660"
+      ]
+    },
+    {
+      "evidence_group": "roon_alternate_identity_unprovable_originals",
+      "reason": "exact_title_and_album_exist_separately_but_roon_does_not_prove_the_track_belongs_to_the_requested_archive_release",
+      "case_ids": [
+        "MBR-002897"
+      ]
+    },
+    {
+      "evidence_group": "roon_hidden_or_bonus_tracks_missing",
+      "reason": "requested_musicbrainz_bonus_or_hidden_recording_is_absent_from_roon_track_results",
+      "case_ids": [
+        "MBR-001534",
+        "MBR-001660",
+        "MBR-001752",
+        "MBR-002058"
+      ]
+    },
+    {
+      "evidence_group": "roon_release_and_track_missing_logozo",
+      "reason": "requested_release_and_exact_track_are_not_exposed_by_roon",
+      "case_ids": [
+        "MBR-001549"
+      ]
+    },
+    {
+      "evidence_group": "roon_localized_tracks_missing_lilac",
+      "reason": "requested_album_exists_but_roon_search_only_exposes_karaoke_or_unrelated_localized_results",
+      "case_ids": [
+        "MBR-001661",
+        "MBR-001715",
+        "MBR-001818",
+        "MBR-001868"
+      ]
+    }
+  ]
+}

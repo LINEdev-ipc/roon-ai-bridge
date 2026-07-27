@@ -9,6 +9,10 @@ import { ApiError } from "../utils/errors";
 import { Logger } from "../utils/logger";
 import { PlaylistService, VirtualPlaylist } from "./playlistService";
 import { PlaylistMetadataEnrichmentService } from "./playlistMetadataEnrichmentService";
+import {
+  TrackCatalogProfile,
+  TrackCatalogService
+} from "./trackCatalogService";
 import type { AudioMetadata } from "./playlists/playlistContracts";
 import {
   RankedTrackCandidate,
@@ -99,6 +103,7 @@ type PreparedCandidate = {
   identityKey: string;
   selectedArtistKey: string;
   resolutionReason: string;
+  catalogProfile: TrackCatalogProfile | null;
 };
 
 export type RejectedCandidate = {
@@ -107,7 +112,7 @@ export type RejectedCandidate = {
   artist: string;
   role: PlaylistCandidateRole;
   round: number;
-  status: "missing" | "needs_enrichment" | "duplicate" | "invalid";
+  status: "missing" | "needs_enrichment" | "duplicate" | "invalid" | "manual_required" | "ineligible";
   reason: string;
 };
 
@@ -407,7 +412,8 @@ export class PlaylistBuildService {
     private readonly mediaService: RoonMediaService,
     private readonly logger?: Logger,
     private readonly sourcePreference: SourcePreference = "streaming_first",
-    metadataService?: PlaylistMetadataEnrichmentService
+    metadataService?: PlaylistMetadataEnrichmentService,
+    private readonly trackCatalogService?: TrackCatalogService
   ) {
     this.metadataService = metadataService || new PlaylistMetadataEnrichmentService(
       playlistService,
@@ -435,6 +441,7 @@ export class PlaylistBuildService {
         result_id: prepared.result.result_id,
         source: prepared.result.source,
         version_hint: prepared.result.version_hint,
+        musicbrainz_recording_id: prepared.catalogProfile?.recording?.musicbrainz_id || null,
         resolution_reason: prepared.resolutionReason
       }
     };
@@ -622,26 +629,74 @@ export class PlaylistBuildService {
   private async resolveCandidate(candidate: NormalizedCandidate): Promise<
     { prepared: PreparedCandidate } | { rejected: RejectedCandidate }
   > {
+    let catalogProfile: TrackCatalogProfile | null = null;
+    let canonicalTitle = candidate.title;
+    let canonicalArtist = candidate.artist;
+    let bindingCandidate = candidate;
+    if (this.trackCatalogService) {
+      const catalog = await this.trackCatalogService.resolve({
+        title: candidate.title,
+        artist: candidate.requiredCredits[0]?.name || candidate.artist,
+        album: candidate.albumHint,
+        version_hint: versionHint(candidate.recordingIntent),
+        release_year: candidate.releaseYearHint
+      });
+      catalogProfile = catalog.profile;
+      if (catalogProfile.status === "ineligible") {
+        return {
+          rejected: this.rejection(candidate, "ineligible", "musicbrainz_recording_is_video")
+        };
+      }
+      if (catalogProfile.status !== "exact" || !catalogProfile.recording) {
+        return {
+          rejected: this.rejection(
+            candidate,
+            "manual_required",
+            `musicbrainz_${catalogProfile.status}:${catalogProfile.reason}`
+          )
+        };
+      }
+      canonicalTitle = catalogProfile.recording.title;
+      canonicalArtist = catalogProfile.recording.artist_credit.length
+        ? catalogProfile.recording.artist_credit
+          .map((credit) => `${credit.name}${credit.join_phrase}`)
+          .join("")
+        : candidate.artist;
+      bindingCandidate = {
+        ...candidate,
+        title: canonicalTitle,
+        artist: canonicalArtist,
+        requiredCredits: [
+          ...catalogProfile.recording.artist_credit.map((credit, index) => ({
+            name: credit.name,
+            role: index === 0 ? "primary" : "featured"
+          })),
+          ...candidate.requiredCredits.filter((credit) =>
+            !["primary", "featured"].includes(credit.role)
+          )
+        ]
+      };
+    }
     const resolver = new TrackResolutionService(this.mediaService);
-    const baseQuery = `${candidate.title} ${candidate.artist}`;
+    const baseQuery = `${canonicalTitle} ${canonicalArtist}`;
     let resolution = await resolver.resolve({
       query: baseQuery,
-      title: candidate.title,
-      artist: candidate.artist,
+      title: canonicalTitle,
+      artist: canonicalArtist,
       album: candidate.albumHint,
       releaseYear: candidate.releaseYearHint,
       versionHint: versionHint(candidate.recordingIntent),
       count: 25,
       sourcePreference: this.sourcePreference
     });
-    let selected = await this.selectStrictCandidate(candidate, resolution);
+    let selected = await this.selectStrictCandidate(bindingCandidate, resolution);
     let stage = "title_artist";
     if (!selected && candidate.albumHint) {
       stage = "title_artist_album";
       resolution = await resolver.resolve({
         query: `${baseQuery} ${candidate.albumHint}`,
-        title: candidate.title,
-        artist: candidate.artist,
+        title: canonicalTitle,
+        artist: canonicalArtist,
         album: candidate.albumHint,
         releaseYear: candidate.releaseYearHint,
         versionHint: versionHint(candidate.recordingIntent),
@@ -649,21 +704,67 @@ export class PlaylistBuildService {
         sourcePreference: this.sourcePreference,
         includeExactQuery: false
       });
-      selected = await this.selectStrictCandidate(candidate, resolution);
+      selected = await this.selectStrictCandidate(bindingCandidate, resolution);
     }
     if (!selected) {
-      const needsEnrichment = resolution.candidates.some((entry) => baseGate(candidate, entry.result));
+      const needsEnrichment = resolution.candidates.some((entry) => baseGate(bindingCandidate, entry.result));
       return {
         rejected: this.rejection(
           candidate,
-          needsEnrichment ? "needs_enrichment" : "missing",
-          needsEnrichment ? "performance_metadata_required" : resolution.reason
+          this.trackCatalogService ? "manual_required" : needsEnrichment ? "needs_enrichment" : "missing",
+          this.trackCatalogService
+            ? `roon_binding_required:${needsEnrichment ? "performance_metadata_required" : resolution.reason}`
+            : needsEnrichment ? "performance_metadata_required" : resolution.reason
         )
       };
     }
 
     const hydrated = await this.hydrate(selected.result, candidate, resolution.queries);
     const result = hydrated.result;
+    if (catalogProfile?.recording && this.trackCatalogService) {
+      hydrated.audioMetadata.title = catalogProfile.recording.title;
+      hydrated.audioMetadata.artist = canonicalArtist;
+      hydrated.audioMetadata.album_artist = canonicalArtist;
+      if (catalogProfile.release_group?.title) {
+        hydrated.audioMetadata.album = catalogProfile.release_group.title;
+      }
+      hydrated.audioMetadata.recording = {
+        musicbrainz_id: catalogProfile.recording.musicbrainz_id,
+        title: catalogProfile.recording.title,
+        artist: canonicalArtist,
+        artist_credit: catalogProfile.recording.artist_credit,
+        disambiguation: catalogProfile.recording.disambiguation,
+        duration_seconds: catalogProfile.recording.duration_seconds,
+        duration_source: catalogProfile.recording.duration_source,
+        isrcs: catalogProfile.recording.isrcs,
+        composers: catalogProfile.composers,
+        lyricists: catalogProfile.lyricists,
+        genres: catalogProfile.genres.map((genre) => genre.name),
+        confidence: "high"
+      };
+      hydrated.audioMetadata.composers = catalogProfile.composers;
+      hydrated.audioMetadata.composer = catalogProfile.composers.join(", ");
+      hydrated.audioMetadata.lyricists = catalogProfile.lyricists;
+      hydrated.audioMetadata.genres = catalogProfile.genres.map((genre) => genre.name);
+      hydrated.audioMetadata.genre = catalogProfile.genres.map((genre) => genre.name).join(", ");
+      hydrated.audioMetadata.isrcs = catalogProfile.recording.isrcs;
+      if (catalogProfile.recording.isrcs[0]) {
+        hydrated.audioMetadata.isrc = catalogProfile.recording.isrcs[0];
+      }
+      hydrated.audioMetadata.catalog = catalogProfile;
+      hydrated.metadataEnrichment.catalog = catalogProfile;
+      const binding = this.trackCatalogService.bind(
+        catalogProfile.recording.musicbrainz_id,
+        result,
+        "automatic",
+        {
+          recording_intent: candidate.recordingIntent,
+          album_hint: candidate.albumHint,
+          resolution_reason: resolution.reason
+        }
+      );
+      hydrated.metadataEnrichment.roon_binding = binding;
+    }
     const storedTrack = this.storedTrack(
       candidate,
       result,
@@ -672,16 +773,20 @@ export class PlaylistBuildService {
       stage,
       hydrated.observation,
       hydrated.audioMetadata,
-      hydrated.metadataEnrichment
+      hydrated.metadataEnrichment,
+      catalogProfile
     );
     return {
       prepared: {
         input: candidate,
         result,
         storedTrack,
-        identityKey: identityKey(candidate, result),
+        identityKey: catalogProfile?.recording?.musicbrainz_id
+          ? `musicbrainz:${catalogProfile.recording.musicbrainz_id}`
+          : identityKey(candidate, result),
         selectedArtistKey: selectedArtistKey(candidate, result),
-        resolutionReason: resolution.reason
+        resolutionReason: resolution.reason,
+        catalogProfile
       }
     };
   }
@@ -768,8 +873,17 @@ export class PlaylistBuildService {
     stage: string,
     observation: RoonObservation,
     audioMetadata: AudioMetadata,
-    metadataEnrichment: Record<string, unknown>
+    metadataEnrichment: Record<string, unknown>,
+    catalogProfile: TrackCatalogProfile | null
   ): Record<string, unknown> {
+    const canonicalArtist = catalogProfile?.recording?.artist_credit.length
+      ? catalogProfile.recording.artist_credit
+        .map((credit) => `${credit.name}${credit.join_phrase}`)
+        .join("")
+      : result.artist || result.subtitle || input.artist;
+    const canonicalTitle = catalogProfile?.recording?.title || result.title;
+    const canonicalAlbum = catalogProfile?.release_group?.title || result.album;
+    const canonicalQuery = `${canonicalTitle} ${canonicalArtist}`;
     const llmHints = {
       album: input.albumHint,
       release_year: input.releaseYearHint,
@@ -777,11 +891,11 @@ export class PlaylistBuildService {
       required_credits: input.requiredCredits
     };
     return {
-      query: `${input.title} ${input.artist}`,
+      query: canonicalQuery,
       roon_item_key: result.roon_item_key,
-      title: result.title,
-      artist: result.artist || result.subtitle || input.artist,
-      album: result.album,
+      title: canonicalTitle,
+      artist: canonicalArtist,
+      album: canonicalAlbum,
       image_key: result.image_key,
       audio_metadata: audioMetadata,
       user_metadata: {
@@ -796,7 +910,7 @@ export class PlaylistBuildService {
       resolution: {
         status: "resolved",
         readiness: "ready",
-        query: `${input.title} ${input.artist}`,
+        query: canonicalQuery,
         stage,
         selected_result_id: result.result_id,
         selected_roon_item_key: result.roon_item_key,
@@ -816,7 +930,8 @@ export class PlaylistBuildService {
           item_key: result.roon_item_key,
           reusable: false,
           observed_at: observation.observed_at
-        }
+        },
+        catalog_identity: catalogProfile
       }
     };
   }
@@ -855,6 +970,7 @@ export class PlaylistBuildService {
       source: candidate.result.source,
       version_hint: candidate.result.version_hint,
       metadata_status: objectValue(candidate.storedTrack.audio_metadata)?.metadata_status || "unverified",
+      musicbrainz_recording_id: candidate.catalogProfile?.recording?.musicbrainz_id || null,
       resolution_reason: candidate.resolutionReason
     }));
     return {

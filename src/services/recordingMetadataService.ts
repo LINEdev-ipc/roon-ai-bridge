@@ -24,6 +24,47 @@ export type RecordingCatalogMetadata = {
   genres: string[];
   release_candidates: RecordingCatalogReleaseCandidate[];
   confidence: "high" | "medium";
+  video?: boolean;
+  artist_entities?: Array<{
+    musicbrainz_id: string;
+    name: string;
+    sort_name: string | null;
+    disambiguation: string | null;
+    type: string | null;
+    country: string | null;
+    credited_name: string;
+    join_phrase: string;
+  }>;
+  work?: {
+    musicbrainz_id: string;
+    title: string;
+    type: string | null;
+    language: string | null;
+    iswcs: string[];
+    disambiguation: string | null;
+    relation_type: string;
+    relation_attributes: string[];
+  } | null;
+  credits?: Array<{
+    musicbrainz_id: string | null;
+    name: string;
+    credited_name: string | null;
+    role: "composer" | "lyricist" | "writer" | "arranger";
+    attributes: string[];
+  }>;
+  genre_details?: Array<{
+    name: string;
+    count: number;
+    entity: "recording" | "work";
+  }>;
+  release_groups?: Array<{
+    musicbrainz_id: string;
+    title: string;
+    first_release_date: string | null;
+    primary_type: string | null;
+    secondary_types: string[];
+    disambiguation: string | null;
+  }>;
 };
 
 export type RecordingCatalogReleaseCandidate = {
@@ -79,6 +120,14 @@ export type ReleaseTrackCatalogMetadata = {
     front: boolean;
     back: boolean;
   };
+  barcode?: string | null;
+  packaging?: string | null;
+  labels?: Array<{
+    musicbrainz_id: string | null;
+    name: string;
+    catalog_number: string | null;
+  }>;
+  media_format?: string | null;
 };
 
 export type ReleaseTrackCatalogResolution = {
@@ -225,6 +274,76 @@ function artistCredit(value: unknown): RecordingCatalogMetadata["artist_credit"]
       join_phrase: typeof credit.joinphrase === "string" ? credit.joinphrase : ""
     }];
   });
+}
+
+function artistEntities(value: unknown): NonNullable<RecordingCatalogMetadata["artist_entities"]> {
+  return records(value).flatMap((credit) => {
+    const artist = objectValue(credit.artist);
+    if (typeof artist?.id !== "string" || typeof artist.name !== "string") return [];
+    return [{
+      musicbrainz_id: artist.id,
+      name: artist.name,
+      sort_name: typeof artist["sort-name"] === "string" ? artist["sort-name"] : null,
+      disambiguation: typeof artist.disambiguation === "string" && artist.disambiguation
+        ? artist.disambiguation
+        : null,
+      type: typeof artist.type === "string" && artist.type ? artist.type : null,
+      country: typeof artist.country === "string" && artist.country ? artist.country : null,
+      credited_name: typeof credit.name === "string" && credit.name ? credit.name : artist.name,
+      join_phrase: typeof credit.joinphrase === "string" ? credit.joinphrase : ""
+    }];
+  });
+}
+
+function relationAttributes(value: unknown): string[] {
+  return Array.isArray(value)
+    ? value.flatMap((attribute) => {
+        if (typeof attribute === "string" && attribute.trim()) return [attribute.trim()];
+        const record = objectValue(attribute);
+        return typeof record?.name === "string" && record.name.trim() ? [record.name.trim()] : [];
+      })
+    : [];
+}
+
+function relationshipCredits(
+  relations: JsonRecord[]
+): NonNullable<RecordingCatalogMetadata["credits"]> {
+  const supported = new Set(["composer", "lyricist", "writer", "arranger"]);
+  return relations.flatMap((relation) => {
+    const role = String(relation.type || "").toLowerCase();
+    if (!supported.has(role)) return [];
+    const artist = objectValue(relation.artist);
+    if (typeof artist?.name !== "string" || !artist.name.trim()) return [];
+    return [{
+      musicbrainz_id: typeof artist.id === "string" ? artist.id : null,
+      name: artist.name,
+      credited_name: typeof relation["target-credit"] === "string" && relation["target-credit"]
+        ? String(relation["target-credit"])
+        : null,
+      role: role as "composer" | "lyricist" | "writer" | "arranger",
+      attributes: relationAttributes(relation.attributes)
+    }];
+  });
+}
+
+function releaseGroups(value: unknown): NonNullable<RecordingCatalogMetadata["release_groups"]> {
+  const groups = records(value).flatMap((release) => {
+    const group = releaseGroup(release);
+    if (typeof group?.id !== "string") return [];
+    return [{
+      musicbrainz_id: group.id,
+      title: typeof group.title === "string" && group.title ? group.title : String(release.title || ""),
+      first_release_date: typeof group["first-release-date"] === "string" && group["first-release-date"]
+        ? group["first-release-date"]
+        : null,
+      primary_type: typeof group["primary-type"] === "string" ? group["primary-type"] : null,
+      secondary_types: strings(group["secondary-types"]),
+      disambiguation: typeof group.disambiguation === "string" && group.disambiguation
+        ? group.disambiguation
+        : null
+    }];
+  });
+  return Array.from(new Map(groups.map((group) => [group.musicbrainz_id, group])).values());
 }
 
 function emptyTrace(): MutableCatalogProviderTrace {
@@ -716,7 +835,7 @@ export class RecordingMetadataService {
     const trace = emptyTrace();
 
     const url = new URL(`https://musicbrainz.org/ws/2/release/${releaseId}`);
-    setMusicBrainzIncludes(url, ["recordings", "artist-credits", "release-groups"]);
+    setMusicBrainzIncludes(url, ["recordings", "artist-credits", "release-groups", "labels"]);
     url.searchParams.set("fmt", "json");
     const detail = await this.requestJson(url, trace);
     const group = releaseGroup(detail);
@@ -742,6 +861,17 @@ export class RecordingMetadataService {
       });
     }
     const { medium, track } = matches[0];
+    const labels = records(detail["label-info"]).flatMap((entry) => {
+      const label = objectValue(entry.label);
+      if (typeof label?.name !== "string" || !label.name.trim()) return [];
+      return [{
+        musicbrainz_id: typeof label.id === "string" ? label.id : null,
+        name: label.name,
+        catalog_number: typeof entry["catalog-number"] === "string" && entry["catalog-number"]
+          ? entry["catalog-number"]
+          : null
+      }];
+    });
     return this.rememberReleaseTrack(cacheKey, {
       status: "exact",
       reason: "unique_recording_track_on_release",
@@ -761,7 +891,11 @@ export class RecordingMetadataService {
         track_number: typeof track.number === "string" && track.number ? track.number : null,
         track_title: String(track.title || objectValue(track.recording)?.title || ""),
         duration_seconds: durationSeconds(track.length),
-        cover_art_archive: coverArtArchive(detail["cover-art-archive"])
+        cover_art_archive: coverArtArchive(detail["cover-art-archive"]),
+        barcode: typeof detail.barcode === "string" && detail.barcode ? detail.barcode : null,
+        packaging: typeof detail.packaging === "string" && detail.packaging ? detail.packaging : null,
+        labels,
+        media_format: typeof medium.format === "string" && medium.format ? medium.format : null
       },
       trace: completedTrace(trace, startedAt)
     });
@@ -984,6 +1118,12 @@ export class RecordingMetadataService {
     const isrcs = strings(detail.isrcs);
     const composers = namesFor(["composer", "writer"]);
     const lyricists = namesFor(["lyricist"]);
+    const structuredCredits = relationshipCredits(relations);
+    const workId = typeof workDetail?.id === "string"
+      ? workDetail.id
+      : typeof work?.id === "string"
+        ? work.id
+        : null;
     const metadata: RecordingCatalogMetadata = {
       recording_id: String(detail.id || input.recording_id || selectedSnapshot.recording_id),
       title: String(detail.title || selectedSnapshot.title),
@@ -1001,7 +1141,41 @@ export class RecordingMetadataService {
       lyricists,
       genres,
       release_candidates: releaseCandidates,
-      confidence: anchoredArtistMismatch ? "medium" : input.recording_id || input.album || expectedIsrc ? "high" : "medium"
+      confidence: anchoredArtistMismatch ? "medium" : input.recording_id || input.album || expectedIsrc ? "high" : "medium",
+      video: detail.video === true,
+      artist_entities: artistEntities(detail["artist-credit"]),
+      work: workId ? {
+        musicbrainz_id: workId,
+        title: typeof workDetail?.title === "string"
+          ? workDetail.title
+          : typeof work?.title === "string"
+            ? work.title
+            : String(detail.title || ""),
+        type: typeof workDetail?.type === "string" && workDetail.type ? workDetail.type : null,
+        language: typeof workDetail?.language === "string" && workDetail.language ? workDetail.language : null,
+        iswcs: strings(workDetail?.iswcs),
+        disambiguation: typeof workDetail?.disambiguation === "string" && workDetail.disambiguation
+          ? workDetail.disambiguation
+          : null,
+        relation_type: typeof workRelation?.type === "string" && workRelation.type
+          ? workRelation.type
+          : "performance",
+        relation_attributes: relationAttributes(workRelation?.attributes)
+      } : null,
+      credits: structuredCredits,
+      genre_details: [
+        ...recordingGenres.flatMap((genre) =>
+          typeof genre.name === "string" && Number(genre.count) > 0
+            ? [{ name: genre.name, count: Number(genre.count), entity: "recording" as const }]
+            : []
+        ),
+        ...workGenres.flatMap((genre) =>
+          typeof genre.name === "string" && Number(genre.count) > 0
+            ? [{ name: genre.name, count: Number(genre.count), entity: "work" as const }]
+            : []
+        )
+      ],
+      release_groups: releaseGroups(detail.releases)
     };
     const value: RecordingCatalogResolution = {
       status: "exact",

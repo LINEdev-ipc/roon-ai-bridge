@@ -636,6 +636,13 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(5px); }
 .track-metadata-section h3 { margin: 6px 0 12px; }
 .track-metadata-section .track-facts { margin-top: 0; }
 .track-facts strong.wrap-value { white-space: normal; overflow-wrap: anywhere; }
+.canonical-track-metadata .detail-trust { margin-top: 0; }
+.canonical-track-metadata .track-facts { margin-top: 14px; }
+.canonical-cover-card { display: grid; grid-template-columns: 82px minmax(0,1fr); gap: 14px; align-items: center; margin-top: 14px; padding: 12px; border: 1px solid var(--line); background: var(--surface); }
+.canonical-cover-card img { display: block; width: 82px; height: 82px; object-fit: cover; }
+.canonical-cover-card strong,.canonical-cover-card small { display: block; }
+.canonical-cover-card strong { font-size: 12px; }
+.canonical-cover-card small { margin-top: 4px; color: var(--text-dim); font-size: 10px; line-height: 1.45; }
 .entity-section-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
 .entity-section-head h3 { margin: 5px 0 0; }
 .modal-search { display: grid; grid-template-columns: 28px minmax(0,1fr) auto; align-items: center; gap: 8px; margin-bottom: 26px; padding: 8px 8px 8px 14px; border: 1px solid var(--line-strong); background: var(--bg); }

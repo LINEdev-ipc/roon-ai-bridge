@@ -1,0 +1,1376 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-07-27T18:40:17.113795+00:00",
+  "started_at": "2026-07-27T18:36:17.488711+00:00",
+  "elapsed_seconds": 239.62,
+  "strategy": "direct_query_ladder_then_verified_album_tracklist",
+  "overall": {
+    "total": 107,
+    "resolved": 2,
+    "manual_required": 26,
+    "ineligible": 0,
+    "unresolved": 79,
+    "passed": 28,
+    "resolved_pct": 1.87,
+    "passed_pct": 26.17,
+    "request_errors": 0
+  },
+  "by_intent": {
+    "acoustic": {
+      "total": 20,
+      "resolved": 0,
+      "manual_required": 4,
+      "ineligible": 0,
+      "unresolved": 16
+    },
+    "alternate": {
+      "total": 4,
+      "resolved": 0,
+      "manual_required": 3,
+      "ineligible": 0,
+      "unresolved": 1
+    },
+    "cover": {
+      "total": 14,
+      "resolved": 0,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 14
+    },
+    "default": {
+      "total": 41,
+      "resolved": 1,
+      "manual_required": 10,
+      "ineligible": 0,
+      "unresolved": 30
+    },
+    "edit": {
+      "total": 7,
+      "resolved": 0,
+      "manual_required": 5,
+      "ineligible": 0,
+      "unresolved": 2
+    },
+    "live": {
+      "total": 10,
+      "resolved": 1,
+      "manual_required": 3,
+      "ineligible": 0,
+      "unresolved": 6
+    },
+    "remix": {
+      "total": 10,
+      "resolved": 0,
+      "manual_required": 1,
+      "ineligible": 0,
+      "unresolved": 9
+    },
+    "specific_version": {
+      "total": 1,
+      "resolved": 0,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 1
+    }
+  },
+  "by_cohort": {
+    "acoustic": {
+      "total": 20,
+      "resolved": 0,
+      "manual_required": 4,
+      "ineligible": 0,
+      "unresolved": 16
+    },
+    "alternate": {
+      "total": 4,
+      "resolved": 0,
+      "manual_required": 3,
+      "ineligible": 0,
+      "unresolved": 1
+    },
+    "cover": {
+      "total": 14,
+      "resolved": 0,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 14
+    },
+    "east_asia": {
+      "total": 7,
+      "resolved": 0,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 7
+    },
+    "electronic": {
+      "total": 8,
+      "resolved": 0,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 8
+    },
+    "jazz_blues": {
+      "total": 2,
+      "resolved": 1,
+      "manual_required": 1,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "latin": {
+      "total": 1,
+      "resolved": 0,
+      "manual_required": 1,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "live": {
+      "total": 9,
+      "resolved": 0,
+      "manual_required": 3,
+      "ineligible": 0,
+      "unresolved": 6
+    },
+    "metal": {
+      "total": 4,
+      "resolved": 0,
+      "manual_required": 1,
+      "ineligible": 0,
+      "unresolved": 3
+    },
+    "pop_rnb": {
+      "total": 1,
+      "resolved": 1,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "remix": {
+      "total": 18,
+      "resolved": 0,
+      "manual_required": 6,
+      "ineligible": 0,
+      "unresolved": 12
+    },
+    "rock_alternative": {
+      "total": 2,
+      "resolved": 0,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 2
+    },
+    "world_nonenglish": {
+      "total": 17,
+      "resolved": 0,
+      "manual_required": 7,
+      "ineligible": 0,
+      "unresolved": 10
+    }
+  },
+  "by_resolution_strategy": {
+    "roon_direct_query_ladder": 2
+  },
+  "direct_query_step": {
+    "1": 2
+  },
+  "dataset": {
+    "cases": 107,
+    "manual_fallback_expectations": 26,
+    "first_case_id": "MBR-000506",
+    "last_case_id": "MBR-002897",
+    "release_groups": 35,
+    "derived_intent_distribution": {
+      "acoustic": 20,
+      "alternate": 4,
+      "cover": 14,
+      "default": 41,
+      "edit": 7,
+      "live": 10,
+      "remix": 10,
+      "specific_version": 1
+    },
+    "source_category_distribution": {
+      "acoustic": 20,
+      "alternate": 4,
+      "cover": 14,
+      "default": 42,
+      "live": 9,
+      "remix": 18
+    },
+    "incremental_501_plus": {
+      "cases": 0,
+      "cohorts": {},
+      "languages": {},
+      "eras": {}
+    },
+    "incremental_1501_plus": {
+      "cases": 0,
+      "release_groups": 0,
+      "artists": 0,
+      "cohorts": {},
+      "languages": {},
+      "eras": {}
+    }
+  },
+  "unresolved_cases": [
+    {
+      "case_id": "MBR-001518",
+      "intent": "default",
+      "expected": {
+        "title": "XMAS_EVET10 (thanaton3 mix)",
+        "artist": "Aphex Twin",
+        "album": "Syro",
+        "recording_id": "6381bee7-017a-42bc-aae6-36140e9e1b60",
+        "release_group_id": "11a7c281-a260-4f77-a1d5-1ff2d4c917eb",
+        "release_id": "0a4d86ee-5d16-4dfc-a4c0-60de165c0d60"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001534",
+      "intent": "default",
+      "expected": {
+        "title": "Super Nature / Best Brain / Rock Fantastictac",
+        "artist": "Sound Hero",
+        "album": "Fantasma",
+        "recording_id": "83381980-b699-449a-b215-849ed5d501bc",
+        "release_group_id": "7ab5258c-d0d7-39f0-b1bb-383a4053c754",
+        "release_id": "72582f70-5df2-4bf8-8685-531d01c33f63"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001545",
+      "intent": "default",
+      "expected": {
+        "title": "Faisons envie",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "6a98c512-1913-462d-a81e-a834a3da28a7",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001549",
+      "intent": "default",
+      "expected": {
+        "title": "Tché-Tché",
+        "artist": "Angélique Kidjo",
+        "album": "Logozo",
+        "recording_id": "1d7d86ec-ea4c-4767-a3a8-4ad7cdbf0768",
+        "release_group_id": "bb212e69-9e70-355a-8cb1-9a8aa3eeef4c",
+        "release_id": "845e9fff-2234-4e06-8521-c585e8387dd2"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001586",
+      "intent": "default",
+      "expected": {
+        "title": "CIRCLONT6A (syrobonkus mix)",
+        "artist": "Aphex Twin",
+        "album": "Syro",
+        "recording_id": "bec5dfce-1f80-4856-8c4b-fa995478cf98",
+        "release_group_id": "11a7c281-a260-4f77-a1d5-1ff2d4c917eb",
+        "release_id": "0a4d86ee-5d16-4dfc-a4c0-60de165c0d60"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001611",
+      "intent": "default",
+      "expected": {
+        "title": "L’Irréel",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "aa38a87a-29a7-482b-b232-78bb1294e5cf",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001647",
+      "intent": "default",
+      "expected": {
+        "title": "Total Trash",
+        "artist": "Sonic Youth",
+        "album": "Daydream Nation",
+        "recording_id": "509d456b-3523-4a36-a852-748b3665ae49",
+        "release_group_id": "24769a99-8189-3d8c-947e-dbc8574dad5c",
+        "release_id": "f7fe2390-a735-47d6-a000-d5e8173cd9b3"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001658",
+      "intent": "default",
+      "expected": {
+        "title": "Sunbather",
+        "artist": "Deafheaven",
+        "album": "Sunbather",
+        "recording_id": "520f6f03-5f94-497c-a58c-4bbbfedef31e",
+        "release_group_id": "8a061d0e-fa0c-4571-91ff-8bc3911b6428",
+        "release_id": "22f1d5cc-61a7-4976-975b-bf123e685fb9"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001660",
+      "intent": "default",
+      "expected": {
+        "title": "Monkey",
+        "artist": "Cornelius",
+        "album": "Fantasma",
+        "recording_id": "fa3d7960-8b31-4d60-9869-763ee29e9cfa",
+        "release_group_id": "7ab5258c-d0d7-39f0-b1bb-383a4053c754",
+        "release_id": "72582f70-5df2-4bf8-8685-531d01c33f63"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001661",
+      "intent": "default",
+      "expected": {
+        "title": "아이와 나의 바다",
+        "artist": "IU",
+        "album": "LILAC",
+        "recording_id": "f8577ce9-7bba-40a1-9b19-939968460449",
+        "release_group_id": "bdeb7a5c-c628-4346-b886-842fc86d7250",
+        "release_id": "106f62d1-bbd3-40d4-a619-12f2e1126b5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001669",
+      "intent": "default",
+      "expected": {
+        "title": "Le Dimanche à Tchernobyl",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "4166390b-4da2-4b2b-b6a7-b582055f5073",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001715",
+      "intent": "default",
+      "expected": {
+        "title": "봄 안녕 봄",
+        "artist": "IU",
+        "album": "LILAC",
+        "recording_id": "dd34892e-659b-4d79-adf0-f5d7fbfc2375",
+        "release_group_id": "bdeb7a5c-c628-4346-b886-842fc86d7250",
+        "release_id": "106f62d1-bbd3-40d4-a619-12f2e1126b5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001724",
+      "intent": "default",
+      "expected": {
+        "title": "La Ficelle",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "9b8cdc20-3049-4b4d-8545-2bea4b1eca8c",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001752",
+      "intent": "default",
+      "expected": {
+        "title": "Velvet Cake",
+        "artist": "Flying Lotus",
+        "album": "Cosmogramma",
+        "recording_id": "9f9df9f2-57d1-4942-8634-27f02c89bd73",
+        "release_group_id": "ddae2c76-1433-4a9a-be05-3447bda75eee",
+        "release_id": "85cf03da-0ff3-3265-bb19-75f87765037d"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001762",
+      "intent": "default",
+      "expected": {
+        "title": "Vertigo",
+        "artist": "Deafheaven",
+        "album": "Sunbather",
+        "recording_id": "7913e04e-b641-49a1-bda4-cc32554e57a6",
+        "release_group_id": "8a061d0e-fa0c-4571-91ff-8bc3911b6428",
+        "release_id": "22f1d5cc-61a7-4976-975b-bf123e685fb9"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001774",
+      "intent": "default",
+      "expected": {
+        "title": "Jamais d’autre que toi",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "ed700e67-0287-4ad1-81f0-6e24e87203e9",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001818",
+      "intent": "default",
+      "expected": {
+        "title": "에필로그",
+        "artist": "IU",
+        "album": "LILAC",
+        "recording_id": "bd7b1209-3416-46e6-a2ed-2ac34367c1f9",
+        "release_group_id": "bdeb7a5c-c628-4346-b886-842fc86d7250",
+        "release_id": "106f62d1-bbd3-40d4-a619-12f2e1126b5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001827",
+      "intent": "default",
+      "expected": {
+        "title": "Noir de monde",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "04b685b0-7c59-4c29-a432-983ff929f4d8",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001865",
+      "intent": "default",
+      "expected": {
+        "title": "Irresistible",
+        "artist": "Deafheaven",
+        "album": "Sunbather",
+        "recording_id": "a9b73735-778e-4edd-95be-ff83d369e543",
+        "release_group_id": "8a061d0e-fa0c-4571-91ff-8bc3911b6428",
+        "release_id": "22f1d5cc-61a7-4976-975b-bf123e685fb9"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001868",
+      "intent": "default",
+      "expected": {
+        "title": "라일락",
+        "artist": "IU",
+        "album": "LILAC",
+        "recording_id": "173e6548-974e-44a7-a5f8-99e50e3049ae",
+        "release_group_id": "bdeb7a5c-c628-4346-b886-842fc86d7250",
+        "release_id": "106f62d1-bbd3-40d4-a619-12f2e1126b5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001876",
+      "intent": "default",
+      "expected": {
+        "title": "Tel",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "a9d55371-2525-4ed0-8133-c5921e8cdf58",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001926",
+      "intent": "default",
+      "expected": {
+        "title": "L’Imprudence",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "d1fbd903-4d8c-4154-aec1-f6c924103d4a",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002012",
+      "intent": "default",
+      "expected": {
+        "title": "Est‐ce aimer",
+        "artist": "Alain Bashung",
+        "album": "L’Imprudence",
+        "recording_id": "49d02db2-11f3-4579-8160-e8dc891bf825",
+        "release_group_id": "b0eaf228-c454-30c2-a27d-ee2f6cf23759",
+        "release_id": "43f0ba50-ea13-4141-9d4a-3e5a92fdf4f6"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002036",
+      "intent": "default",
+      "expected": {
+        "title": "syro u473t8+e (piezoluminescence mix)",
+        "artist": "Aphex Twin",
+        "album": "Syro",
+        "recording_id": "1077104d-869d-4c0c-977d-3781885722ca",
+        "release_group_id": "11a7c281-a260-4f77-a1d5-1ff2d4c917eb",
+        "release_id": "0a4d86ee-5d16-4dfc-a4c0-60de165c0d60"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002058",
+      "intent": "default",
+      "expected": {
+        "title": "From One Source All Things Depend",
+        "artist": "Boards of Canada",
+        "album": "Geogaddi",
+        "recording_id": "f3228cd9-46eb-4440-bac6-998c41ff23c3",
+        "release_group_id": "8183834a-6c8a-39ef-a7bc-a82f79b929e9",
+        "release_id": "5da8e677-bec2-471f-82ec-5b51133cd0c7"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002066",
+      "intent": "default",
+      "expected": {
+        "title": "s950tx16wasr10 (earth portal mix)",
+        "artist": "Aphex Twin",
+        "album": "Syro",
+        "recording_id": "e7c6ca82-6d5b-4fb2-a2af-07e9db3af00f",
+        "release_group_id": "11a7c281-a260-4f77-a1d5-1ff2d4c917eb",
+        "release_id": "0a4d86ee-5d16-4dfc-a4c0-60de165c0d60"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002079",
+      "intent": "default",
+      "expected": {
+        "title": "4 Walls",
+        "artist": "f(x)",
+        "album": "4 Walls",
+        "recording_id": "55fadf17-4b58-47b6-9cb7-f2e066ad14f7",
+        "release_group_id": "83a065ef-475e-4635-b263-6dccc563ada2",
+        "release_id": "5fc4bc4a-4966-4cc2-ae09-7f13e9bdc098"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002100",
+      "intent": "default",
+      "expected": {
+        "title": "CIRCLONT14 (shrymoming mix)",
+        "artist": "Aphex Twin",
+        "album": "Syro",
+        "recording_id": "ee62c00a-74e2-40bf-8303-156f6702ce3f",
+        "release_group_id": "11a7c281-a260-4f77-a1d5-1ff2d4c917eb",
+        "release_id": "0a4d86ee-5d16-4dfc-a4c0-60de165c0d60"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002133",
+      "intent": "default",
+      "expected": {
+        "title": "PAPAT4 (pineal mix)",
+        "artist": "Aphex Twin",
+        "album": "Syro",
+        "recording_id": "1bf41204-23f8-4b69-8a2b-2720a221b684",
+        "release_group_id": "11a7c281-a260-4f77-a1d5-1ff2d4c917eb",
+        "release_id": "0a4d86ee-5d16-4dfc-a4c0-60de165c0d60"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002192",
+      "intent": "default",
+      "expected": {
+        "title": "Rain King",
+        "artist": "Sonic Youth",
+        "album": "Daydream Nation",
+        "recording_id": "4305798e-a89e-4004-98cf-56b666976214",
+        "release_group_id": "24769a99-8189-3d8c-947e-dbc8574dad5c",
+        "release_id": "f7fe2390-a735-47d6-a000-d5e8173cd9b3"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002336",
+      "intent": "live",
+      "expected": {
+        "title": "El cosechero",
+        "artist": "Mercedes Sosa",
+        "album": "Mercedes Sosa en Argentina",
+        "recording_id": "417b900b-ff8b-4baa-92ff-10949d6b5859",
+        "release_group_id": "c2b09c77-0ac1-31d1-807a-132797aa258c",
+        "release_id": "9d5f031a-2ecb-41f5-b261-f5f505cb1602"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002364",
+      "intent": "live",
+      "expected": {
+        "title": "Rap",
+        "artist": "Curtis Mayfield",
+        "album": "Curtis/Live!",
+        "recording_id": "bbae675f-871d-4b4d-bbf3-570dab62e767",
+        "release_group_id": "a374f6fc-48c1-305b-a626-7c81cef08a8f",
+        "release_id": "69cf7d56-d4bb-4a22-b9d8-7ab8c9e6c102"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002375",
+      "intent": "live",
+      "expected": {
+        "title": "Harlem / Cold Baloney",
+        "artist": "Bill Withers",
+        "album": "Live at Carnegie Hall",
+        "recording_id": "f2e948c5-2582-481e-9bad-1a5727b08153",
+        "release_group_id": "8f1318d9-8a6f-3c4c-a6de-bcdabc7123e4",
+        "release_id": "4cac516d-4764-4ab4-bc06-d6d2c30f8139"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002382",
+      "intent": "live",
+      "expected": {
+        "title": "Big Jack",
+        "artist": "AC/DC",
+        "album": "Live at River Plate",
+        "recording_id": "c838bf52-0321-4bc1-8321-2d0ffa37e588",
+        "release_group_id": "6b90494f-015e-4878-b18e-27b4766d2899",
+        "release_id": "a46a88fa-6f5d-495c-86fb-2af8053f613e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002403",
+      "intent": "live",
+      "expected": {
+        "title": "Black Ice",
+        "artist": "AC/DC",
+        "album": "Live at River Plate",
+        "recording_id": "1001d3c6-1a76-4341-b2c2-6c5d383f8a5f",
+        "release_group_id": "6b90494f-015e-4878-b18e-27b4766d2899",
+        "release_id": "a46a88fa-6f5d-495c-86fb-2af8053f613e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002409",
+      "intent": "live",
+      "expected": {
+        "title": "Rap",
+        "artist": "Curtis Mayfield",
+        "album": "Curtis/Live!",
+        "recording_id": "2f5b3545-8bda-4118-b879-cd840e1faa27",
+        "release_group_id": "a374f6fc-48c1-305b-a626-7c81cef08a8f",
+        "release_id": "69cf7d56-d4bb-4a22-b9d8-7ab8c9e6c102"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002440",
+      "intent": "remix",
+      "expected": {
+        "title": "Baby (Yam Who? dub mix)",
+        "artist": "Bebel Gilberto",
+        "album": "Bebel Gilberto Remixed",
+        "recording_id": "67453a40-6ab4-450a-bec2-61f309867d93",
+        "release_group_id": "2f651530-fcc7-33b7-9723-e5056a46a0ff",
+        "release_id": "6ebed0e8-de67-4f3d-8dab-609838109056"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002467",
+      "intent": "remix",
+      "expected": {
+        "title": "All Around (Bombay dub Orchestra mix)",
+        "artist": "Bebel Gilberto",
+        "album": "Bebel Gilberto Remixed",
+        "recording_id": "eb5a9a5a-d187-4fe9-8696-0ae0e72375a8",
+        "release_group_id": "2f651530-fcc7-33b7-9723-e5056a46a0ff",
+        "release_id": "6ebed0e8-de67-4f3d-8dab-609838109056"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002495",
+      "intent": "remix",
+      "expected": {
+        "title": "Aganjú (John Beltran mix)",
+        "artist": "Bebel Gilberto",
+        "album": "Bebel Gilberto Remixed",
+        "recording_id": "8f88eabc-4223-4aba-87d3-c74b9deab9f7",
+        "release_group_id": "2f651530-fcc7-33b7-9723-e5056a46a0ff",
+        "release_id": "6ebed0e8-de67-4f3d-8dab-609838109056"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002497",
+      "intent": "edit",
+      "expected": {
+        "title": "Hollywood (Deepsky’s Home Sweet Home edit)",
+        "artist": "Madonna",
+        "album": "American Life Mixshow Mix",
+        "recording_id": "b7093bb9-d451-420b-98ee-85886b00b1a7",
+        "release_group_id": "78126aa2-06da-4449-9a59-22b725b61217",
+        "release_id": "50ddb3a9-cea8-41dd-878e-d270a01b6c3e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002513",
+      "intent": "edit",
+      "expected": {
+        "title": "Nobody Knows Me (Peter Rauhofer's Private Life edit)",
+        "artist": "Madonna",
+        "album": "American Life Mixshow Mix",
+        "recording_id": "fc801c31-be3c-4ca3-9456-a693ae12cd4f",
+        "release_group_id": "78126aa2-06da-4449-9a59-22b725b61217",
+        "release_id": "50ddb3a9-cea8-41dd-878e-d270a01b6c3e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002523",
+      "intent": "remix",
+      "expected": {
+        "title": "Nasty Girl (Azza’s Nu Soul mix)",
+        "artist": "Destiny’s Child",
+        "album": "This Is the Remix",
+        "recording_id": "5283d6f8-9ebd-428a-b70f-00fc2b86a8c0",
+        "release_group_id": "6b05ff47-eb22-3fe7-a39b-6feb813a0cd8",
+        "release_id": "3cc4ad80-d684-407b-b098-fe395ecf7467"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002529",
+      "intent": "remix",
+      "expected": {
+        "title": "Pure Pleasure Seeker (Todd Edwards Pleasure for Life UK vocal)",
+        "artist": "Moloko",
+        "album": "All Back to the Mine",
+        "recording_id": "8560c7a9-97f0-44a9-8b35-f11edb4e1e37",
+        "release_group_id": "48bfa5a2-caf8-342f-8ef8-6136306334cd",
+        "release_id": "0473c90e-94fe-46c9-8162-13cca6416524"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002557",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Independent Women, Part II",
+        "artist": "Destiny’s Child",
+        "album": "This Is the Remix",
+        "recording_id": "4c4975d6-754b-47c0-b17e-d6b70644255b",
+        "release_group_id": "6b05ff47-eb22-3fe7-a39b-6feb813a0cd8",
+        "release_id": "3cc4ad80-d684-407b-b098-fe395ecf7467"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002560",
+      "intent": "remix",
+      "expected": {
+        "title": "Bootylicious (Rockwilder remix)",
+        "artist": "Destiny’s Child",
+        "album": "This Is the Remix",
+        "recording_id": "7220e33b-63ad-4a4f-9adb-5f359365dd0d",
+        "release_group_id": "6b05ff47-eb22-3fe7-a39b-6feb813a0cd8",
+        "release_id": "3cc4ad80-d684-407b-b098-fe395ecf7467"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002562",
+      "intent": "remix",
+      "expected": {
+        "title": "Survivor (extended version remix)",
+        "artist": "Destiny’s Child",
+        "album": "This Is the Remix",
+        "recording_id": "e50ac213-caff-4748-8dac-62389c7f3e3a",
+        "release_group_id": "6b05ff47-eb22-3fe7-a39b-6feb813a0cd8",
+        "release_id": "3cc4ad80-d684-407b-b098-fe395ecf7467"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002564",
+      "intent": "remix",
+      "expected": {
+        "title": "Dot (The E‐Poppi mix)",
+        "artist": "Destiny’s Child",
+        "album": "This Is the Remix",
+        "recording_id": "44e7c0ad-d78f-4b30-9bfb-6442273af480",
+        "release_group_id": "6b05ff47-eb22-3fe7-a39b-6feb813a0cd8",
+        "release_id": "3cc4ad80-d684-407b-b098-fe395ecf7467"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002566",
+      "intent": "remix",
+      "expected": {
+        "title": "Emotion (The Neptunes remix)",
+        "artist": "Destiny’s Child",
+        "album": "This Is the Remix",
+        "recording_id": "39f46dc7-3f7b-4f20-b1c5-44c24e6e6d95",
+        "release_group_id": "6b05ff47-eb22-3fe7-a39b-6feb813a0cd8",
+        "release_id": "3cc4ad80-d684-407b-b098-fe395ecf7467"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002576",
+      "intent": "cover",
+      "expected": {
+        "title": "Mongoloid (KCRW session)",
+        "artist": "Nouvelle Vague",
+        "album": "Nouvelle Vague",
+        "recording_id": "8739cfa3-cc1d-47af-a245-dc8dc778ee29",
+        "release_group_id": "d16b3b05-6f30-3242-9544-dba1083eb21e",
+        "release_id": "1897ece7-93d3-4298-b80d-d098f20dc190"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002582",
+      "intent": "cover",
+      "expected": {
+        "title": "Even Fallen In Love (KCRW session)",
+        "artist": "Nouvelle Vague",
+        "album": "Nouvelle Vague",
+        "recording_id": "dbebcad1-fd4e-4b22-a9a6-7966a5bfe98a",
+        "release_group_id": "d16b3b05-6f30-3242-9544-dba1083eb21e",
+        "release_id": "1897ece7-93d3-4298-b80d-d098f20dc190"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002642",
+      "intent": "cover",
+      "expected": {
+        "title": "Another Brick in the Wall, Part 3",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "57098a8e-5807-4a89-be04-2fc33d5077e8",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002647",
+      "intent": "cover",
+      "expected": {
+        "title": "Another Brick in the Wall, Part 1",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "d0e1f308-6c82-414f-b5e2-5f37a9564faa",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002660",
+      "intent": "cover",
+      "expected": {
+        "title": "Manhattan",
+        "artist": "Caetano Veloso",
+        "album": "A Foreign Sound",
+        "recording_id": "cb4cdf5d-332b-4317-93d9-cf21d7e6c62f",
+        "release_group_id": "fde9199a-6347-324a-bb67-176ea3175cde",
+        "release_id": "3e1f162c-f0ad-482a-b277-33c8c38a3adc"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002670",
+      "intent": "cover",
+      "expected": {
+        "title": "Another Brick in the Wall, Part 2",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "da3c5201-b648-46a8-a39a-63f64513b4dc",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002679",
+      "intent": "cover",
+      "expected": {
+        "title": "The Carioca",
+        "artist": "Caetano Veloso",
+        "album": "A Foreign Sound",
+        "recording_id": "60c920ca-e74b-4d0f-843e-51a7c279123c",
+        "release_group_id": "fde9199a-6347-324a-bb67-176ea3175cde",
+        "release_id": "3e1f162c-f0ad-482a-b277-33c8c38a3adc"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002683",
+      "intent": "cover",
+      "expected": {
+        "title": "Empty Spaces",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "6f5dccfa-31f9-49c6-9535-1a4b546f7592",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002687",
+      "intent": "cover",
+      "expected": {
+        "title": "Don't Leave Me Now",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "6ec874fe-c926-4c93-9cc7-cab8712f2029",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002693",
+      "intent": "cover",
+      "expected": {
+        "title": "In The Flesh?",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "0dee203b-aaba-497e-bab6-41ad4822add7",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002700",
+      "intent": "cover",
+      "expected": {
+        "title": "Goodbye Blue Sky",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "09515ce8-dd24-432e-9cf2-8169b01a690a",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002701",
+      "intent": "cover",
+      "expected": {
+        "title": "Mother",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "b79c80e8-4b95-4437-a40b-3fe656a892d9",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002713",
+      "intent": "cover",
+      "expected": {
+        "title": "Young Lust",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "7b061e2a-0baf-47e6-8a89-3d931792c55d",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002732",
+      "intent": "cover",
+      "expected": {
+        "title": "One of My Turns",
+        "artist": "Luther Wright & the Wrongs",
+        "album": "Rebuild the Wall",
+        "recording_id": "fadce04a-bf56-4306-83c6-0ea1212b0fea",
+        "release_group_id": "4da737a4-4f82-3638-ac61-f5ea7b175048",
+        "release_id": "06a0f012-eb93-4ce2-91cc-e1ccf911a722"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002743",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Shake It Out",
+        "artist": "Florence + the Machine",
+        "album": "MTV Unplugged",
+        "recording_id": "766b8246-0978-4940-9717-175603a3f1a1",
+        "release_group_id": "ab1c6946-f9c0-4c7c-bd7a-2bff19b338b4",
+        "release_id": "db1a10c2-e51d-4e58-b96c-ae926dd70971"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002750",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Cosmic Love",
+        "artist": "Florence + the Machine",
+        "album": "MTV Unplugged",
+        "recording_id": "c94c9dcd-1723-4634-9543-b7b88c39cb22",
+        "release_group_id": "ab1c6946-f9c0-4c7c-bd7a-2bff19b338b4",
+        "release_id": "db1a10c2-e51d-4e58-b96c-ae926dd70971"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002761",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Cerca de la revolución",
+        "artist": "Charly García",
+        "album": "Hello! MTV Unplugged",
+        "recording_id": "aafac628-cf90-44ab-a085-014d5e522622",
+        "release_group_id": "9731bea9-8fd6-3608-bc3c-e3b735747407",
+        "release_id": "9610aed3-10ed-495e-88e2-d30d9169aec7"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002764",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Breaking Down",
+        "artist": "Florence + the Machine",
+        "album": "MTV Unplugged",
+        "recording_id": "8e2ca8f2-e870-4cfa-a4d3-2dadcd0babbd",
+        "release_group_id": "ab1c6946-f9c0-4c7c-bd7a-2bff19b338b4",
+        "release_id": "db1a10c2-e51d-4e58-b96c-ae926dd70971"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002770",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Only If for a Night",
+        "artist": "Florence + the Machine",
+        "album": "MTV Unplugged",
+        "recording_id": "bad6c1a0-e5bb-4b70-8652-59f0c930d778",
+        "release_group_id": "ab1c6946-f9c0-4c7c-bd7a-2bff19b338b4",
+        "release_id": "db1a10c2-e51d-4e58-b96c-ae926dd70971"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002787",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Pra ficar comigo",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "d3296e13-0390-4a38-9551-1125a510ad8a",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002808",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Flores em você",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "b51ac564-d525-4815-888c-3ae014f537b1",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002815",
+      "intent": "acoustic",
+      "expected": {
+        "title": "1967 (Ao vivo)",
+        "artist": "Marcelo D2",
+        "album": "Acústico MTV",
+        "recording_id": "f1ba7502-cc4f-49ca-b48a-b2257247907f",
+        "release_group_id": "0af6d175-f273-38de-bc7a-b3055272df24",
+        "release_id": "cc3a45a7-d150-4dd1-9ee9-1a8c8c05a193"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002819",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Tanto quanto eu",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "363136c8-7eb5-4d9f-9818-a7e6f501ab55",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002826",
+      "intent": "acoustic",
+      "expected": {
+        "title": "15 anos",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "01ea1075-2470-4f8b-9270-e74bb92420bc",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002850",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Eu quero sempre mais",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "515b4ac3-c603-4f0f-aa1f-be26389c5534",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002851",
+      "intent": "acoustic",
+      "expected": {
+        "title": "O girassol",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "d25742cf-9230-487e-afe1-fd42637794ff",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002855",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Flerte fatal",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "90ce6bfc-ae8f-4940-96e2-86be3a731d6b",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002857",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Boneca de cera",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "c695211d-9a3c-48fa-8004-b4e4d2848ce4",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002862",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Ciganos",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "515ed2ec-0aa0-4e37-90ac-617a44a304d2",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002869",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Poço de sensibilidade",
+        "artist": "Ira!",
+        "album": "Acústico MTV",
+        "recording_id": "1c5295f7-50c3-494a-8f67-0ecf4fe5c770",
+        "release_group_id": "813c1fe0-e2ca-3572-a813-4738d94a2289",
+        "release_id": "7731b748-297a-4956-b093-b74dc13aa61e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-002897",
+      "intent": "alternate",
+      "expected": {
+        "title": "100 MPH",
+        "artist": "Prince",
+        "album": "Originals",
+        "recording_id": "0dd0baf2-0cec-443c-ab67-7cf9b0245638",
+        "release_group_id": "6b89cdf4-69df-4f96-83c2-15474485a29c",
+        "release_id": "929e0437-c744-4f9a-b956-1f9e06deb906"
+      },
+      "request_error": null
+    }
+  ],
+  "manual_required_cases": [
+    {
+      "case_id": "MBR-000506",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000562",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000589",
+      "intent": "default",
+      "reason": "roon_only_exposes_different_anniversary_remix_remaster"
+    },
+    {
+      "case_id": "MBR-000618",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000674",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000730",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000781",
+      "intent": "default",
+      "reason": "exact_recording_not_found_in_roon_catalog"
+    },
+    {
+      "case_id": "MBR-000786",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000830",
+      "intent": "default",
+      "reason": "musicbrainz_combined_recording_is_split_into_separate_roon_tracks"
+    },
+    {
+      "case_id": "MBR-000842",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-001017",
+      "intent": "live",
+      "reason": "requested_live_release_missing_and_roon_candidates_are_studio_versions"
+    },
+    {
+      "case_id": "MBR-001085",
+      "intent": "live",
+      "reason": "requested_adele_live_performance_missing_and_live_candidates_are_other_artists"
+    },
+    {
+      "case_id": "MBR-001100",
+      "intent": "live",
+      "reason": "requested_adele_live_performance_missing_and_live_candidates_are_other_artists"
+    },
+    {
+      "case_id": "MBR-001180",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001211",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001217",
+      "intent": "remix",
+      "reason": "exact_named_remix_not_found_in_roon_catalog"
+    },
+    {
+      "case_id": "MBR-001230",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001254",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001260",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001357",
+      "intent": "acoustic",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001386",
+      "intent": "acoustic",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001403",
+      "intent": "acoustic",
+      "reason": "roon_strips_numeric_title_prefix_but_album_evidence_does_not_prove_identity"
+    },
+    {
+      "case_id": "MBR-001404",
+      "intent": "acoustic",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001434",
+      "intent": "alternate",
+      "reason": "same_title_candidate_is_ambiguous_without_requested_archive_release_context"
+    },
+    {
+      "case_id": "MBR-001450",
+      "intent": "alternate",
+      "reason": "musicbrainz_combined_archive_recording_not_proven_by_roon_candidates"
+    },
+    {
+      "case_id": "MBR-001484",
+      "intent": "alternate",
+      "reason": "same_title_candidate_is_ambiguous_without_requested_archive_release_context"
+    }
+  ],
+  "ineligible_cases": []
+}

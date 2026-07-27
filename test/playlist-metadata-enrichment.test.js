@@ -140,7 +140,55 @@ test("manual repair validates the selected track, marks it manual and enriches i
     }
   };
   const metadataService = new PlaylistMetadataEnrichmentService(playlistService, media);
-  const repairService = new PlaylistRepairService(playlistService, media, metadataService);
+  let bindingOrigin = null;
+  const trackCatalogService = {
+    async describeRoonTrack() {
+      return {
+        status: "exact",
+        reason: "unique_compatible_recording",
+        recording: {
+          musicbrainz_id: "mb-recording-manual",
+          title: "Canonical Song",
+          artist_credit: [{ musicbrainz_id: "mb-artist", name: "Canonical Artist", join_phrase: "" }],
+          disambiguation: null,
+          duration_seconds: 200,
+          duration_source: "musicbrainz_recording_median",
+          isrcs: ["USAAA2600002"]
+        },
+        release_group: { musicbrainz_id: "mb-release-group", title: "Canonical Album" },
+        composers: ["Composer"],
+        lyricists: ["Lyricist"],
+        genres: [{ name: "rock" }],
+        roon_binding: null,
+        provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: "roon" }
+      };
+    },
+    bind(recordingId, result, origin) {
+      bindingOrigin = origin;
+      return {
+        binding_id: "manual-binding",
+        recording_id: recordingId,
+        item_key: result.roon_item_key,
+        result_id: result.result_id,
+        source: result.source,
+        canonical_query: `${result.title} ${result.artist}`,
+        reusable: false,
+        playable: true,
+        status: "observed",
+        confidence: "high",
+        selection_origin: origin,
+        observed_at: "2026-07-27T20:00:00.000Z",
+        last_verified_at: "2026-07-27T20:00:00.000Z"
+      };
+    }
+  };
+  const repairService = new PlaylistRepairService(
+    playlistService,
+    media,
+    metadataService,
+    undefined,
+    trackCatalogService
+  );
   const result = await repairService.selectTrack({
     playlistId: playlist.playlist_id,
     trackId: playlist.tracks[0].track_id,
@@ -151,6 +199,11 @@ test("manual repair validates the selected track, marks it manual and enriches i
   assert.equal(result.track.resolution.status, "manual");
   assert.equal(result.track.resolution.selection_origin, "portal_user");
   assert.equal(result.track.audio_metadata.duration_seconds, 200);
+  assert.equal(result.track.title, "Canonical Song");
+  assert.equal(result.track.artist, "Canonical Artist");
+  assert.equal(result.track.audio_metadata.catalog.recording.musicbrainz_id, "mb-recording-manual");
+  assert.equal(result.track.audio_metadata.catalog.roon_binding.selection_origin, "manual");
+  assert.equal(bindingOrigin, "manual");
 });
 
 test("metadata enrichment opens a resolved track detail when search results omit album and duration", async () => {

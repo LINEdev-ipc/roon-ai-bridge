@@ -101,6 +101,11 @@ test("MusicBrainz recording metadata resolves an explicitly named mix and follow
   assert.deepEqual(result.metadata.composers, ["Pete Townshend"]);
   assert.deepEqual(result.metadata.lyricists, ["Pete Townshend"]);
   assert.deepEqual(result.metadata.genres, ["rock"]);
+  assert.equal(result.metadata.video, false);
+  assert.equal(result.metadata.work.musicbrainz_id, "work-id");
+  assert.equal(result.metadata.work.title, "Won't Get Fooled Again");
+  assert.deepEqual(result.metadata.credits.map((credit) => credit.role), ["composer", "lyricist"]);
+  assert.deepEqual(result.metadata.genre_details, [{ name: "rock", count: 3, entity: "work" }]);
   assert.equal(result.metadata.release_year, 2023);
 });
 

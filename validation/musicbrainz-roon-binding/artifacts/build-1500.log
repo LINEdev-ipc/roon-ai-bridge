@@ -1,0 +1,33 @@
+{"phase": "dataset", "processed_specs": 10, "pool": 115, "unresolved": 0}
+{"phase": "dataset", "processed_specs": 20, "pool": 218, "unresolved": 0}
+{"phase": "dataset", "processed_specs": 30, "pool": 335, "unresolved": 1}
+{"phase": "dataset", "processed_specs": 40, "pool": 480, "unresolved": 1}
+{"phase": "dataset", "processed_specs": 50, "pool": 570, "unresolved": 3}
+{"phase": "dataset", "processed_specs": 60, "pool": 659, "unresolved": 5}
+{"phase": "dataset", "processed_specs": 70, "pool": 777, "unresolved": 6}
+{"phase": "dataset", "processed_specs": 80, "pool": 950, "unresolved": 6}
+{"phase": "dataset", "processed_specs": 90, "pool": 1055, "unresolved": 7}
+{"phase": "dataset", "processed_specs": 100, "pool": 1202, "unresolved": 7}
+{"phase": "dataset", "processed_specs": 110, "pool": 1371, "unresolved": 7}
+{"phase": "dataset", "processed_specs": 120, "pool": 1509, "unresolved": 8}
+{"phase": "dataset", "processed_specs": 130, "pool": 1584, "unresolved": 9}
+{"phase": "dataset", "processed_specs": 140, "pool": 1671, "unresolved": 10}
+{"phase": "dataset", "processed_specs": 150, "pool": 1776, "unresolved": 11}
+{"phase": "dataset", "processed_specs": 160, "pool": 1885, "unresolved": 11}
+{"phase": "dataset", "processed_specs": 170, "pool": 2052, "unresolved": 11}
+{"phase": "dataset", "processed_specs": 180, "pool": 2130, "unresolved": 14}
+{"phase": "dataset", "processed_specs": 190, "pool": 2220, "unresolved": 15}
+{"phase": "dataset", "processed_specs": 200, "pool": 2294, "unresolved": 18}
+{"phase": "dataset", "processed_specs": 210, "pool": 2394, "unresolved": 21}
+{"phase": "dataset", "processed_specs": 220, "pool": 2547, "unresolved": 23}
+{"phase": "dataset", "processed_specs": 230, "pool": 2638, "unresolved": 25}
+{"phase": "dataset", "processed_specs": 240, "pool": 2722, "unresolved": 29}
+Traceback (most recent call last):
+  File "/tmp/roonia-conflict-validation-20260727/run_validation.py", line 760, in <module>
+    main()
+  File "/tmp/roonia-conflict-validation-20260727/run_validation.py", line 676, in main
+    corpus = extend_corpus(existing, pool, args.target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/roonia-conflict-validation-20260727/run_validation.py", line 395, in extend_corpus
+    raise RuntimeError(
+RuntimeError: Only 72 cases available for source category acoustic; target quota is 80

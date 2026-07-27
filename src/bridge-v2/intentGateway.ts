@@ -31,7 +31,10 @@ export class IntentGateway extends TransportIntentHandler {
     this.playlistBuildService = context.playlistBuildService || new PlaylistBuildService(
       context.playlistService,
       context.mediaService,
-      context.logger
+      context.logger,
+      "streaming_first",
+      undefined,
+      context.trackCatalogService
     );
     this.playlistMetadataEnrichmentService = context.playlistMetadataEnrichmentService ||
       new PlaylistMetadataEnrichmentService(context.playlistService, context.mediaService, context.logger);
@@ -39,7 +42,8 @@ export class IntentGateway extends TransportIntentHandler {
       context.playlistService,
       context.mediaService,
       this.playlistMetadataEnrichmentService,
-      context.logger
+      context.logger,
+      context.trackCatalogService
     );
   }
 
@@ -74,7 +78,12 @@ export class IntentGateway extends TransportIntentHandler {
               input.count || 100,
               input.offset || 0
             )
-          : media;
+          : this.context.trackCatalogService
+            ? {
+                track: media,
+                catalog: await this.context.trackCatalogService.describeRoonTrack(media)
+              }
+            : media;
     return completed("roon_get_media_entity", `${media.media_type} details returned.`, data, {
       references: { result_id: input.result_id }
     });

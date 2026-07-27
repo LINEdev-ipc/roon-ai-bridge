@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-27T15:29:13.969989+00:00",
+  "started_at": "2026-07-27T15:23:30.874019+00:00",
+  "elapsed_seconds": 343.1,
+  "strategy": "direct_query_ladder_then_verified_album_tracklist",
+  "overall": {
+    "total": 500,
+    "resolved": 500,
+    "unresolved": 0,
+    "resolved_pct": 100.0,
+    "request_errors": 0
+  },
+  "by_intent": {
+    "cover": {
+      "total": 20,
+      "resolved": 20,
+      "unresolved": 0
+    },
+    "default": {
+      "total": 320,
+      "resolved": 320,
+      "unresolved": 0
+    },
+    "edit": {
+      "total": 4,
+      "resolved": 4,
+      "unresolved": 0
+    },
+    "live": {
+      "total": 80,
+      "resolved": 80,
+      "unresolved": 0
+    },
+    "remix": {
+      "total": 40,
+      "resolved": 40,
+      "unresolved": 0
+    },
+    "specific_version": {
+      "total": 36,
+      "resolved": 36,
+      "unresolved": 0
+    }
+  },
+  "by_resolution_strategy": {
+    "roon_album_tracklist": 33,
+    "roon_direct_query_ladder": 467
+  },
+  "direct_query_step": {
+    "1": 458,
+    "2": 6,
+    "3": 3
+  },
+  "dataset": {
+    "cases": 500,
+    "first_case_id": "MBR-000001",
+    "last_case_id": "MBR-000500",
+    "release_groups": 72,
+    "derived_intent_distribution": {
+      "cover": 20,
+      "default": 320,
+      "edit": 4,
+      "live": 80,
+      "remix": 40,
+      "specific_version": 36
+    }
+  },
+  "unresolved_cases": []
+}

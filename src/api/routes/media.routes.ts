@@ -139,6 +139,21 @@ export function createMediaRouter(context: ApiContext): Router {
     }
   });
 
+  router.get("/media/:result_id/catalog", async (req, res, next) => {
+    try {
+      const media = context.mediaService.get(req.params.result_id);
+      if (media.media_type !== "track") {
+        throw new ApiError("INVALID_SEARCH_QUERY", "Catalog metadata is available for track results", {
+          result_id: req.params.result_id,
+          media_type: media.media_type
+        });
+      }
+      res.json(await context.trackCatalogService.describeRoonTrack(media));
+    } catch (error) {
+      next(error);
+    }
+  });
+
   router.get("/media/:result_id/releases", async (req, res, next) => {
     try {
       res.json(

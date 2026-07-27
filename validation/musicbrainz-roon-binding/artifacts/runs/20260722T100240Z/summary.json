@@ -1,0 +1,1145 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-22T10:06:14.936858+00:00",
+  "overall": {
+    "total": 500,
+    "top1": 424,
+    "top5": 468,
+    "top10": 471,
+    "top25": 475,
+    "unresolved": 25,
+    "top1_pct": 84.8,
+    "top5_pct": 93.6,
+    "top10_pct": 94.2,
+    "top25_pct": 95.0
+  },
+  "by_intent": {
+    "cover": {
+      "total": 20,
+      "top1": 18,
+      "top5": 20,
+      "top10": 20,
+      "top25": 20,
+      "unresolved": 0,
+      "top1_pct": 90.0,
+      "top5_pct": 100.0,
+      "top10_pct": 100.0,
+      "top25_pct": 100.0
+    },
+    "default": {
+      "total": 320,
+      "top1": 289,
+      "top5": 310,
+      "top10": 312,
+      "top25": 314,
+      "unresolved": 6,
+      "top1_pct": 90.31,
+      "top5_pct": 96.88,
+      "top10_pct": 97.5,
+      "top25_pct": 98.12
+    },
+    "live": {
+      "total": 80,
+      "top1": 65,
+      "top5": 73,
+      "top10": 74,
+      "top25": 75,
+      "unresolved": 5,
+      "top1_pct": 81.25,
+      "top5_pct": 91.25,
+      "top10_pct": 92.5,
+      "top25_pct": 93.75
+    },
+    "remix": {
+      "total": 80,
+      "top1": 52,
+      "top5": 65,
+      "top10": 65,
+      "top25": 66,
+      "unresolved": 14,
+      "top1_pct": 65.0,
+      "top5_pct": 81.25,
+      "top10_pct": 81.25,
+      "top25_pct": 82.5
+    }
+  },
+  "dataset": {
+    "cases": 500,
+    "release_groups": 72,
+    "distribution": {
+      "default": 320,
+      "live": 80,
+      "remix": 80,
+      "cover": 20
+    },
+    "unresolved_specs": [
+      {
+        "album": "Purple Rain",
+        "artist": "Prince and The Revolution",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "Trans-Europe Express",
+        "artist": "Kraftwerk",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "The College Dropout",
+        "artist": "Kanye West",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "Live at the Apollo",
+        "artist": "James Brown",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "Pulse",
+        "artist": "Pink Floyd",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "Y34RZ3R0R3M1X3D",
+        "artist": "Nine Inch Nails",
+        "reason": "release_group_not_found"
+      }
+    ]
+  },
+  "failure_examples": [
+    {
+      "case_id": "MBR-000043",
+      "intent": "default",
+      "expected": {
+        "title": "Aquí & ahora (Los primeros tres minutos)",
+        "artist": "Gustavo Cerati",
+        "album": "Bocanada",
+        "recording_id": "84aca064-d079-480b-9d32-329900c06263"
+      },
+      "query": "Aquí & ahora (Los primeros tres minutos) Gustavo Cerati",
+      "top": [
+        {
+          "title": "Aquí & Ahora (Los Primeros 3 Minutos)",
+          "artists": [
+            "Gustavo Cerati"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 72,
+          "source": "unknown"
+        },
+        {
+          "title": "Aqui y Ahora (Los Primeros Tres Minutos)",
+          "artists": [
+            "Gustavo Moyano",
+            "Gustavo Cerati"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 57,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000139",
+      "intent": "default",
+      "expected": {
+        "title": "1983…(A Merman I Should Turn to Be)",
+        "artist": "The Jimi Hendrix Experience",
+        "album": "Electric Ladyland",
+        "recording_id": "ce1c0687-99b9-4bc7-99e1-3b5e58c66fe9"
+      },
+      "query": "1983…(A Merman I Should Turn to Be) The Jimi Hendrix Experience",
+      "top": [
+        {
+          "title": "1983-A Merman I Should Turn To Be (2001 Remastered)",
+          "artists": [
+            "Jimi Hendrix",
+            "Gil Evans",
+            "Gil Evans Orchestra"
+          ],
+          "album": null,
+          "version_hint": "remaster",
+          "roon_rank": 1,
+          "match_score": 35,
+          "source": "unknown"
+        },
+        {
+          "title": "1983 (A Merman I Should Turn to Be)",
+          "artists": [
+            "Pinguin Moschner",
+            "Joe Sachse",
+            "Instrumental",
+            "Jimi Hendrix"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 57,
+          "source": "unknown"
+        },
+        {
+          "title": "1983... (A Merman I Should Turn to Be) (Demo)",
+          "artists": [
+            "Jimi Hendrix",
+            "The Jimi Hendrix Experience"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 33,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000151",
+      "intent": "default",
+      "expected": {
+        "title": "Carry That Weight",
+        "artist": "The Beatles",
+        "album": "Abbey Road",
+        "recording_id": "daaee15a-8a4c-4275-a7c1-5b6211f0ec69"
+      },
+      "query": "Carry That Weight The Beatles",
+      "top": [
+        {
+          "title": "Carry That Weight (2019 Mix)",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles",
+            "George Martin"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 2,
+          "match_score": 21,
+          "source": "unknown"
+        },
+        {
+          "title": "Carry That Weight",
+          "artists": [
+            "Chamber Orchestra of the City of Bratislava",
+            "John Lennon",
+            "Paul McCartney"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 5,
+          "match_score": 58,
+          "source": "unknown"
+        },
+        {
+          "title": "Medley: The Beatles - Golden Slumbers - Carry That Weight - The End",
+          "artists": [
+            "Peter Breiner"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 30,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000259",
+      "intent": "default",
+      "expected": {
+        "title": "I Want You (She’s So Heavy)",
+        "artist": "The Beatles",
+        "album": "Abbey Road",
+        "recording_id": "a9a83384-3da3-4c84-af6d-33fcdb1c3e27"
+      },
+      "query": "I Want You (She’s So Heavy) The Beatles",
+      "top": [
+        {
+          "title": "I Want You \"She's So Heavy\" (Arr. Krtička)",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "Lubos Krticka",
+            "Wihan Quartet"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 4,
+          "match_score": 27,
+          "source": "unknown"
+        },
+        {
+          "title": "Being For The Benefit Of Mr Kite! / I Want You (She's So Heavy) / Helter Skelter",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 32,
+          "source": "unknown"
+        },
+        {
+          "title": "I Want You (She's So Heavy)",
+          "artists": [
+            "Guitar Dreamers",
+            "John Lennon",
+            "Paul McCartney"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 3,
+          "match_score": 19,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000277",
+      "intent": "default",
+      "expected": {
+        "title": "Something in the Way / Endless, Nameless",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "recording_id": "d506a8b2-4ba9-49b9-941f-40d1295ebd29"
+      },
+      "query": "Something in the Way / Endless, Nameless Nirvana",
+      "top": [
+        {
+          "title": "Something In The Way (Remastered 2021)",
+          "artists": [
+            "Kurt Cobain",
+            "Nirvana"
+          ],
+          "album": null,
+          "version_hint": "remaster",
+          "roon_rank": 0,
+          "match_score": 29,
+          "source": "unknown"
+        },
+        {
+          "title": "Something In the Way",
+          "artists": [
+            "Kurt Cobain",
+            "Margot & the Nuclear So and So’s"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 5,
+          "match_score": 59,
+          "source": "unknown"
+        },
+        {
+          "title": "Something In The Way",
+          "artists": [
+            "Kurt Cobain",
+            "Burning Brides",
+            "Burning Bridges"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 3,
+          "match_score": 28,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000297",
+      "intent": "default",
+      "expected": {
+        "title": "Wasted Time (reprise)",
+        "artist": "Eagles",
+        "album": "Hotel California",
+        "recording_id": "1f2ce3df-edbf-4da9-84a6-688ca7adbb37"
+      },
+      "query": "Wasted Time (reprise) Eagles",
+      "top": [
+        {
+          "title": "Wasted Time (Reprise) (2013 Remaster)",
+          "artists": [
+            "Jim Ed Norman",
+            "Glenn Frey",
+            "Don Henley",
+            "Eagles"
+          ],
+          "album": null,
+          "version_hint": "remaster",
+          "roon_rank": 0,
+          "match_score": 28,
+          "source": "unknown"
+        },
+        {
+          "title": "Wasted Time (2013 Remaster)",
+          "artists": [
+            "Jim Ed Norman",
+            "Glenn Frey",
+            "Don Henley",
+            "Eagles"
+          ],
+          "album": null,
+          "version_hint": "remaster",
+          "roon_rank": 1,
+          "match_score": 6,
+          "source": "unknown"
+        },
+        {
+          "title": "Wasted Time (Live; 1999 Remaster)",
+          "artists": [
+            "Jim Ed Norman",
+            "Glenn Frey",
+            "Don Henley",
+            "Eagles"
+          ],
+          "album": null,
+          "version_hint": "live",
+          "roon_rank": 2,
+          "match_score": 0,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000332",
+      "intent": "live",
+      "expected": {
+        "title": "All I Want to Be (Is by Your Side)",
+        "artist": "Peter Frampton",
+        "album": "Frampton Comes Alive!",
+        "recording_id": "6bf3e0b0-0594-4572-8a1a-98105839b8a5"
+      },
+      "query": "All I Want to Be (Is by Your Side) Peter Frampton live",
+      "top": [
+        {
+          "title": "All I Want To Be (Is By Your Side) (1999 / Live at Pine Knob Music Theatre, Detroit, MI)",
+          "artists": [
+            "Peter Frampton"
+          ],
+          "album": null,
+          "version_hint": "live",
+          "roon_rank": 0,
+          "match_score": 49,
+          "source": "unknown"
+        },
+        {
+          "title": "All I Want To Be (Is By Your Side)",
+          "artists": [
+            "Peter Frampton"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 59,
+          "source": "unknown"
+        },
+        {
+          "title": "All I Want To Be (Is By Your Side)",
+          "artists": [
+            "Peter Frampton"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 4,
+          "match_score": 59,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000333",
+      "intent": "live",
+      "expected": {
+        "title": "11 O’Clock Tick Tock",
+        "artist": "U2",
+        "album": "Under a Blood Red Sky",
+        "recording_id": "3e681bee-4dda-4816-8437-c59deb9d92a1"
+      },
+      "query": "11 O’Clock Tick Tock U2 live",
+      "top": []
+    },
+    {
+      "case_id": "MBR-000345",
+      "intent": "live",
+      "expected": {
+        "title": "Deuce",
+        "artist": "KISS",
+        "album": "Alive!",
+        "recording_id": "9e4f596d-25e1-454b-825f-2201668ea951"
+      },
+      "query": "Deuce KISS live",
+      "top": []
+    },
+    {
+      "case_id": "MBR-000355",
+      "intent": "live",
+      "expected": {
+        "title": "(I’ll Give You) Money",
+        "artist": "Peter Frampton",
+        "album": "Frampton Comes Alive!",
+        "recording_id": "3592fc36-60b7-4e0b-9209-11b7ac6d9495"
+      },
+      "query": "(I’ll Give You) Money Peter Frampton live",
+      "top": [
+        {
+          "title": "(I'll Give You) Money (Live)",
+          "artists": [
+            "Peter Frampton"
+          ],
+          "album": null,
+          "version_hint": "live",
+          "roon_rank": 0,
+          "match_score": 46,
+          "source": "unknown"
+        },
+        {
+          "title": "(I'll Give You) Money (Live)",
+          "artists": [
+            "Peter Frampton"
+          ],
+          "album": null,
+          "version_hint": "live",
+          "roon_rank": 3,
+          "match_score": 46,
+          "source": "unknown"
+        },
+        {
+          "title": "(I'll Give You) Money (Live At Record Plant Studios, Sausalito, CA/1975)",
+          "artists": [
+            "Peter Frampton"
+          ],
+          "album": null,
+          "version_hint": "live",
+          "roon_rank": 1,
+          "match_score": 31,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000377",
+      "intent": "live",
+      "expected": {
+        "title": "Plateau",
+        "artist": "Nirvana",
+        "album": "MTV Unplugged in New York",
+        "recording_id": "7e630960-3960-4f7f-97e2-378d58fcd6ce"
+      },
+      "query": "Plateau Nirvana live",
+      "top": []
+    },
+    {
+      "case_id": "MBR-000408",
+      "intent": "remix",
+      "expected": {
+        "title": "Ppr:kut",
+        "artist": "Linkin Park",
+        "album": "Reanimation",
+        "recording_id": "87367579-9c86-437c-8e2c-aeb8930a080a"
+      },
+      "query": "Ppr:kut Linkin Park Reanimation",
+      "top": [
+        {
+          "title": "Ppr:kut (Cheapshot and Jubacca Reanimation) (feat. Rasco and Planet Asia)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mike Shinoda",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Jubacca",
+            "DJ Cheapshot",
+            "Rasco",
+            "Planet Asia",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 37,
+          "source": "unknown"
+        },
+        {
+          "title": "Enth E Nd (Kutmasta Kurt Reanimation) (feat. Motion Man)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mike Shinoda",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Kutmasta Kurt",
+            "Motion Man",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 16,
+          "source": "unknown"
+        },
+        {
+          "title": "Reanimation - Opening",
+          "artists": [
+            "Linkin Park",
+            "Mike Shinoda",
+            "Chester Bennington",
+            "Brad Delson",
+            "Joseph Hahn",
+            "Rob Bourdon"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 16,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000415",
+      "intent": "remix",
+      "expected": {
+        "title": "[Stef]",
+        "artist": "Linkin Park",
+        "album": "Reanimation",
+        "recording_id": "1e89bf92-d01c-4f4e-88dc-07f64a7f324b"
+      },
+      "query": "[Stef] Linkin Park Reanimation",
+      "top": [
+        {
+          "title": "Reanimation - X-Ecutioner Style (feat. Black Thought)",
+          "artists": [
+            "Sean C",
+            "Roc Raida",
+            "Black Thought",
+            "Linkin Park",
+            "Robert Bourdon",
+            "Mike Shinoda",
+            "Joseph Hahn",
+            "David Michael Farrell",
+            "Chester Bennington",
+            "Brad Delson",
+            "Rob Bourdon"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 31,
+          "source": "unknown"
+        },
+        {
+          "title": "Reanimation - (Stef)",
+          "artists": [
+            "Linkin Park",
+            "Brad Delson",
+            "Chester Bennington",
+            "David Michael Farrell",
+            "Joseph Hahn",
+            "Mike Shinoda",
+            "Robert Bourdon",
+            "Rob Bourdon"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 16,
+          "source": "unknown"
+        },
+        {
+          "title": "One Step Closer (100 gecs Reanimation)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mike Shinoda",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 16,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000417",
+      "intent": "remix",
+      "expected": {
+        "title": "Frgt/10",
+        "artist": "Linkin Park",
+        "album": "Reanimation",
+        "recording_id": "e2daca7d-5be2-4770-bae3-4a2145407fae"
+      },
+      "query": "Frgt/10 Linkin Park Reanimation",
+      "top": [
+        {
+          "title": "Frgt/10 (Alchemist Reanimation) (feat. Chali 2na)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mark Wakefield",
+            "Mike Shinoda",
+            "David Michael Farrell",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Alchemist",
+            "The Alchemist",
+            "Chali 2na",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 37,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000418",
+      "intent": "remix",
+      "expected": {
+        "title": "Over and Over",
+        "artist": "Madonna",
+        "album": "You Can Dance",
+        "recording_id": "2477cc26-e7cb-46bb-b1af-0957903d612f"
+      },
+      "query": "Over and Over Madonna You Can Dance",
+      "top": [
+        {
+          "title": "literally a metal pipe falling with drums over it wow i didn't know you can make titles this long i wonder how far its gonna go my hands are really cold while im writing this and i dont know how to warm them up and i wish scarlet flandre from touhou was r",
+          "artists": [
+            "jorj1357"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 19,
+          "match_score": 30,
+          "source": "unknown"
+        },
+        {
+          "title": "Really Can't Get Over You (feat. YANICK)",
+          "artists": [
+            "Crushed Velvet And The Velveteers",
+            "Yanick",
+            "Alan Evans"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 6,
+          "match_score": 29,
+          "source": "unknown"
+        },
+        {
+          "title": "Can't Get Over You (feat. Aloe Blacc)",
+          "artists": [
+            "Gabry Ponte",
+            "Aloe Blacc",
+            "Bjørnskov",
+            "Paolo Sandrini"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 12,
+          "match_score": 29,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000420",
+      "intent": "remix",
+      "expected": {
+        "title": "Krwlng",
+        "artist": "Linkin Park",
+        "album": "Reanimation",
+        "recording_id": "c47f2996-cfbb-494d-949b-268fb213eab1"
+      },
+      "query": "Krwlng Linkin Park Reanimation",
+      "top": [
+        {
+          "title": "Krwlng (Mike Shinoda Reanimation) (feat. Aaron Lewis)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mike Shinoda",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Aaron Lewis",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 37,
+          "source": "unknown"
+        },
+        {
+          "title": "Reanimation - X-Ecutioner Style (feat. Black Thought)",
+          "artists": [
+            "Sean C",
+            "Roc Raida",
+            "Black Thought",
+            "Linkin Park",
+            "Robert Bourdon",
+            "Mike Shinoda",
+            "Joseph Hahn",
+            "David Michael Farrell",
+            "Chester Bennington",
+            "Brad Delson",
+            "Rob Bourdon"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 16,
+          "source": "unknown"
+        },
+        {
+          "title": "One Step Closer (100 gecs Reanimation)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mike Shinoda",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 16,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000422",
+      "intent": "remix",
+      "expected": {
+        "title": "Eleanor Rigby / Julia (transition)",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "b46ca3fd-d385-42c9-aba9-7fbb183fc160"
+      },
+      "query": "Eleanor Rigby / Julia (transition) The Beatles Love",
+      "top": [
+        {
+          "title": "Eleanor Rigby / Julia",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 79,
+          "source": "unknown"
+        },
+        {
+          "title": "Eleanor Rigby",
+          "artists": [
+            "Julia Fordham",
+            "John Lennon",
+            "Paul McCartney"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 51,
+          "source": "unknown"
+        },
+        {
+          "title": "Eleanor Rigby",
+          "artists": [
+            "The Lullaby Orchestra"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 6,
+          "match_score": 51,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000424",
+      "intent": "remix",
+      "expected": {
+        "title": "Something / Blue Jay Way (transition)",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "77c9b79b-1ce3-45a2-9322-f9fed80ac4d7"
+      },
+      "query": "Something / Blue Jay Way (transition) The Beatles Love",
+      "top": [
+        {
+          "title": "Something / Blue Jay Way",
+          "artists": [
+            "George Harrison",
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 81,
+          "source": "unknown"
+        },
+        {
+          "title": "Medley: Tomorrow Never Knows - Blue Jay Way - Love Me Do",
+          "artists": [
+            "Dave Liebman Trio",
+            "John Lennon",
+            "George Harrison"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 24,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000426",
+      "intent": "remix",
+      "expected": {
+        "title": "LoveGame (Chew Fu Ghettohouse mix)",
+        "artist": "Lady Gaga",
+        "album": "The Remix",
+        "recording_id": "10f57751-8b98-443b-bb14-2d20cfc239a1"
+      },
+      "query": "LoveGame (Chew Fu Ghettohouse mix) Lady Gaga",
+      "top": [
+        {
+          "title": "LoveGame (Chew Fu Ghettohouse Fix)",
+          "artists": [
+            "Lady Gaga",
+            "RedOne",
+            "Marilyn Manson"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 44,
+          "source": "unknown"
+        },
+        {
+          "title": "Paparazzi (CHEW FU Ghettohouse Fix)",
+          "artists": [
+            "Lady Gaga",
+            "Rob Fusari"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 23,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000434",
+      "intent": "remix",
+      "expected": {
+        "title": "Enjoy the Silence ’04 (Timo Maas extended remix)",
+        "artist": "Depeche Mode",
+        "album": "Remixes 81–04",
+        "recording_id": "0d1b26ea-289c-409d-b91c-e0afae4bead6"
+      },
+      "query": "Enjoy the Silence ’04 (Timo Maas extended remix) Depeche Mode",
+      "top": [
+        {
+          "title": "Enjoy the Silence (Timo Maas Extended Remix)",
+          "artists": [
+            "Martin L. Gore",
+            "Depeche Mode"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 0,
+          "match_score": 72,
+          "source": "unknown"
+        },
+        {
+          "title": "Enjoy The Silence (As Made Famous by Depeche Mode) (12\" Extended Dance ReMixed)",
+          "artists": [
+            "Workout Remix Factory"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 2,
+          "match_score": 31,
+          "source": "unknown"
+        },
+        {
+          "title": "Enjoy The Silence (DJ Remixed)",
+          "artists": [
+            "DJ Remixed"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 17,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000435",
+      "intent": "remix",
+      "expected": {
+        "title": "Rnw@y",
+        "artist": "Linkin Park",
+        "album": "Reanimation",
+        "recording_id": "b17ce211-77b0-4641-ad59-eeab18d5cf36"
+      },
+      "query": "Rnw@y Linkin Park Reanimation",
+      "top": [
+        {
+          "title": "Rnw@y (Backyard Bangers Reanimation) (feat. Phoenix Orion)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mark Wakefield",
+            "Mike Shinoda",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Backyard Bangers",
+            "Phoenix Orion",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 37,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000451",
+      "intent": "remix",
+      "expected": {
+        "title": "Over and Over (dub version)",
+        "artist": "Madonna",
+        "album": "You Can Dance",
+        "recording_id": "21738928-a38e-41ce-b892-616a7cbc912f"
+      },
+      "query": "Over and Over (dub version) Madonna",
+      "top": [
+        {
+          "title": "Over And Over (Originally Performed By Madonna) (Karaoke Version)",
+          "artists": [
+            "Anna Gramm",
+            "Madonna",
+            "Stephen Bray"
+          ],
+          "album": null,
+          "version_hint": "alternate",
+          "roon_rank": 0,
+          "match_score": 46,
+          "source": "unknown"
+        },
+        {
+          "title": "Over and Over",
+          "artists": [
+            "Sussan Kameron",
+            "Madonna"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 4,
+          "match_score": 48,
+          "source": "unknown"
+        },
+        {
+          "title": "Over and Over (In the Style of Madonna) (Instrumental Version)",
+          "artists": [
+            "Starlite Karaoke",
+            "Madonna"
+          ],
+          "album": null,
+          "version_hint": "alternate",
+          "roon_rank": 2,
+          "match_score": 31,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000457",
+      "intent": "remix",
+      "expected": {
+        "title": "Master and Servant (An On‐U Sound Science Fiction Dance Hall Classic)",
+        "artist": "Depeche Mode",
+        "album": "Remixes 81–04",
+        "recording_id": "202dc00b-e986-4ad1-b296-f67774ff67b7"
+      },
+      "query": "Master and Servant (An On‐U Sound Science Fiction Dance Hall Classic) Depeche Mode Remixes 81–04",
+      "top": [
+        {
+          "title": "Master and Servant (An On-Usound Science Fiction Dance Hall Classic)",
+          "artists": [
+            "Martin L. Gore",
+            "Depeche Mode"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 49,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000472",
+      "intent": "remix",
+      "expected": {
+        "title": "Kyur4 th Ich",
+        "artist": "Linkin Park",
+        "album": "Reanimation",
+        "recording_id": "e4c7a4a7-3c4b-48ae-8768-9b3ace53aefc"
+      },
+      "query": "Kyur4 th Ich Linkin Park Reanimation",
+      "top": [
+        {
+          "title": "Kyur4 Th Ich (Chairman Hahn Reanimation)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mike Shinoda",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 44,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000476",
+      "intent": "remix",
+      "expected": {
+        "title": "Where’s the Party",
+        "artist": "Madonna",
+        "album": "You Can Dance",
+        "recording_id": "8bfeb0d5-a681-4993-bf98-15cf1137fb63"
+      },
+      "query": "Where’s the Party Madonna You Can Dance",
+      "top": []
+    }
+  ]
+}

@@ -238,6 +238,98 @@ test("media adapts to artist, album and ambiguous search results", async () => {
   } finally { database.close(); }
 });
 
+test("track cards expose canonical MusicBrainz metadata and the Roon binding", async () => {
+  const { database, context } = fixture();
+  context.trackCatalogService = {
+    describeRoonTrack: async () => ({
+      status: "exact",
+      reason: "unique_compatible_recording",
+      fetched_at: "2026-07-27T20:00:00.000Z",
+      recording: {
+        musicbrainz_id: "recording-1",
+        title: "Everything In Its Right Place",
+        disambiguation: "original studio recording",
+        video: false,
+        duration_seconds: 251,
+        duration_source: "musicbrainz_recording_median",
+        isrcs: ["GBAYE0000812"],
+        artist_credit: [{ musicbrainz_id: "artist-1", name: "Radiohead", join_phrase: "" }],
+        artists: []
+      },
+      work: {
+        musicbrainz_id: "work-1",
+        title: "Everything In Its Right Place",
+        type: "Song",
+        language: "eng",
+        iswcs: ["T-010.123.456-7"],
+        disambiguation: null,
+        relation_type: "performance",
+        relation_attributes: []
+      },
+      credits: [],
+      composers: ["Thom Yorke"],
+      lyricists: ["Thom Yorke"],
+      genres: [{ name: "alternative rock", count: 8, entity: "recording" }],
+      release_group: {
+        musicbrainz_id: "release-group-1",
+        title: "Kid A",
+        artist_credit: [],
+        first_release_date: "2000-10-02",
+        release_year: 2000,
+        primary_type: "Album",
+        secondary_types: [],
+        disambiguation: null,
+        selection_reason: "catalog_album_matches_observed_album"
+      },
+      release: null,
+      cover_art: {
+        entity_type: "release_group",
+        entity_id: "release-group-1",
+        image_id: "cover-1",
+        original_url: "https://archive.org/original.jpg",
+        thumbnail_250_url: "https://archive.org/250.jpg",
+        thumbnail_500_url: "https://archive.org/500.jpg",
+        thumbnail_1200_url: "https://archive.org/1200.jpg",
+        front: true,
+        back: false,
+        approved: true,
+        source: "cover_art_archive"
+      },
+      roon_binding: {
+        binding_id: "binding-1",
+        recording_id: "recording-1",
+        item_key: "roon-item",
+        result_id: "track-1",
+        source: "qobuz",
+        canonical_query: "Everything In Its Right Place Radiohead",
+        reusable: false,
+        playable: true,
+        status: "observed",
+        confidence: "high",
+        selection_origin: "display",
+        observed_at: "2026-07-27T20:00:00.000Z",
+        last_verified_at: "2026-07-27T20:00:00.000Z"
+      },
+      provenance: {
+        canonical_metadata: "musicbrainz",
+        cover_art: "cover_art_archive",
+        playback: "roon"
+      },
+      warnings: []
+    })
+  };
+  try {
+    const view = await new WidgetV2ViewService(context).media({ result_id: "track-1" });
+    assert.equal(view.view, "track");
+    assert.equal(view.catalog.recording.musicbrainz_id, "recording-1");
+    assert.equal(view.catalog.release_group.title, "Kid A");
+    assert.equal(view.catalog.roon_binding.source, "qobuz");
+    assert.equal(view.catalog.cover_art.thumbnail_500_url, "https://archive.org/500.jpg");
+  } finally {
+    database.close();
+  }
+});
+
 test("playlist view contains cover, description and lightweight track rows", () => {
   const { database, context } = fixture();
   try {

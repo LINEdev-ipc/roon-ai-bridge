@@ -59,7 +59,14 @@ test("creates a new database from the canonical versioned schema", () => withTem
       "action_logs",
       "system_events",
       "extension_registry",
-      "metadata_provider_cache"
+      "metadata_provider_cache",
+      "catalog_recordings",
+      "catalog_artists",
+      "catalog_works",
+      "catalog_release_groups",
+      "catalog_releases",
+      "catalog_cover_art",
+      "roon_recording_bindings"
     ]) {
       assert.ok(tables.includes(expected), `missing ${expected}`);
     }

@@ -18,6 +18,7 @@ import { PlaylistMetadataEnrichmentService } from "../services/playlistMetadataE
 import { PlaylistRepairService } from "../services/playlistRepairService";
 import { PortalAuthService } from "../services/portalAuthService";
 import { RecordingMetadataService } from "../services/recordingMetadataService";
+import { TrackCatalogService } from "../services/trackCatalogService";
 import { SystemManagementService } from "../services/systemManagementService";
 import { createObservedLogger, TechnicalLogService } from "../services/technicalLogService";
 import { ToolAccessService } from "../services/toolAccessService";
@@ -56,6 +57,13 @@ export function createApplication(config: AppConfig): ApplicationRuntime {
   const recordingMetadataService = new RecordingMetadataService(fetch, {
     cache: metadataProviderCacheService
   });
+  const trackCatalogService = new TrackCatalogService(
+    database,
+    recordingMetadataService,
+    mediaService,
+    metadataProviderCacheService,
+    logger
+  );
   const playlistCatalogDiagnosticsService = new PlaylistCatalogDiagnosticsService(
     playlistService,
     recordingMetadataService,
@@ -73,14 +81,16 @@ export function createApplication(config: AppConfig): ApplicationRuntime {
     playlistService,
     mediaService,
     playlistMetadataEnrichmentService,
-    logger
+    logger,
+    trackCatalogService
   );
   const playlistBuildService = new PlaylistBuildService(
     playlistService,
     mediaService,
     logger,
     "streaming_first",
-    playlistMetadataEnrichmentService
+    playlistMetadataEnrichmentService,
+    trackCatalogService
   );
   const apiKeyService = new ApiKeyService(config, database);
   const toolAccessService = new ToolAccessService(database);
@@ -100,6 +110,7 @@ export function createApplication(config: AppConfig): ApplicationRuntime {
     playlistMetadataEnrichmentService,
     playlistRepairService,
     playlistCatalogDiagnosticsService,
+    trackCatalogService,
     mediaService,
     systemManagementService,
     zonePresetService,
@@ -139,6 +150,7 @@ export function createApplication(config: AppConfig): ApplicationRuntime {
       playlistMetadataEnrichmentService,
       playlistRepairService,
       playlistCatalogDiagnosticsService,
+      trackCatalogService,
       recordingMetadataService,
       metadataProviderCacheService,
       oauthService,

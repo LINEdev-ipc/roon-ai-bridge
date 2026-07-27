@@ -1,0 +1,1907 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-22T10:11:13.484617+00:00",
+  "overall": {
+    "total": 500,
+    "top1": 417,
+    "top5": 452,
+    "top10": 457,
+    "top25": 461,
+    "unresolved": 39,
+    "variant_unverified": 26,
+    "variant_conflict": 6,
+    "candidate_missing": 7,
+    "top1_pct": 83.4,
+    "top5_pct": 90.4,
+    "top10_pct": 91.4,
+    "top25_pct": 92.2
+  },
+  "by_intent": {
+    "cover": {
+      "total": 20,
+      "top1": 18,
+      "top5": 20,
+      "top10": 20,
+      "top25": 20,
+      "unresolved": 0,
+      "variant_unverified": 0,
+      "variant_conflict": 0,
+      "candidate_missing": 0,
+      "top1_pct": 90.0,
+      "top5_pct": 100.0,
+      "top10_pct": 100.0,
+      "top25_pct": 100.0
+    },
+    "default": {
+      "total": 320,
+      "top1": 292,
+      "top5": 313,
+      "top10": 315,
+      "top25": 317,
+      "unresolved": 3,
+      "variant_unverified": 0,
+      "variant_conflict": 3,
+      "candidate_missing": 0,
+      "top1_pct": 91.25,
+      "top5_pct": 97.81,
+      "top10_pct": 98.44,
+      "top25_pct": 99.06
+    },
+    "live": {
+      "total": 80,
+      "top1": 64,
+      "top5": 73,
+      "top10": 76,
+      "top25": 77,
+      "unresolved": 3,
+      "variant_unverified": 0,
+      "variant_conflict": 0,
+      "candidate_missing": 3,
+      "top1_pct": 80.0,
+      "top5_pct": 91.25,
+      "top10_pct": 95.0,
+      "top25_pct": 96.25
+    },
+    "remix": {
+      "total": 44,
+      "top1": 37,
+      "top5": 40,
+      "top10": 40,
+      "top25": 40,
+      "unresolved": 4,
+      "variant_unverified": 0,
+      "variant_conflict": 2,
+      "candidate_missing": 2,
+      "top1_pct": 84.09,
+      "top5_pct": 90.91,
+      "top10_pct": 90.91,
+      "top25_pct": 90.91
+    },
+    "specific_version": {
+      "total": 36,
+      "top1": 6,
+      "top5": 6,
+      "top10": 6,
+      "top25": 7,
+      "unresolved": 29,
+      "variant_unverified": 26,
+      "variant_conflict": 1,
+      "candidate_missing": 2,
+      "top1_pct": 16.67,
+      "top5_pct": 16.67,
+      "top10_pct": 16.67,
+      "top25_pct": 19.44
+    }
+  },
+  "dataset": {
+    "cases": 500,
+    "release_groups": 72,
+    "distribution": {
+      "default": 320,
+      "live": 80,
+      "specific_version": 36,
+      "remix": 44,
+      "cover": 20
+    },
+    "unresolved_specs": [
+      {
+        "album": "Purple Rain",
+        "artist": "Prince and The Revolution",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "Trans-Europe Express",
+        "artist": "Kraftwerk",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "The College Dropout",
+        "artist": "Kanye West",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "Live at the Apollo",
+        "artist": "James Brown",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "Pulse",
+        "artist": "Pink Floyd",
+        "reason": "release_group_not_found"
+      },
+      {
+        "album": "Y34RZ3R0R3M1X3D",
+        "artist": "Nine Inch Nails",
+        "reason": "release_group_not_found"
+      }
+    ]
+  },
+  "failure_examples": [
+    {
+      "case_id": "MBR-000139",
+      "intent": "default",
+      "expected": {
+        "title": "1983…(A Merman I Should Turn to Be)",
+        "artist": "The Jimi Hendrix Experience",
+        "album": "Electric Ladyland",
+        "recording_id": "ce1c0687-99b9-4bc7-99e1-3b5e58c66fe9"
+      },
+      "query": "1983…(A Merman I Should Turn to Be) The Jimi Hendrix Experience",
+      "identity_candidate_position": 3,
+      "identity_candidate_variant": "alternate",
+      "top": [
+        {
+          "title": "1983-A Merman I Should Turn To Be (2001 Remastered)",
+          "artists": [
+            "Jimi Hendrix",
+            "Gil Evans",
+            "Gil Evans Orchestra"
+          ],
+          "album": null,
+          "version_hint": "remaster",
+          "roon_rank": 1,
+          "match_score": 35,
+          "source": "unknown"
+        },
+        {
+          "title": "1983 (A Merman I Should Turn to Be)",
+          "artists": [
+            "Pinguin Moschner",
+            "Joe Sachse",
+            "Instrumental",
+            "Jimi Hendrix"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 57,
+          "source": "unknown"
+        },
+        {
+          "title": "1983... (A Merman I Should Turn to Be) (Demo)",
+          "artists": [
+            "Jimi Hendrix",
+            "The Jimi Hendrix Experience"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 33,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000151",
+      "intent": "default",
+      "expected": {
+        "title": "Carry That Weight",
+        "artist": "The Beatles",
+        "album": "Abbey Road",
+        "recording_id": "daaee15a-8a4c-4275-a7c1-5b6211f0ec69"
+      },
+      "query": "Carry That Weight The Beatles",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "remix",
+      "top": [
+        {
+          "title": "Carry That Weight (2019 Mix)",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles",
+            "George Martin"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 2,
+          "match_score": 21,
+          "source": "unknown"
+        },
+        {
+          "title": "Carry That Weight",
+          "artists": [
+            "Chamber Orchestra of the City of Bratislava",
+            "John Lennon",
+            "Paul McCartney"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 5,
+          "match_score": 58,
+          "source": "unknown"
+        },
+        {
+          "title": "Medley: The Beatles - Golden Slumbers - Carry That Weight - The End",
+          "artists": [
+            "Peter Breiner"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 30,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000259",
+      "intent": "default",
+      "expected": {
+        "title": "I Want You (She’s So Heavy)",
+        "artist": "The Beatles",
+        "album": "Abbey Road",
+        "recording_id": "a9a83384-3da3-4c84-af6d-33fcdb1c3e27"
+      },
+      "query": "I Want You (She’s So Heavy) The Beatles",
+      "identity_candidate_position": 7,
+      "identity_candidate_variant": "remix",
+      "top": [
+        {
+          "title": "I Want You \"She's So Heavy\" (Arr. Krtička)",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "Lubos Krticka",
+            "Wihan Quartet"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 4,
+          "match_score": 27,
+          "source": "unknown"
+        },
+        {
+          "title": "Being For The Benefit Of Mr Kite! / I Want You (She's So Heavy) / Helter Skelter",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 32,
+          "source": "unknown"
+        },
+        {
+          "title": "I Want You (She's So Heavy)",
+          "artists": [
+            "Guitar Dreamers",
+            "John Lennon",
+            "Paul McCartney"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 3,
+          "match_score": 19,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000333",
+      "intent": "live",
+      "expected": {
+        "title": "11 O’Clock Tick Tock",
+        "artist": "U2",
+        "album": "Under a Blood Red Sky",
+        "recording_id": "3e681bee-4dda-4816-8437-c59deb9d92a1"
+      },
+      "query": "11 O’Clock Tick Tock U2 live",
+      "identity_candidate_position": null,
+      "identity_candidate_variant": null,
+      "top": []
+    },
+    {
+      "case_id": "MBR-000345",
+      "intent": "live",
+      "expected": {
+        "title": "Deuce",
+        "artist": "KISS",
+        "album": "Alive!",
+        "recording_id": "9e4f596d-25e1-454b-825f-2201668ea951"
+      },
+      "query": "Deuce KISS live",
+      "identity_candidate_position": null,
+      "identity_candidate_variant": null,
+      "top": []
+    },
+    {
+      "case_id": "MBR-000377",
+      "intent": "live",
+      "expected": {
+        "title": "Plateau",
+        "artist": "Nirvana",
+        "album": "MTV Unplugged in New York",
+        "recording_id": "7e630960-3960-4f7f-97e2-378d58fcd6ce"
+      },
+      "query": "Plateau Nirvana live",
+      "identity_candidate_position": null,
+      "identity_candidate_variant": null,
+      "top": []
+    },
+    {
+      "case_id": "MBR-000401",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Piggy (Nothing Can Stop Me Now)",
+        "artist": "Nine Inch Nails",
+        "album": "Further Down the Spiral",
+        "recording_id": "7ad693df-b012-427c-8d2b-3d85f493a9db"
+      },
+      "query": "Piggy (Nothing Can Stop Me Now) Nine Inch Nails Further Down the Spiral",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Piggy (Nothing Can Stop Me Now)",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 82,
+          "source": "unknown"
+        },
+        {
+          "title": "Piggy",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 56,
+          "source": "unknown"
+        },
+        {
+          "title": "Piggy",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 56,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000402",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Superfly Sister",
+        "artist": "Michael Jackson",
+        "album": "Blood on the Dance Floor: HIStory in the Mix",
+        "recording_id": "475045a3-699d-47a8-8951-45e73424e732"
+      },
+      "query": "Superfly Sister Michael Jackson Blood on the Dance Floor: HIStory in the Mix",
+      "identity_candidate_position": 2,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Blood on the Dance Floor",
+          "artists": [
+            "Teddy Riley",
+            "Michael Jackson",
+            "Brad Buxer"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 57,
+          "source": "unknown"
+        },
+        {
+          "title": "Superfly Sister",
+          "artists": [
+            "Bryan Loren",
+            "Michael Jackson"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 48,
+          "source": "unknown"
+        },
+        {
+          "title": "Blood on the Dance Floor (In the Style of Michael Jackson) (Instrumental Version)",
+          "artists": [
+            "Starlite Karaoke",
+            "The Jacksons"
+          ],
+          "album": null,
+          "version_hint": "alternate",
+          "roon_rank": 14,
+          "match_score": 34,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000403",
+      "intent": "specific_version",
+      "expected": {
+        "title": "While My Guitar Gently Weeps",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "a1710405-7540-4610-96c8-25e5b7688a05"
+      },
+      "query": "While My Guitar Gently Weeps The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "While My Guitar Gently Weeps",
+          "artists": [
+            "George Harrison",
+            "John Lennon",
+            "Paul McCartney",
+            "George Martin",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 81,
+          "source": "unknown"
+        },
+        {
+          "title": "While My Guitar Gently Weeps",
+          "artists": [
+            "George Harrison",
+            "The Jeff Healey Band"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 6,
+          "match_score": 65,
+          "source": "unknown"
+        },
+        {
+          "title": "While My Guitar Gently Weeps",
+          "artists": [
+            "George Harrison",
+            "Madi Diaz",
+            "The Guest and the Host"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 7,
+          "match_score": 65,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000405",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Because",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "ca5bc67d-9099-4d24-b33b-13cfda36b963"
+      },
+      "query": "Because The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Because",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 66,
+          "source": "unknown"
+        },
+        {
+          "title": "Love Me Do",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 12,
+          "match_score": 41,
+          "source": "unknown"
+        },
+        {
+          "title": "Because",
+          "artists": [
+            "3",
+            "Lennon"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 14,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000407",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Within You Without You / Tomorrow Never Knows",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "aa289e47-f79c-4ff2-943d-be0027e21461"
+      },
+      "query": "Within You Without You / Tomorrow Never Knows The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Within You Without You / Tomorrow Never Knows",
+          "artists": [
+            "George Harrison",
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 83,
+          "source": "unknown"
+        },
+        {
+          "title": "Tomorrow Never Knows / Within You Without You",
+          "artists": [
+            "Takes the Square",
+            "John Lennon",
+            "Paul McCartney",
+            "George Harrison"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 57,
+          "source": "unknown"
+        },
+        {
+          "title": "Within You Without You",
+          "artists": [
+            "Silke Gonska",
+            "George Harrison"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 8,
+          "match_score": 34,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000409",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Something About Us (Love Theme From Interstella 5555)",
+        "artist": "Daft Punk",
+        "album": "Daft Club",
+        "recording_id": "43c55fb8-d18f-4ff3-a0d8-c6b54da43e5b"
+      },
+      "query": "Something About Us (Love Theme From Interstella 5555) Daft Punk Daft Club",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Something About Us [Love Theme from Interstella 5555]",
+          "artists": [
+            "Daft Punk",
+            "Thomas Bangalter",
+            "Guy‐Manuel de Homem‐Christo"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 47,
+          "source": "unknown"
+        },
+        {
+          "title": "Something About Us",
+          "artists": [
+            "Thomas Bangalter",
+            "Guy‐Manuel de Homem‐Christo",
+            "Daft Punk"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 63,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000410",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Are People People?",
+        "artist": "Depeche Mode",
+        "album": "Remixes 81–04",
+        "recording_id": "6cc441b5-d56a-4d4e-971f-a3e990cb65bf"
+      },
+      "query": "Are People People? Depeche Mode Remixes 81–04",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Are People People?",
+          "artists": [
+            "Martin L. Gore",
+            "Depeche Mode"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 78,
+          "source": "unknown"
+        },
+        {
+          "title": "People Are People",
+          "artists": [
+            "Martin L. Gore",
+            "Depeche Mode"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 47,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000411",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Aerodynamite",
+        "artist": "Daft Punk",
+        "album": "Daft Club",
+        "recording_id": "e36a5702-459a-49e7-8a5b-4822f49f7923"
+      },
+      "query": "Aerodynamite Daft Punk Daft Club",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Aerodynamite",
+          "artists": [
+            "Daft Punk",
+            "Thomas Bangalter",
+            "Guy‐Manuel de Homem‐Christo"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 56,
+          "source": "unknown"
+        },
+        {
+          "title": "Indo Silver Club",
+          "artists": [
+            "Thomas Bangalter",
+            "Guy‐Manuel de Homem‐Christo",
+            "Daft Punk"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 3,
+          "match_score": 21,
+          "source": "unknown"
+        },
+        {
+          "title": "Something About Us (Love Theme from Interstella 5555)",
+          "artists": [
+            "Thomas Bangalter",
+            "Guy‐Manuel de Homem‐Christo",
+            "Daft Punk"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 4,
+          "match_score": 15,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000412",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Help!",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "c10fa5b4-9fc7-467c-a5ad-dc2cd61dc5a7"
+      },
+      "query": "Help! The Beatles Love",
+      "identity_candidate_position": 2,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "You've Got To Hide Your Love Away (Remastered 2009)",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "remaster",
+          "roon_rank": 0,
+          "match_score": 21,
+          "source": "unknown"
+        },
+        {
+          "title": "Help!",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 51,
+          "source": "unknown"
+        },
+        {
+          "title": "Within You Without You / Tomorrow Never Knows",
+          "artists": [
+            "George Harrison",
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 4,
+          "match_score": 9,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000413",
+      "intent": "remix",
+      "expected": {
+        "title": "Money (Fire Island radio edit)",
+        "artist": "Michael Jackson",
+        "album": "Blood on the Dance Floor: HIStory in the Mix",
+        "recording_id": "0833313d-f660-4bde-8781-f0c473853722"
+      },
+      "query": "Money (Fire Island radio edit) Michael Jackson Blood on the Dance Floor: HIStory in the Mix",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "edit",
+      "top": [
+        {
+          "title": "Money (Fire Island Radio Edit)",
+          "artists": [
+            "Michael Jackson"
+          ],
+          "album": null,
+          "version_hint": "edit",
+          "roon_rank": 0,
+          "match_score": 72,
+          "source": "unknown"
+        },
+        {
+          "title": "This Time Around (D.M. Radio Mix)",
+          "artists": [
+            "René Moore",
+            "Dallas Austin",
+            "Bruce Swedien",
+            "Michael Jackson",
+            "The Notorious B.I.G.",
+            "Paul Shapiro"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 1,
+          "match_score": 32,
+          "source": "unknown"
+        },
+        {
+          "title": "Earth Song (Hani's Club Experience)",
+          "artists": [
+            "Michael Jackson"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 10,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000415",
+      "intent": "specific_version",
+      "expected": {
+        "title": "[Stef]",
+        "artist": "Linkin Park",
+        "album": "Reanimation",
+        "recording_id": "1e89bf92-d01c-4f4e-88dc-07f64a7f324b"
+      },
+      "query": "[Stef] Linkin Park Reanimation",
+      "identity_candidate_position": null,
+      "identity_candidate_variant": null,
+      "top": [
+        {
+          "title": "Reanimation - X-Ecutioner Style (feat. Black Thought)",
+          "artists": [
+            "Sean C",
+            "Roc Raida",
+            "Black Thought",
+            "Linkin Park",
+            "Robert Bourdon",
+            "Mike Shinoda",
+            "Joseph Hahn",
+            "David Michael Farrell",
+            "Chester Bennington",
+            "Brad Delson",
+            "Rob Bourdon"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 31,
+          "source": "unknown"
+        },
+        {
+          "title": "Reanimation - (Stef)",
+          "artists": [
+            "Linkin Park",
+            "Brad Delson",
+            "Chester Bennington",
+            "David Michael Farrell",
+            "Joseph Hahn",
+            "Mike Shinoda",
+            "Robert Bourdon",
+            "Rob Bourdon"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 16,
+          "source": "unknown"
+        },
+        {
+          "title": "One Step Closer (100 gecs Reanimation)",
+          "artists": [
+            "Brad Delson",
+            "Chester Bennington",
+            "Mike Shinoda",
+            "Joseph “Joe” Hahn",
+            "Rob Bourdon",
+            "Linkin Park"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 16,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000419",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Eraser (Denial; Realization)",
+        "artist": "Nine Inch Nails",
+        "album": "Further Down the Spiral",
+        "recording_id": "98102d11-d289-484c-bb84-49239ce465b9"
+      },
+      "query": "Eraser (Denial; Realization) Nine Inch Nails Further Down the Spiral",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Eraser (Denial: Realization)",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 43,
+          "source": "unknown"
+        },
+        {
+          "title": "The Downward Spiral (The Bottom)",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 7,
+          "match_score": 31,
+          "source": "unknown"
+        },
+        {
+          "title": "Eraser (Polite)",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 21,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000421",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Back in the U.S.S.R.",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "45e13b37-8930-43ca-a40c-7035946bf4c6"
+      },
+      "query": "Back in the U.S.S.R. The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "remix",
+      "top": [
+        {
+          "title": "Back In The U.S.S.R. (2018 Mix)",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 1,
+          "match_score": 25,
+          "source": "unknown"
+        },
+        {
+          "title": "Back In The U.S.S.R",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 66,
+          "source": "unknown"
+        },
+        {
+          "title": "Back In The U.S.S.R.",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "Ramsey Lewis"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 10,
+          "match_score": 34,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000422",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Eleanor Rigby / Julia (transition)",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "b46ca3fd-d385-42c9-aba9-7fbb183fc160"
+      },
+      "query": "Eleanor Rigby / Julia (transition) The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Eleanor Rigby / Julia",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 79,
+          "source": "unknown"
+        },
+        {
+          "title": "Eleanor Rigby",
+          "artists": [
+            "Julia Fordham",
+            "John Lennon",
+            "Paul McCartney"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 51,
+          "source": "unknown"
+        },
+        {
+          "title": "Eleanor Rigby",
+          "artists": [
+            "The Lullaby Orchestra"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 6,
+          "match_score": 51,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000424",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Something / Blue Jay Way (transition)",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "77c9b79b-1ce3-45a2-9322-f9fed80ac4d7"
+      },
+      "query": "Something / Blue Jay Way (transition) The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Something / Blue Jay Way",
+          "artists": [
+            "George Harrison",
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 81,
+          "source": "unknown"
+        },
+        {
+          "title": "Medley: Tomorrow Never Knows - Blue Jay Way - Love Me Do",
+          "artists": [
+            "Dave Liebman Trio",
+            "John Lennon",
+            "George Harrison"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 24,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000427",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Revolution",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "88c89816-ba99-4e43-83bd-1e70893e4e90"
+      },
+      "query": "Revolution The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Revolution",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 66,
+          "source": "unknown"
+        },
+        {
+          "title": "Love Me Do",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 10,
+          "match_score": 41,
+          "source": "unknown"
+        },
+        {
+          "title": "Within You Without You / Tomorrow Never Knows",
+          "artists": [
+            "George Harrison",
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 19,
+          "match_score": 9,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000428",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Being for the Benefit of Mr. Kite! / I Want You (She’s So Heavy) / Helter Skelter",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "6ff31a54-b989-42e3-bcc9-cd06ce83edd1"
+      },
+      "query": "Being for the Benefit of Mr. Kite! / I Want You (She’s So Heavy) / Helter Skelter The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Being For The Benefit Of Mr Kite! / I Want You (She's So Heavy) / Helter Skelter",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 52,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000436",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Gnik Nus",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "fce6766f-ab7d-4029-865e-7df3e4264cb7"
+      },
+      "query": "Gnik Nus The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Gnik Nus",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 72,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000438",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Is It Scary",
+        "artist": "Michael Jackson",
+        "album": "Blood on the Dance Floor: HIStory in the Mix",
+        "recording_id": "96ea72d6-c51e-4441-9472-eb8e4c2b3c21"
+      },
+      "query": "Is It Scary Michael Jackson Blood on the Dance Floor: HIStory in the Mix",
+      "identity_candidate_position": 2,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Blood on the Dance Floor",
+          "artists": [
+            "Teddy Riley",
+            "Michael Jackson",
+            "Brad Buxer"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 57,
+          "source": "unknown"
+        },
+        {
+          "title": "Is It Scary",
+          "artists": [
+            "Jimmy Jam",
+            "Terry Lewis",
+            "Michael Jackson"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 43,
+          "source": "unknown"
+        },
+        {
+          "title": "BLOOD ON THE DANCE FLOOR (SWG Remastered Extended Mix) - MICHAEL JACKSON (HIStory In The Mix)",
+          "artists": [
+            "Asani"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 13,
+          "match_score": 33,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000442",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Hurt",
+        "artist": "Nine Inch Nails",
+        "album": "Further Down the Spiral",
+        "recording_id": "7e418d08-619c-452d-a70b-ed32593a6fcb"
+      },
+      "query": "Hurt Nine Inch Nails Further Down the Spiral",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Hurt",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 56,
+          "source": "unknown"
+        },
+        {
+          "title": "The Downward Spiral (The Bottom)",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 5,
+          "match_score": 31,
+          "source": "unknown"
+        },
+        {
+          "title": "At The Heart Of It All",
+          "artists": [
+            "Trent Reznor",
+            "Aphex Twin",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 21,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000452",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Morphine",
+        "artist": "Michael Jackson",
+        "album": "Blood on the Dance Floor: HIStory in the Mix",
+        "recording_id": "89c01dbf-4e9f-46e9-9dbc-397002a1d0a2"
+      },
+      "query": "Morphine Michael Jackson Blood on the Dance Floor: HIStory in the Mix",
+      "identity_candidate_position": 2,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Blood on the Dance Floor",
+          "artists": [
+            "Teddy Riley",
+            "Michael Jackson",
+            "Brad Buxer"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 57,
+          "source": "unknown"
+        },
+        {
+          "title": "Morphine",
+          "artists": [
+            "Michael Jackson",
+            "Jorge Del Barrio",
+            "Andraé Crouch Choir"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 42,
+          "source": "unknown"
+        },
+        {
+          "title": "Blood on the Dance Floor (In the Style of Michael Jackson) (Instrumental Version)",
+          "artists": [
+            "Starlite Karaoke",
+            "The Jacksons"
+          ],
+          "album": null,
+          "version_hint": "alternate",
+          "roon_rank": 13,
+          "match_score": 34,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000454",
+      "intent": "remix",
+      "expected": {
+        "title": "Voyager (Dominique Torti’s Wild Style edit)",
+        "artist": "Daft Punk",
+        "album": "Daft Club",
+        "recording_id": "15dae73a-e743-49dd-b2a5-77ed31c8b551"
+      },
+      "query": "Voyager (Dominique Torti’s Wild Style edit) Daft Punk Daft Club",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "edit",
+      "top": [
+        {
+          "title": "Voyager (Dominique Torti's Wild Style Edit)",
+          "artists": [
+            "Thomas Bangalter",
+            "Guy‐Manuel de Homem‐Christo",
+            "Daft Punk"
+          ],
+          "album": null,
+          "version_hint": "edit",
+          "roon_rank": 0,
+          "match_score": 47,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000456",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Ghosts",
+        "artist": "Michael Jackson",
+        "album": "Blood on the Dance Floor: HIStory in the Mix",
+        "recording_id": "db02db8e-fbfb-408f-b9ac-9742cea8761a"
+      },
+      "query": "Ghosts Michael Jackson Blood on the Dance Floor: HIStory in the Mix",
+      "identity_candidate_position": 2,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Blood on the Dance Floor",
+          "artists": [
+            "Teddy Riley",
+            "Michael Jackson",
+            "Brad Buxer"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 57,
+          "source": "unknown"
+        },
+        {
+          "title": "Ghosts",
+          "artists": [
+            "Teddy Riley",
+            "Michael Jackson"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 41,
+          "source": "unknown"
+        },
+        {
+          "title": "Blood on the Dance Floor (In the Style of Michael Jackson) (Instrumental Version)",
+          "artists": [
+            "Starlite Karaoke",
+            "The Jacksons"
+          ],
+          "album": null,
+          "version_hint": "alternate",
+          "roon_rank": 14,
+          "match_score": 34,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000457",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Master and Servant (An On‐U Sound Science Fiction Dance Hall Classic)",
+        "artist": "Depeche Mode",
+        "album": "Remixes 81–04",
+        "recording_id": "202dc00b-e986-4ad1-b296-f67774ff67b7"
+      },
+      "query": "Master and Servant (An On‐U Sound Science Fiction Dance Hall Classic) Depeche Mode Remixes 81–04",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Master and Servant (An On-Usound Science Fiction Dance Hall Classic)",
+          "artists": [
+            "Martin L. Gore",
+            "Depeche Mode"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 49,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000461",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Self Destruction, Final",
+        "artist": "Nine Inch Nails",
+        "album": "Further Down the Spiral",
+        "recording_id": "96821787-5781-472e-8de6-15fbebe0bbd8"
+      },
+      "query": "Self Destruction, Final Nine Inch Nails Further Down the Spiral",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Self Destruction, Final",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 81,
+          "source": "unknown"
+        },
+        {
+          "title": "The Art Of Self Destruction, Part One",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 31,
+          "source": "unknown"
+        },
+        {
+          "title": "The Downward Spiral (The Bottom)",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 8,
+          "match_score": 31,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000464",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Sgt. Pepper’s Lonely Hearts Club Band (reprise)",
+        "artist": "The Beatles",
+        "album": "Love",
+        "recording_id": "cab6b72a-5064-4a96-a145-c0aa6ac82c59"
+      },
+      "query": "Sgt. Pepper’s Lonely Hearts Club Band (reprise) The Beatles Love",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Sgt. Pepper's Lonely Hearts Club Band (Reprise)",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 47,
+          "source": "unknown"
+        },
+        {
+          "title": "Sgt. Pepper's Lonely Hearts Club Band (Take 9 And Speech)",
+          "artists": [
+            "John Lennon",
+            "Paul McCartney",
+            "The Beatles"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 4,
+          "match_score": 31,
+          "source": "unknown"
+        },
+        {
+          "title": "Sgt. Pepper's Lonely Hearts Club Band / With a Little Help from my Friends / Sgt. Peppers Reprise",
+          "artists": [
+            "Newton Wayland",
+            "Rochester Philharmonic Orchestra",
+            "John Bayless",
+            "Paul McCartney",
+            "John Lennon"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 3,
+          "match_score": 30,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000467",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Breathing in Fumes",
+        "artist": "Depeche Mode",
+        "album": "Remixes 81–04",
+        "recording_id": "b7c9fa17-9798-4b5c-b69d-761b1c3b8c3f"
+      },
+      "query": "Breathing in Fumes Depeche Mode Remixes 81–04",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Breathing In Fumes",
+          "artists": [
+            "Martin L. Gore",
+            "Depeche Mode"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 73,
+          "source": "unknown"
+        },
+        {
+          "title": "World In My Eyes (Mode to Joy)",
+          "artists": [
+            "Martin L. Gore",
+            "Depeche Mode"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 17,
+          "source": "unknown"
+        },
+        {
+          "title": "Walking in My Shoes (Random Carpet Mix Full Length)",
+          "artists": [
+            "Martin L. Gore",
+            "Depeche Mode"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 1,
+          "match_score": 0,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000468",
+      "intent": "remix",
+      "expected": {
+        "title": "Breathe on Me (Jacques Lu Cont’s Thin White Duke mix)",
+        "artist": "Britney Spears",
+        "album": "B in the Mix: The Remixes",
+        "recording_id": "ef75dca1-0055-4f8f-b243-d14d86df9960"
+      },
+      "query": "Breathe on Me (Jacques Lu Cont’s Thin White Duke mix) Britney Spears",
+      "identity_candidate_position": null,
+      "identity_candidate_variant": null,
+      "top": [
+        {
+          "title": "Follow Me (Jacques Lu Cont's Thin White Duke Mix)",
+          "artists": [
+            "Matt Bellamy",
+            "Muse",
+            "David Campbell"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 2,
+          "match_score": 47,
+          "source": "unknown"
+        },
+        {
+          "title": "Breathe On Me (Jacques Lu Cont Mix)",
+          "artists": [
+            "Stephen William Lee",
+            "Steve Anderson",
+            "Lisa Greene",
+            "Britney Spears"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 1,
+          "match_score": 55,
+          "source": "unknown"
+        },
+        {
+          "title": "Breathe On Me (feat. Ying Yang Twins) (Jaques LuCont's Thin White Duke Mix)",
+          "artists": [
+            "Stephen William Lee",
+            "Steve Anderson",
+            "Lisa Greene",
+            "Britney Spears",
+            "Ying Yang Twins"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 0,
+          "match_score": 33,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000469",
+      "intent": "specific_version",
+      "expected": {
+        "title": "At the Heart of It All",
+        "artist": "Nine Inch Nails",
+        "album": "Further Down the Spiral",
+        "recording_id": "8c641def-3c8f-47e8-b781-9a7cd32e9bd6"
+      },
+      "query": "At the Heart of It All Nine Inch Nails Further Down the Spiral",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "At The Heart Of It All",
+          "artists": [
+            "Trent Reznor",
+            "Aphex Twin",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 83,
+          "source": "unknown"
+        },
+        {
+          "title": "The Art Of Self Destruction, Part One",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 28,
+          "source": "unknown"
+        },
+        {
+          "title": "The Beauty Of Being Numb",
+          "artists": [
+            "Trent Reznor",
+            "Aphex Twin",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 28,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000473",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Earth Song (Hani's club Experience)",
+        "artist": "Michael Jackson",
+        "album": "Blood on the Dance Floor: HIStory in the Mix",
+        "recording_id": "3f7923d3-6a08-46b4-b29b-1e78e39ecb74"
+      },
+      "query": "Earth Song (Hani's club Experience) Michael Jackson Blood on the Dance Floor: HIStory in the Mix",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "Earth Song (Hani's Club Experience)",
+          "artists": [
+            "Michael Jackson"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 72,
+          "source": "unknown"
+        },
+        {
+          "title": "Stranger in Moscow (Tee's In-House Club Mix)",
+          "artists": [
+            "Michael Jackson"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 1,
+          "match_score": 23,
+          "source": "unknown"
+        },
+        {
+          "title": "You Are Not Alone (Classic Club Mix)",
+          "artists": [
+            "R. Kelly",
+            "Michael Jackson"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 2,
+          "match_score": 23,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000476",
+      "intent": "specific_version",
+      "expected": {
+        "title": "Where’s the Party",
+        "artist": "Madonna",
+        "album": "You Can Dance",
+        "recording_id": "8bfeb0d5-a681-4993-bf98-15cf1137fb63"
+      },
+      "query": "Where’s the Party Madonna You Can Dance",
+      "identity_candidate_position": null,
+      "identity_candidate_variant": null,
+      "top": []
+    },
+    {
+      "case_id": "MBR-000477",
+      "intent": "specific_version",
+      "expected": {
+        "title": "The Art of Self Destruction, Part One",
+        "artist": "Nine Inch Nails",
+        "album": "Further Down the Spiral",
+        "recording_id": "b22237e7-4795-4a9c-b0fa-c949c35bee7f"
+      },
+      "query": "The Art of Self Destruction, Part One Nine Inch Nails Further Down the Spiral",
+      "identity_candidate_position": 1,
+      "identity_candidate_variant": "default",
+      "top": [
+        {
+          "title": "The Art Of Self Destruction, Part One",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 0,
+          "match_score": 83,
+          "source": "unknown"
+        },
+        {
+          "title": "Self Destruction, Part Two",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails",
+            "J.G. Thirlwell"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 1,
+          "match_score": 31,
+          "source": "unknown"
+        },
+        {
+          "title": "Self Destruction (Part Three)",
+          "artists": [
+            "Trent Reznor",
+            "Nine Inch Nails"
+          ],
+          "album": null,
+          "version_hint": "studio",
+          "roon_rank": 2,
+          "match_score": 31,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000479",
+      "intent": "remix",
+      "expected": {
+        "title": "Alejandro (Sounds of Arrow remix)",
+        "artist": "Lady Gaga",
+        "album": "The Remix",
+        "recording_id": "413f33e4-3f0e-4d14-9ee0-e8a7e824d1b5"
+      },
+      "query": "Alejandro (Sounds of Arrow remix) Lady Gaga",
+      "identity_candidate_position": null,
+      "identity_candidate_variant": null,
+      "top": [
+        {
+          "title": "Alejandro (The Sound of Arrows Remix)",
+          "artists": [
+            "Lady Gaga",
+            "RedOne"
+          ],
+          "album": null,
+          "version_hint": "remix",
+          "roon_rank": 0,
+          "match_score": 44,
+          "source": "unknown"
+        }
+      ]
+    }
+  ]
+}

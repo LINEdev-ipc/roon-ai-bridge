@@ -1,0 +1,878 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-07-27T19:47:33.293504+00:00",
+  "started_at": "2026-07-27T19:24:41.446556+00:00",
+  "elapsed_seconds": 1371.84,
+  "strategy": "direct_query_ladder_then_verified_album_tracklist",
+  "overall": {
+    "total": 3000,
+    "resolved": 2896,
+    "manual_required": 83,
+    "ineligible": 21,
+    "unresolved": 0,
+    "passed": 3000,
+    "resolved_pct": 96.53,
+    "passed_pct": 100.0,
+    "request_errors": 0
+  },
+  "by_intent": {
+    "acoustic": {
+      "total": 210,
+      "resolved": 187,
+      "manual_required": 13,
+      "ineligible": 10,
+      "unresolved": 0
+    },
+    "alternate": {
+      "total": 220,
+      "resolved": 216,
+      "manual_required": 4,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "cover": {
+      "total": 260,
+      "resolved": 245,
+      "manual_required": 11,
+      "ineligible": 4,
+      "unresolved": 0
+    },
+    "default": {
+      "total": 1479,
+      "resolved": 1448,
+      "manual_required": 31,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "edit": {
+      "total": 25,
+      "resolved": 18,
+      "manual_required": 7,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "live": {
+      "total": 355,
+      "resolved": 342,
+      "manual_required": 6,
+      "ineligible": 7,
+      "unresolved": 0
+    },
+    "remix": {
+      "total": 328,
+      "resolved": 318,
+      "manual_required": 10,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "specific_version": {
+      "total": 123,
+      "resolved": 122,
+      "manual_required": 1,
+      "ineligible": 0,
+      "unresolved": 0
+    }
+  },
+  "by_cohort": {
+    "acoustic": {
+      "total": 210,
+      "resolved": 187,
+      "manual_required": 13,
+      "ineligible": 10,
+      "unresolved": 0
+    },
+    "africa_middle_east": {
+      "total": 30,
+      "resolved": 30,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "alternate": {
+      "total": 220,
+      "resolved": 216,
+      "manual_required": 4,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "classical_soundtrack": {
+      "total": 53,
+      "resolved": 53,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "country_folk": {
+      "total": 82,
+      "resolved": 82,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "cover": {
+      "total": 210,
+      "resolved": 195,
+      "manual_required": 11,
+      "ineligible": 4,
+      "unresolved": 0
+    },
+    "east_asia": {
+      "total": 40,
+      "resolved": 34,
+      "manual_required": 6,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "electronic": {
+      "total": 144,
+      "resolved": 142,
+      "manual_required": 2,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "hiphop": {
+      "total": 121,
+      "resolved": 121,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "initial_500": {
+      "total": 500,
+      "resolved": 500,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "jazz_blues": {
+      "total": 110,
+      "resolved": 109,
+      "manual_required": 1,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "latin": {
+      "total": 154,
+      "resolved": 153,
+      "manual_required": 1,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "legacy_initial": {
+      "total": 113,
+      "resolved": 113,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "live": {
+      "total": 252,
+      "resolved": 239,
+      "manual_required": 6,
+      "ineligible": 7,
+      "unresolved": 0
+    },
+    "metal": {
+      "total": 70,
+      "resolved": 66,
+      "manual_required": 4,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "pop_rnb": {
+      "total": 101,
+      "resolved": 101,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "remix": {
+      "total": 269,
+      "resolved": 251,
+      "manual_required": 18,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "rock_alternative": {
+      "total": 136,
+      "resolved": 136,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "soul_funk_reggae": {
+      "total": 66,
+      "resolved": 66,
+      "manual_required": 0,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "world_nonenglish": {
+      "total": 119,
+      "resolved": 102,
+      "manual_required": 17,
+      "ineligible": 0,
+      "unresolved": 0
+    }
+  },
+  "by_resolution_strategy": {
+    "roon_album_tracklist": 76,
+    "roon_direct_query_ladder": 2482,
+    "roon_verified_release_group_cache": 338
+  },
+  "direct_query_step": {
+    "1": 2437,
+    "2": 36,
+    "3": 9
+  },
+  "dataset": {
+    "cases": 3000,
+    "manual_fallback_expectations": 83,
+    "first_case_id": "MBR-000001",
+    "last_case_id": "MBR-003000",
+    "release_groups": 374,
+    "derived_intent_distribution": {
+      "acoustic": 210,
+      "alternate": 220,
+      "cover": 260,
+      "default": 1479,
+      "edit": 25,
+      "live": 355,
+      "remix": 328,
+      "specific_version": 123
+    },
+    "source_category_distribution": {
+      "acoustic": 210,
+      "alternate": 220,
+      "cover": 260,
+      "default": 1570,
+      "live": 350,
+      "remix": 390
+    },
+    "incremental_501_plus": {
+      "cases": 2500,
+      "cohorts": {
+        "acoustic": 210,
+        "africa_middle_east": 30,
+        "alternate": 220,
+        "classical_soundtrack": 53,
+        "country_folk": 82,
+        "cover": 210,
+        "east_asia": 40,
+        "electronic": 144,
+        "hiphop": 121,
+        "jazz_blues": 110,
+        "latin": 154,
+        "legacy_initial": 113,
+        "live": 252,
+        "metal": 70,
+        "pop_rnb": 101,
+        "remix": 269,
+        "rock_alternative": 136,
+        "soul_funk_reggae": 66,
+        "world_nonenglish": 119
+      },
+      "languages": {
+        "bm": 10,
+        "de": 6,
+        "en": 1572,
+        "es": 206,
+        "fr": 47,
+        "instrumental": 267,
+        "ja": 28,
+        "ko": 32,
+        "mixed": 113,
+        "multi": 56,
+        "pa": 9,
+        "pt": 154
+      },
+      "eras": {
+        "1950s": 53,
+        "1960s": 86,
+        "1970s": 312,
+        "1980s": 157,
+        "1990s": 476,
+        "2000s": 669,
+        "2010s": 449,
+        "2020s": 185,
+        "mixed": 113
+      }
+    },
+    "incremental_1501_plus": {
+      "cases": 1500,
+      "release_groups": 289,
+      "artists": 246,
+      "cohorts": {
+        "acoustic": 130,
+        "africa_middle_east": 30,
+        "alternate": 130,
+        "classical_soundtrack": 21,
+        "country_folk": 41,
+        "cover": 157,
+        "east_asia": 40,
+        "electronic": 92,
+        "hiphop": 88,
+        "jazz_blues": 60,
+        "latin": 102,
+        "legacy_initial": 38,
+        "live": 136,
+        "metal": 38,
+        "pop_rnb": 69,
+        "remix": 143,
+        "rock_alternative": 93,
+        "soul_funk_reggae": 40,
+        "world_nonenglish": 52
+      },
+      "languages": {
+        "bm": 10,
+        "de": 6,
+        "en": 959,
+        "es": 112,
+        "fr": 32,
+        "instrumental": 163,
+        "ja": 20,
+        "ko": 24,
+        "mixed": 38,
+        "multi": 29,
+        "pa": 9,
+        "pt": 98
+      },
+      "eras": {
+        "1950s": 36,
+        "1960s": 41,
+        "1970s": 214,
+        "1980s": 102,
+        "1990s": 224,
+        "2000s": 457,
+        "2010s": 277,
+        "2020s": 111,
+        "mixed": 38
+      }
+    }
+  },
+  "unresolved_cases": [],
+  "manual_required_cases": [
+    {
+      "case_id": "MBR-000506",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000562",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000589",
+      "intent": "default",
+      "reason": "roon_only_exposes_different_anniversary_remix_remaster"
+    },
+    {
+      "case_id": "MBR-000618",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000674",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000730",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000781",
+      "intent": "default",
+      "reason": "exact_recording_not_found_in_roon_catalog"
+    },
+    {
+      "case_id": "MBR-000786",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-000830",
+      "intent": "default",
+      "reason": "musicbrainz_combined_recording_is_split_into_separate_roon_tracks"
+    },
+    {
+      "case_id": "MBR-000842",
+      "intent": "default",
+      "reason": "roon_artist_catalog_missing_release_and_exact_track_not_found"
+    },
+    {
+      "case_id": "MBR-001017",
+      "intent": "live",
+      "reason": "requested_live_release_missing_and_roon_candidates_are_studio_versions"
+    },
+    {
+      "case_id": "MBR-001085",
+      "intent": "live",
+      "reason": "requested_adele_live_performance_missing_and_live_candidates_are_other_artists"
+    },
+    {
+      "case_id": "MBR-001100",
+      "intent": "live",
+      "reason": "requested_adele_live_performance_missing_and_live_candidates_are_other_artists"
+    },
+    {
+      "case_id": "MBR-001180",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001211",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001217",
+      "intent": "remix",
+      "reason": "exact_named_remix_not_found_in_roon_catalog"
+    },
+    {
+      "case_id": "MBR-001230",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001254",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001260",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_edits"
+    },
+    {
+      "case_id": "MBR-001357",
+      "intent": "acoustic",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001386",
+      "intent": "acoustic",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001404",
+      "intent": "acoustic",
+      "reason": "bonus_acoustic_recording_absent_from_roon_album_and_direct_result_lacks_version_proof"
+    },
+    {
+      "case_id": "MBR-001434",
+      "intent": "alternate",
+      "reason": "same_title_candidate_is_ambiguous_without_requested_archive_release_context"
+    },
+    {
+      "case_id": "MBR-001450",
+      "intent": "alternate",
+      "reason": "musicbrainz_combined_archive_recording_not_proven_by_roon_candidates"
+    },
+    {
+      "case_id": "MBR-001484",
+      "intent": "alternate",
+      "reason": "same_title_candidate_is_ambiguous_without_requested_archive_release_context"
+    },
+    {
+      "case_id": "MBR-001534",
+      "intent": "default",
+      "reason": "requested_musicbrainz_bonus_or_hidden_recording_is_absent_from_roon_track_results"
+    },
+    {
+      "case_id": "MBR-001545",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-001549",
+      "intent": "default",
+      "reason": "requested_release_and_exact_track_are_not_exposed_by_roon"
+    },
+    {
+      "case_id": "MBR-001611",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-001658",
+      "intent": "default",
+      "reason": "roon_only_exposes_different_anniversary_remix_remaster_or_live_version"
+    },
+    {
+      "case_id": "MBR-001660",
+      "intent": "default",
+      "reason": "requested_musicbrainz_bonus_or_hidden_recording_is_absent_from_roon_track_results"
+    },
+    {
+      "case_id": "MBR-001661",
+      "intent": "default",
+      "reason": "requested_album_exists_but_roon_search_only_exposes_karaoke_or_unrelated_localized_results"
+    },
+    {
+      "case_id": "MBR-001669",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-001715",
+      "intent": "default",
+      "reason": "requested_album_exists_but_roon_search_only_exposes_karaoke_or_unrelated_localized_results"
+    },
+    {
+      "case_id": "MBR-001724",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-001752",
+      "intent": "default",
+      "reason": "requested_musicbrainz_bonus_or_hidden_recording_is_absent_from_roon_track_results"
+    },
+    {
+      "case_id": "MBR-001762",
+      "intent": "default",
+      "reason": "roon_only_exposes_different_anniversary_remix_remaster_or_live_version"
+    },
+    {
+      "case_id": "MBR-001774",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-001818",
+      "intent": "default",
+      "reason": "requested_album_exists_but_roon_search_only_exposes_karaoke_or_unrelated_localized_results"
+    },
+    {
+      "case_id": "MBR-001827",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-001865",
+      "intent": "default",
+      "reason": "roon_only_exposes_different_anniversary_remix_remaster_or_live_version"
+    },
+    {
+      "case_id": "MBR-001868",
+      "intent": "default",
+      "reason": "requested_album_exists_but_roon_search_only_exposes_karaoke_or_unrelated_localized_results"
+    },
+    {
+      "case_id": "MBR-001876",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-001926",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-002012",
+      "intent": "default",
+      "reason": "requested_studio_release_missing_and_available_candidates_are_live_or_unrelated"
+    },
+    {
+      "case_id": "MBR-002058",
+      "intent": "default",
+      "reason": "requested_musicbrainz_bonus_or_hidden_recording_is_absent_from_roon_track_results"
+    },
+    {
+      "case_id": "MBR-002336",
+      "intent": "live",
+      "reason": "requested_live_album_exists_but_exact_live_recording_is_not_exposed_by_track_search_or_verified_tracklist"
+    },
+    {
+      "case_id": "MBR-002382",
+      "intent": "live",
+      "reason": "requested_live_release_missing_and_available_candidates_are_studio_versions"
+    },
+    {
+      "case_id": "MBR-002403",
+      "intent": "live",
+      "reason": "requested_live_release_missing_and_available_candidates_are_studio_versions"
+    },
+    {
+      "case_id": "MBR-002440",
+      "intent": "remix",
+      "reason": "requested_named_mix_missing_and_available_candidates_are_different_mixes"
+    },
+    {
+      "case_id": "MBR-002467",
+      "intent": "remix",
+      "reason": "requested_named_mix_missing_and_available_candidates_are_different_mixes"
+    },
+    {
+      "case_id": "MBR-002495",
+      "intent": "remix",
+      "reason": "requested_named_mix_missing_and_available_candidates_are_different_mixes"
+    },
+    {
+      "case_id": "MBR-002497",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_mix_variants"
+    },
+    {
+      "case_id": "MBR-002513",
+      "intent": "edit",
+      "reason": "requested_mixshow_release_missing_and_available_candidates_are_different_mix_variants"
+    },
+    {
+      "case_id": "MBR-002523",
+      "intent": "remix",
+      "reason": "requested_release_or_named_mix_missing_and_available_candidates_are_studio_or_different_mixes"
+    },
+    {
+      "case_id": "MBR-002529",
+      "intent": "remix",
+      "reason": "candidate_title_is_truncated_and_cannot_prove_the_requested_named_vocal_mix"
+    },
+    {
+      "case_id": "MBR-002557",
+      "intent": "specific_version",
+      "reason": "requested_release_or_named_mix_missing_and_available_candidates_are_studio_or_different_mixes"
+    },
+    {
+      "case_id": "MBR-002560",
+      "intent": "remix",
+      "reason": "requested_release_or_named_mix_missing_and_available_candidates_are_studio_or_different_mixes"
+    },
+    {
+      "case_id": "MBR-002562",
+      "intent": "remix",
+      "reason": "requested_release_or_named_mix_missing_and_available_candidates_are_studio_or_different_mixes"
+    },
+    {
+      "case_id": "MBR-002564",
+      "intent": "remix",
+      "reason": "requested_release_or_named_mix_missing_and_available_candidates_are_studio_or_different_mixes"
+    },
+    {
+      "case_id": "MBR-002566",
+      "intent": "remix",
+      "reason": "requested_release_or_named_mix_missing_and_available_candidates_are_studio_or_different_mixes"
+    },
+    {
+      "case_id": "MBR-002642",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002647",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002660",
+      "intent": "cover",
+      "reason": "requested_cover_album_exists_but_exact_manhattan_recording_is_not_exposed"
+    },
+    {
+      "case_id": "MBR-002670",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002683",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002687",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002693",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002700",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002701",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002713",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002732",
+      "intent": "cover",
+      "reason": "requested_cover_release_missing_and_available_candidates_are_other_performers_or_a_different_remix"
+    },
+    {
+      "case_id": "MBR-002787",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002808",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002819",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002826",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002850",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002851",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002855",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002857",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002862",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002869",
+      "intent": "acoustic",
+      "reason": "requested_acoustic_release_missing_and_same_title_candidates_lack_acoustic_identity"
+    },
+    {
+      "case_id": "MBR-002897",
+      "intent": "alternate",
+      "reason": "exact_title_and_album_exist_separately_but_roon_does_not_prove_the_track_belongs_to_the_requested_archive_release"
+    }
+  ],
+  "ineligible_cases": [
+    {
+      "case_id": "MBR-001027",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001055",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001064",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001073",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001095",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001274",
+      "intent": "cover",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001314",
+      "intent": "cover",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002284",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002313",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002651",
+      "intent": "cover",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002653",
+      "intent": "cover",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002744",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002751",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002758",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002776",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002777",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002782",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002783",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002788",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002793",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-002794",
+      "intent": "acoustic",
+      "reason": "musicbrainz_video_recording"
+    }
+  ]
+}

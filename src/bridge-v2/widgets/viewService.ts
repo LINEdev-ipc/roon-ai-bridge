@@ -361,10 +361,17 @@ export class WidgetV2ViewService {
         warnings: detail.warnings || []
       };
     }
+    const catalog = this.context.trackCatalogService
+      ? await this.context.trackCatalogService.describeRoonTrack(media)
+      : null;
     return {
       ...basePayload("track", media.title),
       track: this.mediaCard(media),
-      warnings: media.warnings || []
+      catalog,
+      warnings: Array.from(new Set([
+        ...(media.warnings || []),
+        ...(catalog?.status === "provider_error" ? ["No se pudieron recuperar los metadatos de MusicBrainz."] : [])
+      ]))
     };
   }
 

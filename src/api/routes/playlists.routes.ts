@@ -358,13 +358,38 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.post(["/playlists/:playlist_id/tracks/from-search-result", "/virtual-playlists/:playlist_id/tracks/from-search-result"], (req, res, next) => {
+  router.post(["/playlists/:playlist_id/tracks/from-search-result", "/virtual-playlists/:playlist_id/tracks/from-search-result"], async (req, res, next) => {
     try {
-      res.json(context.playlistService.addSearchResultToPlaylist(
+      const before = new Set(
+        context.playlistService.getPlaylist(req.params.playlist_id).tracks.map((track) => track.track_id)
+      );
+      const added = context.playlistService.addSearchResultToPlaylist(
         req.params.playlist_id,
         req.body || {},
         context.mediaService
-      ));
+      );
+      const track = added.tracks.find((candidate) => !before.has(candidate.track_id));
+      if (!track || !req.body?.result_id) {
+        res.json(added);
+        return;
+      }
+      try {
+        const enriched = await context.playlistRepairService.selectTrack({
+          playlistId: req.params.playlist_id,
+          trackId: track.track_id,
+          resultId: req.body.result_id,
+          selectionReason: "portal_user_selection",
+          selectionOrigin: "portal_user"
+        });
+        res.json(enriched.playlist);
+      } catch (error) {
+        context.logger.warn("Manually added playlist track could not be enriched immediately", {
+          playlistId: req.params.playlist_id,
+          trackId: track.track_id,
+          error: error instanceof Error ? error.message : String(error)
+        });
+        res.json(added);
+      }
     } catch (error) {
       next(error);
     }

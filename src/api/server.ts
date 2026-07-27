@@ -31,7 +31,10 @@ export function createServer(context: ApiContext): express.Express {
   const playlistBuildService = context.playlistBuildService || new PlaylistBuildService(
     context.playlistService,
     context.mediaService,
-    context.logger
+    context.logger,
+    "streaming_first",
+    undefined,
+    context.trackCatalogService
   );
   app.use(express.json({ limit: "8mb" }));
   app.use(createHealthRouter(context));

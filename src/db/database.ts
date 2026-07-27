@@ -229,6 +229,186 @@ CREATE TABLE IF NOT EXISTS metadata_provider_cache (
   PRIMARY KEY (provider, cache_key)
 );
 
+CREATE TABLE IF NOT EXISTS catalog_recordings (
+  recording_id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  disambiguation TEXT,
+  video INTEGER NOT NULL DEFAULT 0,
+  duration_seconds REAL,
+  duration_source TEXT,
+  isrcs_json TEXT NOT NULL DEFAULT '[]',
+  metadata_status TEXT NOT NULL,
+  metadata_json TEXT NOT NULL,
+  source TEXT NOT NULL DEFAULT 'musicbrainz',
+  fetched_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS catalog_artists (
+  artist_id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  sort_name TEXT,
+  disambiguation TEXT,
+  artist_type TEXT,
+  country TEXT,
+  metadata_json TEXT NOT NULL DEFAULT '{}',
+  fetched_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS catalog_recording_artists (
+  recording_id TEXT NOT NULL,
+  artist_id TEXT NOT NULL,
+  credit_position INTEGER NOT NULL,
+  credited_name TEXT NOT NULL,
+  join_phrase TEXT NOT NULL DEFAULT '',
+  role TEXT NOT NULL DEFAULT 'primary',
+  PRIMARY KEY (recording_id, credit_position),
+  FOREIGN KEY (recording_id) REFERENCES catalog_recordings (recording_id) ON DELETE CASCADE,
+  FOREIGN KEY (artist_id) REFERENCES catalog_artists (artist_id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS catalog_works (
+  work_id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  work_type TEXT,
+  language TEXT,
+  iswcs_json TEXT NOT NULL DEFAULT '[]',
+  disambiguation TEXT,
+  metadata_json TEXT NOT NULL DEFAULT '{}',
+  fetched_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS catalog_recording_works (
+  recording_id TEXT NOT NULL,
+  work_id TEXT NOT NULL,
+  relation_type TEXT NOT NULL,
+  attributes_json TEXT NOT NULL DEFAULT '[]',
+  PRIMARY KEY (recording_id, work_id, relation_type),
+  FOREIGN KEY (recording_id) REFERENCES catalog_recordings (recording_id) ON DELETE CASCADE,
+  FOREIGN KEY (work_id) REFERENCES catalog_works (work_id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS catalog_credits (
+  credit_id TEXT PRIMARY KEY,
+  recording_id TEXT NOT NULL,
+  work_id TEXT,
+  artist_id TEXT,
+  name TEXT NOT NULL,
+  credited_name TEXT,
+  role TEXT NOT NULL,
+  credit_position INTEGER NOT NULL,
+  attributes_json TEXT NOT NULL DEFAULT '[]',
+  FOREIGN KEY (recording_id) REFERENCES catalog_recordings (recording_id) ON DELETE CASCADE,
+  FOREIGN KEY (work_id) REFERENCES catalog_works (work_id) ON DELETE CASCADE,
+  FOREIGN KEY (artist_id) REFERENCES catalog_artists (artist_id) ON DELETE SET NULL
+);
+
+CREATE TABLE IF NOT EXISTS catalog_release_groups (
+  release_group_id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  artist_credit_json TEXT NOT NULL DEFAULT '[]',
+  first_release_date TEXT,
+  primary_type TEXT,
+  secondary_types_json TEXT NOT NULL DEFAULT '[]',
+  disambiguation TEXT,
+  metadata_json TEXT NOT NULL DEFAULT '{}',
+  fetched_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS catalog_recording_release_groups (
+  recording_id TEXT NOT NULL,
+  release_group_id TEXT NOT NULL,
+  is_primary INTEGER NOT NULL DEFAULT 0,
+  selection_reason TEXT,
+  PRIMARY KEY (recording_id, release_group_id),
+  FOREIGN KEY (recording_id) REFERENCES catalog_recordings (recording_id) ON DELETE CASCADE,
+  FOREIGN KEY (release_group_id) REFERENCES catalog_release_groups (release_group_id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS catalog_releases (
+  release_id TEXT PRIMARY KEY,
+  release_group_id TEXT,
+  title TEXT NOT NULL,
+  release_date TEXT,
+  country TEXT,
+  status TEXT,
+  album_artist TEXT,
+  barcode TEXT,
+  packaging TEXT,
+  labels_json TEXT NOT NULL DEFAULT '[]',
+  media_format TEXT,
+  metadata_json TEXT NOT NULL DEFAULT '{}',
+  fetched_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (release_group_id) REFERENCES catalog_release_groups (release_group_id) ON DELETE SET NULL
+);
+
+CREATE TABLE IF NOT EXISTS catalog_release_tracks (
+  release_id TEXT NOT NULL,
+  recording_id TEXT NOT NULL,
+  medium_position INTEGER NOT NULL,
+  track_position INTEGER NOT NULL,
+  track_number TEXT,
+  title TEXT NOT NULL,
+  duration_seconds REAL,
+  PRIMARY KEY (release_id, recording_id, medium_position, track_position),
+  FOREIGN KEY (release_id) REFERENCES catalog_releases (release_id) ON DELETE CASCADE,
+  FOREIGN KEY (recording_id) REFERENCES catalog_recordings (recording_id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS catalog_genres (
+  entity_type TEXT NOT NULL,
+  entity_id TEXT NOT NULL,
+  name TEXT NOT NULL,
+  score INTEGER,
+  source TEXT NOT NULL DEFAULT 'musicbrainz',
+  PRIMARY KEY (entity_type, entity_id, name)
+);
+
+CREATE TABLE IF NOT EXISTS catalog_cover_art (
+  entity_type TEXT NOT NULL,
+  entity_id TEXT NOT NULL,
+  image_id TEXT NOT NULL,
+  front INTEGER NOT NULL DEFAULT 0,
+  back INTEGER NOT NULL DEFAULT 0,
+  approved INTEGER NOT NULL DEFAULT 0,
+  original_url TEXT,
+  thumbnail_250_url TEXT,
+  thumbnail_500_url TEXT,
+  thumbnail_1200_url TEXT,
+  selected INTEGER NOT NULL DEFAULT 0,
+  source TEXT NOT NULL DEFAULT 'cover_art_archive',
+  fetched_at TEXT NOT NULL,
+  PRIMARY KEY (entity_type, entity_id, image_id)
+);
+
+CREATE TABLE IF NOT EXISTS roon_recording_bindings (
+  binding_id TEXT PRIMARY KEY,
+  recording_id TEXT NOT NULL,
+  roon_item_key TEXT,
+  roon_result_id TEXT,
+  source TEXT,
+  title TEXT NOT NULL,
+  artist TEXT,
+  album TEXT,
+  image_key TEXT,
+  quality_json TEXT,
+  version_hint TEXT,
+  canonical_query TEXT NOT NULL,
+  reusable INTEGER NOT NULL DEFAULT 0,
+  playable INTEGER NOT NULL DEFAULT 0,
+  selection_origin TEXT NOT NULL,
+  status TEXT NOT NULL,
+  confidence TEXT NOT NULL,
+  evidence_json TEXT NOT NULL DEFAULT '{}',
+  observed_at TEXT NOT NULL,
+  last_verified_at TEXT NOT NULL,
+  FOREIGN KEY (recording_id) REFERENCES catalog_recordings (recording_id) ON DELETE CASCADE
+);
+
 CREATE INDEX IF NOT EXISTS idx_virtual_playlist_tracks_playlist
   ON virtual_playlist_tracks (playlist_id, position);
 
@@ -264,12 +444,25 @@ CREATE INDEX IF NOT EXISTS idx_system_events_component
 
 CREATE INDEX IF NOT EXISTS idx_metadata_provider_cache_expiry
   ON metadata_provider_cache (provider, expires_at);
+
+CREATE INDEX IF NOT EXISTS idx_catalog_recordings_title
+  ON catalog_recordings (title);
+
+CREATE INDEX IF NOT EXISTS idx_catalog_release_groups_title
+  ON catalog_release_groups (title);
+
+CREATE INDEX IF NOT EXISTS idx_catalog_credits_recording_role
+  ON catalog_credits (recording_id, role);
+
+CREATE INDEX IF NOT EXISTS idx_roonia_bindings_recording
+  ON roon_recording_bindings (recording_id, status, last_verified_at);
 `;
 
 export const DATABASE_MIGRATION_IDS = [
   "001_base_schema",
   "002_legacy_schema_upgrade",
-  "003_metadata_provider_cache"
+  "003_metadata_provider_cache",
+  "004_music_catalog"
 ] as const;
 
 export const databaseImplemented = true;
@@ -370,7 +563,8 @@ export class SqliteDatabase {
     const migrations: Array<{ id: string; apply: () => void }> = [
       { id: DATABASE_MIGRATION_IDS[0], apply: () => this.db.exec(SCHEMA_SQL) },
       { id: DATABASE_MIGRATION_IDS[1], apply: () => this.ensureCurrentSchema() },
-      { id: DATABASE_MIGRATION_IDS[2], apply: () => this.ensureMetadataProviderCache() }
+      { id: DATABASE_MIGRATION_IDS[2], apply: () => this.ensureMetadataProviderCache() },
+      { id: DATABASE_MIGRATION_IDS[3], apply: () => this.ensureMusicCatalog() }
     ];
 
     for (const migration of migrations) {
@@ -518,6 +712,10 @@ export class SqliteDatabase {
       CREATE INDEX IF NOT EXISTS idx_metadata_provider_cache_expiry
         ON metadata_provider_cache (provider, expires_at);
     `);
+  }
+
+  private ensureMusicCatalog(): void {
+    this.db.exec(SCHEMA_SQL);
   }
 
   private migrateLegacyPlaylistsIfNeeded(): void {

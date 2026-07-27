@@ -316,7 +316,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_save_playlist", {
     title: "Save RoonIA Playlist",
-    description: "Use this when the user explicitly wants to save a permanent playlist or replace its complete track list; use roon_create_temporary_playlist for contextual music they only want to hear now. Send title plus artist_credit for every primary and reserve. For a requested size, include roughly 50-75% reserves. If status=needs_input, call this tool again with its build_id and new candidates. RoonIA allows exactly two replenishment rounds and a result_id never bypasses validation.",
+    description: "Use this when the user explicitly wants to save a permanent playlist or replace its complete track list; use roon_create_temporary_playlist for contextual music they only want to hear now. Send title plus artist_credit for every primary and reserve. RoonIA resolves the canonical MusicBrainz recording first, then accepts only a compatible playable Roon binding; ambiguous or unavailable recordings are omitted for manual selection. For a requested size, include roughly 50-75% reserves. If status=needs_input, call this tool again with its build_id and new candidates. RoonIA allows exactly two replenishment rounds and a result_id never bypasses validation.",
     annotations: write,
     inputSchema: {
       build_id: z.string().uuid().optional().describe("Return value from a prior needs_input response. On replenishment calls, submit only build_id and new tracks."),
@@ -331,7 +331,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_create_temporary_playlist", {
     title: "Create Temporary RoonIA Playlist",
-    description: "Use this when the user asks for contextual music for an activity, mood or occasion without asking to save it permanently. Provide a short intent summary plus primary and reserve tracks with title and artist_credit. If status=needs_input, call this tool again with build_id and fresh candidates. After completion call roon_play_playlist with the returned playlist_id and the requested queue mode. Do not use this when the user explicitly asks to keep or save the playlist.",
+    description: "Use this when the user asks for contextual music for an activity, mood or occasion without asking to save it permanently. Provide a short intent summary plus primary and reserve tracks with title and artist_credit. RoonIA resolves MusicBrainz identity before creating a compatible Roon playback binding. If status=needs_input, call this tool again with build_id and fresh candidates. After completion call roon_play_playlist with the returned playlist_id and the requested queue mode. Do not use this when the user explicitly asks to keep or save the playlist.",
     annotations: write,
     inputSchema: {
       build_id: z.string().uuid().optional().describe("Return value from a prior needs_input response for this temporary playlist build."),
@@ -357,7 +357,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_edit_playlist_tracks", {
     title: "Edit RoonIA Playlist Tracks",
-    description: "Use this when one or more playlist track additions, updates, removals, replacements or reorderings should be applied as a single batch. Additions and replacements require title plus artist_credit and use the same strict metadata preflight as playlist creation; unresolved, unsafe or already-present recordings are omitted rather than persisted.",
+    description: "Use this when one or more playlist track additions, updates, removals, replacements or reorderings should be applied as a single batch. Additions and replacements require title plus artist_credit and use the same MusicBrainz-first identity and Roon-binding preflight as playlist creation; unresolved, unsafe or already-present recordings are omitted rather than persisted.",
     annotations: destructive,
     inputSchema: {
       playlist_id: z.string().min(1),

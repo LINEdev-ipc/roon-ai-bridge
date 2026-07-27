@@ -1,0 +1,1058 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-07-27T16:56:04.642374+00:00",
+  "started_at": "2026-07-27T16:51:37.284979+00:00",
+  "elapsed_seconds": 267.36,
+  "strategy": "direct_query_ladder_then_verified_album_tracklist",
+  "overall": {
+    "total": 123,
+    "resolved": 52,
+    "ineligible": 6,
+    "unresolved": 65,
+    "passed": 58,
+    "resolved_pct": 42.28,
+    "passed_pct": 47.15,
+    "request_errors": 0
+  },
+  "by_intent": {
+    "acoustic": {
+      "total": 48,
+      "resolved": 11,
+      "ineligible": 0,
+      "unresolved": 37
+    },
+    "alternate": {
+      "total": 8,
+      "resolved": 2,
+      "ineligible": 0,
+      "unresolved": 6
+    },
+    "cover": {
+      "total": 2,
+      "resolved": 1,
+      "ineligible": 1,
+      "unresolved": 0
+    },
+    "default": {
+      "total": 29,
+      "resolved": 18,
+      "ineligible": 0,
+      "unresolved": 11
+    },
+    "edit": {
+      "total": 5,
+      "resolved": 0,
+      "ineligible": 0,
+      "unresolved": 5
+    },
+    "live": {
+      "total": 9,
+      "resolved": 1,
+      "ineligible": 5,
+      "unresolved": 3
+    },
+    "remix": {
+      "total": 6,
+      "resolved": 3,
+      "ineligible": 0,
+      "unresolved": 3
+    },
+    "specific_version": {
+      "total": 16,
+      "resolved": 16,
+      "ineligible": 0,
+      "unresolved": 0
+    }
+  },
+  "by_cohort": {
+    "acoustic": {
+      "total": 48,
+      "resolved": 11,
+      "ineligible": 0,
+      "unresolved": 37
+    },
+    "alternate": {
+      "total": 8,
+      "resolved": 2,
+      "ineligible": 0,
+      "unresolved": 6
+    },
+    "classical_soundtrack": {
+      "total": 4,
+      "resolved": 4,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "cover": {
+      "total": 2,
+      "resolved": 1,
+      "ineligible": 1,
+      "unresolved": 0
+    },
+    "jazz_blues": {
+      "total": 7,
+      "resolved": 5,
+      "ineligible": 0,
+      "unresolved": 2
+    },
+    "latin": {
+      "total": 1,
+      "resolved": 0,
+      "ineligible": 0,
+      "unresolved": 1
+    },
+    "legacy_initial": {
+      "total": 1,
+      "resolved": 0,
+      "ineligible": 0,
+      "unresolved": 1
+    },
+    "live": {
+      "total": 9,
+      "resolved": 1,
+      "ineligible": 5,
+      "unresolved": 3
+    },
+    "metal": {
+      "total": 1,
+      "resolved": 0,
+      "ineligible": 0,
+      "unresolved": 1
+    },
+    "remix": {
+      "total": 26,
+      "resolved": 19,
+      "ineligible": 0,
+      "unresolved": 7
+    },
+    "rock_alternative": {
+      "total": 2,
+      "resolved": 2,
+      "ineligible": 0,
+      "unresolved": 0
+    },
+    "world_nonenglish": {
+      "total": 14,
+      "resolved": 7,
+      "ineligible": 0,
+      "unresolved": 7
+    }
+  },
+  "by_resolution_strategy": {
+    "roon_album_tracklist": 48,
+    "roon_direct_query_ladder": 4
+  },
+  "direct_query_step": {
+    "1": 3,
+    "3": 1
+  },
+  "dataset": {
+    "cases": 123,
+    "first_case_id": "MBR-000506",
+    "last_case_id": "MBR-001498",
+    "release_groups": 32,
+    "derived_intent_distribution": {
+      "acoustic": 48,
+      "alternate": 8,
+      "cover": 2,
+      "default": 29,
+      "edit": 5,
+      "live": 9,
+      "remix": 6,
+      "specific_version": 16
+    },
+    "source_category_distribution": {
+      "acoustic": 48,
+      "alternate": 8,
+      "cover": 2,
+      "default": 29,
+      "live": 9,
+      "remix": 27
+    },
+    "incremental_501_plus": {
+      "cases": 0,
+      "cohorts": {},
+      "languages": {},
+      "eras": {}
+    }
+  },
+  "unresolved_cases": [
+    {
+      "case_id": "MBR-000506",
+      "intent": "default",
+      "expected": {
+        "title": "Elédjiré",
+        "artist": "Angélique Kidjo",
+        "album": "Logozo",
+        "recording_id": "1f977f62-ea51-432d-8ac8-4c1fa66baaeb",
+        "release_group_id": "bb212e69-9e70-355a-8cb1-9a8aa3eeef4c",
+        "release_id": "845e9fff-2234-4e06-8521-c585e8387dd2"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000562",
+      "intent": "default",
+      "expected": {
+        "title": "Ewa Ka Djo",
+        "artist": "Angélique Kidjo",
+        "album": "Logozo",
+        "recording_id": "18132967-2773-4b80-a41f-9855e9c610ca",
+        "release_group_id": "bb212e69-9e70-355a-8cb1-9a8aa3eeef4c",
+        "release_id": "845e9fff-2234-4e06-8521-c585e8387dd2"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000589",
+      "intent": "default",
+      "expected": {
+        "title": "Windows",
+        "artist": "Deafheaven",
+        "album": "Sunbather",
+        "recording_id": "b4bc6a6b-497e-4e6b-8b7e-cb2d6e175928",
+        "release_group_id": "8a061d0e-fa0c-4571-91ff-8bc3911b6428",
+        "release_id": "22f1d5cc-61a7-4976-975b-bf123e685fb9"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000618",
+      "intent": "default",
+      "expected": {
+        "title": "Ekoléya",
+        "artist": "Angélique Kidjo",
+        "album": "Logozo",
+        "recording_id": "303c0168-35cf-4081-9e5e-ec7247576069",
+        "release_group_id": "bb212e69-9e70-355a-8cb1-9a8aa3eeef4c",
+        "release_id": "845e9fff-2234-4e06-8521-c585e8387dd2"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000674",
+      "intent": "default",
+      "expected": {
+        "title": "Logozo",
+        "artist": "Angélique Kidjo",
+        "album": "Logozo",
+        "recording_id": "e0eed361-e38f-458d-8d12-afa0f3ce4ab8",
+        "release_group_id": "bb212e69-9e70-355a-8cb1-9a8aa3eeef4c",
+        "release_id": "845e9fff-2234-4e06-8521-c585e8387dd2"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000730",
+      "intent": "default",
+      "expected": {
+        "title": "Sénié",
+        "artist": "Angélique Kidjo",
+        "album": "Logozo",
+        "recording_id": "dfdb9647-3502-46cd-81a9-8d86daf91a30",
+        "release_group_id": "bb212e69-9e70-355a-8cb1-9a8aa3eeef4c",
+        "release_id": "845e9fff-2234-4e06-8521-c585e8387dd2"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000734",
+      "intent": "default",
+      "expected": {
+        "title": "Isis and Osiris",
+        "artist": "Alice Coltrane",
+        "album": "Journey in Satchidananda",
+        "recording_id": "a948beea-d6dc-4dde-b053-0ec601373074",
+        "release_group_id": "cf154081-2678-3778-95cf-cd31c4ea5dfe",
+        "release_id": "2efc9b51-ab8a-3b10-883d-5821a6da989e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000781",
+      "intent": "default",
+      "expected": {
+        "title": "Japón",
+        "artist": "Calle 13",
+        "album": "Residente o Visitante",
+        "recording_id": "bc3b23b2-9786-4cd4-8ad6-c0b95f8ebe84",
+        "release_group_id": "f30ae2eb-8ba0-37a2-9743-cf24779f5c81",
+        "release_id": "e33a8128-18b0-4d12-a601-11ed3f683d8a"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000786",
+      "intent": "default",
+      "expected": {
+        "title": "Kaléta",
+        "artist": "Angélique Kidjo",
+        "album": "Logozo",
+        "recording_id": "e47097c3-42c6-4a52-aae8-21837a1f8297",
+        "release_group_id": "bb212e69-9e70-355a-8cb1-9a8aa3eeef4c",
+        "release_id": "845e9fff-2234-4e06-8521-c585e8387dd2"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000830",
+      "intent": "default",
+      "expected": {
+        "title": "A Love Supreme, Part 3: Pursuance / A Love Supreme, Part 4: Psalm",
+        "artist": "John Coltrane",
+        "album": "A Love Supreme",
+        "recording_id": "10dbacb2-4b10-40b0-a0fa-79b9c6ea3722",
+        "release_group_id": "77cf47ba-58cd-3f3d-a5f9-79bf89860421",
+        "release_id": "2d2b2557-5000-37ae-b18f-1fec5d66b67f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-000842",
+      "intent": "default",
+      "expected": {
+        "title": "Wé-Wé",
+        "artist": "Angélique Kidjo",
+        "album": "Logozo",
+        "recording_id": "6bf5045b-d1db-4d91-a032-494c21bdb402",
+        "release_group_id": "bb212e69-9e70-355a-8cb1-9a8aa3eeef4c",
+        "release_id": "845e9fff-2234-4e06-8521-c585e8387dd2"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001017",
+      "intent": "live",
+      "expected": {
+        "title": "War Machine",
+        "artist": "AC/DC",
+        "album": "Live at River Plate",
+        "recording_id": "24b9016c-7467-494e-83a5-6efd4468fea5",
+        "release_group_id": "6b90494f-015e-4878-b18e-27b4766d2899",
+        "release_id": "a46a88fa-6f5d-495c-86fb-2af8053f613e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001085",
+      "intent": "live",
+      "expected": {
+        "title": "Make You Feel My Love",
+        "artist": "Adele",
+        "album": "Live at the Royal Albert Hall",
+        "recording_id": "e109f0b7-5c0c-494a-9f87-af2da08cc480",
+        "release_group_id": "36e41dc0-2a0c-4ff7-b043-097534d52bf6",
+        "release_id": "be32e2bb-e844-4cac-b1b3-df8b79673a1d"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001100",
+      "intent": "live",
+      "expected": {
+        "title": "Lovesong",
+        "artist": "Adele",
+        "album": "Live at the Royal Albert Hall",
+        "recording_id": "fe4c59a4-f561-4e88-8d0c-d66ae64907c3",
+        "release_group_id": "36e41dc0-2a0c-4ff7-b043-097534d52bf6",
+        "release_id": "be32e2bb-e844-4cac-b1b3-df8b79673a1d"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001144",
+      "intent": "remix",
+      "expected": {
+        "title": "Love Profusion (Ralphi Rosario house vocal mix)",
+        "artist": "Madonna",
+        "album": "American Life Mixshow Mix",
+        "recording_id": "0d84bb88-09b5-4903-ad93-36ee0de90d3d",
+        "release_group_id": "78126aa2-06da-4449-9a59-22b725b61217",
+        "release_id": "50ddb3a9-cea8-41dd-878e-d270a01b6c3e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001180",
+      "intent": "edit",
+      "expected": {
+        "title": "American Life (Peter Rauhofer's American Anthem New edit)",
+        "artist": "Madonna",
+        "album": "American Life Mixshow Mix",
+        "recording_id": "2bb7972c-6493-4ac7-af0f-0e20a7d250cd",
+        "release_group_id": "78126aa2-06da-4449-9a59-22b725b61217",
+        "release_id": "50ddb3a9-cea8-41dd-878e-d270a01b6c3e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001211",
+      "intent": "edit",
+      "expected": {
+        "title": "Mother and Father (Peter Rauhofer's Re-Invention edit)",
+        "artist": "Madonna",
+        "album": "American Life Mixshow Mix",
+        "recording_id": "e2f8a0f1-5bbe-447a-851b-5a6b38061f80",
+        "release_group_id": "78126aa2-06da-4449-9a59-22b725b61217",
+        "release_id": "50ddb3a9-cea8-41dd-878e-d270a01b6c3e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001217",
+      "intent": "remix",
+      "expected": {
+        "title": "The One (So So Def remix)",
+        "artist": "Mariah Carey",
+        "album": "The Remixes",
+        "recording_id": "f566c538-0e27-4243-9180-c5303ae043c7",
+        "release_group_id": "d24b160a-8d3e-3dae-84b0-bb8dbdd71ba3",
+        "release_id": "645b33f4-1eb3-4d02-8665-727738b66255"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001229",
+      "intent": "remix",
+      "expected": {
+        "title": "Someday (I Will Understand) (Hi‐Bias Signature radio remix)",
+        "artist": "Britney Spears",
+        "album": "B in the Mix: The Remixes",
+        "recording_id": "a0f9f480-5f6e-40b9-ade7-44eafc09a72e",
+        "release_group_id": "a1b16f9c-7b93-3351-9453-0f3545a5f989",
+        "release_id": "1c685806-67a8-4a9e-a5b4-ce457c3f9342"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001230",
+      "intent": "edit",
+      "expected": {
+        "title": "Die Another Day (Thunderpuss club edit)",
+        "artist": "Madonna",
+        "album": "American Life Mixshow Mix",
+        "recording_id": "eaf7d9be-f8fd-4159-8696-15cc9e0be58f",
+        "release_group_id": "78126aa2-06da-4449-9a59-22b725b61217",
+        "release_id": "50ddb3a9-cea8-41dd-878e-d270a01b6c3e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001254",
+      "intent": "edit",
+      "expected": {
+        "title": "Easy Ride (Tracy Young's Easy edit)",
+        "artist": "Madonna",
+        "album": "American Life Mixshow Mix",
+        "recording_id": "7b02f455-0211-43a9-b3bb-9e5293d2b8a0",
+        "release_group_id": "78126aa2-06da-4449-9a59-22b725b61217",
+        "release_id": "50ddb3a9-cea8-41dd-878e-d270a01b6c3e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001260",
+      "intent": "edit",
+      "expected": {
+        "title": "Nothing Fails (Peter Rauhofer's Classic House New edit)",
+        "artist": "Madonna",
+        "album": "American Life Mixshow Mix",
+        "recording_id": "a74f8cb8-5522-4fba-81fd-edfc86a5cb57",
+        "release_group_id": "78126aa2-06da-4449-9a59-22b725b61217",
+        "release_id": "50ddb3a9-cea8-41dd-878e-d270a01b6c3e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001333",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Cai a noite",
+        "artist": "Capital Inicial",
+        "album": "Acústico MTV",
+        "recording_id": "56201190-d368-4378-9dca-13a7fdf4ac52",
+        "release_group_id": "935401df-3add-41e5-b076-180e0e2f2b82",
+        "release_id": "c06f81c9-4036-4e56-9f58-579286e35834"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001335",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Lança perfume",
+        "artist": "Rita Lee",
+        "album": "Acústico MTV",
+        "recording_id": "425de094-b3b7-4b96-8792-b21aadc40250",
+        "release_group_id": "090ff24c-2411-3b85-b8ec-b726c441ccfe",
+        "release_id": "27fc2adb-5e34-4a7c-a333-b75a2631d99e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001338",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Top Top",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "b4da8a2f-6a91-4352-8bd7-182752aef79d",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001340",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Flagra",
+        "artist": "Rita Lee",
+        "album": "Acústico MTV",
+        "recording_id": "7bd8f6bd-dc19-480a-a170-a62947421cd9",
+        "release_group_id": "090ff24c-2411-3b85-b8ec-b726c441ccfe",
+        "release_id": "27fc2adb-5e34-4a7c-a333-b75a2631d99e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001343",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Luz dos olhos",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "88dc6c51-14e5-4ddb-838e-f54a67754833",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001348",
+      "intent": "acoustic",
+      "expected": {
+        "title": "1º de julho",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "8850fa08-38f1-4632-adcf-ca9d731edbe2",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001350",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Teatro dos Vampiros",
+        "artist": "Legião Urbana",
+        "album": "Acústico MTV",
+        "recording_id": "48cada60-f7cf-41f8-9c8a-0cb5f7f2b193",
+        "release_group_id": "016eb98c-37f5-3712-8685-ab285b852083",
+        "release_id": "c5bf48e6-6678-4c23-aa1c-7692a8231f74"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001353",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Nós",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "a0d873f5-c1b2-40b2-b10f-9ddb8892980c",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001355",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Coisas da vida",
+        "artist": "Rita Lee",
+        "album": "Acústico MTV",
+        "recording_id": "e5fe2498-8ab7-4ee0-8acf-f440a970b0cb",
+        "release_group_id": "090ff24c-2411-3b85-b8ec-b726c441ccfe",
+        "release_id": "27fc2adb-5e34-4a7c-a333-b75a2631d99e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001357",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Circus",
+        "artist": "Eric Clapton",
+        "album": "Unplugged",
+        "recording_id": "e515709b-c18d-46f6-a346-161b8aaa214e",
+        "release_group_id": "61c4a210-6e90-3d41-b6c1-fd2c7e4fb6ac",
+        "release_id": "bf3a7d0b-eea7-4f25-be82-7053eeb5c3d5"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001358",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Fátima",
+        "artist": "Capital Inicial",
+        "album": "Acústico MTV",
+        "recording_id": "dc9613e8-b483-4f32-8196-7c74272ff410",
+        "release_group_id": "935401df-3add-41e5-b076-180e0e2f2b82",
+        "release_id": "c06f81c9-4036-4e56-9f58-579286e35834"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001360",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Eu Sei",
+        "artist": "Legião Urbana",
+        "album": "Acústico MTV",
+        "recording_id": "a808a2eb-7be9-4152-8851-3a1d8db7d1c2",
+        "release_group_id": "016eb98c-37f5-3712-8685-ab285b852083",
+        "release_id": "c5bf48e6-6678-4c23-aa1c-7692a8231f74"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001362",
+      "intent": "acoustic",
+      "expected": {
+        "title": "My Father’s Eyes (take 2)",
+        "artist": "Eric Clapton",
+        "album": "Unplugged",
+        "recording_id": "0d06b027-cff6-4d50-bfb0-f2635ca9682c",
+        "release_group_id": "61c4a210-6e90-3d41-b6c1-fd2c7e4fb6ac",
+        "release_id": "bf3a7d0b-eea7-4f25-be82-7053eeb5c3d5"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001363",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Non, je ne regrette rien",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "db6bd077-1de0-4893-9b40-7168c07ad50b",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001368",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Partido alto",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "8ecc0584-4281-44ef-b63b-312748735af1",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001370",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Metal Contra as Nuvens",
+        "artist": "Legião Urbana",
+        "album": "Acústico MTV",
+        "recording_id": "d79ee09d-4edc-4ce2-bcd5-6a5e6fb71181",
+        "release_group_id": "016eb98c-37f5-3712-8685-ab285b852083",
+        "release_id": "c5bf48e6-6678-4c23-aa1c-7692a8231f74"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001373",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Tudo pro alto",
+        "artist": "Charlie Brown Jr.",
+        "album": "Acústico MTV",
+        "recording_id": "6b47b721-a5a3-4cdd-a1bc-708939e4fd0e",
+        "release_group_id": "152867f9-7b28-37da-8ba8-975cb1c7c9f0",
+        "release_id": "edd92fb4-69a4-456b-8288-8e8c49909c5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001375",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Nem luxo, nem lixo",
+        "artist": "Rita Lee",
+        "album": "Acústico MTV",
+        "recording_id": "57ac8b40-9a24-47ca-b55b-5f65d2c6f968",
+        "release_group_id": "090ff24c-2411-3b85-b8ec-b726c441ccfe",
+        "release_id": "27fc2adb-5e34-4a7c-a333-b75a2631d99e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001378",
+      "intent": "acoustic",
+      "expected": {
+        "title": "O preço",
+        "artist": "Charlie Brown Jr.",
+        "album": "Acústico MTV",
+        "recording_id": "b8cee861-8036-418a-8af8-cf822c1f4ac2",
+        "release_group_id": "152867f9-7b28-37da-8ba8-975cb1c7c9f0",
+        "release_id": "edd92fb4-69a4-456b-8288-8e8c49909c5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001380",
+      "intent": "acoustic",
+      "expected": {
+        "title": "On the Way Home / Rise",
+        "artist": "Legião Urbana",
+        "album": "Acústico MTV",
+        "recording_id": "b0fc40fc-59d1-4c1f-896a-75e2a6b426fc",
+        "release_group_id": "016eb98c-37f5-3712-8685-ab285b852083",
+        "release_id": "c5bf48e6-6678-4c23-aa1c-7692a8231f74"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001383",
+      "intent": "acoustic",
+      "expected": {
+        "title": "De esquina",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "05bf45c0-2d78-4b22-b017-b8e03468660f",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001386",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Worried Life Blues",
+        "artist": "Eric Clapton",
+        "album": "Unplugged",
+        "recording_id": "9fb6036a-91b7-466a-8e4b-cdb02a9b3e63",
+        "release_group_id": "61c4a210-6e90-3d41-b6c1-fd2c7e4fb6ac",
+        "release_id": "bf3a7d0b-eea7-4f25-be82-7053eeb5c3d5"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001387",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Sgt. Pepper's Lonely Hearts Club Band",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "449b1256-1f65-4c6a-93b2-0045fb6f68ea",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001388",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Alô, alô marciano",
+        "artist": "Rita Lee",
+        "album": "Acústico MTV",
+        "recording_id": "12af2360-f0cb-4f94-946b-2218933b66a8",
+        "release_group_id": "090ff24c-2411-3b85-b8ec-b726c441ccfe",
+        "release_id": "27fc2adb-5e34-4a7c-a333-b75a2631d99e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001390",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Vinheta Beat Box II / Como tudo deve ser",
+        "artist": "Charlie Brown Jr.",
+        "album": "Acústico MTV",
+        "recording_id": "44f74fe2-7834-4288-a844-79120da5b0b3",
+        "release_group_id": "152867f9-7b28-37da-8ba8-975cb1c7c9f0",
+        "release_id": "edd92fb4-69a4-456b-8288-8e8c49909c5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001393",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Veraneio vascaína",
+        "artist": "Capital Inicial",
+        "album": "Acústico MTV",
+        "recording_id": "6d7b2a60-64d4-4656-a2e9-cbcc8553290c",
+        "release_group_id": "935401df-3add-41e5-b076-180e0e2f2b82",
+        "release_id": "c06f81c9-4036-4e56-9f58-579286e35834"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001394",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Gitâ",
+        "artist": "Rita Lee",
+        "album": "Acústico MTV",
+        "recording_id": "79b20cbf-7e85-41fe-905a-e100a160b779",
+        "release_group_id": "090ff24c-2411-3b85-b8ec-b726c441ccfe",
+        "release_id": "27fc2adb-5e34-4a7c-a333-b75a2631d99e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001395",
+      "intent": "acoustic",
+      "expected": {
+        "title": "My Father’s Eyes (take 1)",
+        "artist": "Eric Clapton",
+        "album": "Unplugged",
+        "recording_id": "8f521afa-091b-457c-8a5d-eeec04d41e83",
+        "release_group_id": "61c4a210-6e90-3d41-b6c1-fd2c7e4fb6ac",
+        "release_id": "bf3a7d0b-eea7-4f25-be82-7053eeb5c3d5"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001396",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Charlie Brown Jr",
+        "artist": "Charlie Brown Jr.",
+        "album": "Acústico MTV",
+        "recording_id": "92d2dab2-789a-4c92-9b65-8231188d1a91",
+        "release_group_id": "152867f9-7b28-37da-8ba8-975cb1c7c9f0",
+        "release_id": "edd92fb4-69a4-456b-8288-8e8c49909c5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001399",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Fogo",
+        "artist": "Capital Inicial",
+        "album": "Acústico MTV",
+        "recording_id": "53697488-8ea4-4719-adc8-604a4e3121fd",
+        "release_group_id": "935401df-3add-41e5-b076-180e0e2f2b82",
+        "release_id": "c06f81c9-4036-4e56-9f58-579286e35834"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001402",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Quinta-feira",
+        "artist": "Charlie Brown Jr.",
+        "album": "Acústico MTV",
+        "recording_id": "0ebaf533-0538-4b65-9797-61806568f80f",
+        "release_group_id": "152867f9-7b28-37da-8ba8-975cb1c7c9f0",
+        "release_id": "edd92fb4-69a4-456b-8288-8e8c49909c5f"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001403",
+      "intent": "acoustic",
+      "expected": {
+        "title": "32 dentes",
+        "artist": "Titãs",
+        "album": "Acústico MTV",
+        "recording_id": "7e8d75ff-ef83-4656-bb78-50970f8aaf97",
+        "release_group_id": "210af403-c134-48e8-8c08-2d678d1757c4",
+        "release_id": "dd37a980-36c8-41ec-882d-fdd1b5e90132"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001404",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Wallkin’ Biues",
+        "artist": "Eric Clapton",
+        "album": "Unplugged",
+        "recording_id": "83d52cd3-9d42-4b9c-8f69-b894220d63f7",
+        "release_group_id": "61c4a210-6e90-3d41-b6c1-fd2c7e4fb6ac",
+        "release_id": "bf3a7d0b-eea7-4f25-be82-7053eeb5c3d5"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001405",
+      "intent": "acoustic",
+      "expected": {
+        "title": "O segundo sol",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "1b2fee13-9b0f-40b2-b7ad-7054a3ee9a95",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001406",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Mais do Mesmo",
+        "artist": "Legião Urbana",
+        "album": "Acústico MTV",
+        "recording_id": "1a7b8960-2681-4c02-bd59-dd169edad10f",
+        "release_group_id": "016eb98c-37f5-3712-8685-ab285b852083",
+        "release_id": "c5bf48e6-6678-4c23-aa1c-7692a8231f74"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001408",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Malandragem",
+        "artist": "Cássia Eller",
+        "album": "Acústico MTV",
+        "recording_id": "d62d880a-b3c8-40aa-a75a-4d7ed32acabe",
+        "release_group_id": "f7d2582d-86b9-3162-b5de-3e7d3262014b",
+        "release_id": "1adf6e49-e74c-444f-b005-af3dd69757e1"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001409",
+      "intent": "acoustic",
+      "expected": {
+        "title": "Luz del fuego",
+        "artist": "Rita Lee",
+        "album": "Acústico MTV",
+        "recording_id": "d69eabd9-7b28-49ac-ad4d-dc988fbdd5c6",
+        "release_group_id": "090ff24c-2411-3b85-b8ec-b726c441ccfe",
+        "release_id": "27fc2adb-5e34-4a7c-a333-b75a2631d99e"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001434",
+      "intent": "alternate",
+      "expected": {
+        "title": "I Don’t Know",
+        "artist": "The Beach Boys",
+        "album": "The Smile Sessions",
+        "recording_id": "97f59afc-4329-4b6c-a93b-7959428f9b43",
+        "release_group_id": "7c402a15-f97f-42e3-a4da-408dc4621948",
+        "release_id": "d6a62fee-2d58-441d-9eca-c72d7c5d3124"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001450",
+      "intent": "alternate",
+      "expected": {
+        "title": "My Only Sunshine, Pts. 1 & 2",
+        "artist": "The Beach Boys",
+        "album": "The Smile Sessions",
+        "recording_id": "af1e37de-28a5-48ea-8da5-01820e8913a3",
+        "release_group_id": "7c402a15-f97f-42e3-a4da-408dc4621948",
+        "release_id": "d6a62fee-2d58-441d-9eca-c72d7c5d3124"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001466",
+      "intent": "alternate",
+      "expected": {
+        "title": "Good Vibrations: Western, Pt. 2 (continued)",
+        "artist": "The Beach Boys",
+        "album": "The Smile Sessions",
+        "recording_id": "1725b834-9095-47cb-a7be-16d618471907",
+        "release_group_id": "7c402a15-f97f-42e3-a4da-408dc4621948",
+        "release_id": "d6a62fee-2d58-441d-9eca-c72d7c5d3124"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001478",
+      "intent": "alternate",
+      "expected": {
+        "title": "Da Da (Taped piano Strings)",
+        "artist": "The Beach Boys",
+        "album": "The Smile Sessions",
+        "recording_id": "bc9a48b3-37bf-4b97-883e-6c25ff3df1ff",
+        "release_group_id": "7c402a15-f97f-42e3-a4da-408dc4621948",
+        "release_id": "d6a62fee-2d58-441d-9eca-c72d7c5d3124"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001484",
+      "intent": "alternate",
+      "expected": {
+        "title": "Three Blind Mice",
+        "artist": "The Beach Boys",
+        "album": "The Smile Sessions",
+        "recording_id": "5140bb6f-3d6c-47dd-88b9-98220eb4c5cb",
+        "release_group_id": "7c402a15-f97f-42e3-a4da-408dc4621948",
+        "release_id": "d6a62fee-2d58-441d-9eca-c72d7c5d3124"
+      },
+      "request_error": null
+    },
+    {
+      "case_id": "MBR-001498",
+      "intent": "alternate",
+      "expected": {
+        "title": "Vegetables: Ballad Insert",
+        "artist": "The Beach Boys",
+        "album": "The Smile Sessions",
+        "recording_id": "4d8f7785-f684-4e55-acea-53973376dfe9",
+        "release_group_id": "7c402a15-f97f-42e3-a4da-408dc4621948",
+        "release_id": "d6a62fee-2d58-441d-9eca-c72d7c5d3124"
+      },
+      "request_error": null
+    }
+  ],
+  "ineligible_cases": [
+    {
+      "case_id": "MBR-001027",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001055",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001064",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001073",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001095",
+      "intent": "live",
+      "reason": "musicbrainz_video_recording"
+    },
+    {
+      "case_id": "MBR-001274",
+      "intent": "cover",
+      "reason": "musicbrainz_video_recording"
+    }
+  ]
+}

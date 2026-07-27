@@ -174,6 +174,20 @@ The existing `/playlists/...` routes expose the same behavior for portal
 compatibility. Track payloads preserve legacy `metadata` while also exposing
 separate `audio_metadata`, `user_metadata`, and `resolution` objects.
 
+Resolve and persist the canonical catalog profile for a temporary Roon track
+result:
+
+```bash
+curl http://localhost:3000/media/<RESULT_ID>/catalog
+```
+
+The endpoint accepts track results only. Its `catalog` response keeps the
+MusicBrainz recording, artist credit, work, credits, genres, release group and
+optional exact edition separate from `roon_binding`. The binding describes the
+currently observed playable Roon item and is never a permanent Roon identifier.
+Ambiguous MusicBrainz identities are returned with their explicit status and
+are not written as canonical recordings.
+
 ## Privacy Notice
 
 ```bash
@@ -1029,6 +1043,7 @@ by default.
 - `POST /widgets/search/action`
 - `GET /media/albums/:result_id`
 - `GET /media/artists/:result_id`
+- `GET /media/:result_id/catalog`
 - `GET /roon/images/:image_key`
 - `GET /media/images/:image_key`
 

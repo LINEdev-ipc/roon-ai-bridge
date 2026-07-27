@@ -30,6 +30,7 @@ src/
       mediaSearchPolicy.ts         pure relevance/version/source policy
   services/
     playlistService.ts             stable playlist facade
+    trackCatalogService.ts          canonical MusicBrainz catalog and Roon bindings
     playlists/
       playlistContracts.ts         public playlist contracts
       playlistCoverPolicy.ts       cover validation and normalization
@@ -88,9 +89,12 @@ stable facades while pure contracts and policies move into focused modules.
    transport when `pnpm run mcp` is invoked.
 8. `POST /mcp` and `GET /mcp` expose the 36 canonical intents and six focused
    widget entry points over Streamable HTTP.
-9. Typed media search creates short-lived references and re-resolves selected
+9. New playlist candidates resolve a canonical MusicBrainz recording before a
+   strict Roon search. Catalog metadata and the observed playable Roon binding
+   remain separate.
+10. Typed media search creates short-lived references and re-resolves selected
    media in a fresh Roon Browse session before acting.
-10. On SIGTERM or SIGINT, both HTTP listeners stop accepting work before Roon
+11. On SIGTERM or SIGINT, both HTTP listeners stop accepting work before Roon
     discovery, scheduled checks, logs and SQLite are closed in order.
 
 ## Persistence
@@ -102,7 +106,11 @@ playlists or settings. The model includes application settings, cores, cached
 zones, playlists and tracks, history, preferences and search data. RoonIA
 persists Roon authorization state in
 `data/roonstate.json`, SQLite application state in `data/roonia.sqlite`, and
-private OAuth clients/codes/tokens in `data/oauth-store.json`.
+private OAuth clients/codes/tokens in `data/oauth-store.json`. The normalized
+music catalog stores MusicBrainz recordings, artists, works, credits, genres,
+release groups and verified releases. Cover Art Archive references and
+non-reusable Roon recording bindings are persisted separately so descriptive
+identity never depends on a temporary Roon browse object.
 
 On first launch with an empty SQLite store, legacy playlists from
 `data/virtual-playlists.json` are imported automatically. Playlist rows created

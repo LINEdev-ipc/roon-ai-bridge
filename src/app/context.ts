@@ -16,6 +16,7 @@ import { PlaylistMetadataEnrichmentService } from "../services/playlistMetadataE
 import { PlaylistRepairService } from "../services/playlistRepairService";
 import { PortalAuthService } from "../services/portalAuthService";
 import { RecordingMetadataService } from "../services/recordingMetadataService";
+import { TrackCatalogService } from "../services/trackCatalogService";
 import { SystemManagementService } from "../services/systemManagementService";
 import { TechnicalLogService } from "../services/technicalLogService";
 import { ToolAccessService } from "../services/toolAccessService";
@@ -33,6 +34,7 @@ export type ApplicationContext = {
   playlistRepairService: PlaylistRepairService;
   playlistCatalogDiagnosticsService: PlaylistCatalogDiagnosticsService;
   recordingMetadataService: RecordingMetadataService;
+  trackCatalogService: TrackCatalogService;
   metadataProviderCacheService: MetadataProviderCacheService;
   oauthService: OAuthService;
   mediaService: RoonMediaService;

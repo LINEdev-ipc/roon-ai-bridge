@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-27T15:09:01.567007+00:00",
+  "strategy": "roon_album_tracklist",
+  "overall": {
+    "total": 39,
+    "resolved": 33,
+    "unresolved": 6,
+    "resolved_pct": 84.62
+  },
+  "by_intent": {
+    "default": {
+      "total": 3,
+      "resolved": 1,
+      "unresolved": 2
+    },
+    "live": {
+      "total": 3,
+      "resolved": 2,
+      "unresolved": 1
+    },
+    "remix": {
+      "total": 4,
+      "resolved": 1,
+      "unresolved": 3
+    },
+    "specific_version": {
+      "total": 29,
+      "resolved": 29,
+      "unresolved": 0
+    }
+  },
+  "unresolved_cases": [
+    {
+      "case_id": "MBR-000151",
+      "intent": "default",
+      "expected": {
+        "title": "Carry That Weight",
+        "artist": "The Beatles",
+        "album": "Abbey Road",
+        "recording_id": "daaee15a-8a4c-4275-a7c1-5b6211f0ec69",
+        "release_group_id": "9162580e-5df4-32de-80cc-f45a8d8a9b1d",
+        "release_id": "03437e02-835f-3a0a-a37c-48a36c2e852a"
+      },
+      "attempts": [
+        {
+          "source_preference": "highest_quality",
+          "available_count": 36,
+          "compatible_albums": [
+            {
+              "title": "Abbey Road (Super Deluxe Edition)",
+              "artist": "The Beatles",
+              "source": "tidal",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "streaming_first",
+          "available_count": 36,
+          "compatible_albums": [
+            {
+              "title": "Abbey Road (Super Deluxe Edition)",
+              "artist": "The Beatles",
+              "source": "tidal",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "library_first",
+          "available_count": 36,
+          "compatible_albums": [
+            {
+              "title": "Abbey Road (Super Deluxe Edition)",
+              "artist": "The Beatles",
+              "source": "tidal",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000259",
+      "intent": "default",
+      "expected": {
+        "title": "I Want You (She’s So Heavy)",
+        "artist": "The Beatles",
+        "album": "Abbey Road",
+        "recording_id": "a9a83384-3da3-4c84-af6d-33fcdb1c3e27",
+        "release_group_id": "9162580e-5df4-32de-80cc-f45a8d8a9b1d",
+        "release_id": "03437e02-835f-3a0a-a37c-48a36c2e852a"
+      },
+      "attempts": [
+        {
+          "source_preference": "highest_quality",
+          "available_count": 36,
+          "compatible_albums": [
+            {
+              "title": "Abbey Road (Super Deluxe Edition)",
+              "artist": "The Beatles",
+              "source": "tidal",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "streaming_first",
+          "available_count": 36,
+          "compatible_albums": [
+            {
+              "title": "Abbey Road (Super Deluxe Edition)",
+              "artist": "The Beatles",
+              "source": "tidal",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "library_first",
+          "available_count": 36,
+          "compatible_albums": [
+            {
+              "title": "Abbey Road (Super Deluxe Edition)",
+              "artist": "The Beatles",
+              "source": "tidal",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000333",
+      "intent": "live",
+      "expected": {
+        "title": "11 O’Clock Tick Tock",
+        "artist": "U2",
+        "album": "Under a Blood Red Sky",
+        "recording_id": "3e681bee-4dda-4816-8437-c59deb9d92a1",
+        "release_group_id": "880334fc-8365-36b9-b212-6cafa92879e5",
+        "release_id": "a6809460-b972-49da-a8a5-39d555aeb4d5"
+      },
+      "attempts": [
+        {
+          "source_preference": "highest_quality",
+          "available_count": 11,
+          "compatible_albums": [
+            {
+              "title": "Under A Blood Red Sky (Remastered 2023)",
+              "artist": "U2",
+              "source": "tidal",
+              "version_hint": "remaster",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "streaming_first",
+          "available_count": 11,
+          "compatible_albums": [
+            {
+              "title": "Under A Blood Red Sky (Remastered 2023)",
+              "artist": "U2",
+              "source": "tidal",
+              "version_hint": "remaster",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "library_first",
+          "available_count": 11,
+          "compatible_albums": [
+            {
+              "title": "Under A Blood Red Sky (Remastered 2023)",
+              "artist": "U2",
+              "source": "tidal",
+              "version_hint": "remaster",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000454",
+      "intent": "remix",
+      "expected": {
+        "title": "Voyager (Dominique Torti’s Wild Style edit)",
+        "artist": "Daft Punk",
+        "album": "Daft Club",
+        "recording_id": "15dae73a-e743-49dd-b2a5-77ed31c8b551",
+        "release_group_id": "1fd2e0fe-90f6-35ca-92c0-d816ab3bb79c",
+        "release_id": "3992a2e2-21b0-4ec1-9615-dae4bbbc57ed"
+      },
+      "attempts": [
+        {
+          "source_preference": "highest_quality",
+          "available_count": 40,
+          "compatible_albums": [
+            {
+              "title": "Daft Club",
+              "artist": "Daft Punk",
+              "source": "unknown",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "streaming_first",
+          "available_count": 40,
+          "compatible_albums": [
+            {
+              "title": "Daft Club",
+              "artist": "Daft Punk",
+              "source": "unknown",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "library_first",
+          "available_count": 40,
+          "compatible_albums": [
+            {
+              "title": "Daft Club",
+              "artist": "Daft Punk",
+              "source": "unknown",
+              "version_hint": "studio",
+              "release_type": "album",
+              "roon_rank": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000468",
+      "intent": "remix",
+      "expected": {
+        "title": "Breathe on Me (Jacques Lu Cont’s Thin White Duke mix)",
+        "artist": "Britney Spears",
+        "album": "B in the Mix: The Remixes",
+        "recording_id": "ef75dca1-0055-4f8f-b243-d14d86df9960",
+        "release_group_id": "a1b16f9c-7b93-3351-9453-0f3545a5f989",
+        "release_id": "1c685806-67a8-4a9e-a5b4-ce457c3f9342"
+      },
+      "attempts": [
+        {
+          "source_preference": "highest_quality",
+          "available_count": 3,
+          "compatible_albums": [
+            {
+              "title": "B In The Mix, The Remixes Vol 2",
+              "artist": "Britney Spears",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 0
+            },
+            {
+              "title": "B in the Mix, The Remixes (Deluxe Version)",
+              "artist": "Britney Spears",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 1
+            }
+          ]
+        },
+        {
+          "source_preference": "streaming_first",
+          "available_count": 3,
+          "compatible_albums": [
+            {
+              "title": "B In The Mix, The Remixes Vol 2",
+              "artist": "Britney Spears",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 0
+            },
+            {
+              "title": "B in the Mix, The Remixes (Deluxe Version)",
+              "artist": "Britney Spears",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 1
+            }
+          ]
+        },
+        {
+          "source_preference": "library_first",
+          "available_count": 3,
+          "compatible_albums": [
+            {
+              "title": "B In The Mix, The Remixes Vol 2",
+              "artist": "Britney Spears",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 0
+            },
+            {
+              "title": "B in the Mix, The Remixes (Deluxe Version)",
+              "artist": "Britney Spears",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "MBR-000479",
+      "intent": "remix",
+      "expected": {
+        "title": "Alejandro (Sounds of Arrow remix)",
+        "artist": "Lady Gaga",
+        "album": "The Remix",
+        "recording_id": "413f33e4-3f0e-4d14-9ee0-e8a7e824d1b5",
+        "release_group_id": "e7a595f0-0e24-47f2-b000-130726a67292",
+        "release_id": "51d0388e-c47c-3bdd-8254-660da6b9ca92"
+      },
+      "attempts": [
+        {
+          "source_preference": "highest_quality",
+          "available_count": 40,
+          "compatible_albums": [
+            {
+              "title": "The Remix (International Version)",
+              "artist": "Lady Gaga",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "streaming_first",
+          "available_count": 40,
+          "compatible_albums": [
+            {
+              "title": "The Remix (International Version)",
+              "artist": "Lady Gaga",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 0
+            }
+          ]
+        },
+        {
+          "source_preference": "library_first",
+          "available_count": 40,
+          "compatible_albums": [
+            {
+              "title": "The Remix (International Version)",
+              "artist": "Lady Gaga",
+              "source": "tidal",
+              "version_hint": "remix",
+              "release_type": "remix",
+              "roon_rank": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

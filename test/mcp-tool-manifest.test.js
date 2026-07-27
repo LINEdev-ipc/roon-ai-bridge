@@ -236,7 +236,7 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
     ];
     for (const [name, tool] of tools) {
       if (renderTools.includes(name)) {
-        assert.match(tool._meta["openai/outputTemplate"], /^ui:\/\/roon-ai-bridge\/v19\//);
+        assert.match(tool._meta["openai/outputTemplate"], /^ui:\/\/roon-ai-bridge\/v20\//);
         assert.deepEqual(tool._meta.ui.visibility, ["model", "app"]);
       } else {
         assert.equal(tool._meta?.["openai/outputTemplate"], undefined);

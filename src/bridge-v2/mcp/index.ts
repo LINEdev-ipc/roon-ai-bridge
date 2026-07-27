@@ -7,6 +7,7 @@ import { createDatabase } from "../../db/database";
 import { MetadataProviderCacheService } from "../../services/metadataProviderCacheService";
 import { PlaylistCatalogDiagnosticsService } from "../../services/playlistCatalogDiagnosticsService";
 import { RecordingMetadataService } from "../../services/recordingMetadataService";
+import { TrackCatalogService } from "../../services/trackCatalogService";
 import { SystemManagementService } from "../../services/systemManagementService";
 import { ZonePresetService } from "../../services/zonePresetService";
 import { VolumeLimitService } from "../../services/volumeLimitService";
@@ -41,6 +42,13 @@ const playlistCatalogDiagnosticsService = new PlaylistCatalogDiagnosticsService(
   logger
 );
 const mediaService = new RoonMediaService(roonClient, config.roonStreamingSource);
+const trackCatalogService = new TrackCatalogService(
+  database,
+  recordingMetadataService,
+  mediaService,
+  metadataProviderCacheService,
+  logger
+);
 const zonePresetService = new ZonePresetService(config, database);
 const volumeLimitService = new VolumeLimitService(config, database);
 
@@ -52,6 +60,7 @@ startBridgeV2McpServer({
   roonClient,
   playlistService,
   playlistCatalogDiagnosticsService,
+  trackCatalogService,
   mediaService,
   systemManagementService,
   zonePresetService,
