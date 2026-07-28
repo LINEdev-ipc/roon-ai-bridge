@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Florence+%2B+the+Machine&recording_name=Spectrum+%28Say+My+Name%29+%28Calvin+Harris+Remix%29&release_name=Spectrum+%28Say+My+Name%29",
+  "fetched_at": "2026-07-28T14:42:06.563Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Florence + the Machine",
+      "recording_arg": "Spectrum (Say My Name) (Calvin Harris Remix)",
+      "artist_credit_name": "Florence + the Machine",
+      "release_name": "Spectrum (Say My Name)",
+      "recording_name": "Spectrum (Say My Name) (Calvin Harris remix)",
+      "artist_credit_id": 852717,
+      "artist_mbids": [
+        "5fee3020-513b-48c2-b1f7-4681b01db0c6"
+      ],
+      "release_mbid": "8094b14d-eb9d-435d-8292-31800bc78bd5",
+      "recording_mbid": "2864fdcd-3918-4625-8d8c-06618f45ab72"
+    }
+  ]
+}

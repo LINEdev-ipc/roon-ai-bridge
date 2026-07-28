@@ -1,0 +1,94 @@
+{
+  "url": "https://musicbrainz.org/ws/2/work/21313724-0605-30de-916b-d3a20848a4d3?inc=artist-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:38:39.329Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "iswcs": [],
+    "disambiguation": "",
+    "genres": [],
+    "languages": [
+      "eng"
+    ],
+    "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+    "relations": [
+      {
+        "ended": false,
+        "attributes": [],
+        "direction": "backward",
+        "target-type": "artist",
+        "begin": null,
+        "target-credit": "",
+        "source-credit": "",
+        "type": "composer",
+        "attribute-values": {},
+        "artist": {
+          "disambiguation": "",
+          "sort-name": "Singh, Tjinder",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Tjinder Singh",
+          "country": "GB",
+          "type": "Person",
+          "id": "41297457-8d52-4d83-8640-480ca1d56c57"
+        },
+        "end": null,
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "attribute-ids": {}
+      },
+      {
+        "target-type": "artist",
+        "begin": null,
+        "target-credit": "",
+        "ended": false,
+        "attributes": [],
+        "direction": "backward",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Asha Bhosle",
+          "disambiguation": "",
+          "sort-name": "Bhosle, Asha",
+          "id": "79c5547a-e098-495c-8dac-7e99546aa46b",
+          "type": "Person",
+          "country": "IN"
+        },
+        "end": null,
+        "type-id": "26131498-00e8-4136-b937-22a4be01a63d",
+        "attribute-ids": {},
+        "source-credit": "",
+        "type": "dedication",
+        "attribute-values": {}
+      },
+      {
+        "artist": {
+          "country": "GB",
+          "type": "Person",
+          "id": "41297457-8d52-4d83-8640-480ca1d56c57",
+          "disambiguation": "",
+          "sort-name": "Singh, Tjinder",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Tjinder Singh"
+        },
+        "end": null,
+        "attribute-ids": {},
+        "type-id": "3e48faba-ec01-47fd-8e89-30e81161661c",
+        "source-credit": "",
+        "type": "lyricist",
+        "attribute-values": {},
+        "target-type": "artist",
+        "begin": null,
+        "target-credit": "",
+        "ended": false,
+        "attributes": [],
+        "direction": "backward"
+      }
+    ],
+    "language": "eng",
+    "id": "21313724-0605-30de-916b-d3a20848a4d3",
+    "type": "Song",
+    "tags": [],
+    "attributes": [],
+    "title": "Brimful of Asha"
+  }
+}

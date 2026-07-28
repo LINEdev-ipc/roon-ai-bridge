@@ -1,0 +1,134 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28blue+AND+monday+AND+88%29+AND+release%3A%28blue+AND+monday+AND+1988%29+AND+artistname%3A%22New+Order%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:46:49.592Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:46:49.973Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "a9359b49-e898-4f2c-a366-cb0206772d7f",
+        "score": 100,
+        "artist-credit-id": "79a45886-4712-30ce-8a36-38f0958314be",
+        "title": "Blue Monday ’88",
+        "length": 246000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "New Order",
+            "artist": {
+              "id": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
+              "name": "New Order",
+              "sort-name": "New Order",
+              "disambiguation": "UK synth pop band",
+              "aliases": [
+                {
+                  "sort-name": "EnglandNewOrder",
+                  "name": "EnglandNewOrder",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "England New Order",
+                  "name": "England New Order",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Englandneworder",
+                  "name": "Englandneworder",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "NewOrder",
+                  "name": "NewOrder",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1988",
+        "releases": [
+          {
+            "id": "60014b4e-ae4b-4f71-9cea-b76baea03faf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "79a45886-4712-30ce-8a36-38f0958314be",
+            "count": 1,
+            "title": "Blue Monday 1988",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "New Order",
+                "artist": {
+                  "id": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
+                  "name": "New Order",
+                  "sort-name": "New Order",
+                  "disambiguation": "UK synth pop band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4bfc44d9-fc1f-3307-9d45-741467c29a77",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Blue Monday 1988",
+              "primary-type": "Single"
+            },
+            "date": "1988",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1988",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "fe3a6efe-0558-34b8-8c85-d791122121a5",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bd3c0276-9dd7-4327-a0f5-4a1685e913cb",
+                    "number": "5",
+                    "title": "Blue Monday ’88",
+                    "length": 246000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

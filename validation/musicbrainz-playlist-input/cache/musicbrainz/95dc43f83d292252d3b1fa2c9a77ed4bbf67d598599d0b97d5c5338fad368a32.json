@@ -1,0 +1,251 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Victory%22+AND+artist%3A%22Dubkasm%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:37:02.728Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:37:02.751Z",
+    "count": 3,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "61b49a55-b2c8-45bc-96a7-ef05841f8da2",
+        "score": 100,
+        "artist-credit-id": "97751231-3198-31b2-9aa6-f2bb4a88edd1",
+        "title": "Victory!",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dubkasm",
+            "artist": {
+              "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+              "name": "Dubkasm",
+              "sort-name": "Dubkasm"
+            }
+          }
+        ],
+        "first-release-date": "2013-11-15",
+        "releases": [
+          {
+            "id": "d3499459-77fb-4015-a941-d34d0c7c42e8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Victory!",
+            "status": "Official",
+            "release-group": {
+              "id": "04a6d6ae-ea71-4275-a4e4-dabbc236cbc1",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Victory!",
+              "primary-type": "EP"
+            },
+            "date": "2013-11-15",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-11-15",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "cf8cbcc8-128f-3db0-a707-0367314ad79e",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "99966f7e-9f45-408f-b7eb-d4ffd402ead1",
+                    "number": "A1",
+                    "title": "Victory!"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ce0a462f-a417-4012-9e02-51c0539cd7bd",
+        "score": 89,
+        "artist-credit-id": "97751231-3198-31b2-9aa6-f2bb4a88edd1",
+        "title": "Victory (Mala remix)",
+        "length": 282000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dubkasm",
+            "artist": {
+              "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+              "name": "Dubkasm",
+              "sort-name": "Dubkasm"
+            }
+          }
+        ],
+        "first-release-date": "2015-11-25",
+        "releases": [
+          {
+            "id": "cdd49313-32c7-4103-a31a-39341c6842bd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Victory (Mala Remix)",
+            "status": "Official",
+            "release-group": {
+              "id": "04a6d6ae-ea71-4275-a4e4-dabbc236cbc1",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Victory!",
+              "primary-type": "EP"
+            },
+            "date": "2015-11-25",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2015-11-25",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "43e622da-fb31-34ea-aab3-c7a07ebbc251",
+                "position": 1,
+                "format": "10\" Vinyl",
+                "track": [
+                  {
+                    "id": "980c9daa-cdab-43d2-89df-b0de040ac0bb",
+                    "number": "A1",
+                    "title": "Victory (Mala remix)",
+                    "length": 282000
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9976a19f-f25e-447e-8faf-326423c7c87f",
+        "score": 77,
+        "artist-credit-id": "6a32797f-da52-45e9-85ac-1710517c8cbb",
+        "title": "Jah Victory",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " Feat. ",
+            "name": "Dubkasm",
+            "artist": {
+              "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+              "name": "Dubkasm",
+              "sort-name": "Dubkasm"
+            }
+          },
+          {
+            "name": "Luciano",
+            "artist": {
+              "id": "b298ab55-7633-4015-a05c-0d333a8540e3",
+              "name": "Luciano",
+              "sort-name": "Luciano",
+              "disambiguation": "Jamaican roots reggae singer Jepther McClymont"
+            }
+          }
+        ],
+        "first-release-date": "2014-12-03",
+        "releases": [
+          {
+            "id": "7f969caf-9bcd-4d27-b620-42bdc855ab5a",
+            "artist-credit-id": "616ccd26-9428-4180-a265-77e787fa3a71",
+            "count": 1,
+            "title": "Jah Victory / Right There",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "Dubkasm",
+                "artist": {
+                  "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+                  "name": "Dubkasm",
+                  "sort-name": "Dubkasm"
+                }
+              },
+              {
+                "joinphrase": " & ",
+                "name": "Luciano",
+                "artist": {
+                  "id": "b298ab55-7633-4015-a05c-0d333a8540e3",
+                  "name": "Luciano",
+                  "sort-name": "Luciano",
+                  "disambiguation": "Jamaican roots reggae singer Jepther McClymont"
+                }
+              },
+              {
+                "name": "Turbulence",
+                "artist": {
+                  "id": "0e12d01b-e8ae-4cf5-8888-649be4ca90af",
+                  "name": "Turbulence",
+                  "sort-name": "Turbulence",
+                  "disambiguation": "dancehall reggae singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5e216a74-8740-4831-8ce2-d2c14bb49662",
+              "title": "Jah Victory / Right There"
+            },
+            "date": "2014-12-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-12-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "38bb219e-3286-3262-8e05-1e1c95367530",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "77afbe80-92b8-4fcd-a057-51af36683c40",
+                    "number": "A1",
+                    "title": "Jah Victory"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

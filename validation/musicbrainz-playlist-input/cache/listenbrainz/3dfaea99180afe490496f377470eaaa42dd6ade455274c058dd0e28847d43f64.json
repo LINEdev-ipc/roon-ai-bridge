@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Daler+Mehndi&recording_name=Tunak+Tunak+Tun&release_name=Tunak+Tunak+Tun",
+  "fetched_at": "2026-07-28T14:42:58.547Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Daler Mehndi",
+      "recording_arg": "Tunak Tunak Tun",
+      "artist_credit_name": "Daler Mehndi",
+      "release_name": "Tunak Tunak Tun",
+      "recording_name": "Tunak Tunak Tun",
+      "artist_credit_id": 78204,
+      "artist_mbids": [
+        "90b5e47b-e432-47ab-99c1-97f85c88dc9a"
+      ],
+      "release_mbid": "3571a39b-2f10-4eb5-b17a-5737ec2ecb94",
+      "recording_mbid": "2e2a4250-4a28-4ff1-a452-69fe4079ccb2"
+    }
+  ]
+}

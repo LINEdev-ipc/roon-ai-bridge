@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Dubkasm&recording_name=Victory",
+  "fetched_at": "2026-07-28T12:15:35.686Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Dubkasm",
+      "recording_arg": "Victory",
+      "artist_credit_name": "Dubkasm",
+      "release_name": "Victory!",
+      "recording_name": "Victory!",
+      "artist_credit_id": 763866,
+      "artist_mbids": [
+        "6200e493-3b28-4af7-a75d-97f0e37d4dbe"
+      ],
+      "release_mbid": "d3499459-77fb-4015-a941-d34d0c7c42e8",
+      "recording_mbid": "61b49a55-b2c8-45bc-96a7-ef05841f8da2"
+    }
+  ]
+}

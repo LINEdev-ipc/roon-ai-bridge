@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "round_id": "round-001",
+  "started_at": "2026-07-28T12:15:32.462Z",
+  "finished_at": "2026-07-28T12:16:24.228Z",
+  "elapsed_seconds": 51.77,
+  "candidates": 60,
+  "previous_outcome": {
+    "conflict": 13,
+    "exact": 33,
+    "not_found": 14
+  },
+  "mapping_status": {
+    "agreement": 19,
+    "artist_recording_only": 15,
+    "not_found": 24,
+    "strategy_disagreement": 2
+  },
+  "classification": {
+    "not_found": 24,
+    "reference_agreement": 17,
+    "reference_disagreement": 7,
+    "unresolved_new_candidate": 1,
+    "unresolved_supported_candidate": 8,
+    "unresolved_weak_candidate": 3
+  },
+  "listenbrainz": {
+    "provider_requests": 120,
+    "cache_hits": 0
+  },
+  "musicbrainz_verification": {
+    "provider_requests": 46,
+    "cache_hits": 0
+  },
+  "raw_cache_entries": {
+    "listenbrainz": 120,
+    "musicbrainz": 251
+  },
+  "evaluation": {
+    "schema_version": 2,
+    "round_id": "round-001",
+    "candidates": 60,
+    "elapsed_seconds": 51.77,
+    "speedup_vs_progressive_baseline": 7.04,
+    "provider_requests": {
+      "listenbrainz": 120,
+      "musicbrainz_verification": 46,
+      "total": 166
+    },
+    "mapping_status": {
+      "agreement": 19,
+      "artist_recording_only": 15,
+      "not_found": 24,
+      "strategy_disagreement": 2
+    },
+    "final_assessment": {
+      "manual_accept": 2,
+      "manual_reject": 10,
+      "manual_review": 7,
+      "no_result": 24,
+      "reference_agreement": 17
+    },
+    "prior_exact": {
+      "total": 33,
+      "same_mbid": 17,
+      "same_mbid_pct": 51.52,
+      "different_mbid": 7,
+      "no_result": 9
+    },
+    "prior_conflict": {
+      "total": 13,
+      "returned_candidate": 11,
+      "accepted_after_review": 2,
+      "requires_review": 6,
+      "rejected": 3,
+      "no_result": 2
+    },
+    "prior_not_found": {
+      "total": 14,
+      "returned_candidate": 1,
+      "accepted_after_review": 0,
+      "requires_review": 1,
+      "rejected": 0,
+      "no_result": 13
+    },
+    "accepted_recoveries": [
+      {
+        "candidate_id": "PLI-002-011",
+        "title": "Midnight City (Eric Prydz Private Remix)",
+        "artist": "M83",
+        "recording_mbid": "168022f4-20d2-494f-a67e-a669a510f1e2"
+      },
+      {
+        "candidate_id": "PLI-003-002",
+        "title": "Obsesión",
+        "artist": "Aventura",
+        "recording_mbid": "fdb657f7-b82e-458e-9fa6-0969d5412c17"
+      }
+    ],
+    "baseline_issues_discovered": [
+      {
+        "candidate_id": "PLI-003-006",
+        "issue": "The previous exact reference also needs review because its MusicBrainz artist credit includes Kanye West while the proposal did not."
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28running+AND+up+AND+that+AND+hill+AND+infusion+AND+remix%29+AND+artistname%3A%22Kate+Bush%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:12.579Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:12.951Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "8754da94-5f59-4214-bee8-899f318059a6",
+        "score": 100,
+        "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+        "title": "Running Up That Hill (Infusion remix)",
+        "length": 569000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "artist": {
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "name": "Kate Bush",
+              "sort-name": "Bush, Kate",
+              "aliases": [
+                {
+                  "sort-name": "ケイト・ブッシュ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "ケイト・ブッシュ",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bush, Catherine",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Catherine Bush",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bush, Kate",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Kate Bush",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2003-05-12",
+        "releases": [
+          {
+            "id": "a9b18ec8-0475-4773-a99c-3f69b8eb9883",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "5b5baadd-d482-3285-a8fa-a8acd9c8d913",
+            "count": 1,
+            "title": "Running Up That Hill (Infusion remix)",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "joinphrase": " vs. ",
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              },
+              {
+                "name": "Infusion",
+                "artist": {
+                  "id": "86864388-ecf6-4d80-b22a-692f38023563",
+                  "name": "Infusion",
+                  "sort-name": "Infusion",
+                  "disambiguation": "Australian electronica band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9db57744-5086-3110-b7c0-2bc1edd19b15",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Running Up That Hill",
+              "primary-type": "Single"
+            },
+            "date": "2003-05-12",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2003-05-12",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "a125a191-0323-363c-8d49-5137672a33aa",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "3a30cabe-7bbc-360c-998c-d31b441cf260",
+                    "number": "A",
+                    "title": "Running Up That Hill",
+                    "length": 569000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

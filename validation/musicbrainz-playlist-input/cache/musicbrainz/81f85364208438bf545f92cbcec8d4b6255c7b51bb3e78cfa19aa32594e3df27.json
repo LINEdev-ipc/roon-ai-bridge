@@ -1,0 +1,4788 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28odessa%29+AND+artistname%3A%22Caribou%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:41:22.979Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:41:23.337Z",
+    "count": 17,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "a2ab65ee-b84c-4902-8f4c-4c2817f9d085",
+        "score": 100,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa",
+        "length": 303640,
+        "disambiguation": "part of Digitalism mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011-06",
+        "releases": [
+          {
+            "id": "6fded4c3-5064-411e-b0b1-b6cd3a622538",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "03e55f5c-b5b6-3def-8f1d-ec18c69b6094",
+            "count": 1,
+            "title": "In the Mix, Volume 01",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Digitalism",
+                "artist": {
+                  "id": "7b52603c-a84c-4a76-8dc8-899bb4dd9fa7",
+                  "name": "Digitalism",
+                  "sort-name": "Digitalism"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1d379553-2180-434a-a11f-9f9a00d38b9f",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "In the Mix, Volume 01",
+              "primary-type": "Album",
+              "secondary-types": [
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2011-06",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-06",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "10f1c740-53fe-3ea0-8120-c2a92a7252b9",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "283725a8-04c4-3929-9cb6-2b27d8baaac5",
+                    "number": "10",
+                    "title": "Odessa",
+                    "length": 303640
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ccddef4f-9441-438a-9c7b-ec482101826d",
+        "score": 100,
+        "artist-credit-id": "7aaad092-3b2a-32a0-9f33-4527c9f79ea7",
+        "title": "Odessa",
+        "length": 298000,
+        "disambiguation": "part of “Ministry of Sound: Underground Disco” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "5fa4eb47-ae75-4e2a-a033-6fdf0afc077a",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "side project of 1970s French funk band Cortex"
+            }
+          }
+        ],
+        "first-release-date": "2011-01-31",
+        "releases": [
+          {
+            "id": "cdcb7fce-eb58-4acf-b1ec-041e7c9a22e4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Underground Disco",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "69ce5b91-f348-40c6-9f20-2e90f78b4f78",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Underground Disco",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2011-01-31",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2011-01-31",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "b07e184f-c8dc-3a52-84ce-2c61204b5abf",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b487ef65-38c7-4b4c-8764-3d4b97186ced",
+                    "number": "10",
+                    "title": "Odessa",
+                    "length": 298000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4ed06090-5864-4708-851d-8058fb29f351",
+        "score": 100,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-07-01",
+        "releases": [
+          {
+            "id": "1c3dac27-a5bd-44ab-8476-1d5d8b0fd451",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "FIFA 11 Soundtrack",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b837a8f2-b051-46bb-9e80-0007e3c00d24",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "FIFA 11 Soundtrack",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2010-07-01",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2010-07-01",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "d450faa4-b83d-333c-bffb-bdce68c13dc3",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "7fc39dc4-3651-4612-8cc2-7225f769a09d",
+                    "number": "3",
+                    "title": "Odessa"
+                  }
+                ],
+                "track-count": 33,
+                "track-offset": 2
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "electropop"
+          },
+          {
+            "count": 1,
+            "name": "elektro"
+          }
+        ]
+      },
+      {
+        "id": "d9c104e5-2ad7-4e2d-8fce-e7e7396a7a5b",
+        "score": 100,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011",
+        "releases": [
+          {
+            "id": "c3774f39-ce30-4b13-a7a2-def9f944b23e",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Sunday In Bed No 4",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3a2e9918-6195-425b-992f-832bfd49816d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sunday In Bed No 4",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 28,
+            "media": [
+              {
+                "id": "69dba3fb-c7af-37e6-8eb5-772c99e5346a",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1cacb49d-3b16-4e19-8110-6af450d97bce",
+                    "number": "12",
+                    "title": "Odessa"
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6173a558-3ab1-48c8-a3b0-49bd55f7443f",
+        "score": 100,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa",
+        "length": 316000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015",
+        "releases": [
+          {
+            "id": "f6abba2a-095c-4453-8dcf-695b0a8bacf8",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (Deluxe Edition)",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "track-count": 24,
+            "media": [
+              {
+                "id": "2d1614ba-a12d-4174-bf86-6417b6019416",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a7c1f3f9-034a-41d4-b21e-4f796ecbef64",
+                    "number": "1",
+                    "title": "Odessa",
+                    "length": 316000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "913a3e4e-595c-405a-a66f-62faae38ff1b",
+        "score": 100,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa",
+        "length": 315000,
+        "disambiguation": "album version",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-04-07",
+        "releases": [
+          {
+            "id": "a5406591-fa42-45e0-87e2-84a7b17a49b3",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Better Pop Music",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "144bd616-38ad-4b48-8433-fd96f4e2da31",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Better Pop Music",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-05-20",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2010-05-20",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "85297b56-1aff-3bac-a175-2896d379b34a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "76ba94a8-abd8-3d29-8224-693149bfa94a",
+                    "number": "8",
+                    "title": "Odessa",
+                    "length": 312000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "962c85d1-f46f-47bb-834f-f68e542a2083",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "20 City Slang: 1990-2010 Rockdelux Sampler",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7ebc2347-aa24-4d6a-b250-899ff753c075",
+              "title": "20 City Slang: 1990-2010 Rockdelux Sampler",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-12",
+            "country": "ES",
+            "release-events": [
+              {
+                "date": "2010-12",
+                "area": {
+                  "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+                  "name": "Spain",
+                  "sort-name": "Spain",
+                  "iso-3166-1-codes": [
+                    "ES"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "96b9ac16-b342-3291-aa03-40b2f20d1e15",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d3396a41-e8c1-4c38-9106-5550b68535ad",
+                    "number": "9",
+                    "title": "Odessa",
+                    "length": 315666
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "0e8e0cd1-4d13-4b24-b244-4edd89d484da",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Indie/Rock Playlist: April 2010",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e15f259d-3abf-4185-9335-dd6b6ec99a0c",
+              "type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "primary-type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "title": "Indie/Rock Playlist: April 2010",
+              "primary-type": "Other",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-04-07",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2010-04-07",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 130,
+            "media": [
+              {
+                "id": "6f1d79ac-44cc-37c8-98dc-6461c827a17f",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "46d45f57-1ce0-4d2e-a495-f43f8dde3768",
+                    "number": "83",
+                    "title": "Odessa",
+                    "length": 312703
+                  }
+                ],
+                "track-count": 130,
+                "track-offset": 82
+              }
+            ]
+          },
+          {
+            "id": "19a281cf-263b-466a-ba51-7f55979f4777",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "The Residential Sweetener",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5bd51d4c-439b-4a0f-8a91-29c4fea9395f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Residential Sweetener",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "af0f4867-50b4-398e-97c7-2d6d2ec44699",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "df9d2baa-b33f-458c-8494-51a701849309",
+                    "number": "9",
+                    "title": "Odessa"
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "f98dd157-c612-4368-984e-f3455a2eb24a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Colette №10",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4318ce8c-aa30-4ea4-89bc-2e42093db276",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Colette №10",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "fffc1662-86a4-36db-ae13-2c06fba06d8f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "98b4ef4e-fdb1-4b3a-9444-0f09ef4cb019",
+                    "number": "9",
+                    "title": "Odessa",
+                    "length": 317000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "f1401cba-3fdf-46f6-a317-70491451a2b8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Colette №10",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4318ce8c-aa30-4ea4-89bc-2e42093db276",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Colette №10",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "93b3ba11-26d0-36b0-a192-c3be55a63928",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fe4ccea7-76b2-3479-9eff-e86292707c09",
+                    "number": "9",
+                    "title": "Odessa",
+                    "length": 311000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "ad3cbf65-3b63-4cc8-a82a-aa018f1fe67a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 10,
+            "title": "Nova Tunes 2.1_3.0",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "68960155-bd6b-4a74-9bdd-cbc21dda92ce",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nova Tunes 2.1_3.0",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2015",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2015",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 192,
+            "media": [
+              {
+                "id": "e6dfdca1-2a18-3a67-9d5c-2c9e52479d56",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3e1bd974-c760-4635-8a13-a449d11fbf54",
+                    "number": "3",
+                    "title": "Odessa",
+                    "length": 313000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "23cfcc8a-6e5e-4c6b-9ca3-25f36d40a648",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "About: Berlin, Vol: 10",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d8096d07-2828-412c-a3da-08d9d1047168",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "About: Berlin, Vol: 10",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2015-05-15",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2015-05-15",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 45,
+            "media": [
+              {
+                "id": "6201bb6a-a595-3785-ae86-aa2b4ddb71ca",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c4a18810-57fb-4d26-a34f-b292cbc2c810",
+                    "number": "4",
+                    "title": "Odessa",
+                    "length": 314000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "3739bb33-7c26-440c-9050-fe5cc05a6f61",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "A 10 Track Musical Expedition Through the Underwater Charted Swim-O-Sphere of Caribou for You",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "41c0e697-43d6-4d87-be61-060d52858a6e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A 10 Track Musical Expedition Through the Underwater Charted Swim-O-Sphere of Caribou for You",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "4b0590db-bc81-36b9-8781-3f5725502ea2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5322b27c-9cd1-400f-a63e-ee0d6f535129",
+                    "number": "1",
+                    "title": "Odessa",
+                    "length": 313546
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "14dee770-06cd-47ff-89a6-842d225e3014",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "La Route du Rock 2010",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b9bbfd04-ac11-4073-afa9-e2681495c9ad",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "La Route du Rock 2010",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 17,
+            "media": [
+              {
+                "id": "d8dbc947-2b35-32b3-a374-709bc35bb8e6",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8cf4e436-36ca-3225-af90-deb45f1db76f",
+                    "number": "14",
+                    "title": "Odessa",
+                    "length": 316000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "d06b0301-ea0b-4a15-85fe-433667ef0604",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Festivalguide: The Compilation",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "703ef8cf-d224-4262-b5df-514978417802",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Festivalguide: The Compilation",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 43,
+            "media": [
+              {
+                "id": "1b7968df-f56a-3107-a32d-649a232553a2",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "632087d6-73fc-4f78-95bc-3379b16a8e8f",
+                    "number": "20",
+                    "title": "Odessa",
+                    "length": 315066
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "8728bad7-7665-4a69-a48e-ef27db0301f0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 2,
+            "title": "Swim",
+            "status": "Official",
+            "disambiguation": "Vinyl Me, Please. Exclusive Pressing",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "date": "2019-11-01",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2019-11-01",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "648ca03d-802a-31ff-b2a1-b2a29154121c",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "b8ad80ab-97bd-43c6-b5d1-a62a7b805ce2",
+                    "number": "A1",
+                    "title": "Odessa",
+                    "length": 316000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "9af8a7ee-65de-43b8-b08f-ae0a7d79e7ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "date": "2010",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "078e79ff-c742-3e83-a22f-f700ad0cdf13",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d7e830d9-12ae-43ef-98fc-b7562c62295d",
+                    "number": "1",
+                    "title": "Odessa",
+                    "length": 315506
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f9fe95a5-e9e6-49b5-b945-0433ba2573b1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 2,
+            "title": "Swim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "date": "2010-04-16",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-04-16",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "127f5506-44c4-324e-82f8-6bb0a1525f1d",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "b4ff1838-1eb5-4453-baf1-b26c88381ce2",
+                    "number": "A1",
+                    "title": "Odessa"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "18510a13-32a0-45c8-a0eb-ed88713fc9ee",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "date": "2010-04-20",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2010-04-20",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "726b8d54-e96f-3aec-92b5-c0675d8449a4",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bfdb2dda-5c98-412f-9ed0-3450421c251a",
+                    "number": "1",
+                    "title": "Odessa",
+                    "length": 315507
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "e6af8d58-7b77-472e-b1a7-5de5db2f1855",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Odessa",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "df9327e0-1c94-44a8-b8e8-7a8cf99022f2",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Odessa",
+              "primary-type": "Single"
+            },
+            "date": "2010",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "e1aae591-c980-3c64-91e5-6f8c81b93ded",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "be427f82-d783-4fbe-b12e-316e6e7f60b3",
+                    "number": "1",
+                    "title": "Odessa",
+                    "length": 315000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "ff313fb1-396a-4ae9-bb44-f1372454f4b4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "date": "2010-04-20",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2010-04-20",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "c026615f-5545-3051-bfe4-d81835313b1b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0e506794-c666-3266-80c8-c2df39a7a7c4",
+                    "number": "1",
+                    "title": "Odessa",
+                    "length": 315506
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "0c727a84-e19b-3217-b47c-2228c786d46a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "date": "2010-04-16",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-04-16",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "242e9638-0ce7-3ff5-830a-32165ef8bbc1",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "de1d21c3-bf12-3c19-a2e5-08fc5207b77c",
+                    "number": "1",
+                    "title": "Odessa",
+                    "length": 315506
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "55d3f273-2df1-3173-8ee6-5b01d94d4946",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "date": "2010-04-19",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010-04-19",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "15758b2c-6ab5-3bf3-b1b0-ca2bb08f076a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6b99b6e2-7e92-3943-82d8-b8e29f2d6745",
+                    "number": "1",
+                    "title": "Odessa",
+                    "length": 315506
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "eb2065cb-fae6-4660-9991-de6652041034",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "LSTN #9",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9b9808f0-e3d1-456a-b284-6c35b8ed1ae0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "LSTN #9",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-04-23",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2010-04-23",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 25,
+            "media": [
+              {
+                "id": "7d6d6a0e-cb56-3bfc-ad1b-4dcfe2c3e022",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2aa48dfc-9e2a-381b-801c-98e97fe3890b",
+                    "number": "2",
+                    "title": "Odessa",
+                    "length": 315000
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "f65a1762-5e5e-42cc-ac4f-a7486723b9ce",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Groove 124 / CD° 33",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "eb838ce1-14aa-476c-ad40-45ae29bd690d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Groove 124 / CD° 33",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-05",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-05",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "ba724ab8-a6b5-3736-9ae3-a8fcca866c3c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "178898ab-e662-3e59-bd67-ec74c25e4153",
+                    "number": "2",
+                    "title": "Odessa",
+                    "length": 314000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "ba0a8a94-a0ab-4712-84a9-7236965db3b7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Odessa",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "df9327e0-1c94-44a8-b8e8-7a8cf99022f2",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Odessa",
+              "primary-type": "Single"
+            },
+            "date": "2010-04-24",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-04-24",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "d8320bbf-08f6-32c6-87e9-32d33bdaa9b5",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "a246f313-bc0a-385a-b061-3bfbff9645ec",
+                    "number": "A1",
+                    "title": "Odessa"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "12628f70-6ea8-4d73-b7b3-e935b2db7e2e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Nova Tunes 2.2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "21b496ed-89d1-43ae-93c7-297248f448e8",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nova Tunes 2.2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-08-30",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010-08-30",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 22,
+            "media": [
+              {
+                "id": "87da393a-ee91-3874-9ff6-e7c000a25c82",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "324b51c6-e57c-3b58-b566-e9f94f071f4d",
+                    "number": "3",
+                    "title": "Odessa",
+                    "length": 311720
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "0d9663b3-9e3d-495b-8906-2f73d5c39782",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Merge Records 2010 Digital Sampler",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1adeb5ea-8b4d-4f00-ba17-e83a68a75929",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Merge Records 2010 Digital Sampler",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-05-01",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2010-05-01",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "75a2ad0e-2bdd-3617-b7da-0c9dd6e8bfde",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6c822bc3-c540-3957-bca2-a1d4cff3506d",
+                    "number": "11",
+                    "title": "Odessa",
+                    "length": 315000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "e89cdc9c-de43-47d8-976e-d427dd7ba10d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 2,
+            "title": "Swim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "date": "2010-04-20",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2010-04-20",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "1192448d-a5f6-3190-93ca-8d4af44d6528",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "724e6dfb-f0ff-3fb3-b0a5-77366942189b",
+                    "number": "A1",
+                    "title": "Odessa"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "e91dc49d-4205-4dca-91a1-6b1c840ee55d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Colette N°10",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4318ce8c-aa30-4ea4-89bc-2e42093db276",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Colette №10",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-05-10",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2010-05-10",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "95ea2d15-2e79-315a-894c-0bfb66bee419",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1309bd5a-5b06-3b6d-941b-5a1e1747d8ba",
+                    "number": "9",
+                    "title": "Odessa",
+                    "length": 317000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 8
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "DED621000414"
+        ],
+        "tags": [
+          {
+            "count": 4,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "experimental"
+          },
+          {
+            "count": 1,
+            "name": "indie"
+          },
+          {
+            "count": 1,
+            "name": "techno"
+          },
+          {
+            "count": 1,
+            "name": "electropop"
+          },
+          {
+            "count": 1,
+            "name": "indietronica"
+          },
+          {
+            "count": 2,
+            "name": "elektro"
+          },
+          {
+            "count": 2,
+            "name": "electronica experimental"
+          },
+          {
+            "count": 1,
+            "name": "outsider house"
+          },
+          {
+            "count": 1,
+            "name": "abstract electronic"
+          }
+        ]
+      },
+      {
+        "id": "43ca8fd7-9090-41e7-8850-388b6fd24d9f",
+        "score": 91,
+        "artist-credit-id": "13a9c274-0b3c-3364-9440-28c119695327",
+        "title": "Odessa",
+        "length": 312813,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou King",
+            "artist": {
+              "id": "cd07d369-1e8f-45c0-aab0-de31d914b8a9",
+              "name": "Caribou King",
+              "sort-name": "Caribou King"
+            }
+          }
+        ],
+        "first-release-date": "2014-02-10",
+        "releases": [
+          {
+            "id": "c509d133-ee63-4b7c-aa0a-6b86ba657836",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Greatest Ever! Electric",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9c1d6141-dc17-4fff-aab3-21a5551cee0e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Greatest Ever! Electric",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-02-10",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-02-10",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "119bc4fc-d758-3e1b-8a7a-05f19f78e6b7",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ea9a81ad-451c-4ee1-a9e7-59856594455f",
+                    "number": "7",
+                    "title": "Odessa",
+                    "length": 312813
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "22aac515-d290-4258-848d-4c76f54c3b27",
+        "score": 87,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (radio edit)",
+        "length": 231893,
+        "disambiguation": "radio edit",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-06-10",
+        "releases": [
+          {
+            "id": "3dde5635-f057-4e34-92f2-2eec8efaee99",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "FM4 Soundselection: 22",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "54271191-e874-45ad-a214-a9dc0d558bfe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "FM4 Soundselection: 22",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-06-10",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2010-06-10",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "30410b78-f07b-3e2a-a6a5-c7065dc49ab9",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8089e4bd-ef4a-3c1c-a826-07efbf724aed",
+                    "number": "8",
+                    "title": "Odessa (radio edit)",
+                    "length": 230666
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "184f6b89-50e0-4e7b-8eb9-fc0f023c5c79",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Rolling Stone: Rare Trax, Volume 88: Jubilee Tracks",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b368ed39-57fe-4e0d-a6ca-b6e92ca5bb23",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rolling Stone: Rare Trax, Volume 88: Jubilee Tracks",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-10-23",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2014-10-23",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "a3bf9712-3831-3410-bd9d-64b310c545e3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "67a2c0a4-64fd-477e-9824-5c26be7fb0d3",
+                    "number": "2",
+                    "title": "Odessa (edit)",
+                    "length": 231893
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "bc8ee7bb-6a79-4c21-842f-6929ad7258d3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Rough Trade Shops: Counter Culture 10",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "59660cc3-47df-49f6-a62b-caba22392323",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rough Trade Shops: Counter Culture 10",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "fab07c52-8070-3031-8360-29a7f4ea9b20",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "361ff891-b101-3356-96a2-f129f2ca872a",
+                    "number": "9",
+                    "title": "Odessa",
+                    "length": 233320
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2727d880-b4df-43bf-be05-f01b7bd086a6",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (Nite Jewel remix)",
+        "length": 319000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-04-24",
+        "releases": [
+          {
+            "id": "9cdc116b-b0be-4aea-9f3c-2114e4c932ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "SwimRemixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-09-03",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-09-03",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "a1ff12b2-4b44-37ff-b847-329411bd20a7",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e4abd5d3-6945-4542-956f-9cf4e46f3e81",
+                    "number": "13",
+                    "title": "Odessa (Nite Jewel remix)",
+                    "length": 319293
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "ba0a8a94-a0ab-4712-84a9-7236965db3b7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Odessa",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "df9327e0-1c94-44a8-b8e8-7a8cf99022f2",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Odessa",
+              "primary-type": "Single"
+            },
+            "date": "2010-04-24",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-04-24",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "d8320bbf-08f6-32c6-87e9-32d33bdaa9b5",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "f5de0ebc-c4dd-3654-8c49-4b2b67eac282",
+                    "number": "B2",
+                    "title": "Odessa (Nite Jewel remix)"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "c54915d5-af24-4468-86eb-605136ee9136",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "26f9d942-c1d4-3ef4-a9aa-b830e43c7452",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c46a051a-a2c7-3e52-ab09-3cf65d57a096",
+                    "number": "10",
+                    "title": "Odessa (Nite Jewel remix)",
+                    "length": 318026
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "205b1364-6e81-43c1-88c9-b7206b5679e2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-01-30",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2018-01-30",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "1a91dfe0-43a4-3c7a-8e1f-a5aa93b785cf",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bb1176ca-9664-30a8-be2e-8e1b8979dcd2",
+                    "number": "13",
+                    "title": "Odessa (Nite Jewel remix)",
+                    "length": 319000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "ba2844c3-d6e3-487e-a855-9cf87a215be4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010-11-02",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2010-11-02",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "83157204-07af-3b01-93e5-3fea25b25707",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e06fdea3-4cb7-3671-a753-a88a8bb93a05",
+                    "number": "13",
+                    "title": "Odessa (Nite Jewel remix)",
+                    "length": 319000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "77d5db1a-41c1-46c1-a3f8-3807248791a2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010-11-01",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010-11-01",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "ae1afef4-b18d-30fa-a91d-04e02403a768",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "74eecf0d-8e3d-3226-9ee0-299989462d31",
+                    "number": "13",
+                    "title": "Odessa (Nite Jewel remix)",
+                    "length": 319000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 12
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "DED621000437"
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "downtempo"
+          },
+          {
+            "count": 1,
+            "name": "experimental"
+          },
+          {
+            "count": 1,
+            "name": "idm"
+          },
+          {
+            "count": 1,
+            "name": "techno"
+          },
+          {
+            "count": 1,
+            "name": "abstract electronic"
+          }
+        ]
+      },
+      {
+        "id": "bf0ded89-76bb-4ade-a314-e786f96d7915",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (DJ Koze’s Campfire)",
+        "length": 357000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-11-01",
+        "releases": [
+          {
+            "id": "9cdc116b-b0be-4aea-9f3c-2114e4c932ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "SwimRemixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-09-03",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-09-03",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "a1ff12b2-4b44-37ff-b847-329411bd20a7",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8e1ab1b1-3d27-4c02-bf8a-7a8bf025eb29",
+                    "number": "15",
+                    "title": "Odessa (DJ Koze’s Campfire remix)",
+                    "length": 358627
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "c663b696-532d-4862-9dc3-b4384de7ae60",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim Remixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "acb687a3-2c89-431c-be77-480dce377b7f",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Swim Remixes",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010-11-01",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-11-01",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "6ffd05e8-9851-3826-b488-905d27725f7a",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "8122f842-2b94-3be7-b891-dddd415c9d6a",
+                    "number": "B2",
+                    "title": "Odessa (DJ Koze’s Campfire)",
+                    "length": 357000
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "83500148-f085-4712-b06e-73e1c04aa229",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Indie Wonderland, Volume 3",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "15b5819f-088e-4e27-b910-43bed8fd5b77",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Indie Wonderland, Volume 3",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-01",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-01",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "fc22b43b-6f3c-3276-945c-22c228d721f2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0704a249-d904-38ac-81bc-1f3db48ece60",
+                    "number": "9",
+                    "title": "Odessa (DJ Koze's Campfire)",
+                    "length": 358120
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "205b1364-6e81-43c1-88c9-b7206b5679e2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-01-30",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2018-01-30",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "1a91dfe0-43a4-3c7a-8e1f-a5aa93b785cf",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bd81d81a-a71c-3d28-9a39-ffad286620ef",
+                    "number": "15",
+                    "title": "Odessa (DJ Koze’s Campfire)",
+                    "length": 357000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "DED621000263"
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "folk"
+          },
+          {
+            "count": 1,
+            "name": "experimental"
+          },
+          {
+            "count": 1,
+            "name": "idm"
+          },
+          {
+            "count": 1,
+            "name": "electro"
+          }
+        ]
+      },
+      {
+        "id": "5f1d7bae-ead5-42aa-aa34-8425d5cfbb11",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (Junior Boys mix)",
+        "length": 365000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015",
+        "releases": [
+          {
+            "id": "f6abba2a-095c-4453-8dcf-695b0a8bacf8",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (Deluxe Edition)",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "track-count": 24,
+            "media": [
+              {
+                "id": "2d1614ba-a12d-4174-bf86-6417b6019416",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "21c199b2-16a7-4536-aa17-362b63f57e6d",
+                    "number": "10",
+                    "title": "Odessa (Junior Boys mix)",
+                    "length": 365000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bfa8ae16-3ffe-4836-828a-2b26decac1ee",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (Nite Jewel remix)",
+        "length": 318000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015",
+        "releases": [
+          {
+            "id": "f6abba2a-095c-4453-8dcf-695b0a8bacf8",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (Deluxe Edition)",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "track-count": 24,
+            "media": [
+              {
+                "id": "2d1614ba-a12d-4174-bf86-6417b6019416",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "81c23a80-a638-4147-8e8c-1bc300a6642a",
+                    "number": "22",
+                    "title": "Odessa (Nite Jewel remix)",
+                    "length": 318000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 21
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "935fc6ac-8111-4247-9f28-78eea6adbdeb",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (DJ Koze's Campfire)",
+        "length": 357000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015",
+        "releases": [
+          {
+            "id": "f6abba2a-095c-4453-8dcf-695b0a8bacf8",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (Deluxe Edition)",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "track-count": 24,
+            "media": [
+              {
+                "id": "2d1614ba-a12d-4174-bf86-6417b6019416",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b07e1e42-2d3c-4fe3-8750-2b68abd247fd",
+                    "number": "24",
+                    "title": "Odessa (DJ Koze's Campfire)",
+                    "length": 357000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f6935a1e-bc17-4d73-82b7-a8149cfccaee",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (David Wrench's Drumapella)",
+        "length": 170000,
+        "disambiguation": "part of “Beats in Space 084: Yu Su” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-08-18",
+        "releases": [
+          {
+            "id": "469daee9-5209-4eb2-a6a9-18b3c74aa8d7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "eda745a5-c82d-3a5d-96fd-645a6e8e09ed",
+            "count": 1,
+            "title": "Beats in Space 084: Yu Su",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Yu Su",
+                "artist": {
+                  "id": "4472f89e-5944-49e4-9a33-43358390db40",
+                  "name": "Yu Su",
+                  "sort-name": "Su, Yu",
+                  "disambiguation": "Chinese-Canadian EDM producer and DJ"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "251bf812-cc2a-41ed-a226-17087c76690d",
+              "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "title": "Beats in Space 084: Yu Su",
+              "primary-type": "Broadcast",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2023-08-18",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-08-18",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "5ece5774-5417-3c1a-95ee-a86f363006a5",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "409b9525-d8d0-4caf-b2e1-79b8c973ff75",
+                    "number": "8",
+                    "title": "Odessa (David Wrench's Drumapella)",
+                    "length": 170000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 7
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "US23A9571539"
+        ]
+      },
+      {
+        "id": "d2ed98bf-dbfd-46d1-ba51-72d99b0da05b",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (Junior Boys mix)",
+        "length": 364986,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-04-24",
+        "releases": [
+          {
+            "id": "9cdc116b-b0be-4aea-9f3c-2114e4c932ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "SwimRemixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-09-03",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-09-03",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "a1ff12b2-4b44-37ff-b847-329411bd20a7",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8505e7fe-e6e3-4f49-aadb-e43b7e1fceb3",
+                    "number": "1",
+                    "title": "Odessa (Junior Boys mix)",
+                    "length": 364467
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "ba0a8a94-a0ab-4712-84a9-7236965db3b7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Odessa",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "df9327e0-1c94-44a8-b8e8-7a8cf99022f2",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Odessa",
+              "primary-type": "Single"
+            },
+            "date": "2010-04-24",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-04-24",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "d8320bbf-08f6-32c6-87e9-32d33bdaa9b5",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "a4f2a91b-27d9-39b0-8622-0ba87700651e",
+                    "number": "B1",
+                    "title": "Odessa (Junior Boys mix)"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "c54915d5-af24-4468-86eb-605136ee9136",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "26f9d942-c1d4-3ef4-a9aa-b830e43c7452",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "41ef589b-6c2c-3265-b1ca-249f474c4896",
+                    "number": "1",
+                    "title": "Odessa (Junior Boys mix)",
+                    "length": 364986
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "205b1364-6e81-43c1-88c9-b7206b5679e2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-01-30",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2018-01-30",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "1a91dfe0-43a4-3c7a-8e1f-a5aa93b785cf",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1a708d60-fffd-361f-be2c-15ef739bfe77",
+                    "number": "1",
+                    "title": "Odessa (Junior Boys mix)",
+                    "length": 364000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "ba2844c3-d6e3-487e-a855-9cf87a215be4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010-11-02",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2010-11-02",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "83157204-07af-3b01-93e5-3fea25b25707",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e5879792-07e2-3655-af13-2b9440bdb0e4",
+                    "number": "1",
+                    "title": "Odessa (Junior Boys mix)",
+                    "length": 365000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "77d5db1a-41c1-46c1-a3f8-3807248791a2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010-11-01",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010-11-01",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "ae1afef4-b18d-30fa-a91d-04e02403a768",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "401f6984-2ef4-3fa1-9878-88a47bff2ade",
+                    "number": "1",
+                    "title": "Odessa (Junior Boys mix)",
+                    "length": 365000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "DED621000436"
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "experimental"
+          },
+          {
+            "count": 1,
+            "name": "indie"
+          },
+          {
+            "count": 1,
+            "name": "techno"
+          },
+          {
+            "count": 1,
+            "name": "abstract electronic"
+          }
+        ]
+      },
+      {
+        "id": "88fe10bc-cd63-4910-834a-6fe53270a07b",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (David Wrench's Drumapella)",
+        "length": 313000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015",
+        "releases": [
+          {
+            "id": "f6abba2a-095c-4453-8dcf-695b0a8bacf8",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (Deluxe Edition)",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e103be2-b071-40da-a88b-8e2f4732a8eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim",
+              "primary-type": "Album"
+            },
+            "track-count": 24,
+            "media": [
+              {
+                "id": "2d1614ba-a12d-4174-bf86-6417b6019416",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "dfe0cfa4-c749-48ad-8b4c-de8354a895da",
+                    "number": "21",
+                    "title": "Odessa (David Wrench's Drumapella)",
+                    "length": 313000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2723d4ca-88aa-4e58-8b07-f2d94dcd0311",
+        "score": 83,
+        "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+        "title": "Odessa (David Wrench’s Drumapella)",
+        "length": 312667,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Caribou",
+            "artist": {
+              "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+              "name": "Caribou",
+              "sort-name": "Caribou",
+              "disambiguation": "electronic act from Dan Snaith",
+              "aliases": [
+                {
+                  "sort-name": "Caribou",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Caribou",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2004",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Manitoba",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Manitoba",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "2004"
+                },
+                {
+                  "sort-name": "Caribou (formerly Manitoba)",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Caribou (formerly Manitoba)",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-04-24",
+        "releases": [
+          {
+            "id": "9cdc116b-b0be-4aea-9f3c-2114e4c932ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "SwimRemixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-09-03",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-09-03",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "a1ff12b2-4b44-37ff-b847-329411bd20a7",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0e023a43-3157-4a90-adab-e1900c92319c",
+                    "number": "12",
+                    "title": "Odessa (David Wrench’s Drumapella)",
+                    "length": 312667
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "ba0a8a94-a0ab-4712-84a9-7236965db3b7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Odessa",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "df9327e0-1c94-44a8-b8e8-7a8cf99022f2",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Odessa",
+              "primary-type": "Single"
+            },
+            "date": "2010-04-24",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-04-24",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "d8320bbf-08f6-32c6-87e9-32d33bdaa9b5",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "cc806019-96a8-3d56-9eb1-05db288824fc",
+                    "number": "A2",
+                    "title": "Odessa (David Wrench's Drumapella)"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "205b1364-6e81-43c1-88c9-b7206b5679e2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-01-30",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2018-01-30",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "1a91dfe0-43a4-3c7a-8e1f-a5aa93b785cf",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5d0192e0-03e7-396f-890f-cbc835cf7b5f",
+                    "number": "12",
+                    "title": "Odessa (David Wrench’s Drumapella)",
+                    "length": 312000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "ba2844c3-d6e3-487e-a855-9cf87a215be4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010-11-02",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2010-11-02",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "83157204-07af-3b01-93e5-3fea25b25707",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "62015db5-6add-3086-a6ce-a84349b771a5",
+                    "number": "12",
+                    "title": "Odessa (David Wrench’s Drumapella)",
+                    "length": 313000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "77d5db1a-41c1-46c1-a3f8-3807248791a2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "30466a6d-eb55-38ad-ab68-699fb2b9bdb5",
+            "count": 1,
+            "title": "Swim (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Caribou",
+                "artist": {
+                  "id": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+                  "name": "Caribou",
+                  "sort-name": "Caribou",
+                  "disambiguation": "electronic act from Dan Snaith"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ec6b9f02-466b-4a91-9dca-ae727a9a8c16",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Swim (remixes)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2010-11-01",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010-11-01",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "ae1afef4-b18d-30fa-a91d-04e02403a768",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "39c90d2e-0641-371a-8d44-e21b6e6025e9",
+                    "number": "12",
+                    "title": "Odessa (David Wrench’s Drumapella)",
+                    "length": 313000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 11
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "DED621000438"
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "experimental"
+          },
+          {
+            "count": 1,
+            "name": "idm"
+          },
+          {
+            "count": 1,
+            "name": "techno"
+          },
+          {
+            "count": 1,
+            "name": "abstract electronic"
+          }
+        ]
+      }
+    ]
+  }
+}

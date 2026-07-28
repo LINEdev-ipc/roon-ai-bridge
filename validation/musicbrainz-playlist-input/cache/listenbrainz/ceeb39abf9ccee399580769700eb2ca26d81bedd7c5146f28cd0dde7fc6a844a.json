@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=New+Order&recording_name=Blue+Monday+%2788&release_name=Blue+Monday+1988",
+  "fetched_at": "2026-07-28T14:41:57.055Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "New Order",
+      "recording_arg": "Blue Monday '88",
+      "artist_credit_name": "New Order",
+      "release_name": "Blue Monday 1988",
+      "recording_name": "Blue Monday‐88",
+      "artist_credit_id": 846,
+      "artist_mbids": [
+        "f1106b17-dcbb-45f6-b938-199ccfab50cc"
+      ],
+      "release_mbid": "67c56bd6-8475-4aaf-ac63-a665f8337b42",
+      "recording_mbid": "96f3aacc-8251-4ffc-9452-4bde672d65f8"
+    }
+  ]
+}

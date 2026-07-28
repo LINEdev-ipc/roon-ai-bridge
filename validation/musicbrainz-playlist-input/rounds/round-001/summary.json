@@ -1,0 +1,144 @@
+{
+  "schema_version": 3,
+  "round_id": "round-001",
+  "candidates": 60,
+  "recorded_attempts": 68,
+  "executions": [
+    {
+      "execution_id": "round-001-initial",
+      "mode": "initial",
+      "started_at": "2026-07-28T11:36:30.103Z",
+      "finished_at": "2026-07-28T11:42:06.033Z",
+      "elapsed_seconds": 335.93,
+      "processed_candidates": 60
+    },
+    {
+      "execution_id": "round-001-provider-retry-1",
+      "mode": "retry_provider_errors",
+      "started_at": "2026-07-28T11:42:53.592Z",
+      "finished_at": "2026-07-28T11:43:21.913Z",
+      "elapsed_seconds": 28.32,
+      "processed_candidates": 8
+    },
+    {
+      "execution_id": "round-001-album-first",
+      "mode": "album_first_recovery",
+      "started_at": "2026-07-28T11:50:34.305Z",
+      "finished_at": "2026-07-28T11:53:03.760Z",
+      "elapsed_seconds": 149.46,
+      "processed_candidates": 31
+    }
+  ],
+  "elapsed_seconds_total": 513.71,
+  "elapsed_seconds_baseline": 364.25,
+  "query_activity": {
+    "progressive_strategy_attempts": 124,
+    "progressive_provider_requests": 183,
+    "album_first_provider_requests": 55,
+    "provider_requests_total": 238
+  },
+  "baseline": {
+    "outcome": {
+      "conflict": 17,
+      "exact": 29,
+      "not_found": 14
+    },
+    "exact_strategy": {
+      "title_primary_artist": 14,
+      "title_primary_artist_album": 15
+    },
+    "exact_rate_pct": 48.33
+  },
+  "album_first_experiment": {
+    "schema_version": 1,
+    "round_id": "round-001",
+    "started_at": "2026-07-28T11:50:34.305Z",
+    "finished_at": "2026-07-28T11:53:03.760Z",
+    "elapsed_seconds": 149.46,
+    "targets": 31,
+    "status": {
+      "conflict": 5,
+      "exact": 4,
+      "not_found": 22
+    },
+    "recovered_exact": 4,
+    "remaining_conflict": 5,
+    "remaining_not_found": 22,
+    "provider_error": 0,
+    "provider_requests": 55
+  },
+  "combined": {
+    "outcome": {
+      "conflict": 13,
+      "exact": 33,
+      "not_found": 14
+    },
+    "exact_strategy": {
+      "album_first_release_group": 4,
+      "title_primary_artist": 14,
+      "title_primary_artist_album": 15
+    },
+    "exact_rate_pct": 55,
+    "catalog_candidate_rate_pct": 76.67
+  },
+  "proposal_accuracy_on_combined_exact": {
+    "album_exact": 27,
+    "album_exact_pct": 81.82,
+    "year_exact": 21,
+    "year_exact_pct": 67.74,
+    "year_within_one": 27,
+    "year_within_one_pct": 87.1
+  },
+  "llm_confidence": {
+    "high": {
+      "total": 41,
+      "exact": 26,
+      "exact_pct": 63.41
+    },
+    "medium": {
+      "total": 15,
+      "exact": 6,
+      "exact_pct": 40
+    },
+    "low": {
+      "total": 4,
+      "exact": 1,
+      "exact_pct": 25
+    }
+  },
+  "prompts": [
+    {
+      "prompt_id": "PLI-001",
+      "candidates": 20,
+      "baseline_exact": 10,
+      "exact": 10,
+      "conflict": 1,
+      "not_found": 9,
+      "provider_error": 0,
+      "repeated_primary_artists": []
+    },
+    {
+      "prompt_id": "PLI-002",
+      "candidates": 20,
+      "baseline_exact": 9,
+      "exact": 9,
+      "conflict": 8,
+      "not_found": 3,
+      "provider_error": 0,
+      "repeated_primary_artists": [
+        "radiohead",
+        "bicep"
+      ]
+    },
+    {
+      "prompt_id": "PLI-003",
+      "candidates": 20,
+      "baseline_exact": 10,
+      "exact": 14,
+      "conflict": 4,
+      "not_found": 2,
+      "provider_error": 0,
+      "repeated_primary_artists": []
+    }
+  ]
+}

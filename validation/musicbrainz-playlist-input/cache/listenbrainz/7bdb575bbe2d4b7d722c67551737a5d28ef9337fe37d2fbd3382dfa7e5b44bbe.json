@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Vanessa+da+Mata&recording_name=Boa+sorte+%2F+Good+Luck",
+  "fetched_at": "2026-07-28T12:16:06.728Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Vanessa da Mata",
+      "recording_arg": "Boa sorte / Good Luck",
+      "artist_credit_name": "Vanessa da Mata",
+      "release_name": "Multishow ao vivo",
+      "recording_name": "Boa sorte / Good luck",
+      "artist_credit_id": 212873,
+      "artist_mbids": [
+        "f3580347-b84a-47d8-b86e-cad642322a47"
+      ],
+      "release_mbid": "e3173007-7947-4c1b-9cf1-80b9da1e9a0a",
+      "recording_mbid": "120c940b-323d-4630-a4cf-8e59c1014e9d"
+    }
+  ]
+}

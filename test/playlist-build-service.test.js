@@ -114,7 +114,7 @@ function fakeMedia(searchResults, albumDetails = {}) {
   };
 }
 
-test("temporary playlist builds preserve their purpose and lifecycle across replenishment", async () => {
+test("temporary playlist builds finalize in one call and preserve their hidden lifecycle", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const media = fakeMedia((request) => {
     if (request.query.includes("First Song")) return [mediaTrack("first-temp", "First Song", "Artist One")];
@@ -128,31 +128,20 @@ test("temporary playlist builds preserve their purpose and lifecycle across repl
     intent: "music for focused work",
     expiry_days: 10,
     desired_count: 2,
-    tracks: [{ title: "First Song", artist_credit: "Artist One" }]
+    tracks: [
+      { title: "First Song", artist_credit: "Artist One" },
+      { title: "Second Song", artist_credit: "Artist Two" }
+    ]
   });
-  assert.equal(initial.phase, "needs_candidates");
-  assert.equal(playlistService.listPlaylists({ scope: "all" }).total, 0);
-  await assert.rejects(
-    builder.build({
-      purpose: "saved_playlist",
-      build_id: initial.build_id,
-      tracks: [{ title: "Second Song", artist_credit: "Artist Two" }]
-    }),
-    (error) => error.code === "PLAYLIST_BUILD_PURPOSE_MISMATCH"
-  );
-  const final = await builder.build({
-    purpose: "temporary_playlist",
-    build_id: initial.build_id,
-    tracks: [{ title: "Second Song", artist_credit: "Artist Two" }]
-  });
-  assert.equal(final.phase, "finalized");
-  assert.equal(final.playlist.lifecycle.type, "temporary");
-  assert.equal(final.playlist.lifecycle.intent, "music for focused work");
+  assert.equal(initial.phase, "finalized");
+  assert.equal(initial.complete, true);
+  assert.equal(initial.playlist.lifecycle.type, "temporary");
+  assert.equal(initial.playlist.lifecycle.intent, "music for focused work");
   assert.equal(playlistService.listPlaylists().total, 0);
   assert.equal(playlistService.listPlaylists({ scope: "temporary" }).total, 1);
 });
 
-test("playlist build saves every verified track after three replenishment rounds", async () => {
+test("playlist build saves every verified track as a partial result in one call", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const media = fakeMedia((request) => {
     if (request.query.includes("First Song")) return [mediaTrack("first", "First Song", "Artist One")];
@@ -164,43 +153,40 @@ test("playlist build saves every verified track after three replenishment rounds
   const initial = await builder.build({
     name: "Safe but shorter",
     desired_count: 3,
-    tracks: [{ candidate_id: "p1", title: "First Song", artist_credit: "Artist One" }]
+    tracks: [
+      { candidate_id: "p1", title: "First Song", artist_credit: "Artist One" },
+      { candidate_id: "p2", title: "Unavailable Song", artist_credit: "Nobody" },
+      { candidate_id: "r1", role: "reserve", title: "Second Song", artist_credit: "Artist Two" },
+      { candidate_id: "r2", role: "reserve", title: "Still Unavailable", artist_credit: "Nobody Else" }
+    ]
   });
-  assert.equal(initial.phase, "needs_candidates");
-  assert.equal(initial.next_round, 1);
-  assert.equal(initial.rounds_remaining, 3);
-  assert.equal(initial.missing_count, 2);
-  assert.equal(playlistService.listPlaylists().total, 0);
-
-  const roundOne = await builder.build({
-    build_id: initial.build_id,
-    tracks: [{ candidate_id: "r1", title: "Unavailable Song", artist_credit: "Nobody" }]
-  });
-  assert.equal(roundOne.phase, "needs_candidates");
-  assert.equal(roundOne.next_round, 2);
-  assert.equal(roundOne.rounds_remaining, 2);
-  assert.equal(playlistService.listPlaylists().total, 0);
-
-  const roundTwo = await builder.build({
-    build_id: initial.build_id,
-    tracks: [{ candidate_id: "r2", title: "Second Song", artist_credit: "Artist Two" }]
-  });
-  assert.equal(roundTwo.phase, "needs_candidates");
-  assert.equal(roundTwo.rounds_remaining, 1);
-  const partial = await builder.build({
-    build_id: initial.build_id,
-    tracks: [{ candidate_id: "r3", title: "Still Unavailable", artist_credit: "Nobody Else" }]
-  });
-  assert.equal(partial.phase, "finalized");
-  assert.equal(partial.complete, false);
-  assert.equal(partial.added_count, 2);
-  assert.equal(partial.missing_count, 1);
-  assert.equal(partial.playlist.tracks_count, 2);
-  assert.equal(partial.rejection_summary.total, 2);
+  assert.equal(initial.phase, "finalized");
+  assert.equal(initial.complete, false);
+  assert.equal(initial.added_count, 2);
+  assert.equal(initial.missing_count, 1);
+  assert.equal(initial.playlist.tracks_count, 2);
+  assert.equal(initial.rejection_summary.total, 2);
   assert.equal(playlistService.listPlaylists().total, 1);
 });
 
-test("playlist build treats an exact repeated batch as an idempotent retry", async () => {
+test("playlist build refuses a generated target without a candidate pool", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => []);
+  const builder = new PlaylistBuildService(playlistService, media);
+
+  await assert.rejects(
+    builder.build({
+      name: "Missing candidates",
+      desired_count: 20,
+      tracks: []
+    }),
+    (error) => error?.code === "INVALID_PLAYLIST"
+      && /non-empty candidate pool/.test(error.message)
+  );
+  assert.equal(playlistService.listPlaylists().total, 0);
+});
+
+test("playlist build reports the adaptive reserve policy and stops after reaching the target", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const media = fakeMedia((request) =>
     request.query.includes("First Song")
@@ -210,29 +196,32 @@ test("playlist build treats an exact repeated batch as an idempotent retry", asy
         : []
   );
   const builder = new PlaylistBuildService(playlistService, media);
-  const request = {
-    name: "Idempotent build",
-    desired_count: 2,
-    tracks: [{ candidate_id: "first", title: "First Song", artist_credit: "Artist One" }]
-  };
-  const initial = await builder.build(request);
-  const searchesAfterInitial = media.searches.length;
-  const retry = await builder.build({
-    build_id: initial.build_id,
-    tracks: request.tracks
-  });
-
-  assert.deepEqual(retry, initial);
-  assert.equal(media.searches.length, searchesAfterInitial);
-  assert.equal(retry.next_round, 1);
-
   const completed = await builder.build({
-    build_id: initial.build_id,
-    tracks: [{ candidate_id: "second", title: "Second Song", artist_credit: "Artist Two" }]
+    name: "Adaptive reserves",
+    desired_count: 2,
+    selection_complexity: "exact_versions",
+    tracks: [
+      { candidate_id: "first", title: "First Song", artist_credit: "Artist One" },
+      { candidate_id: "second", title: "Second Song", artist_credit: "Artist Two" },
+      { candidate_id: "unused", role: "reserve", title: "Unavailable", artist_credit: "Nobody" },
+      { candidate_id: "unused-2", role: "reserve", title: "Unavailable 2", artist_credit: "Nobody" }
+    ]
   });
   assert.equal(completed.phase, "finalized");
   assert.equal(completed.complete, true);
   assert.equal(completed.playlist.tracks_count, 2);
+  assert.deepEqual(completed.performance.reserve_policy, {
+    complexity: "exact_versions",
+    multiplier: 1.6,
+    desired_count: 2,
+    recommended_candidates: 4,
+    supplied_candidates: 4,
+    sufficient: true
+  });
+  assert.equal(media.searches.length, 2);
+  assert.equal(completed.performance.roon_searches, 2);
+  assert.equal(completed.performance.musicbrainz_requests, 0);
+  assert.equal(completed.performance.listenbrainz_requests, 0);
 });
 
 test("playlist build rejects an unintended live result and fills the target from a reserve", async () => {
@@ -402,13 +391,11 @@ test("dub is treated as a genre word unless the title identifies a dub version",
   });
   assert.equal(standard.added_count, 1);
 
-  const wrongVersion = await builder.build({
-    name: "Standard version",
-    desired_count: 1,
-    tracks: [{ title: "Version Song", artist_credit: "Dub Artist" }]
+  const wrongVersion = await builder.prepareCandidate({
+    title: "Version Song",
+    artist_credit: "Dub Artist"
   });
-  assert.equal(wrongVersion.phase, "needs_candidates");
-  assert.equal(wrongVersion.added_count, 0);
+  assert.equal(wrongVersion.accepted, false);
 
   const explicitVersion = await builder.build({
     name: "Dub version",
@@ -421,7 +408,7 @@ test("dub is treated as a genre word unless the title identifies a dub version",
   assert.equal(explicitVersion.added_count, 1, JSON.stringify(explicitVersion));
 });
 
-test("playlist preflight resolves MusicBrainz before Roon and persists the canonical recording identity", async () => {
+test("playlist preflight overlaps speculative Roon discovery with MusicBrainz and persists canonical identity", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const roonTrack = mediaTrack("canonical-roon", "Canonical Song", "Canonical Artist, Secondary Credit", {
     album: "Roon Edition",
@@ -457,6 +444,8 @@ test("playlist preflight resolves MusicBrainz before Roon and persists the canon
     resolve: async (input) => {
       assert.equal(input.title, "Model Song");
       assert.equal(input.artist, "Model Artist");
+      assert.equal(input.release_year, undefined);
+      assert.equal(input.release_year_observation, 2011);
       return {
         resolution: { status: "exact" },
         profile: {
@@ -525,7 +514,8 @@ test("playlist preflight resolves MusicBrainz before Roon and persists the canon
 
   const result = await builder.prepareCandidate({
     title: "Model Song",
-    artist_credit: "Model Artist"
+    artist_credit: "Model Artist",
+    release_year_hint: 2011
   });
 
   assert.equal(result.accepted, true);
@@ -541,11 +531,14 @@ test("playlist preflight resolves MusicBrainz before Roon and persists the canon
     resultId: "canonical-roon",
     origin: "automatic"
   });
-  assert.deepEqual(media.searches.map((request) => request.query), ["Canonical Song Canonical Artist"]);
+  assert.deepEqual(media.searches.map((request) => request.query), [
+    "Model Song Model Artist",
+    "Canonical Song Canonical Artist"
+  ]);
   assert.equal(enrichmentCalls, 1);
 });
 
-test("playlist preflight sends ambiguous MusicBrainz identities to manual selection without searching Roon", async () => {
+test("playlist preflight can reject ambiguous MusicBrainz identity after speculative Roon discovery", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const media = fakeMedia([]);
   const trackCatalogService = {
@@ -576,12 +569,16 @@ test("playlist preflight sends ambiguous MusicBrainz identities to manual select
   assert.equal(result.accepted, false);
   assert.equal(result.rejection.status, "manual_required");
   assert.match(result.rejection.reason, /^musicbrainz_ambiguous:/);
-  assert.equal(media.searches.length, 0);
+  assert.equal(media.searches.length, 1);
 });
 
 test("playlist build enforces the MusicBrainz first-publication year range", async () => {
   const playlistService = new PlaylistService(tempConfig());
-  const media = fakeMedia([]);
+  const media = fakeMedia((request) =>
+    request.query.includes("Recent Song")
+      ? [mediaTrack("recent", "Recent Song", "Recent Artist")]
+      : []
+  );
   const builder = new PlaylistBuildService(
     playlistService,
     media,
@@ -589,29 +586,45 @@ test("playlist build enforces the MusicBrainz first-publication year range", asy
     "streaming_first",
     undefined,
     {
-      resolve: async () => ({
+      resolve: async (input) => ({
         profile: {
           status: "exact",
           reason: "unique_compatible_recording",
           recording: {
-            musicbrainz_id: "mb-old",
-            title: "Old Song",
-            artist_credit: [{ musicbrainz_id: "artist-old", name: "Old Artist", join_phrase: "" }]
+            musicbrainz_id: input.title === "Old Song" ? "mb-old" : "mb-recent",
+            title: input.title,
+            artist_credit: [{
+              musicbrainz_id: input.title === "Old Song" ? "artist-old" : "artist-recent",
+              name: input.artist,
+              join_phrase: ""
+            }],
+            duration_seconds: null,
+            isrcs: []
           },
+          work: null,
+          credits: [],
+          composers: [],
+          lyricists: [],
+          genres: [],
           release_group: {
-            musicbrainz_id: "group-old",
-            title: "Old Album",
+            musicbrainz_id: input.title === "Old Song" ? "group-old" : "group-recent",
+            title: input.title === "Old Song" ? "Old Album" : "Recent Album",
             artist_credit: [],
-            first_release_date: "2001-01-01",
-            release_year: 2001,
+            first_release_date: input.title === "Old Song" ? "2001-01-01" : "2025-01-01",
+            release_year: input.title === "Old Song" ? 2001 : 2025,
             primary_type: "Album",
             secondary_types: [],
             disambiguation: null,
             selection_reason: "earliest_official_album"
           },
+          release: null,
+          cover_art: null,
+          roon_binding: null,
+          provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
           warnings: []
         }
-      })
+      }),
+      bind: () => ({ status: "observed" })
     }
   );
 
@@ -619,31 +632,40 @@ test("playlist build enforces the MusicBrainz first-publication year range", asy
     name: "Recent only",
     desired_count: 1,
     release_year_from: 2020,
-    tracks: [{ title: "Old Song", artist_credit: "Old Artist" }]
+    tracks: [
+      { title: "Old Song", artist_credit: "Old Artist" },
+      { title: "Recent Song", artist_credit: "Recent Artist", role: "reserve" }
+    ]
   });
 
-  assert.equal(result.phase, "needs_candidates");
-  assert.equal(result.accepted.length, 0);
+  assert.equal(result.phase, "finalized");
+  assert.equal(result.accepted.length, 1);
   assert.equal(result.rejected[0].reason, "musicbrainz_release_year_outside_requested_range");
   assert.equal(result.rejection_summary.by_reason.musicbrainz_release_year_outside_requested_range, 1);
-  assert.equal(media.searches.length, 0);
+  assert.equal(media.searches.length, 2);
 });
 
 test("playlist build keeps complete rejection counts with a bounded MCP payload", async () => {
   const playlistService = new PlaylistService(tempConfig());
-  const builder = new PlaylistBuildService(playlistService, fakeMedia([]));
+  const media = fakeMedia((request) =>
+    request.query.includes("Available")
+      ? [mediaTrack("available", "Available", "Known Artist")]
+      : []
+  );
+  const builder = new PlaylistBuildService(playlistService, media);
   const tracks = Array.from({ length: 30 }, (_, index) => ({
     title: `Unavailable ${index + 1}`,
     artist_credit: `Unknown ${index + 1}`
   }));
+  tracks.unshift({ title: "Available", artist_credit: "Known Artist" });
 
   const result = await builder.build({
     name: "Bounded failures",
-    desired_count: 1,
+    desired_count: 2,
     tracks
   });
 
-  assert.equal(result.phase, "needs_candidates");
+  assert.equal(result.phase, "finalized");
   assert.equal(result.rejection_summary.total, 30);
   assert.equal(result.rejection_summary.returned_candidates, 25);
   assert.equal(result.rejected.length, 25);

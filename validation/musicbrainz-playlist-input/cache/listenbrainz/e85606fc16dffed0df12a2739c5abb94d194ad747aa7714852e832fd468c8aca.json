@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Buena+Vista+Social+Club&recording_name=Chan+Chan&release_name=Buena+Vista+Social+Club",
+  "fetched_at": "2026-07-28T14:42:27.099Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Buena Vista Social Club",
+      "recording_arg": "Chan Chan",
+      "artist_credit_name": "Buena Vista Social Club",
+      "release_name": "Buena Vista Social Club",
+      "recording_name": "Chan Chan",
+      "artist_credit_id": 10361,
+      "artist_mbids": [
+        "2a85ecff-41e9-4be1-aca6-c87054a4c334"
+      ],
+      "release_mbid": "96cba92f-afeb-3637-8506-2d16d77a24cc",
+      "recording_mbid": "47b7339f-8f7e-432e-acf1-8cb6b53a3554"
+    }
+  ]
+}

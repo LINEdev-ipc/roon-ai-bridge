@@ -331,7 +331,7 @@ test("v2 playlist creation validates model candidates and never trusts result_id
   assert.equal(result.data.build_summary.complete, true);
 });
 
-test("v2 playlist save never persists an unresolved candidate or an incomplete playlist", async () => {
+test("v2 playlist save fails safely when no candidate can be verified", async () => {
   const context = gatewayContext(roonClient(), {
     search: async (request) => ({
       query: request.query,
@@ -350,31 +350,11 @@ test("v2 playlist save never persists an unresolved candidate or an incomplete p
   };
   const gateway = new IntentGateway(context);
 
-  const initial = await gateway.savePlaylist({
-    name: "Needs review",
-    desired_count: 1,
-    tracks: [{ title: "Angel", artist_credit: "Massive Attack" }]
-  });
-  assert.equal(initial.status, "needs_input");
-  assert.equal(saves, 0);
-
-  const roundOne = await gateway.savePlaylist({
-    build_id: initial.data.build_id,
-    tracks: [{ title: "Still missing", artist_credit: "Unknown Artist" }]
-  });
-  assert.equal(roundOne.status, "needs_input");
-  assert.equal(saves, 0);
-
-  const roundTwo = await gateway.savePlaylist({
-    build_id: initial.data.build_id,
-    tracks: [{ title: "Also missing", artist_credit: "Unknown Artist Two" }]
-  });
-  assert.equal(roundTwo.status, "needs_input");
-  assert.equal(saves, 0);
   await assert.rejects(
     gateway.savePlaylist({
-      build_id: initial.data.build_id,
-      tracks: [{ title: "Still unavailable", artist_credit: "Unknown Artist Three" }]
+      name: "Needs review",
+      desired_count: 1,
+      tracks: [{ title: "Angel", artist_credit: "Massive Attack" }]
     }),
     (error) => error.code === "PLAYLIST_BUILD_INCOMPLETE"
   );
@@ -386,10 +366,6 @@ test("v2 playlist save reports a verified partial target as a completed mutation
   context.playlistBuildService = {
     build: async () => ({
       phase: "finalized",
-      build_id: null,
-      round: 3,
-      next_round: null,
-      rounds_remaining: 0,
       desired_count: 20,
       added_count: 13,
       missing_count: 7,
@@ -411,7 +387,8 @@ test("v2 playlist save reports a verified partial target as a completed mutation
         by_status: { missing: 27 },
         by_reason: { musicbrainz_not_found: 27 },
         recovery_actions: []
-      }
+      },
+      performance: { elapsed_ms: 100 }
     })
   };
   context.playlistService = {

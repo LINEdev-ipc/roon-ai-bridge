@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Kate+Bush&recording_name=Running+Up+That+Hill+%28A+Deal+With+God%29+%282012+Remix%29&release_name=Running+Up+That+Hill+%28A+Deal+With+God%29+2012+Remix",
+  "fetched_at": "2026-07-28T12:15:58.706Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Kate Bush",
+      "recording_arg": "Running Up That Hill (A Deal With God) (2012 Remix)",
+      "artist_credit_name": "Kate Bush",
+      "release_name": "Running Up That Hill (A Deal With God) (2012 remix)",
+      "recording_name": "Running Up That Hill (A Deal With God) (2012 remix)",
+      "artist_credit_id": 2121,
+      "artist_mbids": [
+        "4b585938-f271-45e2-b19a-91c634b5e396"
+      ],
+      "release_mbid": "341dfb18-7867-42a9-99c8-d07579c95fcf",
+      "recording_mbid": "7a0aecf5-0538-42d6-a468-78e0d3a9dead"
+    }
+  ]
+}

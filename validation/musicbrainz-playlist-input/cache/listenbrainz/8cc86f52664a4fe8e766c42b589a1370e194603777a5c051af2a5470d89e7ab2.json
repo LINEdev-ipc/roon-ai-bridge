@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Yeah+Yeah+Yeahs&recording_name=Heads+Will+Roll+%28A-Trak+Remix%29",
+  "fetched_at": "2026-07-28T14:41:46.747Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Yeah Yeah Yeahs",
+      "recording_arg": "Heads Will Roll (A-Trak Remix)",
+      "artist_credit_name": "Yeah Yeah Yeahs",
+      "release_name": "The New Dance Mix USA",
+      "recording_name": "Heads Will Roll (A-Trak remix)",
+      "artist_credit_id": 42140,
+      "artist_mbids": [
+        "584c04d2-4acc-491b-8a0a-e63133f4bfc4"
+      ],
+      "release_mbid": "6bdfd80f-bbf9-4ed0-8a3f-0f02af5779c9",
+      "recording_mbid": "fad57707-ba93-4c22-a158-e491e7a6bbe6"
+    }
+  ]
+}

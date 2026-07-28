@@ -1,0 +1,198 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28professional+AND+widow+AND+armand+AND+star+AND+trunk+AND+funkin+AND+mix%29+AND+artistname%3A%22Tori+Amos%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:36:07.829Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:36:07.955Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "5b5f3301-3ce1-4dbc-a577-27db72e68a74",
+        "score": 100,
+        "artist-credit-id": "3a7adaa9-535a-33e1-aa68-20a9ebfe2051",
+        "title": "Professional Widow (Armand van Helden's Star Trunk Funkin' Mix)",
+        "length": 227000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Tori Amos",
+            "artist": {
+              "id": "c0b2500e-0cef-4130-869d-732b23ed9df5",
+              "name": "Tori Amos",
+              "sort-name": "Amos, Tori",
+              "aliases": [
+                {
+                  "sort-name": "Santa",
+                  "name": "Santa",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Pip",
+                  "name": "Pip",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Isabel",
+                  "name": "Isabel",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Amos, Ellen",
+                  "name": "Ellen Amos",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Clyde",
+                  "name": "Clyde",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Amos, Tori",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Tori Amos",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": "1980",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Amos, Myra Ellen",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Myra Ellen Amos",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "1980"
+                },
+                {
+                  "sort-name": "Amos, Tori",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Tori Amos",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": "1980",
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Torie Amos",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Torie Amos",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Amos, Myra Ellen",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Myra Ellen Amos",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": "1980"
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022-10-14",
+        "releases": [
+          {
+            "id": "8361512c-0f71-4247-88d7-d6477e68f8b6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "NOW Nineties Dancefloor",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9750e9e8-f4a8-4c25-b156-6a75be71e8ec",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NOW Nineties Dancefloor",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022-10-14",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2022-10-14",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 84,
+            "media": [
+              {
+                "id": "66269a1d-1484-4952-818d-34fc91072686",
+                "position": 4,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9666b7eb-9f7b-4d6c-8730-5f7e26bffbbe",
+                    "number": "9",
+                    "title": "Professional Widow (Armand van Helden's Star Trunk Funkin' Mix)",
+                    "length": 227000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 8
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

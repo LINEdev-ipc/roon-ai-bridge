@@ -1,0 +1,4789 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28open+AND+eye+AND+signal%29+AND+artistname%3A%22Jon+Hopkins%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:41:24.441Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:41:24.674Z",
+    "count": 17,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "ebd0b9e7-451e-49fd-8041-75c7bf3b73b1",
+        "score": 100,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal",
+        "length": 407000,
+        "disambiguation": "part of “In Waves Radio Presents The Floor with Jamie xx, Ep. 8” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2025-03-26",
+        "releases": [
+          {
+            "id": "beaf0ca9-fa6a-462b-8d6a-d95a9421bc5c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "9a60ebea-9b98-3315-b917-cbb39b0b86dd",
+            "count": 1,
+            "title": "In Waves Radio Presents The Floor with Jamie xx, Ep. 8",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jamie xx",
+                "artist": {
+                  "id": "d1515727-4a93-4c0d-88cb-d7a9fce01879",
+                  "name": "Jamie xx",
+                  "sort-name": "xx, Jamie",
+                  "disambiguation": "English DJ, record producer, and remixer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "52cc7e67-751c-4a0c-a2bc-ab35687635da",
+              "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "title": "In Waves Radio Presents The Floor with Jamie xx, Ep. 8",
+              "primary-type": "Broadcast",
+              "secondary-types": [
+                "Live",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "track-count": 26,
+            "media": [
+              {
+                "id": "2694e649-d63f-3a34-b1b1-fa395808d73b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fd36b9bd-0c81-4517-aea4-de8893382989",
+                    "number": "12",
+                    "title": "Open Eye Signal",
+                    "length": 407000
+                  }
+                ],
+                "track-count": 26,
+                "track-offset": 11
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "US23A9491591"
+        ]
+      },
+      {
+        "id": "8868b4dc-b413-4561-81a7-1fb36fc8126b",
+        "score": 100,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal",
+        "length": 449000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013",
+        "releases": [
+          {
+            "id": "ea40d973-3c65-4b77-b240-e798f4fda1e9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "6443f524-aedf-3eb1-ab48-951f9c9ea56b",
+            "count": 1,
+            "title": "Moderat Groove DJ-Mix",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moderat",
+                "artist": {
+                  "id": "7754905b-8bf7-48e2-935a-03d566fec464",
+                  "name": "Moderat",
+                  "sort-name": "Moderat",
+                  "disambiguation": "Modeselektor and Apparat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1e9a025d-373c-4488-8922-8dce5ae75ff7",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Moderat Groove DJ-Mix",
+              "primary-type": "Album",
+              "secondary-types": [
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2013",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2013",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "f17bf2b7-f293-30f3-a2ab-512503cfb921",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "354bb3ec-b858-4ad1-894a-196737bdd7a9",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 449000
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "085ec47a-16e7-458f-9d1f-03d047e816a4",
+        "score": 100,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal",
+        "length": 468000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013-04-22",
+        "releases": [
+          {
+            "id": "cdbf52a3-8fa1-4874-be4d-15ad4ad01e32",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-10-06",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-10-06",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "1d63ad55-6446-35e9-8e5e-381bc0f48f20",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6088e1b2-4813-4d4e-9982-ad6e0cc2f912",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468586
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "e6f78760-60fd-4b13-8b79-b8a86fbe3d2f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "93dce5c5-a518-3e75-b70c-c599e1cfd43a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4bf4917b-7528-49c7-9804-387fd3c35b5c",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468586
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "63f478a7-ea73-4adf-8534-dac9839629bc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "2023 remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "8457a8e8-2103-3c03-ac83-c4902fff4dc2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ec5a3330-f654-46c6-8a72-c6d608ee04f8",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468587
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "9b93c88b-b939-4206-af30-b3a3e7f1ab8d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-06-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-06-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "115ce2f4-dc8a-3817-b5b5-393f5ca01f2b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ec4241c3-bc93-3ac1-8c78-b3a8322825d0",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468586
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "2729009c-afc9-4917-9c19-1a082d768122",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-06-03",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-06-03",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "f3b51e8f-026b-3fe0-8085-dfab8d7b5e53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4a580124-9e2d-4217-8d2c-611382bc5347",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468587
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "95650f9f-6f73-4a3d-8642-e97e4a9a6166",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-04-26",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2013-04-26",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              },
+              {
+                "date": "2013-04-22",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "b3fa644b-1745-38c3-8683-ddc5ab36bc84",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "73970475-f8e0-322d-9360-987031cc08e8",
+                    "number": "1",
+                    "title": "Open Eye Signal",
+                    "length": 468000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "a331d58a-7fc2-4634-bb56-a9f864d96648",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "iTunes bonus track version",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-06-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-06-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "2c895a92-a9d8-3dc4-a648-639a77f41228",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "f592c9d1-cd8d-3440-8eaf-6f4d7edb7373",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "be672d3e-d53a-418c-81b9-3267c73e354f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-05-20",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-05-20",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "33038ce1-6d42-36e8-8b1c-856171c38201",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "37ef2c49-794f-3c23-9c7c-173c78720b65",
+                    "number": "A1",
+                    "title": "Open Eye Signal",
+                    "length": 468000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "e24647de-e296-42f1-9185-cbb437fa2188",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-04-29",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-04-29",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "a19bcc47-1820-30f8-b01b-eee46ffb1a6e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "38d287a0-b594-42e7-bdaf-884758f95860",
+                    "number": "1",
+                    "title": "Open Eye Signal",
+                    "length": 473000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "fabac007-d17a-4cc8-9a4f-1405b90da2fe",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Breathe This Air",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2df9eef7-948f-4876-adef-fd6b3e8cd658",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Breathe This Air",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2013",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "3a83fd91-a568-35f0-904b-cb01cd39b6fa",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bf439b0f-ed75-465d-bb66-4a60cbdd10ec",
+                    "number": "1",
+                    "title": "Open Eye Signal",
+                    "length": 473000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f7e3af8a-ce61-4388-9f68-ff73882203ad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "Rough Trade exclusive",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-11-19",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-11-19",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "c07dbbc2-4439-3bd6-9906-0d49d0bc5ebd",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8877d538-25d6-466f-8f0c-49bb8106c4f7",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468000
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "128b6ea3-5ca0-4db3-be9c-1a1d535da845",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "dda6f839-06a6-390e-ba47-cfde9cdcc521",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0675b7d2-57c2-4af3-a9a5-ded357d826e1",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "2fda5b53-a9d7-4ca7-bcd6-fb6fdde5cfa1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "expanded edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-03",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2014-06-03",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "04a1535e-1846-389f-b0a4-2e1d08c9ad6d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "18982e3f-d00a-4cd3-b063-a2a626d9dc48",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "59a24376-7bef-4c75-b48c-acbf6ede5233",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-12-09",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-12-09",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "0db0d8fa-f827-3a88-9a0e-827ded7f7220",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e26ed26b-97dc-47a9-91ac-8774dcb10a51",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "cb951077-2788-4631-b0f6-f166f48226c8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "with Asleep Versions EP",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-11-10",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-11-10",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "7112b807-ba36-3e6d-b503-b0b4b64aeb6e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ebb785fe-3a69-40f5-8147-5488f19bf7ff",
+                    "number": "2",
+                    "title": "Open Eye Signal",
+                    "length": 468000
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "1b15fbbd-30e0-4e42-bc0b-7df04e4a8154",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Bleep: The Top 100 Tracks of 2013",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bbf6f041-ced0-4b4a-a82e-51ee72423fcf",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bleep: The Top 100 Tracks of 2013",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 100,
+            "media": [
+              {
+                "id": "b9df17ec-1f1d-398c-8385-2284ea5ba6b5",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "286f02ef-9f9b-4430-8360-e02cbfdaedb9",
+                    "number": "37",
+                    "title": "Open Eye Signal",
+                    "length": 469065
+                  }
+                ],
+                "track-count": 100,
+                "track-offset": 36
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCEL2300181",
+          "GBCEL1300084"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "tech house"
+          }
+        ]
+      },
+      {
+        "id": "f1956111-5624-48db-8507-b391a2d4234c",
+        "score": 100,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal",
+        "disambiguation": "part of the “Moderat: A Couple of Favorites During the Production of II” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013-08-02",
+        "releases": [
+          {
+            "id": "9e9f3e2b-a0ac-423c-a2ad-803844052579",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "6443f524-aedf-3eb1-ab48-951f9c9ea56b",
+            "count": 2,
+            "title": "II",
+            "status": "Official",
+            "disambiguation": "Rough Trade Edition",
+            "artist-credit": [
+              {
+                "name": "Moderat",
+                "artist": {
+                  "id": "7754905b-8bf7-48e2-935a-03d566fec464",
+                  "name": "Moderat",
+                  "sort-name": "Moderat",
+                  "disambiguation": "Modeselektor and Apparat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "885181a4-9133-485f-bfce-fddc1168a3c1",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "II",
+              "primary-type": "Album"
+            },
+            "date": "2013-08-02",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-08-02",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 22,
+            "media": [
+              {
+                "id": "da246deb-d0a9-3343-9285-d2a7647a9558",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "59003ed5-f366-49d9-ab81-5afef053794c",
+                    "number": "2",
+                    "title": "Open Eye Signal"
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "846434b5-d74e-4999-ba19-e5501cf90aee",
+        "score": 100,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal",
+        "length": 469000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013-06-03",
+        "releases": [
+          {
+            "id": "8e931307-8fef-456e-8edc-6968408b1058",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "Remastered, Re-press, Purple Vinyl",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-10-06",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2023-10-06",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "f7df56b4-c4d3-4686-9d96-4047bbf729e5",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "7c6c3954-bc6c-4536-9821-2e6996d33f00",
+                    "number": "A2",
+                    "title": "Open Eye Signal",
+                    "length": 469000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "a9b6f61e-1927-4c58-85fc-5f540349e304",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-06-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-06-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "40762383-6469-3e35-b8af-6711e03c6ad4",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "b5724b5b-0751-4ab9-b586-6bec2028ab9c",
+                    "number": "A2",
+                    "title": "Open Eye Signal"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f4a85422-915f-4dbc-90da-f66b30350d0d",
+        "score": 84,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (Happa remix)",
+        "length": 361000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013-04-29",
+        "releases": [
+          {
+            "id": "a331d58a-7fc2-4634-bb56-a9f864d96648",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "iTunes bonus track version",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-06-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-06-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "2c895a92-a9d8-3dc4-a648-639a77f41228",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ea3f3dfb-e461-3976-9d44-fcd4ff48b4fb",
+                    "number": "9",
+                    "title": "Open Eye Signal (Happa remix)",
+                    "length": 361000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "be672d3e-d53a-418c-81b9-3267c73e354f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-05-20",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-05-20",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "33038ce1-6d42-36e8-8b1c-856171c38201",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "a6aed3dd-0b16-3a55-a88a-f33bb61fd499",
+                    "number": "B1",
+                    "title": "Open Eye Signal (Happa remix)",
+                    "length": 361000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "9799af4d-d058-4470-8034-af539a6fdab4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "disambiguation": "Happa remix",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-04-29",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-04-29",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "bff48321-b714-3e81-89c8-041b539f5b37",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "40884618-7bfc-42dd-bef0-362f3987d357",
+                    "number": "1",
+                    "title": "Open Eye Signal (Happa remix)",
+                    "length": 361000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "4fc897bb-6433-453a-aa40-71a4bc144aad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-05-31",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2013-05-31",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              },
+              {
+                "date": "2013-05-31",
+                "area": {
+                  "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+                  "name": "New Zealand",
+                  "sort-name": "New Zealand",
+                  "iso-3166-1-codes": [
+                    "NZ"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "26cec56b-eab3-3f77-bf02-42d7e95bcac1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "70432c02-e9d8-45ec-8b2d-cd491004178c",
+                    "number": "1",
+                    "title": "Open Eye Signal (Happa remix)",
+                    "length": 361000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f7e3af8a-ce61-4388-9f68-ff73882203ad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "Rough Trade exclusive",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-11-19",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-11-19",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "8d2fb40a-8994-38d1-9b49-5f036e615d85",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cd8e7460-ebba-4f7c-a087-1afd0e1dd1bc",
+                    "number": "4",
+                    "title": "Open Eye Signal (Happa remix)",
+                    "length": 362000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "128b6ea3-5ca0-4db3-be9c-1a1d535da845",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "dda6f839-06a6-390e-ba47-cfde9cdcc521",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "60e121de-2682-4632-81ea-6ae5a82037d7",
+                    "number": "9",
+                    "title": "Open Eye Signal (Happa remix)",
+                    "length": 361336
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "2fda5b53-a9d7-4ca7-bcd6-fb6fdde5cfa1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "expanded edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-03",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2014-06-03",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "04a1535e-1846-389f-b0a4-2e1d08c9ad6d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "cfe1c242-3a75-4d05-b341-aaab5214fa7c",
+                    "number": "9",
+                    "title": "Open Eye Signal (Happa remix)",
+                    "length": 361336
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "59a24376-7bef-4c75-b48c-acbf6ede5233",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-12-09",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-12-09",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "0db0d8fa-f827-3a88-9a0e-827ded7f7220",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e75c355a-8f3b-4e36-ba7e-8ede6cea0503",
+                    "number": "9",
+                    "title": "Open Eye Signal (Happa remix)",
+                    "length": 361336
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 8
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          }
+        ]
+      },
+      {
+        "id": "f63d6fa3-3ea8-4647-9d22-0e6b7365125c",
+        "score": 84,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (Asleep version)",
+        "length": 662000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-11-10",
+        "releases": [
+          {
+            "id": "63f478a7-ea73-4adf-8534-dac9839629bc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "2023 remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "8457a8e8-2103-3c03-ac83-c4902fff4dc2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "7093eb10-16b5-4c94-ac30-56d0714a1a1d",
+                    "number": "12",
+                    "title": "Open Eye Signal (Asleep version)",
+                    "length": 662080
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "cdbf52a3-8fa1-4874-be4d-15ad4ad01e32",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-10-06",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-10-06",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "e270de97-9ff8-3afa-9787-5193fd98f161",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "64b859e2-bc9e-4580-8876-0ec26b8face3",
+                    "number": "4",
+                    "title": "Open Eye Signal (Asleep version)",
+                    "length": 662080
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "e6f78760-60fd-4b13-8b79-b8a86fbe3d2f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "37e05131-4dae-384f-8f32-0368f166d52d",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a90fa1ce-df94-477c-8571-1216b5de4780",
+                    "number": "4",
+                    "title": "Open Eye Signal (Asleep version)",
+                    "length": 662080
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "cee3fc41-6756-4430-af16-3e27cd42aff3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Asleep Versions",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "395d01e2-6a7a-40ca-81e1-fe7a3f4abe28",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Asleep Versions",
+              "primary-type": "EP"
+            },
+            "date": "2014-11-10",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-11-10",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "8c7176ec-58a7-3a0c-ad16-f77ec93012bd",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "da9e4076-6f1b-450b-a1f8-cca3c409dd34",
+                    "number": "B2",
+                    "title": "Open Eye Signal (Asleep Version)",
+                    "length": 662000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "41bb984e-a8c7-437b-9ace-43312f770d9c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Asleep Versions",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "395d01e2-6a7a-40ca-81e1-fe7a3f4abe28",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Asleep Versions",
+              "primary-type": "EP"
+            },
+            "date": "2014-11-10",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-11-10",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "c0a32330-9cad-3bdb-84a9-b4af7391be0e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "cc3f1e80-c409-4734-9c6b-5b53803e2b67",
+                    "number": "4",
+                    "title": "Open Eye Signal (Asleep version)",
+                    "length": 662000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "cb951077-2788-4631-b0f6-f166f48226c8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "with Asleep Versions EP",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-11-10",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-11-10",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "c458c876-f859-3ec8-8200-8e6128bb8df2",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1d489a48-c692-4f90-90a2-bbda6a076f94",
+                    "number": "4",
+                    "title": "Open Eye Signal (Asleep version)",
+                    "length": 662000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "71c210c8-615c-4364-86ee-4f9c5e377bea",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Asleep Versions",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "395d01e2-6a7a-40ca-81e1-fe7a3f4abe28",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Asleep Versions",
+              "primary-type": "EP"
+            },
+            "date": "2014-11-10",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-11-10",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "7414ac7b-2828-3c5b-a9b1-d54ea8fa562c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "31ad6acb-bff0-4583-add9-bf63b0fc2492",
+                    "number": "4",
+                    "title": "Open Eye Signal (Asleep version)",
+                    "length": 662000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCEL1400477"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "ambient"
+          }
+        ]
+      },
+      {
+        "id": "1dfeabf6-7810-45b9-aef9-233b896b6478",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (George Fitzgerald remix)",
+        "length": 338013,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-02-28",
+        "releases": [
+          {
+            "id": "63f478a7-ea73-4adf-8534-dac9839629bc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "2023 remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "8457a8e8-2103-3c03-ac83-c4902fff4dc2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "dd208986-dfb0-458d-8a85-1d4a24bd9f2c",
+                    "number": "16",
+                    "title": "Open Eye Signal (George FitzGerald remix)",
+                    "length": 338014
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "cdbf52a3-8fa1-4874-be4d-15ad4ad01e32",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-10-06",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-10-06",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "e270de97-9ff8-3afa-9787-5193fd98f161",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ec31d1ed-b4da-428e-a857-f98f1a14b7bd",
+                    "number": "8",
+                    "title": "Open Eye Signal (George Fitzgerald remix)",
+                    "length": 338013
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "e6f78760-60fd-4b13-8b79-b8a86fbe3d2f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "remaster",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2023-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "37e05131-4dae-384f-8f32-0368f166d52d",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "257e583a-f12c-402f-88c6-ed55722c2a49",
+                    "number": "8",
+                    "title": "Open Eye Signal (George Fitzgerald remix)",
+                    "length": 338013
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "71e9b590-46eb-40c9-9009-1051f42504ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal",
+            "status": "Official",
+            "disambiguation": "George FitzGerald remix",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2015-02-28",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2015-02-28",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "dfb2ef72-d2b2-3987-9944-e8d2f107bbdb",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4dcdf42f-b8b1-4e01-8c30-9bb3edcc1662",
+                    "number": "1",
+                    "title": "Open Eye Signal (George FitzGerald remix)",
+                    "length": 338000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCEL1500085"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "house"
+          },
+          {
+            "count": 2,
+            "name": "techno"
+          },
+          {
+            "count": 1,
+            "name": "tech house"
+          }
+        ]
+      },
+      {
+        "id": "c06e9c33-5ea1-48ad-a3b5-a2516d5b3a19",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (George FitzGerald remix)",
+        "length": 338014,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-05-17",
+        "releases": [
+          {
+            "id": "f8394f63-1d2b-4071-90ab-677849935f59",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Toolroom Ibiza 2015",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "fa3ab46b-d8f4-4b28-9b67-3b9950868375",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ibiza 2015",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2015-05-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2015-05-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 67,
+            "media": [
+              {
+                "id": "b6f4a11e-34f4-37a5-aaab-6c255b18fee1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "911f760c-e548-4c85-8d6c-16ec1efef955",
+                    "number": "2",
+                    "title": "Open Eye Signal (George FitzGerald remix)",
+                    "length": 338014
+                  }
+                ],
+                "track-count": 67,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCEL1500085"
+        ]
+      },
+      {
+        "id": "37d09208-7afb-4ff6-9c69-003e7e8478aa",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (George Fitzgerald remix)",
+        "length": 269000,
+        "disambiguation": "part of “Lane 8 Spring 2015 Mixtape” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-03-21",
+        "releases": [
+          {
+            "id": "0f19764a-45c6-4a96-b0b4-409df28acbad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "f2090344-5a3e-39a7-8941-a6114b80233b",
+            "count": 1,
+            "title": "Lane 8 Spring 2015 Mixtape",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Lane 8",
+                "artist": {
+                  "id": "bd052b81-353a-4bce-8cd8-72ba9d4ce414",
+                  "name": "Lane 8",
+                  "sort-name": "Lane 8",
+                  "disambiguation": "US | DJ, electronic music"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c463e519-7dd2-404d-8721-433913806d70",
+              "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "title": "Spring 2015 Mixtape",
+              "primary-type": "Broadcast",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "track-count": 36,
+            "media": [
+              {
+                "id": "7a91a13c-1ee2-3be2-86d1-58ecb819eca2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b5442dcb-c53c-44b7-bf39-557e3420836b",
+                    "number": "33",
+                    "title": "Open Eye Signal (George Fitzgerald remix)",
+                    "length": 269000
+                  }
+                ],
+                "track-count": 36,
+                "track-offset": 32
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "US23A9741572"
+        ]
+      },
+      {
+        "id": "3da06265-d514-404f-a928-a854db3451dc",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (Nosaj Thing remix)",
+        "length": 208000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013-04-29",
+        "releases": [
+          {
+            "id": "a331d58a-7fc2-4634-bb56-a9f864d96648",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "iTunes bonus track version",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-06-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-06-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "2c895a92-a9d8-3dc4-a648-639a77f41228",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "01a12fce-cfe6-34f9-b759-265a46cfe0cb",
+                    "number": "12",
+                    "title": "Open Eye Signal (Nosaj Thing remix)",
+                    "length": 208000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "be672d3e-d53a-418c-81b9-3267c73e354f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-05-20",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-05-20",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "33038ce1-6d42-36e8-8b1c-856171c38201",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "7dedc1be-d137-3871-a149-2d53e3673bdf",
+                    "number": "A2",
+                    "title": "Open Eye Signal (Nosaj Thing remix)",
+                    "length": 208000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "e24647de-e296-42f1-9185-cbb437fa2188",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-04-29",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-04-29",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "a19bcc47-1820-30f8-b01b-eee46ffb1a6e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ae7201a0-908b-4fd1-84fd-b334c52e9ee5",
+                    "number": "4",
+                    "title": "Open Eye Signal (Nosaj Thing remix)",
+                    "length": 208000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "4fc897bb-6433-453a-aa40-71a4bc144aad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-05-31",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2013-05-31",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              },
+              {
+                "date": "2013-05-31",
+                "area": {
+                  "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+                  "name": "New Zealand",
+                  "sort-name": "New Zealand",
+                  "iso-3166-1-codes": [
+                    "NZ"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "26cec56b-eab3-3f77-bf02-42d7e95bcac1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b9b033dd-ec21-4d20-a53b-c7d29f721347",
+                    "number": "4",
+                    "title": "Open Eye Signal (Nosaj Thing remix)",
+                    "length": 208000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "f7e3af8a-ce61-4388-9f68-ff73882203ad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "Rough Trade exclusive",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-11-19",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-11-19",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "8d2fb40a-8994-38d1-9b49-5f036e615d85",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "06813e92-3bd6-4a16-a58d-e51f92a0d463",
+                    "number": "2",
+                    "title": "Open Eye Signal (Nosaj Thing remix)",
+                    "length": 209000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "128b6ea3-5ca0-4db3-be9c-1a1d535da845",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "dda6f839-06a6-390e-ba47-cfde9cdcc521",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "974792df-7c9f-4a0c-b3bd-d0780f6b514d",
+                    "number": "12",
+                    "title": "Open Eye Signal (Nosaj Thing remix)",
+                    "length": 208000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "2fda5b53-a9d7-4ca7-bcd6-fb6fdde5cfa1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "expanded edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-03",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2014-06-03",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "04a1535e-1846-389f-b0a4-2e1d08c9ad6d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "efd8bfed-f8dd-4888-9627-b2bc7602d581",
+                    "number": "12",
+                    "title": "Open Eye Signal (Nosaj Thing remix)",
+                    "length": 208000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "59a24376-7bef-4c75-b48c-acbf6ede5233",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-12-09",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-12-09",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "0db0d8fa-f827-3a88-9a0e-827ded7f7220",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "d552866b-9423-45ae-926b-42797bacd504",
+                    "number": "12",
+                    "title": "Open Eye Signal (Nosaj Thing remix)",
+                    "length": 208000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 11
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "downtempo"
+          }
+        ]
+      },
+      {
+        "id": "e87e00fa-2245-4a0d-b601-1d43f1f0930d",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (George Fitzgerald remix)",
+        "length": 250000,
+        "disambiguation": "part of “Toolroom Ibiza 2015” DJ-mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-06-01",
+        "releases": [
+          {
+            "id": "1c0df83d-47df-442f-bb1a-b371f17f1ed7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Ibiza 2015",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "fa3ab46b-d8f4-4b28-9b67-3b9950868375",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ibiza 2015",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2015-06-01",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2015-06-01",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "8fe069a4-d6ac-3c50-9acb-787eeb227207",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "aac9e0ef-8c2b-4faf-bbf8-db24d4cee6f1",
+                    "number": "10",
+                    "title": "Open Eye Signal (George Fitzgerald remix)",
+                    "length": 250000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "d8a41475-0ed6-4879-a065-764a8ae743aa",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (Luke Abbott remix)",
+        "length": 413211,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013-04-29",
+        "releases": [
+          {
+            "id": "a331d58a-7fc2-4634-bb56-a9f864d96648",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "iTunes bonus track version",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-06-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-06-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "2c895a92-a9d8-3dc4-a648-639a77f41228",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "369592b6-19ed-3bd9-a3c2-832764592467",
+                    "number": "11",
+                    "title": "Open Eye Signal (Luke Abbott remix)",
+                    "length": 413000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "e24647de-e296-42f1-9185-cbb437fa2188",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-04-29",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-04-29",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "a19bcc47-1820-30f8-b01b-eee46ffb1a6e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e4aa10a0-588f-4db0-b127-1a78e0965507",
+                    "number": "3",
+                    "title": "Open Eye Signal (Luke Abbott remix)",
+                    "length": 413000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "4fc897bb-6433-453a-aa40-71a4bc144aad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-05-31",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2013-05-31",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              },
+              {
+                "date": "2013-05-31",
+                "area": {
+                  "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+                  "name": "New Zealand",
+                  "sort-name": "New Zealand",
+                  "iso-3166-1-codes": [
+                    "NZ"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "26cec56b-eab3-3f77-bf02-42d7e95bcac1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "77a40270-ca41-490c-8a43-85634425b525",
+                    "number": "3",
+                    "title": "Open Eye Signal (Luke Abbott remix)",
+                    "length": 415000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "f7e3af8a-ce61-4388-9f68-ff73882203ad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "Rough Trade exclusive",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-11-19",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-11-19",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "8d2fb40a-8994-38d1-9b49-5f036e615d85",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d60fa6b8-1d4a-43f1-a549-836df351c8d4",
+                    "number": "3",
+                    "title": "Open Eye Signal (Luke Abbott remix)",
+                    "length": 413000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "128b6ea3-5ca0-4db3-be9c-1a1d535da845",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "dda6f839-06a6-390e-ba47-cfde9cdcc521",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "49d31c65-29b8-4ff1-8768-e23a498b6051",
+                    "number": "11",
+                    "title": "Open Eye Signal (Luke Abbott remix)",
+                    "length": 413211
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "2fda5b53-a9d7-4ca7-bcd6-fb6fdde5cfa1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "expanded edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-03",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2014-06-03",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "04a1535e-1846-389f-b0a4-2e1d08c9ad6d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bd0a9440-49c8-45d2-91ec-ad01b5ec4cf8",
+                    "number": "11",
+                    "title": "Open Eye Signal (Luke Abbott remix)",
+                    "length": 413211
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "59a24376-7bef-4c75-b48c-acbf6ede5233",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-12-09",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-12-09",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "0db0d8fa-f827-3a88-9a0e-827ded7f7220",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6a8569fa-bbe7-49b7-aa13-23e49f7e7a6c",
+                    "number": "11",
+                    "title": "Open Eye Signal (Luke Abbott remix)",
+                    "length": 413211
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 10
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "tech house"
+          }
+        ]
+      },
+      {
+        "id": "b172096a-2baf-48b4-b3c5-5b06de75b90c",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (George Fitzgerald remix)",
+        "length": 338000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-07-17",
+        "releases": [
+          {
+            "id": "83406e73-653e-429a-9d11-0ad9bbf74c2f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "48586776-5925-32c0-8624-f5e499143364",
+            "count": 1,
+            "title": "Faze DJ Set #40",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Stephan Bodzin",
+                "artist": {
+                  "id": "6f027cd7-c2e8-4569-8922-aa2c9a503e65",
+                  "name": "Stephan Bodzin",
+                  "sort-name": "Bodzin, Stephan"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ce355ea4-36fc-427d-971b-c480a630be90",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Faze DJ Set #40",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2015-07-17",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2015-07-17",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "7aca4a0c-0426-3435-bbd9-c061f8ec1421",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "89efc478-977b-456d-9a14-04d90d20c391",
+                    "number": "12",
+                    "title": "Open Eye Signal (George Fitzgerald remix)",
+                    "length": 338000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "97682b77-f72e-4384-9ab5-d795a407c5d5",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (George Fitzgerald remix)",
+        "length": 332000,
+        "disambiguation": "part of a “Underground 2015” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-08-14",
+        "releases": [
+          {
+            "id": "f74cf3b0-b7c4-4286-8e73-b9444edaa5d3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Underground 2015",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ebe5f3d0-111f-4a8c-aad3-ee01f8229e53",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Underground 2015",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2015-08-14",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2015-08-14",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "85b62f17-0a8c-3327-b5f0-9cf233b4976f",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9eb7fad9-ea0f-4612-a0f9-6d8cfc9e34e2",
+                    "number": "3",
+                    "title": "Open Eye Signal (George Fitzgerald remix)",
+                    "length": 332000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1a36c6c5-098b-47c2-8d84-d71ba1260dda",
+        "score": 78,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (Luke Abbott remix)",
+        "length": 345000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-03-07",
+        "releases": [
+          {
+            "id": "2dd85837-7f95-43a5-90f5-15b83f3599ed",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Sonne Mond Sterne X9",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3a065264-a2b5-44a4-b3d9-97937e90d17d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sonne Mond Sterne X9",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2015-03-07",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2015-03-07",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 29,
+            "media": [
+              {
+                "id": "6e150f2d-0837-3daa-988a-d9673c35672e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f5d56927-a471-422f-b8a3-9aafa5005bba",
+                    "number": "11",
+                    "title": "Open Eye Signal (Luke Abbott remix)",
+                    "length": 345000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9084bebc-5498-411f-a4fa-c790a6ab7beb",
+        "score": 69,
+        "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+        "title": "Open Eye Signal (Lord of the Isles remix)",
+        "length": 446000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Jon Hopkins",
+            "artist": {
+              "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+              "name": "Jon Hopkins",
+              "sort-name": "Hopkins, Jon",
+              "aliases": [
+                {
+                  "sort-name": "Hopkins, Jonathan Julian",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jonathan Julian Hopkins",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013-04-29",
+        "releases": [
+          {
+            "id": "a331d58a-7fc2-4634-bb56-a9f864d96648",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "iTunes bonus track version",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-06-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-06-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "2c895a92-a9d8-3dc4-a648-639a77f41228",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "906c89c2-53f3-36ae-81b6-a7ed43d75341",
+                    "number": "10",
+                    "title": "Open Eye Signal (Lord of the Isles remix)",
+                    "length": 446000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "be672d3e-d53a-418c-81b9-3267c73e354f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-05-20",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-05-20",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "33038ce1-6d42-36e8-8b1c-856171c38201",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "028175ac-9aab-3636-94b5-9f07c49657d0",
+                    "number": "B2",
+                    "title": "Open Eye Signal (Lord of the Isles remix)",
+                    "length": 446000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "e24647de-e296-42f1-9185-cbb437fa2188",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-04-29",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-04-29",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "a19bcc47-1820-30f8-b01b-eee46ffb1a6e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8b20575b-279c-40b5-872d-e05310dadcb3",
+                    "number": "2",
+                    "title": "Open Eye Signal (Lord of the Isles remix)",
+                    "length": 446000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "4fc897bb-6433-453a-aa40-71a4bc144aad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Open Eye Signal (remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fc29b1f-2d38-4e08-adcb-503f0a0ce535",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Open Eye Signal",
+              "primary-type": "Single"
+            },
+            "date": "2013-05-31",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2013-05-31",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              },
+              {
+                "date": "2013-05-31",
+                "area": {
+                  "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+                  "name": "New Zealand",
+                  "sort-name": "New Zealand",
+                  "iso-3166-1-codes": [
+                    "NZ"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "26cec56b-eab3-3f77-bf02-42d7e95bcac1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fd6e32e9-f866-4d3f-acf8-de1bf641f0d6",
+                    "number": "2",
+                    "title": "Open Eye Signal (Lord of the Isles remix)",
+                    "length": 448000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "f7e3af8a-ce61-4388-9f68-ff73882203ad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 2,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "Rough Trade exclusive",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-11-19",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2013-11-19",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "8d2fb40a-8994-38d1-9b49-5f036e615d85",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "02ecc3cc-1c79-4571-8e33-d1c07b25be86",
+                    "number": "5",
+                    "title": "Open Eye Signal (Lord of the Isles remix)",
+                    "length": 447000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "128b6ea3-5ca0-4db3-be9c-1a1d535da845",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "dda6f839-06a6-390e-ba47-cfde9cdcc521",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b2bf9930-bd32-47a4-b276-14ac7e670f68",
+                    "number": "10",
+                    "title": "Open Eye Signal (Lord of the Isles remix)",
+                    "length": 446000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "2fda5b53-a9d7-4ca7-bcd6-fb6fdde5cfa1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "expanded edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2014-06-03",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2014-06-03",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "04a1535e-1846-389f-b0a4-2e1d08c9ad6d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ea1270e7-2565-42e8-9b7a-70e5ac005594",
+                    "number": "10",
+                    "title": "Open Eye Signal (Lord of the Isles remix)",
+                    "length": 446000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "59a24376-7bef-4c75-b48c-acbf6ede5233",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "66cfae76-b391-397d-a3af-4e8c673a42cb",
+            "count": 1,
+            "title": "Immunity",
+            "status": "Official",
+            "disambiguation": "extended edition",
+            "artist-credit": [
+              {
+                "name": "Jon Hopkins",
+                "artist": {
+                  "id": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+                  "name": "Jon Hopkins",
+                  "sort-name": "Hopkins, Jon"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Immunity",
+              "primary-type": "Album"
+            },
+            "date": "2013-12-09",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-12-09",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "0db0d8fa-f827-3a88-9a0e-827ded7f7220",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "d33fdc3c-fd9f-4513-9014-8f40d73d770e",
+                    "number": "10",
+                    "title": "Open Eye Signal (Lord of the Isles remix)",
+                    "length": 446000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 9
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "progressive house"
+          },
+          {
+            "count": 1,
+            "name": "microhouse"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28champion+AND+sound%29+AND+artistname%3A%22Dubmatix%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:34:19.673Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:34:19.803Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "96ff250b-5c6c-4433-acd7-541053af2dff",
+        "score": 100,
+        "artist-credit-id": "0555381a-21d5-3177-b005-ac71efd7ebc7",
+        "title": "Champion Sound",
+        "length": 353000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dubmatix",
+            "artist": {
+              "id": "398d8aef-7939-4d64-b9ee-3b1114836d44",
+              "name": "Dubmatix",
+              "sort-name": "Dubmatix"
+            }
+          }
+        ],
+        "first-release-date": "2006-06-04",
+        "releases": [
+          {
+            "id": "ba3fda35-b26d-415d-a696-bd7f846ff939",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Atomic Subsonic",
+            "status": "Official",
+            "release-group": {
+              "id": "2f1a1ba9-426b-3b66-9c4b-f19c96e7297e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Atomic Subsonic",
+              "primary-type": "Album"
+            },
+            "date": "2006-06-04",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2006-06-04",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "d54e5a7e-665b-36ef-b3e9-dca4102696f0",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4e0be26b-6b6b-396f-872a-4c102a8ac183",
+                    "number": "2",
+                    "title": "Champion Sound",
+                    "length": 353000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 3,
+            "name": "reggae"
+          },
+          {
+            "count": 3,
+            "name": "dub"
+          },
+          {
+            "count": 1,
+            "name": "roots reggae"
+          }
+        ]
+      },
+      {
+        "id": "55d06020-897a-4e4b-9de4-4f6ebcce824f",
+        "score": 100,
+        "artist-credit-id": "0555381a-21d5-3177-b005-ac71efd7ebc7",
+        "title": "Champion Sound",
+        "length": 352000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dubmatix",
+            "artist": {
+              "id": "398d8aef-7939-4d64-b9ee-3b1114836d44",
+              "name": "Dubmatix",
+              "sort-name": "Dubmatix"
+            }
+          }
+        ],
+        "first-release-date": "2007",
+        "releases": [
+          {
+            "id": "627270ca-4951-4ed6-a312-827371f49c45",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "Dub Anthology",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0ae5b478-a387-3dc4-8f33-7330858f3ef0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Dub Anthology",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2007",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2007",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "830535e6-50a0-3c40-99a2-18113979afc2",
+                "position": 4,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0c18e225-a3a3-3913-bcb1-fad514d5105a",
+                    "number": "1",
+                    "title": "Champion Sound",
+                    "length": 352000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "reggae"
+          },
+          {
+            "count": 1,
+            "name": "dub"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/99f12c2f-18c6-48f6-ba5d-f05d986d0dd7?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:15:40.479Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "title": "Smile Is the Ke(y)",
+    "video": false,
+    "disambiguation": "",
+    "releases": [
+      {
+        "disambiguation": "",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Psychotic Symphony",
+          "artist-credit": [
+            {
+              "name": "Panda Dub",
+              "artist": {
+                "name": "Panda Dub",
+                "type": "Person",
+                "disambiguation": "",
+                "country": "FR",
+                "sort-name": "Panda Dub",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "id": "08557f73-6b1c-4281-ad93-ffa660f5b266"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "id": "95632494-450a-4700-beea-3895bddea40b",
+          "first-release-date": "2013-01-02"
+        },
+        "barcode": "",
+        "title": "Psychotic Symphony",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "date": "2013-01-02",
+        "release-events": [
+          {
+            "date": "2013-01-02",
+            "area": {
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "type-id": null,
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "type": null,
+              "name": "[Worldwide]"
+            }
+          }
+        ],
+        "country": "XW",
+        "quality": "normal",
+        "artist-credit": [
+          {
+            "name": "Panda Dub",
+            "artist": {
+              "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Panda Dub",
+              "country": "FR",
+              "disambiguation": "",
+              "type": "Person",
+              "name": "Panda Dub"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "status": "Official",
+        "id": "6c018911-3586-4ee4-a7be-eff2502767f3",
+        "packaging": "None"
+      }
+    ],
+    "artist-credit": [
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Panda Dub",
+          "country": "FR",
+          "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+          "type": "Person",
+          "name": "Panda Dub",
+          "disambiguation": ""
+        },
+        "name": "Panda Dub",
+        "joinphrase": ""
+      }
+    ],
+    "id": "99f12c2f-18c6-48f6-ba5d-f05d986d0dd7",
+    "length": 262000,
+    "first-release-date": "2013-01-02"
+  }
+}

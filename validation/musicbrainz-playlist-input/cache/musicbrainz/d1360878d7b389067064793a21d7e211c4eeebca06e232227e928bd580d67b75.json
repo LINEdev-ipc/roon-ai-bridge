@@ -1,0 +1,234 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Computer+Age%22+AND+artist%3A%22Mungo%27s+Hi+Fi%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:37:11.957Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:37:11.977Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "646609f5-6551-4f18-bc6f-10739313a2e1",
+        "score": 100,
+        "artist-credit-id": "51f021b1-bac3-301d-a187-f512d2bac6b9",
+        "title": "Computer Age",
+        "length": 244186,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Mungo’s Hi Fi",
+            "artist": {
+              "id": "8f4ebd72-0417-4c0b-9639-f4bd031bfb8d",
+              "name": "Mungo’s Hi Fi",
+              "sort-name": "Mungo’s Hi Fi",
+              "aliases": [
+                {
+                  "sort-name": "Mungo's HiFi",
+                  "name": "Mungo's HiFi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Mr Williamz",
+            "artist": {
+              "id": "7464f571-c815-4e2f-906c-99e09df6db56",
+              "name": "Mr. Williamz",
+              "sort-name": "Williamz, Mr.",
+              "disambiguation": "“ragga” style vocalist; heard on many jungle releases",
+              "aliases": [
+                {
+                  "sort-name": "Willaims, Micah",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Micah Willaims",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011-11-14",
+        "releases": [
+          {
+            "id": "62509757-0bfa-4755-a011-cbaa976c688c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "6d99c373-e2e9-3118-aadd-37c0a3fd26c2",
+            "count": 1,
+            "title": "Forward Ever",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Mungo’s Hi Fi",
+                "artist": {
+                  "id": "8f4ebd72-0417-4c0b-9639-f4bd031bfb8d",
+                  "name": "Mungo’s Hi Fi",
+                  "sort-name": "Mungo’s Hi Fi"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1abbc5c1-3f2c-4c8a-8376-079966322d86",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Forward Ever",
+              "primary-type": "Album"
+            },
+            "date": "2011-11-14",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2011-11-14",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "5002bef0-480e-3688-9553-a248e5ff09db",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4a3bae04-5fbe-35d2-bd5f-ab3bd754374a",
+                    "number": "4",
+                    "title": "Computer Age",
+                    "length": 244186
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "758ae586-c98b-432a-94f1-58f54f369d64",
+        "score": 100,
+        "artist-credit-id": "54124460-6b45-3535-899b-9d1d67b96d6f",
+        "title": "Computer Age",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " Ft. ",
+            "name": "Mungo's Hi Fi",
+            "artist": {
+              "id": "8f4ebd72-0417-4c0b-9639-f4bd031bfb8d",
+              "name": "Mungo’s Hi Fi",
+              "sort-name": "Mungo’s Hi Fi",
+              "aliases": [
+                {
+                  "sort-name": "Mungo's HiFi",
+                  "name": "Mungo's HiFi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Mr. Williamz",
+            "artist": {
+              "id": "7464f571-c815-4e2f-906c-99e09df6db56",
+              "name": "Mr. Williamz",
+              "sort-name": "Williamz, Mr.",
+              "disambiguation": "“ragga” style vocalist; heard on many jungle releases",
+              "aliases": [
+                {
+                  "sort-name": "Willaims, Micah",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Micah Willaims",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2012",
+        "releases": [
+          {
+            "id": "efe6192d-d0f6-45ac-af68-caaf8082082a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "5b6e4fc6-8473-33d7-bd71-124fe63f520e",
+            "count": 1,
+            "title": "Computer Age / Cuture Mi Vote",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Mungo's Hi Fi",
+                "artist": {
+                  "id": "8f4ebd72-0417-4c0b-9639-f4bd031bfb8d",
+                  "name": "Mungo’s Hi Fi",
+                  "sort-name": "Mungo’s Hi Fi"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "edd135a0-1d75-4071-b698-4886c590c242",
+              "title": "Computer Age / Cuture Mi Vote"
+            },
+            "date": "2012",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2012",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "7d775455-7475-3661-8acf-f98b0398989e",
+                "position": 1,
+                "format": "7\" Vinyl",
+                "track": [
+                  {
+                    "id": "23056754-564a-4413-bb5e-b69323904a3b",
+                    "number": "A",
+                    "title": "Computer Age"
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

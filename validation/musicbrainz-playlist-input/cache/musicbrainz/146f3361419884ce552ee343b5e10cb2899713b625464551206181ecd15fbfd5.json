@@ -1,0 +1,201 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28sixteen+AND+tons+AND+pressure%29+AND+artistname%3A%22O.B.F%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:40:57.354Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:40:57.496Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "027c76a1-7e3d-48b4-b03f-333481760a29",
+        "score": 100,
+        "artist-credit-id": "150b2bb9-8757-3874-8a97-ab7c64b92522",
+        "title": "Sixteen Tons of Pressure",
+        "length": 235000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "O.B.F.",
+            "artist": {
+              "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26",
+              "name": "O.B.F.",
+              "sort-name": "O.B.F.",
+              "aliases": [
+                {
+                  "sort-name": "Obf",
+                  "name": "Obf",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Original Bass Foundation",
+                  "name": "Original Bass Foundation",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Charlie P",
+            "artist": {
+              "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69",
+              "name": "Charlie P",
+              "sort-name": "Charlie P",
+              "disambiguation": "Reggae/Roots/Dub singer"
+            }
+          }
+        ],
+        "first-release-date": "2016-04-22",
+        "releases": [
+          {
+            "id": "f4ba2f82-8fdc-48f3-9cb7-611becfa69b3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "150b2bb9-8757-3874-8a97-ab7c64b92522",
+            "count": 1,
+            "title": "Sixteen Tons of Pressure",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "O.B.F.",
+                "artist": {
+                  "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26",
+                  "name": "O.B.F.",
+                  "sort-name": "O.B.F."
+                }
+              },
+              {
+                "name": "Charlie P",
+                "artist": {
+                  "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69",
+                  "name": "Charlie P",
+                  "sort-name": "Charlie P",
+                  "disambiguation": "Reggae/Roots/Dub singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7b66fddc-db22-4640-bd4a-942f43bc8bed",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Sixteen Tons of Pressure",
+              "primary-type": "EP"
+            },
+            "date": "2016-04-22",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2016-04-22",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "8a98ba20-27b4-3592-9768-61f20f74a0ad",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "86b7eb7b-f136-4fcd-92a6-f2a437160262",
+                    "number": "A1",
+                    "title": "Sixteen Tons of Pressure"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "200d68f9-ae11-4064-a42f-16405ea851e7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "150b2bb9-8757-3874-8a97-ab7c64b92522",
+            "count": 1,
+            "title": "Sixteen Tons of Pressure",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "O.B.F.",
+                "artist": {
+                  "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26",
+                  "name": "O.B.F.",
+                  "sort-name": "O.B.F."
+                }
+              },
+              {
+                "name": "Charlie P",
+                "artist": {
+                  "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69",
+                  "name": "Charlie P",
+                  "sort-name": "Charlie P",
+                  "disambiguation": "Reggae/Roots/Dub singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7b66fddc-db22-4640-bd4a-942f43bc8bed",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Sixteen Tons of Pressure",
+              "primary-type": "EP"
+            },
+            "date": "2016-06-10",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2016-06-10",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "4e52ee9a-de7e-38ef-9cf0-e027bcff1d4b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ab8003f8-6408-437f-893a-507990b52417",
+                    "number": "1",
+                    "title": "Sixteen Tons of Pressure",
+                    "length": 235000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

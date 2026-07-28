@@ -1,4 +1,3 @@
-import crypto from "crypto";
 import {
   MediaResult,
   RoonMediaService,
@@ -34,6 +33,7 @@ export type PlaylistRecordingIntent =
   | "alternate";
 
 export type PlaylistCandidateRole = "primary" | "reserve";
+export type PlaylistSelectionComplexity = "standard" | "constrained" | "exact_versions";
 
 export type PlaylistCandidateInput = {
   candidate_id?: unknown;
@@ -53,11 +53,11 @@ export type PlaylistCandidateInput = {
 };
 
 export type PlaylistBuildRequest = {
-  build_id?: unknown;
   playlist_id?: unknown;
   name?: unknown;
   description?: unknown;
   desired_count?: unknown;
+  selection_complexity?: unknown;
   release_year_from?: unknown;
   release_year_to?: unknown;
   no_adjacent_same_artist?: unknown;
@@ -134,11 +134,12 @@ export type PlaylistCandidatePreflightResult =
     };
 
 type BuildSession = {
-  buildId: string;
   playlistId: string | null;
   name: string | null;
   description: string | null;
   desiredCount: number;
+  selectionComplexity: PlaylistSelectionComplexity;
+  suppliedCandidates: number;
   releaseYearFrom: number | null;
   releaseYearTo: number | null;
   noAdjacentSameArtist: boolean;
@@ -147,21 +148,33 @@ type BuildSession = {
   rejected: RejectedCandidate[];
   seenProposalKeys: Set<string>;
   seenIdentityKeys: Set<string>;
-  createdAt: number;
-  updatedAt: number;
+  startedAt: number;
   purpose: PlaylistBuildPurpose;
   intent: string | null;
   expiryDays: number | null;
-  batchResults: Map<string, PlaylistBuildResult>;
-  finalized: boolean;
+  candidateMetrics: CandidateResolutionMetrics[];
+};
+
+type CandidateResolutionMetrics = {
+  candidate_id: string;
+  role: PlaylistCandidateRole;
+  total_ms: number;
+  catalog_ms: number;
+  musicbrainz_requests: number;
+  musicbrainz_cache_hits: number;
+  listenbrainz_requests: number;
+  listenbrainz_cache_hits: number;
+  roon_speculative_ms: number;
+  roon_fallback_ms: number;
+  roon_searches: number;
+  hydration_ms: number;
+  speculative_binding_reused: boolean;
+  binding_created: boolean;
+  outcome: "accepted" | "rejected";
 };
 
 export type PlaylistBuildResult = {
-  phase: "needs_candidates" | "finalized";
-  build_id: string | null;
-  round: number;
-  next_round: number | null;
-  rounds_remaining: number;
+  phase: "finalized";
   desired_count: number | null;
   added_count: number;
   missing_count: number | null;
@@ -183,11 +196,40 @@ export type PlaylistBuildResult = {
     by_reason: Record<string, number>;
     recovery_actions: string[];
   };
+  performance: {
+    elapsed_ms: number;
+    candidates_started: number;
+    candidates_accepted: number;
+    candidates_rejected: number;
+    catalog_ms_total: number;
+    musicbrainz_requests: number;
+    musicbrainz_cache_hits: number;
+    listenbrainz_requests: number;
+    listenbrainz_cache_hits: number;
+    roon_speculative_ms_total: number;
+    roon_fallback_ms_total: number;
+    roon_searches: number;
+    hydration_ms_total: number;
+    speculative_bindings_reused: number;
+    canonical_roon_fallbacks: number;
+    bindings_created: number;
+    reserve_policy: {
+      complexity: PlaylistSelectionComplexity;
+      multiplier: number;
+      desired_count: number | null;
+      recommended_candidates: number | null;
+      supplied_candidates: number;
+      sufficient: boolean | null;
+    };
+  };
 };
 
-const MAX_ADDITIONAL_ROUNDS = 3;
-const SESSION_TTL_MS = 30 * 60 * 1000;
-const RESOLUTION_CONCURRENCY = 3;
+const RESOLUTION_CONCURRENCY = 6;
+const RESERVE_MULTIPLIERS: Record<PlaylistSelectionComplexity, number> = {
+  standard: 1.25,
+  constrained: 1.4,
+  exact_versions: 1.6
+};
 
 function objectValue(value: unknown): Record<string, unknown> | null {
   return value && typeof value === "object" && !Array.isArray(value)
@@ -203,10 +245,6 @@ function optionalInteger(value: unknown): number | null {
   return typeof value === "number" && Number.isFinite(value)
     ? Math.floor(value)
     : null;
-}
-
-function buildBatchKey(tracks: unknown[]): string {
-  return crypto.createHash("sha256").update(JSON.stringify(tracks)).digest("hex");
 }
 
 function normalize(value: unknown): string {
@@ -427,7 +465,6 @@ function scheduleNoAdjacent(
 }
 
 export class PlaylistBuildService {
-  private readonly sessions = new Map<string, BuildSession>();
   private readonly metadataService: PlaylistMetadataEnrichmentService;
 
   constructor(
@@ -471,114 +508,79 @@ export class PlaylistBuildService {
   }
 
   async build(request: PlaylistBuildRequest): Promise<PlaylistBuildResult> {
-    this.purgeExpiredSessions();
-    const buildId = optionalString(request.build_id);
     const rawTracks = Array.isArray(request.tracks) ? request.tracks : [];
-    const batchKey = buildBatchKey(rawTracks);
     const requestedPurpose: PlaylistBuildPurpose = request.purpose === "temporary_playlist"
       ? "temporary_playlist"
       : "saved_playlist";
-    let session: BuildSession;
-    if (buildId) {
-      const existing = this.sessions.get(buildId);
-      if (!existing) {
-        throw new ApiError("PLAYLIST_BUILD_NOT_FOUND", "Playlist build session expired or was not found", {
-          build_id: buildId
-        });
+    const desiredCount = optionalInteger(request.desired_count);
+    if (desiredCount !== null && (desiredCount < 1 || desiredCount > 500)) {
+      throw new ApiError("INVALID_PLAYLIST", "desired_count must be between 1 and 500");
+    }
+    if (desiredCount !== null && rawTracks.length === 0) {
+      throw new ApiError(
+        "INVALID_PLAYLIST",
+        "A playlist with desired_count requires a non-empty candidate pool"
+      );
+    }
+    const playlistId = optionalString(request.playlist_id);
+    const name = optionalString(request.name);
+    if (!playlistId && !name) throw new ApiError("INVALID_PLAYLIST", "Playlist name is required");
+    if (requestedPurpose === "temporary_playlist" && playlistId) {
+      throw new ApiError("INVALID_PLAYLIST", "Temporary playlist builds cannot replace an existing playlist");
+    }
+    const expiryDays = optionalInteger(request.expiry_days);
+    if (
+      requestedPurpose === "temporary_playlist" &&
+      (expiryDays === null || expiryDays < 1 || expiryDays > 365)
+    ) {
+      throw new ApiError(
+        "INVALID_TEMPORARY_PLAYLIST_EXPIRY",
+        "expiry_days must be an integer from 1 to 365"
+      );
+    }
+    const rawComplexity = optionalString(request.selection_complexity);
+    const selectionComplexity: PlaylistSelectionComplexity =
+      rawComplexity === "constrained" || rawComplexity === "exact_versions"
+        ? rawComplexity
+        : "standard";
+    const session: BuildSession = {
+      playlistId,
+      name,
+      description: optionalString(request.description),
+      desiredCount: desiredCount ?? 0,
+      selectionComplexity,
+      suppliedCandidates: rawTracks.length,
+      releaseYearFrom: optionalInteger(request.release_year_from),
+      releaseYearTo: optionalInteger(request.release_year_to),
+      noAdjacentSameArtist: request.no_adjacent_same_artist !== false,
+      round: 0,
+      prepared: [],
+      rejected: [],
+      seenProposalKeys: new Set(),
+      seenIdentityKeys: new Set(),
+      startedAt: Date.now(),
+      purpose: requestedPurpose,
+      intent: optionalString(request.intent),
+      expiryDays,
+      candidateMetrics: []
+    };
+    for (const [field, value] of [
+      ["release_year_from", session.releaseYearFrom],
+      ["release_year_to", session.releaseYearTo]
+    ] as const) {
+      if (value !== null && (value < 1000 || value > 3000)) {
+        throw new ApiError("INVALID_PLAYLIST", `${field} must be between 1000 and 3000`);
       }
-      const replay = existing.batchResults.get(batchKey);
-      if (replay) {
-        this.logger?.info("Playlist preflight idempotent replay", {
-          buildId,
-          round: replay.round,
-          phase: replay.phase
-        });
-        return replay;
-      }
-      if (existing.finalized) {
-        throw new ApiError("PLAYLIST_BUILD_FINALIZED", "Playlist build was already finalized", {
-          build_id: buildId
-        });
-      }
-      if (existing.round >= MAX_ADDITIONAL_ROUNDS) {
-        throw new ApiError(
-          "PLAYLIST_BUILD_INCOMPLETE",
-          "Playlist build already used all three replenishment rounds without reaching the requested size",
-          { build_id: buildId }
-        );
-      }
-      if (existing.purpose !== requestedPurpose) {
-        throw new ApiError("PLAYLIST_BUILD_PURPOSE_MISMATCH", "Playlist build belongs to a different workflow", {
-          build_id: buildId,
-          expected: existing.purpose,
-          received: requestedPurpose
-        });
-      }
-      existing.round += 1;
-      existing.updatedAt = Date.now();
-      session = existing;
-    } else {
-      const desiredCount = optionalInteger(request.desired_count);
-      if (desiredCount !== null && (desiredCount < 1 || desiredCount > 500)) {
-        throw new ApiError("INVALID_PLAYLIST", "desired_count must be between 1 and 500");
-      }
-      const playlistId = optionalString(request.playlist_id);
-      const name = optionalString(request.name);
-      if (!playlistId && !name) throw new ApiError("INVALID_PLAYLIST", "Playlist name is required");
-      if (requestedPurpose === "temporary_playlist" && playlistId) {
-        throw new ApiError("INVALID_PLAYLIST", "Temporary playlist builds cannot replace an existing playlist");
-      }
-      const expiryDays = optionalInteger(request.expiry_days);
-      if (
-        requestedPurpose === "temporary_playlist" &&
-        (expiryDays === null || expiryDays < 1 || expiryDays > 365)
-      ) {
-        throw new ApiError(
-          "INVALID_TEMPORARY_PLAYLIST_EXPIRY",
-          "expiry_days must be an integer from 1 to 365"
-        );
-      }
-      session = {
-        buildId: crypto.randomUUID(),
-        playlistId,
-        name,
-        description: optionalString(request.description),
-        desiredCount: desiredCount ?? 0,
-        releaseYearFrom: optionalInteger(request.release_year_from),
-        releaseYearTo: optionalInteger(request.release_year_to),
-        noAdjacentSameArtist: request.no_adjacent_same_artist !== false,
-        round: 0,
-        prepared: [],
-        rejected: [],
-        seenProposalKeys: new Set(),
-        seenIdentityKeys: new Set(),
-        createdAt: Date.now(),
-        updatedAt: Date.now(),
-        purpose: requestedPurpose,
-        intent: optionalString(request.intent),
-        expiryDays,
-        batchResults: new Map(),
-        finalized: false
-      };
-      for (const [field, value] of [
-        ["release_year_from", session.releaseYearFrom],
-        ["release_year_to", session.releaseYearTo]
-      ] as const) {
-        if (value !== null && (value < 1000 || value > 3000)) {
-          throw new ApiError("INVALID_PLAYLIST", `${field} must be between 1000 and 3000`);
-        }
-      }
-      if (
-        session.releaseYearFrom !== null &&
-        session.releaseYearTo !== null &&
-        session.releaseYearFrom > session.releaseYearTo
-      ) {
-        throw new ApiError(
-          "INVALID_PLAYLIST",
-          "release_year_from must be less than or equal to release_year_to"
-        );
-      }
-      if (desiredCount !== null) this.sessions.set(session.buildId, session);
+    }
+    if (
+      session.releaseYearFrom !== null &&
+      session.releaseYearTo !== null &&
+      session.releaseYearFrom > session.releaseYearTo
+    ) {
+      throw new ApiError(
+        "INVALID_PLAYLIST",
+        "release_year_from must be less than or equal to release_year_to"
+      );
     }
 
     const candidates = rawTracks.map((track, index) => normalizeCandidate(track, session.round, index));
@@ -594,42 +596,11 @@ export class PlaylistBuildService {
       session.noAdjacentSameArtist
     );
     const missing = target === null ? null : Math.max(0, target - scheduled.selected.length);
-    const shouldFinalize = target === null || missing === 0 ||
-      (session.round >= MAX_ADDITIONAL_ROUNDS && scheduled.selected.length > 0);
-    if (!shouldFinalize) {
-      if (session.round >= MAX_ADDITIONAL_ROUNDS) {
-        this.sessions.set(session.buildId, session);
-        throw new ApiError(
-          "PLAYLIST_BUILD_INCOMPLETE",
-          "Playlist could not reach the requested size with the submitted candidates",
-          {
-            build_id: session.buildId,
-            desired_count: target,
-            accepted_count: scheduled.selected.length,
-            missing_count: missing,
-            rejected_count: session.rejected.length
-          }
-        );
-      }
-      this.sessions.set(session.buildId, session);
-      this.logger?.info("Playlist preflight needs replenishment", {
-        buildId: session.buildId,
-        round: session.round,
-        desiredCount: target,
-        acceptedCount: scheduled.selected.length,
-        missingCount: missing,
-        rejectedCount: session.rejected.length
-      });
-      const pending = this.result(session, "needs_candidates", null, scheduled, missing);
-      session.batchResults.set(batchKey, pending);
-      return pending;
-    }
     if (scheduled.selected.length === 0 && rawTracks.length > 0) {
       throw new ApiError(
         "PLAYLIST_BUILD_INCOMPLETE",
         "No submitted recording could be verified, so an empty playlist was not created",
         {
-          build_id: session.buildId,
           desired_count: target,
           accepted_count: 0,
           rejected_count: session.rejected.length
@@ -652,20 +623,15 @@ export class PlaylistBuildService {
           description: session.description === null ? undefined : session.description,
           tracks: preparedTracks
         });
-    session.finalized = true;
     this.logger?.info("Playlist preflight finalized", {
-      buildId: session.buildId,
       playlistId: playlist.playlist_id,
-      round: session.round,
       desiredCount: target,
       acceptedCount: scheduled.selected.length,
       missingCount: missing,
-      rejectedCount: session.rejected.length
+      rejectedCount: session.rejected.length,
+      elapsedMs: Date.now() - session.startedAt
     });
-    const finalized = this.result(session, "finalized", playlist, scheduled, missing);
-    session.batchResults.set(batchKey, finalized);
-    if (session.desiredCount) this.sessions.set(session.buildId, session);
-    return finalized;
+    return this.result(session, "finalized", playlist, scheduled, missing);
   }
 
   private async processCandidates(session: BuildSession, candidates: NormalizedCandidate[]): Promise<void> {
@@ -683,7 +649,24 @@ export class PlaylistBuildService {
         const key = proposalKey(candidate);
         if (session.seenProposalKeys.has(key)) {
           return {
-            rejected: this.rejection(candidate, "duplicate", "duplicate_proposal")
+            rejected: this.rejection(candidate, "duplicate", "duplicate_proposal"),
+            metrics: {
+              candidate_id: candidate.candidateId,
+              role: candidate.role,
+              total_ms: 0,
+              catalog_ms: 0,
+              musicbrainz_requests: 0,
+              musicbrainz_cache_hits: 0,
+              listenbrainz_requests: 0,
+              listenbrainz_cache_hits: 0,
+              roon_speculative_ms: 0,
+              roon_fallback_ms: 0,
+              roon_searches: 0,
+              hydration_ms: 0,
+              speculative_binding_reused: false,
+              binding_created: false,
+              outcome: "rejected" as const
+            }
           };
         }
         session.seenProposalKeys.add(key);
@@ -694,21 +677,39 @@ export class PlaylistBuildService {
           });
         } catch (error) {
           this.logger?.warn("Playlist candidate preflight failed", {
-            buildId: session.buildId,
             candidateId: candidate.candidateId,
             error: error instanceof Error ? error.message : String(error)
           });
           return {
-            rejected: this.rejection(candidate, "invalid", "resolution_error")
+            rejected: this.rejection(candidate, "invalid", "resolution_error"),
+            metrics: {
+              candidate_id: candidate.candidateId,
+              role: candidate.role,
+              total_ms: 0,
+              catalog_ms: 0,
+              musicbrainz_requests: 0,
+              musicbrainz_cache_hits: 0,
+              listenbrainz_requests: 0,
+              listenbrainz_cache_hits: 0,
+              roon_speculative_ms: 0,
+              roon_fallback_ms: 0,
+              roon_searches: 0,
+              hydration_ms: 0,
+              speculative_binding_reused: false,
+              binding_created: false,
+              outcome: "rejected" as const
+            }
           };
         }
       }));
       for (const outcome of outcomes) {
+        session.candidateMetrics.push(outcome.metrics);
         if ("rejected" in outcome) {
           session.rejected.push(outcome.rejected);
           continue;
         }
         if (session.seenIdentityKeys.has(outcome.prepared.identityKey)) {
+          outcome.metrics.outcome = "rejected";
           session.rejected.push(this.rejection(
             outcome.prepared.input,
             "duplicate",
@@ -719,7 +720,6 @@ export class PlaylistBuildService {
         session.seenIdentityKeys.add(outcome.prepared.identityKey);
         session.prepared.push(outcome.prepared);
       }
-      session.updatedAt = Date.now();
     }
   }
 
@@ -727,34 +727,99 @@ export class PlaylistBuildService {
     candidate: NormalizedCandidate,
     releaseRange: { from: number | null; to: number | null } = { from: null, to: null }
   ): Promise<
-    { prepared: PreparedCandidate } | { rejected: RejectedCandidate }
+    | { prepared: PreparedCandidate; metrics: CandidateResolutionMetrics }
+    | { rejected: RejectedCandidate; metrics: CandidateResolutionMetrics }
   > {
+    const startedAt = Date.now();
+    let catalogMs = 0;
+    let musicbrainzRequests = 0;
+    let musicbrainzCacheHits = 0;
+    let listenbrainzRequests = 0;
+    let listenbrainzCacheHits = 0;
+    let roonSpeculativeMs = 0;
+    let roonFallbackMs = 0;
+    let roonSearches = 0;
+    let hydrationMs = 0;
+    let speculativeBindingReused = false;
+    let bindingCreated = false;
+    const metrics = (outcome: CandidateResolutionMetrics["outcome"]): CandidateResolutionMetrics => ({
+      candidate_id: candidate.candidateId,
+      role: candidate.role,
+      total_ms: Date.now() - startedAt,
+      catalog_ms: catalogMs,
+      musicbrainz_requests: musicbrainzRequests,
+      musicbrainz_cache_hits: musicbrainzCacheHits,
+      listenbrainz_requests: listenbrainzRequests,
+      listenbrainz_cache_hits: listenbrainzCacheHits,
+      roon_speculative_ms: roonSpeculativeMs,
+      roon_fallback_ms: roonFallbackMs,
+      roon_searches: roonSearches,
+      hydration_ms: hydrationMs,
+      speculative_binding_reused: speculativeBindingReused,
+      binding_created: bindingCreated,
+      outcome
+    });
+    const rejected = (
+      status: RejectedCandidate["status"],
+      reason: string
+    ): { rejected: RejectedCandidate; metrics: CandidateResolutionMetrics } => ({
+      rejected: this.rejection(candidate, status, reason),
+      metrics: metrics("rejected")
+    });
+    const resolver = new TrackResolutionService(this.mediaService);
+    const proposedQuery = `${candidate.title} ${candidate.artist}`;
+    const speculativeStartedAt = Date.now();
+    const speculativePromise = resolver.resolve({
+      query: proposedQuery,
+      preferredResultId: candidate.resultId,
+      title: candidate.title,
+      artist: candidate.artist,
+      album: candidate.albumHint,
+      releaseYear: candidate.releaseYearHint,
+      versionHint: versionHint(candidate.recordingIntent),
+      count: 25,
+      sourcePreference: this.sourcePreference
+    }).then((resolution) => {
+      roonSpeculativeMs = Date.now() - speculativeStartedAt;
+      roonSearches += resolution.queries.length;
+      return resolution;
+    });
+    const catalogStartedAt = Date.now();
+    const catalogPromise = this.trackCatalogService
+      ? this.trackCatalogService.resolve({
+          title: candidate.title,
+          artist: candidate.requiredCredits[0]?.name || candidate.artist,
+          album_observation: candidate.albumHint,
+          release_year_observation: candidate.releaseYearHint,
+          version_hint: versionHint(candidate.recordingIntent)
+        }).then((catalog) => {
+          catalogMs = Date.now() - catalogStartedAt;
+          const trace = catalog.resolution?.trace;
+          musicbrainzRequests = trace?.provider_requests || 0;
+          musicbrainzCacheHits = trace?.cache_hit ? 1 : 0;
+          listenbrainzRequests = trace?.listenbrainz?.provider_requests || 0;
+          listenbrainzCacheHits = trace?.listenbrainz?.cache_hits || 0;
+          return catalog;
+        })
+      : Promise.resolve(null);
+    const [catalog, speculativeResolution] = await Promise.all([
+      catalogPromise,
+      speculativePromise
+    ]);
     let catalogProfile: TrackCatalogProfile | null = null;
     let canonicalTitle = candidate.title;
     let canonicalArtist = candidate.artist;
     let bindingCandidate = candidate;
-    if (this.trackCatalogService) {
-      const catalog = await this.trackCatalogService.resolve({
-        title: candidate.title,
-        artist: candidate.requiredCredits[0]?.name || candidate.artist,
-        album: candidate.albumHint,
-        version_hint: versionHint(candidate.recordingIntent),
-        release_year: candidate.releaseYearHint
-      });
+    if (catalog) {
       catalogProfile = catalog.profile;
       if (catalogProfile.status === "ineligible") {
-        return {
-          rejected: this.rejection(candidate, "ineligible", "musicbrainz_recording_is_video")
-        };
+        return rejected("ineligible", "musicbrainz_recording_is_video");
       }
       if (catalogProfile.status !== "exact" || !catalogProfile.recording) {
-        return {
-          rejected: this.rejection(
-            candidate,
-            "manual_required",
-            `musicbrainz_${catalogProfile.status}:${catalogProfile.reason}`
-          )
-        };
+        return rejected(
+          "manual_required",
+          `musicbrainz_${catalogProfile.status}:${catalogProfile.reason}`
+        );
       }
       const firstReleaseYear = catalogProfile.release_group?.release_year ?? null;
       if (
@@ -765,15 +830,12 @@ export class PlaylistBuildService {
           (releaseRange.to !== null && firstReleaseYear > releaseRange.to)
         )
       ) {
-        return {
-          rejected: this.rejection(
-            candidate,
-            "ineligible",
-            firstReleaseYear === null
-              ? "musicbrainz_release_year_unverified"
-              : "musicbrainz_release_year_outside_requested_range"
-          )
-        };
+        return rejected(
+          "ineligible",
+          firstReleaseYear === null
+            ? "musicbrainz_release_year_unverified"
+            : "musicbrainz_release_year_outside_requested_range"
+        );
       }
       canonicalTitle = catalogProfile.recording.title;
       canonicalArtist = catalogProfile.recording.artist_credit.length
@@ -796,11 +858,9 @@ export class PlaylistBuildService {
         ]
       };
     }
-    const resolver = new TrackResolutionService(this.mediaService);
     const baseQuery = `${canonicalTitle} ${canonicalArtist}`;
-    let resolution = await resolver.resolve({
+    const canonicalRequest = {
       query: baseQuery,
-      preferredResultId: candidate.resultId,
       title: canonicalTitle,
       artist: canonicalArtist,
       album: candidate.albumHint,
@@ -808,28 +868,27 @@ export class PlaylistBuildService {
       versionHint: versionHint(candidate.recordingIntent),
       count: 25,
       sourcePreference: this.sourcePreference
-    });
+    } as const;
+    let resolution = resolver.reconcile(
+      canonicalRequest,
+      speculativeResolution.candidates.map((entry) => entry.result),
+      speculativeResolution.queries
+    );
     let selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
-    let stage = resolution.reason === "selected_supplied_result" ? "supplied_result" : "title_artist";
-    if (!selected && resolution.reason === "selected_supplied_result") {
-      resolution = await resolver.resolve({
-        query: baseQuery,
-        title: canonicalTitle,
-        artist: canonicalArtist,
-        album: candidate.albumHint,
-        releaseYear: candidate.releaseYearHint,
-        versionHint: versionHint(candidate.recordingIntent),
-        count: 25,
-        sourcePreference: this.sourcePreference
-      });
+    let stage = selected ? "speculative_title_artist" : "canonical_title_artist";
+    speculativeBindingReused = Boolean(selected);
+    if (!selected) {
+      const fallbackStartedAt = Date.now();
+      resolution = await resolver.resolve(canonicalRequest);
+      roonFallbackMs += Date.now() - fallbackStartedAt;
+      roonSearches += resolution.queries.length;
       selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
-      stage = "title_artist";
     }
     if (!selected && candidate.albumHint) {
       stage = "title_artist_album";
+      const fallbackStartedAt = Date.now();
       resolution = await resolver.resolve({
         query: `${baseQuery} ${candidate.albumHint}`,
-        preferredResultId: candidate.resultId,
         title: canonicalTitle,
         artist: canonicalArtist,
         album: candidate.albumHint,
@@ -839,22 +898,23 @@ export class PlaylistBuildService {
         sourcePreference: this.sourcePreference,
         includeExactQuery: false
       });
+      roonFallbackMs += Date.now() - fallbackStartedAt;
+      roonSearches += resolution.queries.length;
       selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
     }
     if (!selected) {
       const needsEnrichment = resolution.candidates.some((entry) => baseGate(bindingCandidate, entry.result));
-      return {
-        rejected: this.rejection(
-          candidate,
-          this.trackCatalogService ? "manual_required" : needsEnrichment ? "needs_enrichment" : "missing",
-          this.trackCatalogService
-            ? `roon_binding_required:${needsEnrichment ? "performance_metadata_required" : resolution.reason}`
-            : needsEnrichment ? "performance_metadata_required" : resolution.reason
-        )
-      };
+      return rejected(
+        this.trackCatalogService ? "manual_required" : needsEnrichment ? "needs_enrichment" : "missing",
+        this.trackCatalogService
+          ? `roon_binding_required:${needsEnrichment ? "performance_metadata_required" : resolution.reason}`
+          : needsEnrichment ? "performance_metadata_required" : resolution.reason
+      );
     }
 
+    const hydrationStartedAt = Date.now();
     const hydrated = await this.hydrate(selected.result, candidate, resolution.queries, catalogProfile);
+    hydrationMs = Date.now() - hydrationStartedAt;
     const result = hydrated.result;
     if (catalogProfile?.recording && this.trackCatalogService) {
       hydrated.audioMetadata = applyCatalogMetadata(hydrated.audioMetadata, catalogProfile);
@@ -870,6 +930,7 @@ export class PlaylistBuildService {
         }
       );
       hydrated.metadataEnrichment.roon_binding = binding;
+      bindingCreated = true;
     }
     const storedTrack = this.storedTrack(
       candidate,
@@ -893,7 +954,8 @@ export class PlaylistBuildService {
         selectedArtistKey: selectedArtistKey(candidate, result),
         resolutionReason: resolution.reason,
         catalogProfile
-      }
+      },
+      metrics: metrics("accepted")
     };
   }
 
@@ -1088,28 +1150,38 @@ export class PlaylistBuildService {
     }
     const recoveryActions = new Set<string>();
     if (Object.keys(byReason).some((reason) => reason.startsWith("musicbrainz_ambiguous"))) {
-      recoveryActions.add("Retry ambiguous recordings with the exact album_hint copied from a Roon result.");
+      recoveryActions.add("Use a more specific album or recording version when manually repairing ambiguous entries.");
     }
     if (Object.keys(byReason).some((reason) => reason.startsWith("musicbrainz_not_found"))) {
-      recoveryActions.add("Replace not-found proposals with exact title, artist_credit, album_hint and result_id from a fresh Roon search.");
+      recoveryActions.add("Replace not-found proposals with another known recording.");
     }
     if (Object.keys(byReason).some((reason) => reason.startsWith("roon_binding_required"))) {
-      recoveryActions.add("Replace missing Roon bindings with a different playable track returned by roon_search_media.");
+      recoveryActions.add("Use manual Roon search only to repair entries that have no playable binding.");
     }
     if (byStatus.duplicate) {
-      recoveryActions.add("Submit different recordings; do not repeat prior proposals or the same recording on another edition.");
+      recoveryActions.add("Use different recordings instead of another edition of the same recording.");
     }
     if (Object.keys(byReason).some((reason) => reason.includes("release_year"))) {
       recoveryActions.add("Replace tracks whose MusicBrainz first-publication year does not satisfy the requested range.");
     }
+    const multiplier = RESERVE_MULTIPLIERS[session.selectionComplexity];
+    const recommendedCandidates = session.desiredCount
+      ? Math.ceil(session.desiredCount * multiplier)
+      : null;
+    const sum = (field: keyof Pick<
+      CandidateResolutionMetrics,
+      | "catalog_ms"
+      | "musicbrainz_requests"
+      | "musicbrainz_cache_hits"
+      | "listenbrainz_requests"
+      | "listenbrainz_cache_hits"
+      | "roon_speculative_ms"
+      | "roon_fallback_ms"
+      | "roon_searches"
+      | "hydration_ms"
+    >) => session.candidateMetrics.reduce((total, entry) => total + entry[field], 0);
     return {
       phase,
-      build_id: phase === "needs_candidates" ? session.buildId : null,
-      round: session.round,
-      next_round: phase === "needs_candidates" ? session.round + 1 : null,
-      rounds_remaining: phase === "needs_candidates"
-        ? MAX_ADDITIONAL_ROUNDS - session.round
-        : 0,
       desired_count: session.desiredCount || null,
       added_count: scheduled.selected.length,
       missing_count: missing,
@@ -1139,14 +1211,37 @@ export class PlaylistBuildService {
         by_status: byStatus,
         by_reason: byReason,
         recovery_actions: [...recoveryActions]
+      },
+      performance: {
+        elapsed_ms: Date.now() - session.startedAt,
+        candidates_started: session.candidateMetrics.length,
+        candidates_accepted: session.candidateMetrics.filter((entry) => entry.outcome === "accepted").length,
+        candidates_rejected: session.candidateMetrics.filter((entry) => entry.outcome === "rejected").length,
+        catalog_ms_total: sum("catalog_ms"),
+        musicbrainz_requests: sum("musicbrainz_requests"),
+        musicbrainz_cache_hits: sum("musicbrainz_cache_hits"),
+        listenbrainz_requests: sum("listenbrainz_requests"),
+        listenbrainz_cache_hits: sum("listenbrainz_cache_hits"),
+        roon_speculative_ms_total: sum("roon_speculative_ms"),
+        roon_fallback_ms_total: sum("roon_fallback_ms"),
+        roon_searches: sum("roon_searches"),
+        hydration_ms_total: sum("hydration_ms"),
+        speculative_bindings_reused: session.candidateMetrics
+          .filter((entry) => entry.speculative_binding_reused).length,
+        canonical_roon_fallbacks: session.candidateMetrics
+          .filter((entry) => entry.roon_fallback_ms > 0).length,
+        bindings_created: session.candidateMetrics.filter((entry) => entry.binding_created).length,
+        reserve_policy: {
+          complexity: session.selectionComplexity,
+          multiplier,
+          desired_count: session.desiredCount || null,
+          recommended_candidates: recommendedCandidates,
+          supplied_candidates: session.suppliedCandidates,
+          sufficient: recommendedCandidates === null
+            ? null
+            : session.suppliedCandidates >= recommendedCandidates
+        }
       }
     };
-  }
-
-  private purgeExpiredSessions(): void {
-    const cutoff = Date.now() - SESSION_TTL_MS;
-    for (const [buildId, session] of this.sessions) {
-      if (session.updatedAt < cutoff) this.sessions.delete(buildId);
-    }
   }
 }

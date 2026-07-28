@@ -1,0 +1,727 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Missing%22+AND+artist%3A%22Everything+But+the+Girl%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:51:35.962Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:51:36.009Z",
+    "count": 6,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "2545ee73-9e50-3adc-955a-6aa10703fb6c",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "score": 100,
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "artist-credit-id": "169834b8-8945-3475-9b9a-84f94bbff373",
+        "count": 10,
+        "title": "Missing",
+        "first-release-date": "1994-11-15",
+        "primary-type": "EP",
+        "artist-credit": [
+          {
+            "name": "Everything but the Girl",
+            "artist": {
+              "id": "959cf5bf-ee29-4af6-a85a-0b480181d988",
+              "name": "Everything but the Girl",
+              "sort-name": "Everything but the Girl",
+              "aliases": [
+                {
+                  "sort-name": "Everthing But The Girl",
+                  "name": "Everthing But The Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EBTG",
+                  "name": "EBTG",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Everything But the Girl",
+                  "name": "Everything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Eyerything But the Girl",
+                  "name": "Eyerything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EveryThingButTheGirl",
+                  "name": "EveryThingButTheGirl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "733f5c25-5edc-405e-9c5e-a72345f11c3e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing (The Full Remix EP)",
+            "status": "Official"
+          },
+          {
+            "id": "1cea9ab0-aa94-4371-a9e0-f646f6dada67",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing",
+            "status": "Official"
+          },
+          {
+            "id": "82f9d41a-7803-41d9-af91-4d90048ad216",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing (The Remix EP)",
+            "status": "Official"
+          },
+          {
+            "id": "15d6c9cd-ca19-4478-84e4-b37c5488774f",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "title": "Missing",
+            "status": "Promotion"
+          },
+          {
+            "id": "1aeeab94-5758-3648-93b0-e6aa94687801",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing",
+            "status": "Official"
+          },
+          {
+            "id": "f43de2af-c998-4cb3-b8aa-7bda82a93637",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing: The Full Remix EP",
+            "status": "Official"
+          },
+          {
+            "id": "6699502a-f78e-4c72-9db3-1d2d92f6bbd7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing: The Remix EP",
+            "status": "Official"
+          },
+          {
+            "id": "66bac55b-19b0-3084-991e-0a5c573a8193",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing: The Remix EP",
+            "status": "Official"
+          },
+          {
+            "id": "d179e73f-85c8-4dea-87f1-3cbdd436d31d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "The Remix EP",
+            "status": "Official"
+          },
+          {
+            "id": "cea1b129-a222-3ba6-8927-9503f996ea19",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing: The Remix EP",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "trance"
+          },
+          {
+            "count": 3,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "downtempo"
+          },
+          {
+            "count": 3,
+            "name": "pop"
+          },
+          {
+            "count": 4,
+            "name": "house"
+          },
+          {
+            "count": 1,
+            "name": "acoustic"
+          },
+          {
+            "count": 2,
+            "name": "r b"
+          },
+          {
+            "count": 1,
+            "name": "ballad"
+          },
+          {
+            "count": 1,
+            "name": "поп"
+          },
+          {
+            "count": 1,
+            "name": "todd in the shadows"
+          },
+          {
+            "count": 1,
+            "name": "танцевальная музыка"
+          }
+        ]
+      },
+      {
+        "id": "42e7b052-ca75-4db6-894f-d157d27f22b1",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "score": 91,
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "artist-credit-id": "169834b8-8945-3475-9b9a-84f94bbff373",
+        "count": 1,
+        "title": "Missing (2011 Remixes)",
+        "first-release-date": "2011-03-22",
+        "primary-type": "Single",
+        "secondary-types": [
+          "Remix"
+        ],
+        "secondary-type-ids": [
+          "0c60f497-ff81-3818-befd-abfc84a4858b"
+        ],
+        "artist-credit": [
+          {
+            "name": "Everything but the Girl",
+            "artist": {
+              "id": "959cf5bf-ee29-4af6-a85a-0b480181d988",
+              "name": "Everything but the Girl",
+              "sort-name": "Everything but the Girl",
+              "aliases": [
+                {
+                  "sort-name": "Everthing But The Girl",
+                  "name": "Everthing But The Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EBTG",
+                  "name": "EBTG",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Everything But the Girl",
+                  "name": "Everything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Eyerything But the Girl",
+                  "name": "Eyerything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EveryThingButTheGirl",
+                  "name": "EveryThingButTheGirl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "4658e849-ce4a-466f-ae9d-2ed874093b43",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing (2011 Remixes)",
+            "status": "Official"
+          }
+        ]
+      },
+      {
+        "id": "96f9a425-cecd-491c-a8dc-cae5e3f5bbc3",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "score": 91,
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "artist-credit-id": "169834b8-8945-3475-9b9a-84f94bbff373",
+        "count": 1,
+        "title": "Missing (Prebanda remix)",
+        "first-release-date": "2010-09-09",
+        "primary-type": "Single",
+        "secondary-types": [
+          "Remix"
+        ],
+        "secondary-type-ids": [
+          "0c60f497-ff81-3818-befd-abfc84a4858b"
+        ],
+        "artist-credit": [
+          {
+            "name": "Everything but the Girl",
+            "artist": {
+              "id": "959cf5bf-ee29-4af6-a85a-0b480181d988",
+              "name": "Everything but the Girl",
+              "sort-name": "Everything but the Girl",
+              "aliases": [
+                {
+                  "sort-name": "Everthing But The Girl",
+                  "name": "Everthing But The Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EBTG",
+                  "name": "EBTG",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Everything But the Girl",
+                  "name": "Everything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Eyerything But the Girl",
+                  "name": "Eyerything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EveryThingButTheGirl",
+                  "name": "EveryThingButTheGirl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "e55634a2-46ab-48b5-ac8e-058eb71663cf",
+            "title": "Missing (Prebanda remix)"
+          }
+        ]
+      },
+      {
+        "id": "b83134db-3263-3edb-8724-3bcc00b82eaa",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "score": 88,
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "artist-credit-id": "169834b8-8945-3475-9b9a-84f94bbff373",
+        "count": 1,
+        "title": "Missing: The Bootleg Mixes!",
+        "first-release-date": "1994",
+        "primary-type": "EP",
+        "secondary-types": [
+          "Remix"
+        ],
+        "secondary-type-ids": [
+          "0c60f497-ff81-3818-befd-abfc84a4858b"
+        ],
+        "artist-credit": [
+          {
+            "name": "Everything but the Girl",
+            "artist": {
+              "id": "959cf5bf-ee29-4af6-a85a-0b480181d988",
+              "name": "Everything but the Girl",
+              "sort-name": "Everything but the Girl",
+              "aliases": [
+                {
+                  "sort-name": "Everthing But The Girl",
+                  "name": "Everthing But The Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EBTG",
+                  "name": "EBTG",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Everything But the Girl",
+                  "name": "Everything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Eyerything But the Girl",
+                  "name": "Eyerything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EveryThingButTheGirl",
+                  "name": "EveryThingButTheGirl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "b2f10564-d254-464c-9877-416dbad7f7bf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing: The Bootleg Mixes!",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 2,
+            "name": "house"
+          },
+          {
+            "count": 1,
+            "name": "progressive house"
+          }
+        ]
+      },
+      {
+        "id": "f3517bd4-48b7-3192-bd71-dfab452fc719",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "score": 88,
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "artist-credit-id": "169834b8-8945-3475-9b9a-84f94bbff373",
+        "count": 1,
+        "title": "Missing: The Live EP",
+        "first-release-date": "1994-08-08",
+        "primary-type": "EP",
+        "secondary-types": [
+          "Live"
+        ],
+        "secondary-type-ids": [
+          "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+        ],
+        "artist-credit": [
+          {
+            "name": "Everything but the Girl",
+            "artist": {
+              "id": "959cf5bf-ee29-4af6-a85a-0b480181d988",
+              "name": "Everything but the Girl",
+              "sort-name": "Everything but the Girl",
+              "aliases": [
+                {
+                  "sort-name": "Everthing But The Girl",
+                  "name": "Everthing But The Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EBTG",
+                  "name": "EBTG",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Everything But the Girl",
+                  "name": "Everything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Eyerything But the Girl",
+                  "name": "Eyerything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EveryThingButTheGirl",
+                  "name": "EveryThingButTheGirl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "d5dc0659-b127-40c1-b72a-86c82ef00d4a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing: The Live EP",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "downtempo"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "house"
+          },
+          {
+            "count": 2,
+            "name": "synth-pop"
+          },
+          {
+            "count": 1,
+            "name": "ballad"
+          }
+        ]
+      },
+      {
+        "id": "23eb7b64-fe64-437d-87b6-7829765b6181",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "score": 77,
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "artist-credit-id": "677596c2-8065-4851-87d7-f6cad53664d2",
+        "count": 2,
+        "title": "Missing",
+        "first-release-date": "2010-12-15",
+        "primary-type": "Single",
+        "secondary-types": [
+          "Remix"
+        ],
+        "secondary-type-ids": [
+          "0c60f497-ff81-3818-befd-abfc84a4858b"
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": " / ",
+            "name": "Fedde Le Grand",
+            "artist": {
+              "id": "ffa93e03-f6c5-4d78-b0d5-07d0d6de46aa",
+              "name": "Fedde Le Grand",
+              "sort-name": "Le Grand, Fedde",
+              "aliases": [
+                {
+                  "sort-name": "Grand, Le, Fedde J.",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Fedde J. Le Grand",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "F.L.G.",
+                  "name": "F.L.G.",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Freddie Le Grande",
+                  "name": "Freddie Le Grande",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fedde La Grand",
+                  "name": "Fedde La Grand",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Feddle Le Grand",
+                  "name": "Feddle Le Grand",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fredde Le Grand",
+                  "name": "Fredde Le Grand",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fedde Le Grande",
+                  "name": "Fedde Le Grande",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fedde Le Grand",
+                  "name": "Fedde Le Grand",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Everything But The Girl",
+            "artist": {
+              "id": "959cf5bf-ee29-4af6-a85a-0b480181d988",
+              "name": "Everything but the Girl",
+              "sort-name": "Everything but the Girl",
+              "aliases": [
+                {
+                  "sort-name": "Everthing But The Girl",
+                  "name": "Everthing But The Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EBTG",
+                  "name": "EBTG",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Everything But the Girl",
+                  "name": "Everything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Eyerything But the Girl",
+                  "name": "Eyerything But the Girl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "EveryThingButTheGirl",
+                  "name": "EveryThingButTheGirl",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "953faf72-d979-4fe7-9dee-0d44ceefb900",
+            "title": "Missing (Fedde Le Grand Remix)"
+          },
+          {
+            "id": "b554e32c-6228-409d-8c44-28c52f74b9a6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Missing",
+            "status": "Official"
+          }
+        ]
+      }
+    ]
+  }
+}

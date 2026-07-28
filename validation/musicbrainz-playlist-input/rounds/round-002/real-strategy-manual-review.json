@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "round_id": "round-002",
+  "reviewed_at": "2026-07-28T14:55:00.000Z",
+  "scope": "Every final non-exact result plus anomalies discovered during review.",
+  "decisions": [
+    {
+      "candidate_id": "SIM-002-002",
+      "decision": "keep_candidate",
+      "reason": "MusicBrainz contains radio-length and extended-length Cedric Gervais recordings under the same displayed title. The LLM did not specify which duration was intended."
+    },
+    {
+      "candidate_id": "SIM-002-003",
+      "decision": "keep_candidate",
+      "reason": "MusicBrainz contains approximately 203-second and 384-second A-Trak recordings under the same displayed title. Selecting either would silently choose radio or extended form."
+    },
+    {
+      "candidate_id": "SIM-002-006",
+      "decision": "keep_rejected",
+      "reason": "The complete Howling (Âme Remix) identity is absent from the direct recording and alias searches. Core-title candidates omit Âme, so release-track navigation is required before acceptance."
+    },
+    {
+      "candidate_id": "SIM-002-009",
+      "decision": "keep_rejected",
+      "reason": "The complete Go (Four Tet Remix) identity returned no MusicBrainz or ListenBrainz mapping. Core-title fallback only found the original and other named remixes."
+    },
+    {
+      "candidate_id": "SIM-002-011",
+      "decision": "keep_candidate",
+      "reason": "MusicBrainz encodes DNA in the artist credit while the recording title remains Tom's Diner. Both a roughly 228-second and 331-second identity remain, so the LLM must specify single or extended intent."
+    },
+    {
+      "candidate_id": "SIM-003-002",
+      "decision": "keep_candidate",
+      "reason": "Multiple Sodade identities remain and the album-linked recording is disambiguated as solo version, which was not explicit in the proposal."
+    },
+    {
+      "candidate_id": "SIM-003-005",
+      "decision": "keep_candidate",
+      "reason": "MusicBrainz returns distinct Yéké Yéké recordings around 210 and 238 seconds and the proposed album is not present strongly enough to choose safely."
+    },
+    {
+      "candidate_id": "SIM-001-007",
+      "decision": "accept_after_correction",
+      "recording_mbid": "72f4b2f0-2c39-49fc-af76-fc40e7781f4e",
+      "reason": "The initial top candidate was a chill variant. Album fallback recovered the standard Simple Things identity; missing Sia and Sophie Barker in the recording artist credit is absence of data, not a contradictory credit."
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Malamente%22+AND+rgid%3Abb525db3-81e4-4c05-b529-23fa05f35c12&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:53:02.506Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:53:02.556Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "f4a822f1-66ae-4781-ae7f-0d5274ba519e",
+        "score": 100,
+        "artist-credit-id": "9c60b206-e4fe-3202-9ce4-a44c95bfd1fc",
+        "title": "MALAMENTE (Cap.1: Augurio)",
+        "length": 150000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "ROSALÍA",
+            "artist": {
+              "id": "25f3abd9-63b5-471a-bd25-feb9672dfa11",
+              "name": "ROSALÍA",
+              "sort-name": "ROSALÍA",
+              "disambiguation": "Spanish singer",
+              "aliases": [
+                {
+                  "sort-name": "ROSALÍA, LA",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "LA ROSALÍA",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Vila Tobella, Rosalía",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Rosalía Vila Tobella",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": "1993",
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2018-05-30",
+        "releases": [
+          {
+            "id": "42dcf939-80b5-4d31-90f0-a225f536f558",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Ñ: El disco del año (2018)",
+            "status": "Official",
+            "disambiguation": "Lossless digital download",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "cd042afb-f1c9-4b1b-82d7-8a2ac47e91f2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ñ: el disco del año",
+              "disambiguation": "2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11-30",
+            "country": "ES",
+            "release-events": [
+              {
+                "date": "2018-11-30",
+                "area": {
+                  "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+                  "name": "Spain",
+                  "sort-name": "Spain",
+                  "iso-3166-1-codes": [
+                    "ES"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "00da58fc-2715-32d7-992c-9ca36862e454",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fe04226c-f382-46f6-8442-8307298e916b",
+                    "number": "7",
+                    "title": "Malamente",
+                    "length": 149000
+                  }
+                ],
+                "track-count": 60,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "0534f5ed-9df8-4c92-bb50-fd2addcee585",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "La Bande‐son de l’automne 2018, volume 2",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8b464e20-0c42-4bbe-a14e-cc4a79b65bb1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "La Bande‐son de l’automne 2018, volume 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11-14",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-11-14",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "080a90c4-651e-369c-be51-0f2b34c19c4c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a673320b-17c3-4371-b9c0-c10e8dc633c1",
+                    "number": "7",
+                    "title": "Malamente",
+                    "length": 151186
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "12f4a62b-4e0b-42a1-9956-c150d48fc259",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Top Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5a215228-d396-4532-a65b-65e551eea13b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Top Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-01-11",
+            "country": "IT",
+            "release-events": [
+              {
+                "date": "2019-01-11",
+                "area": {
+                  "id": "c6500277-9a3d-349b-bf30-41afdbf42add",
+                  "name": "Italy",
+                  "sort-name": "Italy",
+                  "iso-3166-1-codes": [
+                    "IT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 59,
+            "media": [
+              {
+                "id": "ad2f79fb-1601-3f39-a7bc-844e96e05f94",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "71d6bf64-9be0-430a-8fa1-fbdf6629a942",
+                    "number": "4",
+                    "title": "Malamente",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "5fdcd1ae-93b0-462f-b11e-405ff1485e4a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "9c60b206-e4fe-3202-9ce4-a44c95bfd1fc",
+            "count": 1,
+            "title": "EL MAL QUERER",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ROSALÍA",
+                "artist": {
+                  "id": "25f3abd9-63b5-471a-bd25-feb9672dfa11",
+                  "name": "ROSALÍA",
+                  "sort-name": "ROSALÍA",
+                  "disambiguation": "Spanish singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bb525db3-81e4-4c05-b529-23fa05f35c12",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "EL MAL QUERER",
+              "primary-type": "Album"
+            },
+            "date": "2018",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "73fcf477-11e8-3599-91e6-e4a5d90af3d8",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "80f5d1f8-d50e-4c5f-a2c0-ef9c0cb9d568",
+                    "number": "1",
+                    "title": "CAP.I AUGURIO: Malamente",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "ce7591dd-625d-4697-90f1-57245b08e206",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "9c60b206-e4fe-3202-9ce4-a44c95bfd1fc",
+            "count": 1,
+            "title": "EL MAL QUERER",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ROSALÍA",
+                "artist": {
+                  "id": "25f3abd9-63b5-471a-bd25-feb9672dfa11",
+                  "name": "ROSALÍA",
+                  "sort-name": "ROSALÍA",
+                  "disambiguation": "Spanish singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bb525db3-81e4-4c05-b529-23fa05f35c12",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "EL MAL QUERER",
+              "primary-type": "Album"
+            },
+            "date": "2018-11-02",
+            "country": "ES",
+            "release-events": [
+              {
+                "date": "2018-11-02",
+                "area": {
+                  "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+                  "name": "Spain",
+                  "sort-name": "Spain",
+                  "iso-3166-1-codes": [
+                    "ES"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "62d484f0-3e9a-3254-aa0a-9b50370daca5",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cff6f463-26f1-4a43-b338-1ec01bf165e1",
+                    "number": "1",
+                    "title": "CAP.I AUGURIO: Malamente",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "97385235-42ba-4a83-8002-5b9e5e4f0d16",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "9c60b206-e4fe-3202-9ce4-a44c95bfd1fc",
+            "count": 1,
+            "title": "EL MAL QUERER",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ROSALÍA",
+                "artist": {
+                  "id": "25f3abd9-63b5-471a-bd25-feb9672dfa11",
+                  "name": "ROSALÍA",
+                  "sort-name": "ROSALÍA",
+                  "disambiguation": "Spanish singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bb525db3-81e4-4c05-b529-23fa05f35c12",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "EL MAL QUERER",
+              "primary-type": "Album"
+            },
+            "date": "2018-11-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-11-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "72e75c8f-e135-3681-bba7-ec614064479f",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "afaae556-46d8-4f90-a130-7f67b128d785",
+                    "number": "1",
+                    "title": "MALAMENTE (Cap.1: Augurio)",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "a42e571c-55b0-4079-8722-1959f3115c9c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "9c60b206-e4fe-3202-9ce4-a44c95bfd1fc",
+            "count": 1,
+            "title": "MALAMENTE",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ROSALÍA",
+                "artist": {
+                  "id": "25f3abd9-63b5-471a-bd25-feb9672dfa11",
+                  "name": "ROSALÍA",
+                  "sort-name": "ROSALÍA",
+                  "disambiguation": "Spanish singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c7c19554-bfdb-463a-9191-945b9f624acd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "MALAMENTE",
+              "primary-type": "Single"
+            },
+            "date": "2018-05-30",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-05-30",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "40b425f3-0c0f-36bc-966d-d1034c64c1d0",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2a449308-0d23-4810-bd8b-b547355256ca",
+                    "number": "1",
+                    "title": "MALAMENTE",
+                    "length": 149450
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "ES5021800275"
+        ]
+      }
+    ]
+  }
+}

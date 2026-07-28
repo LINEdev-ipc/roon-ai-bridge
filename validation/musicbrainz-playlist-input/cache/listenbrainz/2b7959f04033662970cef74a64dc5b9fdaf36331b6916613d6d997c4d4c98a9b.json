@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Pet+Shop+Boys&recording_name=West+End+Girls+%28Shep+Pettibone+Mastermix%29",
+  "fetched_at": "2026-07-28T14:42:09.518Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Pet Shop Boys",
+      "recording_arg": "West End Girls (Shep Pettibone Mastermix)",
+      "artist_credit_name": "Pet Shop Boys",
+      "release_name": "West End Girls (The Shep Pettibone Mastermix)",
+      "recording_name": "West End Girls (Shep Pettibone Mastermix)",
+      "artist_credit_id": 768,
+      "artist_mbids": [
+        "be540c02-7898-4b79-9acc-c8122c7d9e83"
+      ],
+      "release_mbid": "9d2e24df-58fd-4be6-82e3-42031117bbfa",
+      "recording_mbid": "70609b95-d2f1-4eac-9b9c-0419822a9108"
+    }
+  ]
+}

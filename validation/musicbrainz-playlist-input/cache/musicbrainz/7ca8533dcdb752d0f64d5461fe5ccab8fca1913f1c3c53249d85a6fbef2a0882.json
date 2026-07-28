@@ -1,0 +1,649 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Azmari+Dub%22+AND+artist%3A%22Dub+Colossus%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:36:46.231Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:36:46.245Z",
+    "count": 5,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "73a88723-6f57-4d55-991a-58cf1a92db66",
+        "score": 100,
+        "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+        "title": "Azmari Dub",
+        "length": 304133,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dub Colossus",
+            "artist": {
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+              "name": "Dub Colossus",
+              "sort-name": "Dub Colossus",
+              "aliases": [
+                {
+                  "sort-name": "Dub Colossus Dub Band",
+                  "name": "Dub Colossus Dub Band",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2008-08",
+        "releases": [
+          {
+            "id": "3ba16d27-3ff0-4b2b-9827-0bc5b78d7c1d",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Songlines: Top of the World 54",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "fb29b368-24b1-3dee-b13e-a3de84db7b9f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Songlines: Top of the World 54",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2008-08",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2008-08",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "3878a4c6-8fb4-31cf-883b-0f1d8ded50a6",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e31abe2a-0bcf-3bf2-984f-11b7988ebfbe",
+                    "number": "14",
+                    "title": "Azmari Dub",
+                    "length": 304133
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3e8622a7-8baf-48ac-a708-34502365e30f",
+        "score": 100,
+        "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+        "title": "Azmari Dub",
+        "length": 305000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dub Colossus",
+            "artist": {
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+              "name": "Dub Colossus",
+              "sort-name": "Dub Colossus",
+              "aliases": [
+                {
+                  "sort-name": "Dub Colossus Dub Band",
+                  "name": "Dub Colossus Dub Band",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2008-08-20",
+        "releases": [
+          {
+            "id": "417886ec-c58d-4313-a67c-73127d94460d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+            "count": 1,
+            "title": "A Town Called Addis",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Dub Colossus",
+                "artist": {
+                  "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                  "name": "Dub Colossus",
+                  "sort-name": "Dub Colossus"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A Town Called Addis",
+              "primary-type": "Album"
+            },
+            "date": "2019-09-24",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-09-24",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "5c2604a4-ddad-36db-9021-199913959ffa",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0c01ff13-9c97-4ffe-b139-cb2d55a8eb0e",
+                    "number": "1",
+                    "title": "Azmari Dub",
+                    "length": 305044
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "d0c3bf4a-f4cc-4824-a81c-40c38f383fd0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+            "count": 1,
+            "title": "In a Town Called Addis",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Dub Colossus",
+                "artist": {
+                  "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                  "name": "Dub Colossus",
+                  "sort-name": "Dub Colossus"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A Town Called Addis",
+              "primary-type": "Album"
+            },
+            "date": "2008-08-20",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2008-08-20",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "bfc04677-d75b-32cf-8df1-4ce08ad4eb92",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "edd19cc2-8bf5-342f-937c-3b20b81c3916",
+                    "number": "1",
+                    "title": "Azmari Dub",
+                    "length": 305000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "322a10fd-7d39-475d-b650-7fd1a1631f7c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+            "count": 1,
+            "title": "A Town Called Addis",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Dub Colossus",
+                "artist": {
+                  "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                  "name": "Dub Colossus",
+                  "sort-name": "Dub Colossus"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A Town Called Addis",
+              "primary-type": "Album"
+            },
+            "date": "2008-08",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2008-08",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "2f746ff3-c886-3421-8116-284a7f2c7c27",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2b87e517-cbe6-332e-ac0e-a93452a73245",
+                    "number": "1",
+                    "title": "Azmari Dub",
+                    "length": 305000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBTVV0700001"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "hip hop"
+          },
+          {
+            "count": 3,
+            "name": "reggae"
+          },
+          {
+            "count": 2,
+            "name": "dub"
+          },
+          {
+            "count": 1,
+            "name": "world-fusion"
+          }
+        ]
+      },
+      {
+        "id": "94cdd920-5391-4c26-a3a9-1c6b87c01971",
+        "score": 100,
+        "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+        "title": "Azmari Dub",
+        "length": 315107,
+        "disambiguation": "live, 2021-11-06: Jazz Cafe, London, UK",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dub Colossus",
+            "artist": {
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+              "name": "Dub Colossus",
+              "sort-name": "Dub Colossus",
+              "aliases": [
+                {
+                  "sort-name": "Dub Colossus Dub Band",
+                  "name": "Dub Colossus Dub Band",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022-11-05",
+        "releases": [
+          {
+            "id": "e019d9f3-aebb-47c7-b40e-81134d439166",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+            "count": 1,
+            "title": "Live @ Jazz Cafe 2021",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Dub Colossus",
+                "artist": {
+                  "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                  "name": "Dub Colossus",
+                  "sort-name": "Dub Colossus"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d0d7364b-7f86-45ce-aff5-26eb4030d9ec",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live @ Jazz Cafe 2021",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2022-11-05",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2022-11-05",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "b52ddb9a-812a-3aaf-883b-4ee034b6a359",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "76e51212-4e69-4f42-ad70-bca6b0fc0795",
+                    "number": "4",
+                    "title": "Azmari Dub",
+                    "length": 315107
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "181d9f56-3465-4676-8068-ee3e25ddf294",
+        "score": 100,
+        "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+        "title": "Azmari Dub",
+        "length": 294506,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dub Colossus",
+            "artist": {
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+              "name": "Dub Colossus",
+              "sort-name": "Dub Colossus",
+              "aliases": [
+                {
+                  "sort-name": "Dub Colossus Dub Band",
+                  "name": "Dub Colossus Dub Band",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2012-08-13",
+        "releases": [
+          {
+            "id": "71ab9b7d-0cf4-4f8b-8c52-f1cb1eb0d68c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "30: Real World at WOMAD",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d0f51ce0-de42-4a6f-aa32-ff4a4447e295",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "30: Real World at WOMAD",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2012-08-13",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2012-08-13",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "fa0a0a1c-63c9-30dc-9cea-07b4e5c05adb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f52005e6-e10c-3c47-8fea-fbeccc9feb6c",
+                    "number": "2",
+                    "title": "Azmari Dub",
+                    "length": 294506
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBTVV0700001"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "reggae"
+          },
+          {
+            "count": 1,
+            "name": "dub"
+          }
+        ]
+      },
+      {
+        "id": "0c9c4317-a06e-49f5-b9bc-0856b6a8e442",
+        "score": 100,
+        "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+        "title": "Azmari Dub",
+        "length": 239000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dub Colossus",
+            "artist": {
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+              "name": "Dub Colossus",
+              "sort-name": "Dub Colossus",
+              "aliases": [
+                {
+                  "sort-name": "Dub Colossus Dub Band",
+                  "name": "Dub Colossus Dub Band",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2007-12-03",
+        "releases": [
+          {
+            "id": "b1edc45b-33a7-4962-bdf9-4ef3dd08b116",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Long Way Down",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d4635aa5-7038-31f5-98f9-824e6b6d08c4",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Long Way Down",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2007-12-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2007-12-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "a8b1c739-ad6a-3d73-b8bb-d2d220f15ee5",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "494c2e75-cd88-335c-a5af-a717025a0a39",
+                    "number": "2",
+                    "title": "Azmari Dub",
+                    "length": 239000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

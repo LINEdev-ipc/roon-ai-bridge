@@ -198,33 +198,22 @@ export class IntentGateway extends TransportIntentHandler {
   }
 
   async savePlaylist(input: {
-    build_id?: string;
     playlist_id?: string;
     name?: string;
     description?: string;
     desired_count?: number;
+    selection_complexity?: "standard" | "constrained" | "exact_versions";
     release_year_from?: number;
     release_year_to?: number;
     no_adjacent_same_artist?: boolean;
     tracks?: unknown[];
   }): Promise<OperationResult> {
-    if (input.playlist_id && input.tracks === undefined && !input.build_id) {
+    if (input.playlist_id && input.tracks === undefined) {
       const data = this.context.playlistService.updatePlaylist(input.playlist_id, input);
       return this.playlistMutationResult("roon_save_playlist", "Playlist updated.", data);
     }
 
     const build = await this.playlistBuildService.build(input);
-    if (build.phase === "needs_candidates") {
-      return {
-        status: "needs_input",
-        operation: "roon_save_playlist",
-        summary: `Playlist preflight needs ${build.missing_count} more verified tracks. Submit candidate round ${build.next_round} with build_id ${build.build_id}.`,
-        verified: false,
-        data: build,
-        references: { build_id: build.build_id, next_round: build.next_round },
-        warnings: ["No playlist has been created or modified yet."]
-      };
-    }
 
     const mutation = this.playlistMutationResult(
       "roon_save_playlist",
@@ -244,7 +233,6 @@ export class IntentGateway extends TransportIntentHandler {
       data: {
         ...(mutation.data as Record<string, unknown>),
         build_summary: {
-          round: build.round,
           desired_count: build.desired_count,
           added_count: build.added_count,
           missing_count: build.missing_count,
@@ -254,7 +242,8 @@ export class IntentGateway extends TransportIntentHandler {
           not_selected: build.not_selected,
           unused_reserves: build.unused_reserves,
           search_summary: build.search_summary,
-          rejection_summary: build.rejection_summary
+          rejection_summary: build.rejection_summary,
+          performance: build.performance
         }
       },
       warnings: [...mutation.warnings, ...completionWarning]
@@ -262,11 +251,11 @@ export class IntentGateway extends TransportIntentHandler {
   }
 
   async createTemporaryPlaylist(input: {
-    build_id?: string;
     name?: string;
     description?: string;
     intent?: string;
     desired_count?: number;
+    selection_complexity?: "standard" | "constrained" | "exact_versions";
     release_year_from?: number;
     release_year_to?: number;
     no_adjacent_same_artist?: boolean;
@@ -278,17 +267,6 @@ export class IntentGateway extends TransportIntentHandler {
       purpose: "temporary_playlist",
       expiry_days: expiryDays
     });
-    if (build.phase === "needs_candidates") {
-      return {
-        status: "needs_input",
-        operation: "roon_create_temporary_playlist",
-        summary: `Temporary playlist preflight needs ${build.missing_count} more verified tracks. Submit candidate round ${build.next_round} with build_id ${build.build_id}.`,
-        verified: false,
-        data: build,
-        references: { build_id: build.build_id, next_round: build.next_round },
-        warnings: ["No temporary playlist has been created yet."]
-      };
-    }
 
     const mutation = this.playlistMutationResult(
       "roon_create_temporary_playlist",
@@ -304,7 +282,6 @@ export class IntentGateway extends TransportIntentHandler {
       data: {
         ...playlist,
         build_summary: {
-          round: build.round,
           desired_count: build.desired_count,
           added_count: build.added_count,
           missing_count: build.missing_count,
@@ -314,7 +291,8 @@ export class IntentGateway extends TransportIntentHandler {
           not_selected: build.not_selected,
           unused_reserves: build.unused_reserves,
           search_summary: build.search_summary,
-          rejection_summary: build.rejection_summary
+          rejection_summary: build.rejection_summary,
+          performance: build.performance
         }
       },
       references: {

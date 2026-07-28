@@ -1,0 +1,1230 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28tunak+AND+tun%29+AND+artistname%3A%22Daler+Mehndi%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:59.787Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:43:00.159Z",
+    "count": 9,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "dd27fcd7-c98f-4d06-9a1a-a414a88f5a17",
+        "score": 100,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "Tunak Tunak Tun (From \"Tunak Tunak Tun\")",
+        "length": 303133,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-05-21",
+        "releases": [
+          {
+            "id": "fa2d3f7f-1078-4b93-bb1d-dd1653242153",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Biggest Bhangra Beats",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a0818a89-9e77-4753-8423-38f3587ba7e4",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Biggest Bhangra Beats",
+              "primary-type": "Album"
+            },
+            "date": "2014-05-21",
+            "country": "IN",
+            "release-events": [
+              {
+                "date": "2014-05-21",
+                "area": {
+                  "id": "d31a9a15-537f-3669-ad53-25753ddd2772",
+                  "name": "India",
+                  "sort-name": "India",
+                  "iso-3166-1-codes": [
+                    "IN"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "5a3c80d2-569f-30a2-8299-4f50abb44e3d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6e5b768b-2b27-4584-ac5d-449866cb39eb",
+                    "number": "8",
+                    "title": "Tunak Tunak Tun (From \"Tunak Tunak Tun\")",
+                    "length": 303133
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2e2a4250-4a28-4ff1-a452-69fe4079ccb2",
+        "score": 99,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "Tunak Tunak Tun",
+        "length": 308373,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1998-02-28",
+        "releases": [
+          {
+            "id": "daab2899-076a-46bc-b2e9-c4738cde207a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Indian Regional Hits of 1998 Vol 1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d41dda25-56b5-49fa-84df-165e90e35c85",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Indian Regional Hits of 1998 Vol 1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1999-01-04",
+            "country": "IN",
+            "release-events": [
+              {
+                "date": "1999-01-04",
+                "area": {
+                  "id": "d31a9a15-537f-3669-ad53-25753ddd2772",
+                  "name": "India",
+                  "sort-name": "India",
+                  "iso-3166-1-codes": [
+                    "IN"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "6ee960dc-a675-3c92-9e0a-e002000e10f5",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "5751e0d4-a479-4793-b1c3-e5b987516b46",
+                    "number": "1",
+                    "title": "Tunak Tunak Tun",
+                    "length": 310000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "c0bbf715-3b51-4dcb-a5bd-0e3fe4d904fb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Title Hits: The Very Best of Hindi Pop",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "81437fac-896b-48c5-8b9e-b2bfa8b43ce5",
+              "title": "Title Hits: The Very Best of Hindi Pop",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2000-01-21",
+            "country": "IN",
+            "release-events": [
+              {
+                "date": "2000-01-21",
+                "area": {
+                  "id": "d31a9a15-537f-3669-ad53-25753ddd2772",
+                  "name": "India",
+                  "sort-name": "India",
+                  "iso-3166-1-codes": [
+                    "IN"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "647dea9f-3d7f-371f-ab83-56877e597d37",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8c54a991-d0f0-4e97-8d7e-049713e53350",
+                    "number": "7",
+                    "title": "Tunak Tunak Tun...",
+                    "length": 302068
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "12d48435-bde9-498b-9959-106f380a4745",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+            "count": 1,
+            "title": "Tunak Tunak Tun",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Daler Mehndi",
+                "artist": {
+                  "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+                  "name": "Daler Mehndi",
+                  "sort-name": "Mehndi, Daler"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dbe64d4d-1bb2-3a51-bf5a-8997f4407eb0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Tunak Tunak Tun",
+              "primary-type": "Album"
+            },
+            "date": "1998-02-28",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "1998-02-28",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "9c3a0df6-9ef8-30c8-9ea0-a0b331f79fdb",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "084b57ec-c257-480b-8dba-bb4c0be80a59",
+                    "number": "1",
+                    "title": "Tunak Tunak Tun",
+                    "length": 308373
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "3571a39b-2f10-4eb5-b17a-5737ec2ecb94",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+            "count": 1,
+            "title": "Tunak Tunak Tun",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Daler Mehndi",
+                "artist": {
+                  "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+                  "name": "Daler Mehndi",
+                  "sort-name": "Mehndi, Daler"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dbe64d4d-1bb2-3a51-bf5a-8997f4407eb0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Tunak Tunak Tun",
+              "primary-type": "Album"
+            },
+            "date": "1998",
+            "country": "IN",
+            "release-events": [
+              {
+                "date": "1998",
+                "area": {
+                  "id": "d31a9a15-537f-3669-ad53-25753ddd2772",
+                  "name": "India",
+                  "sort-name": "India",
+                  "iso-3166-1-codes": [
+                    "IN"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "53b2fb79-ffe2-35cc-a59a-fcccdfc0c84b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "17261b64-64b6-37e3-8b5a-7588fc891566",
+                    "number": "1",
+                    "title": "Tunak Tunak Tun",
+                    "length": 308373
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "INM129800401"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "dance"
+          },
+          {
+            "count": 1,
+            "name": "indian"
+          }
+        ]
+      },
+      {
+        "id": "e0afc851-6df3-42b9-877e-4575200a23c5",
+        "score": 99,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "Tunak Tunak Tun...",
+        "length": 301000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2006-02-02",
+        "releases": [
+          {
+            "id": "86bb4df3-6811-4f4f-afc7-2248cf056b92",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "YTMND Soundtrack, Volume 9",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b5f834b0-cc53-3e60-913e-afdc2c26dd39",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "YTMND Soundtrack, Volume 9",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2006-02-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2006-02-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "5b1005a1-e36d-38de-a0cd-55bab3d58340",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "f39533a2-3b8f-3b83-939f-cb4f9c3295d1",
+                    "number": "13",
+                    "title": "Tunak Tunak Tun",
+                    "length": 301000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "09919cf1-64c1-41f7-bd48-76a866f0347e",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "YTMND Soundtrack, Volume 9",
+            "status": "Bootleg",
+            "disambiguation": "Remastered",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b5f834b0-cc53-3e60-913e-afdc2c26dd39",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "YTMND Soundtrack, Volume 9",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2006-10-29",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2006-10-29",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "2995efe3-c0df-3c7a-850a-3fd406deb7b9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "50a88e52-a230-4f3f-b5c4-3015e5251acf",
+                    "number": "13",
+                    "title": "Tunak Tunak Tun",
+                    "length": 301000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "a494b8ee-5d1c-471b-bfec-d2b6e20c8886",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+            "count": 1,
+            "title": "The Best of Daler Mehndi: The King of Bhangra, Volume 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Daler Mehndi",
+                "artist": {
+                  "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+                  "name": "Daler Mehndi",
+                  "sort-name": "Mehndi, Daler"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a32e331d-06ea-3d61-9ec8-6f175a70b580",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Best of Daler Mehndi: The King of Bhangra, Volume 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 10,
+            "media": [
+              {
+                "id": "89c5abf3-1a87-310d-b131-24e509f0b65c",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "b24a1b6a-f248-3fb9-9d9e-1f5065ca1632",
+                    "number": "9",
+                    "title": "Tunak Tunak Tun...",
+                    "length": 301813
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "28919f95-f3c9-4c03-a21e-2673432c85fa",
+        "score": 94,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "Tunak Tunak Tun (Remix)",
+        "length": 186000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2016-06-15",
+        "releases": [
+          {
+            "id": "bdae97d5-deaa-49a4-b197-5126d7538dc8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "0fdac323-b235-4b24-be90-7fbdc70f1578",
+            "count": 1,
+            "title": "Tunak Tunak Tun (Remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "TODIEFOR",
+                "artist": {
+                  "id": "7c8e4f6b-0c29-4427-aa19-d7795fa13a52",
+                  "name": "Todiefor",
+                  "sort-name": "Todiefor",
+                  "disambiguation": "Belgian producer Luca Pecoraro"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e0716ca7-0a40-40c9-b1de-606196aa3313",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Tunak Tunak Tun (Remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2016-06-15",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2016-06-15",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "3bce8224-0067-33f2-8ba3-793a433b8c4c",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "aff595d5-e905-4d28-8825-9d1b2e2d92ed",
+                    "number": "1",
+                    "title": "Tunak Tunak Tun (Remix)",
+                    "length": 186000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dd3c2c78-3d74-4f9b-94f7-f65420d8f352",
+        "score": 90,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "TUNAK TUNAK TUN (Shekdash remix)",
+        "length": 173293,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2024-06-02",
+        "releases": [
+          {
+            "id": "972286b8-feac-4314-a9eb-e504fe83f93e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "8c903558-927c-4f41-8066-954c2154cded",
+            "count": 1,
+            "title": "TUNAK TUNAK TUN (Shekdash remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "shekdash",
+                "artist": {
+                  "id": "feb82fdd-4030-4cd8-a719-1ba244e36896",
+                  "name": "shekdash",
+                  "sort-name": "shekdash"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "79da254e-c626-483f-b634-f72c40282f79",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "TUNAK TUNAK TUN (Shekdash remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2024-06-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-06-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "6ce9531a-0567-3025-a4f2-1e6563944e74",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "97749873-b21c-436d-a378-96b514f6a7b9",
+                    "number": "1",
+                    "title": "TUNAK TUNAK TUN (Shekdash remix)",
+                    "length": 173293
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f6dfb891-bef2-4268-b05a-9048a8ae37b8",
+        "score": 87,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "Tunak Tunak Tun (Reprise) (Version 2)",
+        "length": 317999,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "f20789fe-f407-481a-9f7e-6362186cda4c",
+            "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+            "count": 1,
+            "title": "Tunak Tunak Tumba",
+            "artist-credit": [
+              {
+                "name": "Daler Mehndi",
+                "artist": {
+                  "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+                  "name": "Daler Mehndi",
+                  "sort-name": "Mehndi, Daler"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c854d87b-acc8-46ef-9d0e-c1a6e1b59153",
+              "title": "Tunak Tunak Tumba"
+            },
+            "track-count": 13,
+            "media": [
+              {
+                "id": "f0c746a1-fe10-383d-b586-eb0a77e4b1d2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e81fab7f-ade8-42e3-8068-6d9c83efe70e",
+                    "number": "13",
+                    "title": "Tunak Tunak Tun (Reprise) (Version 2)",
+                    "length": 317999
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e9a251d3-aaa9-426a-91b7-bec7abc102ec",
+        "score": 84,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "Ishq Da Charkha (From \"Tunak Tunak Tun\")",
+        "length": 302627,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-05-21",
+        "releases": [
+          {
+            "id": "fa2d3f7f-1078-4b93-bb1d-dd1653242153",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Biggest Bhangra Beats",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a0818a89-9e77-4753-8423-38f3587ba7e4",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Biggest Bhangra Beats",
+              "primary-type": "Album"
+            },
+            "date": "2014-05-21",
+            "country": "IN",
+            "release-events": [
+              {
+                "date": "2014-05-21",
+                "area": {
+                  "id": "d31a9a15-537f-3669-ad53-25753ddd2772",
+                  "name": "India",
+                  "sort-name": "India",
+                  "iso-3166-1-codes": [
+                    "IN"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "5a3c80d2-569f-30a2-8299-4f50abb44e3d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e238a4b5-ae35-4da1-9cf0-42a8e2f8104d",
+                    "number": "9",
+                    "title": "Ishq Da Charkha (From \"Tunak Tunak Tun\")",
+                    "length": 302627
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e9f4d61a-ab7d-4931-a2bf-175c657e320a",
+        "score": 84,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "La La Dum (From \"Tunak Tunak Tun\")",
+        "length": 259400,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-05-21",
+        "releases": [
+          {
+            "id": "fa2d3f7f-1078-4b93-bb1d-dd1653242153",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Biggest Bhangra Beats",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a0818a89-9e77-4753-8423-38f3587ba7e4",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Biggest Bhangra Beats",
+              "primary-type": "Album"
+            },
+            "date": "2014-05-21",
+            "country": "IN",
+            "release-events": [
+              {
+                "date": "2014-05-21",
+                "area": {
+                  "id": "d31a9a15-537f-3669-ad53-25753ddd2772",
+                  "name": "India",
+                  "sort-name": "India",
+                  "iso-3166-1-codes": [
+                    "IN"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "5a3c80d2-569f-30a2-8299-4f50abb44e3d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "3a136581-3b01-4687-ae95-1df7d6158467",
+                    "number": "10",
+                    "title": "La La Dum (From \"Tunak Tunak Tun\")",
+                    "length": 259400
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "af67b495-0792-4337-b0da-545d6a1cd572",
+        "score": 78,
+        "artist-credit-id": "e32e1d81-40fb-3b9f-9b38-c56c7f0d99ff",
+        "title": "Tunak Tunka Tun (DJ Akaash remix)",
+        "length": 301360,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Daler Mehndi",
+            "artist": {
+              "id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+              "name": "Daler Mehndi",
+              "sort-name": "Mehndi, Daler",
+              "aliases": [
+                {
+                  "sort-name": "Daler Mendhi",
+                  "name": "Daler Mendhi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Daler Menhdi",
+                  "name": "Daler Menhdi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2000",
+        "releases": [
+          {
+            "id": "a3c4f598-d337-4b56-82b1-9f391698284d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Hemispheres: Fresh Global Sounds",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "45e34f4b-117e-4039-9b35-d12ae0ac5d03",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Hemispheres: Fresh Global Sounds",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2000",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "28f0ef54-4990-3a1e-a581-682795675717",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bcce059f-d2ba-3a60-9c10-3b979034d4fb",
+                    "number": "16",
+                    "title": "Tunak Tunka Tun (DJ Akaash remix)",
+                    "length": 301360
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 15
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

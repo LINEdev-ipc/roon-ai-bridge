@@ -1,0 +1,2429 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28water%29+AND+release%3A%28tyla%29+AND+artistname%3A%22Tyla%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:45:56.954Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:45:57.097Z",
+    "count": 4,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "860c2b3a-bda1-49d2-a3aa-53f040d958d5",
+        "score": 100,
+        "artist-credit-id": "415fd04a-f3b0-43c0-bcfc-dd6d0d22a5fc",
+        "title": "Water (remix)",
+        "length": 200255,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " with ",
+            "name": "Tyla",
+            "artist": {
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "name": "Tyla",
+              "sort-name": "Tyla",
+              "disambiguation": "South African singer",
+              "aliases": [
+                {
+                  "sort-name": "Seethal, Tyla Laura",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Tyla Laura Seethal",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "타일라",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "타일라",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Travis Scott",
+            "artist": {
+              "id": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+              "name": "Travis Scott",
+              "sort-name": "Scott, Travis",
+              "disambiguation": "US rapper",
+              "aliases": [
+                {
+                  "sort-name": "Travey",
+                  "name": "Travi$ scott",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "$cott, Travis",
+                  "name": "Travis $cott",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Scot, Travi$",
+                  "name": "Travi$ Scot",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Scott, T.",
+                  "name": "T. Scott",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Jacques Webster",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Jacques Webster",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Webster, Jacques Berman, II",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Jacques Berman Webster II",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Scott, Travis",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Travi$ Scott",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "トラヴィス・スコット",
+                  "name": "トラヴィス・スコット",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-11-17",
+        "releases": [
+          {
+            "id": "3a2b91df-c9dd-4f2b-9b1a-ad4104a34735",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-08-07",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2024-08-07",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "2cf61397-5314-378d-849e-51e429e93786",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d63a4977-cf95-433f-a576-7f0f815b3410",
+                    "number": "14",
+                    "title": "Water (remix)",
+                    "length": 202653
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "5aefd1b2-11f4-4ee6-8dd5-fde10c37188b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 2,
+            "title": "TYLA +",
+            "status": "Official",
+            "disambiguation": "coke bottle clear vinyl",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2025-03-14",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2025-03-14",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "5f12f25b-7e96-39c6-ac8c-a5d9f77c69f9",
+                "position": 2,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "300636fe-2cff-4824-9774-5330b1dd7360",
+                    "number": "C5",
+                    "title": "Water (remix)"
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "ce0c5b22-8e38-4021-bab5-2f8875ae2084",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "eaef7555-da52-3075-8640-1cd79ede8016",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "cf5670be-d0e3-4257-83c9-1bd3d81ba459",
+                    "number": "14",
+                    "title": "Water (remix)",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "79b12c27-10b0-4963-8310-e6d9606a714d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA +",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-10-11",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-10-11",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "739d7266-510f-307a-8bd8-76d8bf00253a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "236b83ad-52b9-4c83-8867-b062411f6404",
+                    "number": "17",
+                    "title": "Water (remix)",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 16
+              }
+            ]
+          },
+          {
+            "id": "7c28a833-972c-4e30-b9d6-6f40286c28d8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "28d13df0-2ecd-335f-85bb-2115e391eba4",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a9ecba08-a3bd-4bd2-af9e-89846e5fb161",
+                    "number": "14",
+                    "title": "Water (remix)",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "47a3c481-0e8d-482a-91d4-e4587cdfdbbf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "ZA",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "50cc7852-862e-30ae-aa82-385fe7135b7f",
+                  "name": "South Africa",
+                  "sort-name": "South Africa",
+                  "iso-3166-1-codes": [
+                    "ZA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "848453b0-09c0-37ec-9391-adf89e42cf53",
+                "position": 1,
+                "format": "Vinyl",
+                "track": [
+                  {
+                    "id": "8ae612cb-15fc-496a-a066-85002cf10eca",
+                    "number": "14",
+                    "title": "Water (remix)",
+                    "length": 200266
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "f792faa4-80cb-4d7e-b381-0006110c2285",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "fc476bf1-a878-3401-9b87-ffaf473b36ae",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e0663c0c-c420-4e02-a3ce-4703315b7931",
+                    "number": "14",
+                    "title": "Water (remix)",
+                    "length": 200266
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "a6ec8576-f6ee-47ce-a4f8-f0394310ad5a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9031200f-5403-4f39-8c28-f6e9a7bf51da",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "TYLA",
+              "primary-type": "EP"
+            },
+            "track-count": 5,
+            "media": [
+              {
+                "id": "d64da05f-7662-3360-8b1d-eaff739bac53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "99bdcec2-93c7-4ca9-932a-090e102f4f6b",
+                    "number": "5",
+                    "title": "Water (remix)",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "a9ea3345-8a5d-4881-affd-208643d12867",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "034a128c-4e31-4235-9623-fbfcc3eb01ae",
+            "count": 1,
+            "title": "Water (remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " & ",
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              },
+              {
+                "name": "Travis Scott",
+                "artist": {
+                  "id": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+                  "name": "Travis Scott",
+                  "sort-name": "Scott, Travis",
+                  "disambiguation": "US rapper"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e22dcfd5-3b97-4344-b9f1-033ec6510d26",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Water (remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 1,
+            "media": [
+              {
+                "id": "1596688e-8438-359c-a196-870f4ad6fa1d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6051a977-20cf-4ac4-bf4c-7f13e031555b",
+                    "number": "1",
+                    "title": "Water (remix)",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "USSM12308549"
+        ]
+      },
+      {
+        "id": "c10360f7-7721-45b2-b634-e0c8a7695017",
+        "score": 83,
+        "artist-credit-id": "39c9f595-e985-44cb-94c4-704608446597",
+        "title": "Water",
+        "length": 191853,
+        "disambiguation": "Marshmello remix",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "Tyla",
+            "artist": {
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "name": "Tyla",
+              "sort-name": "Tyla",
+              "disambiguation": "South African singer",
+              "aliases": [
+                {
+                  "sort-name": "Seethal, Tyla Laura",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Tyla Laura Seethal",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "타일라",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "타일라",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Marshmello",
+            "artist": {
+              "id": "301b45a4-b8b9-410e-8344-4b4eaf96691a",
+              "name": "Marshmello",
+              "sort-name": "Marshmello",
+              "aliases": [
+                {
+                  "sort-name": "Marshmellow",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Marshmellow",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-11-15",
+        "releases": [
+          {
+            "id": "7bd600f2-1175-49ec-ad6a-2388527a75cb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Club Sounds: The Ultimate Club Dance Collection, Vol. 104",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f22c46cf-2ac7-47e4-9dfa-38bd22109ee1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Club Sounds: The Ultimate Club Dance Collection, Vol. 104",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2024-03-08",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2024-03-08",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 72,
+            "media": [
+              {
+                "id": "1bf3a6f0-0b47-40cc-a648-5bbdcc1c3c96",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "841162f7-5f4b-45fb-8dfa-34d39d6fe0a8",
+                    "number": "17",
+                    "title": "Water",
+                    "length": 192000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 16
+              }
+            ]
+          },
+          {
+            "id": "3a2b91df-c9dd-4f2b-9b1a-ad4104a34735",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-08-07",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2024-08-07",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "2cf61397-5314-378d-849e-51e429e93786",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "43db2c8a-444b-414e-baec-5b3d98cf4b3f",
+                    "number": "15",
+                    "title": "Water",
+                    "length": 191853
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "47a3c481-0e8d-482a-91d4-e4587cdfdbbf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "ZA",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "50cc7852-862e-30ae-aa82-385fe7135b7f",
+                  "name": "South Africa",
+                  "sort-name": "South Africa",
+                  "iso-3166-1-codes": [
+                    "ZA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "848453b0-09c0-37ec-9391-adf89e42cf53",
+                "position": 1,
+                "format": "Vinyl",
+                "track": [
+                  {
+                    "id": "99c0cecc-04b5-45cd-92b8-5b9f1a30ee4f",
+                    "number": "13",
+                    "title": "Water",
+                    "length": 194000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "f986b143-b814-4f28-80ee-70a964c25dae",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "7b966c68-dca2-426f-a97b-441536e90b59",
+            "count": 1,
+            "title": "Water",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " x ",
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              },
+              {
+                "name": "Marshmello",
+                "artist": {
+                  "id": "301b45a4-b8b9-410e-8344-4b4eaf96691a",
+                  "name": "Marshmello",
+                  "sort-name": "Marshmello"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "38d418fe-3fd2-4c0e-bdf0-57242ed0d1fb",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Water",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 1,
+            "media": [
+              {
+                "id": "9f489d16-8ad4-3140-b9b6-99895b041506",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "3f38656f-d4ef-4224-aa4c-a6d322496853",
+                    "number": "1",
+                    "title": "Water",
+                    "length": 191733
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "USSM12308498"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electropop"
+          },
+          {
+            "count": 1,
+            "name": "dance-pop"
+          },
+          {
+            "count": 1,
+            "name": "electro house"
+          }
+        ]
+      },
+      {
+        "id": "346fee8c-c06e-4661-b6e1-70a32d16f09e",
+        "score": 82,
+        "artist-credit-id": "b140032f-74b2-4869-8d81-9040e94fc499",
+        "title": "WATER X FINDER (PREPMODE MIX)",
+        "length": 209534,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " x ",
+            "name": "Tyla",
+            "artist": {
+              "id": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8",
+              "name": "Tyla",
+              "sort-name": "Tyla",
+              "disambiguation": "English rock musician Timothy Taylor"
+            }
+          },
+          {
+            "name": "Ninetoes",
+            "artist": {
+              "id": "996245a1-cfc5-499a-bb38-eab6020d301f",
+              "name": "Ninetoes",
+              "sort-name": "Ninetoes"
+            }
+          }
+        ],
+        "first-release-date": "2024-01-02",
+        "releases": [
+          {
+            "id": "7f1c2329-bf0c-43b5-a828-81b6e39c1e53",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "01fab8d3-2483-4ed6-8baf-c3f509326eab",
+            "count": 1,
+            "title": "WATER X FINDER (Tyla vs Ninetoes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "PREPMODE",
+                "artist": {
+                  "id": "96f5f390-20ca-4dbe-a492-59126ad7bcdf",
+                  "name": "PREPMODE",
+                  "sort-name": "Prepmode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8de41b31-5c26-4ba5-98d2-41ed599e6fd6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "WATER X FINDER (Tyla vs Ninetoes)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2024-01-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-01-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "8bbdb39d-5b92-3879-9e9e-c5b0e8db7e4d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b3035ff1-c418-4fd7-9610-92bf842373cf",
+                    "number": "1",
+                    "title": "WATER X FINDER (PREPMODE MIX)",
+                    "length": 209534
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "df1fd341-2119-441e-a863-7d21eaa3ab94",
+        "score": 76,
+        "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+        "title": "Water",
+        "length": 200255,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Tyla",
+            "artist": {
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "name": "Tyla",
+              "sort-name": "Tyla",
+              "disambiguation": "South African singer",
+              "aliases": [
+                {
+                  "sort-name": "Seethal, Tyla Laura",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Tyla Laura Seethal",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "타일라",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "타일라",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-07-28",
+        "releases": [
+          {
+            "id": "921ad7bb-bb77-48fc-9edc-2809d557f763",
+            "status-id": "6a3772de-4605-4132-993d-aa315cd19b4b",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "NOW That’s What I Call Music! 89",
+            "status": "Withdrawn",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3444b697-d4da-4b70-8f47-1441f3f66060",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NOW That’s What I Call Music! 89",
+              "disambiguation": "USA",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 22,
+            "media": [
+              {
+                "id": "b5d31402-b6b9-3bb2-b597-5606d0c0e6b1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e2c18fb6-855c-4e02-a028-b1dc3898c69d",
+                    "number": "5",
+                    "title": "Water",
+                    "length": 198053
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "73285d8b-a28f-4047-bb51-1470ec03f9a3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Now That's What I Call... Pop!",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c4ce679e-7b60-480e-a5ed-f230f4c6b476",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Now That's What I Call... Pop!",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2025-05-23",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2025-05-23",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "d236c32e-2541-4215-a3f7-d9e800dc5cc3",
+                "position": 3,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "09fc3487-cf45-4613-bc49-ee4b2dda445d",
+                    "number": "E4",
+                    "title": "Water"
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "3a2b91df-c9dd-4f2b-9b1a-ad4104a34735",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-08-07",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2024-08-07",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "2cf61397-5314-378d-849e-51e429e93786",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cf3a48b7-b110-47ce-9c83-1be32b0b983a",
+                    "number": "3",
+                    "title": "Water",
+                    "length": 200253
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "6a549f50-ac0c-4bcd-aa7a-9a9dbbdcad0c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Internacionais 2025 - As melhores",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "292e039b-01cb-42af-b6ce-2e7180379033",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Internacionais 2025 - As melhores",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 45,
+            "media": [
+              {
+                "id": "dc17a23e-2276-315b-b98d-111e9f2c295d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "55857713-9ab7-4ca9-8d86-6bc3e5caef48",
+                    "number": "4",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 45,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "58737c99-795b-4705-8925-88ae4c1ee345",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Internacionais 2025 - As mais tocadas",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f04117dd-d51c-4971-b244-bad1823103f7",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Internacionais 2025 - As mais tocadas",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 49,
+            "media": [
+              {
+                "id": "e43ac8ae-aa37-3e6a-939a-6feb7e6a1eb4",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bfd2a02a-a034-40c4-b60b-f67c57894402",
+                    "number": "13",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 49,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "4113f9e7-228c-466d-9595-20702d2eccf6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Melhores músicas internacionais 2024 e 2025",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4d460dfa-ebe6-4811-8dc2-3daefcdc112b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Melhores músicas internacionais 2024 e 2025",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 40,
+            "media": [
+              {
+                "id": "1aee3c68-feb4-3857-b438-6b8d12dcaee9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8d5c5fcd-c26f-4601-a178-c93b82c06e19",
+                    "number": "7",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 40,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "4b31f535-5d76-4b3a-80ff-a5eb9089a3d5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Músicas de Casamento: Internacionais",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "49b9f7f9-14a1-4e46-aaf6-a0122542ac42",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Músicas de Casamento: Internacionais",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2024-12-22",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-12-22",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 45,
+            "media": [
+              {
+                "id": "cc1c2108-6c85-3420-a409-d01aff55e160",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "829672a3-4efe-46b9-ad63-479ae622f4a2",
+                    "number": "25",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 45,
+                "track-offset": 24
+              }
+            ]
+          },
+          {
+            "id": "37bef6af-0fe7-46b5-9bb5-38865b36a68f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Projeto verão - Músicas para academia",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6abb111a-db30-4fab-9a20-4ab32872b3ef",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Projeto verão - Músicas para academia",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 45,
+            "media": [
+              {
+                "id": "4ad7221a-d247-3210-b3b4-b262199c63a9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "330b5c74-3e4b-4122-ab26-e7dceabd34d4",
+                    "number": "8",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 45,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "b215b5f2-62a3-451f-80c7-8a6e33e3d165",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Academia 2024/2025 - Treino Animado",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ce9a3e39-728e-432e-9ee4-8e0ec0c98e73",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Academia 2024/2025 - Treino Animado",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 45,
+            "media": [
+              {
+                "id": "e605e613-32a8-3ef1-a6bd-29ccdfbe7946",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a2497be2-e77f-4b56-807b-fbc409eb041e",
+                    "number": "6",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 45,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "5aefd1b2-11f4-4ee6-8dd5-fde10c37188b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 2,
+            "title": "TYLA +",
+            "status": "Official",
+            "disambiguation": "coke bottle clear vinyl",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2025-03-14",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2025-03-14",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "332e0080-bec8-3b75-b4e6-54096bfb0e22",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "782b869e-339a-4b82-9e8b-8479dfa23335",
+                    "number": "A3",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "ce0c5b22-8e38-4021-bab5-2f8875ae2084",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "eaef7555-da52-3075-8640-1cd79ede8016",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "919cbf76-e8cf-4b14-a5d8-bb3fd8fcc25e",
+                    "number": "3",
+                    "title": "Water",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "79b12c27-10b0-4963-8310-e6d9606a714d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA +",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-10-11",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-10-11",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "739d7266-510f-307a-8bd8-76d8bf00253a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6e84b083-1221-4854-a4ba-284816af6bdb",
+                    "number": "6",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "7c28a833-972c-4e30-b9d6-6f40286c28d8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "28d13df0-2ecd-335f-85bb-2115e391eba4",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "dc5870c4-8d34-4b72-a8fb-10db1732d233",
+                    "number": "3",
+                    "title": "Water",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "a6a2b0d7-92c9-473a-b7cb-0b9656d204fb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bravo Hits 124",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dc1a9451-9b91-4db4-b972-58567a97c82a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bravo Hits 124",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2024-02-09",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2024-02-09",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 46,
+            "media": [
+              {
+                "id": "aa863730-4566-334c-81a6-33426b7e6dba",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cd28c4de-3cbb-42b6-b872-459849013239",
+                    "number": "21",
+                    "title": "Water",
+                    "length": 201986
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 20
+              }
+            ]
+          },
+          {
+            "id": "50f7a3a3-1b49-468d-b5d0-4520d32926f8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "The Dome: Summer 2024",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ea711f45-333d-4572-b6fb-d63733340529",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Dome: Summer 2024",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2024-06-07",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2024-06-07",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 50,
+            "media": [
+              {
+                "id": "ee031df0-06e1-39aa-8c0f-ef44175a1fa7",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bbe1c478-1145-4ff4-aa37-9a268dd92e39",
+                    "number": "22",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 21
+              }
+            ]
+          },
+          {
+            "id": "47a3c481-0e8d-482a-91d4-e4587cdfdbbf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "ZA",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "50cc7852-862e-30ae-aa82-385fe7135b7f",
+                  "name": "South Africa",
+                  "sort-name": "South Africa",
+                  "iso-3166-1-codes": [
+                    "ZA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "848453b0-09c0-37ec-9391-adf89e42cf53",
+                "position": 1,
+                "format": "Vinyl",
+                "track": [
+                  {
+                    "id": "7742485e-e887-4319-b8cd-e30bd7071230",
+                    "number": "3",
+                    "title": "Water",
+                    "length": 200253
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "f792faa4-80cb-4d7e-b381-0006110c2285",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "TYLA",
+              "primary-type": "Album"
+            },
+            "date": "2024-03-22",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2024-03-22",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "fc476bf1-a878-3401-9b87-ffaf473b36ae",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "292f9693-b2eb-490e-b14d-7e521193a5d3",
+                    "number": "3",
+                    "title": "Water",
+                    "length": 200253
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "8a4b23b7-b00b-4423-9776-026c4469b788",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Now That’s What I Call Music! 117",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "62315ade-50a2-42bb-8e60-eece94e842a6",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Now That’s What I Call Music! 117",
+              "disambiguation": "UK",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2024-04-05",
+            "country": "IE",
+            "release-events": [
+              {
+                "date": "2024-04-05",
+                "area": {
+                  "id": "390b05d4-11ec-3bce-a343-703a366b34a5",
+                  "name": "Ireland",
+                  "sort-name": "Ireland",
+                  "iso-3166-1-codes": [
+                    "IE"
+                  ]
+                }
+              },
+              {
+                "date": "2024-04-05",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 50,
+            "media": [
+              {
+                "id": "7e35abfd-e503-3917-a0d1-71ae036c0118",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "06f5c400-7515-46e2-ac81-725f2fe4228a",
+                    "number": "9",
+                    "title": "Water",
+                    "length": 201227
+                  }
+                ],
+                "track-count": 50,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "b057dee8-02ea-4b48-8681-f5e3255bc47d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Now That’s What I Call Music! 117",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "62315ade-50a2-42bb-8e60-eece94e842a6",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Now That’s What I Call Music! 117",
+              "disambiguation": "UK",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2024-04-05",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2024-04-05",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 50,
+            "media": [
+              {
+                "id": "7102f7bb-1d70-3440-bb10-bfbb867aacdc",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4ddd8f21-1d0e-467b-9513-ea64224018d0",
+                    "number": "9",
+                    "title": "Water",
+                    "length": 201226
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "7247b584-afab-4c6e-b8c0-d1c00f62a07a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "NOW That’s What I Call Music 89",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3444b697-d4da-4b70-8f47-1441f3f66060",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NOW That’s What I Call Music! 89",
+              "disambiguation": "USA",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2024-01-26",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2024-01-26",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 22,
+            "media": [
+              {
+                "id": "9daaad6a-781a-3ea4-9816-5eb88e17a49d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4fde1527-5f98-430e-af24-15027e70e5e5",
+                    "number": "5",
+                    "title": "Water",
+                    "length": 198053
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "a6ec8576-f6ee-47ce-a4f8-f0394310ad5a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "TYLA",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9031200f-5403-4f39-8c28-f6e9a7bf51da",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "TYLA",
+              "primary-type": "EP"
+            },
+            "track-count": 5,
+            "media": [
+              {
+                "id": "d64da05f-7662-3360-8b1d-eaff739bac53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6097de7c-d564-4af8-a601-f1a9989497c9",
+                    "number": "1",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "45c03df3-3500-44dc-a4ac-7b843f4c5030",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "572b00af-5a05-4e9a-8622-4e677f06dbba",
+            "count": 1,
+            "title": "Water",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tyla",
+                "artist": {
+                  "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                  "name": "Tyla",
+                  "sort-name": "Tyla",
+                  "disambiguation": "South African singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "44bcaf13-f6a1-48a5-bda5-e975958a37dc",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Water",
+              "primary-type": "Single"
+            },
+            "date": "2023-07-28",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-07-28",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "dcb36cda-0e7c-3456-998f-c03699482a7d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9901df2e-833b-41b1-b79f-2eaf76fcad8a",
+                    "number": "1",
+                    "title": "Water",
+                    "length": 200255
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "USSM12305126"
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "contemporary r&b"
+          }
+        ]
+      }
+    ]
+  }
+}

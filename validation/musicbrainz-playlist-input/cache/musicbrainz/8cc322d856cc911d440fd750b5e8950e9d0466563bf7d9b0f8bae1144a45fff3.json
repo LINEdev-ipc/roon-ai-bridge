@@ -1,0 +1,1527 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28smalltown+AND+boy+AND+12+AND+version%29+AND+artistname%3A%22Bronski+Beat%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:02.171Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:02.540Z",
+    "count": 8,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "4580c3c6-bb24-432c-81f2-b63a92ae073b",
+        "score": 100,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (12″ version)",
+        "length": 544653,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2018-10-26",
+        "releases": [
+          {
+            "id": "3375280d-e5a6-4353-a26d-ce726bff7fa0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 3,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "disambiguation": "Limited Edition",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "2018-10-26",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2018-10-26",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "224651a1-3384-324a-ac65-9760fd6fa5f5",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a5096cb3-5204-4603-a1af-29e162514bf6",
+                    "number": "12",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 544653
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "05764e05-a1a2-49b1-b19e-8be7d067eaa5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "disambiguation": "remastered, standard edition",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "2022-02-25",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2022-02-25",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "54eb2200-d381-3da0-be85-efb5dd935272",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d8a14933-53b3-44e3-bc70-dd262276c125",
+                    "number": "12",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 544653
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "21bfc643-e3f8-46c8-aaff-7ce65b43cf40",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 2,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "disambiguation": "remastered, expanded edition",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "2018-10-26",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-10-26",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "c53bc27b-3644-31f0-a5f7-5710e2d77dab",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ab7b4c05-df7b-43d9-bca9-561ccbdc45aa",
+                    "number": "12",
+                    "title": "Smalltown Boy (12” version)",
+                    "length": 541654
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "a53244c9-96d4-40a4-b768-0d8e64fcba9c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 2,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "2018-11-02",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2018-11-02",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "41d5c22b-cc23-3c1c-899c-adc87a24e648",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "14bac0dc-ac7d-4d82-bd9a-792f5eb4ce6b",
+                    "number": "12",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 544653
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 11
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBAAP1812345"
+        ]
+      },
+      {
+        "id": "a4763617-8341-45af-9e22-257bb97c762f",
+        "score": 99,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (12″ version)",
+        "length": 537333,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2001-09-03",
+        "releases": [
+          {
+            "id": "b4b9ed2b-587c-4ca2-b025-f54dc8b47070",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "27b1a3bf-e2f1-3dd8-9a06-981c36093632",
+            "count": 2,
+            "title": "The Very Best Of Jimmy Somerville, Bronski Beat & The Communards",
+            "status": "Official",
+            "disambiguation": "16 bit – 44.1 kHz Reissue",
+            "artist-credit": [
+              {
+                "name": "Jimmy Somerville",
+                "artist": {
+                  "id": "09bc57df-6fc7-40f7-b7e6-2261481f801e",
+                  "name": "Jimmy Somerville",
+                  "sort-name": "Somerville, Jimmy"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ee33ef09-b799-3db0-94c5-6624705904ae",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Very Best of Jimmy Somerville, Bronski Beat and The Communards",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2001-09-03",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2001-09-03",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 27,
+            "media": [
+              {
+                "id": "08d407c0-83a5-34d2-981b-af85dcdfd3b4",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e3817c30-8007-46cf-882a-fbfd4be87996",
+                    "number": "1",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 537333
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "838cf894-6908-4ea8-967c-6cef565c87a0",
+        "score": 99,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (12\" version)",
+        "length": 536000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2009",
+        "releases": [
+          {
+            "id": "bd32fd6d-64c4-447a-8c3f-060d5a665437",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Pearls of the 80s: Maxis",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "14cfcf49-cbf4-4542-a23b-b81357cd29c8",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pearls of the 80s: Maxis",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2009",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "f8ebee4e-e704-384b-beed-55a964edec1b",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "65b37bad-cfb4-42fe-9c49-33709d6eb2a9",
+                    "number": "1",
+                    "title": "Smalltown Boy (12\" version)",
+                    "length": 536000
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f805dc8f-8561-496c-aaeb-6a8e58115877",
+        "score": 99,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (12″ version)",
+        "length": 542400,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1991",
+        "releases": [
+          {
+            "id": "652008af-9cb8-4223-b0f2-224f6c4d3369",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "The Best of Techno & Classics",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "19a7164d-8b3e-4ea2-af1c-1faf19b294cf",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Best of Techno & Classics",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1999",
+            "country": "ES",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+                  "name": "Spain",
+                  "sort-name": "Spain",
+                  "iso-3166-1-codes": [
+                    "ES"
+                  ]
+                }
+              }
+            ],
+            "track-count": 31,
+            "media": [
+              {
+                "id": "0359d444-09db-34a3-ba26-4c0cfd1b20ee",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e8e4cd70-f187-45a1-b361-28baff93b1bb",
+                    "number": "11",
+                    "title": "Smalltown Boy",
+                    "length": 542560
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "cf6ac256-f4f3-4e21-892f-2d24492497e3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Rock & Pop Diamonds 1984",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "982be49d-0c24-4ebe-a429-3653b8754df3",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rock & Pop Diamonds 1984",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1991",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1991",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "ffb3cf58-72fa-3696-869c-49227662c337",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "28bd54dd-4530-411a-8e00-319564647d50",
+                    "number": "3",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 542400
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "22209598-ad46-4558-a249-d88970d6d693",
+        "score": 99,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (12″ version)",
+        "length": 539266,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-11-17",
+        "releases": [
+          {
+            "id": "114ff538-62d4-43b4-85cd-6139f9680628",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4fd8fd14-2832-3bf2-a134-19c77f7f03c9",
+            "count": 3,
+            "title": "Dance & Desire: Rarities & Videos",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Jimmy Somerville",
+                "artist": {
+                  "id": "09bc57df-6fc7-40f7-b7e6-2261481f801e",
+                  "name": "Jimmy Somerville",
+                  "sort-name": "Somerville, Jimmy"
+                }
+              },
+              {
+                "joinphrase": " and ",
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              },
+              {
+                "name": "The Communards",
+                "artist": {
+                  "id": "7696c8a8-f971-4b8a-820e-b8bd922bfa57",
+                  "name": "The Communards",
+                  "sort-name": "Communards, The"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2b41881d-2672-4285-af4a-3cf6e49bc052",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Dance & Desire: Rarities & Videos",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-11-17",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-11-17",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 46,
+            "media": [
+              {
+                "id": "5d925849-0f3d-3420-873c-7f1c0f509752",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2fb9d901-4395-482d-b498-c744aaf17d23",
+                    "number": "1",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 539266
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ee74b314-8ef8-416a-bb93-3509f06c922b",
+        "score": 99,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (12\" version)",
+        "length": 548453,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2024-10-11",
+        "releases": [
+          {
+            "id": "7a7207c3-34a0-4a80-862f-3d9f33f3d0e5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 5,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "disambiguation": "40th Anniversary Deluxe Edition",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "track-count": 67,
+            "media": [
+              {
+                "id": "79e69b51-ea44-3ce4-9ab3-dcb66fe5f617",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ecb1bea6-46ef-4873-9c8a-d6d699968e6a",
+                    "number": "1",
+                    "title": "Smalltown Boy (12\" version)",
+                    "length": 548453
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "80092310-cb69-4054-88d2-4eb50ef837a7",
+        "score": 76,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (full 12″ version)",
+        "length": 544826,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1984",
+        "releases": [
+          {
+            "id": "705af92b-5f50-414a-94b1-425a5e5563f9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "The Age Of Consent",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "e308694c-763f-3956-b311-3ef281ecdd3f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3c47e97a-0471-4645-b56f-ccda6cee84d3",
+                    "number": "11",
+                    "title": "Smalltown Boy (full 12″ version)",
+                    "length": 544826
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "c3080172-635c-4822-90c6-b461a1b2b89a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "1984",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1984",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "59a3233c-4c78-33b0-b63f-ed32d61c9de7",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "60258d9a-9ac2-4441-8d39-892eafb665b7",
+                    "number": "11",
+                    "title": "Smalltown Boy (full 12″ version)",
+                    "length": 544826
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "dc1b865c-44e3-435c-9c21-fd909644ee00",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "cea41b45-36ab-3564-8ff1-5baaddfd828c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b7ae6155-9322-4f4b-8adb-613fe044dc7c",
+                    "number": "11",
+                    "title": "Smalltown Boy (full 12″ version)",
+                    "length": 544826
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "09cf49be-972e-4280-a9ed-484c67a70374",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "1984",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1984",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "8a4d9d6b-aaad-352c-afad-87038ac21808",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bb70af16-1697-4b3a-b155-074ff0b55237",
+                    "number": "11",
+                    "title": "Smalltown Boy (full 12″ version)",
+                    "length": 544826
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "980f9bee-18aa-4339-952c-4b1a5e07264c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "1984",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1984",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "8c809c74-5a70-3578-8d5c-20c6975c8f53",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "aa6de995-ff46-4bd2-a047-1e2c4ee7179a",
+                    "number": "11",
+                    "title": "Smalltown Boy (full 12″ version)",
+                    "length": 544826
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "82683d71-04f6-4e33-b23d-f9d4b1c89dbd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "1984",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1984",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "be861482-7887-39b8-ad45-b7709e9a4c4a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ec92e474-5559-317d-9f12-e38f377528ae",
+                    "number": "11",
+                    "title": "Smalltown Boy (full 12″ version)",
+                    "length": 544826
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "0ca9f818-72b2-4b93-bfb7-fcb652d6f3f6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "The Age of Consent",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00a48312-d0c0-3bee-8818-6d1b836b52e0",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Age of Consent",
+              "primary-type": "Album"
+            },
+            "date": "1984",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1984",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "9afd07c8-a769-381c-9f91-1e3b2518a3ed",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4a945ae7-bbb1-4134-b363-1d752a44367a",
+                    "number": "11",
+                    "title": "Smalltown Boy (full 12″ version)",
+                    "length": 544826
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "synth-pop"
+          },
+          {
+            "count": 1,
+            "name": "disco"
+          }
+        ]
+      },
+      {
+        "id": "d925a49f-1a2a-4a21-8d81-b356bebd1fb4",
+        "score": 76,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (Full 12\" version)",
+        "length": 539920,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2012",
+        "releases": [
+          {
+            "id": "843773ae-f575-4195-93bb-2dee5b728df4",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "Smalltown Boy (The Remixes Anthology)",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "93bfdd7f-d5fd-4330-b5f5-405faff097d8",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Smalltown Boy (The Remixes Anthology)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2012",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2012",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "8d70f7f3-1876-41d9-9485-49313deb39f6",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1eda1ebd-64fd-4e73-b295-3d180564157c",
+                    "number": "3",
+                    "title": "Smalltown Boy (Full 12\" version)",
+                    "length": 539920
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

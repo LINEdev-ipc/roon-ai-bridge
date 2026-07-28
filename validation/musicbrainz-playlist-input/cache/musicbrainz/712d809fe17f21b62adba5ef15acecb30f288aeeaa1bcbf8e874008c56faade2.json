@@ -1,0 +1,651 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28west+AND+end+AND+girls+AND+shep+AND+pettibone+AND+mastermix%29+AND+artistname%3A%22Pet+Shop+Boys%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:11.327Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:11.698Z",
+    "count": 3,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "70609b95-d2f1-4eac-9b9c-0419822a9108",
+        "score": 100,
+        "artist-credit-id": "bffb5a4d-1dad-37a0-9d26-7f6de6eed77f",
+        "title": "West End Girls (Shep Pettibone Mastermix)",
+        "length": 489000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Pet Shop Boys",
+            "artist": {
+              "id": "be540c02-7898-4b79-9acc-c8122c7d9e83",
+              "name": "Pet Shop Boys",
+              "sort-name": "Pet Shop Boys",
+              "aliases": [
+                {
+                  "sort-name": "The Pet Shop Boys",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "The Pet Shop Boys",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Petshop Boys",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Petshop Boys",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ペット・ショップ・ボーイズ",
+                  "name": "ペット・ショップ・ボーイズ",
+                  "locale": "ja",
+                  "type": null,
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Neil Tennant and Chris Lowe",
+                  "name": "Neil Tennant and Chris Lowe",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "PSB",
+                  "name": "PSB",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Pet Shop Boys",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Pet Shop Boys",
+                  "locale": "en",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1985-10-28",
+        "releases": [
+          {
+            "id": "c8b34ecc-c4a7-44cd-b43e-2576b25b1168",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "382912ca-c80f-3fde-b290-f8d00faa821b",
+            "count": 1,
+            "title": "Grand 12‐Inches 4: Upgrades and Additions",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Ben Liebrand",
+                "artist": {
+                  "id": "a9abe28b-5774-41ea-8393-8b26903fee72",
+                  "name": "Ben Liebrand",
+                  "sort-name": "Liebrand, Ben"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a3ca61a3-ae18-4554-97ee-b444f239ac21",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Grand 12‐Inches 4: Upgrades and Additions",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-12-17",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2014-12-17",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 25,
+            "media": [
+              {
+                "id": "595d44ff-d382-3d99-ba35-fa4b2aea50af",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "aec39fe2-cc4c-4786-bf9d-1401aac27d81",
+                    "number": "21",
+                    "title": "West End Girls (Master mix by Shep Pettibone)",
+                    "length": 492000
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 20
+              }
+            ]
+          },
+          {
+            "id": "9d2e24df-58fd-4be6-82e3-42031117bbfa",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bffb5a4d-1dad-37a0-9d26-7f6de6eed77f",
+            "count": 1,
+            "title": "West End Girls (The Shep Pettibone Mastermix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Pet Shop Boys",
+                "artist": {
+                  "id": "be540c02-7898-4b79-9acc-c8122c7d9e83",
+                  "name": "Pet Shop Boys",
+                  "sort-name": "Pet Shop Boys"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "60986820-3766-4dc4-8835-69fd8954b2f6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "West End Girls",
+              "disambiguation": "1985 re-recording",
+              "primary-type": "Single"
+            },
+            "date": "1985-10-28",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "1985-10-28",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "ba8708de-4a0d-3085-844f-50a0a6751aab",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "b33d1c9f-39d1-4a38-ba73-3bf393060588",
+                    "number": "A",
+                    "title": "West End Girls (The Shep Pettibone Mastermix)",
+                    "length": 489000
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "8c2b066f-68d1-459f-91b1-0d48ec7455ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Now Dance",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2d6040b7-c6a0-4c54-a575-d1aab90f7309",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Now Dance",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1986",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "1986",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "779a2f37-8181-3bb7-b8fd-e2509b86441e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "deb831b6-4677-4da0-aaf2-e7574173d132",
+                    "number": "10",
+                    "title": "West End Girls (Shep Pettibone mastermix)",
+                    "length": 489000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "d45ea2ff-e5f5-474e-aee4-801ced132ca6",
+        "score": 100,
+        "artist-credit-id": "bffb5a4d-1dad-37a0-9d26-7f6de6eed77f",
+        "title": "West End Girls (Shep Pettibone Mastermix)",
+        "length": 228000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Pet Shop Boys",
+            "artist": {
+              "id": "be540c02-7898-4b79-9acc-c8122c7d9e83",
+              "name": "Pet Shop Boys",
+              "sort-name": "Pet Shop Boys",
+              "aliases": [
+                {
+                  "sort-name": "The Pet Shop Boys",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "The Pet Shop Boys",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Petshop Boys",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Petshop Boys",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ペット・ショップ・ボーイズ",
+                  "name": "ペット・ショップ・ボーイズ",
+                  "locale": "ja",
+                  "type": null,
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Neil Tennant and Chris Lowe",
+                  "name": "Neil Tennant and Chris Lowe",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "PSB",
+                  "name": "PSB",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Pet Shop Boys",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Pet Shop Boys",
+                  "locale": "en",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-04-14",
+        "releases": [
+          {
+            "id": "86108d05-a2d1-48a7-a706-d164ad9ec579",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Electric 80’s",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c384bd3-0bed-4fad-a9dd-30f807e684f8",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Electric 80’s",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-04-14",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-04-14",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 55,
+            "media": [
+              {
+                "id": "6c25d60e-53fb-3b10-8cdf-e1796a282d16",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c212bce7-9a5a-4593-b9d7-9494edc230f3",
+                    "number": "9",
+                    "title": "West End Girls (Shep Pettibone Mastermix)",
+                    "length": 228000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e7848840-0ffb-4f7a-a4e8-9cccdf570972",
+        "score": 71,
+        "artist-credit-id": "bffb5a4d-1dad-37a0-9d26-7f6de6eed77f",
+        "title": "West End Girls (The Shep Pettibone Mastermix)",
+        "length": 517053,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Pet Shop Boys",
+            "artist": {
+              "id": "be540c02-7898-4b79-9acc-c8122c7d9e83",
+              "name": "Pet Shop Boys",
+              "sort-name": "Pet Shop Boys",
+              "aliases": [
+                {
+                  "sort-name": "The Pet Shop Boys",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "The Pet Shop Boys",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Petshop Boys",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Petshop Boys",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ペット・ショップ・ボーイズ",
+                  "name": "ペット・ショップ・ボーイズ",
+                  "locale": "ja",
+                  "type": null,
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Neil Tennant and Chris Lowe",
+                  "name": "Neil Tennant and Chris Lowe",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "PSB",
+                  "name": "PSB",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Pet Shop Boys",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Pet Shop Boys",
+                  "locale": "en",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2021-09-03",
+        "releases": [
+          {
+            "id": "4e2b7889-d640-463b-9172-b57f96885762",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "3a4805c9-1ecc-4ccb-b516-2b06dea1e4d7",
+            "count": 4,
+            "title": "Dance Masters: Shep Pettibone (The Classic Master-Mixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " / ",
+                "name": "Arthur Baker",
+                "artist": {
+                  "id": "6b6c5ce7-7a49-463a-ac9f-ba97c953a77e",
+                  "name": "Arthur Baker",
+                  "sort-name": "Baker, Arthur",
+                  "disambiguation": "American record producer and DJ"
+                }
+              },
+              {
+                "name": "Shep Pettibone",
+                "artist": {
+                  "id": "17921289-ed5a-4de9-be13-e3876d31fff1",
+                  "name": "Shep Pettibone",
+                  "sort-name": "Pettibone, Shep"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c754545-b026-473a-851c-0ecc32228823",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Arthur Baker Presents Dance Masters: Shep Pettibone - The Classic 12\" Master-Mixes",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2021-10-01",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2021-10-01",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 47,
+            "media": [
+              {
+                "id": "03628cd4-fd1d-478a-82e2-9fd0028a6df5",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "abafc9f2-1fa4-4dfd-917f-a3db83a1d270",
+                    "number": "1",
+                    "title": "West End Girls (The Shep Pettibone Mastermix)",
+                    "length": 517053
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "a8fcc1ba-9499-405f-b196-5c9c214dee70",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "584225c4-7012-3fc2-bc29-282ed225ffad",
+            "count": 4,
+            "title": "Arthur Baker Presents Dance Masters: Shep Pettibone - The Classic 12\" Master-Mixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Arthur Baker",
+                "artist": {
+                  "id": "6b6c5ce7-7a49-463a-ac9f-ba97c953a77e",
+                  "name": "Arthur Baker",
+                  "sort-name": "Baker, Arthur",
+                  "disambiguation": "American record producer and DJ"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c754545-b026-473a-851c-0ecc32228823",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Arthur Baker Presents Dance Masters: Shep Pettibone - The Classic 12\" Master-Mixes",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2021-09-03",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2021-09-03",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 47,
+            "media": [
+              {
+                "id": "d5e40428-7642-3a1d-961b-245a39971223",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f69a3633-7a1f-4886-a36c-cfde4715bee8",
+                    "number": "1",
+                    "title": "West End Girls (The Shep Pettibone Mastermix)",
+                    "length": 517053
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

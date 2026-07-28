@@ -1,0 +1,366 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/027c76a1-7e3d-48b4-b03f-333481760a29?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:37:35.041Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "id": "027c76a1-7e3d-48b4-b03f-333481760a29",
+    "genres": [],
+    "isrcs": [],
+    "length": 235000,
+    "releases": [
+      {
+        "quality": "normal",
+        "packaging-id": null,
+        "genres": [],
+        "id": "f4ba2f82-8fdc-48f3-9cb7-611becfa69b3",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "date": "2016-04-22",
+        "release-group": {
+          "first-release-date": "2016-04-22",
+          "tags": [],
+          "artist-credit": [
+            {
+              "joinphrase": " feat. ",
+              "name": "O.B.F.",
+              "artist": {
+                "name": "O.B.F.",
+                "country": "FR",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "type": "Group",
+                "disambiguation": "",
+                "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26",
+                "sort-name": "O.B.F."
+              }
+            },
+            {
+              "name": "Charlie P",
+              "artist": {
+                "disambiguation": "Reggae/Roots/Dub singer",
+                "type": "Person",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Charlie P",
+                "country": "GB",
+                "sort-name": "Charlie P",
+                "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+          "title": "Sixteen Tons of Pressure",
+          "disambiguation": "",
+          "releases": [],
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "primary-type": "EP",
+          "genres": [],
+          "id": "7b66fddc-db22-4640-bd4a-942f43bc8bed"
+        },
+        "barcode": null,
+        "country": "FR",
+        "title": "Sixteen Tons of Pressure",
+        "artist-credit": [
+          {
+            "name": "O.B.F.",
+            "artist": {
+              "sort-name": "O.B.F.",
+              "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26",
+              "tags": [],
+              "genres": [],
+              "type": "Group",
+              "disambiguation": "",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "O.B.F.",
+              "country": "FR"
+            },
+            "joinphrase": " feat. "
+          },
+          {
+            "joinphrase": "",
+            "artist": {
+              "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69",
+              "sort-name": "Charlie P",
+              "country": "GB",
+              "name": "Charlie P",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "disambiguation": "Reggae/Roots/Dub singer",
+              "type": "Person",
+              "genres": [],
+              "tags": []
+            },
+            "name": "Charlie P"
+          }
+        ],
+        "tags": [],
+        "packaging": null,
+        "status": "Official",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "disambiguation": "",
+        "media": [
+          {
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "id": "8a98ba20-27b4-3592-9768-61f20f74a0ad",
+            "format": "12\" Vinyl",
+            "track-offset": 0,
+            "position": 1,
+            "tracks": [
+              {
+                "id": "86b7eb7b-f136-4fcd-92a6-f2a437160262",
+                "position": 1,
+                "number": "A1",
+                "length": null,
+                "title": "Sixteen Tons of Pressure",
+                "artist-credit": [
+                  {
+                    "joinphrase": " feat. ",
+                    "name": "O.B.F.",
+                    "artist": {
+                      "disambiguation": "",
+                      "type": "Group",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "country": "FR",
+                      "name": "O.B.F.",
+                      "sort-name": "O.B.F.",
+                      "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26"
+                    }
+                  },
+                  {
+                    "artist": {
+                      "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69",
+                      "sort-name": "Charlie P",
+                      "name": "Charlie P",
+                      "country": "GB",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "type": "Person",
+                      "disambiguation": "Reggae/Roots/Dub singer"
+                    },
+                    "name": "Charlie P",
+                    "joinphrase": ""
+                  }
+                ]
+              }
+            ],
+            "track-count": 4,
+            "title": ""
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "type": null,
+              "disambiguation": "",
+              "name": "France",
+              "sort-name": "France",
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "iso-3166-1-codes": [
+                "FR"
+              ]
+            },
+            "date": "2016-04-22"
+          }
+        ]
+      },
+      {
+        "release-events": [
+          {
+            "date": "2016-06-10",
+            "area": {
+              "sort-name": "[Worldwide]",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "type-id": null,
+              "type": null,
+              "disambiguation": "",
+              "name": "[Worldwide]"
+            }
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "disambiguation": "",
+        "status": "Official",
+        "media": [
+          {
+            "track-offset": 0,
+            "id": "4e52ee9a-de7e-38ef-9cf0-e027bcff1d4b",
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "format": "Digital Media",
+            "title": "",
+            "track-count": 4,
+            "tracks": [
+              {
+                "number": "1",
+                "length": 235000,
+                "id": "ab8003f8-6408-437f-893a-507990b52417",
+                "position": 1,
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type": "Group",
+                      "disambiguation": "",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "O.B.F.",
+                      "country": "FR",
+                      "sort-name": "O.B.F.",
+                      "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26"
+                    },
+                    "name": "O.B.F.",
+                    "joinphrase": " feat. "
+                  },
+                  {
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "disambiguation": "Reggae/Roots/Dub singer",
+                      "type": "Person",
+                      "name": "Charlie P",
+                      "country": "GB",
+                      "sort-name": "Charlie P",
+                      "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69"
+                    },
+                    "name": "Charlie P",
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Sixteen Tons of Pressure"
+              }
+            ],
+            "position": 1
+          }
+        ],
+        "title": "Sixteen Tons of Pressure",
+        "tags": [],
+        "artist-credit": [
+          {
+            "artist": {
+              "tags": [],
+              "disambiguation": "",
+              "type": "Group",
+              "genres": [],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "O.B.F.",
+              "country": "FR",
+              "sort-name": "O.B.F.",
+              "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26"
+            },
+            "name": "O.B.F.",
+            "joinphrase": " feat. "
+          },
+          {
+            "name": "Charlie P",
+            "artist": {
+              "sort-name": "Charlie P",
+              "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "type": "Person",
+              "genres": [],
+              "disambiguation": "Reggae/Roots/Dub singer",
+              "tags": [],
+              "country": "GB",
+              "name": "Charlie P"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "packaging": null,
+        "country": "XW",
+        "release-group": {
+          "genres": [],
+          "primary-type": "EP",
+          "id": "7b66fddc-db22-4640-bd4a-942f43bc8bed",
+          "first-release-date": "2016-04-22",
+          "disambiguation": "",
+          "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+          "tags": [],
+          "artist-credit": [
+            {
+              "joinphrase": " feat. ",
+              "name": "O.B.F.",
+              "artist": {
+                "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26",
+                "sort-name": "O.B.F.",
+                "name": "O.B.F.",
+                "country": "FR",
+                "type": "Group",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+              }
+            },
+            {
+              "name": "Charlie P",
+              "artist": {
+                "type": "Person",
+                "disambiguation": "Reggae/Roots/Dub singer",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "name": "Charlie P",
+                "sort-name": "Charlie P",
+                "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "title": "Sixteen Tons of Pressure",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "releases": []
+        },
+        "barcode": null,
+        "date": "2016-06-10",
+        "id": "200d68f9-ae11-4064-a42f-16405ea851e7",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [],
+        "quality": "normal",
+        "packaging-id": null
+      }
+    ],
+    "disambiguation": "",
+    "relations": [],
+    "tags": [],
+    "artist-credit": [
+      {
+        "joinphrase": " feat. ",
+        "artist": {
+          "sort-name": "O.B.F.",
+          "id": "71c2ca42-0df4-4cf3-a868-c86f826aea26",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "disambiguation": "",
+          "type": "Group",
+          "genres": [],
+          "tags": [],
+          "country": "FR",
+          "name": "O.B.F."
+        },
+        "name": "O.B.F."
+      },
+      {
+        "artist": {
+          "sort-name": "Charlie P",
+          "id": "114c7a42-81c8-4d19-b79c-e2d6a26a9c69",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "Reggae/Roots/Dub singer",
+          "genres": [],
+          "tags": [],
+          "country": "GB",
+          "name": "Charlie P"
+        },
+        "name": "Charlie P",
+        "joinphrase": ""
+      }
+    ],
+    "title": "Sixteen Tons of Pressure",
+    "first-release-date": "2016-04-22",
+    "video": false
+  }
+}

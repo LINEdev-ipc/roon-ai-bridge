@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Aya+Nakamura&recording_name=Djadja&release_name=Nakamura",
+  "fetched_at": "2026-07-28T12:16:20.037Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Aya Nakamura",
+      "recording_arg": "Djadja",
+      "artist_credit_name": "Aya Nakamura",
+      "release_name": "Nakamura",
+      "recording_name": "Djadja",
+      "artist_credit_id": 1719844,
+      "artist_mbids": [
+        "cf580d82-3f3e-4b86-8874-7e0fbe794f01"
+      ],
+      "release_mbid": "130f0cf1-23cf-47ee-a86a-812874afd99d",
+      "recording_mbid": "c03f39a0-c875-445c-a5f8-03b0be6adab0"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Woman+on+a+Mission%22+AND+artist%3A%22Vibronics%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:51:18.821Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:51:18.871Z",
+    "count": 3,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "2827148b-4281-4e08-978b-eeea02e0f1c1",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "8046f62d-a04a-3485-8c96-a2def4867300",
+        "count": 2,
+        "title": "Woman on a Mission",
+        "first-release-date": "2018-03-08",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Vibronics",
+            "artist": {
+              "id": "0f43b78a-575b-4bd1-b538-840c474800aa",
+              "name": "Vibronics",
+              "sort-name": "Vibronics"
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "5d4d1563-16da-447c-acb5-c0248b2425c9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Woman on a Mission",
+            "status": "Official"
+          },
+          {
+            "id": "c9c26bc0-c478-48a9-8972-57143b3013b7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Woman on a Mission",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "reggae"
+          },
+          {
+            "count": 1,
+            "name": "dub"
+          }
+        ]
+      },
+      {
+        "id": "e5a7b819-9e42-4537-a43b-2ccf89b70cb8",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 94,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "8046f62d-a04a-3485-8c96-a2def4867300",
+        "count": 2,
+        "title": "Woman on a Mission 2",
+        "first-release-date": "2024-02-01",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Vibronics",
+            "artist": {
+              "id": "0f43b78a-575b-4bd1-b538-840c474800aa",
+              "name": "Vibronics",
+              "sort-name": "Vibronics"
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "c14546d0-d7bb-47fc-9784-be1ae463cd70",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Woman on a Mission 2",
+            "status": "Official"
+          },
+          {
+            "id": "ef602268-5fc1-4e7d-ab9a-e6e0bae3e169",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Woman on a Mission 2",
+            "status": "Official"
+          }
+        ]
+      },
+      {
+        "id": "db72a4b6-86bd-4a2d-bea9-a51d688a59e1",
+        "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+        "score": 81,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "8046f62d-a04a-3485-8c96-a2def4867300",
+        "count": 1,
+        "title": "Woman on a Mission 2: The Dub Mixes",
+        "first-release-date": "2024-02-01",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Remix"
+        ],
+        "secondary-type-ids": [
+          "0c60f497-ff81-3818-befd-abfc84a4858b"
+        ],
+        "artist-credit": [
+          {
+            "name": "Vibronics",
+            "artist": {
+              "id": "0f43b78a-575b-4bd1-b538-840c474800aa",
+              "name": "Vibronics",
+              "sort-name": "Vibronics"
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "dd34859a-db7e-41d6-9c4c-fc3d0948125e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Woman on a Mission 2: The Dub Mixes",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "dub"
+          }
+        ]
+      }
+    ]
+  }
+}

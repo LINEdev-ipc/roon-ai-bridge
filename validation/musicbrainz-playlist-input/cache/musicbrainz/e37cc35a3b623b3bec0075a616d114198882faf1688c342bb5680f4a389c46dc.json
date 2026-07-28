@@ -1,0 +1,173 @@
+{
+  "url": "https://musicbrainz.org/ws/2/work/e02ccc5b-d39f-31d2-aaf5-b56ad67e4ffe?inc=artist-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:38:49.833Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "disambiguation": "",
+    "language": null,
+    "title": "Go",
+    "attributes": [
+      {
+        "type": "AGADU ID",
+        "value": "4410682",
+        "type-id": "27ea7f59-9f9c-4aee-b31a-61109ac03819"
+      },
+      {
+        "value": "5525602",
+        "type-id": "84afca1d-80dc-4d44-8d7a-e1e84e70aa65",
+        "type": "APA ID"
+      },
+      {
+        "value": "3838374",
+        "type-id": "b66d6f47-2a58-4bc1-ac75-b44c47a198f8",
+        "type": "APDAYC ID"
+      },
+      {
+        "type-id": "5e3b8fc2-3a4e-4a92-a572-6339863c1cf4",
+        "value": "4000162497",
+        "type": "ARTISJUS ID"
+      },
+      {
+        "type-id": "d833318c-6c6a-370e-8b16-9cb15873ba76",
+        "value": "370247322",
+        "type": "ASCAP ID"
+      },
+      {
+        "type": "COMPASS ID",
+        "value": "2157375",
+        "type-id": "5ea37343-be89-4cd0-8a37-f471738df641"
+      },
+      {
+        "type": "PRS tune code",
+        "value": "6972539L",
+        "type-id": "cd76035f-b94e-4e47-850d-aa2cd825d1a6"
+      },
+      {
+        "type": "SADAIC ID",
+        "value": "815699",
+        "type-id": "d8aa6512-314a-478d-bd30-e8d7411509cb"
+      },
+      {
+        "value": "3394536",
+        "type-id": "4bcbb212-a973-46ee-8160-e9f0f89ca6ef",
+        "type": "SAYCE ID"
+      },
+      {
+        "type": "SAYCO ID",
+        "value": "3394536",
+        "type-id": "4439b1a5-47da-4774-9caa-8b8589129297"
+      },
+      {
+        "type": "SOCAN ID",
+        "value": "27986263",
+        "type-id": "00370bc6-7388-34a1-aa5b-b0e081ccb53d"
+      }
+    ],
+    "genres": [],
+    "languages": [],
+    "iswcs": [
+      "T-071.394.992-8"
+    ],
+    "tags": [],
+    "type": null,
+    "relations": [
+      {
+        "begin": null,
+        "target-credit": "",
+        "ended": false,
+        "type": "composer",
+        "direction": "backward",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "target-type": "artist",
+        "source-credit": "",
+        "attributes": [],
+        "end": null,
+        "artist": {
+          "id": "5894dac5-0260-4175-b36e-e34680a859d6",
+          "country": "US",
+          "sort-name": "Badalamenti, Angelo",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "American score composer",
+          "name": "Angelo Badalamenti",
+          "type": "Person"
+        },
+        "attribute-values": {},
+        "attribute-ids": {}
+      },
+      {
+        "artist": {
+          "type": "Person",
+          "name": "Richard Melville Hall",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Hall, Richard Melville",
+          "country": "US",
+          "id": "8abdbc82-b5f0-4bd8-9c06-9c3393c9f99f"
+        },
+        "attribute-values": {},
+        "attribute-ids": {},
+        "attributes": [],
+        "end": null,
+        "direction": "backward",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "target-type": "artist",
+        "source-credit": "",
+        "begin": null,
+        "target-credit": "",
+        "ended": false,
+        "type": "composer"
+      },
+      {
+        "artist": {
+          "id": "752d58e6-d33f-4dcd-b40c-37acc14242f2",
+          "sort-name": "Lynch, David",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "filmmaker",
+          "name": "David Lynch",
+          "type": "Person"
+        },
+        "attribute-values": {},
+        "attribute-ids": {},
+        "attributes": [],
+        "end": null,
+        "direction": "backward",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "target-type": "artist",
+        "source-credit": "",
+        "begin": null,
+        "ended": false,
+        "target-credit": "",
+        "type": "composer"
+      },
+      {
+        "type-id": "3e48faba-ec01-47fd-8e89-30e81161661c",
+        "direction": "backward",
+        "source-credit": "",
+        "target-type": "artist",
+        "begin": null,
+        "type": "lyricist",
+        "ended": false,
+        "target-credit": "",
+        "artist": {
+          "type": "Person",
+          "name": "Richard Melville Hall",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Hall, Richard Melville",
+          "country": "US",
+          "id": "8abdbc82-b5f0-4bd8-9c06-9c3393c9f99f"
+        },
+        "attribute-values": {},
+        "attribute-ids": {},
+        "end": null,
+        "attributes": []
+      }
+    ],
+    "id": "e02ccc5b-d39f-31d2-aaf5-b56ad67e4ffe",
+    "type-id": null
+  }
+}

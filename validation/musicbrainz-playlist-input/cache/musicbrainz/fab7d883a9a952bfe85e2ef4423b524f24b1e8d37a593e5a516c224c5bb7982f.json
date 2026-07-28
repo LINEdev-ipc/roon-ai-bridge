@@ -1,0 +1,5247 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/edbf7187-a6a7-436d-8107-9e36e282d676?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:38:38.135Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "isrcs": [
+      "GBBKT9700126",
+      "GBBMQ9700126"
+    ],
+    "id": "edbf7187-a6a7-436d-8107-9e36e282d676",
+    "length": 241000,
+    "artist-credit": [
+      {
+        "name": "Cornershop",
+        "joinphrase": "",
+        "artist": {
+          "type": "Group",
+          "id": "92046be7-0927-4835-a4ed-a90416747d53",
+          "country": "GB",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "tags": [
+            {
+              "name": "asian",
+              "count": 1
+            },
+            {
+              "name": "brit pop",
+              "count": 1
+            },
+            {
+              "count": 2,
+              "name": "british"
+            },
+            {
+              "count": 1,
+              "name": "british asian"
+            },
+            {
+              "name": "dance",
+              "count": 1
+            },
+            {
+              "name": "english",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "name": "indian"
+            },
+            {
+              "count": 1,
+              "name": "indie"
+            },
+            {
+              "name": "rock and indie",
+              "count": 1
+            },
+            {
+              "name": "uk",
+              "count": 1
+            }
+          ],
+          "name": "Cornershop",
+          "genres": [
+            {
+              "name": "dance",
+              "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+              "count": 1,
+              "disambiguation": ""
+            }
+          ],
+          "disambiguation": "",
+          "sort-name": "Cornershop"
+        }
+      }
+    ],
+    "releases": [
+      {
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "genres": [],
+              "country": null,
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "genres": [],
+        "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+        "media": [
+          {
+            "format": "CD",
+            "track-offset": 4,
+            "id": "0adf9cf0-bac0-3ef7-ae0f-9cd182b73f8d",
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 18,
+            "tracks": [
+              {
+                "title": "Brimful of Asha",
+                "length": 245466,
+                "position": 5,
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "name": "indian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "country": "GB"
+                    }
+                  }
+                ],
+                "number": "5",
+                "id": "569faa50-7bea-4bb1-aa75-8e292ff8c122"
+              }
+            ]
+          }
+        ],
+        "release-group": {
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null,
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "disambiguation": "",
+          "id": "933183f9-d292-4337-94ad-f015ea69224e",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "1997",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Promo Only: Modern Rock Radio, October 1997"
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "id": "328ecad7-5ba3-4daf-b5f8-033822dd1b40",
+        "quality": "normal",
+        "country": "US",
+        "tags": [],
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "type-id": null,
+              "name": "United States",
+              "sort-name": "United States",
+              "disambiguation": ""
+            },
+            "date": "1997"
+          }
+        ],
+        "barcode": "",
+        "packaging": null,
+        "status": "Promotion",
+        "date": "1997",
+        "title": "Promo Only: Modern Rock Radio, October 1997"
+      },
+      {
+        "quality": "normal",
+        "country": "ES",
+        "id": "b2b0768e-5523-4fc6-bbbf-fa9dd5bbd7f2",
+        "release-group": {
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "disambiguation": "",
+          "id": "f24831a9-c671-440e-bb6b-a435339bd698",
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "1998-01-19",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Nitsa: La Juventud Baila"
+        },
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "text-representation": {
+          "language": "spa",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "genres": []
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 10,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group",
+                      "country": "GB",
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "brit pop",
+                          "count": 1
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "name": "indian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "disambiguation": "",
+                      "sort-name": "Cornershop"
+                    }
+                  }
+                ],
+                "id": "48b41541-c30f-397b-bc99-179d2ca1803a",
+                "number": "5",
+                "title": "Brimful of Asha (Norman Cook remix single version)",
+                "position": 5,
+                "length": 243000
+              }
+            ],
+            "track-offset": 4,
+            "format": "CD",
+            "id": "486d3c7c-fa9c-334a-93b9-e79ff2668587",
+            "title": "",
+            "position": 1
+          }
+        ],
+        "date": "1998-01-19",
+        "title": "Nitsa: La Juventud Baila",
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "tags": [],
+        "release-events": [
+          {
+            "date": "1998-01-19",
+            "area": {
+              "type": null,
+              "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+              "name": "Spain",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ES"
+              ],
+              "disambiguation": "",
+              "sort-name": "Spain"
+            }
+          }
+        ],
+        "barcode": "8429085220042"
+      },
+      {
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 4,
+            "tracks": [
+              {
+                "title": "Brimful of Asha (Norman Cook remix single version)",
+                "length": 243666,
+                "position": 2,
+                "id": "dfc7b02f-2143-30ff-9a02-d10b06c435cc",
+                "number": "2",
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "artist": {
+                      "disambiguation": "",
+                      "sort-name": "Cornershop",
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "country": "GB",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group"
+                    },
+                    "joinphrase": ""
+                  }
+                ]
+              }
+            ],
+            "track-offset": 1,
+            "format": "CD",
+            "id": "6d4f74f1-99e3-3463-b27d-ed663c9b47e6",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Cornershop",
+            "artist": {
+              "type": "Group",
+              "id": "92046be7-0927-4835-a4ed-a90416747d53",
+              "country": "GB",
+              "name": "Cornershop",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "name": "asian",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "brit pop"
+                },
+                {
+                  "count": 2,
+                  "name": "british"
+                },
+                {
+                  "name": "british asian",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "dance"
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "name": "indian",
+                  "count": 1
+                },
+                {
+                  "name": "indie",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "rock and indie"
+                },
+                {
+                  "name": "uk",
+                  "count": 1
+                }
+              ],
+              "genres": [
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "dance",
+                  "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33"
+                }
+              ],
+              "sort-name": "Cornershop",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [
+          {
+            "name": "big beat",
+            "id": "aac07ae0-8acf-4249-b5c0-2762b53947a2",
+            "count": 1,
+            "disambiguation": ""
+          }
+        ],
+        "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+        "disambiguation": "",
+        "release-group": {
+          "secondary-types": [],
+          "primary-type": "Single",
+          "tags": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "title": "Brimful of Asha",
+          "secondary-type-ids": [],
+          "first-release-date": "1997-08-18",
+          "disambiguation": "",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Cornershop",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Cornershop",
+                "country": "GB",
+                "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                "type": "Group"
+              },
+              "name": "Cornershop"
+            }
+          ],
+          "id": "0f033a8e-626f-391e-a861-880a0a8023f5"
+        },
+        "id": "3e9c46e3-bd14-447f-a9ae-d7c4504c260a",
+        "quality": "normal",
+        "country": "GB",
+        "barcode": "614027008125",
+        "release-events": [
+          {
+            "date": "1998-02-16",
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ]
+            }
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "big beat"
+          }
+        ],
+        "status": "Official",
+        "packaging": "Digipak",
+        "title": "Brimful of Asha",
+        "date": "1998-02-16"
+      },
+      {
+        "packaging": null,
+        "status": "Official",
+        "date": "1998-02-16",
+        "title": "Brimful of Asha",
+        "tags": [],
+        "barcode": null,
+        "release-events": [
+          {
+            "date": "1998-02-16",
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            }
+          }
+        ],
+        "id": "88be6793-c05e-41fd-bf13-012e961651e2",
+        "country": "GB",
+        "quality": "normal",
+        "genres": [],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "name": "Cornershop",
+            "joinphrase": "",
+            "artist": {
+              "type": "Group",
+              "id": "92046be7-0927-4835-a4ed-a90416747d53",
+              "country": "GB",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "asian"
+                },
+                {
+                  "name": "brit pop",
+                  "count": 1
+                },
+                {
+                  "name": "british",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "british asian"
+                },
+                {
+                  "count": 1,
+                  "name": "dance"
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "count": 1,
+                  "name": "indian"
+                },
+                {
+                  "count": 1,
+                  "name": "indie"
+                },
+                {
+                  "count": 1,
+                  "name": "rock and indie"
+                },
+                {
+                  "name": "uk",
+                  "count": 1
+                }
+              ],
+              "name": "Cornershop",
+              "genres": [
+                {
+                  "name": "dance",
+                  "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "sort-name": "Cornershop",
+              "disambiguation": ""
+            }
+          }
+        ],
+        "media": [
+          {
+            "format": "12\" Vinyl",
+            "track-offset": 1,
+            "id": "4ec43c1c-a15c-3ef1-b2e3-f401a790c156",
+            "title": "",
+            "position": 1,
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "track-count": 4,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group",
+                      "country": "GB"
+                    }
+                  }
+                ],
+                "id": "b5e9d518-e41e-4ef2-be7c-04a098b829f5",
+                "number": "A2",
+                "title": "Brimful of Asha (Norman Cook remix single version)",
+                "position": 2,
+                "length": 243000
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "disambiguation": "",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Cornershop",
+              "artist": {
+                "country": "GB",
+                "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                "type": "Group",
+                "sort-name": "Cornershop",
+                "disambiguation": "",
+                "name": "Cornershop",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "id": "0f033a8e-626f-391e-a861-880a0a8023f5",
+          "secondary-types": [],
+          "primary-type": "Single",
+          "tags": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "title": "Brimful of Asha",
+          "secondary-type-ids": [],
+          "first-release-date": "1997-08-18"
+        },
+        "packaging-id": null,
+        "disambiguation": ""
+      },
+      {
+        "status": "Official",
+        "packaging": "Cardboard/Paper Sleeve",
+        "title": "Brimful of Asha",
+        "date": "1998-02-16",
+        "release-events": [
+          {
+            "date": "1998-02-16",
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "disambiguation": "",
+              "sort-name": "United Kingdom"
+            }
+          }
+        ],
+        "barcode": null,
+        "tags": [
+          {
+            "count": 1,
+            "name": "indie rock"
+          }
+        ],
+        "id": "f5fe0103-14b5-4ff8-a7ec-bffbd13ae424",
+        "country": "GB",
+        "quality": "normal",
+        "media": [
+          {
+            "format-id": "1d5a48e4-e94a-36dc-84e2-0c5f9f880aa7",
+            "track-count": 2,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53"
+                    }
+                  }
+                ],
+                "number": "B",
+                "id": "9be06bcd-3f8b-41c6-8faa-25a102ab7296",
+                "length": 241000,
+                "title": "Brimful of Asha (Norman Cook remix single version)",
+                "position": 2
+              }
+            ],
+            "track-offset": 1,
+            "format": "7\" Vinyl",
+            "id": "a6ee185b-2888-3f4a-8263-f915d877cc30",
+            "title": "",
+            "position": 1
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [
+          {
+            "name": "indie rock",
+            "id": "ccd19ebf-052c-4afe-8ad9-fbb0a73f94a7",
+            "disambiguation": "",
+            "count": 1
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Cornershop",
+            "artist": {
+              "type": "Group",
+              "id": "92046be7-0927-4835-a4ed-a90416747d53",
+              "country": "GB",
+              "name": "Cornershop",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "name": "asian",
+                  "count": 1
+                },
+                {
+                  "name": "brit pop",
+                  "count": 1
+                },
+                {
+                  "name": "british",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "british asian"
+                },
+                {
+                  "name": "dance",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "name": "indian",
+                  "count": 1
+                },
+                {
+                  "name": "indie",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "rock and indie"
+                },
+                {
+                  "count": 1,
+                  "name": "uk"
+                }
+              ],
+              "genres": [
+                {
+                  "name": "dance",
+                  "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "disambiguation": "",
+              "sort-name": "Cornershop"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "disambiguation": "",
+        "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+        "release-group": {
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "tags": [],
+          "primary-type": "Single",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "first-release-date": "1997-08-18",
+          "title": "Brimful of Asha",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Cornershop",
+              "artist": {
+                "disambiguation": "",
+                "sort-name": "Cornershop",
+                "name": "Cornershop",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "country": "GB",
+                "type": "Group",
+                "id": "92046be7-0927-4835-a4ed-a90416747d53"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "disambiguation": "",
+          "id": "0f033a8e-626f-391e-a861-880a0a8023f5"
+        }
+      },
+      {
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "title": "New Hits 98",
+        "date": "1998-03-23",
+        "barcode": "5099748993120",
+        "release-events": [
+          {
+            "date": "1998-03-23",
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "sort-name": "United Kingdom",
+              "disambiguation": ""
+            }
+          }
+        ],
+        "tags": [],
+        "id": "4425d932-1304-4999-ba77-2aced8a91b7e",
+        "quality": "normal",
+        "country": "GB",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "id": "24e1483c-a80b-310b-a06c-bacee03fc446",
+            "track-offset": 1,
+            "format": "CD",
+            "position": 1,
+            "title": "",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "country": "GB",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group"
+                    }
+                  }
+                ],
+                "number": "2",
+                "id": "b9eaecc9-71e5-378f-af5c-e9319ed3e2a3",
+                "title": "Brimful of Asha (Norman Cook remix)",
+                "position": 2,
+                "length": 240160
+              }
+            ],
+            "track-count": 20
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null,
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist"
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null
+              }
+            }
+          ],
+          "genres": [],
+          "id": "6a04eef2-e285-3900-9ea5-3611103d40ce",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "title": "New Hits 98",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "1998-03-23"
+        }
+      },
+      {
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "date": "1998-03-25",
+        "title": "Absolute Music 27",
+        "tags": [],
+        "barcode": "724349483125",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "Sweden",
+              "disambiguation": "",
+              "name": "Sweden",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SE"
+              ],
+              "type": null,
+              "id": "23d10872-f5ae-3f0c-bf55-332788a16ecb"
+            },
+            "date": "1998-03-25"
+          }
+        ],
+        "id": "30b3a88b-f53f-40a4-b672-5c1c6cf2e97e",
+        "quality": "normal",
+        "country": "SE",
+        "text-representation": {
+          "script": "Latn",
+          "language": "mul"
+        },
+        "artist-credit": [
+          {
+            "artist": {
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "genres": [],
+              "country": null,
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+            },
+            "joinphrase": "",
+            "name": "Various Artists"
+          }
+        ],
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format": "CD",
+            "track-offset": 10,
+            "id": "76c9c0f8-4b42-3f7a-8514-e724b1a1bb19",
+            "position": 1,
+            "title": "",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 18,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "artist": {
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        }
+                      ],
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "name": "rock and indie",
+                          "count": 1
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group",
+                      "country": "GB"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "number": "11",
+                "id": "556dd487-966c-30c5-a2dc-9cbfce3c6d5e",
+                "position": 11,
+                "title": "Brimful of Asha (Norman Cook remix)",
+                "length": 241000
+              }
+            ]
+          }
+        ],
+        "release-group": {
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "1998-03-25",
+          "title": "Absolute Music 27",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "6a996881-a4e6-370a-8b54-6715e569660f",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null,
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist"
+              }
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": ""
+      },
+      {
+        "barcode": null,
+        "release-events": [
+          {
+            "area": {
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type": null,
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "disambiguation": "",
+              "sort-name": "United Kingdom"
+            },
+            "date": "1998-04-06"
+          }
+        ],
+        "tags": [],
+        "status": "Official",
+        "packaging": null,
+        "title": "Now That’s What I Call Music! 39",
+        "date": "1998-04-06",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "length": 240106,
+                "title": "Brimful of Asha (Norman Cook remix)",
+                "position": 3,
+                "number": "3",
+                "id": "f3c202c2-ec07-39fb-b0aa-9b20860ac8e7",
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "artist": {
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        }
+                      ],
+                      "disambiguation": "",
+                      "sort-name": "Cornershop",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "country": "GB"
+                    },
+                    "joinphrase": ""
+                  }
+                ]
+              }
+            ],
+            "track-count": 22,
+            "format-id": "f5e6e254-8f39-331c-936b-9c69d686dc47",
+            "title": "",
+            "position": 2,
+            "id": "9d92b9f9-32bc-3072-bd4b-12bdeb3afcbc",
+            "format": "Cassette",
+            "track-offset": 2
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "country": null,
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "genres": []
+            },
+            "joinphrase": ""
+          }
+        ],
+        "genres": [],
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "title": "Now That’s What I Call Music! 39",
+          "first-release-date": "1998-04-06",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "id": "b9e4e157-6ee3-356c-8033-411e8e684042",
+          "disambiguation": "UK",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": []
+        },
+        "id": "9b5d13ee-8ce2-3b0a-b663-015bf65a3228",
+        "quality": "normal",
+        "country": "GB"
+      },
+      {
+        "country": "GB",
+        "quality": "normal",
+        "id": "42f3be94-d31b-4af2-8f06-6c1ab711da68",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "id": "b9e4e157-6ee3-356c-8033-411e8e684042",
+          "disambiguation": "UK",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists"
+              }
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "title": "Now That’s What I Call Music! 39",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "1998-04-06",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+        },
+        "media": [
+          {
+            "track-count": 22,
+            "tracks": [
+              {
+                "title": "Brimful of Asha (Norman Cook remix)",
+                "position": 3,
+                "length": 240106,
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "artist": {
+                      "disambiguation": "",
+                      "sort-name": "Cornershop",
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "asian"
+                        },
+                        {
+                          "name": "brit pop",
+                          "count": 1
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33"
+                        }
+                      ],
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "number": "3",
+                "id": "742e4311-ae9f-3e50-a643-0c048effedfb"
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "position": 2,
+            "title": "",
+            "format": "CD",
+            "track-offset": 2,
+            "id": "57e8ac71-b8f0-3768-9000-69f4da756108"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null,
+              "genres": [],
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists"
+            }
+          }
+        ],
+        "title": "Now That’s What I Call Music! 39",
+        "date": "1998-04-06",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "release-events": [
+          {
+            "date": "1998-04-06",
+            "area": {
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "sort-name": "United Kingdom",
+              "disambiguation": ""
+            }
+          }
+        ],
+        "barcode": "0724349468726",
+        "tags": []
+      },
+      {
+        "quality": "normal",
+        "country": "XE",
+        "id": "cbdd3c60-fd74-4552-8f8e-7578e3276d7f",
+        "release-group": {
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "1998-04-06",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "The Best Anthems… Ever! Volume 2",
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "id": "6fb92296-c773-3a50-a8e3-817bc874cab8"
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "genres": [],
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "title": "",
+            "position": 1,
+            "id": "f011e5e7-672d-3fa2-b717-3ca4f6976661",
+            "format": "CD",
+            "track-offset": 2,
+            "tracks": [
+              {
+                "number": "3",
+                "id": "7ae11fc1-c324-3838-9502-4f2c53f6f071",
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "artist": {
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33"
+                        }
+                      ],
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Brimful of Asha (Norman Cook remix)",
+                "length": 239493,
+                "position": 3
+              }
+            ],
+            "track-count": 20,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "date": "1998-04-06",
+        "title": "The Best Anthems… Ever! Volume 2",
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "tags": [],
+        "barcode": "724384573027",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "Europe",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Europe",
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "type": null,
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a"
+            },
+            "date": "1998-04-06"
+          },
+          {
+            "date": "1998-04-06",
+            "area": {
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type-id": null,
+              "name": "United Kingdom",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bc5af819-a736-4a25-af03-d2006a5aeab9",
+        "quality": "normal",
+        "country": "GB",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "title": "",
+            "position": 1,
+            "format": "CD",
+            "track-offset": 7,
+            "id": "6a5c3f7e-80f9-39f9-95b5-c3ed7a63b1fc",
+            "track-count": 20,
+            "tracks": [
+              {
+                "number": "8",
+                "id": "1cbbb5c2-47c8-3524-a8f5-a349f0cb8aa6",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "name": "Cornershop",
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53"
+                    },
+                    "name": "Cornershop"
+                  }
+                ],
+                "title": "Brimful of Asha",
+                "length": 239533,
+                "position": 8
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "artist": {
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other"
+            },
+            "joinphrase": "",
+            "name": "Various Artists"
+          }
+        ],
+        "genres": [],
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "1998-04-13",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Friday Night Fever",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "id": "3a4185de-2fea-3e88-989b-f9b5d899373a"
+        },
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "title": "Friday Night Fever",
+        "date": "1998-04-13",
+        "barcode": "731455573329",
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type-id": null,
+              "name": "United Kingdom",
+              "sort-name": "United Kingdom",
+              "disambiguation": ""
+            },
+            "date": "1998-04-13"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "title": "Clubbin': Dance for the Club Generation",
+        "date": "1998-05-04",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "barcode": "095483642625",
+        "release-events": [
+          {
+            "area": {
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type": null,
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type-id": null,
+              "name": "United Kingdom"
+            },
+            "date": "1998-05-04"
+          }
+        ],
+        "tags": [],
+        "quality": "normal",
+        "country": "GB",
+        "id": "68f5425d-20c1-4466-a6f8-1526b3510775",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "title": "Clubbin': Dance for the Club Generation",
+          "first-release-date": "1998-05-04",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "id": "d100b57d-6d6a-32d5-8606-ef087deecea2",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "genres": []
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "position": 10,
+                "title": "Brimful of Asha (The Norman Cook remix single version)",
+                "length": 239333,
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "disambiguation": "",
+                      "sort-name": "Cornershop",
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "asian"
+                        },
+                        {
+                          "name": "brit pop",
+                          "count": 1
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "name": "rock and indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        }
+                      ]
+                    },
+                    "joinphrase": "",
+                    "name": "Cornershop"
+                  }
+                ],
+                "number": "10",
+                "id": "b52aaeae-b87c-343d-b31e-b48d3e71ebaa"
+              }
+            ],
+            "track-count": 20,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "id": "2f56a82a-a9f8-3677-ae40-a19d6d8eb6da",
+            "track-offset": 9,
+            "format": "CD"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "artist": {
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "name": "Various Artists",
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other"
+            },
+            "joinphrase": "",
+            "name": "Various Artists"
+          }
+        ],
+        "genres": []
+      },
+      {
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "date": "1998-05-04",
+        "title": "Top of the Pops 1998, Volume 1",
+        "tags": [],
+        "barcode": "731455571325",
+        "release-events": [
+          {
+            "date": "1998-05-04",
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "United Kingdom",
+              "iso-3166-1-codes": [
+                "GB"
+              ]
+            }
+          }
+        ],
+        "id": "09860678-82ef-4d24-8ebf-728e7f960d51",
+        "country": "GB",
+        "quality": "normal",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ]
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "media": [
+          {
+            "id": "46d8310a-5b74-33ec-a648-c46c5652ea86",
+            "format": "CD",
+            "track-offset": 18,
+            "position": 1,
+            "title": "",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "length": 243666,
+                "title": "Brimful of Asha (Norman Cook remix)",
+                "position": 19,
+                "number": "19",
+                "id": "f8ccce5e-1903-3cc9-aab5-84b97c57346b",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group",
+                      "country": "GB",
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "name": "indian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "disambiguation": "",
+                      "sort-name": "Cornershop"
+                    },
+                    "joinphrase": "",
+                    "name": "Cornershop"
+                  }
+                ]
+              }
+            ],
+            "track-count": 20
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "id": "adb6f43f-61c4-333f-8cf5-ec4b8fa1ae3d",
+          "genres": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "1998-05-04",
+          "title": "Top of the Pops 1998, Volume 1",
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ]
+        },
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a"
+      },
+      {
+        "status": "Official",
+        "packaging": "Digipak",
+        "title": "Brimful of Asha",
+        "date": "1998-05-18",
+        "barcode": "724388525428",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "Netherlands",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "NL"
+              ],
+              "type-id": null,
+              "name": "Netherlands",
+              "type": null,
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7"
+            },
+            "date": "1998-05-18"
+          }
+        ],
+        "tags": [
+          {
+            "name": "big beat",
+            "count": 1
+          }
+        ],
+        "id": "f3f5aa2a-1f28-49b9-bf1c-1b6a02d857df",
+        "quality": "normal",
+        "country": "NL",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format": "CD",
+            "track-offset": 1,
+            "id": "3cea00d3-175d-3950-9ada-11afb5a9157c",
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 4,
+            "tracks": [
+              {
+                "title": "Brimful of Asha (Norman Cook remix single version)",
+                "length": 243666,
+                "position": 2,
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53"
+                    },
+                    "joinphrase": "",
+                    "name": "Cornershop"
+                  }
+                ],
+                "number": "2",
+                "id": "408dde29-7844-4ac9-b91a-f81a94cd19f9"
+              }
+            ]
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Cornershop",
+            "joinphrase": "",
+            "artist": {
+              "disambiguation": "",
+              "sort-name": "Cornershop",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Cornershop",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "asian"
+                },
+                {
+                  "name": "brit pop",
+                  "count": 1
+                },
+                {
+                  "name": "british",
+                  "count": 2
+                },
+                {
+                  "name": "british asian",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "dance"
+                },
+                {
+                  "name": "english",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "indian"
+                },
+                {
+                  "count": 1,
+                  "name": "indie"
+                },
+                {
+                  "name": "rock and indie",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "uk"
+                }
+              ],
+              "genres": [
+                {
+                  "name": "dance",
+                  "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "country": "GB",
+              "type": "Group",
+              "id": "92046be7-0927-4835-a4ed-a90416747d53"
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [
+          {
+            "disambiguation": "",
+            "count": 1,
+            "name": "big beat",
+            "id": "aac07ae0-8acf-4249-b5c0-2762b53947a2"
+          }
+        ],
+        "disambiguation": "",
+        "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+        "release-group": {
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Cornershop",
+              "joinphrase": "",
+              "artist": {
+                "country": "GB",
+                "type": "Group",
+                "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                "sort-name": "Cornershop",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Cornershop"
+              }
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "id": "0f033a8e-626f-391e-a861-880a0a8023f5",
+          "primary-type": "Single",
+          "tags": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "first-release-date": "1997-08-18",
+          "title": "Brimful of Asha"
+        }
+      },
+      {
+        "release-group": {
+          "id": "ad136439-91bd-4dcf-ba25-8a702a6550f2",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1998-05-22",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Ronny's Pop Show 31",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [
+            "Compilation"
+          ]
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "genres": [],
+        "artist-credit": [
+          {
+            "artist": {
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "name": "Various Artists",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null
+            },
+            "joinphrase": "",
+            "name": "Various Artists"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "mul"
+        },
+        "media": [
+          {
+            "track-offset": 19,
+            "format": "CD",
+            "id": "ca3b3b7d-3758-30fc-afee-0f99af7af213",
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 20,
+            "tracks": [
+              {
+                "id": "fbb681aa-8a05-49aa-96a6-1eaa3b59132a",
+                "number": "20",
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "name": "indian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "name": "Cornershop",
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53"
+                    }
+                  }
+                ],
+                "title": "Brimful of Asha (The Norman Cook remix single version)",
+                "position": 20,
+                "length": 240160
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "country": "DE",
+        "quality": "normal",
+        "id": "f16bb0c8-40b7-453d-aae8-6b8436d9b4dc",
+        "tags": [
+          {
+            "count": 1,
+            "name": "djcjnr #01813#_#01814#"
+          }
+        ],
+        "barcode": "5099748998828",
+        "release-events": [
+          {
+            "date": "1998-05-22",
+            "area": {
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Germany",
+              "name": "Germany",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ]
+            }
+          }
+        ],
+        "date": "1998-05-22",
+        "title": "Ronny's Pop Show 31",
+        "packaging": "Jewel Case",
+        "status": "Official"
+      },
+      {
+        "title": "Massive Dance: 98, Volume 2",
+        "date": "1998-05-25",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "release-events": [
+          {
+            "date": "1998-05-25",
+            "area": {
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            }
+          }
+        ],
+        "barcode": "731456506326",
+        "tags": [],
+        "country": "GB",
+        "quality": "normal",
+        "id": "53def3d6-6abc-4f3b-aab6-8f9401d2f272",
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Massive Dance: 98, Volume 2",
+          "first-release-date": "1998-05-25",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "disambiguation": "",
+          "genres": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "id": "f502d1b2-5c00-3327-98c3-174f82f99c1a"
+        },
+        "media": [
+          {
+            "track-count": 20,
+            "tracks": [
+              {
+                "length": 240000,
+                "title": "Brimful of Asha (Norman Cook remix single version)",
+                "position": 17,
+                "number": "17",
+                "id": "f70ea547-5e8c-3dce-b259-ca4af2abcf64",
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "artist": {
+                      "disambiguation": "",
+                      "sort-name": "Cornershop",
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "name": "rock and indie",
+                          "count": 1
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance",
+                          "disambiguation": "",
+                          "count": 1
+                        }
+                      ],
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53"
+                    },
+                    "joinphrase": ""
+                  }
+                ]
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 2,
+            "track-offset": 16,
+            "format": "CD",
+            "id": "3c015729-5665-3176-a02d-08d9a287ec8b"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        }
+      },
+      {
+        "tags": [],
+        "barcode": "724384644024",
+        "release-events": [
+          {
+            "date": "1998-06-19",
+            "area": {
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "disambiguation": "",
+              "sort-name": "United Kingdom"
+            }
+          }
+        ],
+        "date": "1998-06-19",
+        "title": "The Best Chart Hits in the World… Ever!",
+        "packaging": null,
+        "status": "Official",
+        "release-group": {
+          "first-release-date": "1998-06-19",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "The Best Chart Hits in the World… Ever!",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "4cbf403e-4e3d-3000-b245-5bfebdfdd864",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other"
+              }
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "disambiguation": "",
+        "packaging-id": null,
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "artist": {
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ]
+            },
+            "joinphrase": "",
+            "name": "Various Artists"
+          }
+        ],
+        "media": [
+          {
+            "tracks": [
+              {
+                "id": "2057c5d2-1e84-3891-b6c8-fe14393722aa",
+                "number": "18",
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group",
+                      "country": "GB",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "brit pop",
+                          "count": 1
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "name": "indian",
+                          "count": 1
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "name": "Cornershop",
+                      "sort-name": "Cornershop",
+                      "disambiguation": ""
+                    }
+                  }
+                ],
+                "position": 18,
+                "title": "Brimful of Asha (Norman Cook remix)",
+                "length": 240706
+              }
+            ],
+            "track-count": 20,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "position": 2,
+            "title": "",
+            "id": "401a22a4-f7ab-3c5e-9f32-02cbd807bcc1",
+            "track-offset": 17,
+            "format": "CD"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "country": "GB",
+        "quality": "normal",
+        "id": "6d15afa8-ee09-4468-b5cf-dd92d528fb5f"
+      },
+      {
+        "country": "GB",
+        "quality": "normal",
+        "id": "efecc24b-195e-49f2-963d-84ec9ea5b167",
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "1998-06-29",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Live 4 Ever",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "id": "223171e2-9271-30b0-b5af-2b6d2fba7eb1"
+        },
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "brit pop",
+                          "count": 1
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "id": "4bff6663-eabb-3d48-8ba1-ede17aa8149b",
+                "number": "3",
+                "position": 3,
+                "title": "Brimful of Asha",
+                "length": 239373
+              }
+            ],
+            "track-count": 20,
+            "id": "76e2a214-3358-35f4-bf1c-034eccbc3ad7",
+            "track-offset": 2,
+            "format": "CD",
+            "position": 2,
+            "title": ""
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ]
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "title": "Live 4 Ever",
+        "date": "1998-06-29",
+        "status": "Official",
+        "packaging": null,
+        "barcode": "095483643721",
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ]
+            },
+            "date": "1998-06-29"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "tags": [],
+        "barcode": null,
+        "release-events": [
+          {
+            "area": {
+              "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+              "type": null,
+              "sort-name": "Australia",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Australia",
+              "iso-3166-1-codes": [
+                "AU"
+              ]
+            },
+            "date": "1998-07-06"
+          }
+        ],
+        "packaging": null,
+        "status": "Official",
+        "date": "1998-07-06",
+        "title": "Hit Machine 20",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null
+            },
+            "joinphrase": ""
+          }
+        ],
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "length": 242000,
+                "title": "Brimful of Asha",
+                "position": 17,
+                "number": "17",
+                "id": "aff8f285-3ca7-3b3b-b6e7-ae7355280b54",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "country": "GB",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group",
+                      "disambiguation": "",
+                      "sort-name": "Cornershop",
+                      "genres": [
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "name": "rock and indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ]
+                    },
+                    "joinphrase": "",
+                    "name": "Cornershop"
+                  }
+                ]
+              }
+            ],
+            "track-count": 20,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "id": "64516324-a6c9-3015-aa02-3eb26f8fc885",
+            "track-offset": 16,
+            "format": "CD"
+          }
+        ],
+        "release-group": {
+          "genres": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null,
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist"
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "id": "e45f9c95-1c88-3b36-9e26-66bce545ace5",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "1998-07-06",
+          "title": "Hit Machine 20"
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "id": "7cc86306-2dc1-4c27-add3-6e9b10880baa",
+        "quality": "normal",
+        "country": "AU"
+      },
+      {
+        "id": "61323d4e-e57a-40e9-a228-6a3504300a44",
+        "country": "GB",
+        "quality": "normal",
+        "media": [
+          {
+            "id": "80f7fdeb-3e1e-3e22-b0c8-f8dcee00d99c",
+            "format": "CD",
+            "track-offset": 11,
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "length": 240266,
+                "title": "Brimful of Asha (Norman Cook remix)",
+                "position": 12,
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "country": "GB",
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "brit pop",
+                          "count": 1
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "name": "indian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "disambiguation": "",
+                          "count": 1
+                        }
+                      ],
+                      "disambiguation": "",
+                      "sort-name": "Cornershop"
+                    },
+                    "joinphrase": "",
+                    "name": "Cornershop"
+                  }
+                ],
+                "number": "12",
+                "id": "eff443b2-941b-3cfc-9d76-26c8b1f3f739"
+              }
+            ],
+            "track-count": 22
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [
+          {
+            "name": "dance",
+            "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+            "count": 1,
+            "disambiguation": ""
+          }
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "genres": []
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "1998-07-06",
+          "title": "The Best Dance Album in the World… Ever! Part 8",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "52bdbf86-9669-363e-90c9-64f1d4bee3e6",
+          "genres": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86"
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "disambiguation": ""
+        },
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "title": "The Best Dance Album in the World… Ever! Part 8",
+        "date": "1998-07-06",
+        "release-events": [
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type-id": null,
+              "name": "United Kingdom",
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            },
+            "date": "1998-07-06"
+          }
+        ],
+        "barcode": "724384617622",
+        "tags": [
+          {
+            "count": 1,
+            "name": "dance"
+          }
+        ]
+      },
+      {
+        "media": [
+          {
+            "title": "",
+            "position": 2,
+            "id": "0fd51a0c-0ebc-3d64-9b03-421f6fdcb920",
+            "track-offset": 7,
+            "format": "CD",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "disambiguation": "",
+                      "sort-name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "name": "Cornershop",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        }
+                      ]
+                    },
+                    "joinphrase": "",
+                    "name": "Cornershop"
+                  }
+                ],
+                "number": "8",
+                "id": "17fc0615-a4b1-3266-83f2-ce882cb212b4",
+                "position": 8,
+                "title": "Brimful of Asha",
+                "length": 244173
+              }
+            ],
+            "track-count": 16,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "genres": [],
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Triple J: Hottest 100, Volume 5",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "1998-07-17",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              }
+            }
+          ],
+          "genres": [],
+          "id": "6edd1b32-d020-3f63-b340-16963b1f989e"
+        },
+        "id": "c0d09141-c3a7-4d30-a17c-ddb497c7dd6b",
+        "country": "AU",
+        "quality": "normal",
+        "barcode": "724349604827",
+        "release-events": [
+          {
+            "area": {
+              "name": "Australia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AU"
+              ],
+              "disambiguation": "",
+              "sort-name": "Australia",
+              "type": null,
+              "id": "106e0bec-b638-3b37-b731-f53d507dc00e"
+            },
+            "date": "1998-07-17"
+          }
+        ],
+        "tags": [],
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "title": "Triple J: Hottest 100, Volume 5",
+        "date": "1998-07-17"
+      },
+      {
+        "barcode": "",
+        "release-events": [
+          {
+            "date": "1998-07",
+            "area": {
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom"
+            }
+          }
+        ],
+        "tags": [],
+        "title": "Q: All the Best Music From the Best Bands of… Summer Festivals ’98",
+        "date": "1998-07",
+        "status": "Promotion",
+        "packaging": "Jewel Case",
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "first-release-date": "1998-07",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Q: All the Best Music From the Best Bands of… Summer Festivals ’98",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "f079b821-4881-399b-8ebc-f3919ac42fa8",
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other"
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "media": [
+          {
+            "id": "2480ca08-9433-3cbc-94de-c4ea7d2f3ee6",
+            "track-offset": 9,
+            "format": "CD",
+            "position": 1,
+            "title": "",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "number": "10",
+                "id": "ede697fa-466b-3f90-b729-e7e0c658bb44",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "disambiguation": "",
+                      "sort-name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "name": "Cornershop",
+                      "genres": [
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        }
+                      ],
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53"
+                    },
+                    "name": "Cornershop"
+                  }
+                ],
+                "length": 242173,
+                "title": "Brimful of Asha",
+                "position": 10
+              }
+            ],
+            "track-count": 13
+          }
+        ],
+        "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null
+            },
+            "joinphrase": ""
+          }
+        ],
+        "country": "GB",
+        "quality": "normal",
+        "id": "7db06d65-334f-441a-8029-40956d217050"
+      },
+      {
+        "country": "GB",
+        "quality": "normal",
+        "id": "08d244c7-c970-402a-82ee-44d9f13dd392",
+        "release-group": {
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists"
+              }
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "id": "ab65c83b-3a3f-4b38-b499-34841ab311b3",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "1998-08-10",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Totally Wicked!"
+        },
+        "disambiguation": "",
+        "packaging-id": null,
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 21,
+            "tracks": [
+              {
+                "title": "Brimful of Asha",
+                "position": 12,
+                "length": 239333,
+                "artist-credit": [
+                  {
+                    "name": "Cornershop",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "genres": [
+                        {
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance",
+                          "disambiguation": "",
+                          "count": 1
+                        }
+                      ],
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "brit pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indian"
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "name": "rock and indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "country": "GB",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group"
+                    }
+                  }
+                ],
+                "id": "36a3eac7-fa7e-333d-ad71-c584fc4a3216",
+                "number": "12"
+              }
+            ],
+            "format": "CD",
+            "track-offset": 11,
+            "id": "6f3d2f67-438b-37b9-b6a7-8af58155f2fd",
+            "title": "",
+            "position": 2
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "date": "1998-08-10",
+        "title": "Totally Wicked!",
+        "packaging": null,
+        "status": "Official",
+        "tags": [],
+        "barcode": "639842463522",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            },
+            "date": "1998-08-10"
+          }
+        ]
+      },
+      {
+        "id": "099b7f02-bf97-4435-b693-4b5d2e45ef2d",
+        "country": "NL",
+        "quality": "normal",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "sort-name": "Cornershop",
+                      "disambiguation": "",
+                      "name": "Cornershop",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "brit pop",
+                          "count": 1
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "count": 1,
+                          "name": "british asian"
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "name": "indian",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "indie"
+                        },
+                        {
+                          "count": 1,
+                          "name": "rock and indie"
+                        },
+                        {
+                          "name": "uk",
+                          "count": 1
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33"
+                        }
+                      ]
+                    },
+                    "joinphrase": "",
+                    "name": "Cornershop"
+                  }
+                ],
+                "id": "da7d800c-413f-3daf-8236-9729bad6aa09",
+                "number": "1",
+                "position": 1,
+                "title": "Brimful of Asha (Fatboy Slim remix)",
+                "length": 239893
+              }
+            ],
+            "track-count": 20,
+            "id": "47543317-5bb0-38bf-a0a8-1e8ceb976ef6",
+            "track-offset": 0,
+            "format": "CD",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "id": "aa5927a8-ca2e-3713-89af-08c1314b71ba",
+          "genres": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists"
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "first-release-date": "1998-08",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "A Campingflight to Lowlands Paradise 1998",
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ]
+        },
+        "disambiguation": "",
+        "packaging-id": null,
+        "packaging": null,
+        "status": "Official",
+        "date": "1998-08",
+        "title": "A Campingflight to Lowlands Paradise 1998",
+        "tags": [],
+        "barcode": null,
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "name": "Netherlands",
+              "iso-3166-1-codes": [
+                "NL"
+              ],
+              "sort-name": "Netherlands",
+              "disambiguation": "",
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+              "type": null
+            },
+            "date": "1998-08"
+          }
+        ]
+      },
+      {
+        "date": "1998-09-14",
+        "title": "Indie 2000, Volume 3",
+        "packaging": null,
+        "status": "Official",
+        "tags": [],
+        "release-events": [
+          {
+            "date": "1998-09-14",
+            "area": {
+              "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Australia",
+              "name": "Australia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AU"
+              ]
+            }
+          }
+        ],
+        "barcode": null,
+        "quality": "normal",
+        "country": "AU",
+        "id": "03ee621b-931a-4053-bad4-9061dc80fee9",
+        "release-group": {
+          "id": "a122203e-c9a9-3075-96fa-46f7b49d86bc",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "first-release-date": "1998-09-14",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Indie 2000, Volume 3",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "secondary-types": [
+            "Compilation"
+          ]
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "country": null,
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "genres": []
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 18,
+            "tracks": [
+              {
+                "position": 8,
+                "title": "Brimful of Asha",
+                "length": 241826,
+                "id": "de31ea21-780a-3b67-a254-2a482f8b8700",
+                "number": "8",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "id": "92046be7-0927-4835-a4ed-a90416747d53",
+                      "type": "Group",
+                      "country": "GB",
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "tags": [
+                        {
+                          "name": "asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "brit pop",
+                          "count": 1
+                        },
+                        {
+                          "count": 2,
+                          "name": "british"
+                        },
+                        {
+                          "name": "british asian",
+                          "count": 1
+                        },
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "name": "indian",
+                          "count": 1
+                        },
+                        {
+                          "name": "indie",
+                          "count": 1
+                        },
+                        {
+                          "name": "rock and indie",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "uk"
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Cornershop",
+                      "disambiguation": "",
+                      "sort-name": "Cornershop"
+                    },
+                    "name": "Cornershop"
+                  }
+                ]
+              }
+            ],
+            "format": "CD",
+            "track-offset": 7,
+            "id": "e62516c0-a9f9-3607-9b4d-4cdf1bd60567",
+            "title": "",
+            "position": 1
+          }
+        ]
+      }
+    ],
+    "genres": [
+      {
+        "id": "ceeaa283-5d7b-4202-8d1d-e25d116b2a18",
+        "name": "alternative rock",
+        "count": 1,
+        "disambiguation": ""
+      },
+      {
+        "name": "big beat",
+        "id": "aac07ae0-8acf-4249-b5c0-2762b53947a2",
+        "count": 5,
+        "disambiguation": ""
+      },
+      {
+        "disambiguation": "",
+        "count": 1,
+        "name": "breakbeat",
+        "id": "3b8f3f65-6caa-47c8-b076-fa59dfb69c43"
+      },
+      {
+        "disambiguation": "",
+        "count": 1,
+        "name": "britpop",
+        "id": "f1c9b874-7ef2-4e79-9419-c0bcb5f33a30"
+      },
+      {
+        "name": "club",
+        "id": "bab69b07-8bb9-4415-b666-c37609cef80b",
+        "disambiguation": "",
+        "count": 2
+      },
+      {
+        "count": 2,
+        "disambiguation": "",
+        "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+        "name": "dance"
+      },
+      {
+        "id": "60f00d05-df4d-496e-8f5a-c45c03a56ad4",
+        "name": "electro",
+        "count": 1,
+        "disambiguation": ""
+      },
+      {
+        "count": 3,
+        "disambiguation": "",
+        "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+        "name": "electronic"
+      },
+      {
+        "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c",
+        "name": "hip hop",
+        "disambiguation": "",
+        "count": 1
+      },
+      {
+        "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+        "name": "house",
+        "count": 1,
+        "disambiguation": ""
+      },
+      {
+        "id": "f390be72-360b-41bb-a310-6a2e638779d2",
+        "name": "indie pop",
+        "count": 1,
+        "disambiguation": ""
+      },
+      {
+        "name": "indie rock",
+        "id": "ccd19ebf-052c-4afe-8ad9-fbb0a73f94a7",
+        "disambiguation": "",
+        "count": 1
+      },
+      {
+        "name": "raga rock",
+        "id": "783463fe-66a5-4147-8fe9-f175dbfbaa54",
+        "disambiguation": "",
+        "count": 2
+      },
+      {
+        "count": 1,
+        "disambiguation": "",
+        "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+        "name": "rock"
+      },
+      {
+        "count": 1,
+        "disambiguation": "",
+        "id": "2afc2320-384f-43a4-a71e-1b763c485045",
+        "name": "trance"
+      }
+    ],
+    "relations": [
+      {
+        "source-credit": "",
+        "attribute-values": {},
+        "type": "performance",
+        "attribute-ids": {},
+        "work": {
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+          "languages": [
+            "eng"
+          ],
+          "iswcs": [],
+          "disambiguation": "",
+          "language": "eng",
+          "id": "21313724-0605-30de-916b-d3a20848a4d3",
+          "type": "Song",
+          "attributes": [],
+          "title": "Brimful of Asha"
+        },
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "end": null,
+        "attributes": [],
+        "ended": false,
+        "direction": "forward",
+        "target-type": "work",
+        "target-credit": "",
+        "begin": null
+      }
+    ],
+    "disambiguation": "",
+    "first-release-date": "1997",
+    "title": "Brimful of Asha (Norman Cook remix single version)",
+    "tags": [
+      {
+        "name": "ad",
+        "count": 1
+      },
+      {
+        "count": 1,
+        "name": "alternative rock"
+      },
+      {
+        "name": "big beat",
+        "count": 5
+      },
+      {
+        "count": 1,
+        "name": "breakbeat"
+      },
+      {
+        "name": "britpop",
+        "count": 1
+      },
+      {
+        "name": "club",
+        "count": 2
+      },
+      {
+        "count": 2,
+        "name": "dance"
+      },
+      {
+        "name": "electro",
+        "count": 1
+      },
+      {
+        "count": 3,
+        "name": "electronic"
+      },
+      {
+        "name": "electronica fusion",
+        "count": 1
+      },
+      {
+        "count": 1,
+        "name": "hip hop"
+      },
+      {
+        "name": "house",
+        "count": 1
+      },
+      {
+        "name": "indie",
+        "count": 1
+      },
+      {
+        "count": 1,
+        "name": "indie pop"
+      },
+      {
+        "count": 1,
+        "name": "indie rock"
+      },
+      {
+        "count": 2,
+        "name": "raga rock"
+      },
+      {
+        "count": 1,
+        "name": "rock"
+      },
+      {
+        "count": 1,
+        "name": "soundtrack"
+      },
+      {
+        "count": 1,
+        "name": "trance"
+      }
+    ],
+    "video": false
+  }
+}

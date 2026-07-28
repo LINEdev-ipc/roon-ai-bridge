@@ -1,0 +1,416 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/eec58475-5fb7-47c2-b68a-2210c60edcae?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:39:25.897Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "genres": [],
+    "tags": [],
+    "relations": [
+      {
+        "attribute-values": {},
+        "target-credit": "",
+        "attributes": [],
+        "direction": "forward",
+        "work": {
+          "title": "Line of Sight",
+          "attributes": [],
+          "language": "eng",
+          "languages": [
+            "eng"
+          ],
+          "id": "a481e3b2-1ad3-4b83-9390-ddf66cbc0f80",
+          "type": "Song",
+          "iswcs": [],
+          "disambiguation": "",
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6"
+        },
+        "source-credit": "",
+        "type": "performance",
+        "target-type": "work",
+        "ended": false,
+        "attribute-ids": {},
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "end": null,
+        "begin": null
+      }
+    ],
+    "id": "eec58475-5fb7-47c2-b68a-2210c60edcae",
+    "releases": [
+      {
+        "title": "A Moment Apart Remixes",
+        "release-group": {
+          "title": "A Moment Apart Remixes",
+          "secondary-type-ids": [
+            "0c60f497-ff81-3818-befd-abfc84a4858b"
+          ],
+          "secondary-types": [
+            "Remix"
+          ],
+          "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+          "disambiguation": "",
+          "releases": [],
+          "id": "20902ede-0230-4ad9-91d1-295d92e25a83",
+          "tags": [],
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "ODESZA",
+              "joinphrase": "",
+              "artist": {
+                "country": "US",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "ODESZA",
+                "name": "ODESZA",
+                "id": "2e222fce-02ae-4221-b1c6-3c3242b423b6",
+                "type": "Group"
+              }
+            }
+          ],
+          "primary-type": "EP",
+          "first-release-date": "2019-02-15"
+        },
+        "disambiguation": "",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "media": [
+          {
+            "id": "0e1442f9-b666-3fad-b470-0475a6eb9606",
+            "track-offset": 5,
+            "title": "",
+            "track-count": 6,
+            "format": "Digital Media",
+            "position": 1,
+            "tracks": [
+              {
+                "position": 6,
+                "id": "5f527773-fc16-42a3-a2be-f6ef13f3a52e",
+                "number": "6",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "sort-name": "ODESZA",
+                      "name": "ODESZA",
+                      "type": "Group",
+                      "id": "2e222fce-02ae-4221-b1c6-3c3242b423b6",
+                      "disambiguation": "",
+                      "country": "US",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+                    },
+                    "joinphrase": " feat. ",
+                    "name": "ODESZA"
+                  },
+                  {
+                    "joinphrase": " & ",
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "disambiguation": "Indie/Punk/Rock Artist from Stockport, Manchester",
+                      "country": "GB",
+                      "tags": [],
+                      "genres": [],
+                      "type": "Person",
+                      "id": "ec45d729-d459-45c7-89b3-22c4caa65ae7",
+                      "sort-name": "WYNNE",
+                      "name": "WYNNE"
+                    },
+                    "name": "WYNNE"
+                  },
+                  {
+                    "artist": {
+                      "tags": [],
+                      "genres": [],
+                      "id": "b37446a3-fbde-48c9-9aeb-c8de3d752040",
+                      "type": "Group",
+                      "sort-name": "Mansionair",
+                      "name": "Mansionair",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "disambiguation": "",
+                      "country": "AU"
+                    },
+                    "joinphrase": "",
+                    "name": "Mansionair"
+                  }
+                ],
+                "length": 232250,
+                "title": "Line of Sight (Chet Porter remix)"
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "release-events": [
+          {
+            "date": "2019-02-15",
+            "area": {
+              "type-id": null,
+              "disambiguation": "",
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "type": null,
+              "sort-name": "[Worldwide]",
+              "name": "[Worldwide]",
+              "iso-3166-1-codes": [
+                "XW"
+              ]
+            }
+          }
+        ],
+        "genres": [
+          {
+            "name": "ambient",
+            "disambiguation": "",
+            "count": 2,
+            "id": "608b0471-7531-4854-a348-e698c69cb699"
+          },
+          {
+            "disambiguation": "",
+            "name": "chillwave",
+            "count": 2,
+            "id": "18d52a87-bbbf-42f0-8338-189c8c314523"
+          },
+          {
+            "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+            "disambiguation": "",
+            "name": "electronic",
+            "count": 2
+          },
+          {
+            "id": "68c81274-5770-4e7b-a4bf-ab0d7d425d99",
+            "count": 2,
+            "name": "experimental",
+            "disambiguation": ""
+          },
+          {
+            "count": 2,
+            "name": "hip hop",
+            "disambiguation": "",
+            "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c"
+          }
+        ],
+        "tags": [
+          {
+            "name": "ambient",
+            "count": 2
+          },
+          {
+            "count": 2,
+            "name": "chillwave"
+          },
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "name": "experimental",
+            "count": 2
+          },
+          {
+            "count": 2,
+            "name": "hip hop"
+          },
+          {
+            "name": "seattle",
+            "count": 1
+          }
+        ],
+        "barcode": "5054429136777",
+        "date": "2019-02-15",
+        "id": "300d8d1d-da99-4eeb-ace6-ea79e33501e9",
+        "packaging": "None",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "status": "Official",
+        "quality": "normal",
+        "artist-credit": [
+          {
+            "artist": {
+              "disambiguation": "",
+              "country": "US",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "ODESZA",
+              "sort-name": "ODESZA",
+              "tags": [
+                {
+                  "count": 4,
+                  "name": "chillwave"
+                },
+                {
+                  "name": "electronic",
+                  "count": 4
+                },
+                {
+                  "count": 2,
+                  "name": "future bass"
+                },
+                {
+                  "name": "indietronica",
+                  "count": 1
+                },
+                {
+                  "name": "moment",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "progressive house"
+                }
+              ],
+              "genres": [
+                {
+                  "count": 4,
+                  "name": "chillwave",
+                  "disambiguation": "",
+                  "id": "18d52a87-bbbf-42f0-8338-189c8c314523"
+                },
+                {
+                  "count": 4,
+                  "disambiguation": "",
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                },
+                {
+                  "id": "e254f865-58ea-4483-9b2f-1bc65febcd71",
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "future bass"
+                },
+                {
+                  "id": "9e7ae1de-d5f2-46a5-b105-11c7367dc70d",
+                  "count": 1,
+                  "name": "indietronica",
+                  "disambiguation": ""
+                },
+                {
+                  "id": "70adb285-e1f7-458a-823f-5cbda5e291c4",
+                  "count": 1,
+                  "name": "progressive house",
+                  "disambiguation": ""
+                }
+              ],
+              "type": "Group",
+              "id": "2e222fce-02ae-4221-b1c6-3c3242b423b6"
+            },
+            "joinphrase": "",
+            "name": "ODESZA"
+          }
+        ],
+        "country": "XW"
+      }
+    ],
+    "video": false,
+    "first-release-date": "2019-02-15",
+    "artist-credit": [
+      {
+        "joinphrase": " feat. ",
+        "artist": {
+          "country": "US",
+          "disambiguation": "",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "sort-name": "ODESZA",
+          "name": "ODESZA",
+          "type": "Group",
+          "id": "2e222fce-02ae-4221-b1c6-3c3242b423b6",
+          "genres": [
+            {
+              "id": "18d52a87-bbbf-42f0-8338-189c8c314523",
+              "count": 4,
+              "name": "chillwave",
+              "disambiguation": ""
+            },
+            {
+              "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+              "count": 4,
+              "disambiguation": "",
+              "name": "electronic"
+            },
+            {
+              "id": "e254f865-58ea-4483-9b2f-1bc65febcd71",
+              "name": "future bass",
+              "disambiguation": "",
+              "count": 2
+            },
+            {
+              "id": "9e7ae1de-d5f2-46a5-b105-11c7367dc70d",
+              "count": 1,
+              "name": "indietronica",
+              "disambiguation": ""
+            },
+            {
+              "id": "70adb285-e1f7-458a-823f-5cbda5e291c4",
+              "count": 1,
+              "name": "progressive house",
+              "disambiguation": ""
+            }
+          ],
+          "tags": [
+            {
+              "count": 4,
+              "name": "chillwave"
+            },
+            {
+              "count": 4,
+              "name": "electronic"
+            },
+            {
+              "count": 2,
+              "name": "future bass"
+            },
+            {
+              "count": 1,
+              "name": "indietronica"
+            },
+            {
+              "count": 1,
+              "name": "moment"
+            },
+            {
+              "count": 1,
+              "name": "progressive house"
+            }
+          ]
+        },
+        "name": "ODESZA"
+      },
+      {
+        "artist": {
+          "disambiguation": "Indie/Punk/Rock Artist from Stockport, Manchester",
+          "country": "GB",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "WYNNE",
+          "name": "WYNNE",
+          "tags": [],
+          "genres": [],
+          "type": "Person",
+          "id": "ec45d729-d459-45c7-89b3-22c4caa65ae7"
+        },
+        "joinphrase": " & ",
+        "name": "WYNNE"
+      },
+      {
+        "joinphrase": "",
+        "artist": {
+          "disambiguation": "",
+          "country": "AU",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "sort-name": "Mansionair",
+          "name": "Mansionair",
+          "tags": [],
+          "genres": [],
+          "type": "Group",
+          "id": "b37446a3-fbde-48c9-9aeb-c8de3d752040"
+        },
+        "name": "Mansionair"
+      }
+    ],
+    "title": "Line of Sight (Chet Porter remix)",
+    "isrcs": [
+      "GBCFB1900038"
+    ],
+    "disambiguation": "",
+    "length": 232250
+  }
+}

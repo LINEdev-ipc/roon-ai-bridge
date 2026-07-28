@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Air&recording_name=La+femme+d%27argent",
+  "fetched_at": "2026-07-28T14:41:06.621Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Air",
+      "recording_arg": "La femme d'argent",
+      "artist_credit_name": "Air",
+      "release_name": "Moon Safari",
+      "recording_name": "La Femme d’argent",
+      "artist_credit_id": 1153225,
+      "artist_mbids": [
+        "cb67438a-7f50-4f2b-a6f1-2bb2729fd538"
+      ],
+      "release_mbid": "4c55906c-349b-362d-922e-956762912b42",
+      "recording_mbid": "864c7424-c9ab-481e-a9c0-ad986e646c67"
+    }
+  ]
+}

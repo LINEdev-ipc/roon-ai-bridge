@@ -1,0 +1,856 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28boa+AND+sorte+AND+good+AND+luck%29+AND+release%3A%28sim%29+AND+artistname%3A%22Vanessa+da+Mata%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:43:45.390Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:43:45.535Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "5b222ec7-29a4-48ec-9698-7bd92f0088bb",
+        "score": 100,
+        "artist-credit-id": "f70199ea-39b3-3d33-916c-84ffb1f36f4d",
+        "title": "Boa sorte / Good Luck",
+        "length": 235000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Vanessa da Mata",
+            "artist": {
+              "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+              "name": "Vanessa da Mata",
+              "sort-name": "Mata, Vanessa da",
+              "disambiguation": "Brazilian singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Ferreira, Vanessa Sigiane da Mata",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Vanessa Sigiane da Mata Ferreira",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Vanessa de Mata",
+                  "name": "Vanessa de Mata",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Ben Harper",
+            "artist": {
+              "id": "1582a5b8-538e-45e7-9ae4-4099439a0e79",
+              "name": "Ben Harper",
+              "sort-name": "Harper, Ben",
+              "disambiguation": "singer, guitarist, The Innocent Criminals",
+              "aliases": [
+                {
+                  "sort-name": "Ben Harper & the Innocent Criminals",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Ben Harper & the Innocent Criminals",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Ben Harper and the Innocent Criminals",
+                  "name": "Ben Harper and the Innocent Criminals",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Harper, Ben & the Innocent Criminals",
+                  "name": "Harper, Ben & the Innocent Criminals",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Ben Harper and Relentless7",
+                  "name": "Ben Harper and Relentless7",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Harper, Benjamin Chase",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Benjamin Chase Harper",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2007-05-15",
+        "releases": [
+          {
+            "id": "a8e8c5ef-0b6b-44a5-baee-c6268376e886",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Café Archy: Lounge Collection, Volume 1",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a3bd1110-642e-4ad3-85e2-b5cfe5c03399",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Café Archy: Lounge Collection, Volume 1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 17,
+            "media": [
+              {
+                "id": "880badd0-cf88-3c02-9ce8-ef6455b5ed4a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "f088c262-e4ea-3f5f-bf55-001fb96ab70d",
+                    "number": "12",
+                    "title": "Boa Sorte - Good Luck",
+                    "length": 236000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "26652e59-6f18-4cf5-817c-8f9277401be8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bb6ccf78-3f40-3f65-bfbf-7953e39a848f",
+            "count": 1,
+            "title": "Sim - CD Zero",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Vanessa da Mata",
+                "artist": {
+                  "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+                  "name": "Vanessa da Mata",
+                  "sort-name": "Mata, Vanessa da",
+                  "disambiguation": "Brazilian singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6981add6-d283-4552-80fc-e29cbac242f5",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Sim - CD Zero",
+              "primary-type": "EP"
+            },
+            "date": "2007-05-15",
+            "country": "BR",
+            "release-events": [
+              {
+                "date": "2007-05-15",
+                "area": {
+                  "id": "f45b47f8-5796-386e-b172-6c31b009a5d8",
+                  "name": "Brazil",
+                  "sort-name": "Brazil",
+                  "iso-3166-1-codes": [
+                    "BR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "163db7c4-0a99-36f8-b0cf-e548fc0e26ad",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bcb73d60-73f8-410f-8b82-7e7e90b18e42",
+                    "number": "1",
+                    "title": "Boa sorte / Good Luck",
+                    "length": 236071
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "435f9796-2eb1-43e5-b6cd-826b9c2d5365",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bb6ccf78-3f40-3f65-bfbf-7953e39a848f",
+            "count": 1,
+            "title": "Sim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Vanessa da Mata",
+                "artist": {
+                  "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+                  "name": "Vanessa da Mata",
+                  "sort-name": "Mata, Vanessa da",
+                  "disambiguation": "Brazilian singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dec8b600-ae69-3e0c-80e1-a75d0317836e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sim",
+              "primary-type": "Album"
+            },
+            "date": "2009-07-06",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2009-07-06",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "24ab1ba1-97e3-3d0a-83ad-02113e82c175",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c829189b-8efb-37d1-8c34-7d7999aa2e97",
+                    "number": "2",
+                    "title": "Boa Sorte (Good Luck)",
+                    "length": 237600
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "70296ca1-6f2f-4967-a208-828467f01bfd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1790c4c5-c650-337f-b85c-993a6f780e30",
+            "count": 2,
+            "title": "Gerard Ekdom’s BBQ Box 2015",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Gerard Ekdom",
+                "artist": {
+                  "id": "87b1c4d4-b144-4ed2-8c55-334e3b72f23e",
+                  "name": "Gerard Ekdom",
+                  "sort-name": "Ekdom, Gerard",
+                  "disambiguation": "Dutch radio DJ"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "47a81c7b-fc73-4250-a97f-36f7e7444c19",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Gerard Ekdom’s BBQ Box 2015",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2015-05-01",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2015-05-01",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "96043a3c-897a-3683-bf45-2a66cad05309",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3e57c83f-557f-4a40-a0f0-021159992e8d",
+                    "number": "9",
+                    "title": "Boa sorte",
+                    "length": 238000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "0e419126-3d93-41dd-8e6d-a4e8ab6e8fdc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bb6ccf78-3f40-3f65-bfbf-7953e39a848f",
+            "count": 1,
+            "title": "Sim",
+            "status": "Official",
+            "disambiguation": "edição bônus",
+            "artist-credit": [
+              {
+                "name": "Vanessa da Mata",
+                "artist": {
+                  "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+                  "name": "Vanessa da Mata",
+                  "sort-name": "Mata, Vanessa da",
+                  "disambiguation": "Brazilian singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dec8b600-ae69-3e0c-80e1-a75d0317836e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sim",
+              "primary-type": "Album"
+            },
+            "date": "2008-07-14",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2008-07-14",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "54b5f44a-d6a8-37f6-94d2-7072ef554059",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "56050df3-7c1d-4dd8-9e15-64e202f28c93",
+                    "number": "4",
+                    "title": "Boa Sorte / Good Luck",
+                    "length": 235000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "13c7a29b-1497-4cf6-b4c2-c52045dca811",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bb6ccf78-3f40-3f65-bfbf-7953e39a848f",
+            "count": 1,
+            "title": "Sim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Vanessa da Mata",
+                "artist": {
+                  "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+                  "name": "Vanessa da Mata",
+                  "sort-name": "Mata, Vanessa da",
+                  "disambiguation": "Brazilian singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dec8b600-ae69-3e0c-80e1-a75d0317836e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sim",
+              "primary-type": "Album"
+            },
+            "date": "2009-10-13",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2009-10-13",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "a5b2aaa9-ada4-3135-a29b-5d4d58fdbc5a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "939cdc4f-419d-4bfb-b42c-a306c67de4a3",
+                    "number": "4",
+                    "title": "Boa Sorte / Good Luck",
+                    "length": 235000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "b61de3ee-3b63-4ccb-bc45-384c692e045f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bb6ccf78-3f40-3f65-bfbf-7953e39a848f",
+            "count": 1,
+            "title": "Sim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Vanessa da Mata",
+                "artist": {
+                  "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+                  "name": "Vanessa da Mata",
+                  "sort-name": "Mata, Vanessa da",
+                  "disambiguation": "Brazilian singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dec8b600-ae69-3e0c-80e1-a75d0317836e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sim",
+              "primary-type": "Album"
+            },
+            "date": "2007",
+            "country": "BR",
+            "release-events": [
+              {
+                "date": "2007",
+                "area": {
+                  "id": "f45b47f8-5796-386e-b172-6c31b009a5d8",
+                  "name": "Brazil",
+                  "sort-name": "Brazil",
+                  "iso-3166-1-codes": [
+                    "BR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "12868860-3731-3be1-bb05-611a1b06476d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8961ab7e-fe54-38da-9569-74f98b79354c",
+                    "number": "4",
+                    "title": "Boa sorte / Good Luck",
+                    "length": 226000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "ba0278b8-a52c-447e-9b32-a4a90f43d9c0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bb6ccf78-3f40-3f65-bfbf-7953e39a848f",
+            "count": 1,
+            "title": "Sim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Vanessa da Mata",
+                "artist": {
+                  "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+                  "name": "Vanessa da Mata",
+                  "sort-name": "Mata, Vanessa da",
+                  "disambiguation": "Brazilian singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dec8b600-ae69-3e0c-80e1-a75d0317836e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sim",
+              "primary-type": "Album"
+            },
+            "date": "2009-10-13",
+            "country": "BR",
+            "release-events": [
+              {
+                "date": "2009-10-13",
+                "area": {
+                  "id": "f45b47f8-5796-386e-b172-6c31b009a5d8",
+                  "name": "Brazil",
+                  "sort-name": "Brazil",
+                  "iso-3166-1-codes": [
+                    "BR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "33a974da-8ecc-3819-a6f4-daeb48993a6b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "42ed8b54-8c50-3d49-8704-2cdd3963c038",
+                    "number": "4",
+                    "title": "Boa sorte (Good Luck)",
+                    "length": 226000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 3
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "BRSME0700196"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "jazz"
+          },
+          {
+            "count": 1,
+            "name": "reggae"
+          },
+          {
+            "count": 2,
+            "name": "mpb"
+          },
+          {
+            "count": 1,
+            "name": "brazilian"
+          },
+          {
+            "count": 1,
+            "name": "samba"
+          },
+          {
+            "count": 3,
+            "name": "latin"
+          },
+          {
+            "count": 1,
+            "name": "brazilian pop"
+          }
+        ]
+      },
+      {
+        "id": "3088a2a0-c9a4-4dbe-ad2b-07248dfa5099",
+        "score": 87,
+        "artist-credit-id": "e72e40b3-65b4-3976-9ab1-28af0ebda44a",
+        "title": "Good Luck (Boa sorte)",
+        "length": 236000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": ", ",
+            "name": "Ben Harper",
+            "artist": {
+              "id": "1582a5b8-538e-45e7-9ae4-4099439a0e79",
+              "name": "Ben Harper",
+              "sort-name": "Harper, Ben",
+              "disambiguation": "singer, guitarist, The Innocent Criminals",
+              "aliases": [
+                {
+                  "sort-name": "Ben Harper & the Innocent Criminals",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Ben Harper & the Innocent Criminals",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Ben Harper and the Innocent Criminals",
+                  "name": "Ben Harper and the Innocent Criminals",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Harper, Ben & the Innocent Criminals",
+                  "name": "Harper, Ben & the Innocent Criminals",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Ben Harper and Relentless7",
+                  "name": "Ben Harper and Relentless7",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Harper, Benjamin Chase",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Benjamin Chase Harper",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " & ",
+            "name": "Samantha Caldato",
+            "artist": {
+              "id": "929093ca-e4d4-4166-b5d2-a61ad9a2e047",
+              "name": "Samantha Caldato",
+              "sort-name": "Caldato, Samantha"
+            }
+          },
+          {
+            "name": "Vanessa da Mata",
+            "artist": {
+              "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+              "name": "Vanessa da Mata",
+              "sort-name": "Mata, Vanessa da",
+              "disambiguation": "Brazilian singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Ferreira, Vanessa Sigiane da Mata",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Vanessa Sigiane da Mata Ferreira",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Vanessa de Mata",
+                  "name": "Vanessa de Mata",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2009-10-13",
+        "releases": [
+          {
+            "id": "13c7a29b-1497-4cf6-b4c2-c52045dca811",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bb6ccf78-3f40-3f65-bfbf-7953e39a848f",
+            "count": 1,
+            "title": "Sim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Vanessa da Mata",
+                "artist": {
+                  "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+                  "name": "Vanessa da Mata",
+                  "sort-name": "Mata, Vanessa da",
+                  "disambiguation": "Brazilian singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dec8b600-ae69-3e0c-80e1-a75d0317836e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sim",
+              "primary-type": "Album"
+            },
+            "date": "2009-10-13",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2009-10-13",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "a5b2aaa9-ada4-3135-a29b-5d4d58fdbc5a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e353a7f8-2e83-4fc2-a417-934256269675",
+                    "number": "16",
+                    "title": "Good Luck / Boa Sorte (English version)",
+                    "length": 236000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "ba0278b8-a52c-447e-9b32-a4a90f43d9c0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bb6ccf78-3f40-3f65-bfbf-7953e39a848f",
+            "count": 1,
+            "title": "Sim",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Vanessa da Mata",
+                "artist": {
+                  "id": "f3580347-b84a-47d8-b86e-cad642322a47",
+                  "name": "Vanessa da Mata",
+                  "sort-name": "Mata, Vanessa da",
+                  "disambiguation": "Brazilian singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dec8b600-ae69-3e0c-80e1-a75d0317836e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sim",
+              "primary-type": "Album"
+            },
+            "date": "2009-10-13",
+            "country": "BR",
+            "release-events": [
+              {
+                "date": "2009-10-13",
+                "area": {
+                  "id": "f45b47f8-5796-386e-b172-6c31b009a5d8",
+                  "name": "Brazil",
+                  "sort-name": "Brazil",
+                  "iso-3166-1-codes": [
+                    "BR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "33a974da-8ecc-3819-a6f4-daeb48993a6b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f1ff5109-3d9c-3206-9a97-0bc7f3963d8e",
+                    "number": "16",
+                    "title": "Good Luck (Boa sorte)",
+                    "length": 236000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 15
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "BRSME0900737"
+        ]
+      }
+    ]
+  }
+}

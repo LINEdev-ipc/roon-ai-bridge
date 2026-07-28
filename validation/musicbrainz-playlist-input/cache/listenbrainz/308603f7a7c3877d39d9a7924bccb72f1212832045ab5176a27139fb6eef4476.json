@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Ofra+Haza&recording_name=Im+Nin%27alu&release_name=Shaday",
+  "fetched_at": "2026-07-28T14:42:34.624Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Ofra Haza",
+      "recording_arg": "Im Nin'alu",
+      "artist_credit_name": "Ofra Haza",
+      "release_name": "Shaday",
+      "recording_name": "Im Nin’alu",
+      "artist_credit_id": 840580,
+      "artist_mbids": [
+        "7591796a-a545-4b51-ba52-bf2539b90d99"
+      ],
+      "release_mbid": "041fd465-7b74-4c0c-b326-bfb348adb3d1",
+      "recording_mbid": "88d85373-36b1-453f-9f08-8261d5932de9"
+    }
+  ]
+}

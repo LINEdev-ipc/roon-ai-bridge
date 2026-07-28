@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Bicep&recording_name=Opal+%28Four+Tet+Remix%29&release_name=Opal+%28Four+Tet+Remix%29",
+  "fetched_at": "2026-07-28T12:15:56.216Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Bicep",
+      "recording_arg": "Opal (Four Tet Remix)",
+      "artist_credit_name": "Bicep",
+      "release_name": "Opal (Four Tet remix)",
+      "recording_name": "Opal (Four Tet remix)",
+      "artist_credit_id": 889834,
+      "artist_mbids": [
+        "10e8f0df-90f9-4957-aedd-c4e0d187e3a8"
+      ],
+      "release_mbid": "fa34586e-b26d-4e6b-b8d3-6bee960f0e35",
+      "recording_mbid": "09253ca0-1e05-4d58-8f54-635b1b9b3daa"
+    }
+  ]
+}

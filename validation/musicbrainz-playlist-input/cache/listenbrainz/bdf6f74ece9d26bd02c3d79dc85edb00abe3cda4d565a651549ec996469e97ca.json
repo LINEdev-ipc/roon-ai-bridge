@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Kate+Bush&recording_name=Running+Up+That+Hill+%28Infusion+Remix%29",
+  "fetched_at": "2026-07-28T14:42:11.395Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Kate Bush",
+      "recording_arg": "Running Up That Hill (Infusion Remix)",
+      "artist_credit_name": "Kate Bush",
+      "release_name": "Running Up That Hill (Infusion remix)",
+      "recording_name": "Running Up That Hill (Infusion remix)",
+      "artist_credit_id": 2121,
+      "artist_mbids": [
+        "4b585938-f271-45e2-b19a-91c634b5e396"
+      ],
+      "release_mbid": "a9b18ec8-0475-4773-a99c-3f69b8eb9883",
+      "recording_mbid": "8754da94-5f59-4214-bee8-899f318059a6"
+    }
+  ]
+}

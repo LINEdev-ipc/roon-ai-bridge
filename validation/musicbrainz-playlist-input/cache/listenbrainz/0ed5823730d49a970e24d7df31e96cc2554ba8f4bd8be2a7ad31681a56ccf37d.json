@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Gipsy+Kings&recording_name=Bambol%C3%A9o&release_name=Gipsy+Kings",
+  "fetched_at": "2026-07-28T14:43:02.847Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Gipsy Kings",
+      "recording_arg": "Bamboléo",
+      "artist_credit_name": "Gipsy Kings",
+      "release_name": "Gipsy Kings",
+      "recording_name": "Bamboleo",
+      "artist_credit_id": 1845,
+      "artist_mbids": [
+        "44a7f7d5-79df-4f44-8f5e-02dfc0626904"
+      ],
+      "release_mbid": "3cac81a7-3486-4f99-8ef1-d2af4097d29d",
+      "recording_mbid": "8212bf14-f566-45fa-8c01-445f2e0995f7"
+    }
+  ]
+}

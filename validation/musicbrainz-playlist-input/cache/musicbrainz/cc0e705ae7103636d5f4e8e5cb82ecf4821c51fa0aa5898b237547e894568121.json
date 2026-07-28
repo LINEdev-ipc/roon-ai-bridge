@@ -1,0 +1,124 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=alias%3A%28lebanese+AND+blonde%29+AND+artistname%3A%22Thievery+Corporation%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:45:46.500Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:45:46.877Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "e966f4af-0708-4c98-b94c-0093e9cfd0cf",
+        "score": 100,
+        "artist-credit-id": "1f36dce3-0c63-3264-9121-f538dd9bee63",
+        "title": "Lebanese Blonde (instrumental)",
+        "length": 325066,
+        "disambiguation": "part of “Ministry Presents... Ibiza Chillout” DJ-mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Thievery Corporation",
+            "artist": {
+              "id": "a505bb48-ad65-4af4-ae47-29149715bff9",
+              "name": "Thievery Corporation",
+              "sort-name": "Thievery Corporation",
+              "aliases": [
+                {
+                  "sort-name": "Theivery Corporation",
+                  "name": "Theivery Corporation",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Thievery Corp",
+                  "name": "Thievery Corp",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1999-05",
+        "releases": [
+          {
+            "id": "3bdce11e-ff05-4367-bad6-91308df1dead",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Ministry Presents: Ibiza Chillout",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4c23706d-491b-3a83-86e3-f23bb1d3ee02",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ministry Presents: Ibiza Chillout",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "1999-05",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1999-05",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "708b4f3e-cf0d-345d-a726-467a1ad48b02",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a4921035-73ab-31cf-8e91-25b32c7b6d0a",
+                    "number": "5",
+                    "title": "Lebanese Blonde (instrumental)",
+                    "length": 325066
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

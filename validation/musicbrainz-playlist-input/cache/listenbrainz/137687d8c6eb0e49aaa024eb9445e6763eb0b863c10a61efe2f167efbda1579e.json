@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Floating+Points&recording_name=LesAlpx",
+  "fetched_at": "2026-07-28T14:41:29.101Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Floating Points",
+      "recording_arg": "LesAlpx",
+      "artist_credit_name": "Floating Points",
+      "release_name": "Crush",
+      "recording_name": "LesAlpx",
+      "artist_credit_id": 602014,
+      "artist_mbids": [
+        "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97"
+      ],
+      "release_mbid": "2e7caf57-af4d-4e90-a0f3-2126bdbf6693",
+      "recording_mbid": "d539fa94-e9c6-4b10-8430-9cbade49f1db"
+    }
+  ]
+}

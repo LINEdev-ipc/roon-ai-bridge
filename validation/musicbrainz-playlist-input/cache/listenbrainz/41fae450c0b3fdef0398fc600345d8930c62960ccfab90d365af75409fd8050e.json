@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Nena&recording_name=99+Luftballons&release_name=Nena",
+  "fetched_at": "2026-07-28T14:42:38.328Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Nena",
+      "recording_arg": "99 Luftballons",
+      "artist_credit_name": "Nena",
+      "release_name": "Nena",
+      "recording_name": "99 Luftballons",
+      "artist_credit_id": 1894,
+      "artist_mbids": [
+        "c954d136-c7fd-4fd9-8bb0-fb0491fc6a02"
+      ],
+      "release_mbid": "7307aff8-842d-4f23-b74b-3d2c4864723a",
+      "recording_mbid": "f4655387-c676-4b07-9a27-f560ba254170"
+    }
+  ]
+}

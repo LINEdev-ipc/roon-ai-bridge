@@ -1,11 +1,13 @@
 {
   "name": "roon-ai-bridge",
-  "version": "0.20.0-beta.8",
+  "version": "0.20.0-beta.9",
   "description": "Roon bridge with native extension settings, advanced transport control and a secure administration portal.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "tsc && node --test \"test/*.test.js\"",
+    "validate:playlist:e2e:fixtures": "node validation/playlist-e2e-beta9/build-fixtures.js",
+    "validate:playlist:e2e": "pnpm run build && node validation/playlist-e2e-beta9/run-local-e2e.js",
     "widget:preview": "pnpm run build && node scripts/widget-v2-preview.js",
     "start": "node dist/index.js",
     "mcp": "node dist/bridge-v2/mcp/index.js",

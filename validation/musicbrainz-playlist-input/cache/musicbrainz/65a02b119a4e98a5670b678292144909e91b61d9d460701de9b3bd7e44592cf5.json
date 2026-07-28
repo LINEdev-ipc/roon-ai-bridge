@@ -1,0 +1,1060 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28love+AND+nwantiti+AND+ah%29+AND+artistname%3A%22CKay%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:48.779Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:49.149Z",
+    "count": 4,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "836a4148-ab07-46dc-8d16-59beae9f37af",
+        "score": 100,
+        "artist-credit-id": "0e92fc59-9298-3d38-9e91-505e79087773",
+        "title": "love nwantiti (ah ah ah)",
+        "length": 147026,
+        "disambiguation": "clean",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "CKay",
+            "artist": {
+              "id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+              "name": "CKay",
+              "sort-name": "CKay",
+              "disambiguation": "Nigerian musician",
+              "aliases": [
+                {
+                  "sort-name": "Chukwuka Chukwuma Ekweani",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Chukwuka Chukwuma Ekweani",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "CKay",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "CKay",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2021-11-19",
+        "releases": [
+          {
+            "id": "b09b1d86-4623-41ec-bea9-28bb16249548",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Now That’s What I Call Music! 110",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6af7bbbd-ae43-439c-b50d-658f8dd71052",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Now That’s What I Call Music! 110",
+              "disambiguation": "UK",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-11-19",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2021-11-19",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 49,
+            "media": [
+              {
+                "id": "fb3763b8-be44-3e44-90f0-843bf55a874c",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "27705ace-e1e4-4433-8ae3-b1ee804da011",
+                    "number": "4",
+                    "title": "love nwantiti (ah ah ah)",
+                    "length": 147026
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 3
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "ZA34K2100645"
+        ]
+      },
+      {
+        "id": "2dccfafd-02a3-419a-ac9f-dc415dec2b55",
+        "score": 100,
+        "artist-credit-id": "0e92fc59-9298-3d38-9e91-505e79087773",
+        "title": "Love Nwantiti (ah ah ah)",
+        "length": 147120,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "CKay",
+            "artist": {
+              "id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+              "name": "CKay",
+              "sort-name": "CKay",
+              "disambiguation": "Nigerian musician",
+              "aliases": [
+                {
+                  "sort-name": "Chukwuka Chukwuma Ekweani",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Chukwuka Chukwuma Ekweani",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "CKay",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "CKay",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022-12-16",
+        "releases": [
+          {
+            "id": "c2252824-a6d4-49e0-9f59-da43c2c1b2b9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Planète Rap 2023",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "44e00ebb-2fe7-4e7c-b51f-48cb4ce5c4f5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Planète Rap 2023",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022-12-16",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2022-12-16",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 45,
+            "media": [
+              {
+                "id": "7254083c-8418-3c43-86d2-eb92a1f08304",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b3ae007d-1606-4ceb-815a-1dd71fdc13a9",
+                    "number": "14",
+                    "title": "Love Nwantiti (ah ah ah)",
+                    "length": 147120
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b4ece4ff-9866-4f65-b376-86179a5d70e0",
+        "score": 100,
+        "artist-credit-id": "0e92fc59-9298-3d38-9e91-505e79087773",
+        "title": "love nwantiti (ah ah ah)",
+        "length": 145800,
+        "disambiguation": "explicit",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "CKay",
+            "artist": {
+              "id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+              "name": "CKay",
+              "sort-name": "CKay",
+              "disambiguation": "Nigerian musician",
+              "aliases": [
+                {
+                  "sort-name": "Chukwuka Chukwuma Ekweani",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Chukwuka Chukwuma Ekweani",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "CKay",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "CKay",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2019-07-26",
+        "releases": [
+          {
+            "id": "458374d7-c9cc-4e10-914f-a083e074f4b5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "0e92fc59-9298-3d38-9e91-505e79087773",
+            "count": 1,
+            "title": "CKay the First",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "CKay",
+                "artist": {
+                  "id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+                  "name": "CKay",
+                  "sort-name": "CKay",
+                  "disambiguation": "Nigerian musician"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b382722-6c77-4a97-a0df-984d21a8bd96",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "CKay the First",
+              "primary-type": "EP"
+            },
+            "date": "2019-07-26",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-07-26",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "9848c88e-8046-4821-b643-559102191f85",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "71c2f2bf-97d4-411e-ab03-322cd54eaefd",
+                    "number": "2",
+                    "title": "love nwantiti (ah ah ah)",
+                    "length": 145800
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "ef7a0511-369d-463b-b924-d53e762a6bd0",
+            "status-id": "6a3772de-4605-4132-993d-aa315cd19b4b",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Summer Jams",
+            "status": "Withdrawn",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9556e628-3457-48d2-931b-a64d5f7526f6",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Summer Jams",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 39,
+            "media": [
+              {
+                "id": "62f39a1c-e5bc-4e83-9b80-d5a04a25523e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "225d97ac-468e-4a4c-8836-37c37be2460f",
+                    "number": "11",
+                    "title": "Love Nwantiti (Ah Ah Ah)",
+                    "length": 145800
+                  }
+                ],
+                "track-count": 39,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "b9e5e561-e035-4243-a4d9-df5b1ea90dae",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Summer Bangers 2023",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "07728368-cdab-418c-9553-3631322a0c65",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Summer Bangers 2023",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-04-26",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-04-26",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 35,
+            "media": [
+              {
+                "id": "e8dcd8e9-718f-41b9-b798-d1bfad6663f7",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "17c7bc99-a5a6-4e30-be8a-6355bc62c596",
+                    "number": "23",
+                    "title": "Love Nwantiti (Ah Ah Ah)",
+                    "length": 145800
+                  }
+                ],
+                "track-count": 35,
+                "track-offset": 22
+              }
+            ]
+          },
+          {
+            "id": "0bbc54a4-2458-4dfe-bbc7-e5d03cbabbfd",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Promo Only: Urban Radio, December 2021",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c95c9722-95a6-408b-b42e-6bdd5287a79e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Promo Only: Urban Radio, December 2021",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-12",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021-12",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "977178a6-b8e1-382b-891c-abfe3144d925",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e8c84732-ae8a-4e78-929a-be423b707fce",
+                    "number": "4",
+                    "title": "Love Nwantiti (Ah Ah Ah) (clean edit)",
+                    "length": 146000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "5837cfcf-f826-418e-ad2c-43adf35168dd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "The Dome, Vol. 100",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4f7e4720-a7a3-4969-bb20-58533d407801",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Dome, Vol. 100",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-11-26",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2021-11-26",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 49,
+            "media": [
+              {
+                "id": "a582c5b6-dd53-381c-a42c-77718cc0fa37",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e3072974-1075-4b01-9fa4-a817403b8107",
+                    "number": "7",
+                    "title": "love nwantiti (ah ah ah)",
+                    "length": 148000
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "7881cba5-495b-4405-9d05-32747cee7a08",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Absolute Music 90",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "918bfa68-53f2-4f3f-8f93-1c82f7bd9f25",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Absolute Music 90",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-12-10",
+            "country": "SE",
+            "release-events": [
+              {
+                "date": "2021-12-10",
+                "area": {
+                  "id": "23d10872-f5ae-3f0c-bf55-332788a16ecb",
+                  "name": "Sweden",
+                  "sort-name": "Sweden",
+                  "iso-3166-1-codes": [
+                    "SE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "aaf81d80-59df-3dbc-8322-38f0463ab634",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "681cb2f6-891e-4dff-9d5a-ac9bf462400d",
+                    "number": "11",
+                    "title": "Love Nwantiti (Ah Ah Ah)",
+                    "length": 148000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "3c4ec544-6f64-4a8e-971d-dcbf3e5fbb29",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Promo Only: Mainstream Radio, December 2021",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "463382df-b8bc-4cb7-b1f0-9ab8d91c3953",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Promo Only: Mainstream Radio, December 2021",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-12",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2021-12",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "3d17dac9-2cb4-3fc5-b459-38ae678a9872",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "011a30ee-a796-4105-b919-663826464b85",
+                    "number": "8",
+                    "title": "Love Nwantiti (Ah Ah Ah) (clean edit)",
+                    "length": 145740
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "5e4633de-2394-40d4-9b7a-533e690edfda",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Megahits 2022: Die Erste",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "faed8246-6ca2-4cce-a113-ce46a449f6e3",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Megahits 2022: Die Erste",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-12-17",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2021-12-17",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 48,
+            "media": [
+              {
+                "id": "5feac7f9-ccf9-3ea1-af4e-d0e7c47f40cc",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0be2f146-821d-4eb4-bcbf-e5d50c2e9a47",
+                    "number": "2",
+                    "title": "love nwantiti (ah ah ah)",
+                    "length": 145000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "cc77f32f-8baf-4f37-8395-ee13e9e54aff",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "0e92fc59-9298-3d38-9e91-505e79087773",
+            "count": 1,
+            "title": "Love Nwantiti",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "CKay",
+                "artist": {
+                  "id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+                  "name": "CKay",
+                  "sort-name": "CKay",
+                  "disambiguation": "Nigerian musician"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b382722-6c77-4a97-a0df-984d21a8bd96",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "CKay the First",
+              "primary-type": "EP"
+            },
+            "track-count": 8,
+            "media": [
+              {
+                "id": "13d9926b-4c8b-3b93-80c7-379d76a1b820",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "dedcbd41-1a02-43dc-8bf6-879047f9a0bc",
+                    "number": "2",
+                    "title": "love nwantiti (ah ah ah)",
+                    "length": 145000
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "a5e5a214-69ae-4e92-97a3-523ed4d0d5ce",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "0e92fc59-9298-3d38-9e91-505e79087773",
+            "count": 1,
+            "title": "CKay the First",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "CKay",
+                "artist": {
+                  "id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+                  "name": "CKay",
+                  "sort-name": "CKay",
+                  "disambiguation": "Nigerian musician"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b382722-6c77-4a97-a0df-984d21a8bd96",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "CKay the First",
+              "primary-type": "EP"
+            },
+            "date": "2019-08-30",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-08-30",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "5e1f5b61-3672-311f-9537-eddf5bd0e3d2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "3af4f8d1-3407-46c3-bd49-a77659ec0fa2",
+                    "number": "2",
+                    "title": "love nwantiti (ah ah ah)",
+                    "length": 145800
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "QMEU31910213"
+        ]
+      },
+      {
+        "id": "b974f0a2-5c9d-420c-b324-7959b3bc772f",
+        "score": 85,
+        "artist-credit-id": "bf7fe379-78c0-4504-9538-a83e2a5bfc5a",
+        "title": "love nwantiti (ah ah ah) (remix)",
+        "length": 188093,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "CKay",
+            "artist": {
+              "id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+              "name": "CKay",
+              "sort-name": "CKay",
+              "disambiguation": "Nigerian musician",
+              "aliases": [
+                {
+                  "sort-name": "Chukwuka Chukwuma Ekweani",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Chukwuka Chukwuma Ekweani",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "CKay",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "CKay",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " & ",
+            "name": "Joeboy",
+            "artist": {
+              "id": "719feeff-47ab-482b-8101-859cac49776b",
+              "name": "Joeboy",
+              "sort-name": "Joeboy",
+              "disambiguation": "Nigerian singer",
+              "aliases": [
+                {
+                  "sort-name": "Akinfenwa-Donus, Joseph Akinwale",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Joseph Akinwale Akinfenwa-Donus",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Joeboy",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Joeboy",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Kuami Eugene",
+            "artist": {
+              "id": "524f4652-b984-4a71-8328-9f98494060cc",
+              "name": "Kuami Eugene",
+              "sort-name": "Kuami Eugene"
+            }
+          }
+        ],
+        "first-release-date": "2020-02-13",
+        "releases": [
+          {
+            "id": "2e03a741-00e7-4365-b468-66bfb0d7d8d8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bf7fe379-78c0-4504-9538-a83e2a5bfc5a",
+            "count": 1,
+            "title": "love nwantiti (ah ah ah) (remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "CKay",
+                "artist": {
+                  "id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+                  "name": "CKay",
+                  "sort-name": "CKay",
+                  "disambiguation": "Nigerian musician"
+                }
+              },
+              {
+                "joinphrase": " & ",
+                "name": "Joeboy",
+                "artist": {
+                  "id": "719feeff-47ab-482b-8101-859cac49776b",
+                  "name": "Joeboy",
+                  "sort-name": "Joeboy",
+                  "disambiguation": "Nigerian singer"
+                }
+              },
+              {
+                "name": "Kuami Eugene",
+                "artist": {
+                  "id": "524f4652-b984-4a71-8328-9f98494060cc",
+                  "name": "Kuami Eugene",
+                  "sort-name": "Kuami Eugene"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "85be9cb5-ee21-4684-9580-c2e849459ed0",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "love nwantiti (ah ah ah) (remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2020-02-13",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2020-02-13",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "cb19a298-ae02-30ac-bcf0-d917058d48bf",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "d1944830-8fa8-484b-9ea7-dc386dcaeaef",
+                    "number": "1",
+                    "title": "love nwantiti (ah ah ah) (remix)",
+                    "length": 188093
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "QMEU31915738"
+        ]
+      }
+    ]
+  }
+}

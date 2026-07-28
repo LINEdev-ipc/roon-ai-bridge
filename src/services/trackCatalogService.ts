@@ -100,6 +100,7 @@ type ResolveCatalogInput = {
   version_hint?: string | null;
   isrc?: string | null;
   duration_seconds?: number | null;
+  release_year_observation?: number | null;
   release_year?: number | null;
   track_number?: number | null;
   disc_number?: number | null;

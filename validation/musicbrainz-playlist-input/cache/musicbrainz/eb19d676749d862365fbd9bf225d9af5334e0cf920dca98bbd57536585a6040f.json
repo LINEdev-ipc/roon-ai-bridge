@@ -1,0 +1,4583 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/df1fd341-2119-441e-a863-7d21eaa3ab94?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:43:20.716Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "disambiguation": "",
+    "releases": [
+      {
+        "title": "Water",
+        "date": "2023-07-28",
+        "status": "Official",
+        "packaging": "None",
+        "barcode": "196871296205",
+        "release-events": [
+          {
+            "date": "2023-07-28",
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "name": "[Worldwide]",
+              "disambiguation": "",
+              "sort-name": "[Worldwide]",
+              "type": null,
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+            }
+          }
+        ],
+        "tags": [],
+        "country": "XW",
+        "quality": "normal",
+        "id": "45c03df3-3500-44dc-a4ac-7b843f4c5030",
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "disambiguation": "",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "ZA",
+                "type": "Person",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                "disambiguation": "South African singer",
+                "sort-name": "Tyla",
+                "name": "Tyla",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": "",
+              "name": "Tyla"
+            }
+          ],
+          "id": "44bcaf13-f6a1-48a5-bda5-e975958a37dc",
+          "secondary-types": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "primary-type": "Single",
+          "tags": [],
+          "title": "Water",
+          "first-release-date": "2023-07-28",
+          "secondary-type-ids": []
+        },
+        "media": [
+          {
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-count": 1,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "artist": {
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla",
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "country": "ZA",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "number": "1",
+                "id": "9901df2e-833b-41b1-b79f-2eaf76fcad8a",
+                "position": 1,
+                "title": "Water",
+                "length": 200255
+              }
+            ],
+            "track-offset": 0,
+            "format": "Digital Media",
+            "id": "dcb36cda-0e7c-3456-998f-c03699482a7d",
+            "title": "",
+            "position": 1
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Tyla",
+              "disambiguation": "South African singer",
+              "genres": [
+                {
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "name": "afrobeats",
+                  "disambiguation": "West African urban/pop music",
+                  "count": 3
+                },
+                {
+                  "disambiguation": "",
+                  "count": 4,
+                  "name": "amapiano",
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "name": "contemporary r&b",
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "name": "r&b",
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "disambiguation": "",
+                  "count": 2
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Tyla",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "2020s"
+                },
+                {
+                  "count": 3,
+                  "name": "afrobeats"
+                },
+                {
+                  "count": 4,
+                  "name": "amapiano"
+                },
+                {
+                  "name": "contemporary r&b",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "gen z"
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "name": "r&b",
+                  "count": 2
+                }
+              ],
+              "country": "ZA",
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "type": "Person"
+            },
+            "name": "Tyla"
+          }
+        ]
+      },
+      {
+        "title": "TYLA",
+        "date": "2023-12-01",
+        "status": "Official",
+        "packaging": "None",
+        "release-events": [
+          {
+            "area": null,
+            "date": "2023-12-01"
+          }
+        ],
+        "barcode": "196871613132",
+        "tags": [],
+        "quality": "normal",
+        "country": null,
+        "id": "a6ec8576-f6ee-47ce-a4f8-f0394310ad5a",
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "first-release-date": "2023-12-01",
+          "secondary-type-ids": [],
+          "title": "TYLA",
+          "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+          "tags": [],
+          "primary-type": "EP",
+          "secondary-types": [],
+          "id": "9031200f-5403-4f39-8c28-f6e9a7bf51da",
+          "artist-credit": [
+            {
+              "name": "Tyla",
+              "artist": {
+                "country": "ZA",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                "type": "Person",
+                "sort-name": "Tyla",
+                "disambiguation": "South African singer",
+                "name": "Tyla",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "track-count": 5,
+            "tracks": [
+              {
+                "number": "1",
+                "id": "6097de7c-d564-4af8-a601-f1a9989497c9",
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a"
+                    }
+                  }
+                ],
+                "length": 200255,
+                "title": "Water",
+                "position": 1
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "title": "",
+            "position": 1,
+            "format": "Digital Media",
+            "track-offset": 0,
+            "id": "d64da05f-7662-3360-8b1d-eaff739bac53"
+          }
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "type": "Person",
+              "country": "ZA",
+              "genres": [
+                {
+                  "name": "afrobeats",
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "count": 3,
+                  "disambiguation": "West African urban/pop music"
+                },
+                {
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                  "name": "amapiano",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "name": "contemporary r&b",
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+                },
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "count": 4,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "name": "r&b",
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                }
+              ],
+              "name": "Tyla",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "2020s"
+                },
+                {
+                  "name": "afrobeats",
+                  "count": 3
+                },
+                {
+                  "name": "amapiano",
+                  "count": 4
+                },
+                {
+                  "name": "contemporary r&b",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "gen z"
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "count": 2,
+                  "name": "r&b"
+                }
+              ],
+              "sort-name": "Tyla",
+              "disambiguation": "South African singer"
+            },
+            "name": "Tyla"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": []
+      },
+      {
+        "barcode": "196588632525",
+        "release-events": [
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "United States",
+              "type-id": null,
+              "name": "United States",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "type": null,
+              "id": "489ce91b-6658-3307-9877-795b68554c98"
+            },
+            "date": "2024-01-26"
+          }
+        ],
+        "tags": [],
+        "title": "NOW That’s What I Call Music 89",
+        "date": "2024-01-26",
+        "status": "Official",
+        "packaging": null,
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "2024-01-26",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "NOW That’s What I Call Music! 89",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "USA",
+          "id": "3444b697-d4da-4b70-8f47-1441f3f66060"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "length": 198053,
+                "title": "Water",
+                "position": 5,
+                "number": "5",
+                "id": "4fde1527-5f98-430e-af24-15027e70e5e5",
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "ZA",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person",
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "genres": [
+                        {
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music",
+                          "count": 3
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano"
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "count": 4,
+                          "disambiguation": ""
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "name": "r&b",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "2020s"
+                        },
+                        {
+                          "name": "afrobeats",
+                          "count": 3
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "count": 2,
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "name": "gen z",
+                          "count": 1
+                        },
+                        {
+                          "name": "pop",
+                          "count": 4
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 22,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "position": 1,
+            "title": "",
+            "id": "9daaad6a-781a-3ea4-9816-5eb88e17a49d",
+            "track-offset": 4,
+            "format": "CD"
+          }
+        ],
+        "text-representation": {
+          "language": null,
+          "script": null
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null,
+              "genres": [],
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists"
+            }
+          }
+        ],
+        "genres": [],
+        "quality": "normal",
+        "country": "US",
+        "id": "7247b584-afab-4c6e-b8c0-d1c00f62a07a"
+      },
+      {
+        "status": "Withdrawn",
+        "packaging": "None",
+        "title": "NOW That’s What I Call Music! 89",
+        "date": "2024-01-26",
+        "barcode": "196871708654",
+        "release-events": [
+          {
+            "date": "2024-01-26",
+            "area": null
+          }
+        ],
+        "tags": [],
+        "id": "921ad7bb-bb77-48fc-9edc-2809d557f763",
+        "quality": "normal",
+        "country": null,
+        "status-id": "6a3772de-4605-4132-993d-aa315cd19b4b",
+        "media": [
+          {
+            "position": 1,
+            "title": "",
+            "id": "b5d31402-b6b9-3bb2-b597-5606d0c0e6b1",
+            "track-offset": 4,
+            "format": "Digital Media",
+            "tracks": [
+              {
+                "length": 198053,
+                "title": "Water",
+                "position": 5,
+                "number": "5",
+                "id": "e2c18fb6-855c-4e02-a028-b1dc3898c69d",
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "joinphrase": "",
+                    "artist": {
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "country": "ZA",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Tyla",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "2020s"
+                        },
+                        {
+                          "count": 3,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 4,
+                          "name": "amapiano"
+                        },
+                        {
+                          "count": 2,
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "count": 1,
+                          "name": "gen z"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "disambiguation": "West African urban/pop music",
+                          "count": 3,
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef"
+                        },
+                        {
+                          "name": "amapiano",
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "disambiguation": "",
+                          "count": 4
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "name": "contemporary r&b",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 4,
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "name": "r&b",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer"
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 22,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "name": "Various Artists",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null
+            },
+            "joinphrase": ""
+          }
+        ],
+        "genres": [],
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "NOW That’s What I Call Music! 89",
+          "first-release-date": "2024-01-26",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "disambiguation": "USA",
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86"
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "genres": [],
+          "id": "3444b697-d4da-4b70-8f47-1441f3f66060"
+        }
+      },
+      {
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "title": "Bravo Hits 124",
+        "date": "2024-02-09",
+        "release-events": [
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Germany",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "name": "Germany",
+              "type": null,
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad"
+            },
+            "date": "2024-02-09"
+          }
+        ],
+        "barcode": "196588730528",
+        "tags": [
+          {
+            "name": "cd-text",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "disc with isrc"
+          }
+        ],
+        "id": "a6a2b0d7-92c9-473a-b7cb-0b9656d204fb",
+        "country": "DE",
+        "quality": "normal",
+        "media": [
+          {
+            "format": "CD",
+            "track-offset": 20,
+            "id": "aa863730-4566-334c-81a6-33426b7e6dba",
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 23,
+            "tracks": [
+              {
+                "title": "Water",
+                "position": 21,
+                "length": 201986,
+                "id": "cd28c4de-3cbb-42b6-b872-459849013239",
+                "number": "21",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "country": "ZA",
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "count": 3,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "gen z"
+                        },
+                        {
+                          "name": "pop",
+                          "count": 4
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "disambiguation": "West African urban/pop music",
+                          "count": 3
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "name": "amapiano",
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad"
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "name": "contemporary r&b",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+                        },
+                        {
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop",
+                          "count": 4,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "name": "r&b",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla"
+                    },
+                    "joinphrase": "",
+                    "name": "Tyla"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null
+              }
+            }
+          ],
+          "disambiguation": "",
+          "id": "dc1a9451-9b91-4db4-b972-58567a97c82a",
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "2024-02-09",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Bravo Hits 124"
+        }
+      },
+      {
+        "id": "7c28a833-972c-4e30-b9d6-6f40286c28d8",
+        "country": "XW",
+        "quality": "normal",
+        "media": [
+          {
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "country": "ZA",
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla"
+                    },
+                    "joinphrase": "",
+                    "name": "Tyla"
+                  }
+                ],
+                "id": "dc5870c4-8d34-4b72-a8fb-10db1732d233",
+                "number": "3",
+                "title": "Water",
+                "length": 200000,
+                "position": 3
+              }
+            ],
+            "track-count": 14,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "position": 1,
+            "title": "",
+            "id": "28d13df0-2ecd-335f-85bb-2115e391eba4",
+            "track-offset": 2,
+            "format": "Digital Media"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [
+          {
+            "name": "afrobeats",
+            "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+            "count": 1,
+            "disambiguation": "West African urban/pop music"
+          },
+          {
+            "count": 1,
+            "disambiguation": "",
+            "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+            "name": "amapiano"
+          },
+          {
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+            "name": "pop",
+            "count": 1,
+            "disambiguation": ""
+          },
+          {
+            "disambiguation": "",
+            "count": 1,
+            "name": "r&b",
+            "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+          }
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": "ZA",
+              "type": "Person",
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "sort-name": "Tyla",
+              "disambiguation": "South African singer",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Tyla",
+              "tags": [
+                {
+                  "name": "2020s",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "afrobeats"
+                },
+                {
+                  "name": "amapiano",
+                  "count": 4
+                },
+                {
+                  "count": 2,
+                  "name": "contemporary r&b"
+                },
+                {
+                  "name": "gen z",
+                  "count": 1
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "count": 2,
+                  "name": "r&b"
+                }
+              ],
+              "genres": [
+                {
+                  "disambiguation": "West African urban/pop music",
+                  "count": 3,
+                  "name": "afrobeats",
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 4,
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                  "name": "amapiano"
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "contemporary r&b",
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+                },
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "count": 4,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "name": "r&b"
+                }
+              ]
+            },
+            "name": "Tyla"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "disambiguation": "",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "South African singer",
+                "sort-name": "Tyla",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Tyla",
+                "country": "ZA",
+                "type": "Person",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a"
+              },
+              "name": "Tyla"
+            }
+          ],
+          "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+          "secondary-types": [],
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "TYLA",
+          "secondary-type-ids": [],
+          "first-release-date": "2024-03-22"
+        },
+        "status": "Official",
+        "packaging": "None",
+        "title": "TYLA",
+        "date": "2024-03-22",
+        "barcode": "",
+        "release-events": [
+          {
+            "date": "2024-03-22",
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "name": "[Worldwide]",
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "type": null,
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "afrobeats"
+          },
+          {
+            "name": "amapiano",
+            "count": 1
+          },
+          {
+            "name": "pop",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "r&b"
+          }
+        ]
+      },
+      {
+        "barcode": "196871668248",
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "name": "[Worldwide]",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "disambiguation": "",
+              "sort-name": "[Worldwide]",
+              "type": null,
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+            },
+            "date": "2024-03-22"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "afrobeats"
+          },
+          {
+            "count": 1,
+            "name": "amapiano"
+          },
+          {
+            "name": "pop",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "popiano"
+          },
+          {
+            "count": 1,
+            "name": "r&b"
+          }
+        ],
+        "title": "TYLA",
+        "date": "2024-03-22",
+        "status": "Official",
+        "packaging": "None",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "title": "TYLA",
+          "first-release-date": "2024-03-22",
+          "secondary-type-ids": [],
+          "secondary-types": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "name": "Tyla",
+              "joinphrase": "",
+              "artist": {
+                "type": "Person",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                "country": "ZA",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Tyla",
+                "sort-name": "Tyla",
+                "disambiguation": "South African singer"
+              }
+            }
+          ],
+          "releases": [],
+          "genres": []
+        },
+        "media": [
+          {
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "number": "3",
+                "id": "919cbf76-e8cf-4b14-a5d8-bb3fd8fcc25e",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Tyla",
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a"
+                    },
+                    "name": "Tyla"
+                  }
+                ],
+                "title": "Water",
+                "length": 200000,
+                "position": 3
+              }
+            ],
+            "track-count": 14,
+            "id": "eaef7555-da52-3075-8640-1cd79ede8016",
+            "track-offset": 2,
+            "format": "Digital Media",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [
+          {
+            "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+            "name": "afrobeats",
+            "disambiguation": "West African urban/pop music",
+            "count": 1
+          },
+          {
+            "name": "amapiano",
+            "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+            "count": 1,
+            "disambiguation": ""
+          },
+          {
+            "disambiguation": "",
+            "count": 1,
+            "name": "pop",
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+          },
+          {
+            "disambiguation": "",
+            "count": 1,
+            "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+            "name": "r&b"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Tyla",
+            "joinphrase": "",
+            "artist": {
+              "type": "Person",
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "country": "ZA",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Tyla",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "2020s"
+                },
+                {
+                  "count": 3,
+                  "name": "afrobeats"
+                },
+                {
+                  "count": 4,
+                  "name": "amapiano"
+                },
+                {
+                  "name": "contemporary r&b",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "gen z"
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "name": "r&b",
+                  "count": 2
+                }
+              ],
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "West African urban/pop music",
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "name": "afrobeats"
+                },
+                {
+                  "name": "amapiano",
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                  "name": "contemporary r&b"
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "name": "r&b"
+                }
+              ],
+              "disambiguation": "South African singer",
+              "sort-name": "Tyla"
+            }
+          }
+        ],
+        "country": "XW",
+        "quality": "normal",
+        "id": "ce0c5b22-8e38-4021-bab5-2f8875ae2084"
+      },
+      {
+        "id": "f792faa4-80cb-4d7e-b381-0006110c2285",
+        "country": "US",
+        "quality": "normal",
+        "media": [
+          {
+            "track-count": 14,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person",
+                      "country": "ZA"
+                    },
+                    "joinphrase": "",
+                    "name": "Tyla"
+                  }
+                ],
+                "number": "3",
+                "id": "292f9693-b2eb-490e-b14d-7e521193a5d3",
+                "title": "Water",
+                "position": 3,
+                "length": 200253
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "position": 1,
+            "title": "",
+            "format": "CD",
+            "track-offset": 2,
+            "id": "fc476bf1-a878-3401-9b87-ffaf473b36ae"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "disambiguation": "South African singer",
+              "sort-name": "Tyla",
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "West African urban/pop music",
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "name": "afrobeats"
+                },
+                {
+                  "count": 4,
+                  "disambiguation": "",
+                  "name": "amapiano",
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad"
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "contemporary r&b",
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "name": "r&b",
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                }
+              ],
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "2020s"
+                },
+                {
+                  "name": "afrobeats",
+                  "count": 3
+                },
+                {
+                  "name": "amapiano",
+                  "count": 4
+                },
+                {
+                  "name": "contemporary r&b",
+                  "count": 2
+                },
+                {
+                  "name": "gen z",
+                  "count": 1
+                },
+                {
+                  "count": 4,
+                  "name": "pop"
+                },
+                {
+                  "name": "r&b",
+                  "count": 2
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Tyla",
+              "country": "ZA",
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "type": "Person"
+            },
+            "name": "Tyla"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Tyla",
+              "artist": {
+                "type": "Person",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                "country": "ZA",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Tyla",
+                "disambiguation": "South African singer",
+                "sort-name": "Tyla"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+          "secondary-types": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "title": "TYLA",
+          "first-release-date": "2024-03-22",
+          "secondary-type-ids": []
+        },
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "title": "TYLA",
+        "date": "2024-03-22",
+        "release-events": [
+          {
+            "area": {
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "United States",
+              "name": "United States",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "US"
+              ]
+            },
+            "date": "2024-03-22"
+          }
+        ],
+        "barcode": "196588769221",
+        "tags": []
+      },
+      {
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a"
+                    },
+                    "joinphrase": "",
+                    "name": "Tyla"
+                  }
+                ],
+                "id": "7742485e-e887-4319-b8cd-e30bd7071230",
+                "number": "3",
+                "title": "Water",
+                "length": 200253,
+                "position": 3
+              }
+            ],
+            "track-count": 14,
+            "format-id": "10e17707-9751-3aaf-95b2-2432acd5374c",
+            "position": 1,
+            "title": "",
+            "id": "848453b0-09c0-37ec-9391-adf89e42cf53",
+            "format": "Vinyl",
+            "track-offset": 2
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Tyla",
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Tyla",
+              "disambiguation": "South African singer",
+              "tags": [
+                {
+                  "name": "2020s",
+                  "count": 1
+                },
+                {
+                  "name": "afrobeats",
+                  "count": 3
+                },
+                {
+                  "count": 4,
+                  "name": "amapiano"
+                },
+                {
+                  "count": 2,
+                  "name": "contemporary r&b"
+                },
+                {
+                  "count": 1,
+                  "name": "gen z"
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "name": "r&b",
+                  "count": 2
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Tyla",
+              "genres": [
+                {
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "name": "afrobeats",
+                  "disambiguation": "West African urban/pop music",
+                  "count": 3
+                },
+                {
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                  "name": "amapiano",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                  "name": "contemporary r&b"
+                },
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "name": "r&b",
+                  "disambiguation": "",
+                  "count": 2
+                }
+              ],
+              "country": "ZA",
+              "type": "Person",
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a"
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "mul"
+        },
+        "genres": [
+          {
+            "disambiguation": "",
+            "count": 1,
+            "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+            "name": "amapiano"
+          },
+          {
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+            "name": "pop",
+            "disambiguation": "",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "disambiguation": "",
+            "name": "r&b",
+            "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+          }
+        ],
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "secondary-types": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "title": "TYLA",
+          "first-release-date": "2024-03-22",
+          "secondary-type-ids": [],
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "name": "Tyla",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Tyla",
+                "disambiguation": "South African singer",
+                "type": "Person",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                "country": "ZA"
+              },
+              "joinphrase": "",
+              "name": "Tyla"
+            }
+          ],
+          "genres": [],
+          "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428"
+        },
+        "id": "47a3c481-0e8d-482a-91d4-e4587cdfdbbf",
+        "quality": "normal",
+        "country": "ZA",
+        "barcode": null,
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ZA"
+              ],
+              "name": "South Africa",
+              "disambiguation": "",
+              "sort-name": "South Africa",
+              "type": null,
+              "id": "50cc7852-862e-30ae-aa82-385fe7135b7f"
+            },
+            "date": "2024-03-22"
+          }
+        ],
+        "tags": [
+          {
+            "name": "amapiano",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "r&b"
+          }
+        ],
+        "status": "Official",
+        "packaging": null,
+        "title": "TYLA",
+        "date": "2024-03-22"
+      },
+      {
+        "release-events": [
+          {
+            "date": "2024-04-05",
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type-id": null,
+              "name": "United Kingdom",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "disambiguation": "",
+              "sort-name": "United Kingdom"
+            }
+          }
+        ],
+        "barcode": "196588831829",
+        "tags": [],
+        "title": "Now That’s What I Call Music! 117",
+        "date": "2024-04-05",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "id": "62315ade-50a2-42bb-8e60-eece94e842a6",
+          "disambiguation": "UK",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null
+              }
+            }
+          ],
+          "genres": [],
+          "title": "Now That’s What I Call Music! 117",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2024-04-05",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "artist": {
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "genres": [
+                        {
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music",
+                          "count": 3
+                        },
+                        {
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano",
+                          "count": 4,
+                          "disambiguation": ""
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 4,
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop"
+                        },
+                        {
+                          "name": "r&b",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "count": 2,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "name": "afrobeats",
+                          "count": 3
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "count": 2
+                        },
+                        {
+                          "name": "gen z",
+                          "count": 1
+                        },
+                        {
+                          "name": "pop",
+                          "count": 4
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "country": "ZA",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "number": "9",
+                "id": "4ddd8f21-1d0e-467b-9513-ea64224018d0",
+                "length": 201226,
+                "title": "Water",
+                "position": 9
+              }
+            ],
+            "track-count": 24,
+            "id": "7102f7bb-1d70-3440-bb10-bfbb867aacdc",
+            "format": "CD",
+            "track-offset": 8,
+            "title": "",
+            "position": 1
+          }
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [],
+        "quality": "normal",
+        "country": "GB",
+        "id": "b057dee8-02ea-4b48-8681-f5e3255bc47d"
+      },
+      {
+        "id": "8a4b23b7-b00b-4423-9776-026c4469b788",
+        "quality": "normal",
+        "country": "IE",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "track-count": 50,
+            "tracks": [
+              {
+                "length": 201227,
+                "title": "Water",
+                "position": 9,
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "name": "afrobeats",
+                          "count": 3
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "gen z"
+                        },
+                        {
+                          "name": "pop",
+                          "count": 4
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "name": "Tyla",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 3,
+                          "disambiguation": "West African urban/pop music"
+                        },
+                        {
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano",
+                          "disambiguation": "",
+                          "count": 4
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "name": "contemporary r&b",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+                        },
+                        {
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop",
+                          "disambiguation": "",
+                          "count": 4
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "name": "r&b"
+                        }
+                      ],
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a"
+                    },
+                    "name": "Tyla"
+                  }
+                ],
+                "id": "06f5c400-7515-46e2-ac81-725f2fe4228a",
+                "number": "9"
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "position": 1,
+            "title": "",
+            "format": "Digital Media",
+            "track-offset": 8,
+            "id": "7e35abfd-e503-3917-a0d1-71ae036c0118"
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ]
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "id": "62315ade-50a2-42bb-8e60-eece94e842a6",
+          "disambiguation": "UK",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists"
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "title": "Now That’s What I Call Music! 117",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2024-04-05",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+        },
+        "status": "Official",
+        "packaging": "None",
+        "title": "Now That’s What I Call Music! 117",
+        "date": "2024-04-05",
+        "barcode": "196871763004",
+        "release-events": [
+          {
+            "date": "2024-04-05",
+            "area": {
+              "type": null,
+              "id": "390b05d4-11ec-3bce-a343-703a366b34a5",
+              "name": "Ireland",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "IE"
+              ],
+              "sort-name": "Ireland",
+              "disambiguation": ""
+            }
+          },
+          {
+            "date": "2024-04-05",
+            "area": {
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom"
+            }
+          }
+        ],
+        "tags": []
+      },
+      {
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "first-release-date": "2024-06-07",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "The Dome: Summer 2024",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "ea711f45-333d-4572-b6fb-d63733340529",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "disambiguation": ""
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "position": 1,
+            "title": "",
+            "id": "ee031df0-06e1-39aa-8c0f-ef44175a1fa7",
+            "track-offset": 21,
+            "format": "CD",
+            "tracks": [
+              {
+                "title": "Water",
+                "length": 200255,
+                "position": 22,
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "joinphrase": "",
+                    "artist": {
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "country": "ZA",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "name": "afrobeats",
+                          "count": 3
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "count": 2,
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "name": "gen z",
+                          "count": 1
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "name": "Tyla",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 3,
+                          "disambiguation": "West African urban/pop music"
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano"
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                        },
+                        {
+                          "name": "r&b",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "count": 2,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer"
+                    }
+                  }
+                ],
+                "number": "22",
+                "id": "bbe1c478-1145-4ff4-aa37-9a268dd92e39"
+              }
+            ],
+            "track-count": 25,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "genres": []
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "quality": "normal",
+        "country": "DE",
+        "id": "50f7a3a3-1b49-468d-b5d0-4520d32926f8",
+        "barcode": "0602488509756",
+        "release-events": [
+          {
+            "date": "2024-06-07",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Germany",
+              "name": "Germany",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "type": null
+            }
+          }
+        ],
+        "tags": [],
+        "title": "The Dome: Summer 2024",
+        "date": "2024-06-07",
+        "status": "Official",
+        "packaging": "Jewel Case"
+      },
+      {
+        "barcode": "4547366687330",
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+              "sort-name": "Japan",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "JP"
+              ],
+              "name": "Japan"
+            },
+            "date": "2024-08-07"
+          }
+        ],
+        "tags": [],
+        "status": "Official",
+        "packaging": null,
+        "title": "TYLA",
+        "date": "2024-08-07",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 15,
+            "tracks": [
+              {
+                "id": "cf3a48b7-b110-47ce-9c83-1be32b0b983a",
+                "number": "3",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person",
+                      "country": "ZA"
+                    },
+                    "name": "Tyla"
+                  }
+                ],
+                "title": "Water",
+                "length": 200253,
+                "position": 3
+              }
+            ],
+            "track-offset": 2,
+            "format": "CD",
+            "id": "2cf61397-5314-378d-849e-51e429e93786",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "text-representation": {
+          "language": "eng",
+          "script": null
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "type": "Person",
+              "country": "ZA",
+              "genres": [
+                {
+                  "disambiguation": "West African urban/pop music",
+                  "count": 3,
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "name": "afrobeats"
+                },
+                {
+                  "count": 4,
+                  "disambiguation": "",
+                  "name": "amapiano",
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad"
+                },
+                {
+                  "name": "contemporary r&b",
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "name": "r&b",
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                }
+              ],
+              "name": "Tyla",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "2020s"
+                },
+                {
+                  "name": "afrobeats",
+                  "count": 3
+                },
+                {
+                  "name": "amapiano",
+                  "count": 4
+                },
+                {
+                  "name": "contemporary r&b",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "gen z"
+                },
+                {
+                  "count": 4,
+                  "name": "pop"
+                },
+                {
+                  "count": 2,
+                  "name": "r&b"
+                }
+              ],
+              "disambiguation": "South African singer",
+              "sort-name": "Tyla"
+            },
+            "name": "Tyla"
+          }
+        ],
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Tyla",
+              "joinphrase": "",
+              "artist": {
+                "name": "Tyla",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "South African singer",
+                "sort-name": "Tyla",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                "type": "Person",
+                "country": "ZA"
+              }
+            }
+          ],
+          "genres": [],
+          "title": "TYLA",
+          "first-release-date": "2024-03-22",
+          "secondary-type-ids": [],
+          "secondary-types": [],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+        },
+        "id": "3a2b91df-c9dd-4f2b-9b1a-ad4104a34735",
+        "country": "JP",
+        "quality": "normal"
+      },
+      {
+        "title": "Academia 2024/2025 - Treino Animado",
+        "date": "2024-09-26",
+        "status": "Official",
+        "packaging": "None",
+        "release-events": [
+          {
+            "area": null,
+            "date": "2024-09-26"
+          }
+        ],
+        "barcode": "196872481280",
+        "tags": [],
+        "quality": "normal",
+        "country": null,
+        "id": "b215b5f2-62a3-451f-80c7-8a6e33e3d165",
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2024-09-26",
+          "title": "Academia 2024/2025 - Treino Animado",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "id": "ce9a3e39-728e-432e-9ee4-8e0ec0c98e73"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "title": "Water",
+                "length": 200255,
+                "position": 6,
+                "id": "a2497be2-e77f-4b56-807b-fbc409eb041e",
+                "number": "6",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Tyla",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "2020s"
+                        },
+                        {
+                          "name": "afrobeats",
+                          "count": 3
+                        },
+                        {
+                          "count": 4,
+                          "name": "amapiano"
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "count": 2
+                        },
+                        {
+                          "name": "gen z",
+                          "count": 1
+                        },
+                        {
+                          "name": "pop",
+                          "count": 4
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "name": "afrobeats",
+                          "count": 3,
+                          "disambiguation": "West African urban/pop music"
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "name": "amapiano",
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "count": 4,
+                          "disambiguation": ""
+                        },
+                        {
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "count": 2
+                        }
+                      ],
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla",
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "country": "ZA"
+                    },
+                    "name": "Tyla"
+                  }
+                ]
+              }
+            ],
+            "track-count": 45,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "position": 1,
+            "title": "",
+            "id": "e605e613-32a8-3ef1-a6bd-29ccdfbe7946",
+            "track-offset": 5,
+            "format": "Digital Media"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "por"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "genres": []
+      },
+      {
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "first-release-date": "2024-09-26",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Projeto verão - Músicas para academia",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "6abb111a-db30-4fab-9a20-4ab32872b3ef",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "media": [
+          {
+            "track-count": 45,
+            "tracks": [
+              {
+                "number": "8",
+                "id": "330b5c74-3e4b-4122-ab26-e7dceabd34d4",
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla",
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "count": 3,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "gen z"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "count": 3,
+                          "disambiguation": "West African urban/pop music",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "name": "amapiano",
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "name": "contemporary r&b",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 4,
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop"
+                        },
+                        {
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "count": 2
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "length": 200255,
+                "title": "Water",
+                "position": 8
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "position": 1,
+            "title": "",
+            "format": "Digital Media",
+            "track-offset": 7,
+            "id": "4ad7221a-d247-3210-b3b4-b262199c63a9"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null,
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist"
+            }
+          }
+        ],
+        "text-representation": {
+          "language": "por",
+          "script": "Latn"
+        },
+        "country": null,
+        "quality": "normal",
+        "id": "37bef6af-0fe7-46b5-9bb5-38865b36a68f",
+        "release-events": [
+          {
+            "date": "2024-09-26",
+            "area": null
+          }
+        ],
+        "barcode": "196872481242",
+        "tags": [],
+        "title": "Projeto verão - Músicas para academia",
+        "date": "2024-09-26",
+        "status": "Official",
+        "packaging": "None"
+      },
+      {
+        "release-group": {
+          "title": "TYLA",
+          "first-release-date": "2024-03-22",
+          "secondary-type-ids": [],
+          "secondary-types": [],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "ZA",
+                "type": "Person",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                "disambiguation": "South African singer",
+                "sort-name": "Tyla",
+                "name": "Tyla",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": "",
+              "name": "Tyla"
+            }
+          ],
+          "genres": []
+        },
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "artist-credit": [
+          {
+            "name": "Tyla",
+            "joinphrase": "",
+            "artist": {
+              "disambiguation": "South African singer",
+              "sort-name": "Tyla",
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "West African urban/pop music",
+                  "name": "afrobeats",
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 4,
+                  "name": "amapiano",
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad"
+                },
+                {
+                  "name": "contemporary r&b",
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 4,
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                },
+                {
+                  "name": "r&b",
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "disambiguation": "",
+                  "count": 2
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Tyla",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "2020s"
+                },
+                {
+                  "name": "afrobeats",
+                  "count": 3
+                },
+                {
+                  "count": 4,
+                  "name": "amapiano"
+                },
+                {
+                  "count": 2,
+                  "name": "contemporary r&b"
+                },
+                {
+                  "count": 1,
+                  "name": "gen z"
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "count": 2,
+                  "name": "r&b"
+                }
+              ],
+              "country": "ZA",
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "type": "Person"
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-count": 17,
+            "tracks": [
+              {
+                "id": "6e84b083-1221-4854-a4ba-284816af6bdb",
+                "number": "6",
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "artist": {
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "country": "ZA",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "length": 200255,
+                "title": "Water",
+                "position": 6
+              }
+            ],
+            "format": "Digital Media",
+            "track-offset": 5,
+            "id": "739d7266-510f-307a-8bd8-76d8bf00253a",
+            "title": "",
+            "position": 1
+          }
+        ],
+        "quality": "normal",
+        "country": "XW",
+        "id": "79b12c27-10b0-4963-8310-e6d9606a714d",
+        "tags": [],
+        "release-events": [
+          {
+            "date": "2024-10-11",
+            "area": {
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "type-id": null,
+              "name": "[Worldwide]",
+              "disambiguation": "",
+              "sort-name": "[Worldwide]",
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "type": null
+            }
+          }
+        ],
+        "barcode": "196872520118",
+        "date": "2024-10-11",
+        "title": "TYLA +",
+        "packaging": "None",
+        "status": "Official"
+      },
+      {
+        "release-group": {
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null,
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist"
+              }
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "id": "f04117dd-d51c-4971-b244-bad1823103f7",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "2024-12-20",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Internacionais 2025 - As mais tocadas"
+        },
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "text-representation": {
+          "script": "Latn",
+          "language": "por"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other"
+            }
+          }
+        ],
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-count": 49,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "artist": {
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person",
+                      "country": "ZA",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 3,
+                          "disambiguation": "West African urban/pop music"
+                        },
+                        {
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano",
+                          "count": 4,
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "count": 2,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 4,
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "name": "r&b"
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Tyla",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "count": 3,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "count": 2,
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "count": 1,
+                          "name": "gen z"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "number": "13",
+                "id": "bfd2a02a-a034-40c4-b60b-f67c57894402",
+                "title": "Water",
+                "position": 13,
+                "length": 200255
+              }
+            ],
+            "track-offset": 12,
+            "format": "Digital Media",
+            "id": "e43ac8ae-aa37-3e6a-939a-6feb7e6a1eb4",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "quality": "normal",
+        "country": null,
+        "id": "58737c99-795b-4705-8925-88ae4c1ee345",
+        "tags": [],
+        "barcode": "196872752854",
+        "release-events": [
+          {
+            "area": null,
+            "date": "2024-12-20"
+          }
+        ],
+        "date": "2024-12-20",
+        "title": "Internacionais 2025 - As mais tocadas",
+        "packaging": "None",
+        "status": "Official"
+      },
+      {
+        "release-events": [
+          {
+            "date": "2024-12-20",
+            "area": null
+          }
+        ],
+        "barcode": "196872752885",
+        "tags": [],
+        "status": "Official",
+        "packaging": "None",
+        "title": "Internacionais 2025 - As melhores",
+        "date": "2024-12-20",
+        "media": [
+          {
+            "position": 1,
+            "title": "",
+            "id": "dc17a23e-2276-315b-b98d-111e9f2c295d",
+            "format": "Digital Media",
+            "track-offset": 3,
+            "tracks": [
+              {
+                "position": 4,
+                "title": "Water",
+                "length": 200255,
+                "number": "4",
+                "id": "55857713-9ab7-4ca9-8d86-6bc3e5caef48",
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Tyla",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "count": 3,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 4,
+                          "name": "amapiano"
+                        },
+                        {
+                          "count": 2,
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "count": 1,
+                          "name": "gen z"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "count": 3,
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef"
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano"
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "disambiguation": "",
+                          "count": 2
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 4,
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop"
+                        },
+                        {
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "count": 2
+                        }
+                      ],
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a"
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 45,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "por"
+        },
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "id": "292e039b-01cb-42af-b6ce-2e7180379033",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "title": "Internacionais 2025 - As melhores",
+          "first-release-date": "2024-12-20",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album"
+        },
+        "id": "6a549f50-ac0c-4bcd-aa7a-9a9dbbdcad0c",
+        "country": null,
+        "quality": "normal"
+      },
+      {
+        "date": "2024-12-20",
+        "title": "Melhores músicas internacionais 2024 e 2025",
+        "packaging": "None",
+        "status": "Official",
+        "tags": [],
+        "release-events": [
+          {
+            "area": null,
+            "date": "2024-12-20"
+          }
+        ],
+        "barcode": "196872752922",
+        "country": null,
+        "quality": "normal",
+        "id": "4113f9e7-228c-466d-9595-20702d2eccf6",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Melhores músicas internacionais 2024 e 2025",
+          "first-release-date": "2024-12-20",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists"
+              }
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "id": "4d460dfa-ebe6-4811-8dc2-3daefcdc112b"
+        },
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "por"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists"
+            }
+          }
+        ],
+        "media": [
+          {
+            "id": "1aee3c68-feb4-3857-b438-6b8d12dcaee9",
+            "format": "Digital Media",
+            "track-offset": 6,
+            "position": 1,
+            "title": "",
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "number": "7",
+                "id": "8d5c5fcd-c26f-4601-a178-c93b82c06e19",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person",
+                      "country": "ZA",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "disambiguation": "West African urban/pop music",
+                          "count": 3
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano"
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "count": 2,
+                          "disambiguation": ""
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "name": "r&b"
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "name": "afrobeats",
+                          "count": 3
+                        },
+                        {
+                          "count": 4,
+                          "name": "amapiano"
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "count": 2
+                        },
+                        {
+                          "name": "gen z",
+                          "count": 1
+                        },
+                        {
+                          "name": "pop",
+                          "count": 4
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "name": "Tyla",
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer"
+                    },
+                    "name": "Tyla"
+                  }
+                ],
+                "title": "Water",
+                "position": 7,
+                "length": 200255
+              }
+            ],
+            "track-count": 40
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+      },
+      {
+        "id": "4b31f535-5d76-4b3a-80ff-a5eb9089a3d5",
+        "country": "XW",
+        "quality": "normal",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "genres": [],
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "por",
+          "script": "Latn"
+        },
+        "media": [
+          {
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "disambiguation": "West African urban/pop music",
+                          "count": 3
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 4,
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "count": 4,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "name": "r&b",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Tyla",
+                      "tags": [
+                        {
+                          "name": "2020s",
+                          "count": 1
+                        },
+                        {
+                          "count": 3,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "gen z"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person",
+                      "country": "ZA"
+                    },
+                    "name": "Tyla"
+                  }
+                ],
+                "id": "829672a3-4efe-46b9-ad63-479ae622f4a2",
+                "number": "25",
+                "position": 25,
+                "title": "Water",
+                "length": 200255
+              }
+            ],
+            "track-count": 45,
+            "id": "cc1c2108-6c85-3420-a409-d01aff55e160",
+            "track-offset": 24,
+            "format": "Digital Media",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Músicas de Casamento: Internacionais",
+          "first-release-date": "2024-12-22",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "id": "49b9f7f9-14a1-4e46-aaf6-a0122542ac42"
+        },
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "packaging": "None",
+        "status": "Official",
+        "date": "2024-12-22",
+        "title": "Músicas de Casamento: Internacionais",
+        "tags": [],
+        "barcode": "196872762372",
+        "release-events": [
+          {
+            "date": "2024-12-22",
+            "area": {
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "type": null,
+              "name": "[Worldwide]",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "sort-name": "[Worldwide]",
+              "disambiguation": ""
+            }
+          }
+        ]
+      },
+      {
+        "quality": "normal",
+        "country": "XW",
+        "id": "5aefd1b2-11f4-4ee6-8dd5-fde10c37188b",
+        "release-group": {
+          "id": "7a360dbb-9773-4d5a-9a24-cce8203f1428",
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Tyla",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Tyla",
+                "disambiguation": "South African singer",
+                "type": "Person",
+                "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                "country": "ZA"
+              },
+              "name": "Tyla"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "title": "TYLA",
+          "secondary-type-ids": [],
+          "first-release-date": "2024-03-22",
+          "secondary-types": [],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+        },
+        "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+        "disambiguation": "coke bottle clear vinyl",
+        "artist-credit": [
+          {
+            "artist": {
+              "country": "ZA",
+              "type": "Person",
+              "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+              "sort-name": "Tyla",
+              "disambiguation": "South African singer",
+              "name": "Tyla",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "name": "2020s",
+                  "count": 1
+                },
+                {
+                  "name": "afrobeats",
+                  "count": 3
+                },
+                {
+                  "name": "amapiano",
+                  "count": 4
+                },
+                {
+                  "count": 2,
+                  "name": "contemporary r&b"
+                },
+                {
+                  "count": 1,
+                  "name": "gen z"
+                },
+                {
+                  "count": 4,
+                  "name": "pop"
+                },
+                {
+                  "count": 2,
+                  "name": "r&b"
+                }
+              ],
+              "genres": [
+                {
+                  "name": "afrobeats",
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "count": 3,
+                  "disambiguation": "West African urban/pop music"
+                },
+                {
+                  "name": "amapiano",
+                  "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                  "count": 4,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                  "name": "contemporary r&b",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "count": 4,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "name": "r&b"
+                }
+              ]
+            },
+            "joinphrase": "",
+            "name": "Tyla"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "type": "Person",
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "country": "ZA",
+                      "name": "Tyla",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "disambiguation": "South African singer",
+                      "sort-name": "Tyla"
+                    },
+                    "name": "Tyla"
+                  }
+                ],
+                "id": "782b869e-339a-4b82-9e8b-8479dfa23335",
+                "number": "A3",
+                "title": "Water",
+                "length": 200255,
+                "position": 3
+              }
+            ],
+            "track-count": 9,
+            "id": "332e0080-bec8-3b75-b4e6-54096bfb0e22",
+            "format": "12\" Vinyl",
+            "track-offset": 2,
+            "title": "",
+            "position": 1
+          }
+        ],
+        "date": "2025-03-14",
+        "title": "TYLA +",
+        "packaging": "Cardboard/Paper Sleeve",
+        "status": "Official",
+        "tags": [],
+        "barcode": "198028380218",
+        "release-events": [
+          {
+            "date": "2025-03-14",
+            "area": {
+              "type-id": null,
+              "name": "[Worldwide]",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "disambiguation": "",
+              "sort-name": "[Worldwide]",
+              "type": null,
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+            }
+          }
+        ]
+      },
+      {
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "title": "Now That's What I Call... Pop!",
+          "first-release-date": "2025-05-23",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null,
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists"
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "genres": [],
+          "id": "c4ce679e-7b60-480e-a5ed-f230f4c6b476"
+        },
+        "media": [
+          {
+            "format": "12\" Vinyl",
+            "track-offset": 3,
+            "id": "d236c32e-2541-4215-a3f7-d9e800dc5cc3",
+            "position": 3,
+            "title": "",
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "track-count": 13,
+            "tracks": [
+              {
+                "title": "Water",
+                "position": 4,
+                "length": null,
+                "artist-credit": [
+                  {
+                    "name": "Tyla",
+                    "artist": {
+                      "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+                      "type": "Person",
+                      "country": "ZA",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "disambiguation": "West African urban/pop music",
+                          "count": 3
+                        },
+                        {
+                          "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+                          "name": "amapiano",
+                          "disambiguation": "",
+                          "count": 4
+                        },
+                        {
+                          "name": "contemporary r&b",
+                          "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+                          "disambiguation": "",
+                          "count": 2
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop"
+                        },
+                        {
+                          "name": "r&b",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "disambiguation": "",
+                          "count": 2
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Tyla",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "2020s"
+                        },
+                        {
+                          "count": 3,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "name": "amapiano",
+                          "count": 4
+                        },
+                        {
+                          "count": 2,
+                          "name": "contemporary r&b"
+                        },
+                        {
+                          "count": 1,
+                          "name": "gen z"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "sort-name": "Tyla",
+                      "disambiguation": "South African singer"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "09fc3487-cf45-4613-bc49-ee4b2dda445d",
+                "number": "E4"
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "name": "Various Artists",
+              "genres": []
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "text-representation": {
+          "script": null,
+          "language": "eng"
+        },
+        "country": "GB",
+        "quality": "normal",
+        "id": "73285d8b-a28f-4047-bb51-1470ec03f9a3",
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            },
+            "date": "2025-05-23"
+          }
+        ],
+        "barcode": "0198028939614",
+        "tags": [],
+        "title": "Now That's What I Call... Pop!",
+        "date": "2025-05-23",
+        "status": "Official",
+        "packaging": null
+      }
+    ],
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "country": "ZA",
+          "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+          "type": "Person",
+          "sort-name": "Tyla",
+          "disambiguation": "South African singer",
+          "genres": [
+            {
+              "name": "afrobeats",
+              "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+              "disambiguation": "West African urban/pop music",
+              "count": 3
+            },
+            {
+              "name": "amapiano",
+              "id": "de3f8f85-1d8a-499f-9a1e-edad65a26dad",
+              "disambiguation": "",
+              "count": 4
+            },
+            {
+              "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+              "name": "contemporary r&b",
+              "count": 2,
+              "disambiguation": ""
+            },
+            {
+              "count": 4,
+              "disambiguation": "",
+              "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+              "name": "pop"
+            },
+            {
+              "count": 2,
+              "disambiguation": "",
+              "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+              "name": "r&b"
+            }
+          ],
+          "name": "Tyla",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "tags": [
+            {
+              "count": 1,
+              "name": "2020s"
+            },
+            {
+              "count": 3,
+              "name": "afrobeats"
+            },
+            {
+              "count": 4,
+              "name": "amapiano"
+            },
+            {
+              "count": 2,
+              "name": "contemporary r&b"
+            },
+            {
+              "count": 1,
+              "name": "gen z"
+            },
+            {
+              "name": "pop",
+              "count": 4
+            },
+            {
+              "name": "r&b",
+              "count": 2
+            }
+          ]
+        },
+        "name": "Tyla"
+      }
+    ],
+    "genres": [
+      {
+        "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+        "name": "contemporary r&b",
+        "count": 1,
+        "disambiguation": ""
+      },
+      {
+        "name": "pop",
+        "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+        "count": 2,
+        "disambiguation": ""
+      }
+    ],
+    "relations": [
+      {
+        "end": "2023",
+        "attribute-ids": {},
+        "work": {
+          "iswcs": [
+            "T-321.476.435-5"
+          ],
+          "disambiguation": "",
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+          "languages": [
+            "eng"
+          ],
+          "attributes": [],
+          "title": "Water",
+          "language": "eng",
+          "id": "0aa14f47-dc96-4cb5-be33-fc9588d0f50f",
+          "type": "Song"
+        },
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "source-credit": "",
+        "type": "performance",
+        "attribute-values": {},
+        "target-type": "work",
+        "begin": "2023",
+        "target-credit": "",
+        "ended": true,
+        "attributes": [],
+        "direction": "forward"
+      }
+    ],
+    "length": 200255,
+    "isrcs": [
+      "USSM12305126"
+    ],
+    "id": "df1fd341-2119-441e-a863-7d21eaa3ab94",
+    "tags": [
+      {
+        "count": 1,
+        "name": "contemporary r&b"
+      },
+      {
+        "count": 2,
+        "name": "pop"
+      }
+    ],
+    "video": false,
+    "title": "Water",
+    "first-release-date": "2023-07-28"
+  }
+}

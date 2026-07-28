@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "round_id": "round-002",
+  "strategy": "real-cascade-v1",
+  "acceptance": {
+    "threshold": 150,
+    "margin": 20
+  },
+  "started_at": "2026-07-28T14:56:08.327Z",
+  "finished_at": "2026-07-28T14:56:08.438Z",
+  "elapsed_seconds": 162.89,
+  "report_generation_seconds": 0.11,
+  "target_candidates": 60,
+  "candidates": 60,
+  "status": {
+    "exact": 53,
+    "candidate": 5,
+    "rejected": 2,
+    "not_found": 0,
+    "provider_error": 0
+  },
+  "reached": 53,
+  "reached_pct": 88.33,
+  "cross_validation": {
+    "references": 34,
+    "accepted": 27,
+    "correct": 27,
+    "precision_pct": 100,
+    "recall_pct": 79.41
+  },
+  "playlists": [
+    {
+      "prompt_id": "SIM-001",
+      "prompt": "Crea una playlist de 20 canciones de electrónica nocturna publicadas entre 1998 y 2020. Una canción por artista, versiones de estudio originales, con mezcla de trip-hop, indietrónica, house y electrónica ambiental.",
+      "target": 20,
+      "processed": 20,
+      "status": {
+        "exact": 20,
+        "candidate": 0,
+        "rejected": 0,
+        "not_found": 0,
+        "provider_error": 0
+      },
+      "reached": 20,
+      "reached_pct": 100,
+      "elapsed_seconds": 39.19,
+      "average_candidate_seconds": 1.96,
+      "first_pass": {
+        "elapsed_seconds": 30.19,
+        "status": {
+          "exact": 19,
+          "candidate": 1,
+          "rejected": 0,
+          "not_found": 0,
+          "provider_error": 0
+        },
+        "musicbrainz": {
+          "provider_requests": 24,
+          "cache_hits": 0
+        },
+        "listenbrainz": {
+          "provider_requests": 40,
+          "cache_hits": 0
+        }
+      },
+      "fallback": {
+        "elapsed_seconds": 9,
+        "executions": 2,
+        "musicbrainz_requests": 4
+      },
+      "musicbrainz": {
+        "provider_requests": 28,
+        "cache_hits": 0
+      },
+      "listenbrainz": {
+        "provider_requests": 40,
+        "cache_hits": 0
+      }
+    },
+    {
+      "prompt_id": "SIM-002",
+      "prompt": "Crea una playlist de 20 remixes, edits y versiones extendidas cuyo nombre de versión sea imprescindible. No repitas artista principal. Debe encontrarse exactamente esa versión y no la grabación original ni un fragmento de sesión DJ.",
+      "target": 20,
+      "processed": 20,
+      "status": {
+        "exact": 15,
+        "candidate": 3,
+        "rejected": 2,
+        "not_found": 0,
+        "provider_error": 0
+      },
+      "reached": 15,
+      "reached_pct": 75,
+      "elapsed_seconds": 79.7,
+      "average_candidate_seconds": 3.99,
+      "first_pass": {
+        "elapsed_seconds": 30.63,
+        "status": {
+          "exact": 13,
+          "candidate": 3,
+          "rejected": 1,
+          "not_found": 3,
+          "provider_error": 0
+        },
+        "musicbrainz": {
+          "provider_requests": 25,
+          "cache_hits": 0
+        },
+        "listenbrainz": {
+          "provider_requests": 40,
+          "cache_hits": 0
+        }
+      },
+      "fallback": {
+        "elapsed_seconds": 49.07,
+        "executions": 1,
+        "musicbrainz_requests": 28
+      },
+      "musicbrainz": {
+        "provider_requests": 53,
+        "cache_hits": 0
+      },
+      "listenbrainz": {
+        "provider_requests": 40,
+        "cache_hits": 0
+      }
+    },
+    {
+      "prompt_id": "SIM-003",
+      "prompt": "Crea una playlist internacional de 20 canciones publicadas entre 1980 y 2022, sin repetir artista principal. Incluye títulos con diacríticos, varios idiomas, colaboraciones y créditos complejos. Usa las versiones de estudio conocidas, no remixes.",
+      "target": 20,
+      "processed": 20,
+      "status": {
+        "exact": 18,
+        "candidate": 2,
+        "rejected": 0,
+        "not_found": 0,
+        "provider_error": 0
+      },
+      "reached": 18,
+      "reached_pct": 90,
+      "elapsed_seconds": 44,
+      "average_candidate_seconds": 2.2,
+      "first_pass": {
+        "elapsed_seconds": 37.37,
+        "status": {
+          "exact": 17,
+          "candidate": 3,
+          "rejected": 0,
+          "not_found": 0,
+          "provider_error": 0
+        },
+        "musicbrainz": {
+          "provider_requests": 23,
+          "cache_hits": 0
+        },
+        "listenbrainz": {
+          "provider_requests": 40,
+          "cache_hits": 0
+        }
+      },
+      "fallback": {
+        "elapsed_seconds": 6.63,
+        "executions": 1,
+        "musicbrainz_requests": 6
+      },
+      "musicbrainz": {
+        "provider_requests": 29,
+        "cache_hits": 0
+      },
+      "listenbrainz": {
+        "provider_requests": 40,
+        "cache_hits": 0
+      }
+    }
+  ]
+}

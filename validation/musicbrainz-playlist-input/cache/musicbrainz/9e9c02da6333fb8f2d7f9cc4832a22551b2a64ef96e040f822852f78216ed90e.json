@@ -1,0 +1,3247 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28glue%29+AND+artistname%3A%22Bicep%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:41:29.037Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:41:29.404Z",
+    "count": 20,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "d66a8f95-47c5-43a2-982a-e07bd41603a6",
+        "score": 100,
+        "artist-credit-id": "8e5b53d0-aa43-3767-a7e4-7c9a7814f981",
+        "title": "Glue",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "BICEP",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2021-09-24",
+        "releases": [
+          {
+            "id": "e484f7ce-2abb-4b36-bfc1-da9c5a88bd39",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "30 Years: Three Decades of Dance",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5624ed24-1ec0-432d-a627-7d728c62a58b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "30 Years: Three Decades of Dance",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-09-24",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2021-09-24",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "1f297142-0a3f-302b-8f68-43106d6b9180",
+                "position": 2,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "99251f67-699f-484c-8567-f3cd0234ec08",
+                    "number": "D2",
+                    "title": "Glue"
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8547f056-9ac6-46d6-b5f5-6a6fe91109ce",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 182996,
+        "disambiguation": "Tomorrowland 2019 streaming mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2019-07-19",
+        "releases": [
+          {
+            "id": "f1c5ccc5-9adf-4c21-8c86-497bc12a0bfc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Tomorrowland 2019 - 15 Years (Streaming mix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "db4be5b6-35ab-48ce-885a-6bf62d56d5d2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Tomorrowland 2019 – 15 Years Compilation",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2019-07-19",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019-07-19",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-07-19",
+                "area": {
+                  "id": "563d21b7-4a8e-35e2-83a7-7804baefbfa7",
+                  "name": "Luxembourg",
+                  "sort-name": "Luxembourg",
+                  "iso-3166-1-codes": [
+                    "LU"
+                  ]
+                }
+              },
+              {
+                "date": "2019-07-19",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "284bc15b-5569-39b0-a806-9ac90212d36d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "218fe24f-4a47-4f66-88a5-c95fbc4f183f",
+                    "number": "26",
+                    "title": "Glue",
+                    "length": 182996
+                  }
+                ],
+                "track-count": 30,
+                "track-offset": 25
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "BEK011489841"
+        ]
+      },
+      {
+        "id": "414a5515-8052-41b7-9887-c966a41526ff",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 271333,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2018",
+        "releases": [
+          {
+            "id": "778885da-e64d-4554-9026-372272269ee5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Spring Break 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e1b0e2f4-6080-4e31-b143-22dc6a7ab91b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Spring Break 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 64,
+            "media": [
+              {
+                "id": "05a26020-16de-4dff-b496-21ed866d5e79",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c8c2bd3e-8906-424a-952b-1a48ee718ec9",
+                    "number": "7",
+                    "title": "Glue",
+                    "length": 271333
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "92840808-91e2-493d-8dd6-f01ae42668da",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 188000,
+        "disambiguation": "part of “Tomorrowland 2019, XV Years” DJ-mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2019-07-19",
+        "releases": [
+          {
+            "id": "94bb6174-54ea-4356-9ec7-3e7d4849b9c9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "Tomorrowland 2019 – 15 Years Compilation",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "db4be5b6-35ab-48ce-885a-6bf62d56d5d2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Tomorrowland 2019 – 15 Years Compilation",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2019-07-19",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019-07-19",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 105,
+            "media": [
+              {
+                "id": "0c8c2da5-9b68-32d8-ade0-78d9d618ce5c",
+                "position": 5,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d899937c-b244-4684-b515-bb1377cde3c0",
+                    "number": "2",
+                    "title": "Glue",
+                    "length": 188000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "54b52b2f-773f-45e0-a603-7660e9c6b70c",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 202826,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2017-12-01",
+        "releases": [
+          {
+            "id": "075effa3-8868-4b65-b37f-8734d8a33f23",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Kontor Sunset Chill 2018 (Winter Edition)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "436818c3-5a0b-4857-9ab1-390659403f08",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Kontor Sunset Chill 2018 (Winter Edition)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-01",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-12-01",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 63,
+            "media": [
+              {
+                "id": "738e52d4-5257-3098-9e0f-81c1e57f5891",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "60627e14-5ae8-4334-93ee-a722ed9c4019",
+                    "number": "1",
+                    "title": "Glue",
+                    "length": 202826
+                  }
+                ],
+                "track-count": 63,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "5acf566e-dcfc-4840-9624-fe4f957fc43b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Kontor Sunset Chill 2018 (Winter Edition)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "436818c3-5a0b-4857-9ab1-390659403f08",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Kontor Sunset Chill 2018 (Winter Edition)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2017",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "1a77ef16-fca7-3bda-ad9b-ff5bd79e844a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5667ac69-f2fb-4ecd-ae57-88f2cd67bbb0",
+                    "number": "1",
+                    "title": "Glue",
+                    "length": 202826
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6817e952-29d9-4812-ae81-803365c87692",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 270000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2017-10-20",
+        "releases": [
+          {
+            "id": "96dd514c-bcc7-4e28-8bfb-89c5ec652fef",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Café del Mar Terrace Mix 7",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "46e04f87-c8a3-4e16-b44c-f6fddc6e5f77",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Café del Mar: Terrace Mix 7",
+              "primary-type": "Album"
+            },
+            "date": "2017-10-20",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-10-20",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "1b58806f-2faf-309f-8da3-8ac023c847d8",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8daef952-d594-4fa7-8038-edc919dfc0c2",
+                    "number": "16",
+                    "title": "Glue",
+                    "length": 270000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fb18f945-125b-4f03-b3c7-138a92bf5c3e",
+        "score": 100,
+        "artist-credit-id": "8e5b53d0-aa43-3767-a7e4-7c9a7814f981",
+        "title": "Glue",
+        "length": 270013,
+        "disambiguation": "part of “30 Years: Three Decades of Dance” Ministry of Sound DJ-mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "BICEP",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2021-09-17",
+        "releases": [
+          {
+            "id": "ed70dbd9-085d-4aea-8e55-d71f1b191743",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "30 Years: Three Decades of Dance",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5624ed24-1ec0-432d-a627-7d728c62a58b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "30 Years: Three Decades of Dance",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-09-17",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "d808a45c-05d5-3fdb-bf6b-622e04afe846",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ac0cf38b-1be4-428e-8693-b94cc8cbf792",
+                    "number": "20",
+                    "title": "Glue",
+                    "length": 270013
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "eb7364d9-fa28-430f-8f9d-ccc8035b519d",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 274146,
+        "disambiguation": "part of “Chilled House Session 9” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2018-02-23",
+        "releases": [
+          {
+            "id": "eb3d411e-08be-4370-9438-939f3445603d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Chilled House Session 9",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f45af2fe-a17a-45f7-9778-dd3d1dd96a2d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Chilled House Session 9",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2018-02-23",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2018-02-23",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "44d511c4-2f72-3f20-b1b3-7af3a03b95a3",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9face3c4-51d3-4260-ba80-50f9cc1fbe3f",
+                    "number": "3",
+                    "title": "Glue",
+                    "length": 274146
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8473057e-039d-4df3-a21e-f5708d5700b3",
+        "score": 100,
+        "artist-credit-id": "8e5b53d0-aa43-3767-a7e4-7c9a7814f981",
+        "title": "Glue",
+        "length": 269149,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "BICEP",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2019-11-08",
+        "releases": [
+          {
+            "id": "14316962-37ea-4ad3-9bda-6f8047481732",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2be6e49f-3e96-4ee0-8031-84ce82634cb8",
+            "count": 3,
+            "title": "In Search of Sunrise 15",
+            "status": "Official",
+            "disambiguation": "unmixed",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Markus Schulz",
+                "artist": {
+                  "id": "62558a6c-cbb1-4bee-a843-d07d187ddf55",
+                  "name": "Markus Schulz",
+                  "sort-name": "Schulz, Markus"
+                }
+              },
+              {
+                "joinphrase": " & ",
+                "name": "Jerome Isma‐Ae",
+                "artist": {
+                  "id": "0d67efad-1013-4f51-876e-e8b7e773c422",
+                  "name": "Jerome Isma‐Ae",
+                  "sort-name": "Isma‐Ae, Jerome",
+                  "disambiguation": "trance/techno/progressive house DJ"
+                }
+              },
+              {
+                "name": "Orkidea",
+                "artist": {
+                  "id": "17294d99-11ea-4fb3-af2f-33e607a8c079",
+                  "name": "Orkidea",
+                  "sort-name": "Orkidea",
+                  "disambiguation": "Finnish DJ / producer Tapio Hakanen"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6179f1f8-71ca-4987-9e1c-9120f636f044",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "In Search of Sunrise 15",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2019-11-08",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-11-08",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 49,
+            "media": [
+              {
+                "id": "56747313-4178-4113-b01a-53d7083c3e57",
+                "position": 3,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "cff72590-73b7-4ce4-a21a-3881cc16ea00",
+                    "number": "15",
+                    "title": "Glue",
+                    "length": 269149
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCFB1700237"
+        ]
+      },
+      {
+        "id": "1fe66696-158c-4ddc-830d-22f903cccae1",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 270006,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2022-02-11",
+        "releases": [
+          {
+            "id": "51bf0421-e94e-4818-a847-e597d6e7e848",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Trax Classics Drum'n'Bass",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "912b4406-397f-42f5-a9ab-fbf4bcc79c0e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Trax Classics Drum'n'Bass",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 13,
+            "media": [
+              {
+                "id": "a7a74d37-70bd-4bbc-bdff-8e22726cd45f",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c165dc9b-efc7-4f3c-a240-06ecf404b999",
+                    "number": "7",
+                    "title": "Glue",
+                    "length": 270006
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5fc2f070-a762-4f00-93b6-123f68d3aedc",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 269066,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2017-09-01",
+        "releases": [
+          {
+            "id": "dfe69472-0a59-4feb-8eb5-c3492c7406f3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Life Is Music 2018.1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "382a3ee0-6004-4bd2-aec8-b6066a2ee1d8",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Life Is Music 2018.1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-05-19",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2018-05-19",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 43,
+            "media": [
+              {
+                "id": "86377d76-ec5d-335c-a1dc-34aaddef95e3",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "90377123-b9fc-4d0a-b6f8-062d59c8f3e8",
+                    "number": "6",
+                    "title": "Glue",
+                    "length": 271333
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "20630d98-fbfe-4b66-b882-e2a0226114b4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e7d94cd8-fa0b-3b29-99ef-6bc3a79ea40a",
+            "count": 1,
+            "title": "KNEECAP (ORIGINAL SOUNDTRACK)",
+            "status": "Official",
+            "disambiguation": "Bandcamp version",
+            "artist-credit": [
+              {
+                "name": "KNEECAP",
+                "artist": {
+                  "id": "6ac275dd-eb37-42cf-9a60-6b147320c7be",
+                  "name": "KNEECAP",
+                  "sort-name": "Kneecap",
+                  "disambiguation": "Irish hip-hop trio"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5fbd3af0-783f-4da9-a398-fd23f17f55fb",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "KNEECAP (ORIGINAL SOUNDTRACK)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2024-08-30",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-08-30",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 35,
+            "media": [
+              {
+                "id": "717b02ec-b792-4f45-adcd-f2459f1da9da",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "cbef397a-bb64-4e76-aa5b-93749746edb6",
+                    "number": "21",
+                    "title": "Glue",
+                    "length": 269000
+                  }
+                ],
+                "track-count": 35,
+                "track-offset": 20
+              }
+            ]
+          },
+          {
+            "id": "f730c778-c75f-4682-8d64-7f6027d1f831",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 10,
+            "title": "Nova Tunes 3.1_4.0",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8b102400-f12e-47ac-9fa3-cdba86c9aa86",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nova Tunes 3.1_4.0",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2020",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2020",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 168,
+            "media": [
+              {
+                "id": "9478f695-839f-30e3-9203-58d089f689c7",
+                "position": 7,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "849814fe-646b-44ba-aa65-500f498901ff",
+                    "number": "4",
+                    "title": "Glue",
+                    "length": 269066
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "38d0afde-17c3-42c1-8b7b-3f5ff3606148",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Nova Tunes 3.1_4.0",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8b102400-f12e-47ac-9fa3-cdba86c9aa86",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nova Tunes 3.1_4.0",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2020-12-04",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2020-12-04",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 104,
+            "media": [
+              {
+                "id": "fccbfcb6-3ec9-3050-9687-1be5d98d5928",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "96256b85-db86-443a-8817-3df30bd7d02e",
+                    "number": "53",
+                    "title": "Glue",
+                    "length": 269066
+                  }
+                ],
+                "track-count": 104,
+                "track-offset": 52
+              }
+            ]
+          },
+          {
+            "id": "90103e7d-a222-4c6c-b562-ea31cdcdaac0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Nova Tunes 3.7",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a9361d1f-8b29-4ac4-9eef-71aab88ccaf0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nova Tunes 3.7",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-02",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-03-02",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "ef4953e4-9524-3402-8f14-363e9eee7469",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "043a907d-aed9-4287-b639-0dbb221f4552",
+                    "number": "5",
+                    "title": "Glue",
+                    "length": 269066
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "82dae8fb-6781-4397-997d-5954e9eb8df8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Nova Tunes 3.7",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a9361d1f-8b29-4ac4-9eef-71aab88ccaf0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nova Tunes 3.7",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-03-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "5a78526c-5333-3812-823f-936d70c16890",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "56d711aa-77e6-49fb-ad89-52f260ec380c",
+                    "number": "5",
+                    "title": "Glue",
+                    "length": 269000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "4af6e51b-c285-424a-8145-6b211424e970",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "The Best of Café Del Mar",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "648f404f-5358-4df4-8f48-24878ca9f04c",
+              "type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "primary-type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "title": "The Best of Café Del Mar",
+              "primary-type": "Other",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 99,
+            "media": [
+              {
+                "id": "885a3697-8fdf-3324-b6cb-fdf319bd4f86",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a6b9cb15-9417-4f35-b7dd-e704878a7160",
+                    "number": "90",
+                    "title": "Glue",
+                    "length": 270178
+                  }
+                ],
+                "track-count": 99,
+                "track-offset": 89
+              }
+            ]
+          },
+          {
+            "id": "550f2093-72a4-4fda-9dcb-8bee512caa1d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e7d94cd8-fa0b-3b29-99ef-6bc3a79ea40a",
+            "count": 1,
+            "title": "KNEECAP (ORIGINAL SOUNDTRACK)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "KNEECAP",
+                "artist": {
+                  "id": "6ac275dd-eb37-42cf-9a60-6b147320c7be",
+                  "name": "KNEECAP",
+                  "sort-name": "Kneecap",
+                  "disambiguation": "Irish hip-hop trio"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5fbd3af0-783f-4da9-a398-fd23f17f55fb",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "KNEECAP (ORIGINAL SOUNDTRACK)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "track-count": 34,
+            "media": [
+              {
+                "id": "b75b17bc-581e-35da-86f4-1787330aef87",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0eec108d-0129-4dbd-8303-647d2675f0b0",
+                    "number": "21",
+                    "title": "Glue",
+                    "length": 269000
+                  }
+                ],
+                "track-count": 34,
+                "track-offset": 20
+              }
+            ]
+          },
+          {
+            "id": "0af59634-6308-4d65-9465-059344c5e167",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "KNEECAP (ORIGINAL SOUNDTRACK)",
+            "status": "Official",
+            "disambiguation": "Spotify/Apple/Tidal version",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5fbd3af0-783f-4da9-a398-fd23f17f55fb",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "KNEECAP (ORIGINAL SOUNDTRACK)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2024-08-30",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-08-30",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "645a04b4-f009-37a4-8538-8ca78317f2ea",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ad6c1117-c638-479c-a492-a9f2f15b770b",
+                    "number": "21",
+                    "title": "Glue",
+                    "length": 269150
+                  }
+                ],
+                "track-count": 34,
+                "track-offset": 20
+              }
+            ]
+          },
+          {
+            "id": "bf78a92c-f35d-4f80-a727-719f2ee24809",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Ninja Tune Publishing & Sync Sampler Vol. 42",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6de10187-3e0c-4666-840b-858cdd07019a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ninja Tune Publishing & Sync Sampler Vol. 42",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2018-11",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "e79dfe37-1985-3836-a822-34c56c696b98",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5fa3b7f7-dfee-4d7b-aee0-d91d5c25401b",
+                    "number": "12",
+                    "title": "Glue (instr)",
+                    "length": 271146
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "66911d44-eb96-4016-9038-32f1cb1a6bcd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "The Greatest Switch 2021",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2c007c79-d652-4519-8a55-9104e55a8b28",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Greatest Switch 2021",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021-11-04",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2021-11-04",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "06d45fcd-41b4-3be5-aa6e-2118243cb545",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "77203e58-759e-4edb-b195-e3d620cdcdb6",
+                    "number": "4",
+                    "title": "Glue",
+                    "length": 270013
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "63784e57-4d8f-4738-890b-49d392ddb7bc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Water",
+            "status": "Official",
+            "release-group": {
+              "id": "4db8dc80-d77b-44a2-b226-dc9e6b285fbc",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Water",
+              "primary-type": "EP"
+            },
+            "date": "2022-10-05",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2022-10-05",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "9aa8d3eb-53b9-3c27-9e5a-e99ea734bc38",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9da58779-b29c-470f-b359-ade356717ebf",
+                    "number": "4",
+                    "title": "Glue",
+                    "length": 269000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "393e4aaf-ed20-4a29-a048-977ab2a0e074",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Electronic Music Anthology by FG Vol. 6",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3a80920d-e2de-49ec-b9aa-a982185e3f2c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Electronic Music Anthology by FG Vol. 6",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2021",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "f483b761-1364-377f-b5c5-1162f70ed83a",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "2090984d-95a8-46e2-ae19-cf5740422ac1",
+                    "number": "A3",
+                    "title": "Glue",
+                    "length": 269000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "0a73906c-c62a-4372-ab84-7425b9528ede",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Toolroom Amsterdam 2017",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2a645686-f7f1-4448-ad38-3eedab60a436",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Toolroom Amsterdam 2017",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-10-16",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-10-16",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 56,
+            "media": [
+              {
+                "id": "49677799-b58b-38ec-8750-affd49e9b9d4",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6d097a99-f6cb-44c0-9244-0098f641759b",
+                    "number": "7",
+                    "title": "Glue",
+                    "length": 269000
+                  }
+                ],
+                "track-count": 56,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "5f745ffa-756b-4ea1-ae41-1d90532b2036",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Toolroom Amsterdam 2017",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2a645686-f7f1-4448-ad38-3eedab60a436",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Toolroom Amsterdam 2017",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-10-06",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-10-06",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 57,
+            "media": [
+              {
+                "id": "cd446a62-0522-3701-99cc-b850440dd3be",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c2eafae2-17a7-4679-815c-916f412defee",
+                    "number": "7",
+                    "title": "Glue",
+                    "length": 269000
+                  }
+                ],
+                "track-count": 57,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "7e567033-10f8-40d8-835e-67a8ad8865e9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Bicep",
+            "status": "Official",
+            "release-group": {
+              "id": "6f34e134-49d5-4e56-b3e0-4fe6b9900380",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bicep",
+              "primary-type": "Album"
+            },
+            "date": "2017-09-01",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2017-09-01",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              },
+              {
+                "date": "2017-09-01",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "438b5808-fa8c-3ef3-a4b8-d0d40e9242b3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8af8c581-7a08-467d-af35-e505db0c4287",
+                    "number": "2",
+                    "title": "Glue",
+                    "length": 269160
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "ff744fae-f387-46d1-8777-e4961d05e016",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Bleep: 100 Tracks 2017",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "abc33d48-ef06-4222-85ba-447b215ac353",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bleep: 100 Tracks 2017",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-12",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "bca038ea-6d01-3f14-a117-66570d5c32a3",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2edee6ee-7305-49d1-901c-ed8bbaab7c2b",
+                    "number": "96",
+                    "title": "Glue",
+                    "length": 269149
+                  }
+                ],
+                "track-count": 100,
+                "track-offset": 95
+              }
+            ]
+          },
+          {
+            "id": "1878418c-bcd4-4688-bfb2-4056ad566f46",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Glue EP",
+            "status": "Official",
+            "release-group": {
+              "id": "1767b830-8d11-4ad6-8e48-237ae6875c1e",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Glue EP",
+              "primary-type": "EP"
+            },
+            "date": "2017-11-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-11-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "f084bdf1-7521-336d-ae87-998eb860579a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "57b4cd11-79af-445a-99f7-728f9c287670",
+                    "number": "1",
+                    "title": "Glue",
+                    "length": 269150
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "3c4e39c0-582e-4aa0-8aa6-2b4d9a2a5365",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bcd22677-9a87-3d36-8ce6-3c00a661c15e",
+            "count": 1,
+            "title": "Café del Mar: Terrace Mix 7",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Toni Simonen",
+                "artist": {
+                  "id": "3896d068-cba7-4df0-b2ec-cbd226eadbb8",
+                  "name": "Toni Simonen",
+                  "sort-name": "Simonen, Toni"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c6c00cb4-eae0-4c5a-807c-d354f39a1629",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Café del Mar: Terrace Mix 7",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-10-20",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-10-20",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "b4146dbe-b627-358c-91f2-c841810c268d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c00988ba-03ad-4e52-bc37-bc5c7848237a",
+                    "number": "16",
+                    "title": "Glue",
+                    "length": 270150
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "c43a3d4d-1b57-4194-a470-e8e27bd449c6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Bicep",
+            "status": "Official",
+            "release-group": {
+              "id": "6f34e134-49d5-4e56-b3e0-4fe6b9900380",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bicep",
+              "primary-type": "Album"
+            },
+            "date": "2017-09-01",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-09-01",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "c18f8e75-9a2f-3875-9799-6bf66622cd07",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "50d97e2b-587b-4576-bee5-f63919aef5e3",
+                    "number": "2",
+                    "title": "Glue",
+                    "length": 269150
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCFB1700271",
+          "ES8741707116",
+          "GBCFB1700229"
+        ],
+        "tags": [
+          {
+            "count": 3,
+            "name": "house"
+          },
+          {
+            "count": 1,
+            "name": "progressive breaks"
+          },
+          {
+            "count": 1,
+            "name": "breakstep"
+          }
+        ]
+      },
+      {
+        "id": "03cc4956-11d4-4977-a7e9-95dbca6c01e7",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 421000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2018-11-23",
+        "releases": [
+          {
+            "id": "a95f96e2-c279-4da0-b574-e946c552f3ed",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "RA Live: Bicep at Printworks 2018",
+            "status": "Official",
+            "release-group": {
+              "id": "bc275fa1-6b5b-44e1-bf7d-4bbb2bcdeada",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RA Live: Bicep at Printworks 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix",
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf",
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2018-11-23",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2018-11-23",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "331c075b-05fe-44d7-9eae-794ae3dbfee3",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0cecab41-1382-44b0-a4e0-de148ade44bc",
+                    "number": "13",
+                    "title": "Glue",
+                    "length": 421000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "20c9ae08-ec44-4d70-90af-27cd1d0036db",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue",
+        "length": 240506,
+        "disambiguation": "part of “In Search of Sunrise 15” DJ-mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2019-11-08",
+        "releases": [
+          {
+            "id": "b5e10820-59d1-4642-9387-b227bf3f732d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2be6e49f-3e96-4ee0-8031-84ce82634cb8",
+            "count": 3,
+            "title": "In Search of Sunrise 15",
+            "status": "Official",
+            "disambiguation": "mixed",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Markus Schulz",
+                "artist": {
+                  "id": "62558a6c-cbb1-4bee-a843-d07d187ddf55",
+                  "name": "Markus Schulz",
+                  "sort-name": "Schulz, Markus"
+                }
+              },
+              {
+                "joinphrase": " & ",
+                "name": "Jerome Isma‐Ae",
+                "artist": {
+                  "id": "0d67efad-1013-4f51-876e-e8b7e773c422",
+                  "name": "Jerome Isma‐Ae",
+                  "sort-name": "Isma‐Ae, Jerome",
+                  "disambiguation": "trance/techno/progressive house DJ"
+                }
+              },
+              {
+                "name": "Orkidea",
+                "artist": {
+                  "id": "17294d99-11ea-4fb3-af2f-33e607a8c079",
+                  "name": "Orkidea",
+                  "sort-name": "Orkidea",
+                  "disambiguation": "Finnish DJ / producer Tapio Hakanen"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6179f1f8-71ca-4987-9e1c-9120f636f044",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "In Search of Sunrise 15",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2019-11-08",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-11-08",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 49,
+            "media": [
+              {
+                "id": "8552c8f1-e75c-4dad-977a-04ae10c6c5e8",
+                "position": 3,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "00807d47-ecbd-4771-927c-65554e771e69",
+                    "number": "15",
+                    "title": "Glue",
+                    "length": 240506
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "0d41edab-2cd4-48ec-9178-ba54197c23fa",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "858e865a-f27d-32f9-ac06-d072279a385c",
+            "count": 3,
+            "title": "In Search of Sunrise 15",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Markus Schulz",
+                "artist": {
+                  "id": "62558a6c-cbb1-4bee-a843-d07d187ddf55",
+                  "name": "Markus Schulz",
+                  "sort-name": "Schulz, Markus"
+                }
+              },
+              {
+                "joinphrase": ", ",
+                "name": "Jerome Isma‐Ae",
+                "artist": {
+                  "id": "0d67efad-1013-4f51-876e-e8b7e773c422",
+                  "name": "Jerome Isma‐Ae",
+                  "sort-name": "Isma‐Ae, Jerome",
+                  "disambiguation": "trance/techno/progressive house DJ"
+                }
+              },
+              {
+                "name": "Orkidea",
+                "artist": {
+                  "id": "17294d99-11ea-4fb3-af2f-33e607a8c079",
+                  "name": "Orkidea",
+                  "sort-name": "Orkidea",
+                  "disambiguation": "Finnish DJ / producer Tapio Hakanen"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6179f1f8-71ca-4987-9e1c-9120f636f044",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "In Search of Sunrise 15",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2019-11-08",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2019-11-08",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 47,
+            "media": [
+              {
+                "id": "32585eb5-0e2d-388c-8843-021735be76c6",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4f2e26d2-88d6-47ad-be93-a40c1448d9b3",
+                    "number": "15",
+                    "title": "Glue",
+                    "length": 240506
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "b7bde2f1-ff1b-43a7-8901-c54b87d83b24",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "858e865a-f27d-32f9-ac06-d072279a385c",
+            "count": 3,
+            "title": "In Search of Sunrise 15",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Markus Schulz",
+                "artist": {
+                  "id": "62558a6c-cbb1-4bee-a843-d07d187ddf55",
+                  "name": "Markus Schulz",
+                  "sort-name": "Schulz, Markus"
+                }
+              },
+              {
+                "joinphrase": ", ",
+                "name": "Jerome Isma‐Ae",
+                "artist": {
+                  "id": "0d67efad-1013-4f51-876e-e8b7e773c422",
+                  "name": "Jerome Isma‐Ae",
+                  "sort-name": "Isma‐Ae, Jerome",
+                  "disambiguation": "trance/techno/progressive house DJ"
+                }
+              },
+              {
+                "name": "Orkidea",
+                "artist": {
+                  "id": "17294d99-11ea-4fb3-af2f-33e607a8c079",
+                  "name": "Orkidea",
+                  "sort-name": "Orkidea",
+                  "disambiguation": "Finnish DJ / producer Tapio Hakanen"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6179f1f8-71ca-4987-9e1c-9120f636f044",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "In Search of Sunrise 15",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2019-11-08",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2019-11-08",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "a59f8585-97b1-36c0-963e-aa680569bcf2",
+                "position": 3,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "db2aef1b-2ae7-4388-a120-0159282f9fdd",
+                    "number": "15",
+                    "title": "Glue",
+                    "length": 241000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 14
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "NLD681903524"
+        ]
+      },
+      {
+        "id": "0ae3f15f-8db8-401b-8d3f-3caea86a2ff7",
+        "score": 88,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue (Intro Version)",
+        "length": 563000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2021-02-26",
+        "releases": [
+          {
+            "id": "22fb73a1-9e92-494b-a1a1-e18863fe1bba",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Live Stream 2",
+            "status": "Official",
+            "release-group": {
+              "id": "509c8717-be97-420e-bc5a-c5c354c42a09",
+              "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "title": "Live Stream 2",
+              "primary-type": "Broadcast",
+              "secondary-types": [
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2021-02-26",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2021-02-26",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "b95c8b4d-1d13-3cb7-bdcb-cf9cdb7227f5",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ef28598f-d89f-45fc-855d-d82babce6ad8",
+                    "number": "11",
+                    "title": "Glue (Intro Version)",
+                    "length": 563000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "976b4568-1c12-4af6-a246-ab951a0ccb44",
+        "score": 88,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue (Intro Version)",
+        "length": 428000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2020-09-11",
+        "releases": [
+          {
+            "id": "4789cfaf-9205-431b-95df-b17ee357575e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Live Stream 1",
+            "status": "Official",
+            "release-group": {
+              "id": "f1c8dfac-bb17-4107-9fe0-ea100b592778",
+              "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "title": "Live Stream 1",
+              "primary-type": "Broadcast",
+              "secondary-types": [
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2020-09-11",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2020-09-11",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "99ed8800-e4cd-3fe9-ac52-2d1bcefb5b0b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0f8357c8-7684-4f6a-b4ba-4a9a1e9f66d5",
+                    "number": "8",
+                    "title": "Glue (Intro Version)",
+                    "length": 428000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b223302f-09e9-4399-83fe-fef8a83ca81c",
+        "score": 84,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue (Valpy remix Bootleg)",
+        "length": 594964,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2017-07-20",
+        "releases": [
+          {
+            "id": "74fdc16b-1471-4813-bc91-6d5f2a33e3fc",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "count": 1,
+            "title": "Glue (Valpy remix Bootleg)",
+            "status": "Bootleg",
+            "release-group": {
+              "id": "8b3c8dbe-20d6-4cd5-97fe-135bde953ef4",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Glue (Valpy remix Bootleg)",
+              "primary-type": "Single"
+            },
+            "date": "2017-07-20",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-07-20",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "5ca11cab-4a4e-3d9c-aff8-ed37898beb99",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ac28f6b1-f828-4c9e-8ec8-befb504b6f98",
+                    "number": "1",
+                    "title": "Glue (Valpy remix Bootleg)",
+                    "length": 594964
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "c9a3d628-6c03-4c06-a793-df0ec3a12044",
+        "score": 79,
+        "artist-credit-id": "44e69baa-ecbd-4bad-8907-35c9e7b66457",
+        "title": "Healing Glue (EDDIT)",
+        "length": 329000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs ",
+            "name": "EDDIE",
+            "artist": {
+              "id": "ac0d913b-cdd7-44d8-b1d9-a2c03ce3fb74",
+              "name": "EDDIE",
+              "sort-name": "EDDIE",
+              "disambiguation": "Australian producer Edwin Beganovic"
+            }
+          },
+          {
+            "name": "BICEP",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2023-05-01",
+        "releases": [
+          {
+            "id": "66bd56bb-3d95-45ab-ad3c-9bdcc7c91293",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "b8232b9a-482c-331a-92d1-3c47d687fdd5",
+            "count": 1,
+            "title": "Healing Glue (EDDIT)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "EDDIE",
+                "artist": {
+                  "id": "ac0d913b-cdd7-44d8-b1d9-a2c03ce3fb74",
+                  "name": "EDDIE",
+                  "sort-name": "EDDIE",
+                  "disambiguation": "Australian producer Edwin Beganovic"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "503d0f82-b0dc-4c37-a452-f29827cf3f72",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Healing Glue (EDDIT)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-05-01",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-05-01",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "13354630-9e00-495f-a00d-95f90d7de087",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "067ee872-8217-4011-b5bc-97bc56bf3ba0",
+                    "number": "1",
+                    "title": "Healing Glue (EDDIT)",
+                    "length": 329000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "0932ee64-d706-49ca-bfdf-48e8cb6107fc",
+        "score": 74,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Glue - 'There Are 80,000 Native Irish Speakers'",
+        "length": 265000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2025-02-28",
+        "releases": [
+          {
+            "id": "ba68ebd2-84be-44fb-ace5-788fdcbb9a64",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e7d94cd8-fa0b-3b29-99ef-6bc3a79ea40a",
+            "count": 1,
+            "title": "Kneecap (Music From the Motion Picture)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "KNEECAP",
+                "artist": {
+                  "id": "6ac275dd-eb37-42cf-9a60-6b147320c7be",
+                  "name": "KNEECAP",
+                  "sort-name": "Kneecap",
+                  "disambiguation": "Irish hip-hop trio"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5fbd3af0-783f-4da9-a398-fd23f17f55fb",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "KNEECAP (ORIGINAL SOUNDTRACK)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2025-02-28",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2025-02-28",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "245a6ef1-fa4c-4a93-ab0e-9c2b5ee17eb5",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ea109b20-adfb-45e2-8a35-b5464753d49a",
+                    "number": "22",
+                    "title": "Glue – ‘There Are 80,000 Native Irish Speakers’",
+                    "length": 270493
+                  }
+                ],
+                "track-count": 34,
+                "track-offset": 21
+              }
+            ]
+          },
+          {
+            "id": "60a25e25-83c2-4bb4-ab78-9c955bce9a0b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e7d94cd8-fa0b-3b29-99ef-6bc3a79ea40a",
+            "count": 2,
+            "title": "Kneecap (Music From the Motion Picture)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "KNEECAP",
+                "artist": {
+                  "id": "6ac275dd-eb37-42cf-9a60-6b147320c7be",
+                  "name": "KNEECAP",
+                  "sort-name": "Kneecap",
+                  "disambiguation": "Irish hip-hop trio"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5fbd3af0-783f-4da9-a398-fd23f17f55fb",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "KNEECAP (ORIGINAL SOUNDTRACK)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2025-02-28",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2025-02-28",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "d5a1af84-0499-4945-a462-aca6f2d3f5d2",
+                "position": 2,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "b8328bd9-e233-4d6b-92d8-fe34e6ef3015",
+                    "number": "C2",
+                    "title": "Glue – ‘There Are 80,000 Native Irish Speakers’",
+                    "length": 265000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCFB1700229"
+        ]
+      },
+      {
+        "id": "7c6dc42a-ed2b-4e87-9501-1f2a16f76b95",
+        "score": 65,
+        "artist-credit-id": "2a561bc8-4e47-437c-9da4-8957fde1ae0a",
+        "title": "Glue (remix) / Elastic (mixed)",
+        "length": 147200,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " &",
+            "name": "Joey Purp",
+            "artist": {
+              "id": "4fb6cf2d-9524-4580-b351-73d0f1d6c559",
+              "name": "Joey Purp",
+              "sort-name": "Purp, Joey",
+              "disambiguation": "Chicago rapper; real name Joey Davis",
+              "aliases": [
+                {
+                  "sort-name": "Davis, Joey",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Joey Davis",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2022-12-16",
+        "releases": [
+          {
+            "id": "578039ac-7323-4b75-a318-62f0743c8d27",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1af3b41b-f5a0-3a39-adb3-475f67a79d18",
+            "count": 1,
+            "title": "Two Feet at Holy Ship! Wrecked 2022 (DJ Mix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Two Feet",
+                "artist": {
+                  "id": "07d0e0b3-dea4-4892-bee7-eaad19d093ec",
+                  "name": "Two Feet",
+                  "sort-name": "Two Feet",
+                  "disambiguation": "American singer-songwriter Zachary William \"Bill\" Dess"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d3fd87b4-bde8-48fa-85f7-eca0b8889c29",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Two Feet at Holy Ship! Wrecked 2022 (DJ Mix)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2022-12-16",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2022-12-16",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "165e5930-8f80-4080-baed-7d0c5a566844",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "768e36aa-ebaf-4e22-b745-f59cc57da0c1",
+                    "number": "6",
+                    "title": "Glue (remix) / Elastic (mixed)",
+                    "length": 147200
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "899b8b54-df03-4f9a-9d4a-0d3e5039c557",
+        "score": 60,
+        "artist-credit-id": "bc991077-4279-4235-a6c1-064032a9060d",
+        "title": "Glue (Rialians On Earth remix)",
+        "length": 361000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          },
+          {
+            "name": "Rialians On Earth",
+            "artist": {
+              "id": "7e08611a-ca81-44c4-8cc0-c40577714175",
+              "name": "Rialians On Earth",
+              "sort-name": "Rialians On Earth",
+              "disambiguation": "DJ & Producer and Multi-Instrumentalist, known for ethnic inspired melodies, organic house, downtempo, techno and house"
+            }
+          }
+        ],
+        "first-release-date": "2021-09-17",
+        "releases": [
+          {
+            "id": "2696324e-9fec-4ad9-9da2-bfb857652cc1",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "count": 1,
+            "title": "Glue (Rialians On Earth remix)",
+            "status": "Bootleg",
+            "release-group": {
+              "id": "804b1413-19b1-407b-83ec-05d759830fa6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Glue (Rialians On Earth remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2021-09-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "52d659f7-df2d-3538-8c40-d35019f4e103",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "f75c2925-f8d6-4e63-b1b0-f8c5db97200b",
+                    "number": "1",
+                    "title": "Glue (Rialians On Earth remix)",
+                    "length": 361000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

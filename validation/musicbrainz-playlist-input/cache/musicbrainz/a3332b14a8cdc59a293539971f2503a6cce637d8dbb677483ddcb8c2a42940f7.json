@@ -1,0 +1,285 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/293519ab-e6a9-463f-8c8f-9f368b68862c?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:39:58.567Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "artist-credit": [
+      {
+        "name": "Radiohead",
+        "artist": {
+          "sort-name": "Radiohead",
+          "type": "Group",
+          "disambiguation": "",
+          "genres": [
+            {
+              "id": "ceeaa283-5d7b-4202-8d1d-e25d116b2a18",
+              "count": 42,
+              "disambiguation": "",
+              "name": "alternative rock"
+            },
+            {
+              "disambiguation": "",
+              "name": "ambient pop",
+              "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+              "count": 1
+            },
+            {
+              "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+              "count": 3,
+              "name": "art pop",
+              "disambiguation": ""
+            },
+            {
+              "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+              "count": 29,
+              "name": "art rock",
+              "disambiguation": ""
+            },
+            {
+              "id": "f1c9b874-7ef2-4e79-9419-c0bcb5f33a30",
+              "count": 1,
+              "disambiguation": "",
+              "name": "britpop"
+            },
+            {
+              "id": "f0843e91-c025-4dd7-8aef-6fe3d35470d9",
+              "count": 1,
+              "disambiguation": "",
+              "name": "chamber pop"
+            },
+            {
+              "name": "crossover prog",
+              "disambiguation": "",
+              "count": 1,
+              "id": "eee90717-3eee-41bd-b463-003c180544bd"
+            },
+            {
+              "disambiguation": "",
+              "name": "electronic",
+              "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+              "count": 13
+            },
+            {
+              "count": 1,
+              "id": "c4a69842-f891-4569-9506-1882aa5db433",
+              "name": "electronic rock",
+              "disambiguation": ""
+            },
+            {
+              "disambiguation": "",
+              "name": "electronica",
+              "id": "53a3cea3-17af-4421-a07a-5824b540aeb5",
+              "count": 2
+            },
+            {
+              "id": "68c81274-5770-4e7b-a4bf-ab0d7d425d99",
+              "count": 2,
+              "name": "experimental",
+              "disambiguation": ""
+            },
+            {
+              "count": 14,
+              "id": "65c97e89-b42b-45c2-a70e-0eca1b8f0ff7",
+              "disambiguation": "",
+              "name": "experimental rock"
+            },
+            {
+              "id": "8eb583f1-4fd7-460c-8246-dcdccc0e3ef9",
+              "count": 1,
+              "name": "idm",
+              "disambiguation": ""
+            },
+            {
+              "name": "indie rock",
+              "disambiguation": "",
+              "id": "ccd19ebf-052c-4afe-8ad9-fbb0a73f94a7",
+              "count": 4
+            },
+            {
+              "disambiguation": "",
+              "name": "indietronica",
+              "id": "9e7ae1de-d5f2-46a5-b105-11c7367dc70d",
+              "count": 1
+            },
+            {
+              "disambiguation": "",
+              "name": "post-britpop",
+              "id": "a493b79c-4072-4371-a14c-446b1027982a",
+              "count": 2
+            },
+            {
+              "name": "post-grunge",
+              "disambiguation": "",
+              "count": 1,
+              "id": "bbb1310c-24cb-4fc9-97c4-f93e4549f1e2"
+            },
+            {
+              "count": 18,
+              "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+              "name": "rock",
+              "disambiguation": ""
+            }
+          ],
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "name": "Radiohead",
+          "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+          "tags": [
+            {
+              "count": 2,
+              "name": "alternative"
+            },
+            {
+              "count": 42,
+              "name": "alternative rock"
+            },
+            {
+              "count": 2,
+              "name": "alternative rock music"
+            },
+            {
+              "name": "ambient pop",
+              "count": 1
+            },
+            {
+              "count": 3,
+              "name": "art pop"
+            },
+            {
+              "count": 29,
+              "name": "art rock"
+            },
+            {
+              "name": "british",
+              "count": 14
+            },
+            {
+              "name": "britpop",
+              "count": 1
+            },
+            {
+              "name": "britrock",
+              "count": 1
+            },
+            {
+              "name": "chamber pop",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "name": "crossover prog"
+            },
+            {
+              "count": 13,
+              "name": "electronic"
+            },
+            {
+              "count": 1,
+              "name": "electronic rock"
+            },
+            {
+              "count": 2,
+              "name": "electronica"
+            },
+            {
+              "name": "english",
+              "count": 1
+            },
+            {
+              "name": "experimental",
+              "count": 2
+            },
+            {
+              "name": "experimental rock",
+              "count": 14
+            },
+            {
+              "count": 1,
+              "name": "idm"
+            },
+            {
+              "name": "indie rock",
+              "count": 4
+            },
+            {
+              "name": "indietronica",
+              "count": 1
+            },
+            {
+              "name": "oxford",
+              "count": 1
+            },
+            {
+              "count": 2,
+              "name": "post-britpop"
+            },
+            {
+              "name": "post-grunge",
+              "count": 1
+            },
+            {
+              "name": "progressive rock music",
+              "count": 2
+            },
+            {
+              "name": "rock",
+              "count": 18
+            },
+            {
+              "name": "uk",
+              "count": 1
+            },
+            {
+              "name": "vyrzukhisuc-artiest",
+              "count": 1
+            }
+          ],
+          "country": "GB"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "id": "293519ab-e6a9-463f-8c8f-9f368b68862c",
+    "tags": [],
+    "video": false,
+    "title": "Everything in Its Right Place (Gigamesh remix)",
+    "releases": [],
+    "relations": [
+      {
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "type": "performance",
+        "begin": null,
+        "work": {
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+          "type": "Song",
+          "disambiguation": "",
+          "id": "9dfa4a7e-5993-3c95-b41e-e6a66b777044",
+          "attributes": [],
+          "language": "eng",
+          "iswcs": [
+            "T-010.020.420-3"
+          ],
+          "title": "Everything in Its Right Place",
+          "languages": [
+            "eng"
+          ]
+        },
+        "end": null,
+        "direction": "forward",
+        "attributes": [],
+        "source-credit": "",
+        "attribute-ids": {},
+        "attribute-values": {},
+        "ended": false,
+        "target-credit": "",
+        "target-type": "work"
+      }
+    ],
+    "length": 272000,
+    "isrcs": [],
+    "genres": [],
+    "disambiguation": ""
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Innerbloom+%28What+So+Not+Remix%29%22+AND+artist%3A%22R%C3%9CF%C3%9CS+DU+SOL%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:39:13.813Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:39:13.842Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "4df10c5d-7a7c-413c-b5d7-529dd3a853dd",
+        "score": 100,
+        "artist-credit-id": "92c4507b-a867-3b8c-bbfd-e0b944663dab",
+        "title": "Innerbloom (What So Not Remix) [Mixed]",
+        "length": 201299,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "RÜFÜS DU SOL",
+            "artist": {
+              "id": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+              "name": "RÜFÜS DU SOL",
+              "sort-name": "RÜFÜS DU SOL",
+              "disambiguation": "Australian band, fka RÜFÜS",
+              "aliases": [
+                {
+                  "sort-name": "RÜFÜS / RÜFÜS DU SOL",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "RÜFÜS / RÜFÜS DU SOL",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2014-01",
+                  "end-date": "2018-05"
+                },
+                {
+                  "sort-name": "RÜFÜS",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "RÜFÜS",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2010-11-25",
+                  "end-date": "2018-05"
+                },
+                {
+                  "sort-name": "RÜFÜS DU SOL",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "RÜFÜS DU SOL",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2014-01",
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022-08-20",
+        "releases": [
+          {
+            "id": "fcf45d1e-9bc4-4ac5-bedd-b8808894836b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "debb36df-be41-34b4-922d-363b719a19d1",
+            "count": 1,
+            "title": "Splash House, August 2022 (DJ Mix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "MEMBA",
+                "artist": {
+                  "id": "7a19248b-04aa-4c1f-87a7-99bfe56d45e1",
+                  "name": "MEMBA",
+                  "sort-name": "MEMBA"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fba47d9-2719-4282-b4b4-1a0b0411cd13",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Splash House, August 2022 (DJ Mix)",
+              "primary-type": "Album"
+            },
+            "date": "2022-08-20",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2022-08-20",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 62,
+            "media": [
+              {
+                "id": "a543995d-5df0-4f42-a34c-d30a9c1dd873",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8582a7fc-57c1-4895-b443-fbf810142b35",
+                    "number": "39",
+                    "title": "Innerbloom (What So Not Remix) [Mixed]",
+                    "length": 201299
+                  }
+                ],
+                "track-count": 62,
+                "track-offset": 38
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Lila+Downs&recording_name=Zapata+se+queda&release_name=Pecados+y+milagros",
+  "fetched_at": "2026-07-28T12:16:10.350Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Lila Downs",
+      "recording_arg": "Zapata se queda",
+      "artist_credit_name": "Lila Downs",
+      "release_name": "Pecados y milagros",
+      "recording_name": "Zapata se queda",
+      "artist_credit_id": 33226,
+      "artist_mbids": [
+        "ad29ae1c-2eda-4071-9dc8-31910e7e546c"
+      ],
+      "release_mbid": "2e398577-1429-4f2d-9aff-85873633b9b9",
+      "recording_mbid": "88c222e2-ca85-4915-bfb5-ddc9f968c131"
+    }
+  ]
+}

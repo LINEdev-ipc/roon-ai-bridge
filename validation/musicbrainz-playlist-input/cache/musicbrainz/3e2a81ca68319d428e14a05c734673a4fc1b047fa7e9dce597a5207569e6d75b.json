@@ -1,0 +1,2170 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Bailando%22+AND+artist%3A%22Enrique+Iglesias+feat.+Descemer+Bueno+%26+Gente+de+Zona%22+AND+release%3A%22Sex+and+Love%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:41:11.943Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:41:11.963Z",
+    "count": 4,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "ac0fde1f-4fd9-4497-9701-075e00317ba5",
+        "score": 100,
+        "artist-credit-id": "2766b0c0-37ad-3be7-a9dc-6eee4918cc57",
+        "title": "Bailando (Spanish version)",
+        "length": 243413,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Enrique Iglesias",
+            "artist": {
+              "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+              "name": "Enrique Iglesias",
+              "sort-name": "Iglesias, Enrique",
+              "disambiguation": "Spanish pop singer",
+              "aliases": [
+                {
+                  "sort-name": "Enrique Igleslas",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Igleslas",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Iglesisas",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Iglesisas",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Iglesias Preysler, Enrique Miguel",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Enrique Miguel Iglesias Preysler",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Eglesias",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Eglesias",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enriqué",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enriqué",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Inglesias",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Inglesias",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique",
+                  "name": "Enrique",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " & ",
+            "name": "Descemer Bueno",
+            "artist": {
+              "id": "cdfa25d4-b9fa-4e99-a163-18fddf7d514f",
+              "name": "Descemer Bueno",
+              "sort-name": "Bueno, Descemer",
+              "aliases": [
+                {
+                  "sort-name": "Descemer",
+                  "name": "Descemer",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Gente de Zona",
+            "artist": {
+              "id": "35e53195-f6e1-40bc-a3ae-62b1900ee199",
+              "name": "Gente de Zona",
+              "sort-name": "Gente de Zona",
+              "aliases": [
+                {
+                  "sort-name": "Gente D' Zona",
+                  "name": "Gente D' Zona",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-07-04",
+        "releases": [
+          {
+            "id": "29864adc-4378-4f82-902a-fd9aaa8d883a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "SEX AND LOVE",
+            "status": "Official",
+            "disambiguation": "deluxe",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2015-02-09",
+            "country": "ES",
+            "release-events": [
+              {
+                "date": "2015-02-09",
+                "area": {
+                  "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+                  "name": "Spain",
+                  "sort-name": "Spain",
+                  "iso-3166-1-codes": [
+                    "ES"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "67466dd0-dd81-403c-b96c-562b5ad60b0a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0c9c091f-bc81-4da9-99a0-7da2fddd559a",
+                    "number": "3",
+                    "title": "Bailando (Spanish version)",
+                    "length": 244000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "4bcce733-4145-43f8-ba37-c16bb0fe8780",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "SEX AND LOVE",
+            "status": "Official",
+            "disambiguation": "deluxe",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014-09-22",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2014-09-22",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "5c9afe82-423e-421a-b0b0-a1c117d424f4",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "32f7858f-2fc8-4d90-8508-c21cacd7b228",
+                    "number": "16",
+                    "title": "Bailando (Spanish version)",
+                    "length": 243413
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "99891b82-4df4-45e8-bd1e-5830e8cc27eb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "disambiguation": "deluxe edition",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "track-count": 16,
+            "media": [
+              {
+                "id": "03fac4f0-2df4-3e2b-833e-22a6eb7e90a9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a233b16d-d6c6-42cb-a6fe-cd425de3d2c1",
+                    "number": "12",
+                    "title": "Bailando (Spanish version)",
+                    "length": 243413
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "07476b69-e96b-4810-acf5-c339fec61edb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "f972e765-96b3-3ce6-b66e-4c18a2c5aeae",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d34f34c2-c84a-4a6f-9f93-7773836123de",
+                    "number": "12",
+                    "title": "Ballando (Spanish version)",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 11
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBUM71400955"
+        ]
+      },
+      {
+        "id": "1d21be5e-4635-4b83-a13c-4f722f27871b",
+        "score": 98,
+        "artist-credit-id": "70912db8-31d6-3e61-9090-d126c4a056d0",
+        "title": "Bailando",
+        "length": 287000,
+        "video": true,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Enrique Iglesias",
+            "artist": {
+              "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+              "name": "Enrique Iglesias",
+              "sort-name": "Iglesias, Enrique",
+              "disambiguation": "Spanish pop singer",
+              "aliases": [
+                {
+                  "sort-name": "Enrique Igleslas",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Igleslas",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Iglesisas",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Iglesisas",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Iglesias Preysler, Enrique Miguel",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Enrique Miguel Iglesias Preysler",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Eglesias",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Eglesias",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enriqué",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enriqué",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Inglesias",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Inglesias",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique",
+                  "name": "Enrique",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " and ",
+            "name": "Descemer Bueno",
+            "artist": {
+              "id": "cdfa25d4-b9fa-4e99-a163-18fddf7d514f",
+              "name": "Descemer Bueno",
+              "sort-name": "Bueno, Descemer",
+              "aliases": [
+                {
+                  "sort-name": "Descemer",
+                  "name": "Descemer",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Gente de Zona",
+            "artist": {
+              "id": "35e53195-f6e1-40bc-a3ae-62b1900ee199",
+              "name": "Gente de Zona",
+              "sort-name": "Gente de Zona",
+              "aliases": [
+                {
+                  "sort-name": "Gente D' Zona",
+                  "name": "Gente D' Zona",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014",
+        "releases": [
+          {
+            "id": "7ff54cf6-dd79-47a0-a6b4-9e542ac815a3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 2,
+            "title": "Sex and Love: Bailando Edition",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 32,
+            "media": [
+              {
+                "id": "28e22ab9-c7c7-3da0-be0a-2fc2c44dfc06",
+                "position": 2,
+                "format": "DVD-Video",
+                "track": [
+                  {
+                    "id": "766267c0-6634-425d-8a7d-5b73e5d3e7d5",
+                    "number": "10",
+                    "title": "Bailando",
+                    "length": 287000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1770e567-3d4e-4dd9-b3d0-704ec276f0e9",
+        "score": 98,
+        "artist-credit-id": "2766b0c0-37ad-3be7-a9dc-6eee4918cc57",
+        "title": "Bailando",
+        "length": 243413,
+        "disambiguation": "Spanish version",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Enrique Iglesias",
+            "artist": {
+              "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+              "name": "Enrique Iglesias",
+              "sort-name": "Iglesias, Enrique",
+              "disambiguation": "Spanish pop singer",
+              "aliases": [
+                {
+                  "sort-name": "Enrique Igleslas",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Igleslas",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Iglesisas",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Iglesisas",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Iglesias Preysler, Enrique Miguel",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Enrique Miguel Iglesias Preysler",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Eglesias",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Eglesias",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enriqué",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enriqué",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Inglesias",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Inglesias",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique",
+                  "name": "Enrique",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " & ",
+            "name": "Descemer Bueno",
+            "artist": {
+              "id": "cdfa25d4-b9fa-4e99-a163-18fddf7d514f",
+              "name": "Descemer Bueno",
+              "sort-name": "Bueno, Descemer",
+              "aliases": [
+                {
+                  "sort-name": "Descemer",
+                  "name": "Descemer",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Gente de Zona",
+            "artist": {
+              "id": "35e53195-f6e1-40bc-a3ae-62b1900ee199",
+              "name": "Gente de Zona",
+              "sort-name": "Gente de Zona",
+              "aliases": [
+                {
+                  "sort-name": "Gente D' Zona",
+                  "name": "Gente D' Zona",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-03-13",
+        "releases": [
+          {
+            "id": "bccfbd2b-6d32-4087-9686-43eb6e3a8aa2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "7e72f9f6-8933-4717-86b3-58e5667271e8",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1748827f-be30-45c8-a416-d9bd45ade5bc",
+                    "number": "3",
+                    "title": "Bailando (Spanish version)",
+                    "length": 243413
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "d8bbfce3-e9e5-4627-8ffd-c2c494dcf0e6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "disambiguation": "deluxe edition, target edition",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014-03-18",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2014-03-18",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "c8032326-92b6-3b4f-bc88-9019493bcad7",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e95ea6a7-bd49-4d46-9482-a878f0eeaa19",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243413
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "8c4121cb-7f16-4bde-a6d4-fe72a0db076a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Greatest Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "513735c2-64a9-41e5-8585-8a9172dc36fe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Greatest Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-10-04",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2019-10-04",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "eedb6100-785a-31d0-85e1-9d8ca1951a0a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4763994f-7202-4dde-ba27-9f7d46aed234",
+                    "number": "1",
+                    "title": "Bailando [Spanish Version]",
+                    "length": 243440
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "07476b69-e96b-4810-acf5-c339fec61edb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "f972e765-96b3-3ce6-b66e-4c18a2c5aeae",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c6f76ce0-3379-482a-a04b-21d3dd570b85",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "2f8fd294-4d17-4f24-9016-0e0b087a79ae",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Greatest Hits [Explicit]",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "513735c2-64a9-41e5-8585-8a9172dc36fe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Greatest Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-10-04",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2019-10-04",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "5ec48bc2-6aa3-315a-aa3c-da94394beee9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "63bc0cbf-3097-47c2-9ea5-88901859f622",
+                    "number": "1",
+                    "title": "Bailando (Spanish Version) [feat. Descemer Bueno & Gente De Zona]",
+                    "length": 243931
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "12d64b14-4e13-47bd-9027-5b80acebf275",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "disambiguation": "Explicit",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014-03-13",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-03-13",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "1d204c1e-cffc-345d-a323-7132b8491af9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e045f16d-b931-48eb-bce1-f1eea7710174",
+                    "number": "3",
+                    "title": "Bailando (Spanish version)",
+                    "length": 243413
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "7e0db461-ef30-4c8c-810f-322c2b83cbfb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Greatest Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "513735c2-64a9-41e5-8585-8a9172dc36fe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Greatest Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-08-04",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-08-04",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "80cd90ec-d00c-3ab8-b314-011f8b7ea574",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bf799b58-771a-4cd5-a3b3-5c11498cdc99",
+                    "number": "1",
+                    "title": "Bailando (Spanish version)",
+                    "length": 243893
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f53c8e4c-d637-42b3-a8ba-1b5d39ad0d98",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Greatest Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "513735c2-64a9-41e5-8585-8a9172dc36fe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Greatest Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-10-04",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2019-10-04",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "a12bced1-9d50-3da4-a467-25cf05f2e0e3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5f0d9c28-9c87-44e8-953b-dfd9bcf8e937",
+                    "number": "1",
+                    "title": "Bailando",
+                    "length": 243440
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "226195d5-fdca-4c36-b474-03f35386c8a0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Greatest Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "513735c2-64a9-41e5-8585-8a9172dc36fe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Greatest Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-10-04",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2019-10-04",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "82dcb5e2-d6d6-382d-bac5-760fbadb159b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "14e4879d-4567-430f-bb0b-a1b65aee7db3",
+                    "number": "1",
+                    "title": "Bailando",
+                    "length": 243893
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "7ff54cf6-dd79-47a0-a6b4-9e542ac815a3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 2,
+            "title": "Sex and Love: Bailando Edition",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 32,
+            "media": [
+              {
+                "id": "df457eff-49e3-3613-b91d-40e1204f57cb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "20aa7145-effe-4099-8fc2-f6efb99587c3",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "22e94d08-2d2b-4cc5-a9ba-b4d03c574dd7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "670f4048-5579-3289-9a1d-1d6ad872a235",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "37deeb38-e23a-4362-93f1-5b7f3836d364",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "1f228ea4-d087-4ed6-b2da-e3557736b9ea",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 2,
+            "title": "Sex and Love",
+            "status": "Official",
+            "disambiguation": "deluxe",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 28,
+            "media": [
+              {
+                "id": "a1ac2563-246d-3bf5-ab4a-ff4b78bd27a1",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4e15a879-1fe8-4e61-8c8f-bf61176ada32",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "5777db04-984b-4205-8726-eaee3ddac3c3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014-03-18",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-03-18",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "853a67cf-ac88-3c3f-8271-442988b252da",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c3e7f41b-93b7-4907-a90f-7661f20bfec2",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "5246c5e6-4977-45b9-9cd1-f529925f0564",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014-03-18",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "2014-03-18",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "992084a2-0bac-32ac-993e-b82463816b38",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1649d246-1050-4fac-8771-939bf2f69caf",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243413
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "f5bdf54b-ab53-4718-9acb-a02e1b0a955f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "disambiguation": "deluxe edition",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014-03-15",
+            "country": "AR",
+            "release-events": [
+              {
+                "date": "2014-03-15",
+                "area": {
+                  "id": "0df04709-c7d8-3b55-a6ea-f3e5069a947b",
+                  "name": "Argentina",
+                  "sort-name": "Argentina",
+                  "iso-3166-1-codes": [
+                    "AR"
+                  ]
+                }
+              },
+              {
+                "date": "2014-03-15",
+                "area": {
+                  "id": "82d5f4d6-aed4-3ff5-81d1-5363ac6e97a7",
+                  "name": "Chile",
+                  "sort-name": "Chile",
+                  "iso-3166-1-codes": [
+                    "CL"
+                  ]
+                }
+              },
+              {
+                "date": "2014-03-15",
+                "area": {
+                  "id": "ea88d395-87c9-3c47-b49a-114cad41fd39",
+                  "name": "Uruguay",
+                  "sort-name": "Uruguay",
+                  "iso-3166-1-codes": [
+                    "UY"
+                  ]
+                }
+              }
+            ],
+            "track-count": 21,
+            "media": [
+              {
+                "id": "c5db2f39-1aa0-364e-8b3b-4784efe48987",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5816d80d-f9a3-4141-8f28-9e662638a3b6",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243413
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "dae2044d-3071-4fec-a663-637dc611edcf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "track-count": 15,
+            "media": [
+              {
+                "id": "977af1e0-eb5c-3109-a8ab-0962eb8fc003",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7f8ae6c9-df38-465a-8091-c3a9e1525985",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "c67173dc-1cf7-4ddb-9969-78d9b470b7fa",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "disambiguation": "deluxe",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014-03-14",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2014-03-14",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "47de2efa-6356-3e32-b2b1-5cb577b4c17d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "629a602d-d126-4d18-991f-acd317934d7a",
+                    "number": "3",
+                    "title": "Bailando",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "933242f0-fff3-4709-953c-569ad116c270",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love (deluxe edition)",
+            "status": "Official",
+            "disambiguation": "deluxe edition",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "22990ee9-40dc-3a14-b6bf-dbeae87360b8",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2eba3d60-c677-4537-a091-be9f37b319ff",
+                    "number": "19",
+                    "title": "Bailando (Spanish version)",
+                    "length": 243293
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 18
+              }
+            ]
+          },
+          {
+            "id": "28fb5627-ab78-497c-84fc-a3352a53b26a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 1,
+            "title": "Sex and Love",
+            "status": "Official",
+            "disambiguation": "deluxe edition",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014-05-13",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2014-05-13",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "53882f25-53d9-3d82-b5d1-679741a798dc",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "66a0a296-1d63-4676-8f24-a4ea6d4021d7",
+                    "number": "16",
+                    "title": "Bailando (Spanish version)",
+                    "length": 243000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "00875a19-bbcc-4b9a-8ba8-bd81f6e5d9a3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "6925ef46-cc81-3586-b885-4e20286fc439",
+            "count": 1,
+            "title": "Bailando",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              },
+              {
+                "joinphrase": ", ",
+                "name": "Sean Paul",
+                "artist": {
+                  "id": "c3da3346-2643-48a7-93cd-011f6834b3d7",
+                  "name": "Sean Paul",
+                  "sort-name": "Sean Paul",
+                  "disambiguation": "Jamaican reggae/dancehall"
+                }
+              },
+              {
+                "joinphrase": " & ",
+                "name": "Descemer Bueno",
+                "artist": {
+                  "id": "cdfa25d4-b9fa-4e99-a163-18fddf7d514f",
+                  "name": "Descemer Bueno",
+                  "sort-name": "Bueno, Descemer"
+                }
+              },
+              {
+                "name": "Gente de Zona",
+                "artist": {
+                  "id": "35e53195-f6e1-40bc-a3ae-62b1900ee199",
+                  "name": "Gente de Zona",
+                  "sort-name": "Gente de Zona"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "aa5ff4fc-ef18-471b-b003-1f5ab04fe624",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Bailando",
+              "primary-type": "Single"
+            },
+            "date": "2014-06-20",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2014-06-20",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              },
+              {
+                "date": "2014-06-20",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              },
+              {
+                "date": "2014-06-20",
+                "area": {
+                  "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+                  "name": "Switzerland",
+                  "sort-name": "Switzerland",
+                  "iso-3166-1-codes": [
+                    "CH"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "4c54b7ce-6ae2-3e29-8226-638350805296",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0530c0cb-6fc9-4c86-841b-ca76f73b3dc1",
+                    "number": "2",
+                    "title": "Bailando (Spanish version)",
+                    "length": 244000
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBUM71400955"
+        ]
+      },
+      {
+        "id": "e22eefdc-7093-4125-a659-f337ce742c98",
+        "score": 91,
+        "artist-credit-id": "70912db8-31d6-3e61-9090-d126c4a056d0",
+        "title": "Bailando (Behind the Scenes)",
+        "length": 429000,
+        "video": true,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Enrique Iglesias",
+            "artist": {
+              "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+              "name": "Enrique Iglesias",
+              "sort-name": "Iglesias, Enrique",
+              "disambiguation": "Spanish pop singer",
+              "aliases": [
+                {
+                  "sort-name": "Enrique Igleslas",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Igleslas",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Iglesisas",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Iglesisas",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Iglesias Preysler, Enrique Miguel",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Enrique Miguel Iglesias Preysler",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Eglesias",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Eglesias",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enriqué",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enriqué",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique Inglesias",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Enrique Inglesias",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Enrique",
+                  "name": "Enrique",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " and ",
+            "name": "Descemer Bueno",
+            "artist": {
+              "id": "cdfa25d4-b9fa-4e99-a163-18fddf7d514f",
+              "name": "Descemer Bueno",
+              "sort-name": "Bueno, Descemer",
+              "aliases": [
+                {
+                  "sort-name": "Descemer",
+                  "name": "Descemer",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Gente de Zona",
+            "artist": {
+              "id": "35e53195-f6e1-40bc-a3ae-62b1900ee199",
+              "name": "Gente de Zona",
+              "sort-name": "Gente de Zona",
+              "aliases": [
+                {
+                  "sort-name": "Gente D' Zona",
+                  "name": "Gente D' Zona",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014",
+        "releases": [
+          {
+            "id": "7ff54cf6-dd79-47a0-a6b4-9e542ac815a3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "096f01ff-df00-390b-b1b6-2abae5c5ca67",
+            "count": 2,
+            "title": "Sex and Love: Bailando Edition",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Enrique Iglesias",
+                "artist": {
+                  "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                  "name": "Enrique Iglesias",
+                  "sort-name": "Iglesias, Enrique",
+                  "disambiguation": "Spanish pop singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sex and Love",
+              "primary-type": "Album"
+            },
+            "date": "2014",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 32,
+            "media": [
+              {
+                "id": "28e22ab9-c7c7-3da0-be0a-2fc2c44dfc06",
+                "position": 2,
+                "format": "DVD-Video",
+                "track": [
+                  {
+                    "id": "fd15dafd-fb24-4ee0-a813-8d4428c84652",
+                    "number": "12",
+                    "title": "Bailando (Behind the Scenes)",
+                    "length": 429000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 11
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Moby&recording_name=Go+%28Woodtick+Mix%29&release_name=Go",
+  "fetched_at": "2026-07-28T12:15:47.279Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Moby",
+      "recording_arg": "Go (Woodtick Mix)",
+      "artist_credit_name": "Moby",
+      "release_name": "Go",
+      "recording_name": "Go (Woodtick mix)",
+      "artist_credit_id": 359,
+      "artist_mbids": [
+        "8970d868-0723-483b-a75b-51088913d3d4"
+      ],
+      "release_mbid": "a3d77510-b305-3648-b23b-681a0257c484",
+      "recording_mbid": "4544fc18-1fb3-4bbc-8a3e-479fb5cac30d"
+    }
+  ]
+}

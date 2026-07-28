@@ -108,16 +108,20 @@ async function readMcpJson(response) {
   return JSON.parse(text);
 }
 
-test("MCP instructions require temporary-playlist sequencing and cover handoff up front", () => {
+test("MCP instructions make named playlists permanent and reserve temporary lists for immediate playback", () => {
   const opening = BRIDGE_V2_INSTRUCTIONS.slice(0, 512);
+  assert.match(opening, /permanent visible playlist/);
+  assert.match(opening, /roon_save_playlist/);
   assert.match(opening, /roon_create_temporary_playlist/);
   assert.match(opening, /roon_play_playlist/);
-  assert.match(opening, /Promote it only when asked/);
-  assert.match(opening, /roon_prepare_playlist_cover before image generation/);
-  assert.match(opening, /roon_set_playlist_cover/);
-  assert.match(opening, /image_file/);
-  assert.match(opening, /Never pass an internal sandbox path/);
-  assert.match(BRIDGE_V2_INSTRUCTIONS, /page roon_get_media_entity with count and offset/);
+  assert.match(opening, /immediate-playback/);
+  assert.match(BRIDGE_V2_INSTRUCTIONS, /call the creation tool once/);
+  assert.match(BRIDGE_V2_INSTRUCTIONS, /Do not call roon_search_media first/);
+  assert.match(BRIDGE_V2_INSTRUCTIONS, /roon_prepare_playlist_cover before image generation/);
+  assert.match(BRIDGE_V2_INSTRUCTIONS, /roon_set_playlist_cover/);
+  assert.match(BRIDGE_V2_INSTRUCTIONS, /image_file/);
+  assert.match(BRIDGE_V2_INSTRUCTIONS, /never pass an internal sandbox path/i);
+  assert.match(BRIDGE_V2_INSTRUCTIONS, /page roon_get_media_entity until pagination\.has_more=false/);
   assert.match(BRIDGE_V2_INSTRUCTIONS, /read the target with roon_get_playlist/);
 });
 
@@ -254,15 +258,18 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
     assert.ok(temporaryPlaylist.inputSchema.properties.intent);
     assert.ok(temporaryPlaylist.inputSchema.properties.desired_count);
     assert.match(temporaryPlaylist.description, /activity, mood or occasion/i);
-    assert.ok(savePlaylist.inputSchema.properties.build_id);
+    assert.equal(savePlaylist.inputSchema.properties.build_id, undefined);
     assert.ok(savePlaylist.inputSchema.properties.desired_count);
+    assert.ok(savePlaylist.inputSchema.properties.selection_complexity);
     assert.ok(savePlaylist.inputSchema.properties.no_adjacent_same_artist);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.artist_credit);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.album_hint);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.release_year_hint);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.recording_intent);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.required_credits);
-    assert.match(savePlaylist.description, /three replenishments/i);
+    assert.match(savePlaylist.description, /call this tool once/i);
+    assert.match(savePlaylist.description, /125%/);
+    assert.match(savePlaylist.description, /160%/);
     assert.ok(savePlaylist.inputSchema.properties.release_year_from);
     assert.ok(savePlaylist.inputSchema.properties.release_year_to);
     assert.match(
@@ -272,8 +279,7 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
     const rebuildPlaylist = tools.get("roon_rebuild_playlist");
     assert.ok(rebuildPlaylist.inputSchema.properties.job_id);
     assert.ok(rebuildPlaylist.outputSchema.properties.status.enum.includes("in_progress"));
-    assert.match(savePlaylist.description, /result_id never bypasses validation/i);
-    assert.ok(savePlaylist.outputSchema.properties.status.enum.includes("needs_input"));
+    assert.match(savePlaylist.description, /saves a verified partial playlist/i);
     assert.match(coverTool.description, /images below 768x768 are rejected/);
     assert.match(coverTool.inputSchema.properties.image_file.description, /preferred input/);
     const renderTools = [
@@ -324,28 +330,14 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
       assert.equal(toolResponse.status, 200);
       return (await readMcpJson(toolResponse)).result.structuredContent;
     };
-    const initialBuild = await callTool(2, {
-      name: "HTTP build continuity",
+    const finalBuild = await callTool(2, {
+      name: "HTTP one-shot build",
       desired_count: 1,
       tracks: [{ title: "Unavailable One", artist_credit: "Unknown Artist" }]
     });
-    assert.equal(initialBuild.status, "needs_input");
-    const roundOne = await callTool(3, {
-      build_id: initialBuild.data.build_id,
-      tracks: [{ title: "Unavailable Two", artist_credit: "Unknown Artist Two" }]
-    });
-    assert.equal(roundOne.status, "needs_input");
-    const roundTwo = await callTool(4, {
-      build_id: initialBuild.data.build_id,
-      tracks: [{ title: "Unavailable Three", artist_credit: "Unknown Artist Three" }]
-    });
-    assert.equal(roundTwo.status, "needs_input");
-    const finalBuild = await callTool(5, {
-      build_id: initialBuild.data.build_id,
-      tracks: [{ title: "Unavailable Four", artist_credit: "Unknown Artist Four" }]
-    });
     assert.equal(finalBuild.status, "failed");
     assert.equal(finalBuild.error.code, "PLAYLIST_BUILD_INCOMPLETE");
+    assert.equal(finalBuild.references.build_id, undefined);
   } finally {
     await new Promise((resolve) => server.close(resolve));
     database.close();

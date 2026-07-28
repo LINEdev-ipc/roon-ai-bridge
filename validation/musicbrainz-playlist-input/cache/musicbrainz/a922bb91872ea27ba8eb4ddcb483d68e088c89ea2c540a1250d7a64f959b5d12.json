@@ -1,0 +1,148 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Strong+Dub%22+AND+artist%3A%22Radikal+Guru%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:37:05.253Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:37:05.274Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "724995c8-b7ea-4ba6-965c-97a68ea5502b",
+        "score": 100,
+        "artist-credit-id": "cf28be02-a8db-32ef-93bd-9a02a1c74200",
+        "title": "Strong Dub",
+        "length": 353369,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Radikal Guru",
+            "artist": {
+              "id": "a41ae4d0-aaca-4b05-85d4-08151cf3df66",
+              "name": "Radikal Guru",
+              "sort-name": "Radikal Guru",
+              "disambiguation": "Mateusz Miller"
+            }
+          }
+        ],
+        "first-release-date": "2008",
+        "releases": [
+          {
+            "id": "5cc1a60a-099a-4fc4-b2be-f976f8467085",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Dubbed Out Singles 2008-2009",
+            "status": "Official",
+            "release-group": {
+              "id": "6af309a3-5be2-49a5-8796-8014a13c63fc",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Dubbed Out Singles 2008-2009",
+              "primary-type": "EP"
+            },
+            "date": "2019-05-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-05-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "d6122c51-5217-39a5-b55b-d82d650ec8b2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4c7571eb-1739-46c1-8736-0ef3227ae7af",
+                    "number": "1",
+                    "title": "Strong Dub",
+                    "length": 353369
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "17f511cb-abdb-4928-a516-7d2800ec1595",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Strong Dub / New Decade",
+            "status": "Official",
+            "release-group": {
+              "id": "2ec00e16-4b34-46b0-a81a-1d4cd7cc7aef",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Strong Dub / New Decade",
+              "primary-type": "Single"
+            },
+            "date": "2008",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2008",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "f5ffc74a-e4ee-32c6-a215-82da258708c3",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "2b529480-06d2-314e-8d24-9c7d6c94f536",
+                    "number": "A",
+                    "title": "Strong Dub"
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 3,
+            "name": "dubstep"
+          },
+          {
+            "count": 1,
+            "name": "bass"
+          },
+          {
+            "count": 1,
+            "name": "metro downtempo"
+          }
+        ]
+      }
+    ]
+  }
+}

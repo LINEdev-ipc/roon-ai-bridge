@@ -1,0 +1,198 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/2f281525-9d18-49b1-a82f-f537aeea9a57?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:41:57.520Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "relations": [],
+    "genres": [],
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "disambiguation": "South Korean singer",
+          "sort-name": "BIBI",
+          "genres": [
+            {
+              "id": "b74b3b6c-0700-46b1-aa55-1f2869a3bd1a",
+              "name": "k-pop",
+              "count": 2,
+              "disambiguation": ""
+            },
+            {
+              "id": "455f264b-db00-4716-991d-fbd32dc24523",
+              "name": "singer-songwriter",
+              "count": 1,
+              "disambiguation": ""
+            }
+          ],
+          "tags": [
+            {
+              "count": 2,
+              "name": "k-pop"
+            },
+            {
+              "count": 1,
+              "name": "singer-songwriter"
+            }
+          ],
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "BIBI",
+          "country": "KR",
+          "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+          "type": "Person"
+        },
+        "name": "BIBI"
+      }
+    ],
+    "releases": [
+      {
+        "date": "2022",
+        "title": "Lowlife Princess: Noir",
+        "packaging": null,
+        "status": null,
+        "tags": [],
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "South Korea",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "KR"
+              ],
+              "name": "South Korea",
+              "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+              "type": null
+            },
+            "date": "2022"
+          }
+        ],
+        "barcode": null,
+        "country": "KR",
+        "quality": "normal",
+        "id": "984fed7a-0852-4107-bb4a-03e36de7e40b",
+        "release-group": {
+          "title": "Lowlife Princess: Noir",
+          "first-release-date": "2022-11-18",
+          "secondary-type-ids": [],
+          "secondary-types": [],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "id": "2219f553-4557-46c6-8f44-117194a795f2",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "BIBI",
+              "artist": {
+                "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                "type": "Person",
+                "country": "KR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "BIBI",
+                "disambiguation": "South Korean singer",
+                "sort-name": "BIBI"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": []
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "BIBI",
+            "joinphrase": "",
+            "artist": {
+              "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+              "type": "Person",
+              "country": "KR",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "b74b3b6c-0700-46b1-aa55-1f2869a3bd1a",
+                  "name": "k-pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "singer-songwriter",
+                  "id": "455f264b-db00-4716-991d-fbd32dc24523"
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 2,
+                  "name": "k-pop"
+                },
+                {
+                  "name": "singer-songwriter",
+                  "count": 1
+                }
+              ],
+              "name": "BIBI",
+              "sort-name": "BIBI",
+              "disambiguation": "South Korean singer"
+            }
+          }
+        ],
+        "text-representation": {
+          "language": null,
+          "script": null
+        },
+        "media": [
+          {
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "BIBI",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "BIBI",
+                      "disambiguation": "South Korean singer",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "BIBI",
+                      "country": "KR",
+                      "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                      "type": "Person"
+                    }
+                  }
+                ],
+                "number": "3",
+                "id": "07b8801a-ca6c-4378-9df5-b3bee28c4dec",
+                "title": "Bibi Vengeance",
+                "position": 3,
+                "length": 167000
+              }
+            ],
+            "track-count": 13,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "id": "122c7338-9099-416c-a216-56bb8cce3120",
+            "track-offset": 2,
+            "format": "CD"
+          }
+        ],
+        "status-id": null
+      }
+    ],
+    "disambiguation": "",
+    "id": "2f281525-9d18-49b1-a82f-f537aeea9a57",
+    "isrcs": [],
+    "length": 167000,
+    "video": false,
+    "tags": [],
+    "first-release-date": "2022",
+    "title": "Bibi Vengeance"
+  }
+}

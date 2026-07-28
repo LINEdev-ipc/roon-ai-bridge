@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Deep+Forest&recording_name=Sweet+Lullaby&release_name=Deep+Forest",
+  "fetched_at": "2026-07-28T14:42:30.354Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Deep Forest",
+      "recording_arg": "Sweet Lullaby",
+      "artist_credit_name": "Deep Forest",
+      "release_name": "Deep Forest",
+      "recording_name": "Sweet Lullaby",
+      "artist_credit_id": 2096,
+      "artist_mbids": [
+        "67468e38-0c90-4318-b2d2-0c18b7b1e144"
+      ],
+      "release_mbid": "83285b87-bae4-4afd-abd9-3491d3374caf",
+      "recording_mbid": "006a60f0-9286-440b-9bb1-7197034483e4"
+    }
+  ]
+}

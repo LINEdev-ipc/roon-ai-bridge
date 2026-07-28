@@ -1,0 +1,107 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/88c222e2-ca85-4915-bfb5-ddc9f968c131?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:16:11.512Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "title": "Zapata se queda",
+    "releases": [
+      {
+        "packaging-id": null,
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "status": "Official",
+        "quality": "normal",
+        "artist-credit": [
+          {
+            "name": "Lila Downs",
+            "artist": {
+              "type": "Person",
+              "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+              "name": "Lila Downs",
+              "sort-name": "Downs, Lila",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "disambiguation": "",
+              "country": "MX"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "country": "MX",
+        "date": "2012-08-14",
+        "barcode": "886919856828",
+        "id": "2e398577-1429-4f2d-9aff-85873633b9b9",
+        "packaging": null,
+        "release-group": {
+          "first-release-date": "2011-10-18",
+          "secondary-types": [],
+          "disambiguation": "",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "artist-credit": [
+            {
+              "artist": {
+                "name": "Lila Downs",
+                "sort-name": "Downs, Lila",
+                "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                "type": "Person",
+                "country": "MX",
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": "",
+              "name": "Lila Downs"
+            }
+          ],
+          "primary-type": "Album",
+          "id": "1816c693-92cb-4d7e-8ce1-ee2da89d64c9",
+          "secondary-type-ids": [],
+          "title": "Pecados y milagros",
+          "releases": []
+        },
+        "disambiguation": "Edición especial",
+        "text-representation": {
+          "script": "Latn",
+          "language": "spa"
+        },
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "disambiguation": "",
+              "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+              "type": null,
+              "iso-3166-1-codes": [
+                "MX"
+              ],
+              "name": "Mexico",
+              "sort-name": "Mexico"
+            },
+            "date": "2012-08-14"
+          }
+        ],
+        "title": "Pecados y milagros"
+      }
+    ],
+    "id": "88c222e2-ca85-4915-bfb5-ddc9f968c131",
+    "length": null,
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "MX",
+          "disambiguation": "",
+          "type": "Person",
+          "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+          "name": "Lila Downs",
+          "sort-name": "Downs, Lila"
+        },
+        "joinphrase": "",
+        "name": "Lila Downs"
+      }
+    ],
+    "video": true,
+    "first-release-date": "2012-08-14"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Vanessa+Paradis&recording_name=Joe+le+taxi&release_name=M%26J",
+  "fetched_at": "2026-07-28T14:42:41.234Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Vanessa Paradis",
+      "recording_arg": "Joe le taxi",
+      "artist_credit_name": "Vanessa Paradis",
+      "release_name": "M & J",
+      "recording_name": "Joe le taxi",
+      "artist_credit_id": 21018,
+      "artist_mbids": [
+        "46193c80-959a-499d-b42f-f33ba7b9b18e"
+      ],
+      "release_mbid": "3193b773-03a6-4115-ade4-871e908cbfc5",
+      "recording_mbid": "610ecdc5-7717-4518-8784-90a16c2c2128"
+    }
+  ]
+}

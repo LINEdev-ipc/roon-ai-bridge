@@ -1,0 +1,341 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28howling%29+AND+artistname%3A%22Howling%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:46:41.353Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:46:41.731Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "03cd4abf-3a3f-445b-b782-8cadd3e18fac",
+        "score": 100,
+        "artist-credit-id": "24004d1c-555b-3cab-94f9-6ef968ab4eaa",
+        "title": "Howling",
+        "length": 429653,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Howling",
+            "artist": {
+              "id": "77a678b8-b848-4c08-bbff-f838aea3ad1f",
+              "name": "Howling",
+              "sort-name": "Howling",
+              "disambiguation": "electronic duo",
+              "aliases": [
+                {
+                  "sort-name": "The Howling",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "The Howling",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Howlings",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Howlings",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-05-01",
+        "releases": [
+          {
+            "id": "9557ab1c-e678-4a5f-9fa8-5b701db225d2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "24004d1c-555b-3cab-94f9-6ef968ab4eaa",
+            "count": 1,
+            "title": "Sacred Ground",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Howling",
+                "artist": {
+                  "id": "77a678b8-b848-4c08-bbff-f838aea3ad1f",
+                  "name": "Howling",
+                  "sort-name": "Howling",
+                  "disambiguation": "electronic duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2b787979-2436-4d7a-84a6-ce5dd8babf98",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sacred Ground",
+              "primary-type": "Album"
+            },
+            "date": "2015",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2015",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "5852c79c-0802-3163-ac46-dc0cfc668045",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "28586e4b-da21-483b-8711-b0aa020439c3",
+                    "number": "11",
+                    "title": "Howling",
+                    "length": 429653
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "a85fd19f-3c78-4b7e-ba90-38745646af18",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "24004d1c-555b-3cab-94f9-6ef968ab4eaa",
+            "count": 1,
+            "title": "Sacred Ground",
+            "status": "Official",
+            "disambiguation": "Bonus Track Version",
+            "artist-credit": [
+              {
+                "name": "Howling",
+                "artist": {
+                  "id": "77a678b8-b848-4c08-bbff-f838aea3ad1f",
+                  "name": "Howling",
+                  "sort-name": "Howling",
+                  "disambiguation": "electronic duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2b787979-2436-4d7a-84a6-ce5dd8babf98",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sacred Ground",
+              "primary-type": "Album"
+            },
+            "date": "2015-05-01",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2015-05-01",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "56e263b6-6908-3cd5-b2e0-55763d495800",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "333fb476-9d34-4891-92ad-1f4796be1e2c",
+                    "number": "11",
+                    "title": "Howling",
+                    "length": 429653
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "893bb56c-804a-4573-9598-754aa63e2a1a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "24004d1c-555b-3cab-94f9-6ef968ab4eaa",
+            "count": 1,
+            "title": "Sacred Ground",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Howling",
+                "artist": {
+                  "id": "77a678b8-b848-4c08-bbff-f838aea3ad1f",
+                  "name": "Howling",
+                  "sort-name": "Howling",
+                  "disambiguation": "electronic duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2b787979-2436-4d7a-84a6-ce5dd8babf98",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sacred Ground",
+              "primary-type": "Album"
+            },
+            "date": "2015-05-01",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2015-05-01",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "29fe8733-c5dc-307f-b11e-ded12c09c5e9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4e713324-0ee7-4739-a407-21abd4b04ac3",
+                    "number": "11",
+                    "title": "Howling",
+                    "length": 429653
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7fac1c90-39c4-4ac7-af5a-4e51acc4217f",
+        "score": 100,
+        "artist-credit-id": "24004d1c-555b-3cab-94f9-6ef968ab4eaa",
+        "title": "Howling",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Howling",
+            "artist": {
+              "id": "77a678b8-b848-4c08-bbff-f838aea3ad1f",
+              "name": "Howling",
+              "sort-name": "Howling",
+              "disambiguation": "electronic duo",
+              "aliases": [
+                {
+                  "sort-name": "The Howling",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "The Howling",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Howlings",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Howlings",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-07-03",
+        "releases": [
+          {
+            "id": "b0673107-bc8e-41a5-a7b5-7ebec741eb0c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Km5 Ibiza Volumen 15",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "34231e2b-89cd-4813-bfe0-e67879c31c48",
+              "title": "Km5 Ibiza Volumen 15",
+              "secondary-types": [
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2015-07-03",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2015-07-03",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 24,
+            "media": [
+              {
+                "id": "676194e0-8c3d-43bf-9867-1fd4c73c2986",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "82ffeb5f-99b6-416d-8134-fe094011f502",
+                    "number": "1.01",
+                    "title": "Howling"
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

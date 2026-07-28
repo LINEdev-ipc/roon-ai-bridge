@@ -1,0 +1,71 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Don%27t+Stop+Dub%22+AND+artist%3A%22Kanka%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:50:35.504Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:50:35.547Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "4edbd219-6d88-3b28-a457-9b1927f2c692",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "7f6826e5-ca43-3888-98f9-80886e16ced3",
+        "count": 3,
+        "title": "Don't Stop Dub",
+        "first-release-date": "2005-04-11",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Kanka",
+            "artist": {
+              "id": "dadede5c-55ad-4d02-bd9d-3544c3438948",
+              "name": "Kanka",
+              "sort-name": "Kanka",
+              "disambiguation": "dub"
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "c783f462-e95d-4f57-bc21-e59f47d4f272",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Don't Stop Dub",
+            "status": "Official"
+          },
+          {
+            "id": "446ffad9-4232-475b-83f9-8e2ef86e1490",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Don't Stop Dub",
+            "status": "Official"
+          },
+          {
+            "id": "e20f54a1-d894-4b4e-a595-c0a2c65403db",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Don't Stop Dub",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 2,
+            "name": "reggae"
+          },
+          {
+            "count": 2,
+            "name": "dub"
+          }
+        ]
+      }
+    ]
+  }
+}

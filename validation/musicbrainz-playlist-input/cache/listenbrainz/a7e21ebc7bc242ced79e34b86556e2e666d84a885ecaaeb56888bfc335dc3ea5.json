@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Rema&recording_name=Calm+Down&release_name=Rave+%26+Roses",
+  "fetched_at": "2026-07-28T14:42:48.839Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Rema",
+      "recording_arg": "Calm Down",
+      "artist_credit_name": "Rema",
+      "release_name": "Rave & Roses",
+      "recording_name": "Calm Down",
+      "artist_credit_id": 2555290,
+      "artist_mbids": [
+        "720c46ba-a0e4-4b58-aee2-3bd70c70901f"
+      ],
+      "release_mbid": "04610ab5-3ccb-4945-99e9-970084768f95",
+      "recording_mbid": "e7d4a352-cf63-4c6d-8721-409ca57db03d"
+    }
+  ]
+}

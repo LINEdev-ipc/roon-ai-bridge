@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Depeche+Mode&recording_name=Enjoy+the+Silence+%28Hands+and+Feet+Mix%29",
+  "fetched_at": "2026-07-28T14:42:02.222Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Depeche Mode",
+      "recording_arg": "Enjoy the Silence (Hands and Feet Mix)",
+      "artist_credit_name": "Depeche Mode",
+      "release_name": "Enjoy the Silence",
+      "recording_name": "Enjoy the Silence (Hands and Feet mix)",
+      "artist_credit_id": 317,
+      "artist_mbids": [
+        "8538e728-ca0b-4321-b7e5-cff6565dd4c0"
+      ],
+      "release_mbid": "d2c32d33-2dce-43ab-915d-9269a2bb21ba",
+      "recording_mbid": "45c2a3ee-2a3d-4ddd-8c62-454ae7c6b083"
+    }
+  ]
+}

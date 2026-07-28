@@ -1,0 +1,292 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/646609f5-6551-4f18-bc6f-10739313a2e1?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:37:22.760Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "tags": [],
+    "video": false,
+    "first-release-date": "2011-11-14",
+    "title": "Computer Age",
+    "releases": [
+      {
+        "tags": [],
+        "barcode": "880992146067",
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type-id": null,
+              "name": "United Kingdom",
+              "iso-3166-1-codes": [
+                "GB"
+              ]
+            },
+            "date": "2011-11-14"
+          }
+        ],
+        "packaging": null,
+        "status": "Official",
+        "date": "2011-11-14",
+        "title": "Forward Ever",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Mungo’s Hi Fi",
+            "artist": {
+              "sort-name": "Mungo’s Hi Fi",
+              "disambiguation": "",
+              "genres": [
+                {
+                  "id": "6c3503e3-bae3-42de-9e4c-7861f2053fbe",
+                  "name": "dancehall",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "name": "dub",
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "1b50083b-1afa-4778-82c8-548b309af783",
+                  "name": "dubstep"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "ea9b6ec3-fc8f-4c55-b2f9-19bd4511a986",
+                  "name": "jungle"
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "name": "dancehall",
+                  "count": 1
+                },
+                {
+                  "name": "dub",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "dubstep"
+                },
+                {
+                  "name": "glasgow",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "jungle"
+                },
+                {
+                  "count": 1,
+                  "name": "scotch bonnet records"
+                },
+                {
+                  "name": "scotland",
+                  "count": 1
+                }
+              ],
+              "name": "Mungo’s Hi Fi",
+              "country": "GB",
+              "id": "8f4ebd72-0417-4c0b-9639-f4bd031bfb8d",
+              "type": "Group"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "media": [
+          {
+            "title": "",
+            "position": 1,
+            "id": "5002bef0-480e-3688-9553-a248e5ff09db",
+            "track-offset": 3,
+            "format": "CD",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type": "Group",
+                      "id": "8f4ebd72-0417-4c0b-9639-f4bd031bfb8d",
+                      "country": "GB",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Mungo’s Hi Fi",
+                      "disambiguation": "",
+                      "sort-name": "Mungo’s Hi Fi"
+                    },
+                    "joinphrase": " feat. ",
+                    "name": "Mungo’s Hi Fi"
+                  },
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Mr. Williamz",
+                      "tags": [],
+                      "genres": [],
+                      "sort-name": "Williamz, Mr.",
+                      "disambiguation": "“ragga” style vocalist; heard on many jungle releases",
+                      "type": "Person",
+                      "id": "7464f571-c815-4e2f-906c-99e09df6db56",
+                      "country": null
+                    },
+                    "name": "Mr Williamz"
+                  }
+                ],
+                "id": "4a3bae04-5fbe-35d2-bd5f-ab3bd754374a",
+                "number": "4",
+                "title": "Computer Age",
+                "length": 244186,
+                "position": 4
+              }
+            ],
+            "track-count": 15,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "title": "Forward Ever",
+          "first-release-date": "2011-11-14",
+          "secondary-type-ids": [],
+          "secondary-types": [],
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "id": "1abbc5c1-3f2c-4c8a-8376-079966322d86",
+          "disambiguation": "",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Mungo’s Hi Fi",
+              "artist": {
+                "country": "GB",
+                "type": "Group",
+                "id": "8f4ebd72-0417-4c0b-9639-f4bd031bfb8d",
+                "sort-name": "Mungo’s Hi Fi",
+                "disambiguation": "",
+                "name": "Mungo’s Hi Fi",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": []
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "id": "62509757-0bfa-4755-a011-cbaa976c688c",
+        "country": "GB",
+        "quality": "normal"
+      }
+    ],
+    "artist-credit": [
+      {
+        "name": "Mungo’s Hi Fi",
+        "artist": {
+          "country": "GB",
+          "id": "8f4ebd72-0417-4c0b-9639-f4bd031bfb8d",
+          "type": "Group",
+          "disambiguation": "",
+          "sort-name": "Mungo’s Hi Fi",
+          "genres": [
+            {
+              "id": "6c3503e3-bae3-42de-9e4c-7861f2053fbe",
+              "name": "dancehall",
+              "disambiguation": "",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "disambiguation": "",
+              "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+              "name": "dub"
+            },
+            {
+              "id": "1b50083b-1afa-4778-82c8-548b309af783",
+              "name": "dubstep",
+              "count": 1,
+              "disambiguation": ""
+            },
+            {
+              "count": 1,
+              "disambiguation": "",
+              "id": "ea9b6ec3-fc8f-4c55-b2f9-19bd4511a986",
+              "name": "jungle"
+            }
+          ],
+          "tags": [
+            {
+              "count": 1,
+              "name": "dancehall"
+            },
+            {
+              "count": 1,
+              "name": "dub"
+            },
+            {
+              "name": "dubstep",
+              "count": 1
+            },
+            {
+              "name": "glasgow",
+              "count": 1
+            },
+            {
+              "name": "jungle",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "name": "scotch bonnet records"
+            },
+            {
+              "count": 1,
+              "name": "scotland"
+            }
+          ],
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "name": "Mungo’s Hi Fi"
+        },
+        "joinphrase": " feat. "
+      },
+      {
+        "name": "Mr Williamz",
+        "artist": {
+          "sort-name": "Williamz, Mr.",
+          "disambiguation": "“ragga” style vocalist; heard on many jungle releases",
+          "name": "Mr. Williamz",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "tags": [],
+          "genres": [],
+          "country": null,
+          "type": "Person",
+          "id": "7464f571-c815-4e2f-906c-99e09df6db56"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "genres": [],
+    "relations": [],
+    "disambiguation": "",
+    "isrcs": [],
+    "id": "646609f5-6551-4f18-bc6f-10739313a2e1",
+    "length": 244186
+  }
+}

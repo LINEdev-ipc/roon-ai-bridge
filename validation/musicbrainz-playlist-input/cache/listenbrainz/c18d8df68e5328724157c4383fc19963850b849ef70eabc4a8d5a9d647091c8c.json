@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Indila&recording_name=Derni%C3%A8re+danse",
+  "fetched_at": "2026-07-28T12:16:16.325Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Indila",
+      "recording_arg": "Dernière danse",
+      "artist_credit_name": "Indila",
+      "release_name": "Mini World",
+      "recording_name": "Dernière Danse",
+      "artist_credit_id": 1273327,
+      "artist_mbids": [
+        "eee14992-d2ab-4c46-b1e2-51080504ba50"
+      ],
+      "release_mbid": "56a1b07e-b1a4-461b-88b1-dd6705c1aade",
+      "recording_mbid": "dae5f71d-6847-4683-868e-08e0fde85063"
+    }
+  ]
+}

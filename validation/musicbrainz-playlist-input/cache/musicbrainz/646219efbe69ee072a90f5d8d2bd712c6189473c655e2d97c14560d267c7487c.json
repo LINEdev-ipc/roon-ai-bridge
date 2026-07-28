@@ -1,0 +1,650 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28two+AND+thousand+AND+seventeen%29+AND+artistname%3A%22Four+Tet%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:41:25.866Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:41:26.237Z",
+    "count": 3,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "6f672c97-b0c6-464d-aa02-081e586a6b17",
+        "score": 100,
+        "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+        "title": "Two Thousand And Seventeen",
+        "length": 497000,
+        "disambiguation": "live, 2018-05-10: Funkhaus, Berlin, Germany",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Four Tet",
+            "artist": {
+              "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+              "name": "Four Tet",
+              "sort-name": "Four Tet",
+              "aliases": [
+                {
+                  "sort-name": "4 Tet",
+                  "name": "4 Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "4Tet",
+                  "name": "4Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fourtet",
+                  "name": "Fourtet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Four-Tet",
+                  "name": "Four-Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2018-08-22",
+        "releases": [
+          {
+            "id": "66e9fbb4-862e-4060-9378-74d957c0ad4e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+            "count": 1,
+            "title": "Live at Funkhaus Berlin, 10th May 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Four Tet",
+                "artist": {
+                  "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+                  "name": "Four Tet",
+                  "sort-name": "Four Tet"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "17a2ddee-1143-45be-82ec-b5bdb3df20c8",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live at Funkhaus Berlin, 10th May 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2018-08-22",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-08-22",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "21c02971-3699-3eae-a288-5037282f3853",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "61c33550-9cdd-4abd-a245-71074a30e7e5",
+                    "number": "4",
+                    "title": "Two Thousand And Seventeen",
+                    "length": 497000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "59feedf2-8212-4352-80c9-820b00bd36ce",
+        "score": 100,
+        "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+        "title": "Two Thousand and Seventeen",
+        "length": 252256,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Four Tet",
+            "artist": {
+              "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+              "name": "Four Tet",
+              "sort-name": "Four Tet",
+              "aliases": [
+                {
+                  "sort-name": "4 Tet",
+                  "name": "4 Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "4Tet",
+                  "name": "4Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fourtet",
+                  "name": "Fourtet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Four-Tet",
+                  "name": "Four-Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2017-07-04",
+        "releases": [
+          {
+            "id": "33b99156-c740-4c5e-9557-5384a88ed9a1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+            "count": 1,
+            "title": "New Energy",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Four Tet",
+                "artist": {
+                  "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+                  "name": "Four Tet",
+                  "sort-name": "Four Tet"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "065cf7e0-83b8-4946-96d4-f2346df3fcbb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "New Energy",
+              "primary-type": "Album"
+            },
+            "date": "",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "a65287a2-f78f-38e5-aa70-d2e381a87218",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "36e6a8b2-f3bb-400f-81c4-355aed434935",
+                    "number": "2",
+                    "title": "Two Thousand and Seventeen",
+                    "length": 252256
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "542fff41-6460-4f5b-8eeb-15016af2fbdd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+            "count": 1,
+            "title": "Two Thousand and Seventeen",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Four Tet",
+                "artist": {
+                  "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+                  "name": "Four Tet",
+                  "sort-name": "Four Tet"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bd230670-3aaf-47e9-afc1-46e572c9e21e",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Two Thousand and Seventeen",
+              "primary-type": "Single"
+            },
+            "date": "2017-07-05",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2017-07-05",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              },
+              {
+                "date": "2017-07-04",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "aa9fb26c-b255-338c-8507-031fc65e3d51",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4651eada-4c80-4f65-818a-00a9f3e7a84e",
+                    "number": "1",
+                    "title": "Two Thousand and Seventeen",
+                    "length": 252256
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "15b3baa0-afd9-4607-a45f-3c9441c8d7ca",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+            "count": 1,
+            "title": "New Energy",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Four Tet",
+                "artist": {
+                  "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+                  "name": "Four Tet",
+                  "sort-name": "Four Tet"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "065cf7e0-83b8-4946-96d4-f2346df3fcbb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "New Energy",
+              "primary-type": "Album"
+            },
+            "date": "2017-11-10",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2017-11-10",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "d7c5ff87-149c-3f76-973a-11fce3fadc96",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "250aba42-c780-4133-8d21-dbd2dc2cd645",
+                    "number": "2",
+                    "title": "Two Thousand and Seventeen",
+                    "length": 252253
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "ad18da95-7c3a-408c-958f-ff3dd7954440",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+            "count": 1,
+            "title": "New Energy",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Four Tet",
+                "artist": {
+                  "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+                  "name": "Four Tet",
+                  "sort-name": "Four Tet"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "065cf7e0-83b8-4946-96d4-f2346df3fcbb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "New Energy",
+              "primary-type": "Album"
+            },
+            "date": "2017-09-29",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-09-29",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "083294ef-3f68-3ccf-988f-2f035077b37e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "d5a59718-f3b5-495f-accd-9721dd79dab3",
+                    "number": "2",
+                    "title": "Two Thousand and Seventeen",
+                    "length": 252256
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "c3111ab9-2e00-45b1-85a1-e383010da1c3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+            "count": 1,
+            "title": "New Energy",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Four Tet",
+                "artist": {
+                  "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+                  "name": "Four Tet",
+                  "sort-name": "Four Tet"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "065cf7e0-83b8-4946-96d4-f2346df3fcbb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "New Energy",
+              "primary-type": "Album"
+            },
+            "date": "2017-09-29",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2017-09-29",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              },
+              {
+                "date": "2017-09-29",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "71a2815f-014b-3b91-a8d5-13fa45914f30",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "704cea39-aa2f-4cae-bd4d-f6a81427ea21",
+                    "number": "2",
+                    "title": "Two Thousand and Seventeen",
+                    "length": 252253
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBXNG1744401",
+          "GBXNG1744402"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "downtempo"
+          },
+          {
+            "count": 1,
+            "name": "folktronica"
+          }
+        ]
+      },
+      {
+        "id": "3b2abe77-10cb-4989-9c6e-47ca67d9b060",
+        "score": 100,
+        "artist-credit-id": "d6895eef-eae8-30dc-9c3a-99f411839db5",
+        "title": "Two Thousand and Seventeen",
+        "length": 242000,
+        "disambiguation": "part of a “Annie Mac Presents 2017” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Four Tet",
+            "artist": {
+              "id": "3bcff06f-675a-451f-9075-99e8657047e8",
+              "name": "Four Tet",
+              "sort-name": "Four Tet",
+              "aliases": [
+                {
+                  "sort-name": "4 Tet",
+                  "name": "4 Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "4Tet",
+                  "name": "4Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fourtet",
+                  "name": "Fourtet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Four-Tet",
+                  "name": "Four-Tet",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2017-11-29",
+        "releases": [
+          {
+            "id": "9edf105a-2522-4f18-b59a-bd47181a8dcb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "dc5d0ec2-a297-35f9-884d-d97988537a0a",
+            "count": 2,
+            "title": "Annie Mac Presents 2017",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Annie Mac",
+                "artist": {
+                  "id": "573f2d10-82c2-43f0-8726-d560c82eb430",
+                  "name": "Annie Mac",
+                  "sort-name": "Mac, Annie"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "17c3b2eb-e9eb-4a11-b65a-44d7b611c6d4",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Annie Mac Presents 2017",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2017-11-29",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2017-11-29",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 36,
+            "media": [
+              {
+                "id": "354211ac-0b0a-3195-91ef-5cd51e01f9c8",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d31f10b4-e8ec-4251-a52a-ef58aabca11d",
+                    "number": "16",
+                    "title": "Two Thousand and Seventeen",
+                    "length": 242000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 15
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Stromae&recording_name=Alors+on+danse&release_name=Cheese",
+  "fetched_at": "2026-07-28T12:16:07.875Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Stromae",
+      "recording_arg": "Alors on danse",
+      "artist_credit_name": "Stromae",
+      "release_name": "Cheese",
+      "recording_name": "Alors on danse",
+      "artist_credit_id": 685411,
+      "artist_mbids": [
+        "ab2528d9-719f-4261-8098-21849222a0f2"
+      ],
+      "release_mbid": "019f547c-8d6b-4865-a2da-f73a4568c18b",
+      "recording_mbid": "0a6c5cce-044d-45ab-898d-b8a2c13f69f7"
+    }
+  ]
+}

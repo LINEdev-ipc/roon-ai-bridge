@@ -1,0 +1,138 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/1cb4ccfc-8832-4bdc-941a-85b81bec9118?inc=artist-credits%2Breleases%2Brelease-groups%2Bisrcs&fmt=json",
+  "fetched_at": "2026-07-28T14:41:50.563Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "first-release-date": "2011",
+    "title": "You’ve Got the Love (The xx remix)",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "artist": {
+          "sort-name": "Florence and the Machine",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "name": "Florence + the Machine",
+          "id": "5fee3020-513b-48c2-b1f7-4681b01db0c6",
+          "disambiguation": "",
+          "type": "Group",
+          "country": "GB"
+        },
+        "joinphrase": "",
+        "name": "Florence + the Machine"
+      }
+    ],
+    "video": false,
+    "length": 252000,
+    "isrcs": [],
+    "releases": [
+      {
+        "release-group": {
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "first-release-date": "2011",
+          "disambiguation": "",
+          "title": "Award Tour: The 2011 Grammy Remix",
+          "artist-credit": [
+            {
+              "joinphrase": " & ",
+              "artist": {
+                "country": "US",
+                "type": "Person",
+                "disambiguation": "",
+                "id": "bffe9445-fb2c-4616-bf04-92e34a7e4359",
+                "name": "Mick Boogie",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Boogie, Mick"
+              },
+              "name": "Mick Boogie"
+            },
+            {
+              "name": "Terry Urban",
+              "joinphrase": "",
+              "artist": {
+                "id": "a83f5231-d9b2-43f2-8e48-07aa88a0637f",
+                "name": "Terry Urban",
+                "sort-name": "Urban, Terry",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "US",
+                "type": "Person",
+                "disambiguation": ""
+              }
+            }
+          ],
+          "secondary-type-ids": [
+            "0c60f497-ff81-3818-befd-abfc84a4858b"
+          ],
+          "releases": [],
+          "secondary-types": [
+            "Remix"
+          ],
+          "id": "0e526a5c-958c-40a8-b383-a3956a1b0d7b",
+          "primary-type": "Album"
+        },
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "disambiguation": "",
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "type-id": null,
+              "sort-name": "United States",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "name": "United States"
+            },
+            "date": "2011"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "status": "Official",
+        "country": "US",
+        "packaging": "None",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "title": "Award Tour: The 2011 Grammy Remix",
+        "disambiguation": "",
+        "date": "2011",
+        "id": "96db8e17-6ae3-4217-a985-c639634030b2",
+        "barcode": "",
+        "quality": "normal",
+        "artist-credit": [
+          {
+            "name": "Mick Boogie",
+            "artist": {
+              "id": "bffe9445-fb2c-4616-bf04-92e34a7e4359",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Boogie, Mick",
+              "name": "Mick Boogie",
+              "type": "Person",
+              "country": "US",
+              "disambiguation": ""
+            },
+            "joinphrase": " & "
+          },
+          {
+            "joinphrase": "",
+            "artist": {
+              "type": "Person",
+              "country": "US",
+              "disambiguation": "",
+              "id": "a83f5231-d9b2-43f2-8e48-07aa88a0637f",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Urban, Terry",
+              "name": "Terry Urban"
+            },
+            "name": "Terry Urban"
+          }
+        ]
+      }
+    ],
+    "id": "1cb4ccfc-8832-4bdc-941a-85b81bec9118"
+  }
+}

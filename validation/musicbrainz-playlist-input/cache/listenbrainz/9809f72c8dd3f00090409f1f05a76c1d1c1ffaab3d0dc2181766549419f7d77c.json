@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Enrique+Iglesias&recording_name=Bailando&release_name=Sex+and+Love",
+  "fetched_at": "2026-07-28T12:16:14.491Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Enrique Iglesias",
+      "recording_arg": "Bailando",
+      "artist_credit_name": "Enrique Iglesias",
+      "release_name": "Sex And Love",
+      "recording_name": "Bailando",
+      "artist_credit_id": 3113,
+      "artist_mbids": [
+        "35f866dc-c061-48ba-8157-cf2e0eac4857"
+      ],
+      "release_mbid": "baba28f4-2ea9-49a4-8ccb-4d907f618f8f",
+      "recording_mbid": "7c3b71b0-55d0-48c7-b2fb-4beb572c1787"
+    }
+  ]
+}

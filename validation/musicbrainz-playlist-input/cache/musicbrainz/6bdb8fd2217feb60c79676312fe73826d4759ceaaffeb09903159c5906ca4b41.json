@@ -1,0 +1,220 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/e067529a-0516-4572-8209-c8afa16c5f49?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:36:37.729Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "releases": [
+      {
+        "packaging-id": null,
+        "quality": "normal",
+        "genres": [],
+        "date": "2007-09-10",
+        "id": "ed3f811f-b65c-4387-a677-7933a744f3cd",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "tags": [],
+        "packaging": null,
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "genres": [
+                {
+                  "name": "dub",
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "type": "Group",
+              "disambiguation": "",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "dub"
+                },
+                {
+                  "count": 1,
+                  "name": "soul and reggae"
+                }
+              ],
+              "country": "GB",
+              "name": "Zion Train",
+              "sort-name": "Zion Train",
+              "id": "3010655f-9ff2-4753-b4f7-803c4118f450"
+            },
+            "name": "Zion Train"
+          }
+        ],
+        "title": "Live as One",
+        "media": [
+          {
+            "id": "81534a07-f1ce-35b2-a6ab-e5521d978560",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "format": "CD",
+            "track-offset": 0,
+            "tracks": [
+              {
+                "id": "6390a603-af2f-321a-a11d-1269a8547a68",
+                "position": 1,
+                "length": 190640,
+                "number": "1",
+                "title": "Boxes and Amps",
+                "artist-credit": [
+                  {
+                    "joinphrase": " feat. ",
+                    "name": "Zion Train",
+                    "artist": {
+                      "country": "GB",
+                      "name": "Zion Train",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "type": "Group",
+                      "disambiguation": "",
+                      "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+                      "sort-name": "Zion Train"
+                    }
+                  },
+                  {
+                    "artist": {
+                      "sort-name": "Dubdadda",
+                      "id": "0dc404ae-6db6-495f-a903-feebcd46bb70",
+                      "tags": [],
+                      "type": "Person",
+                      "genres": [],
+                      "disambiguation": "",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Dubdadda",
+                      "country": null
+                    },
+                    "name": "Dubdadda",
+                    "joinphrase": ""
+                  }
+                ]
+              }
+            ],
+            "track-count": 16,
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "status": "Official",
+        "disambiguation": "",
+        "barcode": null,
+        "release-group": {
+          "title": "Live as One",
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "GB",
+                "name": "Zion Train",
+                "disambiguation": "",
+                "type": "Group",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+                "sort-name": "Zion Train"
+              },
+              "name": "Zion Train",
+              "joinphrase": ""
+            }
+          ],
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "disambiguation": "",
+          "first-release-date": "2007-09-10",
+          "releases": [],
+          "secondary-type-ids": [
+            "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+          ],
+          "secondary-types": [
+            "Live"
+          ],
+          "primary-type": "Album",
+          "genres": [],
+          "id": "c41f23f9-8aaf-3c91-911a-5ce54fcbf8c9"
+        },
+        "country": "GB",
+        "release-events": [
+          {
+            "date": "2007-09-10",
+            "area": {
+              "name": "United Kingdom",
+              "type-id": null,
+              "type": null,
+              "disambiguation": "",
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "sort-name": "United Kingdom"
+            }
+          }
+        ]
+      }
+    ],
+    "disambiguation": "",
+    "relations": [],
+    "tags": [],
+    "artist-credit": [
+      {
+        "artist": {
+          "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+          "sort-name": "Zion Train",
+          "name": "Zion Train",
+          "country": "GB",
+          "tags": [
+            {
+              "name": "dub",
+              "count": 1
+            },
+            {
+              "name": "soul and reggae",
+              "count": 1
+            }
+          ],
+          "genres": [
+            {
+              "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+              "name": "dub",
+              "count": 1,
+              "disambiguation": ""
+            }
+          ],
+          "type": "Group",
+          "disambiguation": "",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+        },
+        "name": "Zion Train",
+        "joinphrase": " feat. "
+      },
+      {
+        "joinphrase": "",
+        "artist": {
+          "id": "0dc404ae-6db6-495f-a903-feebcd46bb70",
+          "sort-name": "Dubdadda",
+          "country": null,
+          "name": "Dubdadda",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "genres": [],
+          "tags": []
+        },
+        "name": "Dubdadda"
+      }
+    ],
+    "title": "Boxes and Amps",
+    "first-release-date": "2007-09-10",
+    "video": false,
+    "id": "e067529a-0516-4572-8209-c8afa16c5f49",
+    "genres": [],
+    "isrcs": [],
+    "length": 190640
+  }
+}

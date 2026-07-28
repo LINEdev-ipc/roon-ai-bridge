@@ -1,0 +1,508 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28bibi+AND+vengeance%29+AND+firstreleasedate%3A%5B2021+TO+2023%5D+AND+artistname%3A%22BIBI%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:45:50.922Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:45:51.070Z",
+    "count": 3,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "2f281525-9d18-49b1-a82f-f537aeea9a57",
+        "score": 100,
+        "artist-credit-id": "8c6aad6e-cd78-30b3-818e-e572e6639efa",
+        "title": "Bibi Vengeance",
+        "length": 167000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "BIBI",
+            "artist": {
+              "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+              "name": "BIBI",
+              "sort-name": "BIBI",
+              "disambiguation": "South Korean singer",
+              "aliases": [
+                {
+                  "sort-name": "BIBI",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "비비",
+                  "locale": "ko_KR",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022",
+        "releases": [
+          {
+            "id": "984fed7a-0852-4107-bb4a-03e36de7e40b",
+            "artist-credit-id": "8c6aad6e-cd78-30b3-818e-e572e6639efa",
+            "count": 1,
+            "title": "Lowlife Princess: Noir",
+            "artist-credit": [
+              {
+                "name": "BIBI",
+                "artist": {
+                  "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                  "name": "BIBI",
+                  "sort-name": "BIBI",
+                  "disambiguation": "South Korean singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2219f553-4557-46c6-8f44-117194a795f2",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Lowlife Princess: Noir",
+              "primary-type": "Album"
+            },
+            "date": "2022",
+            "country": "KR",
+            "release-events": [
+              {
+                "date": "2022",
+                "area": {
+                  "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+                  "name": "South Korea",
+                  "sort-name": "South Korea",
+                  "iso-3166-1-codes": [
+                    "KR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "122c7338-9099-416c-a216-56bb8cce3120",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "07b8801a-ca6c-4378-9df5-b3bee28c4dec",
+                    "number": "3",
+                    "title": "Bibi Vengeance",
+                    "length": 167000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ac2b5601-387d-4006-94ac-627b6e1f6c0c",
+        "score": 85,
+        "artist-credit-id": "8c6aad6e-cd78-30b3-818e-e572e6639efa",
+        "title": "Bibi Vengeance (clean ver.)",
+        "length": 165000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "BIBI",
+            "artist": {
+              "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+              "name": "BIBI",
+              "sort-name": "BIBI",
+              "disambiguation": "South Korean singer",
+              "aliases": [
+                {
+                  "sort-name": "BIBI",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "비비",
+                  "locale": "ko_KR",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022",
+        "releases": [
+          {
+            "id": "984fed7a-0852-4107-bb4a-03e36de7e40b",
+            "artist-credit-id": "8c6aad6e-cd78-30b3-818e-e572e6639efa",
+            "count": 1,
+            "title": "Lowlife Princess: Noir",
+            "artist-credit": [
+              {
+                "name": "BIBI",
+                "artist": {
+                  "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                  "name": "BIBI",
+                  "sort-name": "BIBI",
+                  "disambiguation": "South Korean singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2219f553-4557-46c6-8f44-117194a795f2",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Lowlife Princess: Noir",
+              "primary-type": "Album"
+            },
+            "date": "2022",
+            "country": "KR",
+            "release-events": [
+              {
+                "date": "2022",
+                "area": {
+                  "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+                  "name": "South Korea",
+                  "sort-name": "South Korea",
+                  "iso-3166-1-codes": [
+                    "KR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "122c7338-9099-416c-a216-56bb8cce3120",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f7316a1f-8fad-4f5e-9a3d-5dab9d4e8801",
+                    "number": "13",
+                    "title": "Bibi Vengeance (clean ver.)",
+                    "length": 165000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "00808ace-8080-44e1-add4-ef5351aa15e3",
+        "score": 78,
+        "artist-credit-id": "289543e8-4f00-4c73-8e4f-fec597e00339",
+        "title": "BIBI Vengeance (remix)",
+        "length": 189960,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "BIBI",
+            "artist": {
+              "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+              "name": "BIBI",
+              "sort-name": "BIBI",
+              "disambiguation": "South Korean singer",
+              "aliases": [
+                {
+                  "sort-name": "BIBI",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "비비",
+                  "locale": "ko_KR",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " feat. ",
+            "name": "Princesa Alba",
+            "artist": {
+              "id": "d94722fe-0503-405a-a454-c9181208056f",
+              "name": "Princesa Alba",
+              "sort-name": "Princesa Alba",
+              "aliases": [
+                {
+                  "sort-name": "Riveros Inostroza, Trinidad Valentina",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Trinidad Valentina Riveros Inostroza",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Baby Tate",
+            "artist": {
+              "id": "16e2988c-47b3-4f5e-9d04-10233d0d3005",
+              "name": "Baby Tate",
+              "sort-name": "Baby Tate",
+              "disambiguation": "rapper formerly known as Yung Baby Tate",
+              "aliases": [
+                {
+                  "sort-name": "Farris, Tate",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Tate Farris",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Tate",
+                  "name": "Tate",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-03-03",
+        "releases": [
+          {
+            "id": "6624a52b-f034-4570-941b-950d9fe3f696",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e1600cc8-7354-4e49-8759-ace2f6410210",
+            "count": 1,
+            "title": "나쁜X (remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " & ",
+                "name": "비비",
+                "artist": {
+                  "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                  "name": "BIBI",
+                  "sort-name": "BIBI",
+                  "disambiguation": "South Korean singer"
+                }
+              },
+              {
+                "joinphrase": " feat. ",
+                "name": "Princesa Alba",
+                "artist": {
+                  "id": "d94722fe-0503-405a-a454-c9181208056f",
+                  "name": "Princesa Alba",
+                  "sort-name": "Princesa Alba"
+                }
+              },
+              {
+                "name": "Baby Tate",
+                "artist": {
+                  "id": "16e2988c-47b3-4f5e-9d04-10233d0d3005",
+                  "name": "Baby Tate",
+                  "sort-name": "Baby Tate",
+                  "disambiguation": "rapper formerly known as Yung Baby Tate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f8a80165-53b8-4697-934f-c0cb88b16f3e",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "BIBI Vengeance (remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-03-08",
+            "country": "KR",
+            "release-events": [
+              {
+                "date": "2023-03-08",
+                "area": {
+                  "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+                  "name": "South Korea",
+                  "sort-name": "South Korea",
+                  "iso-3166-1-codes": [
+                    "KR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "893d848c-d1ae-3d95-a0fb-8705275660af",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "75742786-fc12-403d-aea2-27ff928c47bb",
+                    "number": "1",
+                    "title": "나쁜X (remix)",
+                    "length": 189960
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "697026de-fb2e-46ea-8ef6-542d871d2742",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "12a21fa1-49cb-4ac0-b029-1bbed9014eb1",
+            "count": 1,
+            "title": "BIBI Vengeance (remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "BIBI",
+                "artist": {
+                  "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                  "name": "BIBI",
+                  "sort-name": "BIBI",
+                  "disambiguation": "South Korean singer"
+                }
+              },
+              {
+                "joinphrase": " & with ",
+                "name": "Baby Tate",
+                "artist": {
+                  "id": "16e2988c-47b3-4f5e-9d04-10233d0d3005",
+                  "name": "Baby Tate",
+                  "sort-name": "Baby Tate",
+                  "disambiguation": "rapper formerly known as Yung Baby Tate"
+                }
+              },
+              {
+                "name": "Princesa Alba",
+                "artist": {
+                  "id": "d94722fe-0503-405a-a454-c9181208056f",
+                  "name": "Princesa Alba",
+                  "sort-name": "Princesa Alba"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f8a80165-53b8-4697-934f-c0cb88b16f3e",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "BIBI Vengeance (remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 2,
+            "media": [
+              {
+                "id": "b9ef8b8a-2e3d-3c6f-875a-0710f5596720",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a6dad7c8-9213-41c4-a9e1-13c38e7e6a14",
+                    "number": "1",
+                    "title": "BIBI Vengeance (remix)",
+                    "length": 189960
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "183fb7bc-b45e-4672-87d3-fab869649ed3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "289543e8-4f00-4c73-8e4f-fec597e00339",
+            "count": 1,
+            "title": "BIBI Vengeance (remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " & ",
+                "name": "BIBI",
+                "artist": {
+                  "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                  "name": "BIBI",
+                  "sort-name": "BIBI",
+                  "disambiguation": "South Korean singer"
+                }
+              },
+              {
+                "joinphrase": " feat. ",
+                "name": "Princesa Alba",
+                "artist": {
+                  "id": "d94722fe-0503-405a-a454-c9181208056f",
+                  "name": "Princesa Alba",
+                  "sort-name": "Princesa Alba"
+                }
+              },
+              {
+                "name": "Baby Tate",
+                "artist": {
+                  "id": "16e2988c-47b3-4f5e-9d04-10233d0d3005",
+                  "name": "Baby Tate",
+                  "sort-name": "Baby Tate",
+                  "disambiguation": "rapper formerly known as Yung Baby Tate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f8a80165-53b8-4697-934f-c0cb88b16f3e",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "BIBI Vengeance (remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 1,
+            "media": [
+              {
+                "id": "52d045d9-ae70-30e8-baec-97b0e98c2392",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ebd329e4-15b6-4ff0-8f8b-6a830fbcd845",
+                    "number": "1",
+                    "title": "BIBI Vengeance (remix)",
+                    "length": 189960
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "KRE432300001"
+        ]
+      }
+    ]
+  }
+}

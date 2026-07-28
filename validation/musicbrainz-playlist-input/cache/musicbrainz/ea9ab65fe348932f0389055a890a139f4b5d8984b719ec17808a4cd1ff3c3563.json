@@ -1,0 +1,1240 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=alias%3A%28sodade%29+AND+artistname%3A%22Ces%C3%A1ria+%C3%89vora%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:47:23.936Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:47:24.314Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "2e8aedc2-e20b-471b-acd0-57daef9b6590",
+        "score": 100,
+        "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+        "title": "Mar é morada de sodade",
+        "length": 361200,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Cesária Évora",
+            "artist": {
+              "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+              "name": "Cesária Évora",
+              "sort-name": "Évora, Cesária",
+              "aliases": [
+                {
+                  "sort-name": "Evora, Cesaria",
+                  "name": "Evora, Cesaria",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Césaria Évora",
+                  "name": "Césaria Évora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Ceasaria Evora",
+                  "name": "Ceasaria Evora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Cesaria Evora",
+                  "name": "Cesaria Evora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1997-03-18",
+        "releases": [
+          {
+            "id": "42996773-a337-438c-ba46-08763cf864fc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "632df35d-f763-4d8e-a139-59e3c17c435c",
+            "count": 7,
+            "title": "La Collection Cesaria Evora",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesaria Evora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "89b869ff-b6c7-49ee-b049-7a15552fd20c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "La Collection Cesaria Evora",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 109,
+            "media": [
+              {
+                "id": "f8744749-cc1b-4675-a661-f8f43dd7b7d0",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0d19fc51-f2ee-484d-a953-c245b33c87f6",
+                    "number": "6",
+                    "title": "Mar E Morada De Sodade",
+                    "length": 359000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "99fa0899-1bbe-4ee9-937b-36fa10e7ea39",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Golden Songs",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "161776d6-1643-3c69-8191-19e164fd72cb",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Golden Songs",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "",
+            "country": "RU",
+            "release-events": [
+              {
+                "date": "",
+                "area": {
+                  "id": "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+                  "name": "Russia",
+                  "sort-name": "Russia",
+                  "iso-3166-1-codes": [
+                    "RU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "d29a735d-01b6-3e6d-98fd-8762f64ad7fc",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "4bdd715c-83de-3d87-a435-2154bf0584d3",
+                    "number": "5",
+                    "title": "Mar e morada de sodade",
+                    "length": 362000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "dbe0721d-bd4c-4c92-81da-6ab4d2319bcf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Cabo Verde",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ece2cfa1-bda2-34ac-9de4-2b8eba279d2e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cabo Verde",
+              "primary-type": "Album"
+            },
+            "track-count": 15,
+            "media": [
+              {
+                "id": "5bbcb820-0946-34ba-adf9-465033cce040",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "1eb96d8f-9f41-34b9-ad59-002e790d2454",
+                    "number": "6",
+                    "title": "Mar E Morada De Sodade",
+                    "length": 361240
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "05529fef-ad21-40d5-98f3-2b95f1209a7c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Cabo Verde",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ece2cfa1-bda2-34ac-9de4-2b8eba279d2e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cabo Verde",
+              "primary-type": "Album"
+            },
+            "date": "1997",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "7e2661d9-5ec1-3dea-96d2-3c9ab362e081",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "eadeb87b-943e-3533-bdf0-9847dbea018c",
+                    "number": "6",
+                    "title": "Mar e Morada De Sodade",
+                    "length": 361200
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "15e705e0-f211-4126-bbb8-81469d376dc7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Cabo Verde",
+            "status": "Official",
+            "disambiguation": "Barcode, Disc-ID",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ece2cfa1-bda2-34ac-9de4-2b8eba279d2e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cabo Verde",
+              "primary-type": "Album"
+            },
+            "date": "1997",
+            "country": "CV",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "41d328a3-01da-35c2-b26e-69c56d7121d1",
+                  "name": "Cape Verde",
+                  "sort-name": "Cape Verde",
+                  "iso-3166-1-codes": [
+                    "CV"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "6aa725a9-17ce-3b53-943f-aea9178fe836",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2530d69c-542a-43a0-8c53-06e34aa67e9b",
+                    "number": "6",
+                    "title": "Mar é morada de sodade",
+                    "length": 361200
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "407102bd-7071-36b1-9bc2-528078fe8ae9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Cabo Verde",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ece2cfa1-bda2-34ac-9de4-2b8eba279d2e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cabo Verde",
+              "primary-type": "Album"
+            },
+            "date": "1997",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "4f33e708-7895-34bf-82da-269b31903991",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7ef74441-d0df-3cee-bf9e-f54abeccbc1c",
+                    "number": "6",
+                    "title": "Mar e Morada De Sodade",
+                    "length": 361200
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "b22b965d-d2ed-432e-a2dc-bf6f82dd5d7c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Cabo Verde",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ece2cfa1-bda2-34ac-9de4-2b8eba279d2e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cabo Verde",
+              "primary-type": "Album"
+            },
+            "track-count": 14,
+            "media": [
+              {
+                "id": "ce8e2621-879b-388d-a6a5-87a840ce6b86",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a12eed33-5d40-300b-9967-013262d39e33",
+                    "number": "6",
+                    "title": "Mar e Morada De Sodade",
+                    "length": 361200
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "67bb7b45-cdf8-4f53-a4a4-c6f3e9fba8d7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Cabo Verde",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ece2cfa1-bda2-34ac-9de4-2b8eba279d2e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cabo Verde",
+              "primary-type": "Album"
+            },
+            "date": "2002",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2002",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "41c980f8-b6ff-32f7-8a85-b48406228fe3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0fc45178-087d-47a7-abf4-2d107fad106d",
+                    "number": "6",
+                    "title": "Mar e Morada De Sodade",
+                    "length": 361200
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "9c2a7f94-1288-4f33-8960-0f3f8ec3ba7d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Cabo Verde",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ece2cfa1-bda2-34ac-9de4-2b8eba279d2e",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cabo Verde",
+              "primary-type": "Album"
+            },
+            "date": "1997-03-18",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1997-03-18",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "212b9a94-622b-3fc5-a1b2-d64cca443e76",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "fcbb21c3-f4d3-327d-a7d1-e51164bd99dc",
+                    "number": "5",
+                    "title": "Mar é morada de sodade",
+                    "length": 361266
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 4
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FRX629720060"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "chillout"
+          },
+          {
+            "count": 1,
+            "name": "latin"
+          },
+          {
+            "count": 1,
+            "name": "african"
+          },
+          {
+            "count": 2,
+            "name": "son"
+          }
+        ]
+      },
+      {
+        "id": "61beeb96-2947-4bae-84dc-b779468a663e",
+        "score": 85,
+        "artist-credit-id": "dbf5e6a3-7a32-3e7b-b7ac-c8c29811cffb",
+        "title": "Sodade",
+        "length": 296493,
+        "disambiguation": "re-recorded duet version",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "Cesária Évora",
+            "artist": {
+              "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+              "name": "Cesária Évora",
+              "sort-name": "Évora, Cesária",
+              "aliases": [
+                {
+                  "sort-name": "Evora, Cesaria",
+                  "name": "Evora, Cesaria",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Césaria Évora",
+                  "name": "Césaria Évora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Ceasaria Evora",
+                  "name": "Ceasaria Evora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Cesaria Evora",
+                  "name": "Cesaria Evora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Bonga",
+            "artist": {
+              "id": "15b1dbc3-f113-44d5-88b0-7a258ae57dca",
+              "name": "Bonga",
+              "sort-name": "Bonga",
+              "disambiguation": "Angolan folk and semba singer",
+              "aliases": [
+                {
+                  "sort-name": "José Adelino Barceló de Carvalho",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "José Adelino Barceló de Carvalho",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Kuenda, Bonga",
+                  "name": "Bonga Kuenda",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Kwenda, Bonga",
+                  "name": "Bonga Kwenda",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2002-06-20",
+        "releases": [
+          {
+            "id": "b43b013c-abe0-4674-901f-8a8a2e5688a0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Anthologie",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009",
+            "country": "RO",
+            "release-events": [
+              {
+                "date": "2009",
+                "area": {
+                  "id": "61ed84b8-5a10-30a7-8376-ccd51801d6d1",
+                  "name": "Romania",
+                  "sort-name": "Romania",
+                  "iso-3166-1-codes": [
+                    "RO"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "4f9dfe28-f3b0-3d16-a928-a02c045de52c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "dfc052e2-9d4d-3a66-ac85-f219d74cb3e2",
+                    "number": "1",
+                    "title": "Sodade (inedite en duo avec Bonga)",
+                    "length": 296173
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b5e9aa63-89ec-4450-9654-3055f00bb23f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "The Very Best Of",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2002-09-20",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2002-09-20",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "9ca5235a-1507-362a-9eec-ccd48274df1a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0582eccc-32b1-43ba-b279-b9bd08e9dfce",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 293640
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b9d070c6-92c6-4092-b5fa-02ef32c668cd",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "RDP África - As Melhores Músicas de 2002",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "215d3ac0-e894-4023-b5c5-caa527725eac",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RDP África - As Melhores Músicas de 2002",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2003",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2003",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "4332508e-61eb-311b-b6e2-e8f74aa9e1ff",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9d8cbba9-2b60-41ea-99bd-458bad22dd90",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 293000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "57576dba-ca5f-44ab-8315-88612a1332c8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Voz d'amor",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8a26b4c8-30f8-3c2a-b145-145544de384c",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Voz d'amor",
+              "primary-type": "Album"
+            },
+            "track-count": 18,
+            "media": [
+              {
+                "id": "dc462d51-b666-3a2c-954f-ce625a428c0d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "01fbf63e-7b64-4649-a3f8-026b89d9a3dd",
+                    "number": "15",
+                    "title": "Sodade",
+                    "length": 297000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "22170570-6318-4157-91b7-6753a4bbfb6e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "The Very Best of Cesária Évora",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2002",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2002",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "759aae9f-7df4-3acc-8139-c2f06136016b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8f4a5a9b-c9d4-422f-a68c-68e112d3d85a",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 296826
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "916d6703-2a7a-4a2f-a49c-900fdb5439af",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "The Very Best of Cesaria Evora",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2002",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2002",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "9bb1a268-253e-33e8-b25a-82bcc742bd78",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4df793eb-491f-3b52-94a6-c1ae603f7014",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 296826
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "3fc88e59-1f43-4d8c-a5de-63e2905c4c6c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 2,
+            "title": "Anthologie: Mornas & Coladeras",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2002-07-15",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2002-07-15",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 32,
+            "media": [
+              {
+                "id": "fe09d837-73dc-36d5-8254-0aea70d0e1ab",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "78fd3035-8a4c-3de6-8d91-aaac98174381",
+                    "number": "6",
+                    "title": "Sodade",
+                    "length": 296493
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "20a04314-7fed-4e1a-bb86-f766e898fbc2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Anthology",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 16,
+            "media": [
+              {
+                "id": "ad123d91-536c-3672-a529-0837c8323c7a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d32f0c40-80d4-3fa9-8dc1-ef3babc60e7c",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 296826
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "856f9c24-a363-44ee-843d-d39f2e41c0b5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Cesaria Evora &...",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a40c2894-0326-41ea-93a9-65c9f1af6b65",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cesaria Evora &...",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-11-29",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010-11-29",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "94dc46fa-10e7-3b80-833f-25ef28c8962f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "58aa8eac-14d8-37d0-8c8a-4a9dc667a5dd",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 294000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FRX620267010"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1176 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Running+Up+That+Hill+%28A+Deal+With+God%29+%282012+Remix%29%22+AND+artist%3A%22Kate+Bush%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:39:47.520Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:39:47.544Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "7a0aecf5-0538-42d6-a468-78e0d3a9dead",
+        "score": 100,
+        "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+        "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+        "length": 333640,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "artist": {
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "name": "Kate Bush",
+              "sort-name": "Bush, Kate",
+              "aliases": [
+                {
+                  "sort-name": "ケイト・ブッシュ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "ケイト・ブッシュ",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bush, Catherine",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Catherine Bush",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bush, Kate",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Kate Bush",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2012-08-10",
+        "releases": [
+          {
+            "id": "6d86dd1a-b94a-4f26-aeea-367dab41968d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 1,
+            "title": "Selection from ‘The Other Sides’",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "eb86960f-7902-4971-9ad1-cb4d2a332501",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Selection from ‘The Other Sides’",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2022",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              },
+              {
+                "date": "2018-11-30",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "510492c3-8288-3c18-8867-5d7c78ab2f85",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9164f698-2ed9-4249-8143-1f5c658a30ff",
+                    "number": "6",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                    "length": 334013
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "b0ec38aa-c45c-4add-a0e2-a2249b71233c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 1,
+            "title": "Selection from ‘The Other Sides’",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "eb86960f-7902-4971-9ad1-cb4d2a332501",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Selection from ‘The Other Sides’",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11-30",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2018-11-30",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "16bab6d4-d6ab-3aac-b13f-4b753409a517",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f6711006-9459-452b-8cf0-d0fe78b93b6c",
+                    "number": "6",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)"
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "5f9d3b62-4563-4fba-b93a-6fc6aab5a8a8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 1,
+            "title": "Running Up That Hill (A Deal With God) (2012 remix) / Walk Straight Down the Middle",
+            "status": "Official",
+            "disambiguation": "picture disc",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "46278b1b-47fd-4655-ba14-2eac2a310808",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2013-04-20",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2013-04-20",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "de51de4d-d200-395c-9f17-453f66e67b14",
+                "position": 1,
+                "format": "10\" Vinyl",
+                "track": [
+                  {
+                    "id": "b2105e1f-1387-47d3-a7ae-a510c6c70191",
+                    "number": "A",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)"
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "fed7fd8b-1129-428d-953d-8264c5dc5f70",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 1,
+            "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "46278b1b-47fd-4655-ba14-2eac2a310808",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 1,
+            "media": [
+              {
+                "id": "613b95a2-d045-38b6-a9e2-a3fd28b3c28f",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6b119ad2-d054-4fae-a982-20f6ba58892b",
+                    "number": "1",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                    "length": 331537
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "341dfb18-7867-42a9-99c8-d07579c95fcf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 1,
+            "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "46278b1b-47fd-4655-ba14-2eac2a310808",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 1,
+            "media": [
+              {
+                "id": "09fc122e-22ac-39dd-aded-2a2e455bd69c",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5b21c375-fefe-4fb7-844e-5b8649056784",
+                    "number": "1",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                    "length": 331537
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b24c4853-c25f-4fec-9187-00df86ff02b1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "A Symphony of British Music: Music for the Closing Ceremony of the London 2012 Olympic Games",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "93178ae7-7d14-4aec-af12-efb5633f6968",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A Symphony of British Music: Music for the Closing Ceremony of the London 2012 Olympic Games",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2012-08-20",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2012-08-20",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "58cc7b13-f6cf-3e31-ac2e-59f4605bc2e1",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "52b0ac15-3b78-3dce-ad94-d2030ff161cf",
+                    "number": "11",
+                    "title": "Running Up That Hill (A Deal with God remix)",
+                    "length": 333640
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "b28c1f07-ef8f-4738-9bdf-a31063f5b8b6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "A Symphony of British Music: Music for the Closing Ceremony of the London 2012 Olympic Games",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "93178ae7-7d14-4aec-af12-efb5633f6968",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A Symphony of British Music: Music for the Closing Ceremony of the London 2012 Olympic Games",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "track-count": 38,
+            "media": [
+              {
+                "id": "9bf882ff-2ca7-3f63-bb62-154a6cb22d4b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "be23374d-f152-4ce9-9827-ad4590cc6ee5",
+                    "number": "11",
+                    "title": "Running Up That Hill (A Deal With God remix)",
+                    "length": 332761
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "75a9ae2e-586a-47c6-8e8b-74a2bae9be3c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 4,
+            "title": "Remastered in Vinyl IV",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af71236e-1c04-431b-a53d-909b72ba9f2b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Other Sides",
+              "disambiguation": "Remastered, Part IV",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11-30",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2018-11-30",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "bb2a941f-32ef-3f16-a33d-b6448713f6fd",
+                "position": 2,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "fdb73569-e4b6-4cc1-9b08-cc86887c4ab5",
+                    "number": "D5",
+                    "title": "Running Up That Hill (A Deal with God) (2012 remix)"
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "75a9ae2e-586a-47c6-8e8b-74a2bae9be3c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 4,
+            "title": "Remastered in Vinyl IV",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af71236e-1c04-431b-a53d-909b72ba9f2b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Other Sides",
+              "disambiguation": "Remastered, Part IV",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11-30",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2018-11-30",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "637ea0ec-1cd1-35ca-a407-5c332fc5532d",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "744adb15-d95a-4abd-b6c9-33d89ec03113",
+                    "number": "A1",
+                    "title": "Running Up That Hill (A Deal with God)"
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b3ca24cc-9175-4174-84ba-7e7723dc4721",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 4,
+            "title": "The Other Sides",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af71236e-1c04-431b-a53d-909b72ba9f2b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Other Sides",
+              "disambiguation": "Remastered, Part IV",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2019",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "cb12feba-30a8-3920-8196-0afbdd9d9ca1",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e4324e91-8fe3-4c4c-bdf7-aaed844f334a",
+                    "number": "10",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                    "length": 336173
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "5acc35a8-7177-45c7-99c9-b3b604f8d6a4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 4,
+            "title": "Remastered, Pt. IV",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af71236e-1c04-431b-a53d-909b72ba9f2b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Other Sides",
+              "disambiguation": "Remastered, Part IV",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 34,
+            "media": [
+              {
+                "id": "da350a04-ff80-39ba-9df6-baf3bb6a90ee",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "736f8d58-1a5a-454b-8b7b-708d86abec63",
+                    "number": "10",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                    "length": 336173
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "85cf6cec-5821-42c0-b7af-4ed71157160e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 11,
+            "title": "Remastered, Part II",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1b7b587e-53f3-410e-af9f-c816dd3b4ed0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Remastered, Part II",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11-30",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2018-11-30",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 97,
+            "media": [
+              {
+                "id": "4a82e592-6c9e-36cf-ba9e-8b3c2df4b3ef",
+                "position": 9,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "414bc999-6d1d-4d20-82e7-f7d874867b25",
+                    "number": "10",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                    "length": 336173
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "b324e8b8-d0b2-41a4-a892-4ae7a2332e20",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 4,
+            "title": "The Other Sides",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af71236e-1c04-431b-a53d-909b72ba9f2b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Other Sides",
+              "disambiguation": "Remastered, Part IV",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-03-08",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2019-03-08",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "ed352a15-6f13-3622-810c-4749b51e9e7d",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "56974b11-79be-4399-a439-9c3accf82bb6",
+                    "number": "10",
+                    "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                    "length": 336173
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "7fae77de-9ef0-48e4-8783-686147cf2323",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bcd22677-9a87-3d36-8ce6-3c00a661c15e",
+            "count": 2,
+            "title": "Café del Mar XIX",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Toni Simonen",
+                "artist": {
+                  "id": "3896d068-cba7-4df0-b2ec-cbd226eadbb8",
+                  "name": "Toni Simonen",
+                  "sort-name": "Simonen, Toni"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fde4f98-ae21-4390-916c-064551e5d464",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Café del Mar, Volumen Diecinueve",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2013-06-28",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-06-28",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 26,
+            "media": [
+              {
+                "id": "82499f2f-1c3c-3c51-864f-5c4032c8b99f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9547ac7a-5a95-451a-8409-1c0fa1930642",
+                    "number": "10",
+                    "title": "Running Up That Hill (A Deal With God 2012 Remix)"
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "c960a43f-fcb5-40d6-8656-232053012fcd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bcd22677-9a87-3d36-8ce6-3c00a661c15e",
+            "count": 2,
+            "title": "Café del Mar, volumen diecinueve",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Toni Simonen",
+                "artist": {
+                  "id": "3896d068-cba7-4df0-b2ec-cbd226eadbb8",
+                  "name": "Toni Simonen",
+                  "sort-name": "Simonen, Toni"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fde4f98-ae21-4390-916c-064551e5d464",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Café del Mar, Volumen Diecinueve",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 28,
+            "media": [
+              {
+                "id": "82a26233-32fb-3021-82bf-6071729d4138",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f71fbed2-aff1-4097-b56d-64447d1acb2b",
+                    "number": "10",
+                    "title": "Running Up That Hill (A Deal with God) (remix)",
+                    "length": 333000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "530a6002-ba5d-42c1-819e-9e6f77e2f042",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Café del Mar, volumen diecinueve",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fde4f98-ae21-4390-916c-064551e5d464",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Café del Mar, Volumen Diecinueve",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2013-07-09",
+            "country": "ES",
+            "release-events": [
+              {
+                "date": "2013-07-09",
+                "area": {
+                  "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+                  "name": "Spain",
+                  "sort-name": "Spain",
+                  "iso-3166-1-codes": [
+                    "ES"
+                  ]
+                }
+              }
+            ],
+            "track-count": 26,
+            "media": [
+              {
+                "id": "6f24331c-0ec6-3ae7-a6d7-44200491bc1d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "62c89ed7-c231-4e3e-9dec-0dc01143fb94",
+                    "number": "10",
+                    "title": "Running Up That Hill (A Deal with God) (2012 remix)",
+                    "length": 333000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 9
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBAYE1801016",
+          "GBAYE1800996",
+          "GBCNR1200001"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "rock"
+          },
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 2,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "synth-pop"
+          },
+          {
+            "count": 1,
+            "name": "art rock"
+          }
+        ]
+      },
+      {
+        "id": "99f5f09b-d15d-4897-9a9a-542c63b98a17",
+        "score": 100,
+        "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+        "title": "Running Up That Hill (A Deal with God) 2012 (remix)",
+        "length": 331537,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "artist": {
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "name": "Kate Bush",
+              "sort-name": "Bush, Kate",
+              "aliases": [
+                {
+                  "sort-name": "ケイト・ブッシュ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "ケイト・ブッシュ",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bush, Catherine",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Catherine Bush",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bush, Kate",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Kate Bush",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014",
+        "releases": [
+          {
+            "id": "70a1f460-3922-48b7-87a1-9cfba8a7268d",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "4d8e3573-4eb0-32a4-ba95-148aedbe887e",
+            "count": 1,
+            "title": "The Extended Whole Story",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Kate Bush",
+                "artist": {
+                  "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                  "name": "Kate Bush",
+                  "sort-name": "Bush, Kate"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "460a3322-cbda-3a69-a376-22c35ee5732e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Whole Story",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 27,
+            "media": [
+              {
+                "id": "9afd3f33-3a61-4b67-9990-8dc4302e65e3",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5f7478a9-2e3a-4473-8dfa-6dff8580a55a",
+                    "number": "27",
+                    "title": "Running Up That Hill (A Deal with God) 2012 (remix)",
+                    "length": 331537
+                  }
+                ],
+                "track-count": 27,
+                "track-offset": 26
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

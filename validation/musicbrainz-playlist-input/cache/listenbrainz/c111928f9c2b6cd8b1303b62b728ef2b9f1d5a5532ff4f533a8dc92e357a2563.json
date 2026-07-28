@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Radiohead&recording_name=Reckoner+%28Maribou+State+Remix%29",
+  "fetched_at": "2026-07-28T12:15:52.534Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Radiohead",
+      "recording_arg": "Reckoner (Maribou State Remix)",
+      "artist_credit_name": "Radiohead",
+      "release_name": "fabric presents Maribou State",
+      "recording_name": "Reckoner (Maribou State remix)",
+      "artist_credit_id": 66,
+      "artist_mbids": [
+        "a74b1b7f-71a5-4011-9441-d0b5e4122711"
+      ],
+      "release_mbid": "500cf2af-3ba0-441c-84cf-b4c0c278e446",
+      "recording_mbid": "82feebb8-2d06-4ff0-b067-980131e8453c"
+    }
+  ]
+}

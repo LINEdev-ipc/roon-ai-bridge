@@ -1,0 +1,416 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28innerbloom+AND+what+AND+so+AND+not+AND+remix%29+AND+release%3A%28innerbloom+AND+remixes%29+AND+artistname%3A%22R%C3%9CF%C3%9CS+DU+SOL%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:37:41.027Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:37:41.161Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "ad486327-79c7-4f9e-b468-551fc9e6d072",
+        "score": 100,
+        "artist-credit-id": "f3d42f7f-5cd4-3ce8-a88b-f5fadd7746e3",
+        "title": "Innerbloom (What So Not remix)",
+        "length": 277000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "RÜFÜS",
+            "artist": {
+              "id": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+              "name": "RÜFÜS DU SOL",
+              "sort-name": "RÜFÜS DU SOL",
+              "disambiguation": "Australian band, fka RÜFÜS",
+              "aliases": [
+                {
+                  "sort-name": "RÜFÜS / RÜFÜS DU SOL",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "RÜFÜS / RÜFÜS DU SOL",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2014-01",
+                  "end-date": "2018-05"
+                },
+                {
+                  "sort-name": "RÜFÜS",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "RÜFÜS",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2010-11-25",
+                  "end-date": "2018-05"
+                },
+                {
+                  "sort-name": "RÜFÜS DU SOL",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "RÜFÜS DU SOL",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2014-01",
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2016-03-18",
+        "releases": [
+          {
+            "id": "56298c27-ff52-4bff-82e0-4b9d2cefaa62",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "92c4507b-a867-3b8c-bbfd-e0b944663dab",
+            "count": 1,
+            "title": "Innerbloom (The Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "RÜFÜS DU SOL",
+                "artist": {
+                  "id": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+                  "name": "RÜFÜS DU SOL",
+                  "sort-name": "RÜFÜS DU SOL",
+                  "disambiguation": "Australian band, fka RÜFÜS"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1387c078-e5c1-46b5-9874-f0cca39cc6a6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Innerbloom",
+              "primary-type": "Single"
+            },
+            "track-count": 7,
+            "media": [
+              {
+                "id": "43259e2a-00bc-475a-a602-4f3b51231baa",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fcd468c9-5410-433a-a209-16214a753021",
+                    "number": "2",
+                    "title": "Innerbloom (What So Not remix)",
+                    "length": 277199
+                  }
+                ],
+                "track-count": 7,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "ae37b600-4ae6-47df-933e-8d4d01bfbef1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "92c4507b-a867-3b8c-bbfd-e0b944663dab",
+            "count": 1,
+            "title": "Innerbloom",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "RÜFÜS DU SOL",
+                "artist": {
+                  "id": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+                  "name": "RÜFÜS DU SOL",
+                  "sort-name": "RÜFÜS DU SOL",
+                  "disambiguation": "Australian band, fka RÜFÜS"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1387c078-e5c1-46b5-9874-f0cca39cc6a6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Innerbloom",
+              "primary-type": "Single"
+            },
+            "date": "2018-01-23",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-01-23",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "63d68292-f6e3-3a14-a77e-abf5e5b8db7c",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "50f6b23b-0c9b-4ff1-a286-46308471941e",
+                    "number": "4",
+                    "title": "Innerbloom (What So Not remix)",
+                    "length": 277200
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "d93a34d4-5499-4b45-8889-2684fa17c6c0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "f3d42f7f-5cd4-3ce8-a88b-f5fadd7746e3",
+            "count": 1,
+            "title": "Innerbloom (The Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "RÜFÜS",
+                "artist": {
+                  "id": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+                  "name": "RÜFÜS DU SOL",
+                  "sort-name": "RÜFÜS DU SOL",
+                  "disambiguation": "Australian band, fka RÜFÜS"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1387c078-e5c1-46b5-9874-f0cca39cc6a6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Innerbloom",
+              "primary-type": "Single"
+            },
+            "date": "2016-10-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2016-10-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "87ab88c4-c4d1-360b-bd97-19f455ca5668",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "cac81d84-a916-4079-a97a-477f4d5dc85c",
+                    "number": "4",
+                    "title": "Innerbloom (What So Not remix)",
+                    "length": 277000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "0c05590e-97f7-4efa-9b8e-7f86d87e1cd9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "92c4507b-a867-3b8c-bbfd-e0b944663dab",
+            "count": 1,
+            "title": "Innerbloom (The Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "RÜFÜS DU SOL",
+                "artist": {
+                  "id": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+                  "name": "RÜFÜS DU SOL",
+                  "sort-name": "RÜFÜS DU SOL",
+                  "disambiguation": "Australian band, fka RÜFÜS"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1387c078-e5c1-46b5-9874-f0cca39cc6a6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Innerbloom",
+              "primary-type": "Single"
+            },
+            "date": "2016-10-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2016-10-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 7,
+            "media": [
+              {
+                "id": "4326f0ee-3823-384e-a2e7-59e44efd704b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "805c9db4-1a04-4e76-944f-bea9b503dc35",
+                    "number": "2",
+                    "title": "Innerbloom (What So Not remix)",
+                    "length": 277000
+                  }
+                ],
+                "track-count": 7,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "fe7e242c-b18e-4e0f-93f7-70d3cb1499c7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "f3d42f7f-5cd4-3ce8-a88b-f5fadd7746e3",
+            "count": 1,
+            "title": "Innerbloom",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "RÜFÜS",
+                "artist": {
+                  "id": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+                  "name": "RÜFÜS DU SOL",
+                  "sort-name": "RÜFÜS DU SOL",
+                  "disambiguation": "Australian band, fka RÜFÜS"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1387c078-e5c1-46b5-9874-f0cca39cc6a6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Innerbloom",
+              "primary-type": "Single"
+            },
+            "date": "2016-04-16",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2016-04-16",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "8ec98c32-8099-3643-adae-1960b0fe1c94",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "33ffacad-ed9e-47c1-bbe8-3884e268d580",
+                    "number": "B2",
+                    "title": "Innerbloom (What So Not remix)"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "1a11f7a9-3634-4027-beee-0cdc095d24fa",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "f3d42f7f-5cd4-3ce8-a88b-f5fadd7746e3",
+            "count": 1,
+            "title": "Innerbloom (What So Not remix)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "RÜFÜS",
+                "artist": {
+                  "id": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+                  "name": "RÜFÜS DU SOL",
+                  "sort-name": "RÜFÜS DU SOL",
+                  "disambiguation": "Australian band, fka RÜFÜS"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1387c078-e5c1-46b5-9874-f0cca39cc6a6",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Innerbloom",
+              "primary-type": "Single"
+            },
+            "date": "2016-03-18",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2016-03-18",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "c25f7b68-3cca-394a-8af2-071d7be730f3",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b506b801-67c0-4ce9-a9c0-13e1c0d773af",
+                    "number": "1",
+                    "title": "Innerbloom (What So Not remix)",
+                    "length": 277000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "AUDCB1600741"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "synth-pop"
+          }
+        ]
+      }
+    ]
+  }
+}

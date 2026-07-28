@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=S%C3%A9rgio+Mendes&recording_name=Mas+que+nada",
+  "fetched_at": "2026-07-28T12:16:05.515Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Sérgio Mendes",
+      "recording_arg": "Mas que nada",
+      "artist_credit_name": "Sérgio Mendes",
+      "release_name": "Mas Que Nada",
+      "recording_name": "Mas Que Nada",
+      "artist_credit_id": 2815,
+      "artist_mbids": [
+        "6bf591c4-b050-478e-9d9f-167394d66c90"
+      ],
+      "release_mbid": "63c94596-9e2b-489b-9db7-2113b600bb2a",
+      "recording_mbid": "3c399f8f-cecf-4952-bf57-e2dc606b1534"
+    }
+  ]
+}

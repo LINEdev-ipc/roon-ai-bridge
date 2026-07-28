@@ -1,0 +1,5246 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/9c947f36-458f-4a66-a9d3-c79e46143184?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:43:12.442Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "first-release-date": "2020-01-24",
+    "title": "Jerusalema",
+    "video": false,
+    "tags": [
+      {
+        "name": "dance",
+        "count": 1
+      },
+      {
+        "name": "deep house",
+        "count": 1
+      },
+      {
+        "name": "hip hop",
+        "count": 1
+      },
+      {
+        "name": "house",
+        "count": 1
+      },
+      {
+        "count": 1,
+        "name": "party"
+      },
+      {
+        "name": "pop",
+        "count": 1
+      }
+    ],
+    "id": "9c947f36-458f-4a66-a9d3-c79e46143184",
+    "isrcs": [
+      "USVPR2100157",
+      "ZA82Y1900130"
+    ],
+    "length": 342000,
+    "relations": [
+      {
+        "attribute-values": {},
+        "type": "performance",
+        "source-credit": "",
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "work": {
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+          "languages": [
+            "zul"
+          ],
+          "iswcs": [
+            "T-301.541.345-9"
+          ],
+          "disambiguation": "Master KG & Nomcebo song",
+          "language": "zul",
+          "type": "Song",
+          "id": "69bb0da5-c48c-45b4-a94c-c7e6a8a8cc21",
+          "attributes": [],
+          "title": "Jerusalema"
+        },
+        "attribute-ids": {},
+        "end": null,
+        "direction": "forward",
+        "attributes": [],
+        "ended": false,
+        "target-credit": "",
+        "begin": null,
+        "target-type": "work"
+      }
+    ],
+    "artist-credit": [
+      {
+        "name": "Master KG",
+        "joinphrase": " ft. ",
+        "artist": {
+          "type": "Person",
+          "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+          "country": "ZA",
+          "name": "Master KG",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "tags": [
+            {
+              "count": 1,
+              "name": "afropop"
+            },
+            {
+              "name": "english",
+              "count": 1
+            },
+            {
+              "name": "isizulu",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "name": "pop"
+            },
+            {
+              "count": 1,
+              "name": "zulu"
+            }
+          ],
+          "genres": [
+            {
+              "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+              "name": "pop",
+              "disambiguation": "",
+              "count": 1
+            }
+          ],
+          "disambiguation": "South African musician and record producer",
+          "sort-name": "Master KG"
+        }
+      },
+      {
+        "artist": {
+          "country": "ZA",
+          "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+          "type": "Person",
+          "disambiguation": "",
+          "sort-name": "Zikode, Nomcebo",
+          "genres": [
+            {
+              "disambiguation": "",
+              "count": 1,
+              "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+              "name": "dance"
+            },
+            {
+              "name": "house",
+              "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+              "count": 1,
+              "disambiguation": ""
+            }
+          ],
+          "tags": [
+            {
+              "name": "dance",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "name": "english"
+            },
+            {
+              "name": "house",
+              "count": 1
+            }
+          ],
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Nomcebo Zikode"
+        },
+        "joinphrase": "",
+        "name": "Nomcebo"
+      }
+    ],
+    "releases": [
+      {
+        "barcode": null,
+        "release-events": [
+          {
+            "area": null,
+            "date": "2020-01-24"
+          }
+        ],
+        "tags": [],
+        "status": null,
+        "packaging": null,
+        "title": "Jerusalema",
+        "date": "2020-01-24",
+        "media": [
+          {
+            "track-count": 1,
+            "tracks": [
+              {
+                "id": "cbc299b8-fa5a-4d58-aa97-b3a28b4e2967",
+                "number": "1",
+                "artist-credit": [
+                  {
+                    "name": "Master KG",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Master KG",
+                      "disambiguation": "South African musician and record producer",
+                      "name": "Master KG",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4"
+                    }
+                  }
+                ],
+                "title": "Jerusalem",
+                "length": 342000,
+                "position": 1
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "position": 1,
+            "title": "",
+            "track-offset": 0,
+            "format": "Digital Media",
+            "id": "cb8864fb-8c2c-327c-90b3-4ff66459e789"
+          }
+        ],
+        "status-id": null,
+        "genres": [],
+        "text-representation": {
+          "script": null,
+          "language": null
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "name": "afropop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "name": "isizulu",
+                  "count": 1
+                },
+                {
+                  "name": "pop",
+                  "count": 1
+                },
+                {
+                  "name": "zulu",
+                  "count": 1
+                }
+              ],
+              "name": "Master KG",
+              "genres": [
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "sort-name": "Master KG",
+              "disambiguation": "South African musician and record producer",
+              "type": "Person",
+              "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+              "country": "ZA"
+            },
+            "name": "Master KG"
+          }
+        ],
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "id": "dcdb52f4-f753-4711-97ef-6f6dc0055c8b",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Master KG",
+                "sort-name": "Master KG",
+                "disambiguation": "South African musician and record producer",
+                "type": "Person",
+                "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                "country": "ZA"
+              },
+              "joinphrase": " ft. ",
+              "name": "Master KG"
+            },
+            {
+              "artist": {
+                "genres": [
+                  {
+                    "disambiguation": "",
+                    "count": 1,
+                    "name": "dance",
+                    "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33"
+                  },
+                  {
+                    "count": 1,
+                    "disambiguation": "",
+                    "name": "house",
+                    "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3"
+                  }
+                ],
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Nomcebo Zikode",
+                "tags": [
+                  {
+                    "name": "dance",
+                    "count": 1
+                  },
+                  {
+                    "name": "english",
+                    "count": 1
+                  },
+                  {
+                    "name": "house",
+                    "count": 1
+                  }
+                ],
+                "sort-name": "Zikode, Nomcebo",
+                "disambiguation": "",
+                "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                "type": "Person",
+                "country": "ZA"
+              },
+              "joinphrase": "",
+              "name": "Nomcebo"
+            }
+          ],
+          "genres": [],
+          "disambiguation": "",
+          "first-release-date": "2020-01-24",
+          "secondary-type-ids": [],
+          "title": "Jerusalema",
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "tags": [],
+          "primary-type": "Single",
+          "secondary-types": []
+        },
+        "id": "026c4f32-e93b-4766-b040-4498dd3747a3",
+        "country": null,
+        "quality": "normal"
+      },
+      {
+        "title": "Jerusalema",
+        "date": "2020-01-24",
+        "status": "Official",
+        "packaging": null,
+        "release-events": [
+          {
+            "date": "2020-01-24",
+            "area": {
+              "type": null,
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "name": "Germany",
+              "disambiguation": "",
+              "sort-name": "Germany"
+            }
+          }
+        ],
+        "barcode": null,
+        "tags": [],
+        "country": "DE",
+        "quality": "normal",
+        "id": "c0cf8efc-7733-421b-b3cf-e532e2636b3c",
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "id": "18c3e559-0c5e-414f-aa47-84144ee99e58",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "South African musician and record producer",
+                "sort-name": "Master KG",
+                "name": "Master KG",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "ZA",
+                "type": "Person",
+                "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4"
+              },
+              "name": "Master KG"
+            }
+          ],
+          "disambiguation": "",
+          "secondary-type-ids": [],
+          "first-release-date": "2020-01-24",
+          "title": "Jerusalema",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": []
+        },
+        "media": [
+          {
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "title": "Jerusalema",
+                "length": 342000,
+                "position": 1,
+                "artist-credit": [
+                  {
+                    "joinphrase": " feat. ",
+                    "artist": {
+                      "type": "Person",
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                      "country": "ZA",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Master KG",
+                      "disambiguation": "South African musician and record producer",
+                      "sort-name": "Master KG"
+                    },
+                    "name": "Master KG"
+                  },
+                  {
+                    "name": "Nomcebo Zikode",
+                    "joinphrase": "",
+                    "artist": {
+                      "type": "Person",
+                      "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                      "country": "ZA",
+                      "name": "Nomcebo Zikode",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "house"
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        },
+                        {
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "name": "house",
+                          "disambiguation": "",
+                          "count": 1
+                        }
+                      ],
+                      "disambiguation": "",
+                      "sort-name": "Zikode, Nomcebo"
+                    }
+                  }
+                ],
+                "id": "2d9f13a5-4492-4208-a9af-0ed6b00dabea",
+                "number": "1"
+              }
+            ],
+            "track-count": 10,
+            "id": "54ac08df-314d-3527-b2e0-c6e51a07b51a",
+            "track-offset": 0,
+            "format": "Digital Media",
+            "title": "",
+            "position": 1
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Master KG",
+            "joinphrase": "",
+            "artist": {
+              "country": "ZA",
+              "type": "Person",
+              "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+              "disambiguation": "South African musician and record producer",
+              "sort-name": "Master KG",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Master KG",
+              "tags": [
+                {
+                  "name": "afropop",
+                  "count": 1
+                },
+                {
+                  "name": "english",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "isizulu"
+                },
+                {
+                  "count": 1,
+                  "name": "pop"
+                },
+                {
+                  "name": "zulu",
+                  "count": 1
+                }
+              ],
+              "genres": [
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "country": "AO",
+        "quality": "normal",
+        "id": "df7e82dc-f698-43a5-a475-098571578234",
+        "release-group": {
+          "primary-type": "Single",
+          "tags": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "secondary-types": [],
+          "first-release-date": "2020-01-24",
+          "secondary-type-ids": [],
+          "title": "Jerusalema",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "name": "Master KG",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "South African musician and record producer",
+                "sort-name": "Master KG",
+                "type": "Person",
+                "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                "country": "ZA"
+              },
+              "joinphrase": " ft. ",
+              "name": "Master KG"
+            },
+            {
+              "joinphrase": "",
+              "artist": {
+                "country": "ZA",
+                "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                "type": "Person",
+                "disambiguation": "",
+                "sort-name": "Zikode, Nomcebo",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Nomcebo Zikode"
+              },
+              "name": "Nomcebo"
+            }
+          ],
+          "disambiguation": "",
+          "id": "dcdb52f4-f753-4711-97ef-6f6dc0055c8b"
+        },
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "genres": [],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": " ft. ",
+            "artist": {
+              "country": "ZA",
+              "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+              "type": "Person",
+              "sort-name": "Master KG",
+              "disambiguation": "South African musician and record producer",
+              "genres": [
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "name": "Master KG",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "afropop"
+                },
+                {
+                  "name": "english",
+                  "count": 1
+                },
+                {
+                  "name": "isizulu",
+                  "count": 1
+                },
+                {
+                  "name": "pop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "zulu"
+                }
+              ]
+            },
+            "name": "Master KG"
+          },
+          {
+            "name": "Nomcebo",
+            "joinphrase": "",
+            "artist": {
+              "country": "ZA",
+              "type": "Person",
+              "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+              "sort-name": "Zikode, Nomcebo",
+              "disambiguation": "",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "dance"
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "count": 1,
+                  "name": "house"
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Nomcebo Zikode",
+              "genres": [
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                  "name": "dance"
+                },
+                {
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ]
+            }
+          }
+        ],
+        "media": [
+          {
+            "id": "baaf255d-9c7a-3af6-bb3b-60990311052f",
+            "track-offset": 0,
+            "format": "Digital Media",
+            "title": "",
+            "position": 1,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "position": 1,
+                "title": "Jerusalema",
+                "length": 342662,
+                "number": "1",
+                "id": "6ed3fabf-77fb-4efd-af49-c7b35f6bbd84",
+                "artist-credit": [
+                  {
+                    "joinphrase": " ft. ",
+                    "artist": {
+                      "type": "Person",
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                      "country": "ZA",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Master KG",
+                      "disambiguation": "South African musician and record producer",
+                      "sort-name": "Master KG"
+                    },
+                    "name": "Master KG"
+                  },
+                  {
+                    "name": "Nomcebo",
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "ZA",
+                      "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                      "type": "Person",
+                      "disambiguation": "",
+                      "sort-name": "Zikode, Nomcebo",
+                      "name": "Nomcebo Zikode",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 1
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "date": "2020-07-03",
+        "title": "Jerusalema",
+        "packaging": "None",
+        "status": "Official",
+        "tags": [],
+        "barcode": "757572901876",
+        "release-events": [
+          {
+            "area": {
+              "id": "2afd5d6a-5fee-3836-8783-44d0ec9ac115",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Angola",
+              "type-id": null,
+              "name": "Angola",
+              "iso-3166-1-codes": [
+                "AO"
+              ]
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "type": null,
+              "id": "1f72ee74-2d3f-3a40-846b-e3d780b73dd2",
+              "type-id": null,
+              "name": "Benin",
+              "iso-3166-1-codes": [
+                "BJ"
+              ],
+              "sort-name": "Benin",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "BW"
+              ],
+              "name": "Botswana",
+              "disambiguation": "",
+              "sort-name": "Botswana",
+              "type": null,
+              "id": "e5e11b08-d26d-341c-af28-69d3c26607f7"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "sort-name": "Burkina Faso",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Burkina Faso",
+              "iso-3166-1-codes": [
+                "BF"
+              ],
+              "id": "5f886d01-5c12-3abb-b8be-d758b282ab05",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "id": "bf132644-e3ee-3bfc-9323-7f82824e4945",
+              "type": null,
+              "name": "Cameroon",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "CM"
+              ],
+              "sort-name": "Cameroon",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Cape Verde",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "CV"
+              ],
+              "type-id": null,
+              "name": "Cape Verde",
+              "type": null,
+              "id": "41d328a3-01da-35c2-b26e-69c56d7121d1"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "id": "6ce82d72-8123-3365-ab34-7b20581a34cf",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Chad",
+              "type-id": null,
+              "name": "Chad",
+              "iso-3166-1-codes": [
+                "TD"
+              ]
+            }
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "type": null,
+              "id": "185bc3c4-4c5a-3f69-9384-7c280dfdf072",
+              "sort-name": "Congo",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "CG"
+              ],
+              "name": "Congo"
+            }
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "type": null,
+              "id": "e56e3d7a-4b90-3546-8450-49548050924a",
+              "disambiguation": "",
+              "sort-name": "Côte d'Ivoire",
+              "iso-3166-1-codes": [
+                "CI"
+              ],
+              "type-id": null,
+              "name": "Côte d'Ivoire"
+            }
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "iso-3166-1-codes": [
+                "CD"
+              ],
+              "type-id": null,
+              "name": "Democratic Republic of the Congo",
+              "disambiguation": "",
+              "sort-name": "Democratic Republic of the Congo",
+              "id": "d1733e16-9064-3181-961d-d56f8599969b",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Eswatini",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SZ"
+              ],
+              "name": "Eswatini",
+              "type": null,
+              "id": "564741c6-943e-313b-86fa-9819d595281b"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "id": "d14441fe-3bce-34b5-aed5-dfbe987329c9",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Gabon",
+              "name": "Gabon",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GA"
+              ]
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "id": "52641fae-20e3-3698-9fa9-1849f2c79ab8",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GM"
+              ],
+              "name": "Gambia",
+              "disambiguation": "",
+              "sort-name": "Gambia"
+            }
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "id": "cf48f4b4-28f0-39ab-9104-650324a1d1c8",
+              "type": null,
+              "type-id": null,
+              "name": "Ghana",
+              "iso-3166-1-codes": [
+                "GH"
+              ],
+              "disambiguation": "",
+              "sort-name": "Ghana"
+            }
+          },
+          {
+            "area": {
+              "id": "4f01a1af-02ca-3b28-a64f-f38c36c08879",
+              "type": null,
+              "sort-name": "Guinea-Bissau",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Guinea-Bissau",
+              "iso-3166-1-codes": [
+                "GW"
+              ]
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "023da4a0-acee-3fb1-b91e-5de74ccf787b",
+              "disambiguation": "",
+              "sort-name": "Kenya",
+              "type-id": null,
+              "name": "Kenya",
+              "iso-3166-1-codes": [
+                "KE"
+              ]
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Liberia",
+              "name": "Liberia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "LR"
+              ],
+              "type": null,
+              "id": "d66e68e6-6410-3d34-a8aa-9242045ed593"
+            }
+          },
+          {
+            "area": {
+              "id": "f3a30678-3d23-3f42-8056-d32ebe58c66d",
+              "type": null,
+              "sort-name": "Madagascar",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "MG"
+              ],
+              "type-id": null,
+              "name": "Madagascar"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "name": "Malawi",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MW"
+              ],
+              "disambiguation": "",
+              "sort-name": "Malawi",
+              "type": null,
+              "id": "b4d3ff41-ead2-300f-9c11-f73f8ad39678"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "name": "Mali",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ML"
+              ],
+              "sort-name": "Mali",
+              "disambiguation": "",
+              "type": null,
+              "id": "c35e6d5e-9011-32e5-a23f-9e7639b7350c"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "name": "Mauritania",
+              "iso-3166-1-codes": [
+                "MR"
+              ],
+              "disambiguation": "",
+              "sort-name": "Mauritania",
+              "type": null,
+              "id": "657e69c5-cda0-3592-9d39-85b55610bc40"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "bb019165-42ef-3470-bcb8-36d1b45e4bc1",
+              "sort-name": "Mauritius",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Mauritius",
+              "iso-3166-1-codes": [
+                "MU"
+              ]
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "325ce9a0-d58f-3564-b24e-647b33098767",
+              "name": "Mozambique",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MZ"
+              ],
+              "sort-name": "Mozambique",
+              "disambiguation": ""
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NA"
+              ],
+              "name": "Namibia",
+              "sort-name": "Namibia",
+              "disambiguation": "",
+              "id": "cd4fadac-d701-3401-8516-420de2cb4e5c",
+              "type": null
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "f27e792b-ddd2-3a70-bdd4-41fb11534b57",
+              "sort-name": "Niger",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Niger",
+              "iso-3166-1-codes": [
+                "NE"
+              ]
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "sort-name": "Nigeria",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NG"
+              ],
+              "name": "Nigeria",
+              "id": "1e23d84b-202e-3fc8-8c49-debc71e9eb16",
+              "type": null
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "id": "5921efcf-344c-3e55-829d-34fca714fcde",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "RW"
+              ],
+              "name": "Rwanda",
+              "disambiguation": "",
+              "sort-name": "Rwanda"
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "122bb81f-191e-3798-8be2-4b54ffd7ffa4",
+              "iso-3166-1-codes": [
+                "SN"
+              ],
+              "type-id": null,
+              "name": "Senegal",
+              "disambiguation": "",
+              "sort-name": "Senegal"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "be43ea01-053a-3b23-b03d-2df8317a57ff",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SC"
+              ],
+              "name": "Seychelles",
+              "disambiguation": "",
+              "sort-name": "Seychelles"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "iso-3166-1-codes": [
+                "SL"
+              ],
+              "type-id": null,
+              "name": "Sierra Leone",
+              "sort-name": "Sierra Leone",
+              "disambiguation": "",
+              "type": null,
+              "id": "2b547f54-a97c-3481-9625-7ad9a670b1e6"
+            }
+          },
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "ZA"
+              ],
+              "type-id": null,
+              "name": "South Africa",
+              "disambiguation": "",
+              "sort-name": "South Africa",
+              "type": null,
+              "id": "50cc7852-862e-30ae-aa82-385fe7135b7f"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "TZ"
+              ],
+              "name": "Tanzania",
+              "disambiguation": "",
+              "sort-name": "Tanzania",
+              "id": "c2676abd-2ac7-351a-94a9-a802b3434737",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "id": "1ac655f1-12d1-351a-a2b2-8404167e0e0b",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Uganda",
+              "iso-3166-1-codes": [
+                "UG"
+              ],
+              "type-id": null,
+              "name": "Uganda"
+            },
+            "date": "2020-07-03"
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Zambia",
+              "type-id": null,
+              "name": "Zambia",
+              "iso-3166-1-codes": [
+                "ZM"
+              ],
+              "id": "d662dd74-1fc1-3e36-b427-bbbe29684618",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-07-03",
+            "area": {
+              "iso-3166-1-codes": [
+                "ZW"
+              ],
+              "type-id": null,
+              "name": "Zimbabwe",
+              "sort-name": "Zimbabwe",
+              "disambiguation": "",
+              "id": "691e8ad6-2cc8-3678-8495-1ac96bbede55",
+              "type": null
+            }
+          }
+        ]
+      },
+      {
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "first-release-date": "2020-01-24",
+          "secondary-type-ids": [],
+          "title": "Jerusalema",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "id": "18c3e559-0c5e-414f-aa47-84144ee99e58",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "country": "ZA",
+                "type": "Person",
+                "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                "disambiguation": "South African musician and record producer",
+                "sort-name": "Master KG",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Master KG"
+              },
+              "name": "Master KG"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "track-count": 10,
+            "tracks": [
+              {
+                "position": 1,
+                "title": "Jerusalema",
+                "length": 342000,
+                "artist-credit": [
+                  {
+                    "name": "Master KG",
+                    "artist": {
+                      "type": "Person",
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                      "country": "ZA",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Master KG",
+                      "disambiguation": "South African musician and record producer",
+                      "sort-name": "Master KG"
+                    },
+                    "joinphrase": " feat. "
+                  },
+                  {
+                    "name": "Nomcebo Zikode",
+                    "joinphrase": "",
+                    "artist": {
+                      "type": "Person",
+                      "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                      "country": "ZA",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "name": "house",
+                          "count": 1
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Nomcebo Zikode",
+                      "genres": [
+                        {
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance",
+                          "count": 1,
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "sort-name": "Zikode, Nomcebo",
+                      "disambiguation": ""
+                    }
+                  }
+                ],
+                "number": "1",
+                "id": "e8d0eec3-d255-4b77-a291-061dbadc0ff7"
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "title": "",
+            "position": 1,
+            "track-offset": 0,
+            "format": "Digital Media",
+            "id": "613cfc71-0379-3c36-838e-493b719d56b3"
+          }
+        ],
+        "artist-credit": [
+          {
+            "artist": {
+              "country": "ZA",
+              "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+              "type": "Person",
+              "sort-name": "Master KG",
+              "disambiguation": "South African musician and record producer",
+              "genres": [
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "name": "afropop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "count": 1,
+                  "name": "isizulu"
+                },
+                {
+                  "name": "pop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "zulu"
+                }
+              ],
+              "name": "Master KG"
+            },
+            "joinphrase": "",
+            "name": "Master KG"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "quality": "normal",
+        "country": "AO",
+        "id": "4ce8cc12-0905-4c55-8acb-52e273d129d8",
+        "barcode": "757572902927",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "Angola",
+              "disambiguation": "",
+              "name": "Angola",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AO"
+              ],
+              "id": "2afd5d6a-5fee-3836-8783-44d0ec9ac115",
+              "type": null
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "area": {
+              "id": "1f72ee74-2d3f-3a40-846b-e3d780b73dd2",
+              "type": null,
+              "name": "Benin",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "BJ"
+              ],
+              "sort-name": "Benin",
+              "disambiguation": ""
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "sort-name": "Botswana",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Botswana",
+              "iso-3166-1-codes": [
+                "BW"
+              ],
+              "id": "e5e11b08-d26d-341c-af28-69d3c26607f7",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "id": "5f886d01-5c12-3abb-b8be-d758b282ab05",
+              "type": null,
+              "type-id": null,
+              "name": "Burkina Faso",
+              "iso-3166-1-codes": [
+                "BF"
+              ],
+              "sort-name": "Burkina Faso",
+              "disambiguation": ""
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "area": {
+              "id": "bf132644-e3ee-3bfc-9323-7f82824e4945",
+              "type": null,
+              "type-id": null,
+              "name": "Cameroon",
+              "iso-3166-1-codes": [
+                "CM"
+              ],
+              "disambiguation": "",
+              "sort-name": "Cameroon"
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "CV"
+              ],
+              "type-id": null,
+              "name": "Cape Verde",
+              "disambiguation": "",
+              "sort-name": "Cape Verde",
+              "id": "41d328a3-01da-35c2-b26e-69c56d7121d1",
+              "type": null
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "type-id": null,
+              "name": "Chad",
+              "iso-3166-1-codes": [
+                "TD"
+              ],
+              "sort-name": "Chad",
+              "disambiguation": "",
+              "id": "6ce82d72-8123-3365-ab34-7b20581a34cf",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Congo",
+              "iso-3166-1-codes": [
+                "CG"
+              ],
+              "type-id": null,
+              "name": "Congo",
+              "id": "185bc3c4-4c5a-3f69-9384-7c280dfdf072",
+              "type": null
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "area": {
+              "id": "e56e3d7a-4b90-3546-8450-49548050924a",
+              "type": null,
+              "name": "Côte d'Ivoire",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "CI"
+              ],
+              "disambiguation": "",
+              "sort-name": "Côte d'Ivoire"
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "sort-name": "Democratic Republic of the Congo",
+              "disambiguation": "",
+              "name": "Democratic Republic of the Congo",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "CD"
+              ],
+              "id": "d1733e16-9064-3181-961d-d56f8599969b",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "id": "564741c6-943e-313b-86fa-9819d595281b",
+              "type": null,
+              "name": "Eswatini",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SZ"
+              ],
+              "disambiguation": "",
+              "sort-name": "Eswatini"
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Gabon",
+              "type-id": null,
+              "name": "Gabon",
+              "iso-3166-1-codes": [
+                "GA"
+              ],
+              "type": null,
+              "id": "d14441fe-3bce-34b5-aed5-dfbe987329c9"
+            }
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "name": "Gambia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GM"
+              ],
+              "disambiguation": "",
+              "sort-name": "Gambia",
+              "id": "52641fae-20e3-3698-9fa9-1849f2c79ab8",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "type-id": null,
+              "name": "Ghana",
+              "iso-3166-1-codes": [
+                "GH"
+              ],
+              "sort-name": "Ghana",
+              "disambiguation": "",
+              "type": null,
+              "id": "cf48f4b4-28f0-39ab-9104-650324a1d1c8"
+            }
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "id": "4f01a1af-02ca-3b28-a64f-f38c36c08879",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Guinea-Bissau",
+              "name": "Guinea-Bissau",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GW"
+              ]
+            }
+          },
+          {
+            "area": {
+              "id": "023da4a0-acee-3fb1-b91e-5de74ccf787b",
+              "type": null,
+              "name": "Kenya",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "KE"
+              ],
+              "sort-name": "Kenya",
+              "disambiguation": ""
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "id": "d66e68e6-6410-3d34-a8aa-9242045ed593",
+              "type": null,
+              "type-id": null,
+              "name": "Liberia",
+              "iso-3166-1-codes": [
+                "LR"
+              ],
+              "sort-name": "Liberia",
+              "disambiguation": ""
+            }
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "id": "f3a30678-3d23-3f42-8056-d32ebe58c66d",
+              "type": null,
+              "sort-name": "Madagascar",
+              "disambiguation": "",
+              "name": "Madagascar",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MG"
+              ]
+            }
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "type-id": null,
+              "name": "Malawi",
+              "iso-3166-1-codes": [
+                "MW"
+              ],
+              "sort-name": "Malawi",
+              "disambiguation": "",
+              "id": "b4d3ff41-ead2-300f-9c11-f73f8ad39678",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "c35e6d5e-9011-32e5-a23f-9e7639b7350c",
+              "type-id": null,
+              "name": "Mali",
+              "iso-3166-1-codes": [
+                "ML"
+              ],
+              "sort-name": "Mali",
+              "disambiguation": ""
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "id": "657e69c5-cda0-3592-9d39-85b55610bc40",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MR"
+              ],
+              "name": "Mauritania",
+              "disambiguation": "",
+              "sort-name": "Mauritania"
+            }
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Mauritius",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MU"
+              ],
+              "name": "Mauritius",
+              "id": "bb019165-42ef-3470-bcb8-36d1b45e4bc1",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Mozambique",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Mozambique",
+              "iso-3166-1-codes": [
+                "MZ"
+              ],
+              "type": null,
+              "id": "325ce9a0-d58f-3564-b24e-647b33098767"
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Namibia",
+              "iso-3166-1-codes": [
+                "NA"
+              ],
+              "type-id": null,
+              "name": "Namibia",
+              "id": "cd4fadac-d701-3401-8516-420de2cb4e5c",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "type-id": null,
+              "name": "Niger",
+              "iso-3166-1-codes": [
+                "NE"
+              ],
+              "sort-name": "Niger",
+              "disambiguation": "",
+              "type": null,
+              "id": "f27e792b-ddd2-3a70-bdd4-41fb11534b57"
+            }
+          },
+          {
+            "area": {
+              "id": "1e23d84b-202e-3fc8-8c49-debc71e9eb16",
+              "type": null,
+              "type-id": null,
+              "name": "Nigeria",
+              "iso-3166-1-codes": [
+                "NG"
+              ],
+              "disambiguation": "",
+              "sort-name": "Nigeria"
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "type-id": null,
+              "name": "Rwanda",
+              "iso-3166-1-codes": [
+                "RW"
+              ],
+              "disambiguation": "",
+              "sort-name": "Rwanda",
+              "type": null,
+              "id": "5921efcf-344c-3e55-829d-34fca714fcde"
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "122bb81f-191e-3798-8be2-4b54ffd7ffa4",
+              "disambiguation": "",
+              "sort-name": "Senegal",
+              "iso-3166-1-codes": [
+                "SN"
+              ],
+              "type-id": null,
+              "name": "Senegal"
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "type": null,
+              "id": "be43ea01-053a-3b23-b03d-2df8317a57ff",
+              "sort-name": "Seychelles",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SC"
+              ],
+              "name": "Seychelles"
+            }
+          },
+          {
+            "area": {
+              "id": "2b547f54-a97c-3481-9625-7ad9a670b1e6",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Sierra Leone",
+              "name": "Sierra Leone",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SL"
+              ]
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "id": "50cc7852-862e-30ae-aa82-385fe7135b7f",
+              "type": null,
+              "sort-name": "South Africa",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ZA"
+              ],
+              "name": "South Africa"
+            }
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "sort-name": "Tanzania",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "TZ"
+              ],
+              "type-id": null,
+              "name": "Tanzania",
+              "id": "c2676abd-2ac7-351a-94a9-a802b3434737",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Uganda",
+              "name": "Uganda",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "UG"
+              ],
+              "id": "1ac655f1-12d1-351a-a2b2-8404167e0e0b",
+              "type": null
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ZM"
+              ],
+              "name": "Zambia",
+              "sort-name": "Zambia",
+              "disambiguation": "",
+              "id": "d662dd74-1fc1-3e36-b427-bbbe29684618",
+              "type": null
+            },
+            "date": "2020-07-10"
+          },
+          {
+            "date": "2020-07-10",
+            "area": {
+              "id": "691e8ad6-2cc8-3678-8495-1ac96bbede55",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Zimbabwe",
+              "name": "Zimbabwe",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ZW"
+              ]
+            }
+          }
+        ],
+        "tags": [],
+        "title": "Jerusalema",
+        "date": "2020-07-10",
+        "status": "Official",
+        "packaging": "None"
+      },
+      {
+        "packaging": "None",
+        "status": "Official",
+        "date": "2020-12-18",
+        "title": "Jerusalema",
+        "tags": [],
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "aa95182f-df0a-3ad6-8bfb-4b63482cd276",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AF"
+              ],
+              "name": "Afghanistan",
+              "disambiguation": "",
+              "sort-name": "Afghanistan"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "sort-name": "Albania",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "AL"
+              ],
+              "type-id": null,
+              "name": "Albania",
+              "type": null,
+              "id": "1c69b790-b46b-3e92-b6b4-93b4364badbc"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "name": "Algeria",
+              "iso-3166-1-codes": [
+                "DZ"
+              ],
+              "sort-name": "Algeria",
+              "disambiguation": "",
+              "type": null,
+              "id": "28242750-534a-326b-8ed6-1b03dfb88cd0"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AS"
+              ],
+              "name": "American Samoa",
+              "iso-3166-2-codes": [
+                "US-AS"
+              ],
+              "disambiguation": "",
+              "sort-name": "American Samoa",
+              "id": "e228a3c1-53c0-3ec9-842b-ec1b2138e387",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Andorra",
+              "type-id": null,
+              "name": "Andorra",
+              "iso-3166-1-codes": [
+                "AD"
+              ],
+              "type": null,
+              "id": "e01da61e-99a8-3c76-a27d-774c3f4982f0"
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "eed9e8bb-b48f-30af-95f5-f178762ee515",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AI"
+              ],
+              "name": "Anguilla",
+              "sort-name": "Anguilla",
+              "disambiguation": ""
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "aca6cbc7-4f3b-3020-8de3-c21718fe24f1",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Antarctica",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AQ"
+              ],
+              "name": "Antarctica"
+            }
+          },
+          {
+            "area": {
+              "id": "2a8cc14f-8d47-389b-b54d-e94312b23d27",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Antigua and Barbuda",
+              "iso-3166-1-codes": [
+                "AG"
+              ],
+              "type-id": null,
+              "name": "Antigua and Barbuda"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Argentina",
+              "disambiguation": "",
+              "name": "Argentina",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AR"
+              ],
+              "id": "0df04709-c7d8-3b55-a6ea-f3e5069a947b",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Armenia",
+              "name": "Armenia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AM"
+              ],
+              "type": null,
+              "id": "6474fa20-e0d6-3ef2-95ce-a6f73408cd5e"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Australia",
+              "type-id": null,
+              "name": "Australia",
+              "iso-3166-1-codes": [
+                "AU"
+              ],
+              "type": null,
+              "id": "106e0bec-b638-3b37-b731-f53d507dc00e"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "iso-3166-1-codes": [
+                "AT"
+              ],
+              "type-id": null,
+              "name": "Austria",
+              "disambiguation": "",
+              "sort-name": "Austria",
+              "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "id": "b211ad01-2f7d-32e9-80ed-cfd6c9eb6845",
+              "type": null,
+              "name": "Azerbaijan",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AZ"
+              ],
+              "disambiguation": "",
+              "sort-name": "Azerbaijan"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "name": "Bahrain",
+              "iso-3166-1-codes": [
+                "BH"
+              ],
+              "sort-name": "Bahrain",
+              "disambiguation": "",
+              "id": "65f4f7a6-d3c1-3a6b-a726-85e147d555b7",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "20395c3e-610c-34fd-9995-6b6f299121f2",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "BD"
+              ],
+              "name": "Bangladesh",
+              "disambiguation": "",
+              "sort-name": "Bangladesh"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "name": "Barbados",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "BB"
+              ],
+              "disambiguation": "",
+              "sort-name": "Barbados",
+              "id": "e5d8d205-81d3-3cd3-8956-d5aaa0c0173f",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "660e3c48-b301-3c8c-9708-0f71d5d094d6",
+              "type-id": null,
+              "name": "Belarus",
+              "iso-3166-1-codes": [
+                "BY"
+              ],
+              "sort-name": "Belarus",
+              "disambiguation": ""
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+              "disambiguation": "",
+              "sort-name": "Belgium",
+              "name": "Belgium",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "BE"
+              ]
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "2cbd5484-647d-3752-8acd-933ced4f9a24",
+              "type": null,
+              "iso-3166-1-codes": [
+                "BT"
+              ],
+              "type-id": null,
+              "name": "Bhutan",
+              "sort-name": "Bhutan",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "id": "a5aed4a3-8ce1-3ab3-bfee-b008cff6b857",
+              "type": null,
+              "type-id": null,
+              "name": "Bolivia",
+              "iso-3166-1-codes": [
+                "BO"
+              ],
+              "disambiguation": "",
+              "sort-name": "Bolivia"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "fa3bd744-11d5-3ce1-ad1a-0254f178f9b1",
+              "type": null,
+              "type-id": null,
+              "name": "Bonaire, Sint Eustatius and Saba",
+              "iso-3166-1-codes": [
+                "BQ"
+              ],
+              "sort-name": "Bonaire, Sint Eustatius and Saba",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "id": "f2b64f81-6d36-35b3-94b9-5ba53d693914",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Bosnia and Herzegovina",
+              "iso-3166-1-codes": [
+                "BA"
+              ],
+              "type-id": null,
+              "name": "Bosnia and Herzegovina"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "sort-name": "Bouvet Island",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "BV"
+              ],
+              "type-id": null,
+              "name": "Bouvet Island",
+              "id": "3413ecd3-a1f0-3e21-a226-d9ff3ed480b7",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "sort-name": "Brazil",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "BR"
+              ],
+              "type-id": null,
+              "name": "Brazil",
+              "id": "f45b47f8-5796-386e-b172-6c31b009a5d8",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "41c97db3-0719-363f-ad0b-79451e0f381b",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "IO"
+              ],
+              "name": "British Indian Ocean Territory",
+              "disambiguation": "",
+              "sort-name": "British Indian Ocean Territory"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "British Virgin Islands",
+              "iso-3166-1-codes": [
+                "VG"
+              ],
+              "type-id": null,
+              "name": "British Virgin Islands",
+              "type": null,
+              "id": "8562c2e5-eabb-3fad-96f2-f536a93a2957"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Brunei",
+              "disambiguation": "",
+              "name": "Brunei",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "BN"
+              ],
+              "id": "5d1fe672-9c9a-3d58-a221-4b23e9274709",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Bulgaria",
+              "type-id": null,
+              "name": "Bulgaria",
+              "iso-3166-1-codes": [
+                "BG"
+              ],
+              "id": "114c14ad-9776-34e9-81b0-6299507f3771",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "ee26e886-87f5-33a2-8e8e-f9591490426d",
+              "type": null,
+              "type-id": null,
+              "name": "Cambodia",
+              "iso-3166-1-codes": [
+                "KH"
+              ],
+              "disambiguation": "",
+              "sort-name": "Cambodia"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "CA"
+              ],
+              "type-id": null,
+              "name": "Canada",
+              "sort-name": "Canada",
+              "disambiguation": "",
+              "type": null,
+              "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "5dd25184-711c-3e6a-b089-572cd095f287",
+              "sort-name": "Cayman Islands",
+              "disambiguation": "",
+              "name": "Cayman Islands",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "KY"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "82d5f4d6-aed4-3ff5-81d1-5363ac6e97a7",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "CL"
+              ],
+              "name": "Chile",
+              "sort-name": "Chile",
+              "disambiguation": ""
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "7c81bb69-a99b-3487-b6d4-0f76d7a29ca0",
+              "sort-name": "China",
+              "disambiguation": "",
+              "name": "China",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "CN"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "5bc803ff-c3f9-3c36-a7d6-80bc1ab4a34e",
+              "iso-3166-1-codes": [
+                "CX"
+              ],
+              "type-id": null,
+              "name": "Christmas Island",
+              "sort-name": "Christmas Island",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "id": "3df32a28-e4b2-3c27-a85e-328e3f978bc5",
+              "type": null,
+              "iso-3166-1-codes": [
+                "CC"
+              ],
+              "type-id": null,
+              "name": "Cocos (Keeling) Islands",
+              "disambiguation": "",
+              "sort-name": "Cocos (Keeling) Islands"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Colombia",
+              "disambiguation": "",
+              "name": "Colombia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "CO"
+              ],
+              "type": null,
+              "id": "02b60d8d-7164-339d-868d-22d147d9f74a"
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "185bc3c4-4c5a-3f69-9384-7c280dfdf072",
+              "disambiguation": "",
+              "sort-name": "Congo",
+              "iso-3166-1-codes": [
+                "CG"
+              ],
+              "type-id": null,
+              "name": "Congo"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "name": "Cook Islands",
+              "iso-3166-1-codes": [
+                "CK"
+              ],
+              "sort-name": "Cook Islands",
+              "disambiguation": "",
+              "id": "ef1ab25c-717b-30a8-8943-f9937aad8d1f",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "ba544658-8266-36cb-ac0e-3bdfbf52cb00",
+              "iso-3166-1-codes": [
+                "CR"
+              ],
+              "type-id": null,
+              "name": "Costa Rica",
+              "disambiguation": "",
+              "sort-name": "Costa Rica"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "7d30afff-e425-356a-873e-17ae9745b31d",
+              "sort-name": "Croatia",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Croatia",
+              "iso-3166-1-codes": [
+                "HR"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "53ccc8be-1551-3e28-965b-7f95465f2093",
+              "iso-3166-2-codes": [
+                "NL-CW"
+              ],
+              "disambiguation": "",
+              "sort-name": "Curaçao",
+              "type-id": null,
+              "name": "Curaçao",
+              "iso-3166-1-codes": [
+                "CW"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "name": "Cyprus",
+              "iso-3166-1-codes": [
+                "CY"
+              ],
+              "sort-name": "Cyprus",
+              "disambiguation": "",
+              "type": null,
+              "id": "a75b525f-8c01-31f6-975e-4a32a2b001d5"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "51d34c28-61bf-3d21-849f-7492672a9d44",
+              "type": null,
+              "sort-name": "Czechia",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "CZ"
+              ],
+              "type-id": null,
+              "name": "Czechia"
+            }
+          },
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "DK"
+              ],
+              "type-id": null,
+              "name": "Denmark",
+              "disambiguation": "",
+              "sort-name": "Denmark",
+              "type": null,
+              "id": "4757b525-2a60-324a-b060-578765d2c993"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Dominica",
+              "type-id": null,
+              "name": "Dominica",
+              "iso-3166-1-codes": [
+                "DM"
+              ],
+              "type": null,
+              "id": "9898ec17-2174-3a61-9e3b-3f51b3ee4de1"
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Dominican Republic",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "DO"
+              ],
+              "type-id": null,
+              "name": "Dominican Republic",
+              "type": null,
+              "id": "696cb3e0-5084-30ab-9916-65ece70adbf6"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Ecuador",
+              "name": "Ecuador",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "EC"
+              ],
+              "type": null,
+              "id": "967abc0e-f680-3cde-95d0-0b79b977d410"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "sort-name": "Egypt",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "EG"
+              ],
+              "name": "Egypt",
+              "type": null,
+              "id": "8e0551f2-95c2-3cc0-a0a9-f2d344f10667"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "f2fa4bfb-97aa-3db4-8d49-cc64969ce1a7",
+              "type": null,
+              "iso-3166-1-codes": [
+                "SV"
+              ],
+              "type-id": null,
+              "name": "El Salvador",
+              "sort-name": "El Salvador",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "name": "Estonia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "EE"
+              ],
+              "sort-name": "Estonia",
+              "disambiguation": "",
+              "id": "e1c1215f-dcc0-35b4-b840-d2ca2151593b",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Falkland Islands",
+              "disambiguation": "",
+              "name": "Falkland Islands",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "FK"
+              ],
+              "id": "baa270d6-bb10-38d1-87bd-42a82b4efa9c",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Federated States of Micronesia",
+              "iso-3166-1-codes": [
+                "FM"
+              ],
+              "type-id": null,
+              "name": "Federated States of Micronesia",
+              "id": "aabae773-4997-37ba-950a-394c06847631",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "031eba2b-79b5-3314-a14b-288407ad42ab",
+              "type": null,
+              "type-id": null,
+              "name": "Fiji",
+              "iso-3166-1-codes": [
+                "FJ"
+              ],
+              "disambiguation": "",
+              "sort-name": "Fiji"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "name": "Finland",
+              "iso-3166-1-codes": [
+                "FI"
+              ],
+              "disambiguation": "",
+              "sort-name": "Finland",
+              "id": "6a264f94-6ff1-30b1-9a81-41f7bfabd616",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "name": "France",
+              "disambiguation": "",
+              "sort-name": "France",
+              "type": null,
+              "id": "08310658-51eb-3801-80de-5a0739207115"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "7e081aa0-817b-3ae0-9fe2-4bb4e3b3cc95",
+              "disambiguation": "",
+              "sort-name": "Georgia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GE"
+              ],
+              "name": "Georgia"
+            }
+          },
+          {
+            "area": {
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "type": null,
+              "name": "Germany",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "disambiguation": "",
+              "sort-name": "Germany"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "803db0ca-b6ed-3bbc-aeb8-f89efd0a2168",
+              "iso-3166-1-codes": [
+                "GR"
+              ],
+              "type-id": null,
+              "name": "Greece",
+              "disambiguation": "",
+              "sort-name": "Greece"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Grenada",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Grenada",
+              "iso-3166-1-codes": [
+                "GD"
+              ],
+              "id": "217e2eb3-0a3a-3b59-9eaa-a7465c1417ff",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "iso-3166-2-codes": [
+                "US-GU"
+              ],
+              "disambiguation": "",
+              "sort-name": "Guam",
+              "name": "Guam",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GU"
+              ],
+              "type": null,
+              "id": "43dd540a-78cd-319f-bab9-214b5430f3f2"
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Guatemala",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "GT"
+              ],
+              "type-id": null,
+              "name": "Guatemala",
+              "id": "01448ddc-6ee3-3fa4-b136-507d984e31ee",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "HM"
+              ],
+              "name": "Heard Island and McDonald Islands",
+              "disambiguation": "",
+              "sort-name": "Heard Island and McDonald Islands",
+              "id": "457accb6-fe97-307e-89a9-bad912a60e4e",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "name": "Honduras",
+              "iso-3166-1-codes": [
+                "HN"
+              ],
+              "disambiguation": "",
+              "sort-name": "Honduras",
+              "type": null,
+              "id": "0c3ea915-4e49-34fc-b702-debb216fd7fa"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "name": "Hong Kong",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "HK"
+              ],
+              "disambiguation": "",
+              "sort-name": "Hong Kong",
+              "iso-3166-2-codes": [
+                "CN-91"
+              ],
+              "id": "0373cdff-eac8-3fbc-92dc-36a607da06d1",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Hungary",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Hungary",
+              "iso-3166-1-codes": [
+                "HU"
+              ],
+              "type": null,
+              "id": "312bc5bb-7e43-3e63-81c6-b4d712b37b2c"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "48802a32-075a-3805-a183-277c66047693",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "IS"
+              ],
+              "name": "Iceland",
+              "disambiguation": "",
+              "sort-name": "Iceland"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "d31a9a15-537f-3669-ad53-25753ddd2772",
+              "type-id": null,
+              "name": "India",
+              "iso-3166-1-codes": [
+                "IN"
+              ],
+              "sort-name": "India",
+              "disambiguation": ""
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Indonesia",
+              "iso-3166-1-codes": [
+                "ID"
+              ],
+              "type-id": null,
+              "name": "Indonesia",
+              "id": "d3a68bd0-7419-3f99-a5bd-204d6e057089",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Iraq",
+              "disambiguation": "",
+              "name": "Iraq",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "IQ"
+              ],
+              "type": null,
+              "id": "b0525ccb-15e9-3c56-81fa-471db3b31cfa"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "name": "Ireland",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "IE"
+              ],
+              "sort-name": "Ireland",
+              "disambiguation": "",
+              "type": null,
+              "id": "390b05d4-11ec-3bce-a343-703a366b34a5"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "03691455-bb46-37e3-91d2-cb064a35ffcc",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Israel",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "IL"
+              ],
+              "name": "Israel"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "iso-3166-1-codes": [
+                "IT"
+              ],
+              "type-id": null,
+              "name": "Italy",
+              "disambiguation": "",
+              "sort-name": "Italy",
+              "type": null,
+              "id": "c6500277-9a3d-349b-bf30-41afdbf42add"
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Jamaica",
+              "disambiguation": "",
+              "name": "Jamaica",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "JM"
+              ],
+              "type": null,
+              "id": "2dd47a64-91d5-3b13-bc94-80043ed063d7"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Japan",
+              "type-id": null,
+              "name": "Japan",
+              "iso-3166-1-codes": [
+                "JP"
+              ],
+              "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Jordan",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "JO"
+              ],
+              "name": "Jordan",
+              "type": null,
+              "id": "2e40127e-0b8a-3a01-bfbc-58c7fcdba532"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "92d52542-3363-351c-a8b6-d991e0bccb8f",
+              "disambiguation": "",
+              "sort-name": "Kazakhstan",
+              "type-id": null,
+              "name": "Kazakhstan",
+              "iso-3166-1-codes": [
+                "KZ"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Kiribati",
+              "disambiguation": "",
+              "name": "Kiribati",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "KI"
+              ],
+              "id": "2b425457-0a4f-3282-9d2f-0a0e0f7db2e5",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "iso-3166-2-codes": [
+                "RS-KM"
+              ],
+              "sort-name": "Kosovo",
+              "disambiguation": "",
+              "name": "Kosovo",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XK"
+              ],
+              "type": null,
+              "id": "7b6ae6b7-6f4f-43df-aab8-0c72531ea8ae"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Kuwait",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "KW"
+              ],
+              "name": "Kuwait",
+              "id": "f03f2625-dc7d-38b2-a058-4e9ca0e10424",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "name": "Kyrgyzstan",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "KG"
+              ],
+              "disambiguation": "",
+              "sort-name": "Kyrgyzstan",
+              "type": null,
+              "id": "188b4a6b-a4d8-3864-ba46-8446c7b658b4"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "c81cb1f4-0858-3f28-9082-c06e2ce24bea",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Laos",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "LA"
+              ],
+              "name": "Laos"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "66eb3e73-d69e-3581-9a23-a73b4c64c8dd",
+              "disambiguation": "",
+              "sort-name": "Latvia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "LV"
+              ],
+              "name": "Latvia"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "name": "Lebanon",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "LB"
+              ],
+              "sort-name": "Lebanon",
+              "disambiguation": "",
+              "id": "8138206e-5786-3f86-a53b-19a7303e7419",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Libya",
+              "type-id": null,
+              "name": "Libya",
+              "iso-3166-1-codes": [
+                "LY"
+              ],
+              "id": "1509aaae-8271-30cb-89c1-d8660cf73975",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Liechtenstein",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "LI"
+              ],
+              "name": "Liechtenstein",
+              "id": "d2007481-eefe-37c0-be71-2256dfe148cb",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "0785dc14-96af-3dc4-bde4-dcdfc2e2d0d6",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "LT"
+              ],
+              "name": "Lithuania",
+              "disambiguation": "",
+              "sort-name": "Lithuania"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Luxembourg",
+              "name": "Luxembourg",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "LU"
+              ],
+              "type": null,
+              "id": "563d21b7-4a8e-35e2-83a7-7804baefbfa7"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "name": "Malaysia",
+              "iso-3166-1-codes": [
+                "MY"
+              ],
+              "sort-name": "Malaysia",
+              "disambiguation": "",
+              "id": "305d19c7-c040-349c-8d5f-6ac75d2d2a09",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "a195ee41-7f39-3a60-83ca-4a6f91cd4d2e",
+              "name": "Maldives",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MV"
+              ],
+              "disambiguation": "",
+              "sort-name": "Maldives"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "name": "Malta",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MT"
+              ],
+              "sort-name": "Malta",
+              "disambiguation": "",
+              "id": "050c94f7-1413-3a34-bb90-4a94f3bb2084",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "bf8c2e6f-2401-3a52-aad2-7e8baa8b447e",
+              "type": null,
+              "name": "Marshall Islands",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MH"
+              ],
+              "sort-name": "Marshall Islands",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+              "type-id": null,
+              "name": "Mexico",
+              "iso-3166-1-codes": [
+                "MX"
+              ],
+              "disambiguation": "",
+              "sort-name": "Mexico"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Moldova",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MD"
+              ],
+              "name": "Moldova",
+              "type": null,
+              "id": "560ddb6d-4304-3938-8407-c96605226fad"
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Monaco",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Monaco",
+              "iso-3166-1-codes": [
+                "MC"
+              ],
+              "type": null,
+              "id": "6f26d528-4467-3ecb-b105-10daf3466b40"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Mongolia",
+              "type-id": null,
+              "name": "Mongolia",
+              "iso-3166-1-codes": [
+                "MN"
+              ],
+              "id": "84360c54-1763-3146-ae38-a439c72fd4ea",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "name": "Montenegro",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ME"
+              ],
+              "sort-name": "Montenegro",
+              "disambiguation": "",
+              "id": "6f8faf25-44cb-313b-9162-77145cdc192d",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "MS"
+              ],
+              "type-id": null,
+              "name": "Montserrat",
+              "disambiguation": "",
+              "sort-name": "Montserrat",
+              "id": "290ea438-1cb6-35e1-9755-6ab123214293",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "b84d8617-249a-3a06-849d-fc5c25e2249b",
+              "disambiguation": "",
+              "sort-name": "Morocco",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MA"
+              ],
+              "name": "Morocco"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "fb1fb575-39ee-34d8-a744-6a880700fd73",
+              "type-id": null,
+              "name": "Myanmar",
+              "iso-3166-1-codes": [
+                "MM"
+              ],
+              "sort-name": "Myanmar",
+              "disambiguation": ""
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "7784f515-5886-3831-9b33-a7f665795d7f",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Nauru",
+              "name": "Nauru",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NR"
+              ]
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "8815c87e-cf3f-362c-a5c6-05ce853a4c79",
+              "disambiguation": "",
+              "sort-name": "Nepal",
+              "name": "Nepal",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NP"
+              ]
+            }
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NL"
+              ],
+              "name": "Netherlands",
+              "disambiguation": "",
+              "sort-name": "Netherlands",
+              "type": null,
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "name": "New Zealand",
+              "iso-3166-1-codes": [
+                "NZ"
+              ],
+              "disambiguation": "",
+              "sort-name": "New Zealand",
+              "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Nicaragua",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NI"
+              ],
+              "name": "Nicaragua",
+              "type": null,
+              "id": "d2b87acd-06ce-3c71-b3ff-a35d914bbabe"
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Niue",
+              "disambiguation": "",
+              "name": "Niue",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NU"
+              ],
+              "id": "7fc2feb2-0d33-31ef-b496-b812a4dd2965",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "a2b3b8cb-79e8-3c26-8a2a-3ccc7dd80cda",
+              "disambiguation": "",
+              "sort-name": "Norfolk Island",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NF"
+              ],
+              "name": "Norfolk Island"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "fa75cdb9-cbc4-35de-8bf4-a21e7b811484",
+              "type": null,
+              "sort-name": "North Macedonia",
+              "disambiguation": "",
+              "name": "North Macedonia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MK"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "iso-3166-1-codes": [
+                "MP"
+              ],
+              "type-id": null,
+              "name": "Northern Mariana Islands",
+              "sort-name": "Northern Mariana Islands",
+              "disambiguation": "",
+              "iso-3166-2-codes": [
+                "US-MP"
+              ],
+              "id": "9a84fea2-1c1f-3908-a44a-6fa2b6fa7b26",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "name": "Norway",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "NO"
+              ],
+              "disambiguation": "",
+              "sort-name": "Norway",
+              "type": null,
+              "id": "6743d351-6f37-3049-9724-5041161fff4d"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Oman",
+              "name": "Oman",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "OM"
+              ],
+              "type": null,
+              "id": "7ccdff29-2e00-3e50-9520-b9ea1e918bc2"
+            }
+          },
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "PK"
+              ],
+              "type-id": null,
+              "name": "Pakistan",
+              "disambiguation": "",
+              "sort-name": "Pakistan",
+              "type": null,
+              "id": "7c87112d-504d-31f1-8147-11ff45fc3bfd"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "9d800529-1ef8-39bb-9e42-1fa74f2eac97",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "PW"
+              ],
+              "name": "Palau",
+              "sort-name": "Palau",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "7d24dd34-a00f-37a1-8307-f2ef1dd3dbcd",
+              "disambiguation": "",
+              "sort-name": "Palestine",
+              "name": "Palestine",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "PS"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Panama",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "PA"
+              ],
+              "name": "Panama",
+              "type": null,
+              "id": "6f85633b-dff4-3fb4-babd-fb89b3628041"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "2366f623-b236-3073-bbfe-c26d6d6f195f",
+              "type": null,
+              "name": "Papua New Guinea",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "PG"
+              ],
+              "sort-name": "Papua New Guinea",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "sort-name": "Paraguay",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "PY"
+              ],
+              "type-id": null,
+              "name": "Paraguay",
+              "type": null,
+              "id": "0a750c98-a7a5-3d55-bd52-f6e9011b1537"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "719f6082-95c7-3dd5-9503-e143010a6cc1",
+              "iso-3166-1-codes": [
+                "PE"
+              ],
+              "type-id": null,
+              "name": "Peru",
+              "sort-name": "Peru",
+              "disambiguation": ""
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "786532a5-2e36-315a-bdf2-221dc1b64b72",
+              "iso-3166-1-codes": [
+                "PH"
+              ],
+              "type-id": null,
+              "name": "Philippines",
+              "sort-name": "Philippines",
+              "disambiguation": ""
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "PN"
+              ],
+              "name": "Pitcairn",
+              "disambiguation": "",
+              "sort-name": "Pitcairn",
+              "type": null,
+              "id": "27b5df20-d817-3126-b3a0-1be6a75f7496"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "dd7f80c8-f017-3d01-8608-2a8c9c32b954",
+              "sort-name": "Poland",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "PL"
+              ],
+              "name": "Poland"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "name": "Portugal",
+              "iso-3166-1-codes": [
+                "PT"
+              ],
+              "sort-name": "Portugal",
+              "disambiguation": "",
+              "type": null,
+              "id": "781b0c54-3d54-362d-a941-8a617def4992"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Qatar",
+              "name": "Qatar",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "QA"
+              ],
+              "id": "348dcc25-7bb6-3f75-8739-97eabc84a330",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "61ed84b8-5a10-30a7-8376-ccd51801d6d1",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Romania",
+              "name": "Romania",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "RO"
+              ]
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+              "sort-name": "Russia",
+              "disambiguation": "",
+              "name": "Russia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "RU"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "b1439904-121a-38fb-8708-0573cb42e2ef",
+              "type": null,
+              "type-id": null,
+              "name": "Saint Kitts and Nevis",
+              "iso-3166-1-codes": [
+                "KN"
+              ],
+              "sort-name": "Saint Kitts and Nevis",
+              "disambiguation": ""
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "178709ab-9e22-39ae-a93c-55e66a8183c2",
+              "type": null,
+              "iso-3166-1-codes": [
+                "LC"
+              ],
+              "type-id": null,
+              "name": "Saint Lucia",
+              "disambiguation": "",
+              "sort-name": "Saint Lucia"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Saint Vincent and The Grenadines",
+              "type-id": null,
+              "name": "Saint Vincent and The Grenadines",
+              "iso-3166-1-codes": [
+                "VC"
+              ],
+              "id": "7f9f87ec-3c1e-300d-9bb8-fa93f0754e6b",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "id": "2cc3ea35-b05a-3ec0-a5a2-88e8a482854a",
+              "type": null,
+              "iso-3166-1-codes": [
+                "WS"
+              ],
+              "type-id": null,
+              "name": "Samoa",
+              "sort-name": "Samoa",
+              "disambiguation": ""
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SA"
+              ],
+              "name": "Saudi Arabia",
+              "sort-name": "Saudi Arabia",
+              "disambiguation": "",
+              "type": null,
+              "id": "9705be0d-51fb-3990-8726-ec9f56c66ba0"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "424c1b50-57f8-34af-ab97-313e2ad40058",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Serbia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "RS"
+              ],
+              "name": "Serbia"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "name": "Singapore",
+              "iso-3166-1-codes": [
+                "SG"
+              ],
+              "sort-name": "Singapore",
+              "disambiguation": "",
+              "id": "aa344640-fd57-3960-afb4-84d0d3b69d3d",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "iso-3166-2-codes": [
+                "NL-SX"
+              ],
+              "disambiguation": "",
+              "sort-name": "Sint Maarten (Dutch part)",
+              "type-id": null,
+              "name": "Sint Maarten (Dutch part)",
+              "iso-3166-1-codes": [
+                "SX"
+              ],
+              "id": "c7d4543d-8f19-365c-a258-f1fe90ff7ac5",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "name": "Slovakia",
+              "iso-3166-1-codes": [
+                "SK"
+              ],
+              "disambiguation": "",
+              "sort-name": "Slovakia",
+              "type": null,
+              "id": "eb52ca74-dd11-37a1-a3fa-154430bf2df2"
+            }
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SI"
+              ],
+              "name": "Slovenia",
+              "sort-name": "Slovenia",
+              "disambiguation": "",
+              "id": "5b0b6225-584c-3942-b69d-5efceb9989af",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Solomon Islands",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "SB"
+              ],
+              "name": "Solomon Islands",
+              "type": null,
+              "id": "7fe4001e-eda5-3b5b-bbd8-0f773e76d09c"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "38ce2215-162b-3f3c-af41-34800017e1d8",
+              "type": null,
+              "sort-name": "South Georgia and the South Sandwich Islands",
+              "disambiguation": "",
+              "name": "South Georgia and the South Sandwich Islands",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GS"
+              ]
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "name": "South Korea",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "KR"
+              ],
+              "disambiguation": "",
+              "sort-name": "South Korea",
+              "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+              "type": null
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "sort-name": "Spain",
+              "disambiguation": "",
+              "name": "Spain",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ES"
+              ],
+              "type": null,
+              "id": "471c46a7-afc5-31c4-923c-d0444f5053a4"
+            }
+          },
+          {
+            "area": {
+              "id": "6e2d562d-a754-3036-8484-7ac576606e27",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "LK"
+              ],
+              "name": "Sri Lanka",
+              "disambiguation": "",
+              "sort-name": "Sri Lanka"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "32f9a3f3-046f-355f-b4dc-5158d71957c8",
+              "type": null,
+              "sort-name": "Svalbard and Jan Mayen",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "SJ"
+              ],
+              "type-id": null,
+              "name": "Svalbard and Jan Mayen"
+            }
+          },
+          {
+            "area": {
+              "id": "23d10872-f5ae-3f0c-bf55-332788a16ecb",
+              "type": null,
+              "type-id": null,
+              "name": "Sweden",
+              "iso-3166-1-codes": [
+                "SE"
+              ],
+              "disambiguation": "",
+              "sort-name": "Sweden"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+              "iso-3166-1-codes": [
+                "CH"
+              ],
+              "type-id": null,
+              "name": "Switzerland",
+              "sort-name": "Switzerland",
+              "disambiguation": ""
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "name": "Taiwan",
+              "iso-3166-1-codes": [
+                "TW"
+              ],
+              "iso-3166-2-codes": [
+                "CN-71"
+              ],
+              "sort-name": "Taiwan",
+              "disambiguation": "",
+              "id": "41637cec-9a4f-389c-86d2-fc6abf3357b5",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "id": "8259e91f-10fa-3c38-92fb-8e6822c279d5",
+              "type": null,
+              "iso-3166-1-codes": [
+                "TJ"
+              ],
+              "type-id": null,
+              "name": "Tajikistan",
+              "disambiguation": "",
+              "sort-name": "Tajikistan"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "ce209e56-cda5-358e-96db-830e3405b675",
+              "type": null,
+              "sort-name": "Thailand",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Thailand",
+              "iso-3166-1-codes": [
+                "TH"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type-id": null,
+              "name": "Timor-Leste",
+              "iso-3166-1-codes": [
+                "TL"
+              ],
+              "disambiguation": "",
+              "sort-name": "Timor-Leste",
+              "type": null,
+              "id": "738aed7d-cc30-3a90-af20-21477ba1e8cc"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Tokelau",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "TK"
+              ],
+              "name": "Tokelau",
+              "id": "756f26ff-2bc5-3d25-b429-6873ccbe160d",
+              "type": null
+            }
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Tonga",
+              "name": "Tonga",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "TO"
+              ],
+              "id": "a2b8e506-3570-3a56-826e-939049c59428",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "name": "Tunisia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "TN"
+              ],
+              "disambiguation": "",
+              "sort-name": "Tunisia",
+              "type": null,
+              "id": "58955071-67c1-3491-8dec-48d28f824bda"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "d3be28b4-41f7-3752-8a05-ed45e1d1e492",
+              "type": null,
+              "sort-name": "Türkiye",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Türkiye",
+              "iso-3166-1-codes": [
+                "TR"
+              ]
+            }
+          },
+          {
+            "area": {
+              "id": "98e38a45-b90e-3575-943e-23e26ce3a69f",
+              "type": null,
+              "sort-name": "Turkmenistan",
+              "disambiguation": "",
+              "name": "Turkmenistan",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "TM"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "a2d01b31-5184-382e-aab5-63b5944195b7",
+              "type": null,
+              "iso-3166-1-codes": [
+                "TC"
+              ],
+              "type-id": null,
+              "name": "Turks and Caicos Islands",
+              "sort-name": "Turks and Caicos Islands",
+              "disambiguation": ""
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "529117db-25de-3d09-9722-b54937a17590",
+              "type": null,
+              "sort-name": "Tuvalu",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "TV"
+              ],
+              "name": "Tuvalu"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "U.S. Virgin Islands",
+              "iso-3166-2-codes": [
+                "US-VI"
+              ],
+              "type-id": null,
+              "name": "U.S. Virgin Islands",
+              "iso-3166-1-codes": [
+                "VI"
+              ],
+              "id": "f33958ac-4198-3ce8-a751-1c44d9b4063a",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "UA"
+              ],
+              "type-id": null,
+              "name": "Ukraine",
+              "disambiguation": "",
+              "sort-name": "Ukraine",
+              "id": "904768d0-61ca-3c40-93ac-93adc36fef4b",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "fe40c648-ba74-3e17-b768-58181d5ee563",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "United Arab Emirates",
+              "name": "United Arab Emirates",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AE"
+              ]
+            }
+          },
+          {
+            "area": {
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "disambiguation": "",
+              "sort-name": "United States",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "type-id": null,
+              "name": "United States"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "UY"
+              ],
+              "name": "Uruguay",
+              "sort-name": "Uruguay",
+              "disambiguation": "",
+              "id": "ea88d395-87c9-3c47-b49a-114cad41fd39",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "95c0c3ee-ed52-31c4-83e6-19ced497e6d0",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Uzbekistan",
+              "name": "Uzbekistan",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "UZ"
+              ]
+            }
+          },
+          {
+            "area": {
+              "type": null,
+              "id": "c2021af8-7645-3f38-aa1b-ada0a13d4faf",
+              "disambiguation": "",
+              "sort-name": "Vanuatu",
+              "type-id": null,
+              "name": "Vanuatu",
+              "iso-3166-1-codes": [
+                "VU"
+              ]
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "id": "2ac90d6b-04fa-3006-8a91-89da01032365",
+              "type": null,
+              "name": "Venezuela",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "VE"
+              ],
+              "disambiguation": "",
+              "sort-name": "Venezuela"
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "VN"
+              ],
+              "name": "Vietnam",
+              "disambiguation": "",
+              "sort-name": "Vietnam",
+              "id": "0158e991-c3c6-374a-9b9d-024bbaff6980",
+              "type": null
+            },
+            "date": "2020-12-18"
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "type": null,
+              "id": "c14bc23d-d5fe-3146-9ddf-2cd78ec62d8f",
+              "type-id": null,
+              "name": "Western Sahara",
+              "iso-3166-1-codes": [
+                "EH"
+              ],
+              "disambiguation": "",
+              "sort-name": "Western Sahara"
+            }
+          },
+          {
+            "date": "2020-12-18",
+            "area": {
+              "id": "e8e9ecdc-19d3-360b-8f1a-9c80e6c12830",
+              "type": null,
+              "type-id": null,
+              "name": "Yemen",
+              "iso-3166-1-codes": [
+                "YE"
+              ],
+              "disambiguation": "",
+              "sort-name": "Yemen"
+            }
+          }
+        ],
+        "barcode": "190295048303",
+        "id": "199c3a0c-fa78-45c4-80ae-e7bc14eec334",
+        "country": "AF",
+        "quality": "normal",
+        "genres": [],
+        "text-representation": {
+          "language": "fra",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+              "type": "Person",
+              "country": "ZA",
+              "genres": [
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                }
+              ],
+              "tags": [
+                {
+                  "name": "afropop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "name": "isizulu",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "pop"
+                },
+                {
+                  "name": "zulu",
+                  "count": 1
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Master KG",
+              "disambiguation": "South African musician and record producer",
+              "sort-name": "Master KG"
+            },
+            "name": "Master KG"
+          }
+        ],
+        "media": [
+          {
+            "format": "Digital Media",
+            "track-offset": 0,
+            "id": "17b08c93-536f-33b3-91dc-fe0e338a19b2",
+            "title": "",
+            "position": 1,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-count": 14,
+            "tracks": [
+              {
+                "length": 342662,
+                "title": "Jerusalema",
+                "position": 1,
+                "id": "4311b3e7-df1c-4eda-8085-5b3141718ad2",
+                "number": "1",
+                "artist-credit": [
+                  {
+                    "name": "Master KG",
+                    "artist": {
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                      "sort-name": "Master KG",
+                      "disambiguation": "South African musician and record producer",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Master KG"
+                    },
+                    "joinphrase": " feat. "
+                  },
+                  {
+                    "artist": {
+                      "disambiguation": "",
+                      "sort-name": "Zikode, Nomcebo",
+                      "name": "Nomcebo Zikode",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "name": "house",
+                          "count": 1
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33"
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "disambiguation": "",
+                          "count": 1
+                        }
+                      ],
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "4e39c7cd-a631-4399-bbd8-13107be50938"
+                    },
+                    "joinphrase": "",
+                    "name": "Nomcebo Zikode"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "first-release-date": "2020-01-24",
+          "secondary-type-ids": [],
+          "title": "Jerusalema",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [],
+          "id": "18c3e559-0c5e-414f-aa47-84144ee99e58",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Master KG",
+              "joinphrase": "",
+              "artist": {
+                "name": "Master KG",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Master KG",
+                "disambiguation": "South African musician and record producer",
+                "type": "Person",
+                "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                "country": "ZA"
+              }
+            }
+          ],
+          "releases": [],
+          "disambiguation": ""
+        },
+        "disambiguation": "Deluxe",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b"
+      },
+      {
+        "title": "Jerusalema",
+        "date": "2020",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "barcode": "0190295156008",
+        "release-events": [
+          {
+            "date": "2020",
+            "area": {
+              "type": null,
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "name": "France",
+              "disambiguation": "",
+              "sort-name": "France"
+            }
+          }
+        ],
+        "tags": [],
+        "country": "FR",
+        "quality": "normal",
+        "id": "1369222e-38d9-467a-b741-e3ce47bf2a6e",
+        "disambiguation": "France release",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "id": "18c3e559-0c5e-414f-aa47-84144ee99e58",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Master KG",
+              "artist": {
+                "name": "Master KG",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Master KG",
+                "disambiguation": "South African musician and record producer",
+                "type": "Person",
+                "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                "country": "ZA"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "disambiguation": "",
+          "secondary-type-ids": [],
+          "first-release-date": "2020-01-24",
+          "title": "Jerusalema",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": []
+        },
+        "media": [
+          {
+            "track-count": 11,
+            "tracks": [
+              {
+                "title": "Jerusalema",
+                "length": 342000,
+                "position": 1,
+                "number": "1",
+                "id": "b3f8a143-02a5-423d-88c0-f937362eec43",
+                "artist-credit": [
+                  {
+                    "name": "Master KG",
+                    "joinphrase": " feat. ",
+                    "artist": {
+                      "name": "Master KG",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "sort-name": "Master KG",
+                      "disambiguation": "South African musician and record producer",
+                      "type": "Person",
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                      "country": "ZA"
+                    }
+                  },
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "disambiguation": "",
+                      "sort-name": "Zikode, Nomcebo",
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "house"
+                        }
+                      ],
+                      "name": "Nomcebo Zikode",
+                      "country": "ZA",
+                      "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                      "type": "Person"
+                    },
+                    "name": "Nomcebo Zikode"
+                  }
+                ]
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "track-offset": 0,
+            "format": "CD",
+            "id": "34df4e90-19a2-392f-bc17-0ad1fe235f30"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "artist": {
+              "country": "ZA",
+              "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+              "type": "Person",
+              "disambiguation": "South African musician and record producer",
+              "sort-name": "Master KG",
+              "genres": [
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                }
+              ],
+              "name": "Master KG",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "name": "afropop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "count": 1,
+                  "name": "isizulu"
+                },
+                {
+                  "name": "pop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "zulu"
+                }
+              ]
+            },
+            "joinphrase": "",
+            "name": "Master KG"
+          }
+        ],
+        "text-representation": {
+          "language": null,
+          "script": "Latn"
+        }
+      },
+      {
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "id": "b03189e9-8046-3ac3-b400-f23d7c7b3502",
+            "format": "Digital Media",
+            "track-offset": 0,
+            "title": "",
+            "position": 1,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "joinphrase": " feat. ",
+                    "artist": {
+                      "sort-name": "Master KG",
+                      "disambiguation": "South African musician and record producer",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Master KG",
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4"
+                    },
+                    "name": "Master KG"
+                  },
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                      "type": "Person",
+                      "country": "ZA",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance"
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "name": "Nomcebo Zikode",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "name": "house",
+                          "count": 1
+                        }
+                      ],
+                      "sort-name": "Zikode, Nomcebo",
+                      "disambiguation": ""
+                    },
+                    "name": "Nomcebo Zikode"
+                  }
+                ],
+                "number": "1",
+                "id": "a63bfefe-f31f-471c-9091-7d20400916c4",
+                "title": "Jerusalema",
+                "length": 342000,
+                "position": 1
+              }
+            ],
+            "track-count": 10
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Master KG",
+            "joinphrase": "",
+            "artist": {
+              "type": "Person",
+              "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+              "country": "ZA",
+              "name": "Master KG",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "afropop"
+                },
+                {
+                  "count": 1,
+                  "name": "english"
+                },
+                {
+                  "count": 1,
+                  "name": "isizulu"
+                },
+                {
+                  "count": 1,
+                  "name": "pop"
+                },
+                {
+                  "count": 1,
+                  "name": "zulu"
+                }
+              ],
+              "genres": [
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "sort-name": "Master KG",
+              "disambiguation": "South African musician and record producer"
+            }
+          }
+        ],
+        "text-representation": {
+          "language": "ven",
+          "script": "Latn"
+        },
+        "genres": [],
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "type": "Person",
+                "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                "country": "ZA",
+                "name": "Master KG",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Master KG",
+                "disambiguation": "South African musician and record producer"
+              },
+              "joinphrase": "",
+              "name": "Master KG"
+            }
+          ],
+          "disambiguation": "",
+          "id": "18c3e559-0c5e-414f-aa47-84144ee99e58",
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "first-release-date": "2020-01-24",
+          "secondary-type-ids": [],
+          "title": "Jerusalema"
+        },
+        "id": "67281051-b063-4b8a-a82a-fb7cea716add",
+        "quality": "normal",
+        "country": "FR",
+        "barcode": null,
+        "release-events": [
+          {
+            "date": "2020",
+            "area": {
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "type": null,
+              "sort-name": "France",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "type-id": null,
+              "name": "France"
+            }
+          }
+        ],
+        "tags": [],
+        "status": "Official",
+        "packaging": null,
+        "title": "Jerusalema",
+        "date": "2020"
+      },
+      {
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2021-09-03",
+          "title": "Soca Gold 2021",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "e0386fd4-9e4e-430a-a7dc-558528ed4353",
+          "artist-credit": [
+            {
+              "artist": {
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format": "Digital Media",
+            "track-offset": 0,
+            "id": "99521d56-e53c-30fb-b7c4-cac255e9c2fd",
+            "position": 1,
+            "title": "",
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-count": 17,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                      "sort-name": "Master KG",
+                      "disambiguation": "South African musician and record producer",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "afropop"
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "name": "isizulu",
+                          "count": 1
+                        },
+                        {
+                          "name": "pop",
+                          "count": 1
+                        },
+                        {
+                          "name": "zulu",
+                          "count": 1
+                        }
+                      ],
+                      "name": "Master KG",
+                      "genres": [
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                        }
+                      ]
+                    },
+                    "joinphrase": " feat. ",
+                    "name": "Master KG"
+                  },
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "genres": [
+                        {
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "name": "dance",
+                          "disambiguation": "",
+                          "count": 1
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "dance"
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "name": "house",
+                          "count": 1
+                        }
+                      ],
+                      "name": "Nomcebo Zikode",
+                      "disambiguation": "",
+                      "sort-name": "Zikode, Nomcebo",
+                      "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                      "type": "Person",
+                      "country": "ZA"
+                    },
+                    "name": "Nomcebo Zikode"
+                  }
+                ],
+                "id": "4cffb3fa-ecd3-477e-9ffc-569684cab376",
+                "number": "1",
+                "position": 1,
+                "title": "Jerusalema",
+                "length": 342648
+              }
+            ]
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [
+          {
+            "id": "b251cd9a-990c-49f6-8da3-db3457aa2114",
+            "name": "soca",
+            "count": 1,
+            "disambiguation": ""
+          }
+        ],
+        "quality": "normal",
+        "country": "XW",
+        "id": "c4ccafab-da77-45ee-849c-fcb02b96cba2",
+        "barcode": "054645274067",
+        "release-events": [
+          {
+            "date": "2021-09-03",
+            "area": {
+              "type": null,
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "type-id": null,
+              "name": "[Worldwide]",
+              "disambiguation": "",
+              "sort-name": "[Worldwide]"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "soca"
+          }
+        ],
+        "title": "Soca Gold 2021",
+        "date": "2021-09-03",
+        "status": "Official",
+        "packaging": "None"
+      },
+      {
+        "tags": [
+          {
+            "count": 1,
+            "name": "soca"
+          }
+        ],
+        "barcode": "054645274029",
+        "release-events": [
+          {
+            "date": "2021-09-23",
+            "area": {
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "type": null,
+              "sort-name": "United States",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "type-id": null,
+              "name": "United States"
+            }
+          }
+        ],
+        "date": "2021-09-23",
+        "title": "Soca Gold 2021",
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Soca Gold 2021",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2021-09-03",
+          "disambiguation": "",
+          "genres": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "id": "e0386fd4-9e4e-430a-a7dc-558528ed4353"
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ]
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "genres": [
+          {
+            "disambiguation": "",
+            "count": 1,
+            "id": "b251cd9a-990c-49f6-8da3-db3457aa2114",
+            "name": "soca"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "position": 1,
+            "title": "",
+            "id": "c41175b6-e361-310c-ad32-af70c03e9d84",
+            "format": "CD",
+            "track-offset": 0,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Master KG",
+                    "artist": {
+                      "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+                      "type": "Person",
+                      "country": "ZA",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop"
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "afropop",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "english"
+                        },
+                        {
+                          "count": 1,
+                          "name": "isizulu"
+                        },
+                        {
+                          "name": "pop",
+                          "count": 1
+                        },
+                        {
+                          "name": "zulu",
+                          "count": 1
+                        }
+                      ],
+                      "name": "Master KG",
+                      "sort-name": "Master KG",
+                      "disambiguation": "South African musician and record producer"
+                    },
+                    "joinphrase": " feat. "
+                  },
+                  {
+                    "name": "Nomcebo Zikode",
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "ZA",
+                      "type": "Person",
+                      "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+                      "sort-name": "Zikode, Nomcebo",
+                      "disambiguation": "",
+                      "tags": [
+                        {
+                          "name": "dance",
+                          "count": 1
+                        },
+                        {
+                          "name": "english",
+                          "count": 1
+                        },
+                        {
+                          "name": "house",
+                          "count": 1
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Nomcebo Zikode",
+                      "genres": [
+                        {
+                          "name": "dance",
+                          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+                          "count": 1,
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "count": 1,
+                          "disambiguation": ""
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "id": "22adccea-e625-4cbd-bbf5-72b11115eb1a",
+                "number": "1",
+                "title": "Jerusalema",
+                "position": 1,
+                "length": 342648
+              }
+            ],
+            "track-count": 17,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "quality": "normal",
+        "country": "US",
+        "id": "b57845c3-15c3-4e21-92ab-2771bc6e9d38"
+      }
+    ],
+    "genres": [
+      {
+        "name": "dance",
+        "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+        "disambiguation": "",
+        "count": 1
+      },
+      {
+        "id": "7fa479e7-3d35-40d1-96f7-b619a5ca9d9f",
+        "name": "deep house",
+        "count": 1,
+        "disambiguation": ""
+      },
+      {
+        "count": 1,
+        "disambiguation": "",
+        "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c",
+        "name": "hip hop"
+      },
+      {
+        "disambiguation": "",
+        "count": 1,
+        "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+        "name": "house"
+      },
+      {
+        "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+        "name": "pop",
+        "count": 1,
+        "disambiguation": ""
+      }
+    ],
+    "disambiguation": ""
+  }
+}

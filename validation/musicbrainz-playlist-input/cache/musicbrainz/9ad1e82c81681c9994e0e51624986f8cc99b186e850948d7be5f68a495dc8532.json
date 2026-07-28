@@ -1,0 +1,1213 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28zapata+AND+se+AND+queda%29+AND+artistname%3A%22Lila+Downs%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:44:06.946Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:44:07.087Z",
+    "count": 5,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "864758ae-ef68-4906-bc60-5767f0f36055",
+        "score": 100,
+        "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+        "title": "Zapata Se Queda",
+        "length": 263922,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Lila Downs",
+            "artist": {
+              "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+              "name": "Lila Downs",
+              "sort-name": "Downs, Lila",
+              "aliases": [
+                {
+                  "sort-name": "Sánchez, Ana Lila Downs",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Ana Lila Downs Sánchez",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022-12-02",
+        "releases": [
+          {
+            "id": "6094354c-9ebc-4d6d-9f67-24c01b81c018",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+            "count": 1,
+            "title": "Desde Bellas Artes México",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "94f51a34-f895-40de-9416-4a40d1cebc13",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Desde Bellas Artes México",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2022-12-02",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2022-12-02",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "9a71b64f-47f5-453f-b0a2-89ec52746eb5",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0ef4bd4d-4b44-4c5d-b533-8b0ec393e7f3",
+                    "number": "16",
+                    "title": "Zapata Se Queda",
+                    "length": 263922
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 15
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "MXF012200445"
+        ]
+      },
+      {
+        "id": "d909f96d-8377-4074-9053-9457d1bc6c75",
+        "score": 100,
+        "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+        "title": "Zapata se queda",
+        "length": 263920,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Lila Downs",
+            "artist": {
+              "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+              "name": "Lila Downs",
+              "sort-name": "Downs, Lila",
+              "aliases": [
+                {
+                  "sort-name": "Sánchez, Ana Lila Downs",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Ana Lila Downs Sánchez",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022-12-08",
+        "releases": [
+          {
+            "id": "5f9824db-fec0-4497-9d1d-4199da6dd383",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+            "count": 2,
+            "title": "Desde Bellas Artes México",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "94f51a34-f895-40de-9416-4a40d1cebc13",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Desde Bellas Artes México",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2022-12-08",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2022-12-08",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 39,
+            "media": [
+              {
+                "id": "4ea4a2c6-4751-34f4-a5be-0eeef7047a2a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9d41205c-3de2-488b-9261-eddac7545878",
+                    "number": "16",
+                    "title": "Zapata se queda",
+                    "length": 263920
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "97e6ad88-427d-4c33-83f7-6f70ad10c67c",
+        "score": 92,
+        "artist-credit-id": "dc813b29-2e15-3000-9796-db6e6369b172",
+        "title": "Zapata se queda",
+        "length": 269893,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": ", ",
+            "name": "Lila Downs",
+            "artist": {
+              "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+              "name": "Lila Downs",
+              "sort-name": "Downs, Lila",
+              "aliases": [
+                {
+                  "sort-name": "Sánchez, Ana Lila Downs",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Ana Lila Downs Sánchez",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": ", ",
+            "name": "Niña Pastori",
+            "artist": {
+              "id": "3d6470bc-3929-4997-8ef0-56859fd0ab8a",
+              "name": "Niña Pastori",
+              "sort-name": "Pastori, Niña",
+              "aliases": [
+                {
+                  "sort-name": "Pastori, Niña",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Niña Pastori",
+                  "locale": "en",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Pastori, Niña",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Niña Pastori",
+                  "locale": "es",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "García García, María Rosa",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "María Rosa García García",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Soledad",
+            "artist": {
+              "id": "3b840213-006b-4d13-8c50-0479f85cdf02",
+              "name": "Soledad",
+              "sort-name": "Soledad",
+              "disambiguation": "Argentine folk singer Soledad Pastorutti",
+              "aliases": [
+                {
+                  "sort-name": "Sole, La",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "La Sole",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Soledad Pastorutti",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Soledad Pastorutti",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2014-04-01",
+        "releases": [
+          {
+            "id": "3ce1c5db-a8e1-4054-b9cd-f1a6d22c34b3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "dc813b29-2e15-3000-9796-db6e6369b172",
+            "count": 1,
+            "title": "Raíz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              },
+              {
+                "joinphrase": ", ",
+                "name": "Niña Pastori",
+                "artist": {
+                  "id": "3d6470bc-3929-4997-8ef0-56859fd0ab8a",
+                  "name": "Niña Pastori",
+                  "sort-name": "Pastori, Niña"
+                }
+              },
+              {
+                "name": "Soledad",
+                "artist": {
+                  "id": "3b840213-006b-4d13-8c50-0479f85cdf02",
+                  "name": "Soledad",
+                  "sort-name": "Soledad",
+                  "disambiguation": "Argentine folk singer Soledad Pastorutti"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "04fad7d6-025c-4061-801d-74c7db071e3d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Raíz",
+              "primary-type": "Album"
+            },
+            "track-count": 12,
+            "media": [
+              {
+                "id": "8c95fe05-1900-38f0-8ed5-cdb058432080",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "12b1567d-75cb-4b3e-a83d-b2dd5a93f886",
+                    "number": "9",
+                    "title": "Zapata se queda",
+                    "length": 269893
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "f5816534-f7df-46d3-870b-557f3cbd6a33",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "dc813b29-2e15-3000-9796-db6e6369b172",
+            "count": 1,
+            "title": "Raíz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              },
+              {
+                "joinphrase": ", ",
+                "name": "Niña Pastori",
+                "artist": {
+                  "id": "3d6470bc-3929-4997-8ef0-56859fd0ab8a",
+                  "name": "Niña Pastori",
+                  "sort-name": "Pastori, Niña"
+                }
+              },
+              {
+                "name": "Soledad",
+                "artist": {
+                  "id": "3b840213-006b-4d13-8c50-0479f85cdf02",
+                  "name": "Soledad",
+                  "sort-name": "Soledad",
+                  "disambiguation": "Argentine folk singer Soledad Pastorutti"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "04fad7d6-025c-4061-801d-74c7db071e3d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Raíz",
+              "primary-type": "Album"
+            },
+            "date": "2014-04-01",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2014-04-01",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "24a1e2c1-383c-359b-a45a-c9328af428ff",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "adacccfb-cde6-473a-aad6-a3ab71688897",
+                    "number": "10",
+                    "title": "Zapata se queda",
+                    "length": 269893
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "e9440ecf-f6f8-42cb-a227-72fd229f849a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "dc813b29-2e15-3000-9796-db6e6369b172",
+            "count": 1,
+            "title": "Raíz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              },
+              {
+                "joinphrase": ", ",
+                "name": "Niña Pastori",
+                "artist": {
+                  "id": "3d6470bc-3929-4997-8ef0-56859fd0ab8a",
+                  "name": "Niña Pastori",
+                  "sort-name": "Pastori, Niña"
+                }
+              },
+              {
+                "name": "Soledad",
+                "artist": {
+                  "id": "3b840213-006b-4d13-8c50-0479f85cdf02",
+                  "name": "Soledad",
+                  "sort-name": "Soledad",
+                  "disambiguation": "Argentine folk singer Soledad Pastorutti"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "04fad7d6-025c-4061-801d-74c7db071e3d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Raíz",
+              "primary-type": "Album"
+            },
+            "date": "2014-04-01",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2014-04-01",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "a321d375-66fa-342c-bd4c-481a636b05eb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8181ba6e-78b3-4b6b-bf1c-504d1db48817",
+                    "number": "10",
+                    "title": "Zapata se queda",
+                    "length": 269893
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "d54f74a4-36f6-41d2-8e55-a391835300de",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "dc813b29-2e15-3000-9796-db6e6369b172",
+            "count": 1,
+            "title": "Raíz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              },
+              {
+                "joinphrase": ", ",
+                "name": "Niña Pastori",
+                "artist": {
+                  "id": "3d6470bc-3929-4997-8ef0-56859fd0ab8a",
+                  "name": "Niña Pastori",
+                  "sort-name": "Pastori, Niña"
+                }
+              },
+              {
+                "name": "Soledad",
+                "artist": {
+                  "id": "3b840213-006b-4d13-8c50-0479f85cdf02",
+                  "name": "Soledad",
+                  "sort-name": "Soledad",
+                  "disambiguation": "Argentine folk singer Soledad Pastorutti"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "04fad7d6-025c-4061-801d-74c7db071e3d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Raíz",
+              "primary-type": "Album"
+            },
+            "date": "2014-04-01",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2014-04-01",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "160f03a0-6036-3cbd-add4-6f7ffb45e1bb",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ed774d96-2110-42af-b657-36fa7b11ee24",
+                    "number": "10",
+                    "title": "Zapata se queda",
+                    "length": 269893
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 9
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "MXF011300338"
+        ]
+      },
+      {
+        "id": "5c19230c-a66f-40de-a4db-015f5fab2129",
+        "score": 89,
+        "artist-credit-id": "0ed807fc-fa31-3850-b195-3a703a1137f5",
+        "title": "Zapata se queda",
+        "length": 265000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " con ",
+            "name": "Lila Downs",
+            "artist": {
+              "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+              "name": "Lila Downs",
+              "sort-name": "Downs, Lila",
+              "aliases": [
+                {
+                  "sort-name": "Sánchez, Ana Lila Downs",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Ana Lila Downs Sánchez",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " y ",
+            "name": "Celso Piña",
+            "artist": {
+              "id": "2367fff3-4d28-4a3a-bae5-769186b85a1d",
+              "name": "Celso Piña",
+              "sort-name": "Piña, Celso",
+              "disambiguation": "Mexican singer and accordionist",
+              "aliases": [
+                {
+                  "sort-name": "Celso Pina",
+                  "name": "Celso Pina",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Cacique de la Campana",
+                  "name": "Cacique de la Campana",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "El Rebelde del acordeón",
+                  "name": "El Rebelde del acordeón",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Celso Piña Arvizu",
+                  "name": "Celso Piña Arvizu",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Totó la Momposina",
+            "artist": {
+              "id": "6904c849-97ab-4bf2-af51-467e8dd98ec9",
+              "name": "Totó la Momposina",
+              "sort-name": "Totó la Momposina",
+              "aliases": [
+                {
+                  "sort-name": "Toto La Memposina",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Toto La Memposina",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bazanta Vides, Sonia",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Sonia Bazanta Vides",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011-10-18",
+        "releases": [
+          {
+            "id": "a065854d-e024-4d14-9f4f-ec7742cbaaeb",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "SXSW 2012 Showcasing Artists",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a42cae82-820c-4b87-aab4-71200e68e12a",
+              "type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "primary-type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "title": "SXSW 2012 Showcasing Artists",
+              "primary-type": "Other",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2012",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2012",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1219,
+            "media": [
+              {
+                "id": "9ce7343e-c9ec-3594-b75d-20c2bb4d6180",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6ade6eee-f184-496d-8e69-f9fe9b1b2572",
+                    "number": "560",
+                    "title": "Zapata Se Queda",
+                    "length": 264980
+                  }
+                ],
+                "track-count": 1219,
+                "track-offset": 559
+              }
+            ]
+          },
+          {
+            "id": "5c47b00d-7731-4326-a5b6-72ddb93cb090",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+            "count": 1,
+            "title": "Pecados y milagros",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1816c693-92cb-4d7e-8ce1-ee2da89d64c9",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pecados y milagros",
+              "primary-type": "Album"
+            },
+            "track-count": 15,
+            "media": [
+              {
+                "id": "99f9e875-233e-3be0-9b89-a8cad39fccc1",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "744f0032-b4ce-49cb-84d5-755082a07e09",
+                    "number": "3",
+                    "title": "Zapata se queda",
+                    "length": 266013
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "5fa27f0e-c102-40e8-bb1d-f441ee60d68d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "0ed807fc-fa31-3850-b195-3a703a1137f5",
+            "count": 1,
+            "title": "Zapata se queda",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " con ",
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              },
+              {
+                "joinphrase": " y ",
+                "name": "Celso Piña",
+                "artist": {
+                  "id": "2367fff3-4d28-4a3a-bae5-769186b85a1d",
+                  "name": "Celso Piña",
+                  "sort-name": "Piña, Celso",
+                  "disambiguation": "Mexican singer and accordionist"
+                }
+              },
+              {
+                "name": "Totó la Momposina",
+                "artist": {
+                  "id": "6904c849-97ab-4bf2-af51-467e8dd98ec9",
+                  "name": "Totó la Momposina",
+                  "sort-name": "Totó la Momposina"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "10ca2d53-6268-44a7-8281-3e286e6ed9a3",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Zapata se queda",
+              "primary-type": "Single"
+            },
+            "date": "2012-06-05",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2012-06-05",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "3f651b30-15ed-375c-b854-72b93b6dbb60",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "96e940e4-f1a9-4c41-b49c-15bb481bdedb",
+                    "number": "1",
+                    "title": "Zapata se queda",
+                    "length": 264000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "5d25b6dc-58ea-40ca-a878-2ae4c7362be7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+            "count": 1,
+            "title": "Pecados y milagros",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1816c693-92cb-4d7e-8ce1-ee2da89d64c9",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pecados y milagros",
+              "primary-type": "Album"
+            },
+            "date": "2011-10-18",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2011-10-18",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "f013e48a-819d-3fd4-9026-a75cf5c0bc4c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "364634c3-e4b9-48b5-b6b4-759444ee3de3",
+                    "number": "3",
+                    "title": "Zapata se queda",
+                    "length": 265000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "2e398577-1429-4f2d-9aff-85873633b9b9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+            "count": 2,
+            "title": "Pecados y milagros",
+            "status": "Official",
+            "disambiguation": "Edición especial",
+            "artist-credit": [
+              {
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1816c693-92cb-4d7e-8ce1-ee2da89d64c9",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pecados y milagros",
+              "primary-type": "Album"
+            },
+            "date": "2012-08-14",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2012-08-14",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "d3629cfe-3533-322c-8dbf-1eb5ed16dc60",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3ffc8e6c-792d-4e9e-b18f-ab6adb2a538c",
+                    "number": "3",
+                    "title": "Zapata se queda",
+                    "length": 266013
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 2
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "MXF011100408"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "rock"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "folk"
+          },
+          {
+            "count": 2,
+            "name": "latin"
+          },
+          {
+            "count": 1,
+            "name": "cumbia"
+          }
+        ]
+      },
+      {
+        "id": "0ce8b452-f67e-4a8e-9a91-8209afa72b15",
+        "score": 79,
+        "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+        "title": "Zapata se queda (Panóptica Orchestra remix)",
+        "length": 261000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Lila Downs",
+            "artist": {
+              "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+              "name": "Lila Downs",
+              "sort-name": "Downs, Lila",
+              "aliases": [
+                {
+                  "sort-name": "Sánchez, Ana Lila Downs",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Ana Lila Downs Sánchez",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2012-08-14",
+        "releases": [
+          {
+            "id": "5c47b00d-7731-4326-a5b6-72ddb93cb090",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+            "count": 1,
+            "title": "Pecados y milagros",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1816c693-92cb-4d7e-8ce1-ee2da89d64c9",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pecados y milagros",
+              "primary-type": "Album"
+            },
+            "track-count": 15,
+            "media": [
+              {
+                "id": "99f9e875-233e-3be0-9b89-a8cad39fccc1",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6a698489-5396-4809-8f4f-aa8585f0b778",
+                    "number": "15",
+                    "title": "Zapata se queda (Panóptica Orchestra remix)",
+                    "length": 261000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "2e398577-1429-4f2d-9aff-85873633b9b9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+            "count": 2,
+            "title": "Pecados y milagros",
+            "status": "Official",
+            "disambiguation": "Edición especial",
+            "artist-credit": [
+              {
+                "name": "Lila Downs",
+                "artist": {
+                  "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+                  "name": "Lila Downs",
+                  "sort-name": "Downs, Lila"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1816c693-92cb-4d7e-8ce1-ee2da89d64c9",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pecados y milagros",
+              "primary-type": "Album"
+            },
+            "date": "2012-08-14",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2012-08-14",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "d3629cfe-3533-322c-8dbf-1eb5ed16dc60",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "522f127a-a8df-4457-8383-9d1ee2980d62",
+                    "number": "15",
+                    "title": "Zapata se queda (Panóptica Orchestra remix)",
+                    "length": 261000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "MXF011200139"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "rock"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "folk"
+          },
+          {
+            "count": 1,
+            "name": "latin"
+          },
+          {
+            "count": 1,
+            "name": "cumbia"
+          }
+        ]
+      }
+    ]
+  }
+}

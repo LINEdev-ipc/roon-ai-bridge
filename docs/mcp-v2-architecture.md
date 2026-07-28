@@ -84,13 +84,12 @@ saved or temporary RoonIA playlists.
 ### Model-created playlist preflight
 
 `roon_save_playlist` accepts one batch containing primary proposals and
-reserves. For niche genres, dates or uncertain names, the model first calls
-`roon_search_media` with focused queries and copies the exact `title`,
-`artist_credit`, `album_hint` and temporary `result_id`. MusicBrainz remains
-the authority that decides the recording identity. A fresh compatible
-`result_id` is reused as the preferred Roon binding, avoiding a duplicate Roon
-search; an expired or incompatible reference falls back to deterministic
-title/artist search.
+reserves. The model creates the complete structured pool itself and calls the
+tool once; it does not call `roon_search_media` first. Standard requests carry
+at least 125% of the requested count, constrained requests 140%, and exact
+versions or performance-sensitive requests 160%. MusicBrainz remains the
+authority that decides recording identity, ListenBrainz contributes advisory
+candidate evidence, and Roon supplies only the playable binding.
 
 `release_year_from` and `release_year_to` constrain the MusicBrainz release
 group's first-publication year. `release_year_hint` is only an observed
@@ -106,30 +105,30 @@ such as `Dub Mix` or `Dub Version` selects the dub recording family. A
 model-provided `result_id` is temporary evidence and never bypasses these
 checks.
 
-Candidates are resolved with bounded concurrency. Valid reserves fill rejected
-or duplicated primaries, then the final accepted set is reordered so the same
-artist is not adjacent. Only accepted, fully resolved tracks are written, in a
-single transaction. Each stored row separates normalized `audio_metadata`,
-model hints and provenance in `user_metadata`, and the raw search/album-detail
-observation in `resolution.roon_observation`.
+Candidates are resolved by a bounded six-item coordinator. MusicBrainz and
+ListenBrainz catalog work starts at the same time as speculative Roon
+title/artist discovery. Once the canonical MusicBrainz recording is known,
+RoonIA reranks the already-returned Roon candidates and performs a canonical
+fallback search only when none can be bound safely. Valid reserves fill
+rejected or duplicated primaries, and queued reserves stop when the target is
+reached.
 
-When `desired_count` cannot be met, the tool returns `status: "needs_input"`
-with a short-lived `build_id` and a structured `rejection_summary`. Server
-instructions map ambiguity, not-found, missing binding, duplicate and date
-failures to a concrete replenishment action. The individual rejection list is
-bounded to the latest 25 entries while the summary retains complete counts.
-Three genuine replenishment
-rounds are accepted. If the target is still not met, every verified track is
-saved atomically; `build_summary.added_count`, `missing_count` and `complete`
-state the exact outcome. A zero-track build still fails instead of creating an
-empty playlist. Build sessions live in the running process for 30 minutes.
+The tool always finishes in one call. Only accepted, fully resolved tracks are
+written in a single transaction. If `desired_count` cannot be met, every
+verified track is saved atomically and `build_summary.added_count`,
+`missing_count` and `complete` state the exact outcome. A zero-track build
+still fails instead of creating an empty playlist. The individual rejection
+list remains bounded to 25 entries while aggregate counts and provider timing
+telemetry remain complete.
 
 ### Temporary working playlists
 
-Activity, mood and occasion requests that do not ask to preserve a named list
-use `roon_create_temporary_playlist`. It accepts the same strictly verified
-candidate batch and replenishment protocol as `roon_save_playlist`, but writes
-an immutable expiration timestamp alongside the playlist. The configured
+Any request to create, make, prepare or curate a playlist or list uses
+`roon_save_playlist`, including activity, mood and occasion lists.
+`roon_create_temporary_playlist` is only a hidden working list for immediate
+playback commands such as “play music” or “pon música” when the user did not
+request a playlist artifact. It accepts the same one-shot strictly verified
+candidate batch but writes an immutable expiration timestamp. The configured
 lifetime is read when a new build starts; changing the setting affects future
 temporary playlists only.
 

@@ -1,0 +1,5130 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28je+AND+veux%29+AND+artistname%3A%22Zaz%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:43.671Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:44.033Z",
+    "count": 8,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "5248a06a-50e3-43a0-904a-10988e60eb18",
+        "score": 100,
+        "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+        "title": "Je veux",
+        "length": 323573,
+        "disambiguation": "live",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zaz",
+            "artist": {
+              "id": "e3214827-bd09-4d53-a88c-893d61556352",
+              "name": "Zaz",
+              "sort-name": "Zaz",
+              "disambiguation": "French singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Zaz",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "fr",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Geffroy, Isabelle Véronique",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Isabelle Véronique Geffroy",
+                  "locale": "fr",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ザーズ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-08-30",
+        "releases": [
+          {
+            "id": "86cd5c73-f922-4e60-a129-728994c77cc4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sur la route",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e5b3f01-89fa-4031-90d7-c3a9e9e1f116",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sur la route",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2015-08-30",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2015-08-30",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "e3759b45-148d-317f-b119-02844f505dcb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "379ca951-696b-4559-a7f8-a505b5990c9a",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 323573
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "1f868282-d938-48e2-80e4-fda51679c3c6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sur la route",
+            "status": "Official",
+            "disambiguation": "Part of coffret 4 albums",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e5b3f01-89fa-4031-90d7-c3a9e9e1f116",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sur la route",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2019-06-28",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2019-06-28",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 35,
+            "media": [
+              {
+                "id": "52ca7274-5c58-37bb-a652-00ec1811b9f2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4c2a8944-0c67-441a-980f-cb53a8b97996",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 323000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "83623403-50de-4b7f-a7a8-cde8aa25593c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Sur la route",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e5b3f01-89fa-4031-90d7-c3a9e9e1f116",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sur la route",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2015-10-30",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2015-10-30",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "293a710f-aaf4-3f04-a36f-a954cb3b8983",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6d0048d0-629a-48d4-9a23-ef79d884c1b5",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 323573
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "b763fed2-b94e-4870-b942-a389e5fff44c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sur la route",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e5b3f01-89fa-4031-90d7-c3a9e9e1f116",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sur la route",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2016-06-08",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2016-06-08",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "ecdbf1ad-1a09-3f1e-b44c-3efbaefbc759",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0e22f641-d5cf-44b0-89bf-51869130040c",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 323000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "64b241a7-ab81-418f-b4c2-d164143dd76a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sur la route",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e5b3f01-89fa-4031-90d7-c3a9e9e1f116",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sur la route",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2016",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2016",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "1902475b-7fe3-38b5-b539-db79964b122b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cac00518-193f-4047-aefa-aae0780d4aa9",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 323573
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "d2e6adeb-2f13-4c9a-873c-7bce029386af",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Sur la route",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e5b3f01-89fa-4031-90d7-c3a9e9e1f116",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sur la route",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "track-count": 12,
+            "media": [
+              {
+                "id": "214bf845-d0dd-3fb8-a237-6f68167b8b63",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a41347b2-8137-4ebf-a558-836615c9f0d3",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 323573
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "a34c24ec-3975-46a8-93a8-4e87bfd50a13",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sur la route",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e5b3f01-89fa-4031-90d7-c3a9e9e1f116",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sur la route",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "track-count": 12,
+            "media": [
+              {
+                "id": "b3d47964-74b3-3983-b0e2-45a3d487573d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "34c11842-2950-4819-adf6-2e15789615c1",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 323573
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 9
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR2PY1503790"
+        ]
+      },
+      {
+        "id": "b732405a-3058-4a7a-9da7-70ceee612664",
+        "score": 100,
+        "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+        "title": "Je veux",
+        "length": 480680,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zaz",
+            "artist": {
+              "id": "e3214827-bd09-4d53-a88c-893d61556352",
+              "name": "Zaz",
+              "sort-name": "Zaz",
+              "disambiguation": "French singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Zaz",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "fr",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Geffroy, Isabelle Véronique",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Isabelle Véronique Geffroy",
+                  "locale": "fr",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ザーズ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011",
+        "releases": [
+          {
+            "id": "5510e288-fc17-4a2f-b334-81125e8db22f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Sans tsu tsou",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2714af1e-c875-4ac7-8596-830eeadfc217",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sans tsu tsou",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2011",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "f31af881-1f9b-36c0-8418-1cce73b0a141",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9a15138e-d929-456f-81fc-29f3787ca9ef",
+                    "number": "12",
+                    "title": "Je veux",
+                    "length": 480680
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "24bc7b31-0329-4818-ae2f-5acca0a7fde0",
+        "score": 100,
+        "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+        "title": "Je Veux",
+        "length": 218000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zaz",
+            "artist": {
+              "id": "e3214827-bd09-4d53-a88c-893d61556352",
+              "name": "Zaz",
+              "sort-name": "Zaz",
+              "disambiguation": "French singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Zaz",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "fr",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Geffroy, Isabelle Véronique",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Isabelle Véronique Geffroy",
+                  "locale": "fr",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ザーズ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2017",
+        "releases": [
+          {
+            "id": "a1c65c4f-f406-4d49-8931-a199a6dd2abe",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Top 40 Ici La France (The Ultimate Top 40 Collection)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d164e324-9eae-48b3-a8c2-e7774acc7896",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Top 40 Ici La France (The Ultimate Top 40 Collection)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2017",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 45,
+            "media": [
+              {
+                "id": "787e6859-cc63-44a5-bae3-b2829b33bd04",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b4a684d9-cd5f-4af8-8d52-cf28056e95dd",
+                    "number": "11",
+                    "title": "Je Veux",
+                    "length": 218000
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a412ea1b-9633-4043-818b-fa542eff0a99",
+        "score": 100,
+        "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+        "title": "Je veux",
+        "length": 481000,
+        "disambiguation": "live, 2011‐10‐16: Théâtre de Béthune, Béthune, France",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zaz",
+            "artist": {
+              "id": "e3214827-bd09-4d53-a88c-893d61556352",
+              "name": "Zaz",
+              "sort-name": "Zaz",
+              "disambiguation": "French singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Zaz",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "fr",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Geffroy, Isabelle Véronique",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Isabelle Véronique Geffroy",
+                  "locale": "fr",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ザーズ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011-05-12",
+        "releases": [
+          {
+            "id": "02635fe8-123d-4246-96ae-9a6222c6f4be",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sans tsu tsou",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2714af1e-c875-4ac7-8596-830eeadfc217",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sans tsu tsou",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2011-05-12",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2011-05-12",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "39377dfb-4b3f-3598-a6bd-edd6df48e4c4",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "52c5fd67-8265-3a4d-9078-0c175db1b130",
+                    "number": "12",
+                    "title": "Je veux",
+                    "length": 481000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "2f7b3fa4-d8f0-4795-9ff3-3cc92dca64b5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sans tsu tsou",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2714af1e-c875-4ac7-8596-830eeadfc217",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sans tsu tsou",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2011-12-02",
+            "country": "PL",
+            "release-events": [
+              {
+                "date": "2011-12-02",
+                "area": {
+                  "id": "dd7f80c8-f017-3d01-8608-2a8c9c32b954",
+                  "name": "Poland",
+                  "sort-name": "Poland",
+                  "iso-3166-1-codes": [
+                    "PL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "00ad2106-97c2-36e3-a6a2-d1d8e7c4a73f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bf546996-2c60-3654-b613-5895f2f7ed2c",
+                    "number": "12",
+                    "title": "Je veux",
+                    "length": 481000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "f370e907-993e-4f45-b8a9-a818d4001b70",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sans tsu tsou (Live Tour)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2714af1e-c875-4ac7-8596-830eeadfc217",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sans tsu tsou",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2011-12-02",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2011-12-02",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "d6f7a3fc-3f99-3b44-bcbf-5659ce4a43a7",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "10d47e2b-0e9a-4117-9a31-163e7cfac919",
+                    "number": "12",
+                    "title": "Je veux",
+                    "length": 481000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 11
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR2PY1102420"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "rock"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "jazz"
+          },
+          {
+            "count": 1,
+            "name": "chanson française"
+          },
+          {
+            "count": 1,
+            "name": "pop rock"
+          }
+        ]
+      },
+      {
+        "id": "6bf37317-c387-4d87-a5dd-48fcde0cacdb",
+        "score": 100,
+        "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+        "title": "Je veux",
+        "length": 217000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zaz",
+            "artist": {
+              "id": "e3214827-bd09-4d53-a88c-893d61556352",
+              "name": "Zaz",
+              "sort-name": "Zaz",
+              "disambiguation": "French singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Zaz",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "fr",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Geffroy, Isabelle Véronique",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Isabelle Véronique Geffroy",
+                  "locale": "fr",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ザーズ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-02-22",
+        "releases": [
+          {
+            "id": "5726b455-1e9d-41a1-bea1-e320114618c4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Die Hit‐Giganten: Best of French Classics",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3ea52168-bc7d-4c16-ba75-628788fd6565",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Die Hit‐Giganten: Best of French Classics",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2016-05-20",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2016-05-20",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 64,
+            "media": [
+              {
+                "id": "8132fa7d-1707-350e-9136-15fb94e7654d",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "60122415-ab9e-4157-9eb3-bb1ff8d322f9",
+                    "number": "1",
+                    "title": "Je veux",
+                    "length": 217666
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b11adb6d-17ca-414e-ac31-ebbbce83d37b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "155264b0-c8f0-3ef4-8cae-0c683de0a7a7",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ZAZ",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2010",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "165dc51d-c2ae-443b-9b53-aa41383d6dbb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "16c97130-332d-44cd-a597-6d5882bbf521",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "4b95684e-caa7-4e84-8c46-751c89084ba1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "155264b0-c8f0-3ef4-8cae-0c683de0a7a7",
+            "count": 1,
+            "title": "ZAZ",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ZAZ",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2011-03-23",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2011-03-23",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "a53a2485-fd2e-31f4-93a7-ca149a6bd859",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "32a944a2-3f36-3b69-864f-0745bc33eedf",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "d3ab591e-d3df-474c-8813-306ca06d412b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "155264b0-c8f0-3ef4-8cae-0c683de0a7a7",
+            "count": 2,
+            "title": "ZAZ",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ZAZ",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2012-04-18",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2012-04-18",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "912b75d2-c675-4e54-88ad-75633283e2fb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "52d01708-369c-449c-8346-73ecbededcaa",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "9703802c-0108-40fb-865c-0bbf17960c98",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Zaz",
+            "status": "Official",
+            "disambiguation": "limited special edition",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2011-03-04",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-03-04",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "389bf0c4-0bf4-3eec-ae7a-dbaf3606ebdb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6ca69d92-7988-3fcf-89c1-d694cdd68c22",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "98e9e8d5-8fa4-42ab-b27e-30d808d26d55",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2011-03-21",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2011-03-21",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "b4acd3df-b40a-3542-af99-838d8686e9d3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f7d99a36-306b-42e2-9561-0a4c8a55a643",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "f9ce6ae2-df09-47eb-881e-043686960604",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "155264b0-c8f0-3ef4-8cae-0c683de0a7a7",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ZAZ",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "7817de67-3f6b-370f-9d6c-214f5c4ab9e2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "d73f478a-1be4-4c39-b355-2832b9ca462a",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 215933
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "fdae29a2-8fe0-4556-b857-0321b3815702",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "93a9c488-ffd9-41cb-9e9a-cefbee8c15c8",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2013-08-02",
+            "country": "IE",
+            "release-events": [
+              {
+                "date": "2013-08-02",
+                "area": {
+                  "id": "390b05d4-11ec-3bce-a343-703a366b34a5",
+                  "name": "Ireland",
+                  "sort-name": "Ireland",
+                  "iso-3166-1-codes": [
+                    "IE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "69eb90da-8df5-3b8a-86d5-e1db597c9c8e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e731c7ec-867c-4d51-b5fa-678fbf58477f",
+                    "number": "1",
+                    "title": "Je veux",
+                    "length": 215992
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "6048498a-62f7-42a5-a921-93c2134d180f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Formidable! 40 Franse chansons van Stromae tot Aznavour",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2f6ece53-3eee-46de-a114-beb773b16756",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Formidable! 40 Franse chansons van Stromae tot Aznavour",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-04",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2014-04",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "14ba579e-1b8d-3023-a8a4-e2c7bc38adc8",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "00f75be6-8a4f-46d2-8149-6efdee47dd75",
+                    "number": "16",
+                    "title": "Je veux",
+                    "length": 217800
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "ef3b8621-5168-46aa-944a-62c0b7fd40a0",
+            "status-id": "6a3772de-4605-4132-993d-aa315cd19b4b",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Formidable - 40 Franse chansons - Van Stromae tot Aznavour",
+            "status": "Withdrawn",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2f6ece53-3eee-46de-a114-beb773b16756",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Formidable! 40 Franse chansons van Stromae tot Aznavour",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 40,
+            "media": [
+              {
+                "id": "a1db583f-f580-4416-a01e-931a7d3bb154",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "3c47c785-2c0b-4480-b9ca-c487f744c2a8",
+                    "number": "16",
+                    "title": "Je veux",
+                    "length": 215797
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "f1e58e8f-609c-4a50-ad2e-5d8e1905ca5b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "Ultratop 15 ans",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b6493c9d-5e26-4adc-b588-854a15e03bee",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ultratop 15 ans",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-12-03",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2010-12-03",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 80,
+            "media": [
+              {
+                "id": "3cf96077-a564-377d-91fa-26899d4263a6",
+                "position": 4,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3dc81a29-9e9c-4d8a-a818-7113467bcfff",
+                    "number": "3",
+                    "title": "Je veux",
+                    "length": 216453
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "5c1ca58d-02c0-4084-a21d-664ca7940872",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "About Jazz - aboutJAZZ",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b6e71d12-0746-4e0a-80fe-b3dc5c2899ec",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "About Jazz - aboutJAZZ",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "a7efe34f-4def-4f4f-a458-aafe0a6b3ce3",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b2eb7592-bbc5-4c29-b8e2-d68097cf46dd",
+                    "number": "20",
+                    "title": "Je Veux",
+                    "length": 216000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "56d18dc3-e1e3-41ee-941a-a174b5af7ac5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Happy Ending: The Story of Chocolate Rain",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "51b11a1f-f57d-49c1-986b-5b66f2c81a41",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Happy Ending: The Story of Chocolate Rain",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-08-19",
+            "country": "HK",
+            "release-events": [
+              {
+                "date": "2011-08-19",
+                "area": {
+                  "id": "0373cdff-eac8-3fbc-92dc-36a607da06d1",
+                  "name": "Hong Kong",
+                  "sort-name": "Hong Kong",
+                  "iso-3166-1-codes": [
+                    "HK"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "79f22676-71b4-45d5-88c5-56fdce4dd9e7",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5de91787-3b7c-47c6-9ffe-951c85e535f6",
+                    "number": "1",
+                    "title": "Je veux"
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "4e577d7e-2686-4f08-a626-289f5bd6a786",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Arte Summer of Girls",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1b0a6002-b24f-4357-a0c8-0056cea5ce9d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Arte Summer of Girls",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 57,
+            "media": [
+              {
+                "id": "329f36de-7d99-3a68-aa3d-9b6b454d30a6",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1be420e6-1d51-4cbf-a5e4-be93ca5c4ec8",
+                    "number": "19",
+                    "title": "Je veux",
+                    "length": 216666
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 18
+              }
+            ]
+          },
+          {
+            "id": "f0ac376a-26f8-4047-a51b-d6d8ed3cd306",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bravo Hits 72",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b269088e-6e81-447f-8765-a9d400965968",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bravo Hits 72",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "CH",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+                  "name": "Switzerland",
+                  "sort-name": "Switzerland",
+                  "iso-3166-1-codes": [
+                    "CH"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "3661e071-4b1a-3a38-b1c6-9266ef76cb0e",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2075d372-a7b2-48d6-9c16-06405121fe9d",
+                    "number": "17",
+                    "title": "Je veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 16
+              }
+            ]
+          },
+          {
+            "id": "db2bc30e-b049-4dd1-82ac-b5da5e398fe5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Vive la France : Les plus belles chansons !",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "eb085c5a-9885-421c-8b4b-d4220f3bb27c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Vive la France : Les plus belles chansons !",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 57,
+            "media": [
+              {
+                "id": "68e6c1cb-c7df-3cc0-b095-bcf0fa1b139e",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2071435b-2a78-43fd-9940-0f0febbb0e5c",
+                    "number": "11",
+                    "title": "Je veux",
+                    "length": 216906
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "03f28778-18ce-41c9-a88e-31d5a1e7f9db",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bravo Hits 72",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b269088e-6e81-447f-8765-a9d400965968",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bravo Hits 72",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-02-11",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2011-02-11",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "7df710aa-8ab5-39e5-8a64-6d305ac4c92f",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "98d501f5-ba2f-4396-9d57-5f389202d8d4",
+                    "number": "17",
+                    "title": "Je Veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 16
+              }
+            ]
+          },
+          {
+            "id": "a35c3009-632b-4e6b-958f-ebc47cc6ea48",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Die Hit-Giganten: Best of Sommerhits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0659e90e-90bf-4981-ab86-687e90120d2f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Die Hit-Giganten: Best of Sommerhits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2013-08-02",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2013-08-02",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "38272391-f6a0-38ef-8d5f-a97eda7a3b54",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5782f311-ac47-40f2-bd4c-585d4b02a119",
+                    "number": "5",
+                    "title": "Je Veux",
+                    "length": 218697
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "c4e5bf69-a71f-4fc6-8221-2ec76333650b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "Radio 2 – De Topcollectie Franse Klassiekers",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6cf4b537-0f34-4d67-a0d5-cc61ccf2e817",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Radio 2 - De Topcollectie Franse Klassiekers",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2012-07-16",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2012-07-16",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "71c8db72-430d-309e-ada1-8aba30184b67",
+                "position": 5,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a7e72674-387a-4282-b415-e6b49eef20da",
+                    "number": "14",
+                    "title": "Je veux",
+                    "length": 218000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "aa59de12-5a73-44a6-9065-f14b52a0659b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Pozytywne Wibracje, Volume 11",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2453d6c2-a6fc-4999-a581-b393b7ac779a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pozytywne Wibracje, Volume 11",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "PL",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "dd7f80c8-f017-3d01-8608-2a8c9c32b954",
+                  "name": "Poland",
+                  "sort-name": "Poland",
+                  "iso-3166-1-codes": [
+                    "PL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 29,
+            "media": [
+              {
+                "id": "0ead112c-aa5f-30e9-8a92-ef1c28a040fb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "867aa29b-dde7-465e-8b6d-59e814c2cd9f",
+                    "number": "14",
+                    "title": "Je Veux",
+                    "length": 216080
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "a3f439a6-95de-48a1-bc67-b089480679ed",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "M Radio Les 100 Tubes de la Chanson Française",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "22800cc1-def0-4ea0-8e6d-494dbb19cc35",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "M Radio Les 100 Tubes de la Chanson Française",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022-06-23",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2022-06-23",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "9f316cd8-3e9f-3b4a-baf4-8ce01f920103",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "218f47da-42a4-4a91-b397-50e2023f15a7",
+                    "number": "16",
+                    "title": "Je veux",
+                    "length": 216000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "4556f11f-06a2-4351-b51f-a769cef0bf93",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "Les 30ans de M6",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ce9cb193-505c-4fc1-a621-256fed6ea26d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Les 30ans de M6",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 100,
+            "media": [
+              {
+                "id": "803f5f13-8e56-3f87-9e42-a1b74a4d415f",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "da16e628-6089-4c44-a225-024ff3be0479",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 216493
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "6f2a104f-ff05-402f-b1f8-d999ec151751",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "50 ans de disques d'or",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3268a2ff-6d37-4b28-bac3-90fc6a30e475",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "50 ans de disques d'or",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 100,
+            "media": [
+              {
+                "id": "5be12aa1-ea68-32a2-959f-392a8a79fe75",
+                "position": 5,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d106f6c5-b853-49f2-a53e-385a2322a156",
+                    "number": "20",
+                    "title": "Je veux",
+                    "length": 219000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "7812442d-2492-4a4f-833a-dd3d1fcd337c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Viva 4 Life",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "faa42205-7e81-4046-9f72-c4213a078ccd",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Viva for Life 2016",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2013-11-25",
+            "country": "LU",
+            "release-events": [
+              {
+                "date": "2013-11-25",
+                "area": {
+                  "id": "563d21b7-4a8e-35e2-83a7-7804baefbfa7",
+                  "name": "Luxembourg",
+                  "sort-name": "Luxembourg",
+                  "iso-3166-1-codes": [
+                    "LU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 36,
+            "media": [
+              {
+                "id": "90cc6d56-07b5-373a-bb1b-9593b78de61b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0fb38e72-c313-41ad-9dea-fa3bfabb75dc",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 216000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "cf21bace-98d6-4b7c-b6ce-5ca13ad79582",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Let’s Dance: Das Tanzalbum 2016",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "232199d0-b616-49e5-a974-7cd41c953372",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Let’s Dance: Das Tanzalbum 2016",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2016-04-15",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2016-04-15",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 45,
+            "media": [
+              {
+                "id": "1ff58e3d-f0b4-3d09-889f-a68e7955579e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ac6af68d-7ecb-4f22-a652-dbce2f0b953e",
+                    "number": "12",
+                    "title": "Je veux (Jive)",
+                    "length": 216680
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "ae4ab475-f2de-4def-bb71-78b5899debd1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Pop Giganten: Sommer-Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "513c360d-c5de-433d-af56-59ae62721931",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pop Giganten: Sommer-Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-06-30",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2017-06-30",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "fdefd266-4f74-3d7a-8311-1d6a577a9b45",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f21590a7-2559-4c50-837b-60a3d8e5ac23",
+                    "number": "22",
+                    "title": "Je veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 21
+              }
+            ]
+          },
+          {
+            "id": "6479d47c-793b-49be-82f4-f09ba1281173",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Ö3 Greatest Hits 56",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "22214b3f-8cb1-4cf8-b0a4-fcbc31cf7d5f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ö3 Greatest Hits 56",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 21,
+            "media": [
+              {
+                "id": "ef5b84ca-e649-33df-b8db-f578181ebc61",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c25abbb1-0113-4a4f-9153-69c49bf50706",
+                    "number": "18",
+                    "title": "Je veux",
+                    "length": 216306
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "d3c00714-9e44-3d46-8f97-1115e276e364",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2010",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "19517724-5a6c-3c04-aef1-6f0a960f7ea5",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "636e1425-2008-3e70-be55-d1620cd27650",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "f51f4169-b585-4a5a-a0e3-5cf0c57d80e6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "RFM Les grandes voix",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a81e848f-73d0-482e-afe2-67ef82f65ba2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RFM Les grandes Voix",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-30",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-03-30",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "9db0e470-1ebf-3cfb-ac6c-bf7f27ab7151",
+                "position": 5,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "90461ead-6395-4cf5-96e8-c184fb0ec6e4",
+                    "number": "6",
+                    "title": "Je veux",
+                    "length": 218000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "64857fa6-d0de-4bc6-b160-ccdfaeff521b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "RTL : 50 Ans de chanson française",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6fb4ab0f-cfaf-4fed-b4b9-4fce472d5e9e",
+              "title": "RTL : 50 Ans de chanson française",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022-01-21",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2022-01-21",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 106,
+            "media": [
+              {
+                "id": "994971fb-1db3-3b83-bb65-fcc53dc5446f",
+                "position": 4,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cfeeda9b-bc83-49a6-bf80-f4427d896b49",
+                    "number": "3",
+                    "title": "Je veux",
+                    "length": 216000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "a23bc53c-9ba4-4b0a-8ac3-8bdf59c63f89",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "RFM Les grandes voix",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a81e848f-73d0-482e-afe2-67ef82f65ba2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RFM Les grandes Voix",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-30",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-03-30",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "3ab787c7-9b81-3c77-9676-a6e6307361a3",
+                "position": 5,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "72e02d2c-7b53-4196-b73a-81e33ff4a638",
+                    "number": "6",
+                    "title": "Je veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "83edc997-d7be-4cab-9838-338fb47c1205",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2010-05-10",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010-05-10",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "23ca3160-921c-3aad-bee3-51e9ab00e872",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6babb1db-c394-3618-94da-9072aec9d038",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "f97e712d-c3b1-4038-95f9-c039b0dfea61",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "RFM Les grandes Voix",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a81e848f-73d0-482e-afe2-67ef82f65ba2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RFM Les grandes Voix",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2020-02-07",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2020-02-07",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "294dfcc4-7a78-3247-bca7-b35352ea3c7f",
+                "position": 5,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "75797de1-6744-4fd4-8638-77c64e050600",
+                    "number": "6",
+                    "title": "Je veux",
+                    "length": 217880
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "91a45f73-e9e1-41f9-8797-9f1771d222f7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "NRJ Music Awards: Le coffret best of des 20 éditions",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7fcbe814-4d02-4443-83a7-0a5d1de2cd50",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Music Awards: Le coffret best of des 20 éditions",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "1e992087-8e8f-3409-8d80-41c33823fc92",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "870d5814-a1f5-4823-8cb4-f2899a797769",
+                    "number": "4",
+                    "title": "Je veux",
+                    "length": 217493
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "b6bdefe1-81ca-47d8-ab68-55ab9ab0de81",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "100 Tubes 2011, Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f3437212-5752-4564-aafa-ce4ff1918d9f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "100 Tubes 2011, Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-05",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2011-05",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "94428554-39a5-3a88-87b1-93a7b2aaf149",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "42ad9ecd-ef8d-46d1-a7b6-7eaf05f6e2b2",
+                    "number": "4",
+                    "title": "Je veux",
+                    "length": 215000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "72bcef71-0a42-4c11-89a1-3ca7bfb42556",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Ö3 Greatest Hits 56",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "22214b3f-8cb1-4cf8-b0a4-fcbc31cf7d5f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ö3 Greatest Hits 56",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2013-12-23",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2013-12-23",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 21,
+            "media": [
+              {
+                "id": "528c93be-befc-33be-b15e-1c8e84a7f204",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "147b1f23-1f21-480d-8e6f-9802ca41879b",
+                    "number": "18",
+                    "title": "Je veux",
+                    "length": 216346
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "c042e06f-8c17-45f4-b893-b23fb5e4fbaa",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Champs-Élysées, Volume 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8f25276d-2a7f-4e94-ab43-22e0fc432ac9",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Champs-Élysées, Volume 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-05-02",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2011-05-02",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 39,
+            "media": [
+              {
+                "id": "2cefbada-caed-3f8f-8f25-a1e29ef0b2f2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8eee8eee-d1c1-359b-95d7-fc5124875b46",
+                    "number": "20",
+                    "title": "Je veux",
+                    "length": 217240
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "811cb6bf-c2fe-47f9-96f5-2c0ca62aea65",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Je veux",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6c3edb18-802f-40d9-8493-fb7b8b58c4bb",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Je veux",
+              "primary-type": "Single"
+            },
+            "date": "2010-02-22",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010-02-22",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "a7d19677-75d9-3faa-bb40-d1b0e9d0e799",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8a379a6a-b622-3ff3-a0f4-0dca69524a68",
+                    "number": "1",
+                    "title": "Je veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "77ef83e1-2c87-41c9-a299-150ed1dfa8cf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Talents France Bleu",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "524b5ebc-5103-4c05-84ae-fcbae23a16b5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Talents France Bleu",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2013-02",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2013-02",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 31,
+            "media": [
+              {
+                "id": "fbb21556-f653-3146-905d-e10713433379",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a791cf97-97b6-4ada-8d9b-559fff688cd8",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 216240
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "81152934-f484-433c-b922-80e247ba962d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "NRJ Summer Hits Only 2010",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ac0dee2f-ee33-41e4-8ebf-1c113dfffe5a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Summer Hits Only 2010",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-06-28",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010-06-28",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "1d3e01c3-9615-30fa-8516-51135bc4ab7b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f2db6e24-387c-388b-8ed1-6269bd34cafc",
+                    "number": "5",
+                    "title": "Je veux",
+                    "length": 215933
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "ffba0a93-45d3-42fe-8afe-a9d081144cc8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "RTL Frühlings Hits 2011",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "10c784c0-cebe-4d49-b795-46aeb39dbd5c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RTL Frühlings Hits 2011",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-03-11",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-03-11",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "f106a980-0452-34cd-b7fd-d15f92e8b0e5",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "09f0708e-ee5b-354d-8a32-499997a6cbaa",
+                    "number": "20",
+                    "title": "Je veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "4159a4eb-959a-44dd-a28a-a519e085a670",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "RFM Les grandes Voix",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a81e848f-73d0-482e-afe2-67ef82f65ba2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RFM Les grandes Voix",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-30",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-03-30",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 83,
+            "media": [
+              {
+                "id": "1207833a-cafd-3dcb-a695-8a07adb58cf1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5548b8e6-6c28-42dc-98a4-eed4767df549",
+                    "number": "70",
+                    "title": "Je veux",
+                    "length": 217880
+                  }
+                ],
+                "track-count": 83,
+                "track-offset": 69
+              }
+            ]
+          },
+          {
+            "id": "50d6d36b-57b1-45a6-9b65-61f2f0b24cb6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "155264b0-c8f0-3ef4-8cae-0c683de0a7a7",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ZAZ",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2011-11-25",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2011-11-25",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "ec698fc2-37ff-3b48-ba75-52eaad3a823e",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "af870980-d4b5-4708-9c4e-7a907f65388c",
+                    "number": "A2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "f7866ca3-affa-40bf-b109-162f12ce3ce4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Pop Giganten: Urlaubs-Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "086dce8a-bf19-4d30-a2db-f4d1b75ad43d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pop Giganten: Urlaubs-Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-06-14",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2019-06-14",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "b68c0bf2-a0bc-3108-9a10-2de25194f54c",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "23f64366-9df7-4081-9339-021675bdd59c",
+                    "number": "21",
+                    "title": "Je veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 20
+              }
+            ]
+          },
+          {
+            "id": "585464fe-63f8-4929-ad4b-f996426ef85e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "30 Ans Victoires de la Musique",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d6126edf-686f-4549-9c16-132853ff5fe7",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "30 Ans Victoires de la Musique",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2015",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2015",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 48,
+            "media": [
+              {
+                "id": "6d2b339c-89a9-3b80-864a-cf5c8b57e04d",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "fcfc8dab-8e38-49e3-b45d-2d7fb3763f68",
+                    "number": "10",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "bd582705-3c04-48ac-af11-34851bf4d2a5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Cafe Puls Hits 11",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b25686f4-811e-4bdf-9413-d4e0f3a73621",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cafe Puls Hits 11",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-11-25",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2011-11-25",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 43,
+            "media": [
+              {
+                "id": "374de8e1-4134-3ef0-9a72-2b8b6ddf4ed2",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7216f0db-c286-4bc2-b709-7f3c53f6465d",
+                    "number": "20",
+                    "title": "Je veux",
+                    "length": 215000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "de5f5047-ee53-467f-aa78-853fbf2d649c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Cafe Puls Hits ’10",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e0a2f776-cbc5-46ee-a221-266f8c4a4137",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cafe Puls Hits ’10",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-11-26",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2010-11-26",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "a9fbce6a-602e-3dbd-8e14-67199f0a4fd8",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8eab365e-57be-4224-9a0f-aab0242b6075",
+                    "number": "16",
+                    "title": "Je veux",
+                    "length": 215000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "5f0f9c7b-96ef-4575-a5da-4c37a6155017",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "E.O.F.T. Best of Sound No. 3",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e00f3a60-b4f0-4591-ac38-2d0465056460",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "E.O.F.T. Best of Sound No. 3",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 12,
+            "media": [
+              {
+                "id": "b9f1a501-ed5d-3cbd-b8f9-d35acca76c14",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "87d72ee1-eb5a-4e14-863b-bc629605d9e6",
+                    "number": "5",
+                    "title": "Je veux"
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "defa92f1-ed32-426b-9c53-718b21adfa36",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2018-11-09",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-11-09",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "86e126a0-031c-315a-b485-4b06c708aa2e",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "043c26fd-645a-451e-aa08-909e6bb26df9",
+                    "number": "A2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "209d726c-7614-4e4d-8f88-982d10399a4f",
+            "status-id": "41121bb9-3413-3818-8a9a-9742318349aa",
+            "artist-credit-id": "61b2b9b6-9803-3ac0-8aba-9c8c5a66eb44",
+            "count": 1,
+            "title": "モンマルトルからのラブレター",
+            "status": "Pseudo-Release",
+            "artist-credit": [
+              {
+                "name": "ザーズ",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "track-count": 13,
+            "media": [
+              {
+                "id": "63abc820-cc79-3c50-b3aa-45e2558da990",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "18752db0-a5e0-4728-9aca-b4253e2b7c49",
+                    "number": "2",
+                    "title": "私の欲しいもの"
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "681fcc37-0325-4192-acf3-564f374a284d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bravo Hits 72",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b269088e-6e81-447f-8765-a9d400965968",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bravo Hits 72",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-02-11",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-02-11",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "d1626dc2-6724-30c2-8fc1-74eccffe5999",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "639667a2-6ec8-4844-8313-13597c2c0be4",
+                    "number": "17",
+                    "title": "Je veux",
+                    "length": 217320
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 16
+              }
+            ]
+          },
+          {
+            "id": "53e4b775-10c0-4845-a426-00acf6f86671",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Radio RAM & Magic Records Present RAM Café 5: Lounge & Chillout",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1282d48a-c085-4cbc-b564-bb90e303044d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Radio RAM & Magic Records Present RAM Café 5: Lounge & Chillout",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-10",
+            "country": "PL",
+            "release-events": [
+              {
+                "date": "2010-10",
+                "area": {
+                  "id": "dd7f80c8-f017-3d01-8608-2a8c9c32b954",
+                  "name": "Poland",
+                  "sort-name": "Poland",
+                  "iso-3166-1-codes": [
+                    "PL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "b6f35f64-9585-3ff6-9327-57077007727a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "fd8c037c-86d4-4c8d-b612-618903d9ce1c",
+                    "number": "5",
+                    "title": "Je veux",
+                    "length": 216000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "a02c211a-4632-46bc-b286-5eed90414029",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Pincode",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6ebf68e7-b52c-40be-954f-e76c0649097e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Pincode",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010",
+            "country": "PL",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "dd7f80c8-f017-3d01-8608-2a8c9c32b954",
+                  "name": "Poland",
+                  "sort-name": "Poland",
+                  "iso-3166-1-codes": [
+                    "PL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 31,
+            "media": [
+              {
+                "id": "616ff812-18f1-382c-a987-25338b95c98e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "15a024b0-4b14-3240-ab67-e58e7c8978dd",
+                    "number": "3",
+                    "title": "Je veux",
+                    "length": 213746
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "6777a0cd-05ff-4fdf-80fd-252eb6710c79",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "RTL Hits 2011",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "fc0eecd6-a493-42f1-8d9e-4b5dc02387ee",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RTL Hits 2011",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "9bfd6405-cf68-3eff-abfb-817687cd8e27",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "79658dc6-f6ab-3297-a1d4-50f0d227e7f8",
+                    "number": "20",
+                    "title": "Je veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "1780dbb3-820a-3970-a30c-b3f761543de5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2010-12",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010-12",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "570ebcf7-ea40-3c02-86df-9ce90bc06b14",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1da8ea37-633b-3f3b-94c7-78803f6ebc46",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "1d342b71-1b94-456f-94be-384fb48bb744",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2010",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "cc209675-63de-3bc0-a93b-23180c906487",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7675a987-ad7e-3477-b38c-ed75f628a9b2",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "0084e9ef-2017-41bb-99b2-13ff4e20401a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "M6 Hits : Été 2010",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2d0f720e-b834-4e2f-8526-19420e71c270",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "M6 Hits : Été 2010",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-07-19",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010-07-19",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 22,
+            "media": [
+              {
+                "id": "2e17a780-4152-3ca0-999f-1f0b47163c08",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e8a3653a-2eac-3d8c-aa0f-d31078d54005",
+                    "number": "1",
+                    "title": "Je veux",
+                    "length": 217026
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "da5c1196-e11e-4ab7-956a-8c189badd688",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bravo Hits 72",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b269088e-6e81-447f-8765-a9d400965968",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bravo Hits 72",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-02-11",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-02-11",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "d2048ebe-5c95-3682-884d-024002ae3d08",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "aa9a1047-ae28-3ce9-bb4e-2b1e63096036",
+                    "number": "17",
+                    "title": "Je veux",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 16
+              }
+            ]
+          },
+          {
+            "id": "ec044c89-2e66-4a4e-8af6-6481c04ec72d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Zaz",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2010",
+            "country": "PL",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "dd7f80c8-f017-3d01-8608-2a8c9c32b954",
+                  "name": "Poland",
+                  "sort-name": "Poland",
+                  "iso-3166-1-codes": [
+                    "PL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "09d060ba-0a4f-310c-a3b1-251b06f4336c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8126bf93-0172-35c9-877a-8d74b0c45469",
+                    "number": "2",
+                    "title": "Je veux",
+                    "length": 219186
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR2PY1000130",
+          "FR2PY0900131",
+          "FR2PY1000010"
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "jazz"
+          },
+          {
+            "count": 1,
+            "name": "swing"
+          },
+          {
+            "count": 1,
+            "name": "french pop"
+          },
+          {
+            "count": 1,
+            "name": "nu jazz"
+          },
+          {
+            "count": 1,
+            "name": "european pop"
+          },
+          {
+            "count": 1,
+            "name": "variété française"
+          },
+          {
+            "count": 1,
+            "name": "corsican polyphony"
+          }
+        ]
+      },
+      {
+        "id": "9be5c92d-cbf4-434e-ab84-82a0eabaa5f1",
+        "score": 100,
+        "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+        "title": "Je veux",
+        "length": 224000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zaz",
+            "artist": {
+              "id": "e3214827-bd09-4d53-a88c-893d61556352",
+              "name": "Zaz",
+              "sort-name": "Zaz",
+              "disambiguation": "French singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Zaz",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "fr",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Geffroy, Isabelle Véronique",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Isabelle Véronique Geffroy",
+                  "locale": "fr",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ザーズ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2013-06-07",
+        "releases": [
+          {
+            "id": "e54d94bc-0ed7-47dc-9c01-708d2c414287",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 1,
+            "title": "Spotify Sessions",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e53c6ecc-a172-4025-836e-561d1d3fe89a",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Spotify Sessions",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2013-06-07",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2013-06-07",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "e0087bc8-6af5-4131-9413-792ba0961e2a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "7217877a-72e2-4399-bac5-9dc4f4eb4dcd",
+                    "number": "5",
+                    "title": "Je veux",
+                    "length": 224000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "272d5387-8fbc-4237-b4d7-26026462ea57",
+        "score": 93,
+        "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+        "title": "Je veux (unplugged)",
+        "length": 227640,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zaz",
+            "artist": {
+              "id": "e3214827-bd09-4d53-a88c-893d61556352",
+              "name": "Zaz",
+              "sort-name": "Zaz",
+              "disambiguation": "French singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Zaz",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "fr",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Geffroy, Isabelle Véronique",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Isabelle Véronique Geffroy",
+                  "locale": "fr",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ザーズ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011-03-04",
+        "releases": [
+          {
+            "id": "9703802c-0108-40fb-865c-0bbf17960c98",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Zaz",
+            "status": "Official",
+            "disambiguation": "limited special edition",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "234039cd-6dc0-48fe-901e-3cb201db32d6",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zaz",
+              "primary-type": "Album"
+            },
+            "date": "2011-03-04",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-03-04",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "389bf0c4-0bf4-3eec-ae7a-dbaf3606ebdb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8f84167c-dc3b-3de5-9442-8fc922409369",
+                    "number": "12",
+                    "title": "Je veux (unplugged)",
+                    "length": 227640
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 11
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "jazz"
+          },
+          {
+            "count": 1,
+            "name": "variété française"
+          }
+        ]
+      },
+      {
+        "id": "90856de3-28d6-456e-8ef8-82580104409a",
+        "score": 87,
+        "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+        "title": "Je veux (version japonaise)",
+        "length": 218000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zaz",
+            "artist": {
+              "id": "e3214827-bd09-4d53-a88c-893d61556352",
+              "name": "Zaz",
+              "sort-name": "Zaz",
+              "disambiguation": "French singer-songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Zaz",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "fr",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Geffroy, Isabelle Véronique",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Isabelle Véronique Geffroy",
+                  "locale": "fr",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "ザーズ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Zaz",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2019-06-28",
+        "releases": [
+          {
+            "id": "1f868282-d938-48e2-80e4-fda51679c3c6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe34c331-b303-3dd5-b9c8-8df5ebedd809",
+            "count": 2,
+            "title": "Sur la route",
+            "status": "Official",
+            "disambiguation": "Part of coffret 4 albums",
+            "artist-credit": [
+              {
+                "name": "Zaz",
+                "artist": {
+                  "id": "e3214827-bd09-4d53-a88c-893d61556352",
+                  "name": "Zaz",
+                  "sort-name": "Zaz",
+                  "disambiguation": "French singer-songwriter"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e5b3f01-89fa-4031-90d7-c3a9e9e1f116",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sur la route",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2019-06-28",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2019-06-28",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 35,
+            "media": [
+              {
+                "id": "52ca7274-5c58-37bb-a652-00ec1811b9f2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c8fa3c86-efd1-4453-928e-593515d6025b",
+                    "number": "14",
+                    "title": "Je veux (version japonaise)",
+                    "length": 218000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 13
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

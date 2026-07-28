@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=PSY&recording_name=Gangnam+Style",
+  "fetched_at": "2026-07-28T12:16:13.160Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "PSY",
+      "recording_arg": "Gangnam Style",
+      "artist_credit_name": "PSY",
+      "release_name": "Gangnam Style",
+      "recording_name": "Gangnam Style",
+      "artist_credit_id": 1036987,
+      "artist_mbids": [
+        "f99b7d67-4e63-4678-aa66-4c6ac0f7d24a"
+      ],
+      "release_mbid": "ccc70e1f-b922-4878-ae9f-c78b1aa0d655",
+      "recording_mbid": "10ab3003-4385-43a0-bc7f-92aa3df8c6fd"
+    }
+  ]
+}

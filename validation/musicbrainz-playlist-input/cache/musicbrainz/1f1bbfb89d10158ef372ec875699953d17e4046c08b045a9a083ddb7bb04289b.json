@@ -1,0 +1,4133 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/7a0aecf5-0538-42d6-a468-78e0d3a9dead?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:39:54.823Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "video": false,
+    "tags": [
+      {
+        "name": "art rock",
+        "count": 1
+      },
+      {
+        "name": "electronic",
+        "count": 2
+      },
+      {
+        "name": "pop",
+        "count": 2
+      },
+      {
+        "count": 1,
+        "name": "rock"
+      },
+      {
+        "name": "synth-pop",
+        "count": 1
+      }
+    ],
+    "first-release-date": "2012-08-10",
+    "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+    "relations": [
+      {
+        "direction": "forward",
+        "attributes": [],
+        "ended": false,
+        "target-credit": "",
+        "begin": null,
+        "target-type": "work",
+        "attribute-values": {},
+        "type": "performance",
+        "source-credit": "",
+        "attribute-ids": {},
+        "work": {
+          "id": "0dffe206-0a59-34e3-996e-665b8638ff76",
+          "type": "Song",
+          "language": "eng",
+          "title": "Running Up That Hill",
+          "attributes": [],
+          "languages": [
+            "eng"
+          ],
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+          "iswcs": [
+            "T-010.003.164-8"
+          ],
+          "disambiguation": ""
+        },
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "end": null
+      }
+    ],
+    "genres": [
+      {
+        "count": 1,
+        "disambiguation": "",
+        "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+        "name": "art rock"
+      },
+      {
+        "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+        "name": "electronic",
+        "disambiguation": "",
+        "count": 2
+      },
+      {
+        "name": "pop",
+        "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+        "count": 2,
+        "disambiguation": ""
+      },
+      {
+        "name": "rock",
+        "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+        "count": 1,
+        "disambiguation": ""
+      },
+      {
+        "disambiguation": "",
+        "count": 1,
+        "name": "synth-pop",
+        "id": "988e91a3-3341-416d-b7f8-7dbef6848dac"
+      }
+    ],
+    "releases": [
+      {
+        "country": null,
+        "quality": "normal",
+        "id": "fed7fd8b-1129-428d-953d-8264c5dc5f70",
+        "release-group": {
+          "first-release-date": "2012-08-10",
+          "secondary-type-ids": [
+            "0c60f497-ff81-3818-befd-abfc84a4858b"
+          ],
+          "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "primary-type": "Single",
+          "tags": [],
+          "secondary-types": [
+            "Remix"
+          ],
+          "id": "46278b1b-47fd-4655-ba14-2eac2a310808",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "type": "Person",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                "country": "GB",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Kate Bush",
+                "disambiguation": "",
+                "sort-name": "Bush, Kate"
+              },
+              "name": "Kate Bush"
+            }
+          ],
+          "disambiguation": ""
+        },
+        "disambiguation": "",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "joinphrase": "",
+            "artist": {
+              "country": "GB",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "type": "Person",
+              "disambiguation": "",
+              "sort-name": "Bush, Kate",
+              "genres": [
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                  "name": "alternative pop"
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "name": "ambient pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 12,
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 7,
+                  "name": "art rock",
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "baroque pop",
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928"
+                },
+                {
+                  "name": "new wave",
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e",
+                  "name": "pop rock",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 10,
+                  "disambiguation": "",
+                  "name": "progressive pop",
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82"
+                },
+                {
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                  "name": "rock",
+                  "disambiguation": "",
+                  "count": 3
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "alternative pop"
+                },
+                {
+                  "name": "alternative rock music",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "ambient pop"
+                },
+                {
+                  "count": 12,
+                  "name": "art pop"
+                },
+                {
+                  "name": "art rock",
+                  "count": 7
+                },
+                {
+                  "count": 3,
+                  "name": "baroque pop"
+                },
+                {
+                  "count": 1,
+                  "name": "british"
+                },
+                {
+                  "count": 1,
+                  "name": "new wave"
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "name": "pop rock",
+                  "count": 1
+                },
+                {
+                  "name": "progressive pop",
+                  "count": 10
+                },
+                {
+                  "name": "progressive rock music",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "rock"
+                },
+                {
+                  "name": "sound recording executives and producers",
+                  "count": 1
+                },
+                {
+                  "name": "women composers",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "women rock musicians"
+                },
+                {
+                  "name": "women singers",
+                  "count": 1
+                }
+              ],
+              "name": "Kate Bush"
+            }
+          }
+        ],
+        "media": [
+          {
+            "position": 1,
+            "title": "",
+            "format": "Digital Media",
+            "track-offset": 0,
+            "id": "613b95a2-d045-38b6-a9e2-a3fd28b3c28f",
+            "track-count": 1,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "artist": {
+                      "country": "GB",
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "disambiguation": "",
+                      "sort-name": "Bush, Kate",
+                      "name": "Kate Bush",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "number": "1",
+                "id": "6b119ad2-d054-4fae-a982-20f6ba58892b",
+                "length": 331537,
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "position": 1
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "date": "2012-08-10",
+        "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+        "packaging": "None",
+        "status": "Official",
+        "tags": [],
+        "barcode": "5099940488455",
+        "release-events": [
+          {
+            "date": "2012-08-10",
+            "area": null
+          }
+        ]
+      },
+      {
+        "quality": "normal",
+        "country": null,
+        "id": "341dfb18-7867-42a9-99c8-d07579c95fcf",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "tags": [],
+          "primary-type": "Single",
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "secondary-types": [
+            "Remix"
+          ],
+          "secondary-type-ids": [
+            "0c60f497-ff81-3818-befd-abfc84a4858b"
+          ],
+          "first-release-date": "2012-08-10",
+          "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "GB",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                "type": "Person",
+                "sort-name": "Bush, Kate",
+                "disambiguation": "",
+                "name": "Kate Bush",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": "",
+              "name": "Kate Bush"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "id": "46278b1b-47fd-4655-ba14-2eac2a310808"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-count": 1,
+            "tracks": [
+              {
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "position": 1,
+                "length": 331537,
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "artist": {
+                      "country": "GB",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "type": "Person",
+                      "disambiguation": "",
+                      "sort-name": "Bush, Kate",
+                      "name": "Kate Bush",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "5b21c375-fefe-4fb7-844e-5b8649056784",
+                "number": "1"
+              }
+            ],
+            "format": "Digital Media",
+            "track-offset": 0,
+            "id": "09fc122e-22ac-39dd-aded-2a2e455bd69c",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "artist": {
+              "type": "Person",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "country": "GB",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Kate Bush",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "alternative pop"
+                },
+                {
+                  "count": 1,
+                  "name": "alternative rock music"
+                },
+                {
+                  "name": "ambient pop",
+                  "count": 3
+                },
+                {
+                  "count": 12,
+                  "name": "art pop"
+                },
+                {
+                  "count": 7,
+                  "name": "art rock"
+                },
+                {
+                  "name": "baroque pop",
+                  "count": 3
+                },
+                {
+                  "name": "british",
+                  "count": 1
+                },
+                {
+                  "name": "new wave",
+                  "count": 1
+                },
+                {
+                  "count": 4,
+                  "name": "pop"
+                },
+                {
+                  "count": 1,
+                  "name": "pop rock"
+                },
+                {
+                  "count": 10,
+                  "name": "progressive pop"
+                },
+                {
+                  "name": "progressive rock music",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "rock"
+                },
+                {
+                  "name": "sound recording executives and producers",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "women composers"
+                },
+                {
+                  "name": "women rock musicians",
+                  "count": 1
+                },
+                {
+                  "name": "women singers",
+                  "count": 1
+                }
+              ],
+              "genres": [
+                {
+                  "name": "alternative pop",
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "ambient pop",
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b"
+                },
+                {
+                  "count": 12,
+                  "disambiguation": "",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                  "name": "art rock",
+                  "count": 7,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "baroque pop",
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "new wave",
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "count": 4,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "pop rock",
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+                },
+                {
+                  "name": "progressive pop",
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                  "count": 10,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "rock",
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798"
+                }
+              ],
+              "sort-name": "Bush, Kate",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "genres": [],
+        "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+        "date": "2012-08-10",
+        "status": "Official",
+        "packaging": "None",
+        "release-events": [
+          {
+            "date": "2012-08-10",
+            "area": null
+          }
+        ],
+        "barcode": "5099940486659",
+        "tags": []
+      },
+      {
+        "tags": [],
+        "release-events": [
+          {
+            "date": "2012-08-13",
+            "area": null
+          }
+        ],
+        "barcode": "00600753399279",
+        "packaging": "None",
+        "status": "Official",
+        "date": "2012-08-13",
+        "title": "A Symphony of British Music: Music for the Closing Ceremony of the London 2012 Olympic Games",
+        "genres": [],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "joinphrase": "",
+            "artist": {
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists"
+            }
+          }
+        ],
+        "media": [
+          {
+            "track-offset": 10,
+            "format": "Digital Media",
+            "id": "9bf882ff-2ca7-3f63-bb62-154a6cb22d4b",
+            "position": 1,
+            "title": "",
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-count": 14,
+            "tracks": [
+              {
+                "id": "be23374d-f152-4ce9-9827-ad4590cc6ee5",
+                "number": "11",
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "alternative pop",
+                          "count": 1
+                        },
+                        {
+                          "name": "alternative rock music",
+                          "count": 1
+                        },
+                        {
+                          "count": 3,
+                          "name": "ambient pop"
+                        },
+                        {
+                          "count": 12,
+                          "name": "art pop"
+                        },
+                        {
+                          "count": 7,
+                          "name": "art rock"
+                        },
+                        {
+                          "name": "baroque pop",
+                          "count": 3
+                        },
+                        {
+                          "name": "british",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "new wave"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "name": "pop rock",
+                          "count": 1
+                        },
+                        {
+                          "count": 10,
+                          "name": "progressive pop"
+                        },
+                        {
+                          "name": "progressive rock music",
+                          "count": 1
+                        },
+                        {
+                          "count": 3,
+                          "name": "rock"
+                        },
+                        {
+                          "count": 1,
+                          "name": "sound recording executives and producers"
+                        },
+                        {
+                          "count": 1,
+                          "name": "women composers"
+                        },
+                        {
+                          "name": "women rock musicians",
+                          "count": 1
+                        },
+                        {
+                          "name": "women singers",
+                          "count": 1
+                        }
+                      ],
+                      "name": "Kate Bush",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                          "name": "alternative pop"
+                        },
+                        {
+                          "count": 3,
+                          "disambiguation": "",
+                          "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                          "name": "ambient pop"
+                        },
+                        {
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                          "name": "art pop",
+                          "disambiguation": "",
+                          "count": 12
+                        },
+                        {
+                          "count": 7,
+                          "disambiguation": "",
+                          "name": "art rock",
+                          "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                          "name": "baroque pop"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "new wave",
+                          "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 4,
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "797e2e85-5ffd-495c-a757-8b4079052f0e",
+                          "name": "pop rock"
+                        },
+                        {
+                          "name": "progressive pop",
+                          "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                          "count": 10,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "name": "rock",
+                          "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798"
+                        }
+                      ],
+                      "disambiguation": "",
+                      "sort-name": "Bush, Kate",
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "country": "GB"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Running Up That Hill (A Deal With God remix)",
+                "length": 332761,
+                "position": 11
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "id": "93178ae7-7d14-4aec-af12-efb5633f6968",
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "title": "A Symphony of British Music: Music for the Closing Ceremony of the London 2012 Olympic Games",
+          "secondary-type-ids": [
+            "22a628ad-c082-3c4f-b1b6-d41665107b88"
+          ],
+          "first-release-date": "2012-08-13",
+          "secondary-types": [
+            "Soundtrack"
+          ],
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+        },
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "id": "b28c1f07-ef8f-4738-9bdf-a31063f5b8b6",
+        "country": null,
+        "quality": "normal"
+      },
+      {
+        "title": "A Symphony of British Music: Music for the Closing Ceremony of the London 2012 Olympic Games",
+        "date": "2012-08-20",
+        "status": "Official",
+        "packaging": null,
+        "barcode": "600753403266",
+        "release-events": [
+          {
+            "date": "2012-08-20",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type-id": null,
+              "name": "United Kingdom",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            }
+          }
+        ],
+        "tags": [],
+        "country": "GB",
+        "quality": "normal",
+        "id": "b24c4853-c25f-4fec-9187-00df86ff02b1",
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "title": "A Symphony of British Music: Music for the Closing Ceremony of the London 2012 Olympic Games",
+          "secondary-type-ids": [
+            "22a628ad-c082-3c4f-b1b6-d41665107b88"
+          ],
+          "first-release-date": "2012-08-13",
+          "secondary-types": [
+            "Soundtrack"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "id": "93178ae7-7d14-4aec-af12-efb5633f6968",
+          "disambiguation": "",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86"
+              }
+            }
+          ]
+        },
+        "media": [
+          {
+            "position": 1,
+            "title": "",
+            "track-offset": 10,
+            "format": "CD",
+            "id": "58cc7b13-f6cf-3e31-ac2e-59f4605bc2e1",
+            "track-count": 14,
+            "tracks": [
+              {
+                "position": 11,
+                "title": "Running Up That Hill (A Deal with God remix)",
+                "length": 333640,
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "alternative pop",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "alternative rock music"
+                        },
+                        {
+                          "name": "ambient pop",
+                          "count": 3
+                        },
+                        {
+                          "count": 12,
+                          "name": "art pop"
+                        },
+                        {
+                          "name": "art rock",
+                          "count": 7
+                        },
+                        {
+                          "count": 3,
+                          "name": "baroque pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 1
+                        },
+                        {
+                          "name": "new wave",
+                          "count": 1
+                        },
+                        {
+                          "name": "pop",
+                          "count": 4
+                        },
+                        {
+                          "count": 1,
+                          "name": "pop rock"
+                        },
+                        {
+                          "name": "progressive pop",
+                          "count": 10
+                        },
+                        {
+                          "name": "progressive rock music",
+                          "count": 1
+                        },
+                        {
+                          "name": "rock",
+                          "count": 3
+                        },
+                        {
+                          "count": 1,
+                          "name": "sound recording executives and producers"
+                        },
+                        {
+                          "count": 1,
+                          "name": "women composers"
+                        },
+                        {
+                          "count": 1,
+                          "name": "women rock musicians"
+                        },
+                        {
+                          "count": 1,
+                          "name": "women singers"
+                        }
+                      ],
+                      "name": "Kate Bush",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "alternative pop",
+                          "id": "d3ebe947-7c03-43f5-b333-09379881b0f6"
+                        },
+                        {
+                          "count": 3,
+                          "disambiguation": "",
+                          "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                          "name": "ambient pop"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 12,
+                          "name": "art pop",
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                        },
+                        {
+                          "count": 7,
+                          "disambiguation": "",
+                          "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                          "name": "art rock"
+                        },
+                        {
+                          "count": 3,
+                          "disambiguation": "",
+                          "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                          "name": "baroque pop"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb",
+                          "name": "new wave"
+                        },
+                        {
+                          "count": 4,
+                          "disambiguation": "",
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                        },
+                        {
+                          "name": "pop rock",
+                          "id": "797e2e85-5ffd-495c-a757-8b4079052f0e",
+                          "disambiguation": "",
+                          "count": 1
+                        },
+                        {
+                          "name": "progressive pop",
+                          "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                          "disambiguation": "",
+                          "count": 10
+                        },
+                        {
+                          "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                          "name": "rock",
+                          "count": 3,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": "",
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "country": "GB"
+                    },
+                    "name": "Kate Bush"
+                  }
+                ],
+                "id": "52b0ac15-3b78-3dce-ad94-d2030ff161cf",
+                "number": "11"
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "artist": {
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "genres": [],
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null
+            },
+            "joinphrase": "",
+            "name": "Various Artists"
+          }
+        ]
+      },
+      {
+        "country": "XE",
+        "quality": "normal",
+        "id": "5f9d3b62-4563-4fba-b93a-6fc6aab5a8a8",
+        "release-group": {
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Kate Bush",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "",
+                "sort-name": "Bush, Kate",
+                "name": "Kate Bush",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "type": "Person",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396"
+              }
+            }
+          ],
+          "genres": [],
+          "id": "46278b1b-47fd-4655-ba14-2eac2a310808",
+          "secondary-types": [
+            "Remix"
+          ],
+          "tags": [],
+          "primary-type": "Single",
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+          "first-release-date": "2012-08-10",
+          "secondary-type-ids": [
+            "0c60f497-ff81-3818-befd-abfc84a4858b"
+          ]
+        },
+        "packaging-id": "815b7785-8284-3926-8f04-e48bc6c4d102",
+        "disambiguation": "picture disc",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "joinphrase": "",
+            "artist": {
+              "type": "Person",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "country": "GB",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "alternative pop"
+                },
+                {
+                  "count": 1,
+                  "name": "alternative rock music"
+                },
+                {
+                  "count": 3,
+                  "name": "ambient pop"
+                },
+                {
+                  "count": 12,
+                  "name": "art pop"
+                },
+                {
+                  "count": 7,
+                  "name": "art rock"
+                },
+                {
+                  "count": 3,
+                  "name": "baroque pop"
+                },
+                {
+                  "name": "british",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "new wave"
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "count": 1,
+                  "name": "pop rock"
+                },
+                {
+                  "name": "progressive pop",
+                  "count": 10
+                },
+                {
+                  "name": "progressive rock music",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "rock"
+                },
+                {
+                  "count": 1,
+                  "name": "sound recording executives and producers"
+                },
+                {
+                  "count": 1,
+                  "name": "women composers"
+                },
+                {
+                  "name": "women rock musicians",
+                  "count": 1
+                },
+                {
+                  "name": "women singers",
+                  "count": 1
+                }
+              ],
+              "name": "Kate Bush",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                  "name": "alternative pop"
+                },
+                {
+                  "name": "ambient pop",
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop",
+                  "count": 12,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 7,
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                  "name": "art rock"
+                },
+                {
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                  "name": "baroque pop",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "new wave",
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 4,
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "pop rock",
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 10,
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                  "name": "progressive pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "rock",
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798"
+                }
+              ],
+              "disambiguation": "",
+              "sort-name": "Bush, Kate"
+            }
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "media": [
+          {
+            "title": "",
+            "position": 1,
+            "id": "de51de4d-d200-395c-9f17-453f66e67b14",
+            "format": "10\" Vinyl",
+            "track-offset": 0,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "artist": {
+                      "country": "GB",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "type": "Person",
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": "",
+                      "name": "Kate Bush",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "b2105e1f-1387-47d3-a7ae-a510c6c70191",
+                "number": "A",
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "length": null,
+                "position": 1
+              }
+            ],
+            "track-count": 2,
+            "format-id": "3155d2b6-52fd-3952-bda3-bd7c429d038d"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "date": "2013-04-20",
+        "title": "Running Up That Hill (A Deal With God) (2012 remix) / Walk Straight Down the Middle",
+        "packaging": "Other",
+        "status": "Official",
+        "tags": [],
+        "release-events": [
+          {
+            "date": "2013-04-20",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Europe",
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "type-id": null,
+              "name": "Europe",
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "type": null
+            }
+          }
+        ],
+        "barcode": "5099923277472"
+      },
+      {
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2013-06-28",
+          "title": "Café del Mar, Volumen Diecinueve",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "genres": [],
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "tags": [
+                  {
+                    "name": "absolute",
+                    "count": 1
+                  },
+                  {
+                    "count": 1,
+                    "name": "aggro berlin"
+                  },
+                  {
+                    "count": 1,
+                    "name": "ansage"
+                  },
+                  {
+                    "count": 8,
+                    "name": "compilation"
+                  },
+                  {
+                    "name": "score",
+                    "count": 1
+                  },
+                  {
+                    "name": "soundtrack",
+                    "count": 2
+                  },
+                  {
+                    "name": "special purpose",
+                    "count": 9
+                  },
+                  {
+                    "name": "special purpose artist",
+                    "count": 66
+                  }
+                ],
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "id": "0fde4f98-ae21-4390-916c-064551e5d464"
+        },
+        "media": [
+          {
+            "track-count": 13,
+            "tracks": [
+              {
+                "id": "9547ac7a-5a95-451a-8409-1c0fa1930642",
+                "number": "10",
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "joinphrase": "",
+                    "artist": {
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "country": "GB",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "alternative pop"
+                        },
+                        {
+                          "name": "alternative rock music",
+                          "count": 1
+                        },
+                        {
+                          "name": "ambient pop",
+                          "count": 3
+                        },
+                        {
+                          "count": 12,
+                          "name": "art pop"
+                        },
+                        {
+                          "count": 7,
+                          "name": "art rock"
+                        },
+                        {
+                          "count": 3,
+                          "name": "baroque pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "new wave"
+                        },
+                        {
+                          "name": "pop",
+                          "count": 4
+                        },
+                        {
+                          "count": 1,
+                          "name": "pop rock"
+                        },
+                        {
+                          "count": 10,
+                          "name": "progressive pop"
+                        },
+                        {
+                          "count": 1,
+                          "name": "progressive rock music"
+                        },
+                        {
+                          "count": 3,
+                          "name": "rock"
+                        },
+                        {
+                          "count": 1,
+                          "name": "sound recording executives and producers"
+                        },
+                        {
+                          "name": "women composers",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "women rock musicians"
+                        },
+                        {
+                          "count": 1,
+                          "name": "women singers"
+                        }
+                      ],
+                      "name": "Kate Bush",
+                      "genres": [
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                          "name": "alternative pop"
+                        },
+                        {
+                          "count": 3,
+                          "disambiguation": "",
+                          "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                          "name": "ambient pop"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 12,
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                          "name": "art pop"
+                        },
+                        {
+                          "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                          "name": "art rock",
+                          "count": 7,
+                          "disambiguation": ""
+                        },
+                        {
+                          "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                          "name": "baroque pop",
+                          "disambiguation": "",
+                          "count": 3
+                        },
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "name": "new wave",
+                          "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb"
+                        },
+                        {
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "name": "pop",
+                          "count": 4,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "pop rock",
+                          "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+                        },
+                        {
+                          "name": "progressive pop",
+                          "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                          "count": 10,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                          "name": "rock"
+                        }
+                      ],
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": ""
+                    }
+                  }
+                ],
+                "title": "Running Up That Hill (A Deal With God 2012 Remix)",
+                "position": 10,
+                "length": null
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "format": "CD",
+            "track-offset": 9,
+            "id": "82499f2f-1c3c-3c51-864f-5c4032c8b99f"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "artist": {
+              "id": "3896d068-cba7-4df0-b2ec-cbd226eadbb8",
+              "type": "Person",
+              "country": "FI",
+              "genres": [],
+              "tags": [],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Toni Simonen",
+              "disambiguation": "",
+              "sort-name": "Simonen, Toni"
+            },
+            "joinphrase": "",
+            "name": "Toni Simonen"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "country": "XW",
+        "quality": "normal",
+        "id": "7fae77de-9ef0-48e4-8783-686147cf2323",
+        "release-events": [
+          {
+            "date": "2013-06-28",
+            "area": {
+              "type": null,
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "name": "[Worldwide]"
+            }
+          }
+        ],
+        "barcode": null,
+        "tags": [],
+        "title": "Café del Mar XIX",
+        "date": "2013-06-28",
+        "status": "Official",
+        "packaging": "Jewel Case"
+      },
+      {
+        "genres": [],
+        "text-representation": {
+          "language": "deu",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Simonen, Toni",
+              "disambiguation": "",
+              "genres": [],
+              "name": "Toni Simonen",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [],
+              "country": "FI",
+              "id": "3896d068-cba7-4df0-b2ec-cbd226eadbb8",
+              "type": "Person"
+            },
+            "name": "Toni Simonen"
+          }
+        ],
+        "media": [
+          {
+            "id": "82a26233-32fb-3021-82bf-6071729d4138",
+            "format": "CD",
+            "track-offset": 9,
+            "position": 1,
+            "title": "",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "number": "10",
+                "id": "f71fbed2-aff1-4097-b56d-64447d1acb2b",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "country": "GB",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "count": 1,
+                          "name": "alternative pop"
+                        },
+                        {
+                          "count": 1,
+                          "name": "alternative rock music"
+                        },
+                        {
+                          "name": "ambient pop",
+                          "count": 3
+                        },
+                        {
+                          "name": "art pop",
+                          "count": 12
+                        },
+                        {
+                          "name": "art rock",
+                          "count": 7
+                        },
+                        {
+                          "count": 3,
+                          "name": "baroque pop"
+                        },
+                        {
+                          "name": "british",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "new wave"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "count": 1,
+                          "name": "pop rock"
+                        },
+                        {
+                          "name": "progressive pop",
+                          "count": 10
+                        },
+                        {
+                          "count": 1,
+                          "name": "progressive rock music"
+                        },
+                        {
+                          "name": "rock",
+                          "count": 3
+                        },
+                        {
+                          "count": 1,
+                          "name": "sound recording executives and producers"
+                        },
+                        {
+                          "name": "women composers",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "women rock musicians"
+                        },
+                        {
+                          "name": "women singers",
+                          "count": 1
+                        }
+                      ],
+                      "name": "Kate Bush",
+                      "genres": [
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                          "name": "alternative pop"
+                        },
+                        {
+                          "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                          "name": "ambient pop",
+                          "count": 3,
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "art pop",
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                          "count": 12,
+                          "disambiguation": ""
+                        },
+                        {
+                          "count": 7,
+                          "disambiguation": "",
+                          "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                          "name": "art rock"
+                        },
+                        {
+                          "name": "baroque pop",
+                          "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                          "count": 3,
+                          "disambiguation": ""
+                        },
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb",
+                          "name": "new wave"
+                        },
+                        {
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                          "count": 4,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "pop rock",
+                          "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+                        },
+                        {
+                          "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                          "name": "progressive pop",
+                          "disambiguation": "",
+                          "count": 10
+                        },
+                        {
+                          "name": "rock",
+                          "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                          "count": 3,
+                          "disambiguation": ""
+                        }
+                      ],
+                      "disambiguation": "",
+                      "sort-name": "Bush, Kate"
+                    },
+                    "joinphrase": "",
+                    "name": "Kate Bush"
+                  }
+                ],
+                "position": 10,
+                "title": "Running Up That Hill (A Deal with God) (remix)",
+                "length": 333000
+              }
+            ],
+            "track-count": 13
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "title": "Café del Mar, Volumen Diecinueve",
+          "first-release-date": "2013-06-28",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "id": "0fde4f98-ae21-4390-916c-064551e5d464",
+          "disambiguation": "",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null,
+                "genres": [],
+                "tags": [
+                  {
+                    "count": 1,
+                    "name": "absolute"
+                  },
+                  {
+                    "name": "aggro berlin",
+                    "count": 1
+                  },
+                  {
+                    "name": "ansage",
+                    "count": 1
+                  },
+                  {
+                    "count": 8,
+                    "name": "compilation"
+                  },
+                  {
+                    "name": "score",
+                    "count": 1
+                  },
+                  {
+                    "name": "soundtrack",
+                    "count": 2
+                  },
+                  {
+                    "name": "special purpose",
+                    "count": 9
+                  },
+                  {
+                    "count": 66,
+                    "name": "special purpose artist"
+                  }
+                ],
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": []
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "id": "c960a43f-fcb5-40d6-8656-232053012fcd",
+        "country": null,
+        "quality": "normal",
+        "tags": [],
+        "barcode": null,
+        "release-events": [
+          {
+            "date": "2013-06-28",
+            "area": null
+          }
+        ],
+        "packaging": null,
+        "status": "Official",
+        "date": "2013-06-28",
+        "title": "Café del Mar, volumen diecinueve"
+      },
+      {
+        "packaging": "Digipak",
+        "status": "Official",
+        "date": "2013-07-09",
+        "title": "Café del Mar, volumen diecinueve",
+        "tags": [],
+        "release-events": [
+          {
+            "date": "2013-07-09",
+            "area": {
+              "sort-name": "Spain",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "ES"
+              ],
+              "name": "Spain",
+              "type": null,
+              "id": "471c46a7-afc5-31c4-923c-d0444f5053a4"
+            }
+          }
+        ],
+        "barcode": "8431042022033",
+        "id": "530a6002-ba5d-42c1-819e-9e6f77e2f042",
+        "country": "ES",
+        "quality": "normal",
+        "genres": [],
+        "text-representation": {
+          "language": "spa",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "genres": [],
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null
+            },
+            "joinphrase": ""
+          }
+        ],
+        "media": [
+          {
+            "title": "",
+            "position": 1,
+            "id": "6f24331c-0ec6-3ae7-a6d7-44200491bc1d",
+            "format": "CD",
+            "track-offset": 9,
+            "tracks": [
+              {
+                "number": "10",
+                "id": "62c89ed7-c231-4e3e-9dec-0dc01143fb94",
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "GB",
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": "",
+                      "name": "Kate Bush",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "tags": [
+                        {
+                          "name": "alternative pop",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "alternative rock music"
+                        },
+                        {
+                          "count": 3,
+                          "name": "ambient pop"
+                        },
+                        {
+                          "count": 12,
+                          "name": "art pop"
+                        },
+                        {
+                          "name": "art rock",
+                          "count": 7
+                        },
+                        {
+                          "count": 3,
+                          "name": "baroque pop"
+                        },
+                        {
+                          "count": 1,
+                          "name": "british"
+                        },
+                        {
+                          "count": 1,
+                          "name": "new wave"
+                        },
+                        {
+                          "count": 4,
+                          "name": "pop"
+                        },
+                        {
+                          "count": 1,
+                          "name": "pop rock"
+                        },
+                        {
+                          "name": "progressive pop",
+                          "count": 10
+                        },
+                        {
+                          "name": "progressive rock music",
+                          "count": 1
+                        },
+                        {
+                          "name": "rock",
+                          "count": 3
+                        },
+                        {
+                          "name": "sound recording executives and producers",
+                          "count": 1
+                        },
+                        {
+                          "name": "women composers",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "women rock musicians"
+                        },
+                        {
+                          "count": 1,
+                          "name": "women singers"
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "alternative pop",
+                          "id": "d3ebe947-7c03-43f5-b333-09379881b0f6"
+                        },
+                        {
+                          "name": "ambient pop",
+                          "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                          "disambiguation": "",
+                          "count": 3
+                        },
+                        {
+                          "count": 12,
+                          "disambiguation": "",
+                          "name": "art pop",
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                        },
+                        {
+                          "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                          "name": "art rock",
+                          "count": 7,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "name": "baroque pop",
+                          "id": "150eb95a-7739-4fde-a5fe-b62ca576a928"
+                        },
+                        {
+                          "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb",
+                          "name": "new wave",
+                          "count": 1,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 4,
+                          "name": "pop",
+                          "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                        },
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "name": "pop rock",
+                          "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+                        },
+                        {
+                          "count": 10,
+                          "disambiguation": "",
+                          "name": "progressive pop",
+                          "id": "489ebed8-1299-4761-ba0b-29d381085f82"
+                        },
+                        {
+                          "count": 3,
+                          "disambiguation": "",
+                          "name": "rock",
+                          "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "title": "Running Up That Hill (A Deal with God) (2012 remix)",
+                "length": 333000,
+                "position": 10
+              }
+            ],
+            "track-count": 13,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "first-release-date": "2013-06-28",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Café del Mar, Volumen Diecinueve",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "0fde4f98-ae21-4390-916c-064551e5d464",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null
+              },
+              "joinphrase": "",
+              "name": "Various Artists"
+            }
+          ],
+          "disambiguation": ""
+        },
+        "disambiguation": "",
+        "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246"
+      },
+      {
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "title": "12\" Mixes",
+            "position": 1,
+            "id": "637ea0ec-1cd1-35ca-a407-5c332fc5532d",
+            "format": "12\" Vinyl",
+            "track-offset": 0,
+            "tracks": [
+              {
+                "title": "Running Up That Hill (A Deal with God)",
+                "position": 1,
+                "length": null,
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "artist": {
+                      "country": "GB",
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": "",
+                      "name": "Kate Bush",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "744adb15-d95a-4abd-b6c9-33d89ec03113",
+                "number": "A1"
+              }
+            ],
+            "track-count": 5,
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "joinphrase": "",
+            "artist": {
+              "genres": [
+                {
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                  "name": "alternative pop",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "name": "ambient pop"
+                },
+                {
+                  "count": 12,
+                  "disambiguation": "",
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 7,
+                  "name": "art rock",
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b"
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                  "name": "baroque pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "new wave",
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb"
+                },
+                {
+                  "count": 4,
+                  "disambiguation": "",
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "pop rock",
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+                },
+                {
+                  "count": 10,
+                  "disambiguation": "",
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                  "name": "progressive pop"
+                },
+                {
+                  "name": "rock",
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                  "disambiguation": "",
+                  "count": 3
+                }
+              ],
+              "name": "Kate Bush",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "alternative pop"
+                },
+                {
+                  "count": 1,
+                  "name": "alternative rock music"
+                },
+                {
+                  "name": "ambient pop",
+                  "count": 3
+                },
+                {
+                  "count": 12,
+                  "name": "art pop"
+                },
+                {
+                  "count": 7,
+                  "name": "art rock"
+                },
+                {
+                  "count": 3,
+                  "name": "baroque pop"
+                },
+                {
+                  "count": 1,
+                  "name": "british"
+                },
+                {
+                  "name": "new wave",
+                  "count": 1
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "count": 1,
+                  "name": "pop rock"
+                },
+                {
+                  "count": 10,
+                  "name": "progressive pop"
+                },
+                {
+                  "name": "progressive rock music",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "rock"
+                },
+                {
+                  "count": 1,
+                  "name": "sound recording executives and producers"
+                },
+                {
+                  "count": 1,
+                  "name": "women composers"
+                },
+                {
+                  "name": "women rock musicians",
+                  "count": 1
+                },
+                {
+                  "name": "women singers",
+                  "count": 1
+                }
+              ],
+              "sort-name": "Bush, Kate",
+              "disambiguation": "",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "type": "Person",
+              "country": "GB"
+            }
+          }
+        ],
+        "genres": [],
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "title": "The Other Sides",
+          "first-release-date": "2018-11-30",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "id": "af71236e-1c04-431b-a53d-909b72ba9f2b",
+          "disambiguation": "Remastered, Part IV",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "country": "GB",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                "type": "Person",
+                "disambiguation": "",
+                "sort-name": "Bush, Kate",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Kate Bush"
+              },
+              "name": "Kate Bush"
+            }
+          ],
+          "releases": [],
+          "genres": []
+        },
+        "id": "75a9ae2e-586a-47c6-8e8b-74a2bae9be3c",
+        "quality": "normal",
+        "country": "XE",
+        "release-events": [
+          {
+            "area": {
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "type": null,
+              "name": "Europe",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "sort-name": "Europe",
+              "disambiguation": ""
+            },
+            "date": "2018-11-30"
+          }
+        ],
+        "barcode": "0190295593926",
+        "tags": [],
+        "status": "Official",
+        "packaging": null,
+        "title": "Remastered in Vinyl IV",
+        "date": "2018-11-30"
+      },
+      {
+        "date": "2018-11-30",
+        "title": "Remastered, Part II",
+        "packaging": "Other",
+        "status": "Official",
+        "tags": [],
+        "barcode": "0190295568993",
+        "release-events": [
+          {
+            "date": "2018-11-30",
+            "area": {
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "name": "Europe",
+              "disambiguation": "",
+              "sort-name": "Europe"
+            }
+          }
+        ],
+        "quality": "normal",
+        "country": "XE",
+        "id": "85cf6cec-5821-42c0-b7af-4ed71157160e",
+        "release-group": {
+          "id": "1b7b587e-53f3-410e-af9f-c816dd3b4ed0",
+          "disambiguation": "",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "",
+                "sort-name": "Bush, Kate",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Kate Bush",
+                "country": "GB",
+                "type": "Person",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396"
+              },
+              "name": "Kate Bush"
+            }
+          ],
+          "title": "Remastered, Part II",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2018-11-30",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": []
+        },
+        "disambiguation": "",
+        "packaging-id": "815b7785-8284-3926-8f04-e48bc6c4d102",
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "artist": {
+              "genres": [
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "alternative pop",
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6"
+                },
+                {
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "name": "ambient pop",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "disambiguation": "",
+                  "count": 12
+                },
+                {
+                  "count": 7,
+                  "disambiguation": "",
+                  "name": "art rock",
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b"
+                },
+                {
+                  "name": "baroque pop",
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb",
+                  "name": "new wave",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "count": 4,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "pop rock",
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "disambiguation": "",
+                  "count": 10,
+                  "name": "progressive pop",
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82"
+                },
+                {
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                  "name": "rock",
+                  "count": 3,
+                  "disambiguation": ""
+                }
+              ],
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "alternative pop"
+                },
+                {
+                  "count": 1,
+                  "name": "alternative rock music"
+                },
+                {
+                  "name": "ambient pop",
+                  "count": 3
+                },
+                {
+                  "name": "art pop",
+                  "count": 12
+                },
+                {
+                  "count": 7,
+                  "name": "art rock"
+                },
+                {
+                  "count": 3,
+                  "name": "baroque pop"
+                },
+                {
+                  "name": "british",
+                  "count": 1
+                },
+                {
+                  "name": "new wave",
+                  "count": 1
+                },
+                {
+                  "count": 4,
+                  "name": "pop"
+                },
+                {
+                  "name": "pop rock",
+                  "count": 1
+                },
+                {
+                  "count": 10,
+                  "name": "progressive pop"
+                },
+                {
+                  "name": "progressive rock music",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "rock"
+                },
+                {
+                  "count": 1,
+                  "name": "sound recording executives and producers"
+                },
+                {
+                  "name": "women composers",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "women rock musicians"
+                },
+                {
+                  "name": "women singers",
+                  "count": 1
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Kate Bush",
+              "sort-name": "Bush, Kate",
+              "disambiguation": "",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "type": "Person",
+              "country": "GB"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "position": 9,
+            "title": "The Other Sides: The Other Side 1",
+            "format": "CD",
+            "track-offset": 9,
+            "id": "4a82e592-6c9e-36cf-ba9e-8b3c2df4b3ef",
+            "track-count": 10,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "artist": {
+                      "country": "GB",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "type": "Person",
+                      "disambiguation": "",
+                      "sort-name": "Bush, Kate",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Kate Bush"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "414bc999-6d1d-4d20-82e7-f7d874867b25",
+                "number": "10",
+                "length": 336173,
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "position": 10
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ]
+      },
+      {
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "disambiguation": "Remastered, Part IV",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Bush, Kate",
+                "disambiguation": "",
+                "name": "Kate Bush",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "type": "Person",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396"
+              },
+              "name": "Kate Bush"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "id": "af71236e-1c04-431b-a53d-909b72ba9f2b",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "title": "The Other Sides",
+          "first-release-date": "2018-11-30",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ]
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "type": "Person",
+                      "country": "GB",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Kate Bush",
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": ""
+                    },
+                    "joinphrase": "",
+                    "name": "Kate Bush"
+                  }
+                ],
+                "number": "10",
+                "id": "736f8d58-1a5a-454b-8b7b-708d86abec63",
+                "length": 336173,
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "position": 10
+              }
+            ],
+            "track-count": 10,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "position": 2,
+            "title": "The Other Side 1",
+            "id": "da350a04-ff80-39ba-9df6-baf3bb6a90ee",
+            "format": "Digital Media",
+            "track-offset": 9
+          }
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "disambiguation": "",
+              "sort-name": "Bush, Kate",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "alternative pop",
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "name": "ambient pop"
+                },
+                {
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop",
+                  "disambiguation": "",
+                  "count": 12
+                },
+                {
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                  "name": "art rock",
+                  "disambiguation": "",
+                  "count": 7
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "baroque pop",
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928"
+                },
+                {
+                  "name": "new wave",
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "count": 4,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e",
+                  "name": "pop rock",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 10,
+                  "name": "progressive pop",
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82"
+                },
+                {
+                  "name": "rock",
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                  "disambiguation": "",
+                  "count": 3
+                }
+              ],
+              "name": "Kate Bush",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "alternative pop"
+                },
+                {
+                  "name": "alternative rock music",
+                  "count": 1
+                },
+                {
+                  "name": "ambient pop",
+                  "count": 3
+                },
+                {
+                  "count": 12,
+                  "name": "art pop"
+                },
+                {
+                  "name": "art rock",
+                  "count": 7
+                },
+                {
+                  "count": 3,
+                  "name": "baroque pop"
+                },
+                {
+                  "count": 1,
+                  "name": "british"
+                },
+                {
+                  "name": "new wave",
+                  "count": 1
+                },
+                {
+                  "count": 4,
+                  "name": "pop"
+                },
+                {
+                  "name": "pop rock",
+                  "count": 1
+                },
+                {
+                  "name": "progressive pop",
+                  "count": 10
+                },
+                {
+                  "name": "progressive rock music",
+                  "count": 1
+                },
+                {
+                  "name": "rock",
+                  "count": 3
+                },
+                {
+                  "count": 1,
+                  "name": "sound recording executives and producers"
+                },
+                {
+                  "count": 1,
+                  "name": "women composers"
+                },
+                {
+                  "count": 1,
+                  "name": "women rock musicians"
+                },
+                {
+                  "name": "women singers",
+                  "count": 1
+                }
+              ],
+              "country": "GB",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "type": "Person"
+            },
+            "name": "Kate Bush"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [],
+        "quality": "normal",
+        "country": null,
+        "id": "5acc35a8-7177-45c7-99c9-b3b604f8d6a4",
+        "release-events": [
+          {
+            "area": null,
+            "date": "2018-11-30"
+          }
+        ],
+        "barcode": null,
+        "tags": [],
+        "title": "Remastered, Pt. IV",
+        "date": "2018-11-30",
+        "status": "Official",
+        "packaging": "None"
+      },
+      {
+        "barcode": "190295501389",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "name": "[Worldwide]",
+              "type": null,
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+            },
+            "date": "2018-11-30"
+          },
+          {
+            "date": "2022",
+            "area": {
+              "name": "United States",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "disambiguation": "",
+              "sort-name": "United States",
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "type": null
+            }
+          }
+        ],
+        "tags": [],
+        "title": "Selection from ‘The Other Sides’",
+        "date": "2018-11-30",
+        "status": "Official",
+        "packaging": "None",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "title": "Selection from ‘The Other Sides’",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2018-11-30",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "tags": [],
+          "primary-type": "EP",
+          "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+          "id": "eb86960f-7902-4971-9ad1-cb4d2a332501",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Kate Bush",
+              "artist": {
+                "sort-name": "Bush, Kate",
+                "disambiguation": "",
+                "name": "Kate Bush",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                "type": "Person"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": []
+        },
+        "media": [
+          {
+            "track-count": 9,
+            "tracks": [
+              {
+                "length": 334013,
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "position": 6,
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "type": "Person",
+                      "country": "GB",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Kate Bush",
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": ""
+                    },
+                    "name": "Kate Bush"
+                  }
+                ],
+                "number": "6",
+                "id": "9164f698-2ed9-4249-8143-1f5c658a30ff"
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "title": "",
+            "position": 1,
+            "format": "Digital Media",
+            "track-offset": 5,
+            "id": "510492c3-8288-3c18-8867-5d7c78ab2f85"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "artist": {
+              "country": "GB",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "type": "Person",
+              "sort-name": "Bush, Kate",
+              "disambiguation": "",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                  "name": "alternative pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "name": "ambient pop"
+                },
+                {
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "disambiguation": "",
+                  "count": 12
+                },
+                {
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                  "name": "art rock",
+                  "disambiguation": "",
+                  "count": 7
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                  "name": "baroque pop"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "new wave",
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 4,
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "pop rock",
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+                },
+                {
+                  "count": 10,
+                  "disambiguation": "",
+                  "name": "progressive pop",
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82"
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                  "name": "rock"
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "name": "alternative pop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "alternative rock music"
+                },
+                {
+                  "count": 3,
+                  "name": "ambient pop"
+                },
+                {
+                  "name": "art pop",
+                  "count": 12
+                },
+                {
+                  "count": 7,
+                  "name": "art rock"
+                },
+                {
+                  "count": 3,
+                  "name": "baroque pop"
+                },
+                {
+                  "name": "british",
+                  "count": 1
+                },
+                {
+                  "name": "new wave",
+                  "count": 1
+                },
+                {
+                  "count": 4,
+                  "name": "pop"
+                },
+                {
+                  "count": 1,
+                  "name": "pop rock"
+                },
+                {
+                  "name": "progressive pop",
+                  "count": 10
+                },
+                {
+                  "count": 1,
+                  "name": "progressive rock music"
+                },
+                {
+                  "count": 3,
+                  "name": "rock"
+                },
+                {
+                  "name": "sound recording executives and producers",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "women composers"
+                },
+                {
+                  "count": 1,
+                  "name": "women rock musicians"
+                },
+                {
+                  "count": 1,
+                  "name": "women singers"
+                }
+              ],
+              "name": "Kate Bush"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "country": "XW",
+        "quality": "normal",
+        "id": "6d86dd1a-b94a-4f26-aeea-367dab41968d"
+      },
+      {
+        "tags": [],
+        "release-events": [
+          {
+            "date": "2018-11-30",
+            "area": {
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type-id": null,
+              "name": "United Kingdom",
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            }
+          }
+        ],
+        "barcode": null,
+        "packaging": null,
+        "status": "Official",
+        "date": "2018-11-30",
+        "title": "Selection from ‘The Other Sides’",
+        "artist-credit": [
+          {
+            "name": "Kate Bush",
+            "artist": {
+              "genres": [
+                {
+                  "name": "alternative pop",
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "ambient pop",
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "disambiguation": "",
+                  "count": 12,
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                },
+                {
+                  "name": "art rock",
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                  "count": 7,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "baroque pop",
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "new wave",
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb"
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e",
+                  "name": "pop rock"
+                },
+                {
+                  "count": 10,
+                  "disambiguation": "",
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                  "name": "progressive pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "rock",
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798"
+                }
+              ],
+              "tags": [
+                {
+                  "name": "alternative pop",
+                  "count": 1
+                },
+                {
+                  "name": "alternative rock music",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "ambient pop"
+                },
+                {
+                  "count": 12,
+                  "name": "art pop"
+                },
+                {
+                  "count": 7,
+                  "name": "art rock"
+                },
+                {
+                  "name": "baroque pop",
+                  "count": 3
+                },
+                {
+                  "count": 1,
+                  "name": "british"
+                },
+                {
+                  "name": "new wave",
+                  "count": 1
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "name": "pop rock",
+                  "count": 1
+                },
+                {
+                  "name": "progressive pop",
+                  "count": 10
+                },
+                {
+                  "count": 1,
+                  "name": "progressive rock music"
+                },
+                {
+                  "name": "rock",
+                  "count": 3
+                },
+                {
+                  "name": "sound recording executives and producers",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "women composers"
+                },
+                {
+                  "count": 1,
+                  "name": "women rock musicians"
+                },
+                {
+                  "name": "women singers",
+                  "count": 1
+                }
+              ],
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Kate Bush",
+              "sort-name": "Bush, Kate",
+              "disambiguation": "",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "type": "Person",
+              "country": "GB"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "id": "16bab6d4-d6ab-3aac-b13f-4b753409a517",
+            "track-offset": 5,
+            "format": "CD",
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "id": "f6711006-9459-452b-8cf0-d0fe78b93b6c",
+                "number": "6",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "GB",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "type": "Person",
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": "",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Kate Bush"
+                    },
+                    "name": "Kate Bush"
+                  }
+                ],
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "length": null,
+                "position": 6
+              }
+            ],
+            "track-count": 9
+          }
+        ],
+        "release-group": {
+          "primary-type": "EP",
+          "tags": [],
+          "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "2018-11-30",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "Selection from ‘The Other Sides’",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Kate Bush",
+              "artist": {
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                "type": "Person",
+                "country": "GB",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Kate Bush",
+                "sort-name": "Bush, Kate",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "id": "eb86960f-7902-4971-9ad1-cb4d2a332501"
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "id": "b0ec38aa-c45c-4add-a0e2-a2249b71233c",
+        "quality": "low",
+        "country": "GB"
+      },
+      {
+        "id": "b324e8b8-d0b2-41a4-a892-4ae7a2332e20",
+        "quality": "normal",
+        "country": "XE",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "title": "The Other Side 1",
+            "position": 2,
+            "format": "CD",
+            "track-offset": 9,
+            "id": "ed352a15-6f13-3622-810c-4749b51e9e7d",
+            "track-count": 10,
+            "tracks": [
+              {
+                "id": "56974b11-79be-4399-a439-9c3accf82bb6",
+                "number": "10",
+                "artist-credit": [
+                  {
+                    "name": "Kate Bush",
+                    "joinphrase": "",
+                    "artist": {
+                      "name": "Kate Bush",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "disambiguation": "",
+                      "sort-name": "Bush, Kate",
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "country": "GB"
+                    }
+                  }
+                ],
+                "length": 336173,
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "position": 10
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": "GB",
+              "type": "Person",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+              "sort-name": "Bush, Kate",
+              "disambiguation": "",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Kate Bush",
+              "tags": [
+                {
+                  "name": "alternative pop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "alternative rock music"
+                },
+                {
+                  "count": 3,
+                  "name": "ambient pop"
+                },
+                {
+                  "count": 12,
+                  "name": "art pop"
+                },
+                {
+                  "name": "art rock",
+                  "count": 7
+                },
+                {
+                  "name": "baroque pop",
+                  "count": 3
+                },
+                {
+                  "name": "british",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "new wave"
+                },
+                {
+                  "count": 4,
+                  "name": "pop"
+                },
+                {
+                  "name": "pop rock",
+                  "count": 1
+                },
+                {
+                  "count": 10,
+                  "name": "progressive pop"
+                },
+                {
+                  "count": 1,
+                  "name": "progressive rock music"
+                },
+                {
+                  "count": 3,
+                  "name": "rock"
+                },
+                {
+                  "name": "sound recording executives and producers",
+                  "count": 1
+                },
+                {
+                  "name": "women composers",
+                  "count": 1
+                },
+                {
+                  "name": "women rock musicians",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "women singers"
+                }
+              ],
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "alternative pop",
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6"
+                },
+                {
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "name": "ambient pop",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 12,
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 7,
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+                  "name": "art rock"
+                },
+                {
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928",
+                  "name": "baroque pop",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "new wave",
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb"
+                },
+                {
+                  "name": "pop",
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "count": 4,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e",
+                  "name": "pop rock"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 10,
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                  "name": "progressive pop"
+                },
+                {
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                  "name": "rock",
+                  "count": 3,
+                  "disambiguation": ""
+                }
+              ]
+            },
+            "name": "Kate Bush"
+          }
+        ],
+        "genres": [],
+        "disambiguation": "",
+        "packaging-id": "d60b6157-79fe-3913-ab8b-23b32de8690d",
+        "release-group": {
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Kate Bush",
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Bush, Kate",
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Kate Bush",
+                "country": "GB",
+                "type": "Person",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396"
+              }
+            }
+          ],
+          "genres": [],
+          "disambiguation": "Remastered, Part IV",
+          "id": "af71236e-1c04-431b-a53d-909b72ba9f2b",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "first-release-date": "2018-11-30",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "The Other Sides"
+        },
+        "status": "Official",
+        "packaging": "Book",
+        "title": "The Other Sides",
+        "date": "2019-03-08",
+        "release-events": [
+          {
+            "date": "2019-03-08",
+            "area": {
+              "type-id": null,
+              "name": "Europe",
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "disambiguation": "",
+              "sort-name": "Europe",
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "type": null
+            }
+          }
+        ],
+        "barcode": "0190295568887",
+        "tags": []
+      },
+      {
+        "media": [
+          {
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "country": "GB",
+                      "type": "Person",
+                      "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                      "sort-name": "Bush, Kate",
+                      "disambiguation": "",
+                      "name": "Kate Bush",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "joinphrase": "",
+                    "name": "Kate Bush"
+                  }
+                ],
+                "number": "10",
+                "id": "e4324e91-8fe3-4c4c-bdf7-aaed844f334a",
+                "title": "Running Up That Hill (A Deal With God) (2012 remix)",
+                "position": 10,
+                "length": 336173
+              }
+            ],
+            "track-count": 10,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "The Other Side 1",
+            "position": 2,
+            "id": "cb12feba-30a8-3920-8196-0afbdd9d9ca1",
+            "format": "CD",
+            "track-offset": 9
+          }
+        ],
+        "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+        "genres": [],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Bush, Kate",
+              "disambiguation": "",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "name": "alternative pop",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "alternative rock music"
+                },
+                {
+                  "name": "ambient pop",
+                  "count": 3
+                },
+                {
+                  "count": 12,
+                  "name": "art pop"
+                },
+                {
+                  "name": "art rock",
+                  "count": 7
+                },
+                {
+                  "count": 3,
+                  "name": "baroque pop"
+                },
+                {
+                  "count": 1,
+                  "name": "british"
+                },
+                {
+                  "name": "new wave",
+                  "count": 1
+                },
+                {
+                  "name": "pop",
+                  "count": 4
+                },
+                {
+                  "count": 1,
+                  "name": "pop rock"
+                },
+                {
+                  "count": 10,
+                  "name": "progressive pop"
+                },
+                {
+                  "name": "progressive rock music",
+                  "count": 1
+                },
+                {
+                  "name": "rock",
+                  "count": 3
+                },
+                {
+                  "name": "sound recording executives and producers",
+                  "count": 1
+                },
+                {
+                  "name": "women composers",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "women rock musicians"
+                },
+                {
+                  "name": "women singers",
+                  "count": 1
+                }
+              ],
+              "name": "Kate Bush",
+              "genres": [
+                {
+                  "name": "alternative pop",
+                  "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b",
+                  "name": "ambient pop",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "count": 12,
+                  "disambiguation": "",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 7,
+                  "name": "art rock",
+                  "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "baroque pop",
+                  "id": "150eb95a-7739-4fde-a5fe-b62ca576a928"
+                },
+                {
+                  "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb",
+                  "name": "new wave",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+                  "name": "pop",
+                  "disambiguation": "",
+                  "count": 4
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "pop rock",
+                  "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+                },
+                {
+                  "name": "progressive pop",
+                  "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+                  "disambiguation": "",
+                  "count": 10
+                },
+                {
+                  "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+                  "name": "rock",
+                  "disambiguation": "",
+                  "count": 3
+                }
+              ],
+              "country": "GB",
+              "type": "Person",
+              "id": "4b585938-f271-45e2-b19a-91c634b5e396"
+            },
+            "name": "Kate Bush"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "disambiguation": "",
+        "packaging-id": "bf996342-d111-4d37-b9d6-d759f0787533",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "title": "The Other Sides",
+          "first-release-date": "2018-11-30",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "disambiguation": "Remastered, Part IV",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Kate Bush",
+              "joinphrase": "",
+              "artist": {
+                "name": "Kate Bush",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bush, Kate",
+                "disambiguation": "",
+                "type": "Person",
+                "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+                "country": "GB"
+              }
+            }
+          ],
+          "id": "af71236e-1c04-431b-a53d-909b72ba9f2b"
+        },
+        "id": "b3ca24cc-9175-4174-84ba-7e7723dc4721",
+        "country": "GB",
+        "quality": "normal",
+        "release-events": [
+          {
+            "date": "2019",
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "sort-name": "United Kingdom",
+              "disambiguation": ""
+            }
+          }
+        ],
+        "barcode": "",
+        "tags": [],
+        "status": "Promotion",
+        "packaging": "Plastic Sleeve",
+        "title": "The Other Sides",
+        "date": "2019"
+      }
+    ],
+    "artist-credit": [
+      {
+        "name": "Kate Bush",
+        "artist": {
+          "country": "GB",
+          "id": "4b585938-f271-45e2-b19a-91c634b5e396",
+          "type": "Person",
+          "sort-name": "Bush, Kate",
+          "disambiguation": "",
+          "genres": [
+            {
+              "id": "d3ebe947-7c03-43f5-b333-09379881b0f6",
+              "name": "alternative pop",
+              "count": 1,
+              "disambiguation": ""
+            },
+            {
+              "count": 3,
+              "disambiguation": "",
+              "name": "ambient pop",
+              "id": "2cdcecfe-3e7c-4055-ab34-78eceabe4d9b"
+            },
+            {
+              "name": "art pop",
+              "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+              "disambiguation": "",
+              "count": 12
+            },
+            {
+              "name": "art rock",
+              "id": "b7ef058e-6d83-4ca4-8123-9724bff4648b",
+              "count": 7,
+              "disambiguation": ""
+            },
+            {
+              "disambiguation": "",
+              "count": 3,
+              "name": "baroque pop",
+              "id": "150eb95a-7739-4fde-a5fe-b62ca576a928"
+            },
+            {
+              "disambiguation": "",
+              "count": 1,
+              "name": "new wave",
+              "id": "56407f9d-3398-4bf3-bbbd-ea372fa5adeb"
+            },
+            {
+              "disambiguation": "",
+              "count": 4,
+              "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+              "name": "pop"
+            },
+            {
+              "disambiguation": "",
+              "count": 1,
+              "name": "pop rock",
+              "id": "797e2e85-5ffd-495c-a757-8b4079052f0e"
+            },
+            {
+              "name": "progressive pop",
+              "id": "489ebed8-1299-4761-ba0b-29d381085f82",
+              "count": 10,
+              "disambiguation": ""
+            },
+            {
+              "name": "rock",
+              "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+              "disambiguation": "",
+              "count": 3
+            }
+          ],
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Kate Bush",
+          "tags": [
+            {
+              "name": "alternative pop",
+              "count": 1
+            },
+            {
+              "name": "alternative rock music",
+              "count": 1
+            },
+            {
+              "count": 3,
+              "name": "ambient pop"
+            },
+            {
+              "count": 12,
+              "name": "art pop"
+            },
+            {
+              "name": "art rock",
+              "count": 7
+            },
+            {
+              "count": 3,
+              "name": "baroque pop"
+            },
+            {
+              "name": "british",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "name": "new wave"
+            },
+            {
+              "name": "pop",
+              "count": 4
+            },
+            {
+              "name": "pop rock",
+              "count": 1
+            },
+            {
+              "count": 10,
+              "name": "progressive pop"
+            },
+            {
+              "name": "progressive rock music",
+              "count": 1
+            },
+            {
+              "count": 3,
+              "name": "rock"
+            },
+            {
+              "name": "sound recording executives and producers",
+              "count": 1
+            },
+            {
+              "name": "women composers",
+              "count": 1
+            },
+            {
+              "name": "women rock musicians",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "name": "women singers"
+            }
+          ]
+        },
+        "joinphrase": ""
+      }
+    ],
+    "disambiguation": "",
+    "id": "7a0aecf5-0538-42d6-a468-78e0d3a9dead",
+    "isrcs": [
+      "GBAYE1800996",
+      "GBAYE1801016",
+      "GBCNR1200001"
+    ],
+    "length": 333640
+  }
+}

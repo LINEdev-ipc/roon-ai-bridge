@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Bronski+Beat&recording_name=Smalltown+Boy+%2812%22+Version%29",
+  "fetched_at": "2026-07-28T14:42:00.941Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Bronski Beat",
+      "recording_arg": "Smalltown Boy (12\" Version)",
+      "artist_credit_name": "Bronski Beat",
+      "release_name": "The Age of Consent",
+      "recording_name": "Smalltown Boy (12″ version)",
+      "artist_credit_id": 23951,
+      "artist_mbids": [
+        "27acebf2-5440-42a7-9db6-19ad2c9dea38"
+      ],
+      "release_mbid": "3375280d-e5a6-4353-a26d-ce726bff7fa0",
+      "recording_mbid": "4580c3c6-bb24-432c-81f2-b63a92ae073b"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/2f281525-9d18-49b1-a82f-f537aeea9a57?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:16:22.423Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "releases": [
+      {
+        "release-events": [
+          {
+            "date": "2022",
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "KR"
+              ],
+              "name": "South Korea",
+              "sort-name": "South Korea",
+              "disambiguation": "",
+              "type": null,
+              "id": "b9f7d640-46e8-313e-b158-ded6d18593b3"
+            }
+          }
+        ],
+        "barcode": null,
+        "date": "2022",
+        "title": "Lowlife Princess: Noir",
+        "packaging": null,
+        "status": null,
+        "release-group": {
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "South Korean singer",
+                "sort-name": "BIBI",
+                "name": "BIBI",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "KR",
+                "type": "Person",
+                "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f"
+              },
+              "name": "BIBI"
+            }
+          ],
+          "releases": [],
+          "primary-type": "Album",
+          "disambiguation": "",
+          "secondary-types": [],
+          "id": "2219f553-4557-46c6-8f44-117194a795f2",
+          "secondary-type-ids": [],
+          "first-release-date": "2022-11-18",
+          "title": "Lowlife Princess: Noir"
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "artist-credit": [
+          {
+            "artist": {
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "BIBI",
+              "disambiguation": "South Korean singer",
+              "sort-name": "BIBI",
+              "type": "Person",
+              "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+              "country": "KR"
+            },
+            "joinphrase": "",
+            "name": "BIBI"
+          }
+        ],
+        "text-representation": {
+          "script": null,
+          "language": null
+        },
+        "status-id": null,
+        "quality": "normal",
+        "country": "KR",
+        "id": "984fed7a-0852-4107-bb4a-03e36de7e40b"
+      }
+    ],
+    "artist-credit": [
+      {
+        "name": "BIBI",
+        "joinphrase": "",
+        "artist": {
+          "country": "KR",
+          "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+          "type": "Person",
+          "disambiguation": "South Korean singer",
+          "sort-name": "BIBI",
+          "name": "BIBI",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+      }
+    ],
+    "video": false,
+    "disambiguation": "",
+    "first-release-date": "2022",
+    "id": "2f281525-9d18-49b1-a82f-f537aeea9a57",
+    "title": "Bibi Vengeance",
+    "length": 167000
+  }
+}

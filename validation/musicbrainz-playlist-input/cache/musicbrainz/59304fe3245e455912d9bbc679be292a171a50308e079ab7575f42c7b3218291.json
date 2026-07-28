@@ -1,0 +1,1925 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Sing+It+Back+%28Boris+Musical+Mix%29%22+AND+artist%3A%22Moloko%22+AND+release%3A%22Sing+It+Back%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:38:42.188Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:38:42.205Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "c70c3a4f-88c1-4a29-99d5-362c65334741",
+        "score": 100,
+        "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+        "title": "Sing It Back (Boris Musical mix)",
+        "length": 558666,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "artist": {
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "name": "Moloko",
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "aliases": [
+                {
+                  "sort-name": "モロコ",
+                  "name": "モロコ",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1998",
+        "releases": [
+          {
+            "id": "cf7d3e51-b668-49a8-bf79-fd58afb27f21",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 2,
+            "title": "Sing It Back",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "ba7a25b4-93fb-413c-88de-b7b64c75e627",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "fef4fc0e-49db-469c-942b-8c9796bc1152",
+                    "number": "A1",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 557000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b2870469-52be-4cd7-a17b-1854ef2ee0e0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things To Make And Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "1fd3e252-9cd0-3c48-9715-f80a36b6d0f4",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9a00d192-cb40-4890-b119-f0b81f7f7f12",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Dlugosch Musical mix)",
+                    "length": 560000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "6bb6c01c-b671-436a-8140-b9308545d84f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 2,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2020-01-31",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2020-01-31",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "16640004-e607-3bd1-83f3-88facabaec24",
+                "position": 2,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "0645ab7d-7d36-40b7-b8ba-93c8fe3e5c61",
+                    "number": "D6",
+                    "title": "Sing It Back (Boris Musical mix)"
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "e02c56a8-203a-4b51-98e1-4c91393a3b4c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 6,
+            "title": "Ibiza Summer Anthems",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1895f8ca-c172-3253-8c46-b942d73011bc",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ibiza Summer Anthems",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2001-08-06",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2001-08-06",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 53,
+            "media": [
+              {
+                "id": "86cc162c-4e78-3376-9c34-659c850c754b",
+                "position": 4,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cb27caff-bd82-369f-84e5-9b87b7b8b09b",
+                    "number": "2",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 560293
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "c47701db-2877-42ad-9026-85889ed79717",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "382912ca-c80f-3fde-b290-f8d00faa821b",
+            "count": 4,
+            "title": "Grand House Classics 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Ben Liebrand",
+                "artist": {
+                  "id": "a9abe28b-5774-41ea-8393-8b26903fee72",
+                  "name": "Ben Liebrand",
+                  "sort-name": "Liebrand, Ben"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "594fbc43-23d9-40b5-b5c3-e1875b593689",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Grand House Classics 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-02",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2018-03-02",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 43,
+            "media": [
+              {
+                "id": "61a9c0f9-7335-340e-9f11-db8384e9ed13",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7a4fa203-ebc5-4287-ad54-b9943739ba0e",
+                    "number": "2",
+                    "title": "Sing It Back (Boris' Musical mix)",
+                    "length": 558493
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "8283931b-71a3-4ab2-8e65-3bf3df0e7ee0",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 2,
+            "title": "Sing It Back (Peppermint Jam Mixes)",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "45d71064-9c70-3e03-964c-1048cb3f70e4",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "08728636-1b62-448c-978f-1aabdc739c21",
+                    "number": "A",
+                    "title": "Sing It Back (Boris Dluglosch Musical mix)",
+                    "length": 557000
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "bc986ed1-826f-4937-86e7-10fbf0a7109f",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Sing It Back Mixes. 2",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "b91c3b63-d084-353e-bb7a-cb0c31cb18c1",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "42df7415-70f6-4167-841b-9338c6a09473",
+                    "number": "A1",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 555000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "e85a81e0-1c82-47b5-9986-010c490ea0f0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Sing It Back",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999-03-15",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1999-03-15",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "285106e4-7110-30fb-95ea-4de6b7efd007",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "864aedf0-696d-3e86-a3dc-27dbeadac071",
+                    "number": "B",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 555000
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "8c13c78a-fee8-40c3-b31b-cefc9cd2e5bf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Club Tools First Edition",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "18f4785b-9df2-4ff3-9d57-5235eafb7793",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Club Tools First Edition",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1999",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "1bd1e710-29c0-3223-a3e5-6906c6060928",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "860418de-dc05-425b-a4a6-8b844d7c6347",
+                    "number": "1",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 558466
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "27e6f972-492a-40e0-bbc7-8e09fe71d5ff",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Sing It Back",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999-07-08",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1999-07-08",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "0da6aab3-afce-34d9-8497-fec846f39280",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0b985707-5aae-368c-b4f7-d7bb21f0a686",
+                    "number": "5",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 560040
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "f96d8fcc-2e96-4d6c-95a3-31a813377309",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Sing It Back",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "c99df250-7d8d-3307-a1e7-0b3229aff2ed",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "78ca3b5b-d136-30ff-9276-87a845d61d61",
+                    "number": "4",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 558600
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "c3ab91b0-fce0-4e34-9fe4-d9e1a79980bf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Sing It Back",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1998",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1998",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "3d6527f0-234f-35f9-a5f4-4a459c190c82",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d2f21233-c73b-487b-b128-86162d300e11",
+                    "number": "4",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 559000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "6114bbd9-e25c-4363-8402-3471f328b831",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Sing It Back",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999-10-18",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "1999-10-18",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "0d70c752-71bf-3d9e-9c18-73628c501601",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "839d8ecc-5e64-3a33-8fc7-99f96899023e",
+                    "number": "3",
+                    "title": "Sing It Back (Boris Dlugosch Musical mix)",
+                    "length": 560306
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "e6f56aa7-1c5d-4fd4-a03e-f92ec60caf88",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Sing It Back",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "8b4002b4-83d3-3876-bdad-56d327acb1b5",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "43e039f4-0759-3515-9dce-967e33fdfc06",
+                    "number": "2",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 557960
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "79838f0f-c000-48a9-931f-95760405bbda",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Sing It Back",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Sing It Back",
+              "primary-type": "Single"
+            },
+            "date": "1999-08-23",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1999-08-23",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "ddf93c0c-22b0-395e-8682-06fd5cb13c16",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "22628f64-4d0f-30d5-8344-f66a69dddcbb",
+                    "number": "A",
+                    "title": "Sing It Back (Boris Dlugosch Musical mix)",
+                    "length": 557000
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "c074cc1d-744d-4ad7-b21a-c5079c1b5f95",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Digging in the Crates: 1999 Vol. 1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "244cc123-00f6-4294-80eb-3d734fcbbedf",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Digging in the Crates: 1999 Vol. 1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-05-22",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2009-05-22",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "ad274d5f-714d-3ae5-bcc6-8f2e1bfad233",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "3578ffcf-bd17-4792-8386-9f9f0d777842",
+                    "number": "5",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 559000
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "9e4d1444-1cff-4ed0-8410-5e6e406f7b23",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "12 Inch Dance: 90s Club",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "55f9a686-b6e8-4d3f-a85e-1452d0b6cb5e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "12 Inch Dance: 90s Club",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-09-05",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2014-09-05",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 31,
+            "media": [
+              {
+                "id": "a98d029f-bb46-3d79-be30-f1c3762ba760",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5dcbc20d-e03c-4c46-89af-6dfb6e7f2895",
+                    "number": "22",
+                    "title": "Sing It Back (Boris Dlugosch musical mix)",
+                    "length": 557000
+                  }
+                ],
+                "track-count": 31,
+                "track-offset": 21
+              }
+            ]
+          },
+          {
+            "id": "81971d41-698c-467a-bf61-e60c3ebd2d64",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "12 Inch Dance: 90s Club",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "55f9a686-b6e8-4d3f-a85e-1452d0b6cb5e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "12 Inch Dance: 90s Club",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-09-08",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-09-08",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "f3c94f59-2424-35c5-99de-5f2248c05cc2",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "63cbaa4f-7fda-40f7-9d80-37ae52ef49c0",
+                    "number": "2",
+                    "title": "Sing It Back (Boris musical mix)",
+                    "length": 557000
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "1833353a-fd93-4ef5-a15d-28588ce41f67",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "All Back to the Mine, Vol. II: A Collection of Remixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "86def221-c6fc-452b-9596-cb210cbfdd0b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "All Back to the Mine, Vol. II: A Collection of Remixes",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2016-11-11",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2016-11-11",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "ded121e5-d073-335e-9586-2c42efe3a92b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ec3d5205-0623-412f-9b2c-8e10087ce8f0",
+                    "number": "1",
+                    "title": "Sing It Back (Boris Dlugosch Musical mix)",
+                    "length": 558000
+                  }
+                ],
+                "track-count": 34,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "87796f15-0ae6-44b5-ab52-4202f44e1ba9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Vibes on a Summer's Day: Tenth Anniversary",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3d6b04cb-2ce6-4587-85e8-823382ba5e00",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Vibes on a Summer's Day: Tenth Anniversary",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2002",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2002",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 28,
+            "media": [
+              {
+                "id": "8461d66d-1ed9-3ffb-9faa-64f6fe79c79f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3c717c3f-b24d-3acb-af5c-61313ff500aa",
+                    "number": "13",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 557000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "436aab2e-8441-4e87-8b9f-ce7495481775",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bar Grooves: Hip Beats for the 21st Century Bar Culture",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0afec99e-3824-45ba-bd0a-eba5ebae2d69",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bar Grooves: Hip Beats for the 21st Century Bar Culture",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2006",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2006",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 22,
+            "media": [
+              {
+                "id": "4b91077a-866e-3f8a-aa54-1469a1933a73",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cb1502d4-f1a0-38aa-863b-63a73aa5d23a",
+                    "number": "2",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 556000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "345e30ba-a7dc-446a-a0ec-50b5d5e9b0b2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "MY",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "305d19c7-c040-349c-8d5f-6ac75d2d2a09",
+                  "name": "Malaysia",
+                  "sort-name": "Malaysia",
+                  "iso-3166-1-codes": [
+                    "MY"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "f78bd0af-b9da-393e-85ad-f233b45fe8ab",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b30f7642-22a8-431e-8ce9-068b0c3623ff",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 558666
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "031b96b2-a783-3019-87ea-56930374993e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "c2fd7a81-726c-36d4-b7ae-73d04cbd6733",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2864c793-35ba-35e8-ba8a-df63c99357c9",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 558666
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "38d8e9ed-f125-415e-9ef9-fb86684c3197",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000-03-29",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2000-03-29",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "655b6c95-05a1-31c5-859c-3d956f380281",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "14dcd098-1ebb-3fa5-8fde-9724518077d9",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical Mix)",
+                    "length": 561093
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "7faa75f1-1b43-4a30-8486-f0716201ca7e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "disambiguation": "CD-Matrix: IFPI LB 45; SONOPRESS A-22814/RRPROMO512 A; IFPI 0719",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "0abb188a-ee35-30ee-b46a-4af7fb34a0ea",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3ca107bd-6004-494d-b25c-f38c6e76c2bb",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 560106
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "e87cd690-baaa-4eb0-b023-55b514357013",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              },
+              {
+                "date": "2000",
+                "area": {
+                  "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+                  "name": "New Zealand",
+                  "sort-name": "New Zealand",
+                  "iso-3166-1-codes": [
+                    "NZ"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "6c6239aa-0b2e-3ec2-9db3-e7cc34323134",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bfdeabf8-e309-48d4-8a9c-8fe7d2aef651",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 560093
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "f03776bd-3657-477e-b073-3629f248a806",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2004-08-23",
+            "country": "RU",
+            "release-events": [
+              {
+                "date": "2004-08-23",
+                "area": {
+                  "id": "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+                  "name": "Russia",
+                  "sort-name": "Russia",
+                  "iso-3166-1-codes": [
+                    "RU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "fe78053e-f4dc-3e67-adaa-cb7c50a7477c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "25aa05ac-91b4-4a8e-b519-e290831124df",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 560106
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "9264b6dc-d95b-48f0-a108-e16969efd433",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000-04-10",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2000-04-10",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "785b4ec1-dd32-349d-85b0-b991b60c8c70",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3ddfeb66-791a-3162-843d-aa65cf044558",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 560106
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "c5aca316-5539-324e-a8bb-0bc070b2b4d6",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "fb0f007a-6653-3cd9-90bf-88d205bfbbba",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b702a135-e8b6-3324-8c97-050c67457fad",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 558666
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "cb2f7805-4bed-329f-ac6a-f997548b64c8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d713771d-d20d-35ec-b8a1-a537d8c326b7",
+            "count": 1,
+            "title": "Things to Make and Do",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Moloko",
+                "artist": {
+                  "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                  "name": "Moloko",
+                  "sort-name": "Moloko",
+                  "disambiguation": "English‐Irish electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Things to Make and Do",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "73cf31eb-8802-3bc9-bc39-2b5ae10d0b6d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "06d23591-0098-3742-9a3a-a85314934472",
+                    "number": "18",
+                    "title": "Sing It Back (Boris Musical mix)",
+                    "length": 560106
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "DEH849900332",
+          "GBBND9900461",
+          "GBBND0000461"
+        ],
+        "tags": [
+          {
+            "count": 3,
+            "name": "electronic"
+          },
+          {
+            "count": 2,
+            "name": "dance"
+          },
+          {
+            "count": 4,
+            "name": "house"
+          },
+          {
+            "count": 1,
+            "name": "electro"
+          },
+          {
+            "count": 2,
+            "name": "electronica"
+          },
+          {
+            "count": 1,
+            "name": "dance-pop"
+          },
+          {
+            "count": 4,
+            "name": "trip hop"
+          },
+          {
+            "count": 2,
+            "name": "club"
+          },
+          {
+            "count": 1,
+            "name": "rnb/swing"
+          }
+        ]
+      }
+    ]
+  }
+}

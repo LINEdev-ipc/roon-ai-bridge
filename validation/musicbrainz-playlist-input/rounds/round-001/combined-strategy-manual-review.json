@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "round_id": "round-001",
+  "reviewed_at": "2026-07-28T12:52:00.000Z",
+  "scope": "New automatic exact results without an existing reference MBID.",
+  "decisions": [
+    {
+      "candidate_id": "PLI-002-009",
+      "decision": "accept",
+      "recording_mbid": "356361ed-c811-42b1-b0b5-fb8d473a6c2e",
+      "reason": "Full non-fragment Maribou State remix with exact title/version and ISRC; the alternative candidate is explicitly part of a continuous DJ mix. The LLM year and album were incorrect."
+    },
+    {
+      "candidate_id": "PLI-002-012",
+      "decision": "accept",
+      "recording_mbid": "ad486327-79c7-4f9e-b468-551fc9e6d072",
+      "reason": "Exact What So Not remix, compatible RÜFÜS/RÜFÜS DU SOL artist alias, official release context, matching year and non-video recording."
+    },
+    {
+      "candidate_id": "PLI-002-018",
+      "decision": "accept",
+      "recording_mbid": "b884f9b9-6a2b-4182-a259-8755a11b3914",
+      "reason": "Exact New Voyager radio edit with Candi Staton credit, compatible release and year, ISRCs, non-video, and a 76-point margin over the duplicate candidate."
+    },
+    {
+      "candidate_id": "PLI-003-016",
+      "decision": "accept",
+      "recording_mbid": "f4a822f1-66ae-4781-ae7f-0d5274ba519e",
+      "reason": "MusicBrainz canonical title MALAMENTE (Cap.1: Augurio), exact artist, El mal querer release, matching year, ISRC and no competing candidate."
+    }
+  ]
+}

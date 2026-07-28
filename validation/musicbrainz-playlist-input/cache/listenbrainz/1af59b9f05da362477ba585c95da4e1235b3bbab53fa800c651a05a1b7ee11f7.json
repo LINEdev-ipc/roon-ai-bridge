@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=CKay&recording_name=Love+Nwantiti+%28Ah+Ah+Ah%29",
+  "fetched_at": "2026-07-28T14:42:47.580Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "CKay",
+      "recording_arg": "Love Nwantiti (Ah Ah Ah)",
+      "artist_credit_name": "CKay",
+      "release_name": "CKay the First",
+      "recording_name": "love nwantiti (ah ah ah)",
+      "artist_credit_id": 3115395,
+      "artist_mbids": [
+        "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4"
+      ],
+      "release_mbid": "458374d7-c9cc-4e10-914f-a083e074f4b5",
+      "recording_mbid": "b4ece4ff-9866-4f65-b376-86179a5d70e0"
+    }
+  ]
+}

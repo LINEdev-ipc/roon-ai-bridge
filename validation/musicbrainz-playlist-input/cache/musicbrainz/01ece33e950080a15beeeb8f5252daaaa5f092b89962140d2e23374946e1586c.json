@@ -1,0 +1,107 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/b0fa8241-14fe-4976-96e2-0fe0358c4df6?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:15:32.892Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "id": "b0fa8241-14fe-4976-96e2-0fe0358c4df6",
+    "first-release-date": "2008-08-08",
+    "length": 190000,
+    "title": "The Fat Panther",
+    "video": false,
+    "releases": [
+      {
+        "packaging": "Digipak",
+        "status": "Official",
+        "date": "2008-08-08",
+        "title": "Survival of the Fattest",
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "type-id": null,
+              "name": "United States",
+              "sort-name": "United States",
+              "disambiguation": ""
+            },
+            "date": "2008-08-08"
+          }
+        ],
+        "barcode": "661868318623",
+        "id": "3a2a054c-be2d-48e9-9ab0-9abf189d724f",
+        "quality": "normal",
+        "country": "US",
+        "artist-credit": [
+          {
+            "name": "Prince Fatty",
+            "artist": {
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Prince Fatty",
+              "sort-name": "Prince Fatty",
+              "disambiguation": "",
+              "type": "Person",
+              "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+              "country": "GB"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "secondary-types": [],
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "name": "Prince Fatty",
+              "artist": {
+                "country": "GB",
+                "type": "Person",
+                "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+                "sort-name": "Prince Fatty",
+                "disambiguation": "",
+                "name": "Prince Fatty",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Survival of the Fattest",
+          "secondary-type-ids": [],
+          "first-release-date": "2007-07-16",
+          "id": "90912bd8-60a0-3c7d-ad42-b95005715c50"
+        },
+        "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+        "disambiguation": ""
+      }
+    ],
+    "artist-credit": [
+      {
+        "artist": {
+          "country": "GB",
+          "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+          "type": "Person",
+          "sort-name": "Prince Fatty",
+          "disambiguation": "",
+          "name": "Prince Fatty",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": "",
+        "name": "Prince Fatty"
+      }
+    ],
+    "disambiguation": ""
+  }
+}

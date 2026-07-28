@@ -1,0 +1,255 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28walk%29+AND+release%3A%28walk%29+AND+artistname%3A%22Brain+Damage%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:41:05.743Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:41:05.882Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "9e3321b4-9da5-4c37-95bf-7dceb4798221",
+        "score": 100,
+        "artist-credit-id": "108b0abe-fefb-340f-80ac-0e9b6fa36777",
+        "title": "Walk the Walk",
+        "length": 266000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Brain Damage",
+            "artist": {
+              "id": "9d19a058-3bb8-4858-937b-39dc2b817fc8",
+              "name": "Brain Damage",
+              "sort-name": "Brain Damage",
+              "disambiguation": "French dub/reggae",
+              "aliases": [
+                {
+                  "sort-name": "Brain Damage Sound System",
+                  "name": "Brain Damage Sound System",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Ras Michael",
+            "artist": {
+              "id": "61582e70-ffc4-49d0-937b-6b9011773bf8",
+              "name": "Ras Michael",
+              "sort-name": "Michael, Ras",
+              "aliases": [
+                {
+                  "sort-name": "Ras Micheal",
+                  "name": "Ras Micheal",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2015-10-15",
+        "releases": [
+          {
+            "id": "c690613c-bc3e-4679-a030-ad2abad84ca0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a52a242f-de15-302d-9980-c2924ecac766",
+            "count": 1,
+            "title": "Walk the Walk",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Brain Damage",
+                "artist": {
+                  "id": "9d19a058-3bb8-4858-937b-39dc2b817fc8",
+                  "name": "Brain Damage",
+                  "sort-name": "Brain Damage",
+                  "disambiguation": "French dub/reggae"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "787c4edc-5508-4591-97be-c9b412442474",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Walk the Walk",
+              "primary-type": "Album"
+            },
+            "date": "2015-10-16",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2015-10-16",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "56bd911d-79ef-387f-98c7-cb8a5a6912ce",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "365717c4-f421-4b9f-b710-44ebcded893d",
+                    "number": "1",
+                    "title": "Walk the Walk",
+                    "length": 266000
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "ac385cab-1b0d-4684-914f-7df67bdac40a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a52a242f-de15-302d-9980-c2924ecac766",
+            "count": 1,
+            "title": "Walk the Walk",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Brain Damage",
+                "artist": {
+                  "id": "9d19a058-3bb8-4858-937b-39dc2b817fc8",
+                  "name": "Brain Damage",
+                  "sort-name": "Brain Damage",
+                  "disambiguation": "French dub/reggae"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "787c4edc-5508-4591-97be-c9b412442474",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Walk the Walk",
+              "primary-type": "Album"
+            },
+            "date": "2015-10-15",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2015-10-15",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "713f99f9-711e-39ac-bc32-d7dbdf98217c",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "3cd2c0a3-7e90-4e03-9243-78cf69eec8db",
+                    "number": "1",
+                    "title": "Walk the Walk",
+                    "length": 266000
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "33b80685-e4a6-47ff-bf8a-05549593cbb1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a52a242f-de15-302d-9980-c2924ecac766",
+            "count": 1,
+            "title": "Brain Damage Feat. Ras Michael",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Brain Damage",
+                "artist": {
+                  "id": "9d19a058-3bb8-4858-937b-39dc2b817fc8",
+                  "name": "Brain Damage",
+                  "sort-name": "Brain Damage",
+                  "disambiguation": "French dub/reggae"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "cb76b25b-8404-4976-8129-a5ff79f439d4",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Brain Damage Feat. Ras Michael",
+              "primary-type": "Single"
+            },
+            "date": "2016-05-27",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2016-05-27",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "0863dadb-1051-3df7-9561-dc2567c53ac8",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1ed1b12a-82fc-4b6f-92d0-77a5e2e34266",
+                    "number": "1",
+                    "title": "Walk the Walk",
+                    "length": 266000
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "reggae"
+          },
+          {
+            "count": 1,
+            "name": "dub"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "url": "https://musicbrainz.org/ws/2/work/0aa14f47-dc96-4cb5-be33-fc9588d0f50f?inc=artist-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:43:21.909Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+    "relations": [
+      {
+        "artist": {
+          "id": "44c1e43c-24d4-4995-9d68-acfa0cb14f13",
+          "country": "GB",
+          "sort-name": "SoSo, Sammy",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "name": "Sammy SoSo",
+          "type": "Person"
+        },
+        "attribute-ids": {},
+        "attribute-values": {},
+        "end": null,
+        "attributes": [],
+        "type-id": "d3fd781c-5894-47e2-8c12-86cc0e2c8d08",
+        "direction": "backward",
+        "source-credit": "",
+        "target-type": "artist",
+        "begin": null,
+        "type": "arranger",
+        "target-credit": "",
+        "ended": false
+      },
+      {
+        "target-credit": "",
+        "ended": false,
+        "type": "composer",
+        "begin": null,
+        "target-type": "artist",
+        "source-credit": "",
+        "direction": "backward",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "attributes": [],
+        "end": null,
+        "artist": {
+          "disambiguation": "",
+          "name": "Ariowa Irosogie",
+          "type": "Person",
+          "id": "0d00de68-0e31-400c-b0a4-d94436fe079c",
+          "sort-name": "Irosogie, Ariowa",
+          "country": "GB",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "attribute-values": {},
+        "attribute-ids": {}
+      },
+      {
+        "ended": false,
+        "target-credit": "",
+        "type": "composer",
+        "begin": null,
+        "target-type": "artist",
+        "source-credit": "",
+        "direction": "backward",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "attributes": [],
+        "end": null,
+        "artist": {
+          "type": "Person",
+          "name": "Corey Marlon Lindsay‐Keay",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Lindsay‐Keay, Corey Marlon",
+          "country": null,
+          "id": "9904b6a7-c782-4a49-b0c5-188fbab5ea2b"
+        },
+        "attribute-values": {},
+        "attribute-ids": {}
+      },
+      {
+        "direction": "backward",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "target-type": "artist",
+        "source-credit": "",
+        "begin": null,
+        "ended": false,
+        "target-credit": "Jackson Paul LoMastro",
+        "type": "composer",
+        "attribute-values": {},
+        "artist": {
+          "id": "17afdd53-e4eb-46e2-bfef-5dea4846cc97",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": null,
+          "sort-name": "LoMastro, Jack",
+          "disambiguation": "",
+          "type": "Person",
+          "name": "Jack LoMastro"
+        },
+        "attribute-ids": {},
+        "attributes": [],
+        "end": null
+      },
+      {
+        "attributes": [],
+        "end": null,
+        "artist": {
+          "disambiguation": "",
+          "type": "Person",
+          "name": "Sammy SoSo",
+          "id": "44c1e43c-24d4-4995-9d68-acfa0cb14f13",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "SoSo, Sammy",
+          "country": "GB"
+        },
+        "attribute-ids": {},
+        "attribute-values": {},
+        "ended": false,
+        "target-credit": "Samuel Awuku",
+        "type": "composer",
+        "begin": null,
+        "target-type": "artist",
+        "source-credit": "",
+        "direction": "backward",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f"
+      },
+      {
+        "target-type": "artist",
+        "source-credit": "",
+        "direction": "backward",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "target-credit": "",
+        "ended": false,
+        "type": "composer",
+        "begin": null,
+        "artist": {
+          "name": "Tricky Stewart",
+          "type": "Person",
+          "disambiguation": "",
+          "sort-name": "Stewart, Tricky",
+          "country": null,
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "1d65f4c5-e6a2-48f3-b8ec-1a151ed124b1"
+        },
+        "attribute-ids": {},
+        "attribute-values": {},
+        "attributes": [],
+        "end": null
+      },
+      {
+        "artist": {
+          "disambiguation": "South African singer",
+          "type": "Person",
+          "name": "Tyla",
+          "id": "45425c84-9092-4e2c-b732-e1d0280b580a",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Tyla",
+          "country": "ZA"
+        },
+        "attribute-values": {},
+        "attribute-ids": {},
+        "end": null,
+        "attributes": [],
+        "source-credit": "",
+        "target-type": "artist",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "direction": "backward",
+        "type": "composer",
+        "target-credit": "Tyla Seethal",
+        "ended": false,
+        "begin": null
+      },
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Irosogie, Ariowa",
+          "country": "GB",
+          "id": "0d00de68-0e31-400c-b0a4-d94436fe079c",
+          "type": "Person",
+          "name": "Ariowa Irosogie",
+          "disambiguation": ""
+        },
+        "attribute-values": {},
+        "attribute-ids": {},
+        "end": null,
+        "attributes": [],
+        "source-credit": "",
+        "target-type": "artist",
+        "type-id": "3e48faba-ec01-47fd-8e89-30e81161661c",
+        "direction": "backward",
+        "type": "lyricist",
+        "ended": false,
+        "target-credit": "",
+        "begin": null
+      },
+      {
+        "end": null,
+        "attributes": [],
+        "artist": {
+          "sort-name": "Lindsay‐Keay, Corey Marlon",
+          "country": null,
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "9904b6a7-c782-4a49-b0c5-188fbab5ea2b",
+          "name": "Corey Marlon Lindsay‐Keay",
+          "type": "Person",
+          "disambiguation": ""
+        },
+        "attribute-ids": {},
+        "attribute-values": {},
+        "type": "lyricist",
+        "target-credit": "",
+        "ended": false,
+        "begin": null,
+        "source-credit": "",
+        "target-type": "artist",
+        "type-id": "3e48faba-ec01-47fd-8e89-30e81161661c",
+        "direction": "backward"
+      },
+      {
+        "target-type": "artist",
+        "source-credit": "",
+        "direction": "backward",
+        "type-id": "3e48faba-ec01-47fd-8e89-30e81161661c",
+        "ended": false,
+        "target-credit": "Tyla Seethal",
+        "type": "lyricist",
+        "begin": null,
+        "attribute-values": {},
+        "artist": {
+          "name": "Tyla",
+          "type": "Person",
+          "disambiguation": "South African singer",
+          "sort-name": "Tyla",
+          "country": "ZA",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "45425c84-9092-4e2c-b732-e1d0280b580a"
+        },
+        "attribute-ids": {},
+        "attributes": [],
+        "end": null
+      }
+    ],
+    "id": "0aa14f47-dc96-4cb5-be33-fc9588d0f50f",
+    "type": "Song",
+    "tags": [],
+    "iswcs": [
+      "T-321.476.435-5"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "genres": [],
+    "attributes": [
+      {
+        "type": "BMI ID",
+        "type-id": "c8ac7e55-fd45-3002-9f89-e8b43911a479",
+        "value": "062849637"
+      },
+      {
+        "type": "ASCAP ID",
+        "value": "00000921271907",
+        "type-id": "d833318c-6c6a-370e-8b16-9cb15873ba76"
+      }
+    ],
+    "title": "Water",
+    "language": "eng",
+    "disambiguation": ""
+  }
+}

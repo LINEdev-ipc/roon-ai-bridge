@@ -1,0 +1,4734 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/c03f39a0-c875-445c-a5f8-03b0be6adab0?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:41:38.842Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "tags": [
+      {
+        "name": "& country",
+        "count": 1
+      },
+      {
+        "count": 1,
+        "name": "euro house"
+      },
+      {
+        "count": 1,
+        "name": "folk"
+      },
+      {
+        "count": 2,
+        "name": "hip hop"
+      },
+      {
+        "count": 2,
+        "name": "pop"
+      },
+      {
+        "count": 1,
+        "name": "world"
+      }
+    ],
+    "id": "c03f39a0-c875-445c-a5f8-03b0be6adab0",
+    "artist-credit": [
+      {
+        "name": "Aya Nakamura",
+        "artist": {
+          "country": "FR",
+          "tags": [
+            {
+              "name": "afrobeats",
+              "count": 2
+            },
+            {
+              "name": "alternative r&b",
+              "count": 2
+            },
+            {
+              "count": 2,
+              "name": "r&b"
+            }
+          ],
+          "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+          "name": "Aya Nakamura",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "genres": [
+            {
+              "disambiguation": "West African urban/pop music",
+              "name": "afrobeats",
+              "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+              "count": 2
+            },
+            {
+              "name": "alternative r&b",
+              "disambiguation": "",
+              "count": 2,
+              "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9"
+            },
+            {
+              "count": 2,
+              "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+              "disambiguation": "",
+              "name": "r&b"
+            }
+          ],
+          "disambiguation": "French R&B singer",
+          "type": "Person",
+          "sort-name": "Nakamura, Aya"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "first-release-date": "2018-04-06",
+    "releases": [
+      {
+        "genres": [],
+        "date": "2018-04-06",
+        "quality": "normal",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "title": "Djadja",
+        "artist-credit": [
+          {
+            "name": "Aya Nakamura",
+            "artist": {
+              "name": "Aya Nakamura",
+              "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+              "tags": [
+                {
+                  "count": 2,
+                  "name": "afrobeats"
+                },
+                {
+                  "name": "alternative r&b",
+                  "count": 2
+                },
+                {
+                  "name": "r&b",
+                  "count": 2
+                }
+              ],
+              "country": "FR",
+              "type": "Person",
+              "sort-name": "Nakamura, Aya",
+              "genres": [
+                {
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "count": 2,
+                  "disambiguation": "West African urban/pop music",
+                  "name": "afrobeats"
+                },
+                {
+                  "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "alternative r&b"
+                },
+                {
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "r&b"
+                }
+              ],
+              "disambiguation": "French R&B singer",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "name": "[Worldwide]",
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "disambiguation": "",
+              "type": null,
+              "sort-name": "[Worldwide]",
+              "type-id": null
+            },
+            "date": "2018-04-06"
+          }
+        ],
+        "country": "XW",
+        "release-group": {
+          "genres": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "secondary-types": [],
+          "title": "Djadja",
+          "artist-credit": [
+            {
+              "name": "Aya Nakamura",
+              "artist": {
+                "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "FR",
+                "type": "Person",
+                "sort-name": "Nakamura, Aya",
+                "name": "Aya Nakamura",
+                "disambiguation": "French R&B singer"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [],
+          "primary-type": "Single",
+          "disambiguation": "",
+          "releases": [],
+          "first-release-date": "2018-04-06",
+          "id": "fe463842-9a96-435c-bc89-590ad7db43ff",
+          "tags": []
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "text-representation": {
+          "script": null,
+          "language": null
+        },
+        "disambiguation": "",
+        "barcode": null,
+        "status": "Official",
+        "packaging": "None",
+        "id": "b8471e77-4812-489e-b406-0b8d51e4b8f2",
+        "media": [
+          {
+            "id": "bbbe1897-672b-33f4-bf08-7b41692290af",
+            "track-count": 1,
+            "title": "",
+            "format": "Digital Media",
+            "position": 1,
+            "tracks": [
+              {
+                "length": 170000,
+                "position": 1,
+                "number": "1",
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "disambiguation": "French R&B singer",
+                      "sort-name": "Nakamura, Aya",
+                      "name": "Aya Nakamura",
+                      "type": "Person",
+                      "country": "FR",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01"
+                    },
+                    "name": "Aya Nakamura",
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "d7b54da6-4b2d-473e-80f8-61f35df5e6f2"
+              }
+            ],
+            "track-offset": 0,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "genres": [
+          {
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+            "count": 1,
+            "disambiguation": "",
+            "name": "pop"
+          }
+        ],
+        "quality": "normal",
+        "date": "2018-06-22",
+        "artist-credit": [
+          {
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "genres": []
+            },
+            "name": "Various Artists",
+            "joinphrase": ""
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "type": null,
+              "sort-name": "France",
+              "disambiguation": "",
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "name": "France"
+            },
+            "date": "2018-06-22"
+          }
+        ],
+        "country": "FR",
+        "title": "NRJ Summer Hits Only 2018",
+        "release-group": {
+          "releases": [],
+          "id": "1c518136-b756-4b57-8f36-8e361fa48d33",
+          "first-release-date": "2018-06-22",
+          "tags": [],
+          "disambiguation": "",
+          "primary-type": "Album",
+          "title": "NRJ Summer Hits Only 2018",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "type": "Other",
+                "country": null,
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ]
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "text-representation": {
+          "language": "mul",
+          "script": "Latn"
+        },
+        "barcode": "5054197014468",
+        "disambiguation": "",
+        "id": "4cac3c8f-cc91-4401-9075-29b907d9bc08",
+        "media": [
+          {
+            "position": 1,
+            "track-offset": 4,
+            "tracks": [
+              {
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2
+                        },
+                        {
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2,
+                          "name": "alternative r&b",
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "r&b",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Aya Nakamura",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ]
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "492fe696-8593-46f7-a921-082cb566cbbe",
+                "position": 5,
+                "number": "5",
+                "length": 169826
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 21,
+            "id": "bd3eff4e-2e5a-38c7-b2b1-2bfbe6765f30",
+            "format": "CD",
+            "title": ""
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "pop"
+          }
+        ],
+        "status": "Official",
+        "packaging": "Jewel Case"
+      },
+      {
+        "title": "Planète Rap 2018, Vol. 2",
+        "country": "FR",
+        "release-events": [
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "name": "France",
+              "type-id": null,
+              "disambiguation": "",
+              "sort-name": "France",
+              "type": null
+            },
+            "date": "2018-07-06"
+          }
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Various Artists",
+            "artist": {
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86"
+            }
+          }
+        ],
+        "date": "2018-07-06",
+        "quality": "normal",
+        "genres": [],
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "tags": [
+          {
+            "name": "rap",
+            "count": 1
+          }
+        ],
+        "media": [
+          {
+            "title": "Rap français",
+            "format": "CD",
+            "track-count": 19,
+            "id": "ffd6b23d-d01e-32c2-96c3-d8bfc3506fa0",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-offset": 0,
+            "tracks": [
+              {
+                "position": 1,
+                "number": "1",
+                "length": 169840,
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "country": "FR",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "genres": [
+                        {
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2
+                        },
+                        {
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2,
+                          "disambiguation": "",
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "disambiguation": "French R&B singer",
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya"
+                    }
+                  }
+                ],
+                "id": "20751703-45cf-4df6-8d73-5bb98d053f93"
+              }
+            ],
+            "position": 2
+          }
+        ],
+        "id": "85defe97-a9b9-45d2-9d33-5072ba0d0190",
+        "disambiguation": "",
+        "barcode": "5054197014666",
+        "text-representation": {
+          "language": "mul",
+          "script": "Latn"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "disambiguation": "",
+          "primary-type": "Album",
+          "tags": [],
+          "id": "aacf28e2-728a-4bc5-a12f-4c2b8137f74f",
+          "first-release-date": "2018-07-06",
+          "releases": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "genres": [],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "type": "Other",
+                "disambiguation": "add compilations to this artist",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null
+              },
+              "joinphrase": ""
+            }
+          ],
+          "title": "Planète Rap 2018, Vol. 2"
+        }
+      },
+      {
+        "status": "Official",
+        "packaging": "None",
+        "id": "76cf438a-01b8-4e0b-b645-ecd3ce2fa32b",
+        "media": [
+          {
+            "track-offset": 1,
+            "tracks": [
+              {
+                "id": "2942b569-854b-478b-8df2-93a574586c82",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya",
+                      "genres": [
+                        {
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2,
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music"
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "alternative r&b",
+                          "count": 2,
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9"
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "r&b",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "count": 2
+                        }
+                      ],
+                      "disambiguation": "French R&B singer"
+                    },
+                    "name": "Aya Nakamura"
+                  }
+                ],
+                "title": "Djadja",
+                "position": 2,
+                "number": "2",
+                "length": 172133
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "position": 1,
+            "title": "",
+            "format": "Digital Media",
+            "track-count": 17,
+            "id": "380136c9-d812-3e27-90c6-cd09ace00f02"
+          }
+        ],
+        "tags": [],
+        "release-group": {
+          "id": "a3bf8f6e-e3bc-4cf1-bda2-8961c914894f",
+          "first-release-date": "2018-07-27",
+          "tags": [],
+          "releases": [],
+          "primary-type": "Album",
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "type": "Other",
+                "country": null,
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "NRJ Holiday 2018",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "genres": []
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "barcode": null,
+        "disambiguation": "",
+        "title": "NRJ Holiday 2018",
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ]
+            },
+            "joinphrase": ""
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "type": null,
+              "sort-name": "France",
+              "disambiguation": "",
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "name": "France"
+            },
+            "date": "2018-07-27"
+          }
+        ],
+        "country": "FR",
+        "genres": [],
+        "quality": "normal",
+        "date": "2018-07-27",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b"
+      },
+      {
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "releases": [],
+          "id": "cbe1af2c-0b74-4eb7-ae35-36b9d699c845",
+          "first-release-date": "2018-08-31",
+          "tags": [],
+          "disambiguation": "",
+          "primary-type": "Album",
+          "title": "NRJ Back to School 2018",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "type": "Other",
+                "disambiguation": "add compilations to this artist",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "genres": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ]
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "mul"
+        },
+        "barcode": "5054197024290",
+        "disambiguation": "",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "id": "cd4dcf50-2638-4087-b897-48c33da9d85e",
+        "media": [
+          {
+            "track-count": 19,
+            "id": "7f6f0e56-ddcb-35dd-952e-9f04e280b596",
+            "format": "CD",
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "length": 169826,
+                "number": "2",
+                "position": 2,
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "alternative r&b",
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2
+                        },
+                        {
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "disambiguation": "French R&B singer",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Aya Nakamura",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "id": "88e942ab-00d6-4221-b036-0f91665ca58a",
+                "title": "Djadja"
+              }
+            ],
+            "track-offset": 1
+          }
+        ],
+        "tags": [
+          {
+            "name": "pop",
+            "count": 1
+          }
+        ],
+        "genres": [
+          {
+            "disambiguation": "",
+            "name": "pop",
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+            "count": 1
+          }
+        ],
+        "date": "2018-08-31",
+        "quality": "normal",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "title": "NRJ Back to School 2018",
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Various Artists",
+            "artist": {
+              "name": "Various Artists",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86"
+            }
+          }
+        ],
+        "release-events": [
+          {
+            "date": "2018-08-31",
+            "area": {
+              "type-id": null,
+              "sort-name": "France",
+              "type": null,
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "name": "France"
+            }
+          }
+        ],
+        "country": "FR"
+      },
+      {
+        "status": "Official",
+        "packaging": "None",
+        "id": "5e148184-6d07-4eff-a376-553442dbdae8",
+        "media": [
+          {
+            "id": "0d8817de-f736-3905-a13c-58fbd134038a",
+            "track-count": 2,
+            "title": "",
+            "format": "Digital Media",
+            "position": 1,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "id": "9619d2f2-fa6a-4b22-b9d9-e353f49482a4",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "country": "FR",
+                      "sort-name": "Nakamura, Aya",
+                      "name": "Aya Nakamura",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer"
+                    }
+                  }
+                ],
+                "title": "Djadja",
+                "length": 171133,
+                "number": "2",
+                "position": 2
+              }
+            ],
+            "track-offset": 1
+          }
+        ],
+        "tags": [],
+        "release-group": {
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "secondary-types": [],
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Aya Nakamura",
+              "artist": {
+                "country": "FR",
+                "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "French R&B singer",
+                "type": "Person",
+                "name": "Aya Nakamura",
+                "sort-name": "Nakamura, Aya"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [],
+          "title": "Copines",
+          "primary-type": "Single",
+          "disambiguation": "",
+          "first-release-date": "2018-06-24",
+          "id": "1f9e3831-b840-4662-b999-06612050ec6f",
+          "tags": [],
+          "releases": []
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "text-representation": {
+          "script": "Latn",
+          "language": "fra"
+        },
+        "disambiguation": "",
+        "barcode": "190295537784",
+        "title": "Copines",
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Aya Nakamura",
+            "artist": {
+              "genres": [
+                {
+                  "count": 2,
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "name": "afrobeats",
+                  "disambiguation": "West African urban/pop music"
+                },
+                {
+                  "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "alternative r&b"
+                },
+                {
+                  "name": "r&b",
+                  "disambiguation": "",
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "count": 2
+                }
+              ],
+              "disambiguation": "French R&B singer",
+              "type": "Person",
+              "sort-name": "Nakamura, Aya",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Aya Nakamura",
+              "country": "FR",
+              "tags": [
+                {
+                  "count": 2,
+                  "name": "afrobeats"
+                },
+                {
+                  "count": 2,
+                  "name": "alternative r&b"
+                },
+                {
+                  "count": 2,
+                  "name": "r&b"
+                }
+              ],
+              "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01"
+            }
+          }
+        ],
+        "release-events": [
+          {
+            "area": null,
+            "date": "2018-09-24"
+          }
+        ],
+        "country": null,
+        "genres": [],
+        "date": "2018-09-24",
+        "quality": "normal",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b"
+      },
+      {
+        "artist-credit": [
+          {
+            "artist": {
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "country": null,
+              "name": "Various Artists"
+            },
+            "name": "Various Artists",
+            "joinphrase": ""
+          }
+        ],
+        "country": "DE",
+        "release-events": [
+          {
+            "date": "2018-09-27",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Germany",
+              "type": null,
+              "type-id": null,
+              "name": "Germany",
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad"
+            }
+          }
+        ],
+        "title": "Bravo Hits 103",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "quality": "normal",
+        "date": "2018-09-27",
+        "genres": [],
+        "id": "df917c3d-7ff5-4429-93b0-9741c63a3d53",
+        "tags": [],
+        "media": [
+          {
+            "id": "3eccb8ba-a827-3f93-b2b7-0f8394959d06",
+            "track-count": 46,
+            "format": "Digital Media",
+            "title": "",
+            "position": 1,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "length": 171000,
+                "position": 13,
+                "number": "13",
+                "title": "Djadja",
+                "id": "2e1451b6-e315-4402-a157-c56810b534e5",
+                "artist-credit": [
+                  {
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "genres": [
+                        {
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats",
+                          "count": 2,
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef"
+                        },
+                        {
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2,
+                          "name": "alternative r&b",
+                          "disambiguation": ""
+                        },
+                        {
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "disambiguation": "",
+                          "name": "r&b"
+                        }
+                      ],
+                      "disambiguation": "French R&B singer",
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Aya Nakamura",
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01"
+                    },
+                    "joinphrase": ""
+                  }
+                ]
+              }
+            ],
+            "track-offset": 12
+          }
+        ],
+        "status": "Official",
+        "packaging": "None",
+        "release-group": {
+          "disambiguation": "",
+          "primary-type": "Album",
+          "tags": [],
+          "id": "8c8aaacb-7c3a-44cb-9c8f-32c374b22e35",
+          "first-release-date": "2018-09-27",
+          "releases": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "genres": [],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null,
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist"
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "title": "Bravo Hits 103"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "disambiguation": "explicit",
+        "barcode": null,
+        "text-representation": {
+          "language": "mul",
+          "script": "Latn"
+        }
+      },
+      {
+        "release-group": {
+          "releases": [],
+          "first-release-date": "2018-09-27",
+          "id": "8c8aaacb-7c3a-44cb-9c8f-32c374b22e35",
+          "tags": [],
+          "primary-type": "Album",
+          "disambiguation": "",
+          "title": "Bravo Hits 103",
+          "artist-credit": [
+            {
+              "artist": {
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "type": "Other",
+                "disambiguation": "add compilations to this artist",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "genres": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ]
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "barcode": "5054197025143",
+        "disambiguation": "",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "id": "de595372-1ca7-44ad-9d5b-0d0959b9f434",
+        "tags": [
+          {
+            "name": "isrc",
+            "count": 1
+          }
+        ],
+        "media": [
+          {
+            "title": "",
+            "format": "CD",
+            "id": "65f58e98-c5fa-3e03-8332-06462c6c7232",
+            "track-count": 23,
+            "tracks": [
+              {
+                "position": 13,
+                "number": "13",
+                "length": 170560,
+                "id": "fe7bb0a9-c666-4ab4-889f-d05b6e7adf87",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "count": 2
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "country": "FR",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2
+                        },
+                        {
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2,
+                          "name": "alternative r&b",
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ]
+                    },
+                    "name": "Aya Nakamura",
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Djadja"
+              }
+            ],
+            "track-offset": 12,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "position": 1
+          }
+        ],
+        "genres": [],
+        "date": "2018-09-28",
+        "quality": "normal",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "title": "Bravo Hits 103",
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Various Artists",
+            "artist": {
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "country": null,
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "name": "Various Artists"
+            }
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "name": "Germany",
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "disambiguation": "",
+              "type": null,
+              "sort-name": "Germany",
+              "type-id": null
+            },
+            "date": "2018-09-28"
+          }
+        ],
+        "country": "DE"
+      },
+      {
+        "disambiguation": "",
+        "barcode": "190758958224",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "release-group": {
+          "releases": [],
+          "tags": [],
+          "first-release-date": "2018-09-28",
+          "id": "27d7f105-67a1-4fa0-9aca-c1e0a4ed01de",
+          "disambiguation": "",
+          "primary-type": "Album",
+          "title": "MNM Big Hits 2018, Vol. 4",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Various Artists",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "type": "Other",
+                "country": null,
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              }
+            }
+          ],
+          "genres": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "name": "Aya Nakamura",
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "count": 2
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "genres": [
+                        {
+                          "count": 2,
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music"
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "alternative r&b",
+                          "count": 2,
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9"
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "r&b",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "disambiguation": "French R&B singer",
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "name": "Aya Nakamura",
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "8a83b1f5-74d7-49a8-adc0-2039da55280c",
+                "length": 169000,
+                "position": 6,
+                "number": "6"
+              }
+            ],
+            "track-offset": 5,
+            "track-count": 19,
+            "id": "2b270975-965a-3bbd-bc3b-a757cb645934",
+            "format": "CD",
+            "title": ""
+          }
+        ],
+        "tags": [],
+        "id": "bbcdcf22-f829-4685-9afa-1d19f2c310c7",
+        "packaging": null,
+        "status": "Official",
+        "packaging-id": null,
+        "date": "2018-09-28",
+        "quality": "normal",
+        "genres": [],
+        "country": "BE",
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "disambiguation": "",
+              "type": null,
+              "sort-name": "Belgium",
+              "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+              "iso-3166-1-codes": [
+                "BE"
+              ],
+              "name": "Belgium"
+            },
+            "date": "2018-09-28"
+          }
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Various Artists",
+            "artist": {
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "sort-name": "Various Artists",
+              "type": "Other"
+            }
+          }
+        ],
+        "title": "MNM Big Hits 2018, Vol. 4"
+      },
+      {
+        "genres": [],
+        "quality": "normal",
+        "date": "2018-10-09",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "title": "Djadja",
+        "artist-credit": [
+          {
+            "artist": {
+              "name": "Aya Nakamura",
+              "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+              "country": "FR",
+              "tags": [
+                {
+                  "name": "afrobeats",
+                  "count": 2
+                },
+                {
+                  "count": 2,
+                  "name": "alternative r&b"
+                },
+                {
+                  "count": 2,
+                  "name": "r&b"
+                }
+              ],
+              "type": "Person",
+              "sort-name": "Nakamura, Aya",
+              "genres": [
+                {
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "count": 2,
+                  "name": "afrobeats",
+                  "disambiguation": "West African urban/pop music"
+                },
+                {
+                  "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                  "count": 2,
+                  "name": "alternative r&b",
+                  "disambiguation": ""
+                },
+                {
+                  "name": "r&b",
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                }
+              ],
+              "disambiguation": "French R&B singer",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+            },
+            "name": "Aya Nakamura",
+            "joinphrase": ""
+          }
+        ],
+        "release-events": [
+          {
+            "date": "2018-10-09",
+            "area": null
+          }
+        ],
+        "country": null,
+        "release-group": {
+          "tags": [],
+          "first-release-date": "2018-04-06",
+          "id": "fe463842-9a96-435c-bc89-590ad7db43ff",
+          "releases": [],
+          "primary-type": "Single",
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "FR",
+                "type": "Person",
+                "sort-name": "Nakamura, Aya",
+                "name": "Aya Nakamura",
+                "disambiguation": "French R&B singer"
+              },
+              "name": "Aya Nakamura"
+            }
+          ],
+          "secondary-type-ids": [],
+          "title": "Djadja",
+          "secondary-types": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "genres": []
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "disambiguation": "",
+        "barcode": "190295529611",
+        "status": "Official",
+        "packaging": "None",
+        "id": "ed3c643e-768f-4179-9b69-5f292c010182",
+        "tags": [],
+        "media": [
+          {
+            "id": "7f046866-eced-3a6a-8cd3-cf3a049efcf0",
+            "track-count": 2,
+            "format": "Digital Media",
+            "title": "",
+            "position": 1,
+            "track-offset": 0,
+            "tracks": [
+              {
+                "id": "821f52ed-6569-4b3c-8875-22f639d59ff2",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "country": "FR",
+                      "name": "Aya Nakamura",
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer"
+                    },
+                    "name": "Aya Nakamura",
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Djadja",
+                "length": 171133,
+                "number": "1",
+                "position": 1
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ]
+      },
+      {
+        "packaging": null,
+        "status": "Official",
+        "tags": [],
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "country": "FR",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "genres": [
+                        {
+                          "count": 2,
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats"
+                        },
+                        {
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2,
+                          "disambiguation": "",
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "count": 2,
+                          "name": "r&b",
+                          "disambiguation": ""
+                        }
+                      ],
+                      "disambiguation": "French R&B singer",
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya"
+                    },
+                    "name": "Aya Nakamura"
+                  }
+                ],
+                "id": "a2b116e5-2fb5-4901-9a76-716679ffa064",
+                "length": 171000,
+                "number": "1",
+                "position": 1
+              }
+            ],
+            "track-offset": 0,
+            "position": 2,
+            "title": "",
+            "format": "CD",
+            "track-count": 22,
+            "id": "7f5f6430-450f-346b-afac-189ac5067d51"
+          }
+        ],
+        "id": "6ffd4890-4895-4edf-9bd9-7f6e99e6178d",
+        "disambiguation": "",
+        "barcode": "0600753846032",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "release-group": {
+          "id": "fb783a9b-2cfd-4e0c-880b-f09da1bf3682",
+          "first-release-date": "2018-10-12",
+          "tags": [],
+          "releases": [],
+          "disambiguation": "",
+          "primary-type": "Album",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86"
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "title": "538: Hitzone 87",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "genres": []
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "title": "538: Hitzone 87",
+        "country": "NL",
+        "release-events": [
+          {
+            "area": {
+              "name": "Netherlands",
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+              "iso-3166-1-codes": [
+                "NL"
+              ],
+              "disambiguation": "",
+              "type": null,
+              "sort-name": "Netherlands",
+              "type-id": null
+            },
+            "date": "2018-10-12"
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "name": "Various Artists",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "quality": "normal",
+        "date": "2018-10-12",
+        "genres": [],
+        "packaging-id": null
+      },
+      {
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "id": "bb6f4352-e5f8-4329-b973-c9feac8f04b9",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "id": "bb5ee154-6478-4f73-bec8-37412deec253",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "alternative r&b",
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "disambiguation": "",
+                          "name": "r&b"
+                        }
+                      ],
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person"
+                    }
+                  }
+                ],
+                "title": "Djadja",
+                "length": 169840,
+                "position": 1,
+                "number": "1"
+              }
+            ],
+            "track-offset": 0,
+            "position": 2,
+            "format": "CD",
+            "title": "",
+            "track-count": 20,
+            "id": "d9103d74-2ad0-3243-991d-0d2b2b47c9a3"
+          }
+        ],
+        "tags": [
+          {
+            "name": "pop",
+            "count": 1
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "disambiguation": "",
+          "primary-type": "Album",
+          "tags": [],
+          "id": "d9c9f756-aed0-451e-8a68-6692c7bc927b",
+          "first-release-date": "2018-10-19",
+          "releases": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "genres": [],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "disambiguation": "add compilations to this artist",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "name": "Various Artists"
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "title": "Fun Club 2018 Vol. 2"
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "mul"
+        },
+        "disambiguation": "",
+        "barcode": "5054197028793",
+        "title": "Fun Club 2018 Vol. 2",
+        "artist-credit": [
+          {
+            "artist": {
+              "name": "Various Artists",
+              "country": null,
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86"
+            },
+            "name": "Various Artists",
+            "joinphrase": ""
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "disambiguation": "",
+              "sort-name": "France",
+              "type": null,
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "name": "France"
+            },
+            "date": "2018-10-19"
+          }
+        ],
+        "country": "FR",
+        "genres": [
+          {
+            "name": "pop",
+            "disambiguation": "",
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+            "count": 1
+          }
+        ],
+        "quality": "normal",
+        "date": "2018-10-19",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a"
+      },
+      {
+        "date": "2018-10-26",
+        "quality": "normal",
+        "genres": [
+          {
+            "count": 1,
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+            "name": "pop",
+            "disambiguation": ""
+          }
+        ],
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "title": "NRJ Music Awards: 20th Edition",
+        "artist-credit": [
+          {
+            "artist": {
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "country": null
+            },
+            "name": "Various Artists",
+            "joinphrase": ""
+          }
+        ],
+        "country": "FR",
+        "release-events": [
+          {
+            "area": {
+              "disambiguation": "",
+              "type": null,
+              "sort-name": "France",
+              "type-id": null,
+              "name": "France",
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "iso-3166-1-codes": [
+                "FR"
+              ]
+            },
+            "date": "2018-10-26"
+          }
+        ],
+        "release-group": {
+          "releases": [],
+          "tags": [],
+          "id": "e62ae151-df1a-4ace-b78d-8ea108ed8a6e",
+          "first-release-date": "2018-10-17",
+          "disambiguation": "",
+          "primary-type": "Album",
+          "title": "NRJ Music Awards: 20th Edition",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "type": "Other",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "disambiguation": "",
+        "barcode": "5054197028755",
+        "text-representation": {
+          "script": "Latn",
+          "language": "mul"
+        },
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "id": "c040f6e0-c8c1-40cd-a33e-9ff5ba5e103a",
+        "tags": [
+          {
+            "count": 1,
+            "name": "pop"
+          }
+        ],
+        "media": [
+          {
+            "position": 1,
+            "track-offset": 4,
+            "tracks": [
+              {
+                "id": "fe914d9e-6f7d-462b-a93c-3842b5d3ce82",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "name": "Aya Nakamura",
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2,
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats"
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "alternative r&b",
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "disambiguation": "",
+                          "name": "r&b"
+                        }
+                      ],
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "name": "Aya Nakamura",
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Djadja",
+                "number": "5",
+                "position": 5,
+                "length": 169826
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 22,
+            "id": "c6801ea2-7eac-3b86-b3a8-ca94b5a23e7a",
+            "format": "CD",
+            "title": ""
+          }
+        ]
+      },
+      {
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "quality": "normal",
+        "date": "2018-10-26",
+        "genres": [],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Various Artists",
+            "artist": {
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "name": "Various Artists"
+            }
+          }
+        ],
+        "country": "FR",
+        "release-events": [
+          {
+            "date": "2018-10-26",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "France",
+              "type": null,
+              "type-id": null,
+              "name": "France",
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "id": "08310658-51eb-3801-80de-5a0739207115"
+            }
+          }
+        ],
+        "title": "NRJ Music Awards: 20th Edition",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "genres": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "NRJ Music Awards: 20th Edition",
+          "primary-type": "Album",
+          "disambiguation": "",
+          "tags": [],
+          "id": "e62ae151-df1a-4ace-b78d-8ea108ed8a6e",
+          "first-release-date": "2018-10-17",
+          "releases": []
+        },
+        "disambiguation": "",
+        "barcode": "190295533410",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "id": "0d482afe-260a-4c8b-b859-d9c5cbe067df",
+        "tags": [],
+        "media": [
+          {
+            "id": "aef65d5a-03c8-397d-b255-c20b352fdf57",
+            "track-count": 66,
+            "format": "Digital Media",
+            "title": "",
+            "position": 1,
+            "track-offset": 4,
+            "tracks": [
+              {
+                "length": 171133,
+                "number": "5",
+                "position": 5,
+                "id": "e0e7a5b9-338e-4594-8c71-ad09c0d097e6",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2,
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats"
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "disambiguation": "",
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "r&b",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Aya Nakamura",
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "country": "FR",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01"
+                    },
+                    "name": "Aya Nakamura",
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Djadja"
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "status": "Official",
+        "packaging": "None"
+      },
+      {
+        "text-representation": {
+          "script": "Latn",
+          "language": "fra"
+        },
+        "barcode": "0190295608576",
+        "disambiguation": "",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "tags": [],
+          "id": "4470c8d4-f41b-445d-b8d3-b53857b88dea",
+          "first-release-date": "2018-11-02",
+          "releases": [],
+          "primary-type": "Album",
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "name": "Aya Nakamura",
+              "artist": {
+                "disambiguation": "French R&B singer",
+                "name": "Aya Nakamura",
+                "sort-name": "Nakamura, Aya",
+                "type": "Person",
+                "country": "FR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [],
+          "title": "Nakamura",
+          "secondary-types": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "genres": []
+        },
+        "tags": [],
+        "media": [
+          {
+            "track-offset": 1,
+            "tracks": [
+              {
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "country": "FR",
+                      "name": "Aya Nakamura",
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "cb3d4cab-f2ba-4c33-b1a8-07d309c3d737",
+                "length": 171133,
+                "position": 2,
+                "number": "2"
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "position": 1,
+            "title": "",
+            "format": "CD",
+            "track-count": 13,
+            "id": "1eb69009-235a-3e8f-b182-4f99833acd61"
+          }
+        ],
+        "id": "130f0cf1-23cf-47ee-a86a-812874afd99d",
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "genres": [],
+        "quality": "normal",
+        "date": "2018-11-02",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "France",
+              "type": null,
+              "disambiguation": "",
+              "type-id": null,
+              "name": "France",
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "id": "08310658-51eb-3801-80de-5a0739207115"
+            },
+            "date": "2018-11-02"
+          }
+        ],
+        "country": "FR",
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "name": "Aya Nakamura",
+              "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+              "country": "FR",
+              "tags": [
+                {
+                  "name": "afrobeats",
+                  "count": 2
+                },
+                {
+                  "count": 2,
+                  "name": "alternative r&b"
+                },
+                {
+                  "name": "r&b",
+                  "count": 2
+                }
+              ],
+              "type": "Person",
+              "sort-name": "Nakamura, Aya",
+              "genres": [
+                {
+                  "count": 2,
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "disambiguation": "West African urban/pop music",
+                  "name": "afrobeats"
+                },
+                {
+                  "disambiguation": "",
+                  "name": "alternative r&b",
+                  "count": 2,
+                  "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9"
+                },
+                {
+                  "count": 2,
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "disambiguation": "",
+                  "name": "r&b"
+                }
+              ],
+              "disambiguation": "French R&B singer",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+            },
+            "name": "Aya Nakamura"
+          }
+        ],
+        "title": "Nakamura"
+      },
+      {
+        "status": "Official",
+        "packaging": "None",
+        "id": "e5789a5b-8383-48b8-bff5-dae4bf25f5bd",
+        "media": [
+          {
+            "id": "9cdcba91-c68c-3b5e-9b8c-a7dccf8162c7",
+            "track-count": 13,
+            "format": "Digital Media",
+            "title": "",
+            "position": 1,
+            "track-offset": 1,
+            "tracks": [
+              {
+                "title": "Djadja",
+                "id": "7531634e-875f-4afa-80bf-237318bb6bc3",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "disambiguation": "French R&B singer",
+                      "type": "Person",
+                      "name": "Aya Nakamura",
+                      "sort-name": "Nakamura, Aya",
+                      "country": "FR",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "name": "Aya Nakamura",
+                    "joinphrase": ""
+                  }
+                ],
+                "position": 2,
+                "number": "2",
+                "length": 171133
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "tags": [
+          {
+            "name": "contemporary r&b",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "france"
+          },
+          {
+            "name": "hip hop",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "musiques du monde"
+          },
+          {
+            "name": "pop",
+            "count": 1
+          },
+          {
+            "name": "r&b",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "world"
+          }
+        ],
+        "release-group": {
+          "releases": [],
+          "first-release-date": "2018-11-02",
+          "id": "4470c8d4-f41b-445d-b8d3-b53857b88dea",
+          "tags": [],
+          "disambiguation": "",
+          "primary-type": "Album",
+          "title": "Nakamura",
+          "secondary-type-ids": [],
+          "artist-credit": [
+            {
+              "name": "Aya Nakamura",
+              "artist": {
+                "name": "Aya Nakamura",
+                "sort-name": "Nakamura, Aya",
+                "type": "Person",
+                "disambiguation": "French R&B singer",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                "country": "FR"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": []
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "barcode": "190295530631",
+        "disambiguation": "worldwide outside DACH area",
+        "text-representation": {
+          "script": "Latn",
+          "language": "fra"
+        },
+        "title": "NAKAMURA",
+        "artist-credit": [
+          {
+            "artist": {
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "type": "Person",
+              "sort-name": "Nakamura, Aya",
+              "genres": [
+                {
+                  "name": "afrobeats",
+                  "disambiguation": "West African urban/pop music",
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "count": 2
+                },
+                {
+                  "count": 2,
+                  "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                  "name": "alternative r&b",
+                  "disambiguation": ""
+                },
+                {
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "count": 2,
+                  "name": "r&b",
+                  "disambiguation": ""
+                }
+              ],
+              "disambiguation": "French R&B singer",
+              "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+              "country": "FR",
+              "tags": [
+                {
+                  "name": "afrobeats",
+                  "count": 2
+                },
+                {
+                  "count": 2,
+                  "name": "alternative r&b"
+                },
+                {
+                  "name": "r&b",
+                  "count": 2
+                }
+              ],
+              "name": "Aya Nakamura"
+            },
+            "name": "Aya Nakamura",
+            "joinphrase": ""
+          }
+        ],
+        "country": null,
+        "release-events": [
+          {
+            "area": null,
+            "date": "2018-11-02"
+          }
+        ],
+        "date": "2018-11-02",
+        "quality": "normal",
+        "genres": [
+          {
+            "disambiguation": "",
+            "name": "contemporary r&b",
+            "count": 1,
+            "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+          },
+          {
+            "name": "hip hop",
+            "disambiguation": "",
+            "count": 1,
+            "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c"
+          },
+          {
+            "count": 1,
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+            "disambiguation": "",
+            "name": "pop"
+          },
+          {
+            "disambiguation": "",
+            "name": "r&b",
+            "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+            "count": 1
+          }
+        ],
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b"
+      },
+      {
+        "date": "2018-11-02",
+        "quality": "normal",
+        "genres": [
+          {
+            "disambiguation": "",
+            "name": "contemporary r&b",
+            "count": 1,
+            "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0"
+          },
+          {
+            "count": 1,
+            "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c",
+            "disambiguation": "",
+            "name": "hip hop"
+          },
+          {
+            "disambiguation": "",
+            "name": "pop",
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+            "count": 1
+          },
+          {
+            "disambiguation": "",
+            "name": "r&b",
+            "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+            "count": 1
+          }
+        ],
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "title": "NAKAMURA",
+        "artist-credit": [
+          {
+            "name": "Aya Nakamura",
+            "artist": {
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "genres": [
+                {
+                  "name": "afrobeats",
+                  "disambiguation": "West African urban/pop music",
+                  "count": 2,
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef"
+                },
+                {
+                  "count": 2,
+                  "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                  "name": "alternative r&b",
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "name": "r&b",
+                  "count": 2,
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                }
+              ],
+              "disambiguation": "French R&B singer",
+              "type": "Person",
+              "sort-name": "Nakamura, Aya",
+              "country": "FR",
+              "tags": [
+                {
+                  "name": "afrobeats",
+                  "count": 2
+                },
+                {
+                  "count": 2,
+                  "name": "alternative r&b"
+                },
+                {
+                  "count": 2,
+                  "name": "r&b"
+                }
+              ],
+              "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+              "name": "Aya Nakamura"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "country": "AT",
+        "release-events": [
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "AT"
+              ],
+              "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+              "name": "Austria",
+              "type-id": null,
+              "disambiguation": "",
+              "sort-name": "Austria",
+              "type": null
+            },
+            "date": "2018-11-02"
+          },
+          {
+            "date": "2018-11-02",
+            "area": {
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "name": "Germany",
+              "type-id": null,
+              "type": null,
+              "sort-name": "Germany",
+              "disambiguation": ""
+            }
+          },
+          {
+            "date": "2018-11-02",
+            "area": {
+              "id": "d2007481-eefe-37c0-be71-2256dfe148cb",
+              "iso-3166-1-codes": [
+                "LI"
+              ],
+              "name": "Liechtenstein",
+              "type-id": null,
+              "type": null,
+              "sort-name": "Liechtenstein",
+              "disambiguation": ""
+            }
+          },
+          {
+            "date": "2018-11-02",
+            "area": {
+              "name": "Switzerland",
+              "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+              "iso-3166-1-codes": [
+                "CH"
+              ],
+              "type": null,
+              "sort-name": "Switzerland",
+              "disambiguation": "",
+              "type-id": null
+            }
+          }
+        ],
+        "release-group": {
+          "releases": [],
+          "id": "4470c8d4-f41b-445d-b8d3-b53857b88dea",
+          "first-release-date": "2018-11-02",
+          "tags": [],
+          "disambiguation": "",
+          "primary-type": "Album",
+          "title": "Nakamura",
+          "secondary-type-ids": [],
+          "artist-credit": [
+            {
+              "name": "Aya Nakamura",
+              "artist": {
+                "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "FR",
+                "type": "Person",
+                "sort-name": "Nakamura, Aya",
+                "name": "Aya Nakamura",
+                "disambiguation": "French R&B singer"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": []
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "barcode": "190295517366",
+        "disambiguation": "",
+        "text-representation": {
+          "script": "Latn",
+          "language": "fra"
+        },
+        "status": "Official",
+        "packaging": "None",
+        "id": "50b1988b-c7f1-4d39-9b1a-63f9988c2aa7",
+        "media": [
+          {
+            "id": "a28edeed-26b5-3291-8137-758a1fd35939",
+            "track-count": 14,
+            "format": "Digital Media",
+            "title": "",
+            "position": 1,
+            "track-offset": 1,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "country": "FR",
+                      "name": "Aya Nakamura",
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer"
+                    },
+                    "name": "Aya Nakamura"
+                  }
+                ],
+                "id": "03652fd5-396e-4dc2-8670-d4549ef0a577",
+                "title": "Djadja",
+                "position": 2,
+                "number": "2",
+                "length": 171133
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "tags": [
+          {
+            "name": "contemporary r&b",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "hip hop"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "name": "r&b",
+            "count": 1
+          },
+          {
+            "name": "world",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "artist-credit": [
+          {
+            "name": "Aya Nakamura",
+            "artist": {
+              "name": "Aya Nakamura",
+              "country": "FR",
+              "tags": [
+                {
+                  "name": "afrobeats",
+                  "count": 2
+                },
+                {
+                  "count": 2,
+                  "name": "alternative r&b"
+                },
+                {
+                  "name": "r&b",
+                  "count": 2
+                }
+              ],
+              "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+              "disambiguation": "French R&B singer",
+              "genres": [
+                {
+                  "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                  "count": 2,
+                  "name": "afrobeats",
+                  "disambiguation": "West African urban/pop music"
+                },
+                {
+                  "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "alternative r&b"
+                },
+                {
+                  "count": 2,
+                  "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                  "name": "r&b",
+                  "disambiguation": ""
+                }
+              ],
+              "sort-name": "Nakamura, Aya",
+              "type": "Person",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "country": "XW",
+        "release-events": [
+          {
+            "area": {
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "name": "[Worldwide]",
+              "type-id": null,
+              "type": null,
+              "sort-name": "[Worldwide]",
+              "disambiguation": ""
+            },
+            "date": "2018-11-02"
+          }
+        ],
+        "title": "NAKAMURA (deluxe edition)",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "date": "2018-11-02",
+        "quality": "normal",
+        "genres": [
+          {
+            "id": "4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0",
+            "count": 1,
+            "name": "contemporary r&b",
+            "disambiguation": ""
+          },
+          {
+            "count": 1,
+            "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c",
+            "name": "hip hop",
+            "disambiguation": ""
+          },
+          {
+            "disambiguation": "",
+            "name": "pop",
+            "count": 1,
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+          }
+        ],
+        "id": "ff11aa01-5d8b-4c76-9b16-b1117da4fe31",
+        "media": [
+          {
+            "position": 1,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-offset": 1,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "disambiguation": "French R&B singer",
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya",
+                      "name": "Aya Nakamura",
+                      "country": "FR",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    }
+                  }
+                ],
+                "id": "00db7745-90e6-42c5-95ef-be8141292c25",
+                "title": "Djadja",
+                "position": 2,
+                "number": "2",
+                "length": 171133
+              }
+            ],
+            "track-count": 16,
+            "id": "6a401b0a-cd83-3c6a-be98-4d517ffd0371",
+            "title": "",
+            "format": "Digital Media"
+          }
+        ],
+        "tags": [
+          {
+            "name": "contemporary r&b",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "hip hop"
+          },
+          {
+            "name": "pop",
+            "count": 1
+          },
+          {
+            "name": "world",
+            "count": 1
+          }
+        ],
+        "status": "Withdrawn",
+        "packaging": "None",
+        "release-group": {
+          "primary-type": "Album",
+          "disambiguation": "",
+          "tags": [],
+          "id": "4470c8d4-f41b-445d-b8d3-b53857b88dea",
+          "first-release-date": "2018-11-02",
+          "releases": [],
+          "secondary-types": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "genres": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Aya Nakamura",
+              "artist": {
+                "disambiguation": "French R&B singer",
+                "type": "Person",
+                "name": "Aya Nakamura",
+                "sort-name": "Nakamura, Aya",
+                "country": "FR",
+                "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              }
+            }
+          ],
+          "secondary-type-ids": [],
+          "title": "Nakamura"
+        },
+        "status-id": "6a3772de-4605-4132-993d-aa315cd19b4b",
+        "disambiguation": "",
+        "barcode": "190295294229",
+        "text-representation": {
+          "script": "Latn",
+          "language": "fra"
+        }
+      },
+      {
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "country": null,
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "genres": []
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "country": "NL",
+        "release-events": [
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "NL"
+              ],
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+              "name": "Netherlands",
+              "type-id": null,
+              "disambiguation": "",
+              "sort-name": "Netherlands",
+              "type": null
+            },
+            "date": "2018-11-23"
+          }
+        ],
+        "title": "538: Hitzone: Best of 2018",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "quality": "normal",
+        "date": "2018-11-23",
+        "genres": [],
+        "id": "c8e227d6-a8ad-488a-a1ce-9dac516c0e49",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "id": "050a1916-713a-4b51-84c6-b36cc17c9052",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "genres": [
+                        {
+                          "count": 2,
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 2,
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "disambiguation": "",
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "count": 2,
+                          "name": "r&b",
+                          "disambiguation": ""
+                        }
+                      ],
+                      "disambiguation": "French R&B singer",
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya"
+                    },
+                    "name": "Aya Nakamura"
+                  }
+                ],
+                "title": "Djadja",
+                "position": 9,
+                "number": "9",
+                "length": 169000
+              }
+            ],
+            "track-offset": 8,
+            "position": 1,
+            "format": "CD",
+            "title": "",
+            "id": "4c6cad94-0b06-39bc-acf5-ad590ad81581",
+            "track-count": 23
+          }
+        ],
+        "tags": [],
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "disambiguation": "add compilations to this artist",
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "name": "Various Artists"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "title": "538: Hitzone: Best of 2018",
+          "primary-type": "Album",
+          "disambiguation": "",
+          "tags": [],
+          "id": "1953b0f8-48da-4a9f-a6ad-e643d9dcb9b2",
+          "first-release-date": "2018-11-23",
+          "releases": []
+        },
+        "disambiguation": "",
+        "barcode": "0600753850862",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        }
+      },
+      {
+        "title": "MNM Big Hits: Best of 2018",
+        "release-events": [
+          {
+            "date": "2018-11-23",
+            "area": {
+              "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+              "iso-3166-1-codes": [
+                "BE"
+              ],
+              "name": "Belgium",
+              "type-id": null,
+              "disambiguation": "",
+              "type": null,
+              "sort-name": "Belgium"
+            }
+          }
+        ],
+        "country": "BE",
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "name": "Various Artists",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "genres": [],
+        "date": "2018-11-23",
+        "quality": "normal",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "tags": [],
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-offset": 15,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2,
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music"
+                        },
+                        {
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2,
+                          "disambiguation": "",
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person"
+                    }
+                  }
+                ],
+                "id": "0284ad21-b116-4394-916a-f080b91bb7b0",
+                "title": "Djadja",
+                "length": 170240,
+                "position": 16,
+                "number": "16"
+              }
+            ],
+            "position": 1,
+            "format": "CD",
+            "title": "",
+            "track-count": 23,
+            "id": "46660f88-c5e6-349a-9385-e1acf438c51b"
+          }
+        ],
+        "id": "f8293f03-6ea9-48f3-948b-043f6d939073",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "disambiguation": "",
+        "barcode": "0600753854945",
+        "release-group": {
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "type": "Other",
+                "country": null,
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "title": "MNM Big Hits: Best of 2018",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "genres": [],
+          "tags": [],
+          "first-release-date": "2018-11-23",
+          "id": "bd74c067-7984-456b-b30d-62597a9b8437",
+          "releases": [],
+          "disambiguation": "",
+          "primary-type": "Album"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+      },
+      {
+        "title": "Megahits 2019: Die Erste",
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "name": "Various Artists"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "country": "DE",
+        "release-events": [
+          {
+            "date": "2018-12-14",
+            "area": {
+              "sort-name": "Germany",
+              "type": null,
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Germany",
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad"
+            }
+          }
+        ],
+        "date": "2018-12-14",
+        "quality": "normal",
+        "genres": [],
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "status": "Official",
+        "packaging": "None",
+        "id": "5a167eb1-4ea6-4b25-baed-a2df3339ca02",
+        "media": [
+          {
+            "position": 1,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "tracks": [
+              {
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "country": "FR",
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2
+                        },
+                        {
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2,
+                          "name": "alternative r&b",
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "count": 2
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "id": "ad18262d-1978-4fc7-b7cc-2e997c9445db",
+                "position": 41,
+                "number": "41",
+                "length": 170000
+              }
+            ],
+            "track-offset": 40,
+            "track-count": 47,
+            "id": "15c6ef26-32e8-369e-a7b1-4eb9fc13a42e",
+            "title": "",
+            "format": "Digital Media"
+          }
+        ],
+        "tags": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "genres": [],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "artist": {
+                "type": "Other",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "title": "Megahits 2019: Die Erste",
+          "disambiguation": "",
+          "primary-type": "Album",
+          "first-release-date": "2018-12-14",
+          "id": "6939af04-adb2-4f39-8be2-f92da6013f3f",
+          "tags": [],
+          "releases": []
+        },
+        "disambiguation": "",
+        "barcode": "0600753859278",
+        "text-representation": {
+          "language": "mul",
+          "script": "Latn"
+        }
+      },
+      {
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-offset": 17,
+            "tracks": [
+              {
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "name": "Aya Nakamura",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "country": "FR",
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music",
+                          "count": 2,
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef"
+                        },
+                        {
+                          "count": 2,
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "disambiguation": "",
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "count": 2,
+                          "disambiguation": "",
+                          "name": "r&b"
+                        }
+                      ],
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "ffeb08c1-e6db-498c-acd2-530079979c3a",
+                "number": "18",
+                "position": 18,
+                "length": 170000
+              }
+            ],
+            "position": 2,
+            "title": "",
+            "format": "CD",
+            "id": "eb94bd97-f340-38d0-9350-a528395cb93a",
+            "track-count": 24
+          }
+        ],
+        "tags": [],
+        "id": "a146efbf-cdab-4afa-a78f-30e436051d94",
+        "disambiguation": "",
+        "barcode": "0600753859247",
+        "text-representation": {
+          "language": "mul",
+          "script": "Latn"
+        },
+        "release-group": {
+          "title": "Megahits 2019: Die Erste",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "type": "Other",
+                "country": null,
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "genres": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "releases": [],
+          "tags": [],
+          "id": "6939af04-adb2-4f39-8be2-f92da6013f3f",
+          "first-release-date": "2018-12-14",
+          "primary-type": "Album",
+          "disambiguation": ""
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "title": "Megahits 2019: Die Erste",
+        "country": "DE",
+        "release-events": [
+          {
+            "date": "2018-12-14",
+            "area": {
+              "type-id": null,
+              "disambiguation": "",
+              "sort-name": "Germany",
+              "type": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "name": "Germany"
+            }
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "name": "Various Artists",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "country": null,
+              "type": "Other",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "disambiguation": "add compilations to this artist",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "quality": "normal",
+        "date": "2018-12-14",
+        "genres": [],
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a"
+      },
+      {
+        "packaging": null,
+        "status": "Official",
+        "tags": [],
+        "media": [
+          {
+            "format": "CD",
+            "title": "",
+            "id": "9a0c95a7-2f00-30ea-8c00-1612df686505",
+            "track-count": 21,
+            "tracks": [
+              {
+                "number": "3",
+                "position": 3,
+                "length": 171000,
+                "title": "Djajda",
+                "id": "0e954e02-f9c2-4537-bd12-858984dfd68e",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "country": "FR",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "type": "Person",
+                      "sort-name": "Nakamura, Aya",
+                      "genres": [
+                        {
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9"
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "r&b",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "disambiguation": "French R&B singer"
+                    },
+                    "name": "Aya Nakamura"
+                  }
+                ]
+              }
+            ],
+            "track-offset": 2,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "position": 1
+          }
+        ],
+        "id": "f382de78-9b9b-4f30-a814-11efa40573cb",
+        "disambiguation": "",
+        "barcode": null,
+        "text-representation": {
+          "language": "mul",
+          "script": "Latn"
+        },
+        "release-group": {
+          "title": "Rap 2019",
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "type": "Other",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "genres": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "releases": [],
+          "id": "b02c0e07-0d2c-4efd-a86b-240e8a1fba9a",
+          "first-release-date": "2018-12-28",
+          "tags": [],
+          "primary-type": "Album",
+          "disambiguation": ""
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "title": "Rap 2019",
+        "country": "FR",
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "disambiguation": "",
+              "sort-name": "France",
+              "type": null,
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "name": "France"
+            },
+            "date": "2018-12-28"
+          }
+        ],
+        "artist-credit": [
+          {
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "genres": []
+            },
+            "name": "Various Artists",
+            "joinphrase": ""
+          }
+        ],
+        "quality": "normal",
+        "date": "2018-12-28",
+        "genres": [],
+        "packaging-id": null
+      },
+      {
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "genres": [],
+        "quality": "normal",
+        "date": "2018",
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "name": "Various Artists",
+              "country": null,
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "sort-name": "Austria",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Austria",
+              "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+              "iso-3166-1-codes": [
+                "AT"
+              ]
+            },
+            "date": "2018"
+          }
+        ],
+        "country": "AT",
+        "title": "Bravo Hits 103",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "title": "Bravo Hits 103",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "artist-credit": [
+            {
+              "artist": {
+                "type": "Other",
+                "name": "Various Artists",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null
+              },
+              "name": "Various Artists",
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "releases": [],
+          "first-release-date": "2018-09-27",
+          "id": "8c8aaacb-7c3a-44cb-9c8f-32c374b22e35",
+          "tags": [],
+          "disambiguation": "",
+          "primary-type": "Album"
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": null
+        },
+        "disambiguation": "Austrian Version",
+        "barcode": "5054197025150",
+        "id": "23f2771a-aaee-4a28-a620-1d7003a9b230",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "length": 171000,
+                "position": 13,
+                "number": "13",
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "tags": [
+                        {
+                          "name": "afrobeats",
+                          "count": 2
+                        },
+                        {
+                          "name": "alternative r&b",
+                          "count": 2
+                        },
+                        {
+                          "name": "r&b",
+                          "count": 2
+                        }
+                      ],
+                      "country": "FR",
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "name": "afrobeats",
+                          "disambiguation": "West African urban/pop music",
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef",
+                          "count": 2
+                        },
+                        {
+                          "disambiguation": "",
+                          "name": "alternative r&b",
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2
+                        },
+                        {
+                          "name": "r&b",
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3"
+                        }
+                      ],
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "ca4086dc-0405-4e21-94fc-7ae2acaaffde"
+              }
+            ],
+            "track-offset": 12,
+            "position": 1,
+            "format": "CD",
+            "title": "",
+            "track-count": 23,
+            "id": "3ac7800a-1e50-35e6-a3e3-89a61e2774eb"
+          }
+        ],
+        "tags": [],
+        "status": "Official",
+        "packaging": "Jewel Case"
+      },
+      {
+        "date": "2018",
+        "quality": "normal",
+        "genres": [],
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "title": "BRAVO Hits 103",
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "sort-name": "Various Artists",
+              "type": "Other",
+              "disambiguation": "add compilations to this artist",
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "count": 66,
+                  "name": "special purpose artist"
+                }
+              ],
+              "country": null
+            },
+            "joinphrase": ""
+          }
+        ],
+        "country": "DE",
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "disambiguation": "",
+              "sort-name": "Germany",
+              "type": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "name": "Germany"
+            },
+            "date": "2018"
+          }
+        ],
+        "release-group": {
+          "genres": [],
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Bravo Hits 103",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Various Artists",
+              "artist": {
+                "country": null,
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "type": "Other"
+              }
+            }
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "primary-type": "Album",
+          "disambiguation": "",
+          "releases": [],
+          "tags": [],
+          "first-release-date": "2018-09-27",
+          "id": "8c8aaacb-7c3a-44cb-9c8f-32c374b22e35"
+        },
+        "status-id": null,
+        "barcode": "5054197025167",
+        "disambiguation": "",
+        "text-representation": {
+          "script": null,
+          "language": null
+        },
+        "status": null,
+        "packaging": "Jewel Case",
+        "id": "85b7b471-cb33-4d97-9228-57c302c8596e",
+        "tags": [],
+        "media": [
+          {
+            "position": 1,
+            "tracks": [
+              {
+                "title": "Djadja",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "name": "Aya Nakamura",
+                    "artist": {
+                      "id": "cf580d82-3f3e-4b86-8874-7e0fbe794f01",
+                      "tags": [
+                        {
+                          "count": 2,
+                          "name": "afrobeats"
+                        },
+                        {
+                          "count": 2,
+                          "name": "alternative r&b"
+                        },
+                        {
+                          "count": 2,
+                          "name": "r&b"
+                        }
+                      ],
+                      "country": "FR",
+                      "name": "Aya Nakamura",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "sort-name": "Nakamura, Aya",
+                      "type": "Person",
+                      "disambiguation": "French R&B singer",
+                      "genres": [
+                        {
+                          "disambiguation": "West African urban/pop music",
+                          "name": "afrobeats",
+                          "count": 2,
+                          "id": "b8793fdb-bbc8-4418-a6f8-05eafbbe07ef"
+                        },
+                        {
+                          "id": "4e03fb35-d571-4111-824d-88c9f8a3d0c9",
+                          "count": 2,
+                          "name": "alternative r&b",
+                          "disambiguation": ""
+                        },
+                        {
+                          "count": 2,
+                          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+                          "name": "r&b",
+                          "disambiguation": ""
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "id": "9fe0064c-5523-4985-8ad6-1875bd4a84dd",
+                "number": "13",
+                "position": 13,
+                "length": 170560
+              }
+            ],
+            "track-offset": 12,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "id": "a5452c16-9e50-4bb3-b7e0-cddc7c7ab086",
+            "track-count": 23,
+            "format": "CD",
+            "title": ""
+          }
+        ]
+      }
+    ],
+    "title": "Djadja",
+    "video": false,
+    "length": 171000,
+    "relations": [
+      {
+        "source-credit": "",
+        "end": null,
+        "direction": "forward",
+        "attributes": [],
+        "type": "performance",
+        "work": {
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+          "disambiguation": "",
+          "type": "Song",
+          "attributes": [],
+          "language": "fra",
+          "id": "fc730cc4-5712-4794-9a88-f80102ffcc02",
+          "title": "Djadja",
+          "iswcs": [],
+          "languages": [
+            "fra"
+          ]
+        },
+        "begin": null,
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "ended": false,
+        "target-type": "work",
+        "target-credit": "",
+        "attribute-values": {},
+        "attribute-ids": {}
+      }
+    ],
+    "genres": [
+      {
+        "disambiguation": "",
+        "name": "euro house",
+        "count": 1,
+        "id": "8f8cbcde-3948-4be5-8bf0-8073f13e4b60"
+      },
+      {
+        "disambiguation": "",
+        "name": "folk",
+        "id": "a91eed3a-fdd0-494e-ade0-95ea4117f6eb",
+        "count": 1
+      },
+      {
+        "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c",
+        "count": 2,
+        "disambiguation": "",
+        "name": "hip hop"
+      },
+      {
+        "id": "911c7bbb-172d-4df8-9478-dbff4296e791",
+        "count": 2,
+        "name": "pop",
+        "disambiguation": ""
+      }
+    ],
+    "disambiguation": "",
+    "isrcs": [
+      "FRZ041800369"
+    ]
+  }
+}

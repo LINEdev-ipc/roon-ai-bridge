@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Radiohead&recording_name=Bloom+%28Jamie+xx+Rework+Part+3%29",
+  "fetched_at": "2026-07-28T12:15:53.443Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Radiohead",
+      "recording_arg": "Bloom (Jamie xx Rework Part 3)",
+      "artist_credit_name": "Radiohead",
+      "release_name": "Every Last Crumb",
+      "recording_name": "Bloom (Jamie XX rework part 3)",
+      "artist_credit_id": 66,
+      "artist_mbids": [
+        "a74b1b7f-71a5-4011-9441-d0b5e4122711"
+      ],
+      "release_mbid": "13154b1b-fd3c-4e85-aa0b-0e3a059a2875",
+      "recording_mbid": "a379f60a-4e48-4304-8b4b-457e5263e58d"
+    }
+  ]
+}

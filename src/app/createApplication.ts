@@ -8,6 +8,7 @@ import { ApiKeyService } from "../services/apiKeyService";
 import { DiagnosticsService } from "../services/diagnosticsService";
 import { ExtensionManagerService } from "../services/extensionManagerService";
 import { HomeHistoryService } from "../services/homeHistoryService";
+import { ListenBrainzMetadataService } from "../services/listenBrainzMetadataService";
 import { MetadataProviderCacheService } from "../services/metadataProviderCacheService";
 import { OAuthService } from "../services/oauthService";
 import { OutputVolumeSettingsService } from "../services/outputVolumeSettingsService";
@@ -54,8 +55,13 @@ export function createApplication(config: AppConfig): ApplicationRuntime {
   const mediaService = new RoonMediaService(roonClient, config.roonStreamingSource);
   const metadataProviderCacheService = new MetadataProviderCacheService(database);
   metadataProviderCacheService.purgeExpired();
+  const listenBrainzMetadataService = new ListenBrainzMetadataService(
+    fetch,
+    metadataProviderCacheService
+  );
   const recordingMetadataService = new RecordingMetadataService(fetch, {
-    cache: metadataProviderCacheService
+    cache: metadataProviderCacheService,
+    listenBrainz: listenBrainzMetadataService
   });
   const trackCatalogService = new TrackCatalogService(
     database,

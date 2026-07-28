@@ -1,0 +1,3244 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28chan%29+AND+artistname%3A%22Buena+Vista+Social+Club%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:27.260Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:27.618Z",
+    "count": 9,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "946bfe29-cbb6-4e2f-96bd-006ff8f9bbf2",
+        "score": 100,
+        "artist-credit-id": "0197023b-c63a-3060-b509-0fb0829767d9",
+        "title": "Chan Chan",
+        "length": 259000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Buena Vista Social Club",
+            "artist": {
+              "id": "2a85ecff-41e9-4be1-aca6-c87054a4c334",
+              "name": "Buena Vista Social Club",
+              "sort-name": "Buena Vista Social Club"
+            }
+          }
+        ],
+        "first-release-date": "2017",
+        "releases": [
+          {
+            "id": "691147ca-5406-489d-b704-c7e3c8676b43",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Audiophile Recordings, Vol. 05",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0b3272b1-4fca-4e3e-96f0-5a49f0ffcffe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Audiophile Recordings, Vol. 05",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 16,
+            "media": [
+              {
+                "id": "0e0c6e2f-a8ce-3c07-b2dc-b13942c44660",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "848f8f68-7b4e-4ce0-a1ea-5481e2a16dc2",
+                    "number": "15",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "47b7339f-8f7e-432e-acf1-8cb6b53a3554",
+        "score": 100,
+        "artist-credit-id": "0197023b-c63a-3060-b509-0fb0829767d9",
+        "title": "Chan Chan",
+        "length": 258000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Buena Vista Social Club",
+            "artist": {
+              "id": "2a85ecff-41e9-4be1-aca6-c87054a4c334",
+              "name": "Buena Vista Social Club",
+              "sort-name": "Buena Vista Social Club"
+            }
+          }
+        ],
+        "first-release-date": "1997-06-23",
+        "releases": [
+          {
+            "id": "9e28f03e-663f-4bc7-ac9b-382c043e333d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Cinéma 2 : Les Plus Grands Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "84118f9d-0373-4fbd-8ddf-6336a1a564c1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Cinéma 2 : Les Plus Grands Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 18,
+            "media": [
+              {
+                "id": "5917f908-d3f2-35d5-a77d-978c3651881e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9cb07dd2-7b78-4b78-bf5a-c9503b25a305",
+                    "number": "3",
+                    "title": "Buena Vista Social Club: Chan Chan",
+                    "length": 256000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "7cc5b8c0-1dca-40b7-bbd8-aba19c11ec64",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Ciné Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "28677aa5-7b3d-4828-b41e-526abf436a5e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ciné Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2002-04",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2002-04",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 39,
+            "media": [
+              {
+                "id": "ea7a29a4-dffe-389b-8fe0-db88de2dd6bf",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e17d43c2-d3a9-4c59-b61d-8579bd7ee590",
+                    "number": "14",
+                    "title": "Buena Vista Social Club: Chan Chan",
+                    "length": 256000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "eb368574-bf93-4276-a5f6-676fc926b826",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4d55731a-0694-3d88-802f-12927eb1f538",
+            "count": 1,
+            "title": "Musik und Bildung: 2005 04 Mozart 2006",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "[unknown]",
+                "artist": {
+                  "id": "125ec42a-7229-4250-afc5-e057484327fe",
+                  "name": "[unknown]",
+                  "sort-name": "[unknown]",
+                  "disambiguation": "Special Purpose Artist – Do not add releases here, if possible."
+                }
+              }
+            ],
+            "release-group": {
+              "id": "003cb124-9cda-46e7-867d-c60ac144155d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Musik und Bildung: 2005 04 Mozart 2006",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2005",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2005",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 28,
+            "media": [
+              {
+                "id": "f4405fc5-b2b2-31e7-b134-655eab9bfceb",
+                "position": 1,
+                "format": "Mixed Mode CD",
+                "track": [
+                  {
+                    "id": "477c6e43-26ef-4d3f-bdf6-6a81b26776b5",
+                    "number": "25",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 28,
+                "track-offset": 24
+              }
+            ]
+          },
+          {
+            "id": "376644cb-3a11-4c4b-92ff-337976bdbfbe",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-09-17",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "75f61771-d8cc-3146-ba02-88763a54f9db",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "ca67f649-0266-4541-ba4c-59e1b000c39f",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "923db1c4-40f7-4d4e-bb4d-f35b3ebcad29",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Nirvana the Band the Show Webseries OST",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "88be8c18-1598-42c1-a99d-cf8cd263f95a",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nirvana the Band the Show Webseries OST",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2025-04-06",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2025-04-06",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 124,
+            "media": [
+              {
+                "id": "91a67097-e83c-46ea-adc6-9cc38e10d218",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b92cb179-d876-4a08-a7ab-135a155bff34",
+                    "number": "58",
+                    "title": "Chan Chan",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 124,
+                "track-offset": 57
+              }
+            ]
+          },
+          {
+            "id": "97c2d19c-7568-4464-904c-d242af1051d0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "77e162fd-1268-4250-86bf-30e36f42b595",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9312acfe-6849-45f9-b382-ab4b1662ad4d",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 256000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f824bc47-4f36-4e67-8c76-d4343f5e1ac7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th Anniversary Edition",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-09-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "971d0ce7-a757-4d20-b29f-41f6cf00fb5c",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c753c257-dd1f-4f4a-b716-a2ae69a960df",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "4e03b3a5-8e95-4e7e-ba35-05eb0af25c83",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "Reissue",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "1997",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "7493ffa7-92d5-4508-8473-40ed6a643876",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2aee1309-5f4f-4f9a-b943-cad67633a829",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 257933
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f8e9bba5-86e9-4afc-bea0-713edd0dd34b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Simply the Best Movie Album",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "81eb3f57-73e8-3edc-be21-f1039bec74bb",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Simply the Best Movie Album",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2001",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2001",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "bdbf5097-44bc-35ea-a913-9247e8dd3cfe",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7bbed430-40b2-4eb5-ad1a-8a265cb4c2d3",
+                    "number": "20",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "199cfa80-4c5d-40cc-8fac-c380f0e9fe04",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 4,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th Anniversay Edition Bookpack",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-09-17",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "ff0fd201-fd1b-3b0e-a01a-37674cd25fbb",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "98042051-3c20-4122-9dae-260b84b1a873",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258266
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "199cfa80-4c5d-40cc-8fac-c380f0e9fe04",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 4,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th Anniversay Edition Bookpack",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-09-17",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "5cc3aa70-f13b-367d-8fbc-940687adc903",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "39feced3-22ad-439a-9a96-d7536bf742fd",
+                    "number": "A1",
+                    "title": "Chan Chan",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "9ae6bdab-9cc5-472f-b3fc-9ad20ce55ad8",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "track-count": 33,
+            "media": [
+              {
+                "id": "32da1cbf-082c-3f1c-840e-91114a297a6c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a1a778d6-ee19-4e8f-a5e7-be5c6ab76ad0",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "2e18e017-0a62-4c50-a708-b6fbea29612e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "1997-09-16",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1997-09-16",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "6189cfb2-2bef-3919-baa3-7e77efa81269",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a3531e8a-ba77-3b4e-8d96-396857c9ca7a",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 257893
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "404c5086-2839-4aa7-8e7f-fb196bd30991",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Simply the Best Movie Album",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "81eb3f57-73e8-3edc-be21-f1039bec74bb",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Simply the Best Movie Album",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2001-11-19",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2001-11-19",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "22833f1f-3005-3bf6-8a14-30b7afdb560e",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bf055be8-7f06-33f6-a043-1ede6127c188",
+                    "number": "20",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "8f68e3db-be50-4b9f-9a4b-c0d9f7737cab",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th anniversary edition",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-10-01",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2021-10-01",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 26,
+            "media": [
+              {
+                "id": "7c3c2d04-208c-3b00-b90d-98a0f6183e68",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5c1f8599-f966-411e-82b7-b1b9084056ca",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "7477c519-44e8-4798-a277-72bfd8beecef",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th Anniversary Edition",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-09-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "19639db8-0f02-39a3-a4b7-c8800b2c887a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "630669fc-aabf-4159-9dc1-d450f061d2bd",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b76b0716-75cc-4587-9c3b-aa9cf9412a30",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "The Buena Vista Social Club Series Sampler",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "47b0ceab-a802-4be3-8e32-7ea9ba06ffc3",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Buena Vista Social Club Series Sampler",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2000",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 7,
+            "media": [
+              {
+                "id": "86faaa22-1240-3a26-b1bf-a6515bfa04d3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "39974b04-a9c6-4033-8078-1f9c0a467887",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258826
+                  }
+                ],
+                "track-count": 7,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "2665fd2d-93ee-4a4c-9edf-ac9f9bae5b11",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "180g",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2015-10-23",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2015-10-23",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "0984543e-b476-3325-93b5-7338c69401d2",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "585ceeff-e79c-4b4a-9b07-810f3f9856c8",
+                    "number": "A1",
+                    "title": "Chan Chan",
+                    "length": 256000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "a8a19eb6-051a-489d-81e9-db27fcf49398",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Inside: Out",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3d44ac46-2e87-3fa1-ae78-2cd8bc52c265",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Inside: Out",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1998",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1998",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "43cb919f-253b-3299-8552-3302e3edf931",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0e4e521f-49ec-3580-ba0c-adce9c2ed1e1",
+                    "number": "6",
+                    "title": "Chan chan",
+                    "length": 259466
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "76691550-08fe-4b72-abaa-a479d4c5eca3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "VMP Essentials",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2020-08",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2020-08",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "4803949d-b417-3e96-95bf-8f442423d935",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "078b7a5d-7962-4722-9b90-914c711b88c8",
+                    "number": "A1",
+                    "title": "Chan Chan",
+                    "length": 256000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "1ff3214a-cc8b-4ab7-89cf-2579aebdfbac",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "1998-11",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1998-11",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "16559531-197a-3b7d-81f4-158fa58b0cca",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "be34d026-1e0a-4f73-be1b-909185e972aa",
+                    "number": "A1",
+                    "title": "Chan Chan",
+                    "length": 254400
+                  }
+                ],
+                "track-count": 7,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "96cba92f-afeb-3637-8506-2d16d77a24cc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "1997-06-23",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1997-06-23",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "182b0bf1-0dfa-3d2e-9614-0a574891654f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "14e2e8e7-3fa0-352b-aa92-db627cbd530a",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258693
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "d6e5c70c-d334-4d54-a637-4342ff43f8e4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "1997",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "14a8cccd-f57e-35de-bfd9-671a7372ecfa",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2eed3c36-5dab-4d7c-aa12-f19914707e0c",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "c6afa508-9107-492f-bbb1-48dc3bea30b8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "World Circuit Presents...",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5731494-bdfb-3e78-9dcc-f53e7cf0a79b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "World Circuit Presents...",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2006-10-16",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2006-10-16",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 29,
+            "media": [
+              {
+                "id": "bf44bcb4-adcd-35d1-b941-d03b696e2093",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2a758967-30e3-3f7b-98d0-7b48bdbf3d2c",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "134da904-c037-4655-ae34-3a0b0deb9cc2",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "80ed3566-1a96-3fb1-ad25-4a578790597e",
+            "count": 3,
+            "title": "50 Years: The Very Best of Ry Cooder",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Ry Cooder",
+                "artist": {
+                  "id": "a4e2650b-938b-4b72-95bc-6e229cd34601",
+                  "name": "Ry Cooder",
+                  "sort-name": "Cooder, Ry"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4452ceb7-32ce-43c1-bd5c-92394531df68",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "50 Years: The Very Best of Ry Cooder",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 75,
+            "media": [
+              {
+                "id": "ea94c0e0-9da4-35ff-af37-3bae5fcaedac",
+                "position": 3,
+                "track": [
+                  {
+                    "id": "55516862-9436-417a-9abe-92eece4af331",
+                    "number": "2",
+                    "title": "Chan Chan",
+                    "length": 257933
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "05ba8a1d-35cf-4986-9dc5-5a762d509f1d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Starbucks 40: A 40th Anniversary Collection",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "54f624d9-28b3-47c4-b2dc-d54a227c62bd",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Starbucks 40: A 40th Anniversary Collection",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "0771ee89-fa45-3d1d-9c0a-39fb262c0050",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c6272240-8fc1-3e3e-a4fb-387244c08637",
+                    "number": "4",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "87bc3460-639e-3308-9aac-242cade60c07",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "1997-09-30",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1997-09-30",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "fdb3eaa0-e177-3ce2-b9d9-38d8420ce78a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3afb683a-b593-3b3f-9623-242d6e14724c",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 254400
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "eac27c76-cff9-4159-9742-c98e920835ac",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "1997",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "e12d3f21-032f-3646-bfd4-6062eff3fb48",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8364d06e-837f-3616-ae70-309b2ed60d8c",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 254400
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "70b2a74e-29ff-4224-9271-48f1e6b1ec24",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Guitar Music For Small Rooms 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "81727604-4942-3b74-bc44-bff010ce5b50",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Guitar Music For Small Rooms 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 18,
+            "media": [
+              {
+                "id": "6afa3c93-bbeb-3d2a-af16-3bb67873a0f2",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "7b04664d-4c04-35ab-a792-7bf97beeeb97",
+                    "number": "4",
+                    "title": "Chan Chan",
+                    "length": 257840
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "79ce020f-9a47-41c5-a6f3-9262c3422808",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "The Buena Vista Social Club Series Sampler",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "cf0a4ed8-b910-3bb4-86e5-a7b53d952c67",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Buena Vista Social Club Series Sampler",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2000",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 7,
+            "media": [
+              {
+                "id": "d783a66d-0b36-392f-acdd-38ab34cf4b6e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f1786f56-ba76-386f-b884-2bb988eddd6a",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 258826
+                  }
+                ],
+                "track-count": 7,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "33fd094a-5c50-4828-93b4-8ba55a7c56e6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Café Cubana",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bd97799f-41f0-3cf5-a2d3-b7bb9ae50616",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Café Cubana",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1998",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1998",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "04e52bed-3d6b-391b-8c78-64e0967dc458",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "e9d23e35-0d00-344e-adba-e017569fb851",
+                    "number": "5",
+                    "title": "Chan Chan",
+                    "length": 259426
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "3f6c0c77-98fa-4200-81b9-2224484de3a7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club EP",
+            "status": "Official",
+            "release-group": {
+              "id": "9f4bd983-60b9-390b-b3f6-9ce933a9b007",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Buena Vista Social Club EP",
+              "primary-type": "EP"
+            },
+            "date": "1999-01-24",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "1999-01-24",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "9e2bd174-02f3-30f9-a87c-7a307cbea9d6",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "de8e7725-9150-3edb-98cd-cd924c26caeb",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 260000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "9b6e7b6f-920c-4da9-a378-fc48944d3ea8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "high resolution release",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2011-07",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2011-07",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "00740f47-3a02-33fd-8073-86bb7f353ee0",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fa658455-fe47-3ae7-94e3-a5b968b4a3e6",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 254000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "53f151df-f6ff-4029-94dc-b9e524f39f30",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Simply the Best Movie Album",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "81eb3f57-73e8-3edc-be21-f1039bec74bb",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Simply the Best Movie Album",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 38,
+            "media": [
+              {
+                "id": "068220ce-d42d-315e-85b1-b673d3153899",
+                "position": 2,
+                "track": [
+                  {
+                    "id": "730bac14-dcf2-3ae5-b675-18322a2d0484",
+                    "number": "20",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "46d74317-64cd-41c5-b59b-14905dd53aee",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "World: The Greatest Songs Ever",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e3c82e4e-850d-3753-9d35-c4c0b8035088",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "World: The Greatest Songs Ever",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2004-06-29",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2004-06-29",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "30402200-65b4-3724-9c1f-3c7b19c19e59",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "6e608d65-8aef-31ae-859a-453f349627d0",
+                    "number": "3",
+                    "title": "Chan Chan",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "1275e984-d79c-420f-8590-e1cbcc966c96",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "1997",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "5bc4736d-2576-3927-b873-a40693ca3d6c",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "4c0adb19-55ff-32f1-bf7e-fdd0ce403338",
+                    "number": "A1",
+                    "title": "Chan Chan",
+                    "length": 254400
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "d49b5c1d-7469-415a-a545-13b0ea42ff54",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Chan Chan",
+            "status": "Official",
+            "release-group": {
+              "id": "313d1a4c-dcfe-4f0e-81b6-091ef02c5852",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Chan Chan",
+              "primary-type": "Single"
+            },
+            "date": "1997",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "19e0e73a-06a9-3401-984e-cd5a2d2c9ec4",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c249041e-9c03-4328-b1e8-9ebcbef6a2db",
+                    "number": "1",
+                    "title": "Chan chan",
+                    "length": 257733
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "7b03d324-dd8d-446f-a8f3-691efb34b431",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2000-12-19",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2000-12-19",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 28,
+            "media": [
+              {
+                "id": "b3eab94c-331f-3720-a794-f92d18f30e90",
+                "position": 1,
+                "format": "DVD-Audio",
+                "track": [
+                  {
+                    "id": "a1301d44-0f17-3377-bcc3-b1510bbc4eb8",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 259000
+                  }
+                ],
+                "track-count": 28,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GB5KW2100083",
+          "GBBGU9700150"
+        ],
+        "tags": [
+          {
+            "count": 3,
+            "name": "soundtrack"
+          },
+          {
+            "count": 3,
+            "name": "easy listening"
+          },
+          {
+            "count": 5,
+            "name": "afro-cuban jazz"
+          },
+          {
+            "count": 3,
+            "name": "latin"
+          },
+          {
+            "count": 3,
+            "name": "general soundtrack"
+          },
+          {
+            "count": 2,
+            "name": "son cubano"
+          }
+        ]
+      },
+      {
+        "id": "de0b9a2a-1d1c-468c-ad2f-0173d01174d8",
+        "score": 100,
+        "artist-credit-id": "0197023b-c63a-3060-b509-0fb0829767d9",
+        "title": "Chan Chan",
+        "length": 285000,
+        "disambiguation": "live, 1998-07: Carnegie Hall, New York, USA",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Buena Vista Social Club",
+            "artist": {
+              "id": "2a85ecff-41e9-4be1-aca6-c87054a4c334",
+              "name": "Buena Vista Social Club",
+              "sort-name": "Buena Vista Social Club"
+            }
+          }
+        ],
+        "first-release-date": "2008-10-13",
+        "releases": [
+          {
+            "id": "5a397449-58b4-4e56-b471-2b46eef86917",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Carnegie 25",
+            "status": "Official",
+            "release-group": {
+              "id": "e609a38e-aad7-4626-8338-2cc439239f56",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Carnegie 25",
+              "primary-type": "Album"
+            },
+            "track-count": 6,
+            "media": [
+              {
+                "id": "8bc06b6c-9a7a-3204-86a0-633a858f7d8a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b9ea7d5c-aa4a-415c-a035-f8e3f9796fe2",
+                    "number": "1",
+                    "title": "Chan Chan (Live)",
+                    "length": 285000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b8b52e61-276d-4220-b7c1-ddea6ac7008e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Carnegie 25",
+            "status": "Official",
+            "release-group": {
+              "id": "e609a38e-aad7-4626-8338-2cc439239f56",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Carnegie 25",
+              "primary-type": "Album"
+            },
+            "track-count": 6,
+            "media": [
+              {
+                "id": "e8d89274-d103-4186-b91e-98641839e966",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "13683e4b-1dae-441f-aded-ec51c6e426fa",
+                    "number": "1",
+                    "title": "Chan Chan (Live)",
+                    "length": 285000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "2c61e902-0fda-44cb-aec4-0482f40f7060",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club At Carnegie Hall",
+            "status": "Official",
+            "release-group": {
+              "id": "3f25ebdc-5e8a-35e3-b06f-43181fbdbf3a",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "At Carnegie Hall",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2008-10-13",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2008-10-13",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "a82a6149-5484-3d0b-995b-e4a250108b34",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "aad8b348-920b-48bb-a426-64ddc2757267",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 285506
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "ade7c8f4-eedc-4043-bdf4-55368f6d64a7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club at Carnegie Hall (live)",
+            "status": "Official",
+            "release-group": {
+              "id": "3f25ebdc-5e8a-35e3-b06f-43181fbdbf3a",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "At Carnegie Hall",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2008-10-13",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2008-10-13",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "5affbdbb-5e59-31f4-9c56-48fb02676ba4",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0d73c894-abe5-42be-b83d-6d185b05fa07",
+                    "number": "1",
+                    "title": "Chan Chan (live)",
+                    "length": 285000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "6794515a-ea3a-4b51-9c23-54d67b751650",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "At Carnegie Hall",
+            "status": "Official",
+            "release-group": {
+              "id": "3f25ebdc-5e8a-35e3-b06f-43181fbdbf3a",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "At Carnegie Hall",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2008-10-13",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2008-10-13",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "91076f70-6209-3529-9991-6182e61beb96",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e9b2385f-afd4-30a7-84b2-ab1aeec3473f",
+                    "number": "1",
+                    "title": "Chan Chan",
+                    "length": 285506
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "9c1472d8-d51e-4dae-b4aa-2bf6578c0731",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "At Carnegie Hall",
+            "status": "Official",
+            "release-group": {
+              "id": "3f25ebdc-5e8a-35e3-b06f-43181fbdbf3a",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "At Carnegie Hall",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2008",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2008",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "4f3763f6-2477-3258-bda7-e8d328c64e6f",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "b1408e6b-1eac-44ee-b681-374470b9e8e4",
+                    "number": "A1",
+                    "title": "Chan Chan",
+                    "length": 285506
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBBGU0880001"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "spanish"
+          },
+          {
+            "count": 1,
+            "name": "cuban"
+          },
+          {
+            "count": 2,
+            "name": "latin"
+          }
+        ]
+      },
+      {
+        "id": "1fa21c9c-a2a7-457b-a21d-eeeeb0324888",
+        "score": 100,
+        "artist-credit-id": "0197023b-c63a-3060-b509-0fb0829767d9",
+        "title": "Chan Chan",
+        "length": 259183,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Buena Vista Social Club",
+            "artist": {
+              "id": "2a85ecff-41e9-4be1-aca6-c87054a4c334",
+              "name": "Buena Vista Social Club",
+              "sort-name": "Buena Vista Social Club"
+            }
+          }
+        ],
+        "first-release-date": "2016",
+        "releases": [
+          {
+            "id": "c4921b9b-9aa8-47c0-999f-f8a201e2ed6d",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Το ροκ που παίζουν τα μάτια σου",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "82788f4d-0bdd-4582-a82b-873f640384b5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Το ροκ που παίζουν τα μάτια σου",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2016",
+            "country": "GR",
+            "release-events": [
+              {
+                "date": "2016",
+                "area": {
+                  "id": "803db0ca-b6ed-3bbc-aeb8-f89efd0a2168",
+                  "name": "Greece",
+                  "sort-name": "Greece",
+                  "iso-3166-1-codes": [
+                    "GR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 168,
+            "media": [
+              {
+                "id": "b42c14c1-4574-4961-90e6-e225cb6bd510",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "40e56ac9-6b54-450d-9b32-3a1efd71424d",
+                    "number": "22",
+                    "title": "Chan Chan",
+                    "length": 259183
+                  }
+                ],
+                "track-count": 168,
+                "track-offset": 21
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8c039c37-7c7a-4e62-a03d-859c29c074e0",
+        "score": 97,
+        "artist-credit-id": "0197023b-c63a-3060-b509-0fb0829767d9",
+        "title": "Repilado: Chan Chan",
+        "length": 257146,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Buena Vista Social Club",
+            "artist": {
+              "id": "2a85ecff-41e9-4be1-aca6-c87054a4c334",
+              "name": "Buena Vista Social Club",
+              "sort-name": "Buena Vista Social Club"
+            }
+          }
+        ],
+        "first-release-date": "2007",
+        "releases": [
+          {
+            "id": "e21fe2da-d1f6-464f-88cd-13baa97bc5af",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "100 Film Classics",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6382e768-436a-49b3-8b6c-f132ddc31462",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "100 Film Classics",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2007",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2007",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "b803f643-af40-36b6-9983-44e118847fe6",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f9f26ade-6c67-36a3-b290-521af0eca411",
+                    "number": "15",
+                    "title": "Repilado: Chan Chan",
+                    "length": 257146
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5ef64784-fe18-488b-b9fa-943c22feb616",
+        "score": 94,
+        "artist-credit-id": "0197023b-c63a-3060-b509-0fb0829767d9",
+        "title": "Chan Chan (5.1 mix)",
+        "length": 258000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Buena Vista Social Club",
+            "artist": {
+              "id": "2a85ecff-41e9-4be1-aca6-c87054a4c334",
+              "name": "Buena Vista Social Club",
+              "sort-name": "Buena Vista Social Club"
+            }
+          }
+        ],
+        "first-release-date": "2000-12-19",
+        "releases": [
+          {
+            "id": "7b03d324-dd8d-446f-a8f3-691efb34b431",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2000-12-19",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2000-12-19",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 28,
+            "media": [
+              {
+                "id": "b3eab94c-331f-3720-a794-f92d18f30e90",
+                "position": 1,
+                "format": "DVD-Audio",
+                "track": [
+                  {
+                    "id": "97389d30-b3e6-4e04-b919-749ac03ac056",
+                    "number": "15",
+                    "title": "Chan Chan (5.1 mix)",
+                    "length": 258000
+                  }
+                ],
+                "track-count": 28,
+                "track-offset": 14
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "afro-cuban jazz"
+          }
+        ]
+      },
+      {
+        "id": "8fff93b0-c7b3-441f-8781-cf660e30a39a",
+        "score": 94,
+        "artist-credit-id": "0197023b-c63a-3060-b509-0fb0829767d9",
+        "title": "Chan Chan (monitor mix)",
+        "length": 279918,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Buena Vista Social Club",
+            "artist": {
+              "id": "2a85ecff-41e9-4be1-aca6-c87054a4c334",
+              "name": "Buena Vista Social Club",
+              "sort-name": "Buena Vista Social Club"
+            }
+          }
+        ],
+        "first-release-date": "2021-09-17",
+        "releases": [
+          {
+            "id": "f824bc47-4f36-4e67-8c76-d4343f5e1ac7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th Anniversary Edition",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-09-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "61fd1693-ca99-4d08-99e0-9ae501eb35a8",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "68e33534-ede3-447a-885e-29c23065732f",
+                    "number": "1",
+                    "title": "Chan chan (monitor mix)",
+                    "length": 279918
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "c652a138-457d-456b-908f-1c3b867ebbf8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Ahora me da pena",
+            "status": "Official",
+            "disambiguation": "Record Store Day 2022; 45RPM",
+            "release-group": {
+              "id": "7518e984-0ecd-4404-aac4-7411e1df6f18",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Ahora me da pena",
+              "primary-type": "EP"
+            },
+            "date": "2022-04-23",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2022-04-23",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "005f3179-ade5-38d2-b971-b7323976bcf9",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "9655f200-ce5a-42d3-b448-62d6622580ba",
+                    "number": "A2",
+                    "title": "Chan Chan (monitor mix)"
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "199cfa80-4c5d-40cc-8fac-c380f0e9fe04",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 4,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th Anniversay Edition Bookpack",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-09-17",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "1866ac9f-0c40-343c-ace6-e8e70cf15054",
+                "position": 4,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c13adb85-e689-4334-93bd-06a1de6805fa",
+                    "number": "1",
+                    "title": "Chan Chan (Monitor Mix)",
+                    "length": 279906
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "7477c519-44e8-4798-a277-72bfd8beecef",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th Anniversary Edition",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-09-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021-09-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "7a71456d-e58c-38c5-905b-2b0a362e0f6d",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8b6c9795-1495-463b-8b2f-cbf1f78116d6",
+                    "number": "1",
+                    "title": "Chan chan (monitor mix)",
+                    "length": 279918
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "8f68e3db-be50-4b9f-9a4b-c0d9f7737cab",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "status": "Official",
+            "disambiguation": "25th anniversary edition",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "date": "2021-10-01",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2021-10-01",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 26,
+            "media": [
+              {
+                "id": "d94ff270-85f6-36f0-9f12-2ec8f7b7435e",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "60462240-bb8b-46c5-930d-5d67eb40da2f",
+                    "number": "1",
+                    "title": "Chan chan (monitor mix)",
+                    "length": 279918
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "9ae6bdab-9cc5-472f-b3fc-9ad20ce55ad8",
+            "count": 2,
+            "title": "Buena Vista Social Club",
+            "release-group": {
+              "id": "32bbab8e-02c0-30d2-9e23-a19739864b84",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club",
+              "primary-type": "Album"
+            },
+            "track-count": 33,
+            "media": [
+              {
+                "id": "96e79466-0732-308b-8de2-3a83d9084693",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "776dd968-49cf-4b2e-afbb-e6207fe71221",
+                    "number": "1",
+                    "title": "Chan Chan (Monitor Mix)",
+                    "length": 280000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GB5KW2100098"
+        ]
+      },
+      {
+        "id": "a596f608-6892-455d-897c-91295ef91720",
+        "score": 76,
+        "artist-credit-id": "6e43d6cf-cd92-4b7b-9f94-e6d825dfb6b6",
+        "title": "Chan Chan in Dub",
+        "length": 274978,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " + ",
+            "name": "Gaudi",
+            "artist": {
+              "id": "ecbe7008-86ad-4eb2-a75d-25e9c91c750d",
+              "name": "Gaudi",
+              "sort-name": "Gaudi",
+              "disambiguation": "Anglo-Italian musician/producer Daniele Gaudi",
+              "aliases": [
+                {
+                  "sort-name": "Lele Gaudi’",
+                  "name": "Lele Gaudi’",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Gaudi Cenacchi, Daniele",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Daniele Gaudi Cenacchi",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Gaudi, Daniele",
+                  "name": "Daniele Gaudi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Gaudi, Lele",
+                  "name": "Lele Gaudi",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " ft. ",
+            "name": "Savona",
+            "artist": {
+              "id": "50d9730b-c4ab-4abd-8625-4fc0ebb81b18",
+              "name": "Mista Savona",
+              "sort-name": "Savona, Mista"
+            }
+          },
+          {
+            "name": "Buena Vista Social club",
+            "artist": {
+              "id": "2a85ecff-41e9-4be1-aca6-c87054a4c334",
+              "name": "Buena Vista Social Club",
+              "sort-name": "Buena Vista Social Club"
+            }
+          }
+        ],
+        "first-release-date": "2022-11-18",
+        "releases": [
+          {
+            "id": "61660571-40e7-453f-b26f-41d053d1fd9e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "47cdfab7-ee04-4626-8c7b-c1169da3734a",
+            "count": 1,
+            "title": "Havana Meets Kingston in Dub",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " + ",
+                "name": "Gaudi",
+                "artist": {
+                  "id": "ecbe7008-86ad-4eb2-a75d-25e9c91c750d",
+                  "name": "Gaudi",
+                  "sort-name": "Gaudi",
+                  "disambiguation": "Anglo-Italian musician/producer Daniele Gaudi"
+                }
+              },
+              {
+                "name": "Savona",
+                "artist": {
+                  "id": "50d9730b-c4ab-4abd-8625-4fc0ebb81b18",
+                  "name": "Mista Savona",
+                  "sort-name": "Savona, Mista"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3a867c98-f4a5-40b7-b4e3-124f7f9219d1",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Havana Meets Kingston in Dub",
+              "primary-type": "Album"
+            },
+            "date": "2022-11-18",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2022-11-18",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "92eccb3a-b8e5-3d43-bab8-7199e76c8f75",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "399042bd-db01-480b-bf47-d0828dd01930",
+                    "number": "9",
+                    "title": "Chan Chan in Dub",
+                    "length": 274978
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "399d80d2-615b-4d3d-ad7b-28c32a30f04c",
+        "score": 66,
+        "artist-credit-id": "7c8eb968-9888-4d17-9c97-d9661abcb3f2",
+        "title": "Chan Chan",
+        "length": 218928,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": ", ",
+            "name": "Original Broadway Cast of Buena Vista Social Club",
+            "artist": {
+              "id": "7b71ee93-d78c-4809-b821-4499e091a08f",
+              "name": "Original Broadway Cast of Buena Vista Social Club",
+              "sort-name": "Original Broadway Cast of Buena Vista Social Club",
+              "disambiguation": "Original Broadway Cast of Buena Vista Social Club"
+            }
+          },
+          {
+            "joinphrase": " & ",
+            "name": "Renesito Avich",
+            "artist": {
+              "id": "7f125162-3df9-4681-99f2-32395418d94d",
+              "name": "Renesito Avich",
+              "sort-name": "Avich, Renesito",
+              "disambiguation": "Cuban, Guitar Tres, Salsa, Rumba, Conga, Changüí, Jazz"
+            }
+          },
+          {
+            "name": "David Oquendo",
+            "artist": {
+              "id": "a2258a18-c5ab-49e9-84d4-9674a7a08159",
+              "name": "David Oquendo",
+              "sort-name": "Oquendo, David"
+            }
+          }
+        ],
+        "first-release-date": "2025-06-06",
+        "releases": [
+          {
+            "id": "952da0fb-5fac-4487-a2c2-414278002c2d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e6809654-5bc6-49f3-9bbf-e80645c17f1b",
+            "count": 1,
+            "title": "Buena Vista Social Club (Original Broadway Cast Recording)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Original Broadway Cast of Buena Vista Social Club",
+                "artist": {
+                  "id": "7b71ee93-d78c-4809-b821-4499e091a08f",
+                  "name": "Original Broadway Cast of Buena Vista Social Club",
+                  "sort-name": "Original Broadway Cast of Buena Vista Social Club",
+                  "disambiguation": "Original Broadway Cast of Buena Vista Social Club"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "545ae32f-d1b9-4c7b-9f0e-6419dc3d2fb6",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Buena Vista Social Club (Original Broadway Cast Recording)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "2025-06-06",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2025-06-06",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "7d323a67-139b-49ba-929a-8f94c8da0a6c",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "31aea7f3-87fb-400a-b9c5-5e8cf541f042",
+                    "number": "15",
+                    "title": "Chan Chan",
+                    "length": 218928
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 14
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

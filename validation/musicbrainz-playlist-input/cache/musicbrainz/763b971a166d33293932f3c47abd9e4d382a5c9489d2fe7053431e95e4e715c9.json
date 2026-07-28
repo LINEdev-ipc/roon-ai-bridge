@@ -1,0 +1,282 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Reckoner%22+AND+artist%3A%22Radiohead%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:52:01.139Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:52:01.186Z",
+    "count": 3,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "895a0d8b-3ed5-3bd5-be8c-1e01d6146c0d",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "score": 100,
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "artist-credit-id": "021661c1-84c5-30d7-9bb2-f0766affb734",
+        "count": 1,
+        "title": "Reckoner",
+        "first-release-date": "2008-09-23",
+        "primary-type": "Single",
+        "artist-credit": [
+          {
+            "name": "Radiohead",
+            "artist": {
+              "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+              "name": "Radiohead",
+              "sort-name": "Radiohead",
+              "aliases": [
+                {
+                  "sort-name": "r/head",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "r/head",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "电台司令",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "电台司令",
+                  "locale": "zh",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "れでぃおへっど",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "レディオヘッド",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Radiohead & Thom Yorke",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Radiohead & Thom Yorke",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Radio Head",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Radio Head",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "0bc30cbe-1da9-4070-83e3-7b06150f41df",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Reckoner",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "rock"
+          },
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "experimental"
+          },
+          {
+            "count": 1,
+            "name": "art rock"
+          }
+        ]
+      },
+      {
+        "id": "009b469f-83e0-40c7-8d32-65e9b15d5f36",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "score": 84,
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "artist-credit-id": "021661c1-84c5-30d7-9bb2-f0766affb734",
+        "count": 1,
+        "title": "Reckoner (Cubicolor remix)",
+        "first-release-date": "2014-11-07",
+        "primary-type": "Single",
+        "artist-credit": [
+          {
+            "name": "Radiohead",
+            "artist": {
+              "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+              "name": "Radiohead",
+              "sort-name": "Radiohead",
+              "aliases": [
+                {
+                  "sort-name": "r/head",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "r/head",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "电台司令",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "电台司令",
+                  "locale": "zh",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "れでぃおへっど",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "レディオヘッド",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Radiohead & Thom Yorke",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Radiohead & Thom Yorke",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Radio Head",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Radio Head",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "bd507c51-5078-47a8-ad6d-a28349392ae8",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "title": "Reckoner (Cubicolor remix)",
+            "status": "Bootleg"
+          }
+        ]
+      },
+      {
+        "id": "cdd404ae-f770-4b8a-8b1c-4f1ca9ef2206",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "score": 79,
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "artist-credit-id": "021661c1-84c5-30d7-9bb2-f0766affb734",
+        "count": 1,
+        "title": "Reckoner (Johnny Miller remix)",
+        "first-release-date": "2009",
+        "primary-type": "Single",
+        "secondary-types": [
+          "Remix"
+        ],
+        "secondary-type-ids": [
+          "0c60f497-ff81-3818-befd-abfc84a4858b"
+        ],
+        "artist-credit": [
+          {
+            "name": "Radiohead",
+            "artist": {
+              "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+              "name": "Radiohead",
+              "sort-name": "Radiohead",
+              "aliases": [
+                {
+                  "sort-name": "r/head",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "r/head",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "电台司令",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "电台司令",
+                  "locale": "zh",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "れでぃおへっど",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "レディオヘッド",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Radiohead & Thom Yorke",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Radiohead & Thom Yorke",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Radio Head",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Radio Head",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "bd32aa95-dece-4b0d-a145-744141b1cc0a",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "title": "Reckoner (Johnny Miller remix)",
+            "status": "Bootleg"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/96ff250b-5c6c-4433-acd7-541053af2dff?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:15:35.569Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "title": "Champion Sound",
+    "length": 353000,
+    "first-release-date": "2006-06-04",
+    "id": "96ff250b-5c6c-4433-acd7-541053af2dff",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "name": "Dubmatix",
+        "joinphrase": "",
+        "artist": {
+          "country": "CA",
+          "type": "Person",
+          "id": "398d8aef-7939-4d64-b9ee-3b1114836d44",
+          "disambiguation": "",
+          "sort-name": "Dubmatix",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Dubmatix"
+        }
+      }
+    ],
+    "releases": [
+      {
+        "country": "AT",
+        "quality": "normal",
+        "id": "ba3fda35-b26d-415d-a696-bd7f846ff939",
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "secondary-type-ids": [],
+          "first-release-date": "2006-06-04",
+          "id": "2f1a1ba9-426b-3b66-9c4b-f19c96e7297e",
+          "title": "Atomic Subsonic",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "type": "Person",
+                "id": "398d8aef-7939-4d64-b9ee-3b1114836d44",
+                "country": "CA",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Dubmatix",
+                "sort-name": "Dubmatix",
+                "disambiguation": ""
+              },
+              "joinphrase": "",
+              "name": "Dubmatix"
+            }
+          ],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "disambiguation": ""
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "artist-credit": [
+          {
+            "name": "Dubmatix",
+            "joinphrase": "",
+            "artist": {
+              "id": "398d8aef-7939-4d64-b9ee-3b1114836d44",
+              "type": "Person",
+              "country": "CA",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "name": "Dubmatix",
+              "disambiguation": "",
+              "sort-name": "Dubmatix"
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "mul"
+        },
+        "title": "Atomic Subsonic",
+        "date": "2006-06-04",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "barcode": "0826596034027",
+        "release-events": [
+          {
+            "area": {
+              "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AT"
+              ],
+              "name": "Austria",
+              "sort-name": "Austria",
+              "disambiguation": ""
+            },
+            "date": "2006-06-04"
+          }
+        ]
+      }
+    ],
+    "video": false
+  }
+}

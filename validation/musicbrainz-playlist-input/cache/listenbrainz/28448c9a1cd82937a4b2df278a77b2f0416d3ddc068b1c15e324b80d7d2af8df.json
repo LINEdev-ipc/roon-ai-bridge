@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=The+Chemical+Brothers&recording_name=Star+Guitar",
+  "fetched_at": "2026-07-28T14:41:12.005Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "The Chemical Brothers",
+      "recording_arg": "Star Guitar",
+      "artist_credit_name": "The Chemical Brothers",
+      "release_name": "Come With Us",
+      "recording_name": "Star Guitar",
+      "artist_credit_id": 242,
+      "artist_mbids": [
+        "1946a82a-f927-40c2-8235-38d64f50d043"
+      ],
+      "release_mbid": "22b38127-08e4-43e7-82e5-2b46d3ece88e",
+      "recording_mbid": "93411521-d7b4-4c87-9bce-a4ba5e6b95fa"
+    }
+  ]
+}

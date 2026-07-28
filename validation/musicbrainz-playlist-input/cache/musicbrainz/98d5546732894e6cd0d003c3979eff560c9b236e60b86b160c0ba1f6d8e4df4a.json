@@ -1,0 +1,153 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Line+of+Sight+%28Chet+Porter+Remix%29%22+AND+artist%3A%22ODESZA%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:39:24.652Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:39:24.679Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "eec58475-5fb7-47c2-b68a-2210c60edcae",
+        "score": 100,
+        "artist-credit-id": "cde61809-45b1-3da9-b071-86b48c40369d",
+        "title": "Line of Sight (Chet Porter remix)",
+        "length": 232250,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "ODESZA",
+            "artist": {
+              "id": "2e222fce-02ae-4221-b1c6-3c3242b423b6",
+              "name": "ODESZA",
+              "sort-name": "ODESZA"
+            }
+          },
+          {
+            "joinphrase": " & ",
+            "name": "WYNNE",
+            "artist": {
+              "id": "ec45d729-d459-45c7-89b3-22c4caa65ae7",
+              "name": "WYNNE",
+              "sort-name": "WYNNE",
+              "disambiguation": "Indie/Punk/Rock Artist from Stockport, Manchester",
+              "aliases": [
+                {
+                  "sort-name": "WYNNE",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "WYNNE",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Andrew, Rory Wynne",
+                  "name": "Rory Wynne Andrew",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Rory Wynne Andrews",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Rory Wynne Andrews",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Mansionair",
+            "artist": {
+              "id": "b37446a3-fbde-48c9-9aeb-c8de3d752040",
+              "name": "Mansionair",
+              "sort-name": "Mansionair"
+            }
+          }
+        ],
+        "first-release-date": "2019-02-15",
+        "releases": [
+          {
+            "id": "300d8d1d-da99-4eeb-ace6-ea79e33501e9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ecd2f488-12c6-3919-9c37-88affd1dfa8d",
+            "count": 1,
+            "title": "A Moment Apart Remixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "ODESZA",
+                "artist": {
+                  "id": "2e222fce-02ae-4221-b1c6-3c3242b423b6",
+                  "name": "ODESZA",
+                  "sort-name": "ODESZA"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "20902ede-0230-4ad9-91d1-295d92e25a83",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "A Moment Apart Remixes",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2019-02-15",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-02-15",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "0e1442f9-b666-3fad-b470-0475a6eb9606",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5f527773-fc16-42a3-a2be-f6ef13f3a52e",
+                    "number": "6",
+                    "title": "Line of Sight (Chet Porter remix)",
+                    "length": 232250
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 5
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCFB1900038"
+        ]
+      }
+    ]
+  }
+}

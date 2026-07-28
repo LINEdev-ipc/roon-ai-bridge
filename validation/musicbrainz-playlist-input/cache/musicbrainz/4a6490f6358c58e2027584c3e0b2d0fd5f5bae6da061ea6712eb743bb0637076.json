@@ -1,0 +1,2281 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28hungry+AND+like+AND+wolf+AND+night+AND+version%29+AND+artistname%3A%22Duran+Duran%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:09.453Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:09.817Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "422f6317-4803-4224-9752-ced4c8182600",
+        "score": 100,
+        "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+        "title": "Hungry Like the Wolf (night version)",
+        "length": 312133,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Duran Duran",
+            "artist": {
+              "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+              "name": "Duran Duran",
+              "sort-name": "Duran Duran",
+              "disambiguation": "English rock band",
+              "aliases": [
+                {
+                  "sort-name": "デュラン・デュラン",
+                  "name": "デュラン・デュラン",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1982-02-01",
+        "releases": [
+          {
+            "id": "8aee0426-8bc6-4aae-b44c-fb475f83f640",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Periodic Table of Synthpop: 12\" 2",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4e31aabb-9425-4434-8f11-fb69c5724b2d",
+              "type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "primary-type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "title": "Periodic Table of Synthpop: 12\" 2",
+              "primary-type": "Other",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "3a8dd3ea-3321-4620-847f-c92241774812",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "38d52dc7-40fd-498e-8cf6-7d56cc42816e",
+                    "number": "3",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 311138
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "768369e9-6610-4da8-a840-c30f9f2bae15",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Essential Duran Duran (Night Versions)",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "855f1b14-56d4-3a08-82d8-47e9f682805d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Essential Duran Duran (Night Versions)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 11,
+            "media": [
+              {
+                "id": "47b12c96-4a80-343b-8769-502f09c2f349",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "922bae41-e8d7-4285-8f4f-d1cb8c37fe83",
+                    "number": "4",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 316000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "a02bbb7f-cc39-447c-b49a-32eb3abc9ec6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Mastermix Classic Cuts 73: Pop/Dance",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "94df3996-87a1-3a16-9225-d7673c91a198",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Mastermix Classic Cuts 73: Pop/Dance",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "357f63d5-cd95-3bb1-9bcb-8135f73b929c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c38002e6-4528-354a-aacb-45cecdfb825d",
+                    "number": "4",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 318000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "7f2fd267-c733-4f42-9e02-231f3f0c891f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Romantic Klub 80",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8bdaf6ca-391b-38ab-9130-711d76b7458c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Romantic Klub 80",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2007",
+            "country": "PL",
+            "release-events": [
+              {
+                "date": "2007",
+                "area": {
+                  "id": "dd7f80c8-f017-3d01-8608-2a8c9c32b954",
+                  "name": "Poland",
+                  "sort-name": "Poland",
+                  "iso-3166-1-codes": [
+                    "PL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "49298576-91bf-3360-b35f-847893c9beee",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "40480f68-1fea-38a6-bb8a-32ec59e11fdb",
+                    "number": "3",
+                    "title": "Hungry Like the Wolf (night version)",
+                    "length": 315000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "33f763df-4769-4eda-beb3-65057d3d0d9e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Hungry Like the Wolf",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "653f84b9-5c18-3fe2-9fc5-9a64087c4874",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Hungry Like the Wolf",
+              "primary-type": "Single"
+            },
+            "date": "2024-06-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2024-06-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "f5196888-2bf1-36f4-81b5-24a84ab01ab2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "939e4887-de61-43a2-ab8a-e0262232b936",
+                    "number": "3",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 312000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "a7261832-c1ab-48a6-91dc-1493635ed4de",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Dance Classics: The Ultimate Throwback Club Classics",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "935f9fea-d020-4628-9722-d26d063e6ed2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Dance Classics: The Ultimate Throwback Club Classics",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 28,
+            "media": [
+              {
+                "id": "d8275645-3e5d-36f4-9cd2-67b7b1088bb5",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "734fed92-f400-434d-9a11-b9b3aa6dba74",
+                    "number": "28",
+                    "title": "Hungry Like the Wolf (night version) (2009 remaster)",
+                    "length": 311613
+                  }
+                ],
+                "track-count": 28,
+                "track-offset": 27
+              }
+            ]
+          },
+          {
+            "id": "3f300726-278f-4183-8d4a-45d051fddf33",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "12 Inch Dance: 80s Remix",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "56f00108-d2cc-4b8d-851d-111839c773bc",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "12 Inch Dance: 80s Remix",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-03-17",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2017-03-17",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "7d1c74dc-9573-3141-894d-02e172dc81da",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c607a4ab-c859-4951-8a3c-b042606df91f",
+                    "number": "1",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 313546
+                  }
+                ],
+                "track-count": 30,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f3c09318-d5b9-4dd5-aad6-82c731eef02a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "12 Inch Dance: 80s Remix",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "56f00108-d2cc-4b8d-851d-111839c773bc",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "12 Inch Dance: 80s Remix",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-03-17",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2017-03-17",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "688d71f6-f2a1-3318-9d01-0efccd5df10b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "00b7bfb6-1bb9-41c0-a391-d1d00ad946a4",
+                    "number": "1",
+                    "title": "Hungry Like the Wolf (Night version)"
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f4c74922-1d9d-42e6-a70e-a436cdebfb93",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Hungry Like the Wolf",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "653f84b9-5c18-3fe2-9fc5-9a64087c4874",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Hungry Like the Wolf",
+              "primary-type": "Single"
+            },
+            "date": "1982-05-04",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1982-05-04",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "9c11dc55-9137-309d-93ff-5c19da2157d8",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "6ce1961a-8d77-4164-aa9f-9595e3cb6f91",
+                    "number": "A",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 312000
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "745164c7-821c-4861-981b-b1b414e12ed1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Carnival",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "225be913-6995-4b15-8cb0-eb5fde14c421",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Carnival",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1982",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "1982",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "62f58dfe-9a65-3769-ae97-20091a788ef4",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "30ee130b-3b03-42d6-8eb0-e0ad6333ff21",
+                    "number": "A1",
+                    "title": "Hungry Like The Wolf (Night Version)",
+                    "length": 330000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "d145df19-01dc-44ff-8a67-95ae4fd71288",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Carnival",
+            "status": "Official",
+            "disambiguation": "Five Night Versions Special 12 inch",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "225be913-6995-4b15-8cb0-eb5fde14c421",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Carnival",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1982-02-01",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "1982-02-01",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "8d23aeb8-474d-388e-90c4-e4f32cdf91b2",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "53c65c66-eb7e-481e-b1aa-8c975ef870c1",
+                    "number": "B1",
+                    "title": "Hungry Like the Wolf (night version)",
+                    "length": 316000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "a9ff4929-7eeb-41c0-a227-29d13a85bbde",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Carnival",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "225be913-6995-4b15-8cb0-eb5fde14c421",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Carnival",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1982",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1982",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "4780b4bb-a02f-356a-9141-d015a6c4cf34",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "e6f64236-31bc-4bef-aff7-d206c7af7983",
+                    "number": "A1",
+                    "title": "Hungry Like the Wolf",
+                    "length": 314000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "a117c864-33a1-40a3-9434-b49eab2e4334",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Carnival",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "225be913-6995-4b15-8cb0-eb5fde14c421",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Carnival",
+              "primary-type": "EP",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1982",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1982",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "1d9d9b4a-160b-3792-97ee-7f56afa8bebc",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "b7e9ece7-2e77-489b-bec1-7e92116b6549",
+                    "number": "A1",
+                    "title": "Hungry Like the Wolf",
+                    "length": 314000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "75ca0238-1926-44bc-8569-aef9f1f43359",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4433e15e-9c54-3140-b70d-b5db77437851",
+            "count": 3,
+            "title": "Blank & Jones Present So80s (SoEighties) 5",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Blank & Jones",
+                "artist": {
+                  "id": "6606c527-376a-47b4-bb35-748d01e14f6d",
+                  "name": "Blank & Jones",
+                  "sort-name": "Blank & Jones",
+                  "disambiguation": "German electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d73add83-3c69-47d1-9fbd-3804603a1192",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Blank & Jones Present So80s (SoEighties) 5",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-05-20",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-05-20",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "1a0955b7-08e6-3519-96be-2d41aaba4029",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8b73652d-06e6-3f1a-95fc-cf36fd218d14",
+                    "number": "3",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 312000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "28dc832a-b5ea-31fd-a239-3bb931a828bc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 13,
+            "title": "The Singles 81–85",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a68b4d92-8a34-3797-9fe4-698ba671e1bd",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Singles 81–85",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2003-05-12",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2003-05-12",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "a6416926-5c7d-32bd-a4e3-5d06ffc52d2c",
+                "position": 5,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e9fc41e4-9776-3dfb-9864-fd4c536e2abb",
+                    "number": "3",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 311400
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "dc3177fb-7af3-444f-9a69-2ff071c8a148",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 3,
+            "title": "The Singles 81–85",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a68b4d92-8a34-3797-9fe4-698ba671e1bd",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Singles 81–85",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-10-19",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2009-10-19",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "89cd4e4b-3b81-3425-8ff6-d8d59aa01ad9",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "804e3bcf-eafb-35ec-a0e4-8924975806ed",
+                    "number": "15",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 313000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "3d6b8165-8218-493a-ae17-7843223aa599",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 3,
+            "title": "The Singles 81–85",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a68b4d92-8a34-3797-9fe4-698ba671e1bd",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Singles 81–85",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 40,
+            "media": [
+              {
+                "id": "c65b035f-f3cc-34be-a603-7945ba914d35",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "78d172cc-18cc-4e8b-adad-d6c29cda9308",
+                    "number": "15",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 313000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "0973c586-18a0-421f-a6aa-9adc1e6bbf53",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "Now 12″ 80s: 1982 (Part Two)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bd27b56c-6833-4f28-b533-b668929b35eb",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Now 12″ 80s: 1982 (Part Two)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 49,
+            "media": [
+              {
+                "id": "9a106312-f8ac-3db7-b5dd-c27dccf9b0da",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a7b4bff3-570c-4270-983e-0814da74fc00",
+                    "number": "2",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 311613
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "024b1812-1d89-4052-ac89-5fd5c4c8c3e1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "The Original Electro Album",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "21e21326-7973-4a53-8849-d2e6e2adb910",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Original Electro Album",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2004",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2004",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "4b163985-65a0-3d11-a0b5-77b6933f1297",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "aebc7ed5-27be-30eb-96dd-b95755f706e0",
+                    "number": "2",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 310000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "28944d62-970d-4727-9728-d912cb90f758",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "The Original Electro Album, Volume 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "67d5135b-efc2-4606-bcd5-5e99e62113a2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Original Electro Album, Volume 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2004-02-02",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2004-02-02",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "8780b3bc-d2f5-3b3f-a36d-81cf8a114e96",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "24c86981-f143-32c9-835b-043496830129",
+                    "number": "2",
+                    "title": "Hungry Like The Wolf (Night Version)",
+                    "length": 310120
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "e94a6092-bb25-4e88-bf6d-61eb4d9a5e4f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Rio",
+            "status": "Official",
+            "disambiguation": "Jacksonville pressing",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c638420-8208-3c01-b723-f061b10e3f3a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rio",
+              "primary-type": "Album"
+            },
+            "date": "1982",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1982",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "ee52852a-ffaa-39ae-9ff6-32b98d7fa5c3",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "ff48f490-750e-47a3-9231-39815c0125f9",
+                    "number": "A4",
+                    "title": "Hungry Like the Wolf",
+                    "length": 314000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "4b161405-a192-3e94-b252-13622466dbfc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Rio",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c638420-8208-3c01-b723-f061b10e3f3a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rio",
+              "primary-type": "Album"
+            },
+            "date": "1982",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1982",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "a51295be-a385-3e94-9e41-76f52a1bee04",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "aae5297a-53cf-38c6-bf18-9ee311138d56",
+                    "number": "A4",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 314000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "8da4d250-d538-47d8-b8c1-fd8d6209726f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 1,
+            "title": "Rio",
+            "status": "Official",
+            "disambiguation": "Winchester pressing",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c638420-8208-3c01-b723-f061b10e3f3a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rio",
+              "primary-type": "Album"
+            },
+            "date": "1982",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1982",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "cab04f34-0108-347e-9cd8-0983d8b7175d",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "ffc43370-efe4-3e14-9c08-5465a82a34db",
+                    "number": "A4",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 314000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "c3f326e2-ef7a-4011-ab1f-e8d9c0422855",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Nite Romantics / Carnival / Tiger Tiger / Strange Behavior",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8c46397a-3f0e-39da-a1ad-91458b1f2c6f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nite Romantics / Carnival / Tiger Tiger / Strange Behavior",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1991-05-31",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "1991-05-31",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "0d1cb41e-af42-3436-bb7f-b34e7fc74d89",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "322fba94-5cc4-3c74-8c65-581a56c9a981",
+                    "number": "8",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 315000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "8e0a0840-9441-435b-8a8a-81552c502eb3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Rio",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c638420-8208-3c01-b723-f061b10e3f3a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rio",
+              "primary-type": "Album"
+            },
+            "date": "2015-06",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2015-06",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 27,
+            "media": [
+              {
+                "id": "509d5934-5314-3bb1-97b3-0335a81428a7",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "31fd118f-063c-4b14-844d-88bfb7366998",
+                    "number": "10",
+                    "title": "Hungry Like the Wolf (night version)",
+                    "length": 311613
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "506160ef-bb4a-4452-8ef8-2df59ea6fc44",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Strange Behavior",
+            "status": "Official",
+            "disambiguation": "EMI SWINDON pressing",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d4847ebd-c77b-32f0-8ca1-32c9024cc6e3",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Strange Behaviour",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1999-03-11",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1999-03-11",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              },
+              {
+                "date": "1999-03-11",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 24,
+            "media": [
+              {
+                "id": "c7991927-9edb-3933-95f1-55f01371af84",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bdad9ed5-7aad-4d9a-ba6f-fd621d34c724",
+                    "number": "4",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 312000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "f31276c6-b0f9-42b2-90cb-616041248bc9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Essential Duran Duran (Night Versions)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "855f1b14-56d4-3a08-82d8-47e9f682805d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Essential Duran Duran (Night Versions)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1998-04-07",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1998-04-07",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "30810f36-e317-3096-878c-5b839b98ec00",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "98fa790d-11d0-352b-8646-d8e9ad1a9e6d",
+                    "number": "4",
+                    "title": "Hungry Like the Wolf (night version)",
+                    "length": 317000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "064bc52b-e2df-4ce4-bd45-f8ee9cd90dee",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Summer Dance Anthems",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f1c0b371-64f4-4b22-bd32-95fea1336d99",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Summer Dance Anthems",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 82,
+            "media": [
+              {
+                "id": "9c187d54-88fa-3d81-a765-3723e0de070e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5c9c583f-0f20-4a45-9c46-1453f4f8f81a",
+                    "number": "60",
+                    "title": "Hungry Like the Wolf (Night version; 2009 Remaster)",
+                    "length": 311000
+                  }
+                ],
+                "track-count": 82,
+                "track-offset": 59
+              }
+            ]
+          },
+          {
+            "id": "cd571397-75e9-407c-83a5-fb2ee00406ed",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Strange Behaviour",
+            "status": "Official",
+            "disambiguation": "Warner Music pressing",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d4847ebd-c77b-32f0-8ca1-32c9024cc6e3",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Strange Behaviour",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1999",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              },
+              {
+                "date": "1999",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              },
+              {
+                "date": "1999",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 24,
+            "media": [
+              {
+                "id": "9240a44a-62d8-3f0f-ac55-d0c60f99cc7f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f4ecd1c0-91f9-4d15-804e-7dc516300404",
+                    "number": "4",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 312133
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "681c9f3a-9132-48a3-8711-a5e070df5cb5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Rio",
+            "status": "Official",
+            "disambiguation": "Collector's Edition",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c638420-8208-3c01-b723-f061b10e3f3a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rio",
+              "primary-type": "Album"
+            },
+            "date": "2009-07-09",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2009-07-09",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 29,
+            "media": [
+              {
+                "id": "51064177-4a31-3c91-958e-1708f9616e20",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fd5d2416-be6a-4777-b27c-b72d1a6f9e90",
+                    "number": "10",
+                    "title": "Hungry Like the Wolf (night version)",
+                    "length": 311000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "6cb2e885-1684-4d80-839b-db40818e0b46",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Rio",
+            "status": "Official",
+            "disambiguation": "collector's edition",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c638420-8208-3c01-b723-f061b10e3f3a",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Rio",
+              "primary-type": "Album"
+            },
+            "date": "2009-10-06",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2009-10-06",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 27,
+            "media": [
+              {
+                "id": "fda8e9e5-071c-3aff-85c1-eaff8399e049",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1ba5aa62-b3c2-37ea-8156-bf977f0101f2",
+                    "number": "10",
+                    "title": "Hungry Like the Wolf (night version)",
+                    "length": 311000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "d504ec4e-e858-4973-86e2-5492bf8f1776",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Strange Behaviour",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d4847ebd-c77b-32f0-8ca1-32c9024cc6e3",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Strange Behaviour",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1999",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 24,
+            "media": [
+              {
+                "id": "4ebbbed5-dde1-3020-87bf-3411a87d4b41",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "41b0f528-4fb9-3ad3-90ad-f9a79700b616",
+                    "number": "4",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 312133
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "c76d8f4b-ec28-47f4-a162-6eecb2ab7903",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+            "count": 2,
+            "title": "Strange Behaviour",
+            "status": "Official",
+            "disambiguation": "EMI UDEN pressing",
+            "artist-credit": [
+              {
+                "name": "Duran Duran",
+                "artist": {
+                  "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+                  "name": "Duran Duran",
+                  "sort-name": "Duran Duran",
+                  "disambiguation": "English rock band"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d4847ebd-c77b-32f0-8ca1-32c9024cc6e3",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Strange Behaviour",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1999",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              },
+              {
+                "date": "1999",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              },
+              {
+                "date": "1999",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 24,
+            "media": [
+              {
+                "id": "678597ec-d1b7-3036-83cd-588ff62988ed",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1dee7e27-39b1-4d97-acad-8e4bdd9c87cf",
+                    "number": "4",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 312133
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBAYE8200052",
+          "GBAYE0901101",
+          "GBAYE9802243"
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "rock"
+          },
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 4,
+            "name": "pop"
+          },
+          {
+            "count": 3,
+            "name": "new wave"
+          },
+          {
+            "count": 1,
+            "name": "alternative"
+          },
+          {
+            "count": 1,
+            "name": "synth-pop"
+          },
+          {
+            "count": 1,
+            "name": "pop rock"
+          },
+          {
+            "count": 1,
+            "name": "new romantic"
+          },
+          {
+            "count": 1,
+            "name": "synth pop"
+          }
+        ]
+      },
+      {
+        "id": "80059dd2-f750-4693-902b-02bb0b0b5389",
+        "score": 100,
+        "artist-credit-id": "1b5d5bd8-1e9a-37f2-915f-a2e822497fbf",
+        "title": "Hungry Like the Wolf (Night version)",
+        "length": 217560,
+        "disambiguation": "part of a “Blank & Jones Present So80s (SoEighties) 5” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Duran Duran",
+            "artist": {
+              "id": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+              "name": "Duran Duran",
+              "sort-name": "Duran Duran",
+              "disambiguation": "English rock band",
+              "aliases": [
+                {
+                  "sort-name": "デュラン・デュラン",
+                  "name": "デュラン・デュラン",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011-05-20",
+        "releases": [
+          {
+            "id": "75ca0238-1926-44bc-8569-aef9f1f43359",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4433e15e-9c54-3140-b70d-b5db77437851",
+            "count": 3,
+            "title": "Blank & Jones Present So80s (SoEighties) 5",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Blank & Jones",
+                "artist": {
+                  "id": "6606c527-376a-47b4-bb35-748d01e14f6d",
+                  "name": "Blank & Jones",
+                  "sort-name": "Blank & Jones",
+                  "disambiguation": "German electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d73add83-3c69-47d1-9fbd-3804603a1192",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Blank & Jones Present So80s (SoEighties) 5",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-05-20",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-05-20",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "3ddeaa20-3134-39af-9da9-faacb33b14ed",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f305b790-7ed7-326b-9b8c-5039433489fd",
+                    "number": "15",
+                    "title": "Hungry Like the Wolf (Night version)",
+                    "length": 217560
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 14
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBAYE8200052"
+        ]
+      }
+    ]
+  }
+}

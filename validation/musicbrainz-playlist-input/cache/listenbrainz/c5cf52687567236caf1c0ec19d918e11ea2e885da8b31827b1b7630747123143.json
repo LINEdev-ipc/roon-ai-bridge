@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Panda+Dub&recording_name=Smile+Is+the+Key",
+  "fetched_at": "2026-07-28T12:15:39.629Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Panda Dub",
+      "recording_arg": "Smile Is the Key",
+      "artist_credit_name": "Panda Dub",
+      "release_name": "Psychotic Symphony",
+      "recording_name": "Smile Is the Ke(y)",
+      "artist_credit_id": 1089492,
+      "artist_mbids": [
+        "08557f73-6b1c-4281-ad93-ffa660f5b266"
+      ],
+      "release_mbid": "6c018911-3586-4ee4-a7be-eff2502767f3",
+      "recording_mbid": "99f12c2f-18c6-48f6-ba5d-f05d986d0dd7"
+    }
+  ]
+}

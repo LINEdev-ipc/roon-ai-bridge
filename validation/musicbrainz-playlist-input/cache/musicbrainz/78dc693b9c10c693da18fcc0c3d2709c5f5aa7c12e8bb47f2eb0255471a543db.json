@@ -1,0 +1,3760 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28tout+AND+oublier%29+AND+artistname%3A%22Ang%C3%A8le%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:46.216Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:46.582Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "49c36a7b-c1df-424f-8121-f0996b2b728d",
+        "score": 100,
+        "artist-credit-id": "4970bfc9-5057-3262-bed2-1b8d3589c9d3",
+        "title": "Tout oublier",
+        "length": 202120,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Angèle",
+            "artist": {
+              "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+              "name": "Angèle",
+              "sort-name": "Angèle",
+              "disambiguation": "Belgian female singer, Angèle Van Laeken",
+              "aliases": [
+                {
+                  "sort-name": "Van Laeken, Angèle",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Angèle Van Laeken",
+                  "locale": "nl_BE",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Angele",
+                  "name": "Angele",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Tjamag, Angele",
+                  "name": "Angele Tjamag",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Roméo Elvis",
+            "artist": {
+              "id": "b6e08f19-dca8-4009-aefe-9feb9f1aa1f2",
+              "name": "Roméo Elvis",
+              "sort-name": "Elvis, Roméo",
+              "disambiguation": "Belgian rapper",
+              "aliases": [
+                {
+                  "sort-name": "Van Laeken, Roméo",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Roméo Van Laeken",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Van Laeken, Roméo Johnny Elvis Kiki",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Roméo Johnny Elvis Kiki Van Laeken",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Elvis Roméo",
+                  "name": "Elvis Roméo",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2018-10-05",
+        "releases": [
+          {
+            "id": "aea23d07-0314-4156-ae13-21eb2c0dcd14",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 1,
+            "title": "Brol",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "date": "2018-10-05",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-10-05",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "1f66acb0-b637-41de-893c-609eec57beb7",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "96b2e6a9-7907-49ed-bd80-aeab7f1bda7d",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "19d9ee7a-162f-4d33-87c1-f0041168a835",
+        "score": 100,
+        "artist-credit-id": "9f76de9a-046f-3020-8778-f444d160ed9c",
+        "title": "Tout oublier",
+        "length": 202120,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "Angèle",
+            "artist": {
+              "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+              "name": "Angèle",
+              "sort-name": "Angèle",
+              "disambiguation": "Belgian female singer, Angèle Van Laeken",
+              "aliases": [
+                {
+                  "sort-name": "Van Laeken, Angèle",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Angèle Van Laeken",
+                  "locale": "nl_BE",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Angele",
+                  "name": "Angele",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Tjamag, Angele",
+                  "name": "Angele Tjamag",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Roméo Elvis",
+            "artist": {
+              "id": "b6e08f19-dca8-4009-aefe-9feb9f1aa1f2",
+              "name": "Roméo Elvis",
+              "sort-name": "Elvis, Roméo",
+              "disambiguation": "Belgian rapper",
+              "aliases": [
+                {
+                  "sort-name": "Van Laeken, Roméo",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Roméo Van Laeken",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Van Laeken, Roméo Johnny Elvis Kiki",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Roméo Johnny Elvis Kiki Van Laeken",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Elvis Roméo",
+                  "name": "Elvis Roméo",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2018-10-05",
+        "releases": [
+          {
+            "id": "6e72e2d6-be48-4b6a-80a5-d782700f8674",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Französische Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "452e4b26-ca18-4ca6-95fe-38f73ea57e82",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Französische Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 80,
+            "media": [
+              {
+                "id": "2a7b3751-f1fa-4ef7-8ba0-30a47fb32e6e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ca16bc8e-e6dd-4ad8-9206-4f4a951e2d04",
+                    "number": "76",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 80,
+                "track-offset": 75
+              }
+            ]
+          },
+          {
+            "id": "a233c73a-35d6-42f4-8096-e585ece7da80",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "RTL 50 Ans de Chanson Française Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c459169b-14a6-4c6f-8e62-1dbb86ecd30d",
+              "title": "RTL 50 Ans de Chanson Française Vol.2",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-10",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2023-10",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 101,
+            "media": [
+              {
+                "id": "4fbf54c0-302f-311d-a4fd-39ec4aec1988",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ef230ba3-7fdf-4c96-a16a-34bcad88491a",
+                    "number": "13",
+                    "title": "Tout oublier",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "04ecdc18-d1dd-43b8-b887-95ad03c0028b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "NRJ Music Awards 2019, Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7be83cb7-d46a-4fb7-8971-9498696ad181",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Music Awards 2019, Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 88,
+            "media": [
+              {
+                "id": "2fa8735c-cb6b-3db0-8043-bb3967f2dd09",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6e74feb2-b281-4d76-9c3d-037e3fc300a5",
+                    "number": "10",
+                    "title": "Tout oublier",
+                    "length": 202161
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "75f85c4e-abd0-4243-aa0b-cc182960303b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Music Awards 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "cd404d91-cd38-4957-a5f7-770c9aaf5fae",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Music Awards 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-10-25",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-10-25",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 66,
+            "media": [
+              {
+                "id": "386259c8-15a2-36f6-9b55-8ac2a958f71e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "aab7723c-687d-4e0a-ac3b-a48e19c5276f",
+                    "number": "10",
+                    "title": "Tout oublier",
+                    "length": 201280
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "aedb8f43-0a77-422b-a81d-b40ea6b7b16d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "NRJ Music Awards 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "cd404d91-cd38-4957-a5f7-770c9aaf5fae",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Music Awards 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-10-25",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-10-25",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-10-25",
+                "area": {
+                  "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+                  "name": "Switzerland",
+                  "sort-name": "Switzerland",
+                  "iso-3166-1-codes": [
+                    "CH"
+                  ]
+                }
+              }
+            ],
+            "track-count": 66,
+            "media": [
+              {
+                "id": "79b293cf-ef38-3a95-bdd9-60ac1514e60a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "874d96f5-be96-44e9-b8a2-aa8c2dee8dc6",
+                    "number": "10",
+                    "title": "Tout oublier",
+                    "length": 201280
+                  }
+                ],
+                "track-count": 66,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "f72c0d6a-58c2-4db6-9811-2e85327668dc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "Het Beste Uit De MNM 1000 - 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ba25024a-f4c8-4dea-a358-7a263234c8bf",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Het Beste Uit De MNM 1000 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 101,
+            "media": [
+              {
+                "id": "f5400d0d-777a-330e-9a41-87e4e8100935",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a698e8fb-9267-4732-8e01-a03dca7967f4",
+                    "number": "13",
+                    "title": "Tout oublier",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "49533595-cc5d-4bf2-af80-1c214bf12ff0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Ultratop Hit Connection - Best Of 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c213c06b-15b6-4f54-a044-9320d75f92b2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ultratop Hit Connection - Best Of 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-11-29",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2019-11-29",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 66,
+            "media": [
+              {
+                "id": "31a2488d-b772-319d-9a0a-35ad29ed71c3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bade4fd1-0948-4b2b-9f6c-6c60de632986",
+                    "number": "3",
+                    "title": "Tout Oublier",
+                    "length": 201000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "4fdf8d05-ed1b-4fac-a8ca-0471797b28e2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "MNM Big Hits 2019, Vol. 1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9cf1d9c6-f838-48f6-84e0-d8f87b99ab06",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "MNM Big Hits 2019, Vol. 1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-02-15",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019-02-15",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 41,
+            "media": [
+              {
+                "id": "9edbd804-4c1d-33dc-9ad6-e9877c12c28e",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ac5e6107-e64a-4178-9226-5d6f19d38930",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "5d7ed9bc-1e74-42e0-9a93-f33812e4e81b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "M6 Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2a371e9a-4635-4679-afc1-7fc533190681",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "M6 Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11-30",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-11-30",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 80,
+            "media": [
+              {
+                "id": "266dfa7e-af28-3dab-b7f9-f79b6a99a181",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "15ca16af-b6f0-4bf7-974c-7ff7957a16f3",
+                    "number": "9",
+                    "title": "Tout oublier",
+                    "length": 203067
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "0ac60aa1-33bc-41ff-b15d-cc15dc7cb5ee",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 1,
+            "title": "Brol",
+            "status": "Official",
+            "disambiguation": "24-Bit 44.1 kHz",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "date": "2018-10-05",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-10-05",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "9816d6b6-9817-3aaf-952c-b144b2d1d5a2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fc79a751-ddac-4d92-83ea-88ee185f1b89",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "8faaff69-97b3-427b-8627-06044c54b9f6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "110 Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af091e1e-e4e9-456e-a58d-e1a85f0d853c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "110 Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-12-21",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-12-21",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 110,
+            "media": [
+              {
+                "id": "043e26d4-40d9-345d-bf01-dbc56489aa1f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "44a18cdb-8420-40af-8db8-e706fa42176a",
+                    "number": "16",
+                    "title": "Tout Oublier",
+                    "length": 203000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "6571e3ec-3dba-4eeb-a208-7e54070d61f8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "55 Hits rentrée 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "89bf9ec5-874d-4d34-91c0-472134416520",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "55 Hits rentrée 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-08-29",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-08-29",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 55,
+            "media": [
+              {
+                "id": "555f4713-b856-39ec-88c6-f6dae5a70ae9",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e73ccfde-b54b-4008-bce5-c1f274651e74",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 203466
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "e0f17d4c-d246-45f7-bf8f-fc77183eb7c1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ L'année des hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ef677126-573b-4c9d-8b16-b927d94346d4",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ L'année des hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-12-13",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "061be8f1-62d4-3cd7-b157-ddaea05bd876",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d1515b96-5e42-45fa-b7ba-a64907a983f8",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 203080
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "953bf0de-9da4-486a-b4b2-521bb64d5a3e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 1,
+            "title": "Brol",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "date": "2018-10-05",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-10-05",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "6768c162-c765-3d0e-82b4-c10f2980ac8e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "d99262e3-cdfb-4bd2-bc22-863240eb25a6",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "e7558989-5881-45b0-ba49-51af1d63a3f1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 2,
+            "title": "Brol La Suite",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "date": "2019-11-07",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-11-07",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "ea8d145e-baf6-33c7-b411-45d1402f6f84",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2e954ef4-0051-40ea-8387-b54964dcd0a2",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "d61eac66-bab8-4ad4-94cf-76d0c8889dc7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 1,
+            "title": "Brol La Suite",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "date": "2019",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "c00d1b87-f5f9-350a-99e9-3f1a91b77e2e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "25955cfb-6325-4982-a387-7c4da51bbeef",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "441c0d3c-2826-4a2c-9523-2e7724783e9b",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Ultratop hit connection 2019.1",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2d8e3bc4-34f8-4322-b265-dd19438af829",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ultratop hit connection 2019.1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-04-12",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019-04-12",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "09c88004-ec80-3943-831c-8fe435179a6f",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "70e03e0b-af07-46f8-b6d0-923811d56cc6",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "1a6b912a-624d-42d1-af96-8ca9d3d5a1d0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 1,
+            "title": "Brol La Suite",
+            "status": "Official",
+            "disambiguation": "Les Victoires de la Musique 2020",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "date": "2020-02-07",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2020-02-07",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "d05c63a0-9b94-39ab-948c-aff28dae68c6",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "945d0cb4-abae-41a2-9c96-e15f71cd3c04",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "226224fc-7c06-4d21-8cc9-1345e139f009",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "#Hits 2019 #2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9a3315c6-e5a2-4787-9139-f83339dfab82",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "#Hits 2019 #2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-03-01",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-03-01",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 46,
+            "media": [
+              {
+                "id": "f948c4ff-cdf8-37d0-8375-b0e5b908c0c0",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "90acf39e-1a04-4e13-91a0-12d48e5d8e01",
+                    "number": "2",
+                    "title": "Tout oublier",
+                    "length": 203213
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "971c798a-b588-4359-9fc4-4d87b4072121",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "#Hits été-rentrée 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b4813f8b-5ddc-4dcf-88ec-db9bc769583c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "#Hits été-rentrée 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-08-09",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-08-09",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 46,
+            "media": [
+              {
+                "id": "56086290-bb0e-3225-8e3c-bd856fd84b17",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "16f15ace-15a3-4291-baf7-00973219b086",
+                    "number": "5",
+                    "title": "Tout oublier",
+                    "length": 203466
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "6ccb8099-1462-4a77-aaec-660f65926097",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 1,
+            "title": "Brol, la suite",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "date": "2019-11-08",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019-11-08",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-11-08",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "21101b15-1635-3aaf-a453-97ccb9543605",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d30f6a08-3c3c-4045-a2b1-c8476213898a",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "b9135d6a-249a-4113-90c6-b5131fd9fd0b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Chanter en voiture",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "321f5717-ed1d-46f3-913e-a3955dc7818b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Chanter en voiture",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-12-13",
+            "country": "DZ",
+            "release-events": [
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "28242750-534a-326b-8ed6-1b03dfb88cd0",
+                  "name": "Algeria",
+                  "sort-name": "Algeria",
+                  "iso-3166-1-codes": [
+                    "DZ"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "0df04709-c7d8-3b55-a6ea-f3e5069a947b",
+                  "name": "Argentina",
+                  "sort-name": "Argentina",
+                  "iso-3166-1-codes": [
+                    "AR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "65f4f7a6-d3c1-3a6b-a726-85e147d555b7",
+                  "name": "Bahrain",
+                  "sort-name": "Bahrain",
+                  "iso-3166-1-codes": [
+                    "BH"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "660e3c48-b301-3c8c-9708-0f71d5d094d6",
+                  "name": "Belarus",
+                  "sort-name": "Belarus",
+                  "iso-3166-1-codes": [
+                    "BY"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "a5aed4a3-8ce1-3ab3-bfee-b008cff6b857",
+                  "name": "Bolivia",
+                  "sort-name": "Bolivia",
+                  "iso-3166-1-codes": [
+                    "BO"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "f45b47f8-5796-386e-b172-6c31b009a5d8",
+                  "name": "Brazil",
+                  "sort-name": "Brazil",
+                  "iso-3166-1-codes": [
+                    "BR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "114c14ad-9776-34e9-81b0-6299507f3771",
+                  "name": "Bulgaria",
+                  "sort-name": "Bulgaria",
+                  "iso-3166-1-codes": [
+                    "BG"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "ee26e886-87f5-33a2-8e8e-f9591490426d",
+                  "name": "Cambodia",
+                  "sort-name": "Cambodia",
+                  "iso-3166-1-codes": [
+                    "KH"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "82d5f4d6-aed4-3ff5-81d1-5363ac6e97a7",
+                  "name": "Chile",
+                  "sort-name": "Chile",
+                  "iso-3166-1-codes": [
+                    "CL"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "02b60d8d-7164-339d-868d-22d147d9f74a",
+                  "name": "Colombia",
+                  "sort-name": "Colombia",
+                  "iso-3166-1-codes": [
+                    "CO"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "ba544658-8266-36cb-ac0e-3bdfbf52cb00",
+                  "name": "Costa Rica",
+                  "sort-name": "Costa Rica",
+                  "iso-3166-1-codes": [
+                    "CR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "e56e3d7a-4b90-3546-8450-49548050924a",
+                  "name": "Côte d'Ivoire",
+                  "sort-name": "Côte d'Ivoire",
+                  "iso-3166-1-codes": [
+                    "CI"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "7d30afff-e425-356a-873e-17ae9745b31d",
+                  "name": "Croatia",
+                  "sort-name": "Croatia",
+                  "iso-3166-1-codes": [
+                    "HR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "a75b525f-8c01-31f6-975e-4a32a2b001d5",
+                  "name": "Cyprus",
+                  "sort-name": "Cyprus",
+                  "iso-3166-1-codes": [
+                    "CY"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "51d34c28-61bf-3d21-849f-7492672a9d44",
+                  "name": "Czechia",
+                  "sort-name": "Czechia",
+                  "iso-3166-1-codes": [
+                    "CZ"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "4757b525-2a60-324a-b060-578765d2c993",
+                  "name": "Denmark",
+                  "sort-name": "Denmark",
+                  "iso-3166-1-codes": [
+                    "DK"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "696cb3e0-5084-30ab-9916-65ece70adbf6",
+                  "name": "Dominican Republic",
+                  "sort-name": "Dominican Republic",
+                  "iso-3166-1-codes": [
+                    "DO"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "967abc0e-f680-3cde-95d0-0b79b977d410",
+                  "name": "Ecuador",
+                  "sort-name": "Ecuador",
+                  "iso-3166-1-codes": [
+                    "EC"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "8e0551f2-95c2-3cc0-a0a9-f2d344f10667",
+                  "name": "Egypt",
+                  "sort-name": "Egypt",
+                  "iso-3166-1-codes": [
+                    "EG"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "f2fa4bfb-97aa-3db4-8d49-cc64969ce1a7",
+                  "name": "El Salvador",
+                  "sort-name": "El Salvador",
+                  "iso-3166-1-codes": [
+                    "SV"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "e1c1215f-dcc0-35b4-b840-d2ca2151593b",
+                  "name": "Estonia",
+                  "sort-name": "Estonia",
+                  "iso-3166-1-codes": [
+                    "EE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "6a264f94-6ff1-30b1-9a81-41f7bfabd616",
+                  "name": "Finland",
+                  "sort-name": "Finland",
+                  "iso-3166-1-codes": [
+                    "FI"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "cf48f4b4-28f0-39ab-9104-650324a1d1c8",
+                  "name": "Ghana",
+                  "sort-name": "Ghana",
+                  "iso-3166-1-codes": [
+                    "GH"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "803db0ca-b6ed-3bbc-aeb8-f89efd0a2168",
+                  "name": "Greece",
+                  "sort-name": "Greece",
+                  "iso-3166-1-codes": [
+                    "GR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "01448ddc-6ee3-3fa4-b136-507d984e31ee",
+                  "name": "Guatemala",
+                  "sort-name": "Guatemala",
+                  "iso-3166-1-codes": [
+                    "GT"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "0c3ea915-4e49-34fc-b702-debb216fd7fa",
+                  "name": "Honduras",
+                  "sort-name": "Honduras",
+                  "iso-3166-1-codes": [
+                    "HN"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "0373cdff-eac8-3fbc-92dc-36a607da06d1",
+                  "name": "Hong Kong",
+                  "sort-name": "Hong Kong",
+                  "iso-3166-1-codes": [
+                    "HK"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "312bc5bb-7e43-3e63-81c6-b4d712b37b2c",
+                  "name": "Hungary",
+                  "sort-name": "Hungary",
+                  "iso-3166-1-codes": [
+                    "HU"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "48802a32-075a-3805-a183-277c66047693",
+                  "name": "Iceland",
+                  "sort-name": "Iceland",
+                  "iso-3166-1-codes": [
+                    "IS"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "d31a9a15-537f-3669-ad53-25753ddd2772",
+                  "name": "India",
+                  "sort-name": "India",
+                  "iso-3166-1-codes": [
+                    "IN"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "d3a68bd0-7419-3f99-a5bd-204d6e057089",
+                  "name": "Indonesia",
+                  "sort-name": "Indonesia",
+                  "iso-3166-1-codes": [
+                    "ID"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "390b05d4-11ec-3bce-a343-703a366b34a5",
+                  "name": "Ireland",
+                  "sort-name": "Ireland",
+                  "iso-3166-1-codes": [
+                    "IE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "03691455-bb46-37e3-91d2-cb064a35ffcc",
+                  "name": "Israel",
+                  "sort-name": "Israel",
+                  "iso-3166-1-codes": [
+                    "IL"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "c6500277-9a3d-349b-bf30-41afdbf42add",
+                  "name": "Italy",
+                  "sort-name": "Italy",
+                  "iso-3166-1-codes": [
+                    "IT"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "023da4a0-acee-3fb1-b91e-5de74ccf787b",
+                  "name": "Kenya",
+                  "sort-name": "Kenya",
+                  "iso-3166-1-codes": [
+                    "KE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+                  "name": "South Korea",
+                  "sort-name": "South Korea",
+                  "iso-3166-1-codes": [
+                    "KR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "f03f2625-dc7d-38b2-a058-4e9ca0e10424",
+                  "name": "Kuwait",
+                  "sort-name": "Kuwait",
+                  "iso-3166-1-codes": [
+                    "KW"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "66eb3e73-d69e-3581-9a23-a73b4c64c8dd",
+                  "name": "Latvia",
+                  "sort-name": "Latvia",
+                  "iso-3166-1-codes": [
+                    "LV"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "8138206e-5786-3f86-a53b-19a7303e7419",
+                  "name": "Lebanon",
+                  "sort-name": "Lebanon",
+                  "iso-3166-1-codes": [
+                    "LB"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "0785dc14-96af-3dc4-bde4-dcdfc2e2d0d6",
+                  "name": "Lithuania",
+                  "sort-name": "Lithuania",
+                  "iso-3166-1-codes": [
+                    "LT"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "563d21b7-4a8e-35e2-83a7-7804baefbfa7",
+                  "name": "Luxembourg",
+                  "sort-name": "Luxembourg",
+                  "iso-3166-1-codes": [
+                    "LU"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "305d19c7-c040-349c-8d5f-6ac75d2d2a09",
+                  "name": "Malaysia",
+                  "sort-name": "Malaysia",
+                  "iso-3166-1-codes": [
+                    "MY"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "050c94f7-1413-3a34-bb90-4a94f3bb2084",
+                  "name": "Malta",
+                  "sort-name": "Malta",
+                  "iso-3166-1-codes": [
+                    "MT"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "b84d8617-249a-3a06-849d-fc5c25e2249b",
+                  "name": "Morocco",
+                  "sort-name": "Morocco",
+                  "iso-3166-1-codes": [
+                    "MA"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+                  "name": "New Zealand",
+                  "sort-name": "New Zealand",
+                  "iso-3166-1-codes": [
+                    "NZ"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "d2b87acd-06ce-3c71-b3ff-a35d914bbabe",
+                  "name": "Nicaragua",
+                  "sort-name": "Nicaragua",
+                  "iso-3166-1-codes": [
+                    "NI"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "1e23d84b-202e-3fc8-8c49-debc71e9eb16",
+                  "name": "Nigeria",
+                  "sort-name": "Nigeria",
+                  "iso-3166-1-codes": [
+                    "NG"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "6743d351-6f37-3049-9724-5041161fff4d",
+                  "name": "Norway",
+                  "sort-name": "Norway",
+                  "iso-3166-1-codes": [
+                    "NO"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "7ccdff29-2e00-3e50-9520-b9ea1e918bc2",
+                  "name": "Oman",
+                  "sort-name": "Oman",
+                  "iso-3166-1-codes": [
+                    "OM"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "6f85633b-dff4-3fb4-babd-fb89b3628041",
+                  "name": "Panama",
+                  "sort-name": "Panama",
+                  "iso-3166-1-codes": [
+                    "PA"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "0a750c98-a7a5-3d55-bd52-f6e9011b1537",
+                  "name": "Paraguay",
+                  "sort-name": "Paraguay",
+                  "iso-3166-1-codes": [
+                    "PY"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "719f6082-95c7-3dd5-9503-e143010a6cc1",
+                  "name": "Peru",
+                  "sort-name": "Peru",
+                  "iso-3166-1-codes": [
+                    "PE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "786532a5-2e36-315a-bdf2-221dc1b64b72",
+                  "name": "Philippines",
+                  "sort-name": "Philippines",
+                  "iso-3166-1-codes": [
+                    "PH"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "dd7f80c8-f017-3d01-8608-2a8c9c32b954",
+                  "name": "Poland",
+                  "sort-name": "Poland",
+                  "iso-3166-1-codes": [
+                    "PL"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "781b0c54-3d54-362d-a941-8a617def4992",
+                  "name": "Portugal",
+                  "sort-name": "Portugal",
+                  "iso-3166-1-codes": [
+                    "PT"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "348dcc25-7bb6-3f75-8739-97eabc84a330",
+                  "name": "Qatar",
+                  "sort-name": "Qatar",
+                  "iso-3166-1-codes": [
+                    "QA"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "61ed84b8-5a10-30a7-8376-ccd51801d6d1",
+                  "name": "Romania",
+                  "sort-name": "Romania",
+                  "iso-3166-1-codes": [
+                    "RO"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+                  "name": "Russia",
+                  "sort-name": "Russia",
+                  "iso-3166-1-codes": [
+                    "RU"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "9705be0d-51fb-3990-8726-ec9f56c66ba0",
+                  "name": "Saudi Arabia",
+                  "sort-name": "Saudi Arabia",
+                  "iso-3166-1-codes": [
+                    "SA"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "aa344640-fd57-3960-afb4-84d0d3b69d3d",
+                  "name": "Singapore",
+                  "sort-name": "Singapore",
+                  "iso-3166-1-codes": [
+                    "SG"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "eb52ca74-dd11-37a1-a3fa-154430bf2df2",
+                  "name": "Slovakia",
+                  "sort-name": "Slovakia",
+                  "iso-3166-1-codes": [
+                    "SK"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "5b0b6225-584c-3942-b69d-5efceb9989af",
+                  "name": "Slovenia",
+                  "sort-name": "Slovenia",
+                  "iso-3166-1-codes": [
+                    "SI"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "50cc7852-862e-30ae-aa82-385fe7135b7f",
+                  "name": "South Africa",
+                  "sort-name": "South Africa",
+                  "iso-3166-1-codes": [
+                    "ZA"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+                  "name": "Spain",
+                  "sort-name": "Spain",
+                  "iso-3166-1-codes": [
+                    "ES"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "6e2d562d-a754-3036-8484-7ac576606e27",
+                  "name": "Sri Lanka",
+                  "sort-name": "Sri Lanka",
+                  "iso-3166-1-codes": [
+                    "LK"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "23d10872-f5ae-3f0c-bf55-332788a16ecb",
+                  "name": "Sweden",
+                  "sort-name": "Sweden",
+                  "iso-3166-1-codes": [
+                    "SE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+                  "name": "Switzerland",
+                  "sort-name": "Switzerland",
+                  "iso-3166-1-codes": [
+                    "CH"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "41637cec-9a4f-389c-86d2-fc6abf3357b5",
+                  "name": "Taiwan",
+                  "sort-name": "Taiwan",
+                  "iso-3166-1-codes": [
+                    "TW"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "ce209e56-cda5-358e-96db-830e3405b675",
+                  "name": "Thailand",
+                  "sort-name": "Thailand",
+                  "iso-3166-1-codes": [
+                    "TH"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "6c290168-f3b9-3adb-9889-b856feb2c26c",
+                  "name": "Trinidad and Tobago",
+                  "sort-name": "Trinidad and Tobago",
+                  "iso-3166-1-codes": [
+                    "TT"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "d3be28b4-41f7-3752-8a05-ed45e1d1e492",
+                  "name": "Türkiye",
+                  "sort-name": "Türkiye",
+                  "iso-3166-1-codes": [
+                    "TR"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "904768d0-61ca-3c40-93ac-93adc36fef4b",
+                  "name": "Ukraine",
+                  "sort-name": "Ukraine",
+                  "iso-3166-1-codes": [
+                    "UA"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "fe40c648-ba74-3e17-b768-58181d5ee563",
+                  "name": "United Arab Emirates",
+                  "sort-name": "United Arab Emirates",
+                  "iso-3166-1-codes": [
+                    "AE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "ea88d395-87c9-3c47-b49a-114cad41fd39",
+                  "name": "Uruguay",
+                  "sort-name": "Uruguay",
+                  "iso-3166-1-codes": [
+                    "UY"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "2ac90d6b-04fa-3006-8a91-89da01032365",
+                  "name": "Venezuela",
+                  "sort-name": "Venezuela",
+                  "iso-3166-1-codes": [
+                    "VE"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "0158e991-c3c6-374a-9b9d-024bbaff6980",
+                  "name": "Vietnam",
+                  "sort-name": "Vietnam",
+                  "iso-3166-1-codes": [
+                    "VN"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "424c1b50-57f8-34af-ab97-313e2ad40058",
+                  "name": "Serbia",
+                  "sort-name": "Serbia",
+                  "iso-3166-1-codes": [
+                    "RS"
+                  ]
+                }
+              },
+              {
+                "date": "2019-12-13",
+                "area": {
+                  "id": "7b6ae6b7-6f4f-43df-aab8-0c72531ea8ae",
+                  "name": "Kosovo",
+                  "sort-name": "Kosovo",
+                  "iso-3166-1-codes": [
+                    "XK"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "59ad2206-5009-35a3-962b-a046628b13e5",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1c898170-e104-4992-946b-dadf5e881cfe",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 38,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "46a3ad54-c27e-442e-a846-3079cfa0c263",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Ultratop Hit Connection 2019.1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2d8e3bc4-34f8-4322-b265-dd19438af829",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ultratop hit connection 2019.1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-04-05",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019-04-05",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "fe0cdf9a-808b-3ac2-8c28-23d9590e644c",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "639d87e6-4b90-49cb-8232-694bd9578737",
+                    "number": "1",
+                    "title": "Tout Oublier",
+                    "length": 200280
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "62866cf5-52fd-43d3-b550-c3620ceb7f48",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "W9 Hits 2019, Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "37054a15-0ec5-41a8-b405-5171aefb0639",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "W9 Hits 2019, Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-05-03",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-05-03",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 80,
+            "media": [
+              {
+                "id": "2751d021-57e5-3ccf-a9f2-1819cf90035a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4bb88a2d-2438-4ea7-b119-c8cd7a30b7c4",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 203186
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "630e6d30-cd8a-4590-adf9-6a07889cb03b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Les plus belles voix Chérie FM 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "26b21e30-3617-46ca-9d3c-3661de4128bf",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Les plus belles voix Chérie FM 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-05-17",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-05-17",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 32,
+            "media": [
+              {
+                "id": "82ea2950-5d12-3aff-bd3b-d2bd11614910",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3ba3011e-e3c0-40dc-b195-fe0dc73c7702",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 199773
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "8d31e6a7-e77a-4729-9d69-93d96d7796cf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "De Afrekening 66",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f2a11e35-2f64-488f-a594-0482ca803afc",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "De Afrekening 66",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-03-29",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019-03-29",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "f4215be7-2986-3ffc-af54-1ecc8aa37669",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0ef0df7f-bbc8-4f4a-8099-6e4f6878d0b2",
+                    "number": "3",
+                    "title": "Tout Oublier"
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "759672c1-3a24-4484-9b2d-e6cd3a88a0c3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "De Afrekening 66",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f2a11e35-2f64-488f-a594-0482ca803afc",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "De Afrekening 66",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-03-29",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2019-03-29",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "e728f09c-791e-3712-b442-a874fcfbbd9f",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "53d95203-31db-4cb8-8649-34f12bc7a28a",
+                    "number": "3",
+                    "title": "Tout Oublier",
+                    "length": 200000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "e612b781-edc0-4954-bc0f-96c1eacf4b5f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Planète Rap 2019, Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9cce517e-273e-47bc-80de-4e8044d279f1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Planète Rap 2019, Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-07-05",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-07-05",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 58,
+            "media": [
+              {
+                "id": "c0e2dfc4-1e7c-385f-8454-c5c8ef6b0948",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "40a93312-fa70-4cea-9c5b-c4b96079ee1d",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 199773
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "1e47c1ae-d291-42e1-8864-ff001e2335af",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 1,
+            "title": "Brol",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "track-count": 12,
+            "media": [
+              {
+                "id": "d1bea010-7085-34ba-b864-ca3d6e2cc369",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f069e6ad-902d-4b77-9ed5-1d5d5dd59777",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "c9053002-454c-4034-8776-d1f15215e298",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Virgin Radio 2019, Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32483b53-02e2-4925-bbea-5f426afac499",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Virgin Radio 2019, Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-03-15",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-03-15",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "d6801e53-c583-3581-910a-a45bbce89ef2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2eefb6f0-064c-4204-8681-cc16547a5be4",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 203426
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "e4194564-ed6f-45ce-880b-1ebe540ffc97",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "NRJ Urban Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "247effc4-b92e-4050-9620-1517a93d2c6f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Urban Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 40,
+            "media": [
+              {
+                "id": "b6ebbc36-e046-3b97-b248-5a98158c28eb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "09cc245b-6c62-469e-b2c4-e453b1e02b94",
+                    "number": "3",
+                    "title": "Tout oublier",
+                    "length": 204000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "01bd845f-bc5b-4ee3-9a06-c6d80ab1580a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Just Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bf3dc9b3-aa24-4f30-9365-c4e5faf464c9",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Just Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-03-15",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-03-15",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "fd74202c-fe44-36cb-b22d-628d2602f25d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "703bf0d0-8d47-4ce3-bdc0-3ae57be3999f",
+                    "number": "6",
+                    "title": "Tout oublier",
+                    "length": 202000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "770d0833-c724-451a-8c1a-22437c8f02a8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Winter Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "aca9bd5e-6c18-482e-9fc3-ae184161af6c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Winter Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-02-22",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-02-22",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "d101256b-7e97-35a9-90b8-f09ce227d4ca",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1cd47cf8-921a-4e82-a4e7-1c3f5cab204c",
+                    "number": "2",
+                    "title": "Tout oublier",
+                    "length": 201226
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "3290a132-fa95-41f6-8c34-4d946dcb5ace",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "NRJ Just Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bf3dc9b3-aa24-4f30-9365-c4e5faf464c9",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Just Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-03-15",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-03-15",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "d432ced9-9198-3d9b-acda-dc8dd99b0574",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e3ca84eb-f900-4fcf-a3ee-dc5d8c6f0f98",
+                    "number": "19",
+                    "title": "Tout oublier",
+                    "length": 201493
+                  }
+                ],
+                "track-count": 52,
+                "track-offset": 18
+              }
+            ]
+          },
+          {
+            "id": "e7bf40da-7e7e-4614-8559-66f9fcc30442",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Just Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c82f344b-13ff-4d0b-9cf5-daefcb18e020",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Just Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-03-15",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-03-15",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "2cb30cbc-723f-3a86-b1fa-d6ffac7ee905",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b724bf5f-0a5b-47bc-9c04-8ccc3074d050",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 201493
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "7579c9a9-d332-4f31-8f8a-6362c58c69fa",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4970bfc9-5057-3262-bed2-1b8d3589c9d3",
+            "count": 1,
+            "title": "Tout oublier",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              },
+              {
+                "name": "Roméo Elvis",
+                "artist": {
+                  "id": "b6e08f19-dca8-4009-aefe-9feb9f1aa1f2",
+                  "name": "Roméo Elvis",
+                  "sort-name": "Elvis, Roméo",
+                  "disambiguation": "Belgian rapper"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9a092cf1-959c-46fb-a9d1-cdd4e7edddb1",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Tout oublier",
+              "primary-type": "Single"
+            },
+            "date": "2018-10-13",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-10-13",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "0ad542c5-7779-31c2-9758-894a94d800ab",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9b94448b-49e0-4b63-b97b-47791d5fa53f",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 202000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "8e51074f-57f3-439d-95e4-b59a66f208b8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Smash Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d64a5bf1-c40e-4fa6-b95d-81e915b72d62",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Smash Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-01-25",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-01-25",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "99cc7e46-3cb2-3df3-ab06-4c4f7cff2b45",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "fd41be23-fb44-48fb-8b98-239f9aeda8ab",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 204000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "0d40389e-6fc7-4710-9513-c09fc5e66c5b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "NRJ 12 Snow Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "aa28b02c-cc7f-4aab-8201-bbd46d892416",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ 12 Snow Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-02-22",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-02-22",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "a2605ca8-3af6-3bb4-96cc-a27b0256c893",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "07102ee2-cc30-477f-82a2-b770a8407550",
+                    "number": "2",
+                    "title": "Tout oublier",
+                    "length": 203280
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "e335cdff-95c6-4523-8393-a9b85c264149",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ 300% Hits 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "da22719a-25c5-4af5-8bee-14e7f9457845",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ 300% Hits 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-02-15",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-02-15",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "bf974419-e0f4-3873-a444-90d64b4f9711",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a1c8ddfc-535a-471a-81cd-a15c6ddbc370",
+                    "number": "1",
+                    "title": "Tout oublier",
+                    "length": 202000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "e1dd3378-8660-4bde-8a82-e883b9492155",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ed889a79-805c-3b3f-bcf3-48d257fed76c",
+            "count": 1,
+            "title": "Brol",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Angèle",
+                "artist": {
+                  "id": "dcd4701d-64ec-443d-bfbf-73fc87c44bd6",
+                  "name": "Angèle",
+                  "sort-name": "Angèle",
+                  "disambiguation": "Belgian female singer, Angèle Van Laeken"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Brol",
+              "primary-type": "Album"
+            },
+            "date": "2018-10-05",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-10-05",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "3004306f-e951-3de0-a7b7-dc71488fadda",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "126f6bfe-53e9-4c13-b749-fafc1e1ef6e2",
+                    "number": "4",
+                    "title": "Tout oublier",
+                    "length": 202120
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 3
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "BE8HB1800008"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Burna+Boy&recording_name=Ye",
+  "fetched_at": "2026-07-28T12:16:18.776Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Burna Boy",
+      "recording_arg": "Ye",
+      "artist_credit_name": "Burna Boy",
+      "release_name": "Outside",
+      "recording_name": "Ye",
+      "artist_credit_id": 1685411,
+      "artist_mbids": [
+        "78a19169-ac75-4868-b504-7e2e073118e0"
+      ],
+      "release_mbid": "24c85d13-a415-401c-995a-8c665c3d8e1c",
+      "recording_mbid": "00fa1978-819c-466f-809c-5888baf4ebcb"
+    }
+  ]
+}

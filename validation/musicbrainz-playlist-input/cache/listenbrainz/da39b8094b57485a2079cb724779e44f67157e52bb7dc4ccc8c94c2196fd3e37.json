@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Aventura&recording_name=Obsesi%C3%B3n&release_name=We+Broke+the+Rules",
+  "fetched_at": "2026-07-28T12:16:02.472Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Aventura",
+      "recording_arg": "Obsesión",
+      "artist_credit_name": "Aventura",
+      "release_name": "We Broke the Rules",
+      "recording_name": "Obsesión",
+      "artist_credit_id": 57111,
+      "artist_mbids": [
+        "5f2cb99a-7e59-429f-a44d-3a880edccfb1"
+      ],
+      "release_mbid": "03107616-7984-4064-b0e1-32b6aebc40f6",
+      "recording_mbid": "fdb657f7-b82e-458e-9fa6-0969d5412c17"
+    }
+  ]
+}

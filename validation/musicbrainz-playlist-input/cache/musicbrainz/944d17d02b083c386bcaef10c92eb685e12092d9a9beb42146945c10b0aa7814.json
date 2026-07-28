@@ -1,0 +1,5626 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/c70c3a4f-88c1-4a29-99d5-362c65334741?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:38:43.487Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "video": false,
+    "tags": [
+      {
+        "count": 2,
+        "name": "club"
+      },
+      {
+        "count": 2,
+        "name": "dance"
+      },
+      {
+        "name": "dance-pop",
+        "count": 1
+      },
+      {
+        "count": 1,
+        "name": "electro"
+      },
+      {
+        "count": 3,
+        "name": "electronic"
+      },
+      {
+        "count": 2,
+        "name": "electronica"
+      },
+      {
+        "name": "house",
+        "count": 4
+      },
+      {
+        "name": "rnb/swing",
+        "count": 1
+      },
+      {
+        "name": "trip hop",
+        "count": 4
+      }
+    ],
+    "title": "Sing It Back (Boris Musical mix)",
+    "first-release-date": "1998",
+    "disambiguation": "",
+    "relations": [
+      {
+        "ended": false,
+        "attributes": [],
+        "direction": "forward",
+        "target-type": "work",
+        "begin": null,
+        "target-credit": "",
+        "source-credit": "",
+        "type": "performance",
+        "attribute-values": {},
+        "end": null,
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "attribute-ids": {},
+        "work": {
+          "language": "eng",
+          "id": "e5fb2402-acfc-309f-aae1-b43f3032c301",
+          "type": "Song",
+          "attributes": [],
+          "title": "Sing It Back",
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+          "languages": [
+            "eng"
+          ],
+          "iswcs": [
+            "T-010.153.483-1"
+          ],
+          "disambiguation": ""
+        }
+      }
+    ],
+    "genres": [
+      {
+        "disambiguation": "",
+        "count": 2,
+        "id": "bab69b07-8bb9-4415-b666-c37609cef80b",
+        "name": "club"
+      },
+      {
+        "disambiguation": "",
+        "count": 2,
+        "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+        "name": "dance"
+      },
+      {
+        "name": "dance-pop",
+        "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+        "count": 1,
+        "disambiguation": ""
+      },
+      {
+        "id": "60f00d05-df4d-496e-8f5a-c45c03a56ad4",
+        "name": "electro",
+        "disambiguation": "",
+        "count": 1
+      },
+      {
+        "disambiguation": "",
+        "count": 3,
+        "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+        "name": "electronic"
+      },
+      {
+        "disambiguation": "",
+        "count": 2,
+        "id": "53a3cea3-17af-4421-a07a-5824b540aeb5",
+        "name": "electronica"
+      },
+      {
+        "disambiguation": "",
+        "count": 4,
+        "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+        "name": "house"
+      },
+      {
+        "disambiguation": "",
+        "count": 4,
+        "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+        "name": "trip hop"
+      }
+    ],
+    "releases": [
+      {
+        "tags": [],
+        "barcode": "4009880665657",
+        "release-events": [
+          {
+            "date": "1998",
+            "area": {
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "name": "Germany",
+              "disambiguation": "",
+              "sort-name": "Germany"
+            }
+          }
+        ],
+        "date": "1998",
+        "title": "Sing It Back",
+        "packaging": null,
+        "status": "Official",
+        "release-group": {
+          "secondary-types": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "tags": [],
+          "primary-type": "Single",
+          "title": "Sing It Back",
+          "secondary-type-ids": [],
+          "first-release-date": "1998",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "GB",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group",
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko"
+              },
+              "joinphrase": "",
+              "name": "Moloko"
+            }
+          ],
+          "genres": [],
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9"
+        },
+        "disambiguation": "",
+        "packaging-id": null,
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "joinphrase": "",
+            "artist": {
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "name": "dance-pop",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "name": "Moloko",
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c"
+                },
+                {
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop"
+                },
+                {
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop"
+                }
+              ],
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo"
+            }
+          }
+        ],
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "country": "GB",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+                    },
+                    "joinphrase": "",
+                    "name": "Moloko"
+                  }
+                ],
+                "id": "d2f21233-c73b-487b-b128-86162d300e11",
+                "number": "4",
+                "position": 4,
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 559000
+              }
+            ],
+            "track-count": 6,
+            "id": "3d6527f0-234f-35f9-a5f4-4a459c190c82",
+            "track-offset": 3,
+            "format": "CD",
+            "title": "",
+            "position": 1
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "country": "DE",
+        "quality": "normal",
+        "id": "c3ab91b0-fce0-4e34-9fe4-d9e1a79980bf"
+      },
+      {
+        "release-group": {
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "artist": {
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "country": "GB",
+                "name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "title": "Sing It Back",
+          "secondary-type-ids": [],
+          "first-release-date": "1998",
+          "secondary-types": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "tags": [],
+          "primary-type": "Single"
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "artist": {
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "name": "female vocals",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c"
+                },
+                {
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop"
+                }
+              ],
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "track-offset": 1,
+            "format": "12\" Vinyl",
+            "id": "285106e4-7110-30fb-95ea-4de6b7efd007",
+            "position": 1,
+            "title": "",
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "track-count": 2,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189"
+                    },
+                    "joinphrase": "",
+                    "name": "Moloko"
+                  }
+                ],
+                "number": "B",
+                "id": "864aedf0-696d-3e86-a3dc-27dbeadac071",
+                "title": "Sing It Back (Boris Musical mix)",
+                "position": 2,
+                "length": 555000
+              }
+            ]
+          }
+        ],
+        "quality": "normal",
+        "country": "GB",
+        "id": "e85a81e0-1c82-47b5-9986-010c490ea0f0",
+        "tags": [],
+        "barcode": "5027529711519",
+        "release-events": [
+          {
+            "date": "1999-03-15",
+            "area": {
+              "sort-name": "United Kingdom",
+              "disambiguation": "",
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            }
+          }
+        ],
+        "date": "1999-03-15",
+        "title": "Sing It Back",
+        "packaging": null,
+        "status": "Official"
+      },
+      {
+        "genres": [],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "name": "acid jazz"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance"
+                },
+                {
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop"
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3"
+                },
+                {
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "name": "Moloko",
+              "country": "GB",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "type": "Group"
+            }
+          }
+        ],
+        "media": [
+          {
+            "position": 1,
+            "title": "",
+            "id": "0da6aab3-afce-34d9-8497-fec846f39280",
+            "format": "CD",
+            "track-offset": 4,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "country": "GB"
+                    },
+                    "joinphrase": "",
+                    "name": "Moloko"
+                  }
+                ],
+                "id": "0b985707-5aae-368c-b4f7-d7bb21f0a686",
+                "number": "5",
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 560040,
+                "position": 5
+              }
+            ],
+            "track-count": 10,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "secondary-type-ids": [],
+          "first-release-date": "1998",
+          "title": "Sing It Back",
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "primary-type": "Single",
+          "tags": [],
+          "secondary-types": [],
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "country": "GB",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189"
+              }
+            }
+          ],
+          "disambiguation": ""
+        },
+        "disambiguation": "",
+        "packaging-id": "2aee93e9-8acb-476c-807e-6a4a3974e1cb",
+        "id": "27e6f972-492a-40e0-bbc7-8e09fe71d5ff",
+        "country": "US",
+        "quality": "normal",
+        "tags": [],
+        "barcode": "093624468721",
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "name": "United States",
+              "sort-name": "United States",
+              "disambiguation": "",
+              "type": null,
+              "id": "489ce91b-6658-3307-9877-795b68554c98"
+            },
+            "date": "1999-07-08"
+          }
+        ],
+        "packaging": "Slidepack",
+        "status": "Official",
+        "date": "1999-07-08",
+        "title": "Sing It Back"
+      },
+      {
+        "country": "GB",
+        "quality": "normal",
+        "id": "79838f0f-c000-48a9-931f-95760405bbda",
+        "release-group": {
+          "title": "Sing It Back",
+          "first-release-date": "1998",
+          "secondary-type-ids": [],
+          "secondary-types": [],
+          "primary-type": "Single",
+          "tags": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+          "disambiguation": "",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "joinphrase": "",
+              "artist": {
+                "country": "GB",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group",
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko"
+              }
+            }
+          ],
+          "releases": []
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "artist": {
+              "country": "GB",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "type": "Group",
+              "disambiguation": "English‐Irish electronic music duo",
+              "sort-name": "Moloko",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c"
+                },
+                {
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house"
+                },
+                {
+                  "name": "house",
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "name": "Moloko",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "name": "funky house",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ]
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "media": [
+          {
+            "track-count": 3,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "country": "GB"
+                    },
+                    "name": "Moloko"
+                  }
+                ],
+                "id": "22628f64-4d0f-30d5-8344-f66a69dddcbb",
+                "number": "A",
+                "title": "Sing It Back (Boris Dlugosch Musical mix)",
+                "position": 1,
+                "length": 557000
+              }
+            ],
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "position": 1,
+            "title": "",
+            "format": "12\" Vinyl",
+            "track-offset": 0,
+            "id": "ddf93c0c-22b0-395e-8682-06fd5cb13c16"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "date": "1999-08-23",
+        "title": "Sing It Back",
+        "packaging": null,
+        "status": "Official",
+        "tags": [],
+        "barcode": "5027529713810",
+        "release-events": [
+          {
+            "date": "1999-08-23",
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "6114bbd9-e25c-4363-8402-3471f328b831",
+        "quality": "normal",
+        "country": "AU",
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "joinphrase": "",
+            "artist": {
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "type": "Group",
+              "country": "GB",
+              "genres": [
+                {
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house"
+                },
+                {
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "tags": [
+                {
+                  "name": "acid jazz",
+                  "count": 3
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "name": "funky house",
+                  "count": 1
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo"
+            }
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 5,
+            "tracks": [
+              {
+                "title": "Sing It Back (Boris Dlugosch Musical mix)",
+                "length": 560306,
+                "position": 3,
+                "number": "3",
+                "id": "839d8ecc-5e64-3a33-8fc7-99f96899023e",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "country": "GB"
+                    },
+                    "name": "Moloko"
+                  }
+                ]
+              }
+            ],
+            "track-offset": 2,
+            "format": "CD",
+            "id": "0d70c752-71bf-3d9e-9c18-73628c501601",
+            "title": "",
+            "position": 1
+          }
+        ],
+        "release-group": {
+          "secondary-types": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "primary-type": "Single",
+          "tags": [],
+          "title": "Sing It Back",
+          "secondary-type-ids": [],
+          "first-release-date": "1998",
+          "disambiguation": "",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "artist": {
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "country": "GB"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9"
+        },
+        "disambiguation": "",
+        "packaging-id": null,
+        "packaging": null,
+        "status": "Official",
+        "date": "1999-10-18",
+        "title": "Sing It Back",
+        "tags": [],
+        "barcode": "9397600191421",
+        "release-events": [
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Australia",
+              "type-id": null,
+              "name": "Australia",
+              "iso-3166-1-codes": [
+                "AU"
+              ],
+              "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+              "type": null
+            },
+            "date": "1999-10-18"
+          }
+        ]
+      },
+      {
+        "date": "1999",
+        "title": "Club Tools First Edition",
+        "packaging": null,
+        "status": "Official",
+        "tags": [],
+        "barcode": null,
+        "release-events": [
+          {
+            "date": "1999",
+            "area": {
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "type-id": null,
+              "name": "Germany",
+              "disambiguation": "",
+              "sort-name": "Germany",
+              "type": null,
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad"
+            }
+          }
+        ],
+        "quality": "normal",
+        "country": "DE",
+        "id": "8c13c78a-fee8-40c3-b31b-cefc9cd2e5bf",
+        "release-group": {
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "name": "Various Artists",
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other"
+              }
+            }
+          ],
+          "genres": [],
+          "id": "18f4785b-9df2-4ff3-9d57-5235eafb7793",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "title": "Club Tools First Edition",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "1999"
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists",
+              "genres": [],
+              "name": "Various Artists",
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "country": null,
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "track-count": 11,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "joinphrase": "",
+                    "artist": {
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "tags": [
+                        {
+                          "count": 3,
+                          "name": "acid jazz"
+                        },
+                        {
+                          "name": "alternative dance",
+                          "count": 3
+                        },
+                        {
+                          "name": "art pop",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance and electronica"
+                        },
+                        {
+                          "name": "dance-pop",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "electronic"
+                        },
+                        {
+                          "name": "female vocals",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "funky house"
+                        },
+                        {
+                          "name": "house",
+                          "count": 3
+                        },
+                        {
+                          "name": "trip hop",
+                          "count": 1
+                        }
+                      ],
+                      "genres": [
+                        {
+                          "name": "acid jazz",
+                          "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                          "count": 3,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "name": "alternative dance",
+                          "id": "8301f73c-9166-4108-bfeb-4fd22dc19083"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                          "name": "art pop"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "name": "dance-pop",
+                          "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "electronic",
+                          "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                        },
+                        {
+                          "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                          "name": "funky house",
+                          "count": 1,
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "disambiguation": "",
+                          "count": 3
+                        },
+                        {
+                          "name": "trip hop",
+                          "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                          "disambiguation": "",
+                          "count": 1
+                        }
+                      ],
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189"
+                    }
+                  }
+                ],
+                "number": "1",
+                "id": "860418de-dc05-425b-a4a6-8b844d7c6347",
+                "position": 1,
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 558466
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "format": "CD",
+            "track-offset": 0,
+            "id": "1bd1e710-29c0-3223-a3e5-6906c6060928"
+          }
+        ]
+      },
+      {
+        "country": "DE",
+        "quality": "normal",
+        "id": "e6f56aa7-1c5d-4fd4-a03e-f92ec60caf88",
+        "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+        "disambiguation": "",
+        "release-group": {
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "GB",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko"
+              },
+              "joinphrase": "",
+              "name": "Moloko"
+            }
+          ],
+          "genres": [],
+          "title": "Sing It Back",
+          "first-release-date": "1998",
+          "secondary-type-ids": [],
+          "secondary-types": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "tags": [],
+          "primary-type": "Single"
+        },
+        "media": [
+          {
+            "track-count": 2,
+            "tracks": [
+              {
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 557960,
+                "position": 2,
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "country": "GB",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko"
+                    },
+                    "joinphrase": "",
+                    "name": "Moloko"
+                  }
+                ],
+                "id": "43e039f4-0759-3515-9dce-967e33fdfc06",
+                "number": "2"
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "track-offset": 1,
+            "format": "CD",
+            "id": "8b4002b4-83d3-3876-bdad-56d327acb1b5"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "type": "Group",
+              "country": "GB",
+              "genres": [
+                {
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                },
+                {
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "house",
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3"
+                },
+                {
+                  "name": "trip hop",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "name": "dance-pop",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "name": "female vocals",
+                  "count": 1
+                },
+                {
+                  "name": "funky house",
+                  "count": 1
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo"
+            },
+            "name": "Moloko"
+          }
+        ],
+        "title": "Sing It Back",
+        "date": "1999",
+        "status": "Official",
+        "packaging": "Cardboard/Paper Sleeve",
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "sort-name": "Germany",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "name": "Germany"
+            },
+            "date": "1999"
+          }
+        ],
+        "barcode": "4009880665664",
+        "tags": []
+      },
+      {
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "artist-credit": [
+            {
+              "artist": {
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group",
+                "country": "GB"
+              },
+              "joinphrase": "",
+              "name": "Moloko"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "tags": [],
+          "primary-type": "Single",
+          "secondary-types": [],
+          "first-release-date": "1998",
+          "secondary-type-ids": [],
+          "title": "Sing It Back"
+        },
+        "status-id": null,
+        "media": [
+          {
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "tracks": [
+              {
+                "id": "fef4fc0e-49db-469c-942b-8c9796bc1152",
+                "number": "A1",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "artist": {
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "country": "GB"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 557000,
+                "position": 1
+              }
+            ],
+            "track-count": 4,
+            "id": "ba7a25b4-93fb-413c-88de-b7b64c75e627",
+            "track-offset": 0,
+            "format": "12\" Vinyl",
+            "title": "",
+            "position": 1
+          }
+        ],
+        "text-representation": {
+          "language": null,
+          "script": null
+        },
+        "artist-credit": [
+          {
+            "artist": {
+              "country": "GB",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "type": "Group",
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "genres": [
+                {
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "name": "acid jazz",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083"
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                },
+                {
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "trip hop",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc"
+                }
+              ],
+              "name": "Moloko",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "name": "acid jazz",
+                  "count": 3
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "name": "dance-pop",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "name": "female vocals",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ]
+            },
+            "joinphrase": "",
+            "name": "Moloko"
+          }
+        ],
+        "genres": [],
+        "quality": "normal",
+        "country": "US",
+        "id": "cf7d3e51-b668-49a8-bf79-fd58afb27f21",
+        "release-events": [
+          {
+            "date": "1999",
+            "area": {
+              "sort-name": "United States",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "United States",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "type": null,
+              "id": "489ce91b-6658-3307-9877-795b68554c98"
+            }
+          }
+        ],
+        "barcode": "093624468707",
+        "tags": [],
+        "title": "Sing It Back",
+        "date": "1999",
+        "status": null,
+        "packaging": null
+      },
+      {
+        "title": "Sing It Back",
+        "date": "1999",
+        "status": "Official",
+        "packaging": null,
+        "barcode": "4009880665657",
+        "release-events": [
+          {
+            "area": {
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "type": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "type-id": null,
+              "name": "Germany",
+              "disambiguation": "",
+              "sort-name": "Germany"
+            },
+            "date": "1999"
+          }
+        ],
+        "tags": [],
+        "country": "DE",
+        "quality": "normal",
+        "id": "f96d8fcc-2e96-4d6c-95a3-31a813377309",
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "first-release-date": "1998",
+          "secondary-type-ids": [],
+          "title": "Sing It Back",
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "primary-type": "Single",
+          "tags": [],
+          "secondary-types": [],
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "artist": {
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group",
+                "country": "GB"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "disambiguation": ""
+        },
+        "media": [
+          {
+            "format": "CD",
+            "track-offset": 3,
+            "id": "c99df250-7d8d-3307-a1e7-0b3229aff2ed",
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 6,
+            "tracks": [
+              {
+                "number": "4",
+                "id": "78ca3b5b-d136-30ff-9276-87a845d61d61",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "artist": {
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "country": "GB",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "position": 4,
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 558600
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "joinphrase": "",
+            "artist": {
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "name": "dance-pop",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "genres": [
+                {
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house"
+                },
+                {
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "trip hop",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc"
+                }
+              ],
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB"
+            }
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        }
+      },
+      {
+        "status": "Promotion",
+        "packaging": null,
+        "title": "Sing It Back (Peppermint Jam Mixes)",
+        "date": "1999",
+        "barcode": "",
+        "release-events": [
+          {
+            "date": "1999",
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom"
+            }
+          }
+        ],
+        "tags": [],
+        "id": "8283931b-71a3-4ab2-8e65-3bf3df0e7ee0",
+        "quality": "normal",
+        "country": "GB",
+        "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+        "media": [
+          {
+            "title": "",
+            "position": 1,
+            "id": "45d71064-9c70-3e03-964c-1048cb3f70e4",
+            "format": "12\" Vinyl",
+            "track-offset": 0,
+            "tracks": [
+              {
+                "title": "Sing It Back (Boris Dluglosch Musical mix)",
+                "position": 1,
+                "length": 557000,
+                "id": "08728636-1b62-448c-978f-1aabdc739c21",
+                "number": "A",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "GB",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+                    },
+                    "name": "Moloko"
+                  }
+                ]
+              }
+            ],
+            "track-count": 2,
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "joinphrase": "",
+            "artist": {
+              "country": "GB",
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "name": "acid jazz",
+                  "count": 3
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "name": "female vocals",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "name": "Moloko",
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "name": "acid jazz"
+                },
+                {
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop"
+                },
+                {
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3"
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop"
+                }
+              ]
+            }
+          }
+        ],
+        "genres": [],
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "secondary-type-ids": [],
+          "first-release-date": "1998",
+          "title": "Sing It Back",
+          "primary-type": "Single",
+          "tags": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "secondary-types": [],
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "country": "GB",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189"
+              }
+            }
+          ],
+          "releases": [],
+          "disambiguation": ""
+        }
+      },
+      {
+        "id": "bc986ed1-826f-4937-86e7-10fbf0a7109f",
+        "country": "GB",
+        "quality": "normal",
+        "genres": [],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c"
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083"
+                },
+                {
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                },
+                {
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house"
+                },
+                {
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "tags": [
+                {
+                  "name": "acid jazz",
+                  "count": 3
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "name": "dance-pop",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "name": "female vocals",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "country": "GB",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "type": "Group"
+            },
+            "name": "Moloko"
+          }
+        ],
+        "media": [
+          {
+            "format": "12\" Vinyl",
+            "track-offset": 0,
+            "id": "b91c3b63-d084-353e-bb7a-cb0c31cb18c1",
+            "title": "",
+            "position": 1,
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "track-count": 4,
+            "tracks": [
+              {
+                "id": "42df7415-70f6-4167-841b-9338c6a09473",
+                "number": "A1",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "country": "GB"
+                    },
+                    "name": "Moloko"
+                  }
+                ],
+                "length": 555000,
+                "title": "Sing It Back (Boris Musical mix)",
+                "position": 1
+              }
+            ]
+          }
+        ],
+        "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+        "release-group": {
+          "secondary-types": [],
+          "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+          "tags": [],
+          "primary-type": "Single",
+          "title": "Sing It Back",
+          "first-release-date": "1998",
+          "secondary-type-ids": [],
+          "disambiguation": "",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "joinphrase": "",
+              "artist": {
+                "country": "GB",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group",
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+              }
+            }
+          ],
+          "genres": [],
+          "id": "6d36d28b-dbfb-354f-a1bb-e2f6600785d9"
+        },
+        "disambiguation": "",
+        "packaging-id": null,
+        "packaging": null,
+        "status": "Promotion",
+        "date": "1999",
+        "title": "Sing It Back Mixes. 2",
+        "tags": [],
+        "release-events": [
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            },
+            "date": "1999"
+          }
+        ],
+        "barcode": ""
+      },
+      {
+        "release-group": {
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "country": "GB"
+              },
+              "name": "Moloko"
+            }
+          ],
+          "genres": [],
+          "disambiguation": "",
+          "first-release-date": "2000-03-29",
+          "secondary-type-ids": [],
+          "title": "Things to Make and Do",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": []
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "artist": {
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB",
+              "name": "Moloko",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "genres": [
+                {
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "name": "acid jazz",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance"
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                },
+                {
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo"
+            },
+            "joinphrase": "",
+            "name": "Moloko"
+          }
+        ],
+        "genres": [
+          {
+            "count": 1,
+            "disambiguation": "",
+            "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+            "name": "electronic"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 19,
+            "tracks": [
+              {
+                "id": "14dcd098-1ebb-3fa5-8fde-9724518077d9",
+                "number": "18",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "artist": {
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "country": "GB",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "position": 18,
+                "title": "Sing It Back (Boris Musical Mix)",
+                "length": 561093
+              }
+            ],
+            "track-offset": 17,
+            "format": "CD",
+            "id": "655b6c95-05a1-31c5-859c-3d956f380281",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "quality": "normal",
+        "country": "JP",
+        "id": "38d8e9ed-f125-415e-9ef9-fb86684c3197",
+        "tags": [
+          {
+            "count": 1,
+            "name": "00-10's"
+          },
+          {
+            "count": 1,
+            "name": "electronic"
+          }
+        ],
+        "barcode": "4988013067509",
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "name": "Japan",
+              "iso-3166-1-codes": [
+                "JP"
+              ],
+              "sort-name": "Japan",
+              "disambiguation": "",
+              "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+              "type": null
+            },
+            "date": "2000-03-29"
+          }
+        ],
+        "date": "2000-03-29",
+        "title": "Things to Make and Do",
+        "packaging": null,
+        "status": "Official"
+      },
+      {
+        "quality": "normal",
+        "country": "GB",
+        "id": "9264b6dc-d95b-48f0-a108-e16969efd433",
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "first-release-date": "2000-03-29",
+          "title": "Things to Make and Do",
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "country": "GB",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189"
+              },
+              "joinphrase": "",
+              "name": "Moloko"
+            }
+          ],
+          "genres": [],
+          "disambiguation": "",
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "position": 1,
+            "title": "",
+            "id": "785b4ec1-dd32-349d-85b0-b991b60c8c70",
+            "format": "CD",
+            "track-offset": 17,
+            "tracks": [
+              {
+                "position": 18,
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 560106,
+                "id": "3ddfeb66-791a-3162-843d-aa65cf044558",
+                "number": "18",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "joinphrase": "",
+                    "artist": {
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "country": "GB",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko"
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 18,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "name": "funky house",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "name": "Moloko",
+              "genres": [
+                {
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house"
+                },
+                {
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "disambiguation": "English‐Irish electronic music duo",
+              "sort-name": "Moloko"
+            },
+            "name": "Moloko"
+          }
+        ],
+        "genres": [],
+        "title": "Things to Make and Do",
+        "date": "2000-04-10",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "release-events": [
+          {
+            "area": {
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "name": "United Kingdom",
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            },
+            "date": "2000-04-10"
+          }
+        ],
+        "barcode": "5027529004123",
+        "tags": []
+      },
+      {
+        "id": "031b96b2-a783-3019-87ea-56930374993e",
+        "quality": "normal",
+        "country": "AU",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "country": "GB",
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo"
+                    },
+                    "joinphrase": "",
+                    "name": "Moloko"
+                  }
+                ],
+                "number": "18",
+                "id": "2864c793-35ba-35e8-ba8a-df63c99357c9",
+                "title": "Sing It Back (Boris Musical mix)",
+                "position": 18,
+                "length": 558666
+              }
+            ],
+            "track-count": 18,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "position": 1,
+            "title": "",
+            "id": "c2fd7a81-726c-36d4-b7ae-73d04cbd6733",
+            "format": "CD",
+            "track-offset": 17
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "tags": [
+                {
+                  "name": "acid jazz",
+                  "count": 3
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "name": "dance-pop",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "name": "female vocals",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "name": "acid jazz"
+                },
+                {
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                },
+                {
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "house",
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3"
+                },
+                {
+                  "name": "trip hop",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "disambiguation": "English‐Irish electronic music duo",
+              "sort-name": "Moloko",
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB"
+            },
+            "name": "Moloko"
+          }
+        ],
+        "genres": [],
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "artist": {
+                "name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group",
+                "country": "GB"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [],
+          "first-release-date": "2000-03-29",
+          "secondary-type-ids": [],
+          "title": "Things to Make and Do"
+        },
+        "status": "Official",
+        "packaging": null,
+        "title": "Things to Make and Do",
+        "date": "2000",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "Australia",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Australia",
+              "iso-3166-1-codes": [
+                "AU"
+              ],
+              "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+              "type": null
+            },
+            "date": "2000"
+          }
+        ],
+        "barcode": "9325583024009",
+        "tags": []
+      },
+      {
+        "date": "2000",
+        "title": "Things to Make and Do",
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "tags": [
+          {
+            "name": "isrc",
+            "count": 1
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "type": null,
+              "type-id": null,
+              "name": "Europe",
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "sort-name": "Europe",
+              "disambiguation": ""
+            },
+            "date": "2000"
+          }
+        ],
+        "barcode": "016861855024",
+        "quality": "normal",
+        "country": "XE",
+        "id": "7faa75f1-1b43-4a30-8486-f0716201ca7e",
+        "release-group": {
+          "secondary-type-ids": [],
+          "first-release-date": "2000-03-29",
+          "title": "Things to Make and Do",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [],
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+          "genres": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "country": "GB",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189"
+              },
+              "joinphrase": "",
+              "name": "Moloko"
+            }
+          ],
+          "releases": [],
+          "disambiguation": ""
+        },
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "CD-Matrix: IFPI LB 45; SONOPRESS A-22814/RRPROMO512 A; IFPI 0719",
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "country": "GB",
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "disambiguation": "English‐Irish electronic music duo",
+              "sort-name": "Moloko",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "name": "female vocals",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14"
+                },
+                {
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "house",
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop"
+                }
+              ]
+            },
+            "name": "Moloko"
+          }
+        ],
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 560106,
+                "position": 18,
+                "id": "3ca107bd-6004-494d-b25c-f38c6e76c2bb",
+                "number": "18",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189"
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 18,
+            "id": "0abb188a-ee35-30ee-b46a-4af7fb34a0ea",
+            "track-offset": 17,
+            "format": "CD",
+            "title": "",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "barcode": "",
+        "release-events": [
+          {
+            "date": "2000",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Europe",
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "type-id": null,
+              "name": "Europe",
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "type": null
+            }
+          }
+        ],
+        "tags": [],
+        "status": "Promotion",
+        "packaging": "Cardboard/Paper Sleeve",
+        "title": "Things to Make and Do",
+        "date": "2000",
+        "media": [
+          {
+            "track-count": 18,
+            "tracks": [
+              {
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 558666,
+                "position": 18,
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "country": "GB"
+                    },
+                    "name": "Moloko"
+                  }
+                ],
+                "id": "b702a135-e8b6-3324-8c97-050c67457fad",
+                "number": "18"
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "track-offset": 17,
+            "format": "CD",
+            "id": "fb0f007a-6653-3cd9-90bf-88d205bfbbba"
+          }
+        ],
+        "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+        "genres": [],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "joinphrase": "",
+            "artist": {
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "name": "dance-pop",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c"
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "house",
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3"
+                },
+                {
+                  "name": "trip hop",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB"
+            }
+          }
+        ],
+        "disambiguation": "",
+        "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+        "release-group": {
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "country": "GB",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group"
+              }
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "first-release-date": "2000-03-29",
+          "title": "Things to Make and Do"
+        },
+        "id": "c5aca316-5539-324e-a8bb-0bc070b2b4d6",
+        "country": "XE",
+        "quality": "normal"
+      },
+      {
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "joinphrase": "",
+              "artist": {
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group",
+                "country": "GB",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo"
+              }
+            }
+          ],
+          "disambiguation": "",
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "first-release-date": "2000-03-29",
+          "title": "Things to Make and Do"
+        },
+        "media": [
+          {
+            "format": "CD",
+            "track-offset": 17,
+            "id": "6c6239aa-0b2e-3ec2-9db3-e7cc34323134",
+            "position": 1,
+            "title": "",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 18,
+            "tracks": [
+              {
+                "title": "Sing It Back (Boris Musical mix)",
+                "position": 18,
+                "length": 560093,
+                "id": "bfdeabf8-e309-48d4-8a9c-8fe7d2aef651",
+                "number": "18",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "joinphrase": "",
+                    "artist": {
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "country": "GB",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "artist": {
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "name": "dance and electronica",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "name": "Moloko",
+              "genres": [
+                {
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "name": "acid jazz",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "name": "dance-pop",
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8"
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house"
+                },
+                {
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "disambiguation": "English‐Irish electronic music duo",
+              "sort-name": "Moloko"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "country": "AU",
+        "quality": "normal",
+        "id": "e87cd690-baaa-4eb0-b023-55b514357013",
+        "barcode": "9399603219829",
+        "release-events": [
+          {
+            "date": "2000",
+            "area": {
+              "disambiguation": "",
+              "sort-name": "Australia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "AU"
+              ],
+              "name": "Australia",
+              "type": null,
+              "id": "106e0bec-b638-3b37-b731-f53d507dc00e"
+            }
+          },
+          {
+            "date": "2000",
+            "area": {
+              "type-id": null,
+              "name": "New Zealand",
+              "iso-3166-1-codes": [
+                "NZ"
+              ],
+              "sort-name": "New Zealand",
+              "disambiguation": "",
+              "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+              "type": null
+            }
+          }
+        ],
+        "tags": [],
+        "title": "Things to Make and Do",
+        "date": "2000",
+        "status": "Official",
+        "packaging": "Jewel Case"
+      },
+      {
+        "country": "XE",
+        "quality": "normal",
+        "id": "cb2f7805-4bed-329f-ac6a-f997548b64c8",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "disambiguation": "",
+        "release-group": {
+          "secondary-type-ids": [],
+          "first-release-date": "2000-03-29",
+          "title": "Things to Make and Do",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "artist": {
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group",
+                "country": "GB",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "media": [
+          {
+            "id": "73cf31eb-8802-3bc9-bc39-2b5ae10d0b6d",
+            "format": "CD",
+            "track-offset": 17,
+            "title": "",
+            "position": 1,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "tracks": [
+              {
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 560106,
+                "position": 18,
+                "id": "06d23591-0098-3742-9a3a-a85314934472",
+                "number": "18",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "GB",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko"
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 18
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "artist": {
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "count": 3,
+                  "name": "alternative dance"
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "name": "funky house",
+                  "count": 1
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "name": "Moloko",
+              "genres": [
+                {
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "alternative dance",
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083"
+                },
+                {
+                  "count": 2,
+                  "disambiguation": "",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop"
+                },
+                {
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "name": "house",
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop"
+                }
+              ],
+              "disambiguation": "English‐Irish electronic music duo",
+              "sort-name": "Moloko",
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "title": "Things to Make and Do",
+        "date": "2000",
+        "status": "Official",
+        "packaging": "Jewel Case",
+        "release-events": [
+          {
+            "area": {
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "type": null,
+              "disambiguation": "",
+              "sort-name": "Europe",
+              "name": "Europe",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XE"
+              ]
+            },
+            "date": "2000"
+          }
+        ],
+        "barcode": "016861855024",
+        "tags": []
+      },
+      {
+        "tags": [],
+        "barcode": "9556855005499",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "Malaysia",
+              "disambiguation": "",
+              "name": "Malaysia",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "MY"
+              ],
+              "type": null,
+              "id": "305d19c7-c040-349c-8d5f-6ac75d2d2a09"
+            },
+            "date": "2000"
+          }
+        ],
+        "packaging": "Jewel Case",
+        "status": "Official",
+        "date": "2000",
+        "title": "Things to Make and Do",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "joinphrase": "",
+            "artist": {
+              "sort-name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "genres": [
+                {
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                },
+                {
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "name": "funky house",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house"
+                },
+                {
+                  "name": "trip hop",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "tags": [
+                {
+                  "name": "acid jazz",
+                  "count": 3
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "name": "funky house",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Moloko",
+              "country": "GB",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "type": "Group"
+            }
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "media": [
+          {
+            "format": "CD",
+            "track-offset": 17,
+            "id": "f78bd0af-b9da-393e-85ad-f233b45fe8ab",
+            "position": 1,
+            "title": "",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 18,
+            "tracks": [
+              {
+                "length": 558666,
+                "title": "Sing It Back (Boris Musical mix)",
+                "position": 18,
+                "number": "18",
+                "id": "b30f7642-22a8-431e-8ce9-068b0c3623ff",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "country": "GB"
+                    },
+                    "joinphrase": "",
+                    "name": "Moloko"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [],
+          "first-release-date": "2000-03-29",
+          "secondary-type-ids": [],
+          "title": "Things to Make and Do",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "name": "Moloko",
+              "joinphrase": "",
+              "artist": {
+                "country": "GB",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko"
+              }
+            }
+          ],
+          "disambiguation": "",
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab"
+        },
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "id": "345e30ba-a7dc-446a-a0ec-50b5d5e9b0b2",
+        "country": "MY",
+        "quality": "normal"
+      },
+      {
+        "title": "Things To Make And Do",
+        "date": "2000",
+        "status": "Official",
+        "packaging": "None",
+        "barcode": "",
+        "release-events": [
+          {
+            "area": {
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "type": null,
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "name": "[Worldwide]",
+              "sort-name": "[Worldwide]",
+              "disambiguation": ""
+            },
+            "date": "2000"
+          }
+        ],
+        "tags": [
+          {
+            "name": "pop",
+            "count": 1
+          },
+          {
+            "count": 1,
+            "name": "rock"
+          }
+        ],
+        "country": "XW",
+        "quality": "normal",
+        "id": "b2870469-52be-4cd7-a17b-1854ef2ee0e0",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "first-release-date": "2000-03-29",
+          "secondary-type-ids": [],
+          "title": "Things to Make and Do",
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab",
+          "genres": [],
+          "releases": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "sort-name": "Moloko",
+                "disambiguation": "English‐Irish electronic music duo",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko",
+                "country": "GB",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "type": "Group"
+              },
+              "joinphrase": "",
+              "name": "Moloko"
+            }
+          ],
+          "disambiguation": ""
+        },
+        "media": [
+          {
+            "tracks": [
+              {
+                "length": 560000,
+                "title": "Sing It Back (Boris Dlugosch Musical mix)",
+                "position": 18,
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko"
+                    },
+                    "name": "Moloko"
+                  }
+                ],
+                "id": "9a00d192-cb40-4890-b119-f0b81f7f7f12",
+                "number": "18"
+              }
+            ],
+            "track-count": 18,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "position": 1,
+            "title": "",
+            "id": "1fd3e252-9cd0-3c48-9715-f80a36b6d0f4",
+            "format": "Digital Media",
+            "track-offset": 17
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [
+          {
+            "disambiguation": "",
+            "count": 1,
+            "name": "pop",
+            "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+          },
+          {
+            "disambiguation": "",
+            "count": 1,
+            "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+            "name": "rock"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "artist": {
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "type": "Group",
+              "country": "GB",
+              "genres": [
+                {
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "name": "art pop",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 2,
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic"
+                },
+                {
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                  "name": "house",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "name": "trip hop",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "name": "acid jazz",
+                  "count": 3
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "count": 2,
+                  "name": "art pop"
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "count": 2,
+                  "name": "dance-pop"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "count": 1,
+                  "name": "funky house"
+                },
+                {
+                  "name": "house",
+                  "count": 3
+                },
+                {
+                  "name": "trip hop",
+                  "count": 1
+                }
+              ],
+              "name": "Moloko",
+              "disambiguation": "English‐Irish electronic music duo",
+              "sort-name": "Moloko"
+            },
+            "joinphrase": ""
+          }
+        ]
+      },
+      {
+        "media": [
+          {
+            "position": 4,
+            "title": "",
+            "format": "CD",
+            "track-offset": 1,
+            "id": "86cc162c-4e78-3376-9c34-659c850c754b",
+            "track-count": 11,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "joinphrase": "",
+                    "artist": {
+                      "country": "GB",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "genres": [
+                        {
+                          "name": "acid jazz",
+                          "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                          "disambiguation": "",
+                          "count": 3
+                        },
+                        {
+                          "name": "alternative dance",
+                          "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                          "disambiguation": "",
+                          "count": 3
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                          "name": "art pop"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "name": "dance-pop",
+                          "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8"
+                        },
+                        {
+                          "name": "electronic",
+                          "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                          "disambiguation": "",
+                          "count": 1
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "funky house",
+                          "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3"
+                        },
+                        {
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "name": "house",
+                          "count": 3,
+                          "disambiguation": ""
+                        },
+                        {
+                          "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                          "name": "trip hop",
+                          "disambiguation": "",
+                          "count": 1
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "tags": [
+                        {
+                          "count": 3,
+                          "name": "acid jazz"
+                        },
+                        {
+                          "count": 3,
+                          "name": "alternative dance"
+                        },
+                        {
+                          "name": "art pop",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance and electronica"
+                        },
+                        {
+                          "name": "dance-pop",
+                          "count": 2
+                        },
+                        {
+                          "name": "electronic",
+                          "count": 1
+                        },
+                        {
+                          "name": "female vocals",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "funky house"
+                        },
+                        {
+                          "count": 3,
+                          "name": "house"
+                        },
+                        {
+                          "count": 1,
+                          "name": "trip hop"
+                        }
+                      ],
+                      "name": "Moloko"
+                    }
+                  }
+                ],
+                "id": "cb27caff-bd82-369f-84e5-9b87b7b8b09b",
+                "number": "2",
+                "position": 2,
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 560293
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "genres": [],
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "primary-type": "Album",
+          "title": "Ibiza Summer Anthems",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2001-08-06",
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null,
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other"
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "id": "1895f8ca-c172-3253-8c46-b942d73011bc"
+        },
+        "id": "e02c56a8-203a-4b51-98e1-4c91393a3b4c",
+        "country": "DE",
+        "quality": "normal",
+        "barcode": "802085340121",
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "DE"
+              ],
+              "name": "Germany",
+              "sort-name": "Germany",
+              "disambiguation": "",
+              "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+              "type": null
+            },
+            "date": "2001-08-06"
+          }
+        ],
+        "tags": [],
+        "status": "Official",
+        "packaging": null,
+        "title": "Ibiza Summer Anthems",
+        "date": "2001-08-06"
+      },
+      {
+        "status": "Official",
+        "packaging": "Digipak",
+        "title": "Vibes on a Summer's Day: Tenth Anniversary",
+        "date": "2002",
+        "barcode": "9397603361227",
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+              "iso-3166-1-codes": [
+                "AU"
+              ],
+              "type-id": null,
+              "name": "Australia",
+              "sort-name": "Australia",
+              "disambiguation": ""
+            },
+            "date": "2002"
+          }
+        ],
+        "tags": [],
+        "id": "87796f15-0ae6-44b5-ab52-4202f44e1ba9",
+        "quality": "normal",
+        "country": "AU",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "number": "13",
+                "id": "3c717c3f-b24d-3acb-af5c-61313ff500aa",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "artist": {
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "sort-name": "Moloko",
+                      "tags": [
+                        {
+                          "count": 3,
+                          "name": "acid jazz"
+                        },
+                        {
+                          "name": "alternative dance",
+                          "count": 3
+                        },
+                        {
+                          "count": 2,
+                          "name": "art pop"
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance and electronica"
+                        },
+                        {
+                          "name": "dance-pop",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "electronic"
+                        },
+                        {
+                          "name": "female vocals",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "funky house"
+                        },
+                        {
+                          "name": "house",
+                          "count": 3
+                        },
+                        {
+                          "count": 1,
+                          "name": "trip hop"
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                          "name": "acid jazz"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                          "name": "alternative dance"
+                        },
+                        {
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                          "name": "art pop",
+                          "count": 2,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 2,
+                          "name": "dance-pop",
+                          "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8"
+                        },
+                        {
+                          "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                          "name": "electronic",
+                          "count": 1,
+                          "disambiguation": ""
+                        },
+                        {
+                          "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                          "name": "funky house",
+                          "disambiguation": "",
+                          "count": 1
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "count": 3,
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "trip hop",
+                          "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                          "disambiguation": "",
+                          "count": 1
+                        }
+                      ]
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "position": 13,
+                "title": "Sing It Back (Boris Musical mix)",
+                "length": 557000
+              }
+            ],
+            "track-count": 14,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "id": "8461d66d-1ed9-3ffb-9faa-64f6fe79c79f",
+            "format": "CD",
+            "track-offset": 12
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "artist": {
+              "type": "Other",
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "country": null,
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "aggro berlin"
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "count": 2,
+                  "name": "soundtrack"
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "genres": [],
+              "sort-name": "Various Artists",
+              "disambiguation": "add compilations to this artist"
+            },
+            "name": "Various Artists"
+          }
+        ],
+        "genres": [],
+        "disambiguation": "",
+        "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+        "release-group": {
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2002",
+          "title": "Vibes on a Summer's Day: Tenth Anniversary",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Various Artists",
+              "artist": {
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "country": null,
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "id": "3d6b04cb-2ce6-4587-85e8-823382ba5e00"
+        }
+      },
+      {
+        "disambiguation": "",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "first-release-date": "2000-03-29",
+          "title": "Things to Make and Do",
+          "genres": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "country": "GB",
+                "type": "Group",
+                "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                "disambiguation": "English‐Irish electronic music duo",
+                "sort-name": "Moloko",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Moloko"
+              },
+              "name": "Moloko"
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "id": "03ceccf5-3815-3cc4-ad58-7e83518c69ab"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "track-count": 18,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "artist": {
+                      "country": "GB",
+                      "type": "Group",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "number": "18",
+                "id": "25aa05ac-91b4-4a8e-b519-e290831124df",
+                "length": 560106,
+                "title": "Sing It Back (Boris Musical mix)",
+                "position": 18
+              }
+            ],
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "format": "CD",
+            "track-offset": 17,
+            "id": "fe78053e-f4dc-3e67-adaa-cb7c50a7477c"
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Moloko",
+            "joinphrase": "",
+            "artist": {
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 3,
+                  "name": "acid jazz"
+                },
+                {
+                  "name": "alternative dance",
+                  "count": 3
+                },
+                {
+                  "name": "art pop",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "dance and electronica"
+                },
+                {
+                  "name": "dance-pop",
+                  "count": 2
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "count": 1,
+                  "name": "female vocals"
+                },
+                {
+                  "name": "funky house",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "house"
+                },
+                {
+                  "count": 1,
+                  "name": "trip hop"
+                }
+              ],
+              "name": "Moloko",
+              "genres": [
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "acid jazz",
+                  "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c"
+                },
+                {
+                  "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                  "name": "alternative dance",
+                  "disambiguation": "",
+                  "count": 3
+                },
+                {
+                  "name": "art pop",
+                  "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                  "count": 2,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                  "name": "dance-pop",
+                  "disambiguation": "",
+                  "count": 2
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "funky house",
+                  "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3"
+                },
+                {
+                  "count": 3,
+                  "disambiguation": "",
+                  "name": "house",
+                  "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                  "name": "trip hop"
+                }
+              ],
+              "disambiguation": "English‐Irish electronic music duo",
+              "sort-name": "Moloko",
+              "type": "Group",
+              "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+              "country": "GB"
+            }
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": [],
+        "quality": "normal",
+        "country": "RU",
+        "id": "f03776bd-3657-477e-b073-3629f248a806",
+        "release-events": [
+          {
+            "area": {
+              "id": "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+              "type": null,
+              "sort-name": "Russia",
+              "disambiguation": "",
+              "type-id": null,
+              "name": "Russia",
+              "iso-3166-1-codes": [
+                "RU"
+              ]
+            },
+            "date": "2004-08-23"
+          }
+        ],
+        "barcode": "4601250324913",
+        "tags": [],
+        "title": "Things to Make and Do",
+        "date": "2004-08-23",
+        "status": "Official",
+        "packaging": "Jewel Case"
+      },
+      {
+        "quality": "normal",
+        "country": "GB",
+        "id": "436aab2e-8441-4e87-8b9f-ce7495481775",
+        "disambiguation": "",
+        "packaging-id": null,
+        "release-group": {
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "first-release-date": "2006",
+          "title": "Bar Grooves: Hip Beats for the 21st Century Bar Culture",
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "id": "0afec99e-3824-45ba-bd0a-eba5ebae2d69",
+          "genres": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "disambiguation": "add compilations to this artist",
+                "sort-name": "Various Artists",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "type": "Other",
+                "country": null
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "disambiguation": ""
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "length": 556000,
+                "title": "Sing It Back (Boris Musical mix)",
+                "position": 2,
+                "number": "2",
+                "id": "cb1502d4-f1a0-38aa-863b-63a73aa5d23a",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "genres": [
+                        {
+                          "count": 3,
+                          "disambiguation": "",
+                          "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+                          "name": "acid jazz"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "name": "alternative dance",
+                          "id": "8301f73c-9166-4108-bfeb-4fd22dc19083"
+                        },
+                        {
+                          "name": "art pop",
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                          "count": 2,
+                          "disambiguation": ""
+                        },
+                        {
+                          "count": 2,
+                          "disambiguation": "",
+                          "name": "dance-pop",
+                          "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8"
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "name": "electronic",
+                          "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                        },
+                        {
+                          "name": "funky house",
+                          "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                          "disambiguation": "",
+                          "count": 1
+                        },
+                        {
+                          "name": "house",
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "count": 3,
+                          "disambiguation": ""
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 1,
+                          "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                          "name": "trip hop"
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "tags": [
+                        {
+                          "count": 3,
+                          "name": "acid jazz"
+                        },
+                        {
+                          "count": 3,
+                          "name": "alternative dance"
+                        },
+                        {
+                          "name": "art pop",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance and electronica"
+                        },
+                        {
+                          "name": "dance-pop",
+                          "count": 2
+                        },
+                        {
+                          "name": "electronic",
+                          "count": 1
+                        },
+                        {
+                          "name": "female vocals",
+                          "count": 1
+                        },
+                        {
+                          "name": "funky house",
+                          "count": 1
+                        },
+                        {
+                          "name": "house",
+                          "count": 3
+                        },
+                        {
+                          "name": "trip hop",
+                          "count": 1
+                        }
+                      ],
+                      "country": "GB",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group"
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 11,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "title": "",
+            "position": 1,
+            "id": "4b91077a-866e-3f8a-aa54-1469a1933a73",
+            "format": "CD",
+            "track-offset": 1
+          }
+        ],
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null,
+              "genres": [],
+              "tags": [
+                {
+                  "name": "absolute",
+                  "count": 1
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "name": "ansage",
+                  "count": 1
+                },
+                {
+                  "count": 8,
+                  "name": "compilation"
+                },
+                {
+                  "count": 1,
+                  "name": "score"
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "name": "special purpose",
+                  "count": 9
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "title": "Bar Grooves: Hip Beats for the 21st Century Bar Culture",
+        "date": "2006",
+        "status": "Official",
+        "packaging": null,
+        "barcode": "876492000176",
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "name": "United Kingdom",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ]
+            },
+            "date": "2006"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "title": "Digging in the Crates: 1999 Vol. 1",
+        "date": "2009-05-22",
+        "status": "Official",
+        "packaging": "None",
+        "barcode": null,
+        "release-events": [
+          {
+            "area": {
+              "type": null,
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "type-id": null,
+              "name": "United States",
+              "disambiguation": "",
+              "sort-name": "United States"
+            },
+            "date": "2009-05-22"
+          }
+        ],
+        "tags": [],
+        "quality": "normal",
+        "country": "US",
+        "id": "c074cc1d-744d-4ad7-b21a-c5079c1b5f95",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "disambiguation": "",
+          "genres": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "type": "Other",
+                "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                "country": null,
+                "name": "Various Artists",
+                "type-id": "ac897045-5043-3294-969b-187360e45d86",
+                "sort-name": "Various Artists",
+                "disambiguation": "add compilations to this artist"
+              },
+              "name": "Various Artists"
+            }
+          ],
+          "releases": [],
+          "id": "244cc123-00f6-4294-80eb-3d734fcbbedf",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "Digging in the Crates: 1999 Vol. 1",
+          "first-release-date": "2009-05-22",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ]
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "length": 559000,
+                "title": "Sing It Back (Boris Musical mix)",
+                "position": 5,
+                "number": "5",
+                "id": "3578ffcf-bd17-4792-8386-9f9f0d777842",
+                "artist-credit": [
+                  {
+                    "name": "Moloko",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Moloko",
+                      "disambiguation": "English‐Irish electronic music duo",
+                      "genres": [
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "name": "acid jazz",
+                          "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c"
+                        },
+                        {
+                          "name": "alternative dance",
+                          "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+                          "count": 3,
+                          "disambiguation": ""
+                        },
+                        {
+                          "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+                          "name": "art pop",
+                          "count": 2,
+                          "disambiguation": ""
+                        },
+                        {
+                          "name": "dance-pop",
+                          "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+                          "disambiguation": "",
+                          "count": 2
+                        },
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "name": "electronic",
+                          "id": "89255676-1f14-4dd8-bbad-fca839d6aff4"
+                        },
+                        {
+                          "name": "funky house",
+                          "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+                          "disambiguation": "",
+                          "count": 1
+                        },
+                        {
+                          "disambiguation": "",
+                          "count": 3,
+                          "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+                          "name": "house"
+                        },
+                        {
+                          "count": 1,
+                          "disambiguation": "",
+                          "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+                          "name": "trip hop"
+                        }
+                      ],
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Moloko",
+                      "tags": [
+                        {
+                          "name": "acid jazz",
+                          "count": 3
+                        },
+                        {
+                          "name": "alternative dance",
+                          "count": 3
+                        },
+                        {
+                          "count": 2,
+                          "name": "art pop"
+                        },
+                        {
+                          "count": 1,
+                          "name": "dance and electronica"
+                        },
+                        {
+                          "count": 2,
+                          "name": "dance-pop"
+                        },
+                        {
+                          "name": "electronic",
+                          "count": 1
+                        },
+                        {
+                          "count": 1,
+                          "name": "female vocals"
+                        },
+                        {
+                          "name": "funky house",
+                          "count": 1
+                        },
+                        {
+                          "name": "house",
+                          "count": 3
+                        },
+                        {
+                          "count": 1,
+                          "name": "trip hop"
+                        }
+                      ],
+                      "country": "GB",
+                      "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+                      "type": "Group"
+                    }
+                  }
+                ]
+              }
+            ],
+            "track-count": 8,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "title": "",
+            "position": 1,
+            "id": "ad274d5f-714d-3ae5-bcc6-8f2e1bfad233",
+            "track-offset": 4,
+            "format": "Digital Media"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "artist-credit": [
+          {
+            "name": "Various Artists",
+            "artist": {
+              "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+              "type": "Other",
+              "country": null,
+              "genres": [],
+              "type-id": "ac897045-5043-3294-969b-187360e45d86",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "absolute"
+                },
+                {
+                  "name": "aggro berlin",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "ansage"
+                },
+                {
+                  "name": "compilation",
+                  "count": 8
+                },
+                {
+                  "name": "score",
+                  "count": 1
+                },
+                {
+                  "name": "soundtrack",
+                  "count": 2
+                },
+                {
+                  "count": 9,
+                  "name": "special purpose"
+                },
+                {
+                  "name": "special purpose artist",
+                  "count": 66
+                }
+              ],
+              "name": "Various Artists",
+              "disambiguation": "add compilations to this artist",
+              "sort-name": "Various Artists"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "genres": []
+      }
+    ],
+    "artist-credit": [
+      {
+        "name": "Moloko",
+        "artist": {
+          "country": "GB",
+          "id": "2f94016a-3880-4d8c-9af9-0e197ee77189",
+          "type": "Group",
+          "disambiguation": "English‐Irish electronic music duo",
+          "sort-name": "Moloko",
+          "genres": [
+            {
+              "count": 3,
+              "disambiguation": "",
+              "id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+              "name": "acid jazz"
+            },
+            {
+              "id": "8301f73c-9166-4108-bfeb-4fd22dc19083",
+              "name": "alternative dance",
+              "disambiguation": "",
+              "count": 3
+            },
+            {
+              "count": 2,
+              "disambiguation": "",
+              "id": "930ef127-3653-4677-9b95-ecc90c7c1a14",
+              "name": "art pop"
+            },
+            {
+              "id": "b739a895-85ed-4ad3-8717-4e9ef5387dd8",
+              "name": "dance-pop",
+              "disambiguation": "",
+              "count": 2
+            },
+            {
+              "disambiguation": "",
+              "count": 1,
+              "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+              "name": "electronic"
+            },
+            {
+              "name": "funky house",
+              "id": "62e4c7cb-a2b3-462b-8d96-1b0d66ee6cf3",
+              "count": 1,
+              "disambiguation": ""
+            },
+            {
+              "count": 3,
+              "disambiguation": "",
+              "id": "a2782cb6-1cd0-477c-a61d-b3f8b42dd1b3",
+              "name": "house"
+            },
+            {
+              "name": "trip hop",
+              "id": "45eb1d9c-588c-4dc8-9394-a14b7c8f02bc",
+              "disambiguation": "",
+              "count": 1
+            }
+          ],
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "tags": [
+            {
+              "count": 3,
+              "name": "acid jazz"
+            },
+            {
+              "name": "alternative dance",
+              "count": 3
+            },
+            {
+              "count": 2,
+              "name": "art pop"
+            },
+            {
+              "count": 1,
+              "name": "dance and electronica"
+            },
+            {
+              "count": 2,
+              "name": "dance-pop"
+            },
+            {
+              "count": 1,
+              "name": "electronic"
+            },
+            {
+              "name": "female vocals",
+              "count": 1
+            },
+            {
+              "name": "funky house",
+              "count": 1
+            },
+            {
+              "name": "house",
+              "count": 3
+            },
+            {
+              "name": "trip hop",
+              "count": 1
+            }
+          ],
+          "name": "Moloko"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "length": 558666,
+    "id": "c70c3a4f-88c1-4a29-99d5-362c65334741",
+    "isrcs": [
+      "DEH849900332",
+      "GBBND0000461",
+      "GBBND9900461"
+    ]
+  }
+}

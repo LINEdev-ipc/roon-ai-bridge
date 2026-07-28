@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Dub+Colossus&recording_name=Azmari+Dub",
+  "fetched_at": "2026-07-28T12:15:33.478Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Dub Colossus",
+      "recording_arg": "Azmari Dub",
+      "artist_credit_name": "Dub Colossus",
+      "release_name": "In a Town Called Addis",
+      "recording_name": "Azmari Dub",
+      "artist_credit_id": 252707,
+      "artist_mbids": [
+        "aedc2e46-da48-43df-885a-b23dc051ee8c"
+      ],
+      "release_mbid": "d0c3bf4a-f4cc-4824-a81c-40c38f383fd0",
+      "recording_mbid": "3e8622a7-8baf-48ac-a708-34502365e30f"
+    }
+  ]
+}

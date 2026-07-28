@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Panjabi+MC&recording_name=Mundian+To+Bach+Ke",
+  "fetched_at": "2026-07-28T14:42:59.846Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Panjabi MC",
+      "recording_arg": "Mundian To Bach Ke",
+      "artist_credit_name": "Panjabi MC",
+      "release_name": "Legalised",
+      "recording_name": "Mundian to bach ke",
+      "artist_credit_id": 63423,
+      "artist_mbids": [
+        "fbab6da8-e1e4-4927-b669-502a6e37a8d6"
+      ],
+      "release_mbid": "1f62a7d7-d17f-4bcc-8a29-2285f6884b7a",
+      "recording_mbid": "809c828c-04bb-4894-8be8-0aed74218498"
+    }
+  ]
+}

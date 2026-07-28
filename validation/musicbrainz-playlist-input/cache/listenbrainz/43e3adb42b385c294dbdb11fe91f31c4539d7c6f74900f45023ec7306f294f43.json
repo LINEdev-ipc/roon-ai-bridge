@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=R%C3%B6yksopp&recording_name=Eple",
+  "fetched_at": "2026-07-28T14:41:02.475Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Röyksopp",
+      "recording_arg": "Eple",
+      "artist_credit_name": "Röyksopp",
+      "release_name": "Melody A.M.",
+      "recording_name": "Eple",
+      "artist_credit_id": 52208,
+      "artist_mbids": [
+        "1c70a3fc-fa3c-4be1-8b55-c3192db8a884"
+      ],
+      "release_mbid": "2cf90b38-1fc6-40c0-80dd-51c5d5df4db5",
+      "recording_mbid": "df53e8c6-3665-43fb-8324-a9306cb88c20"
+    }
+  ]
+}

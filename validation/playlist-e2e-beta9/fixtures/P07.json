@@ -1,0 +1,3098 @@
+{
+  "prompt_id": "P07",
+  "prompt": "Haz una playlist de 100 grabaciones en directo que transmitan bien la energía del concierto.",
+  "tool": "roon_save_playlist",
+  "arguments": {
+    "name": "Beta 9 P07",
+    "description": "Haz una playlist de 100 grabaciones en directo que transmitan bien la energía del concierto.",
+    "desired_count": 100,
+    "selection_complexity": "exact_versions",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "candidate_id": "P07-001",
+        "role": "primary",
+        "title": "Let Us Love",
+        "artist_credit": "Bill Withers",
+        "required_credits": [
+          {
+            "name": "Bill Withers",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Carnegie Hall",
+        "release_year_hint": 1973,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002415"
+        }
+      },
+      {
+        "candidate_id": "P07-002",
+        "role": "primary",
+        "title": "Pennyroyal Tea",
+        "artist_credit": "Nirvana",
+        "required_credits": [
+          {
+            "name": "Nirvana",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "MTV Unplugged in New York",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001087"
+        }
+      },
+      {
+        "candidate_id": "P07-003",
+        "role": "primary",
+        "title": "Dollars and Cents",
+        "artist_credit": "Radiohead",
+        "required_credits": [
+          {
+            "name": "Radiohead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "I Might Be Wrong: Live Recordings",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002354"
+        }
+      },
+      {
+        "candidate_id": "P07-004",
+        "role": "primary",
+        "title": "Stormy Monday",
+        "artist_credit": "The Allman Brothers Band",
+        "required_credits": [
+          {
+            "name": "The Allman Brothers Band",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Fillmore East",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000987"
+        }
+      },
+      {
+        "candidate_id": "P07-005",
+        "role": "primary",
+        "title": "I Will Follow",
+        "artist_credit": "U2",
+        "required_credits": [
+          {
+            "name": "U2",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Under a Blood Red Sky",
+        "release_year_hint": 1983,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000381"
+        }
+      },
+      {
+        "candidate_id": "P07-006",
+        "role": "primary",
+        "title": "I Still Miss Someone",
+        "artist_credit": "Johnny Cash",
+        "required_credits": [
+          {
+            "name": "Johnny Cash",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Folsom Prison",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000358"
+        }
+      },
+      {
+        "candidate_id": "P07-007",
+        "role": "primary",
+        "title": "Rock Bottom",
+        "artist_credit": "KISS",
+        "required_credits": [
+          {
+            "name": "KISS",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000340"
+        }
+      },
+      {
+        "candidate_id": "P07-008",
+        "role": "primary",
+        "title": "Need Your Love",
+        "artist_credit": "Cheap Trick",
+        "required_credits": [
+          {
+            "name": "Cheap Trick",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Cheap Trick at Budokan",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002371"
+        }
+      },
+      {
+        "candidate_id": "P07-009",
+        "role": "primary",
+        "title": "Un millón de años luz",
+        "artist_credit": "Soda Stereo",
+        "required_credits": [
+          {
+            "name": "Soda Stereo",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "El último concierto",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000971"
+        }
+      },
+      {
+        "candidate_id": "P07-010",
+        "role": "primary",
+        "title": "Like Spinning Plates",
+        "artist_credit": "Radiohead",
+        "required_credits": [
+          {
+            "name": "Radiohead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "I Might Be Wrong: Live Recordings",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002337"
+        }
+      },
+      {
+        "candidate_id": "P07-011",
+        "role": "primary",
+        "title": "Chain Gang",
+        "artist_credit": "Sam Cooke",
+        "required_credits": [
+          {
+            "name": "Sam Cooke",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Harlem Square Club, 1963",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001094"
+        }
+      },
+      {
+        "candidate_id": "P07-012",
+        "role": "primary",
+        "title": "My Generation",
+        "artist_credit": "The Who",
+        "required_credits": [
+          {
+            "name": "The Who",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Leeds",
+        "release_year_hint": 1970,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000372"
+        }
+      },
+      {
+        "candidate_id": "P07-013",
+        "role": "primary",
+        "title": "Drunk in Love",
+        "artist_credit": "Beyoncé",
+        "required_credits": [
+          {
+            "name": "Beyoncé",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "HOMECOMING: THE LIVE ALBUM",
+        "release_year_hint": 2019,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000973"
+        }
+      },
+      {
+        "candidate_id": "P07-014",
+        "role": "primary",
+        "title": "Glory Box",
+        "artist_credit": "Portishead",
+        "required_credits": [
+          {
+            "name": "Portishead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Roseland NYC Live",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000981"
+        }
+      },
+      {
+        "candidate_id": "P07-015",
+        "role": "primary",
+        "title": "Dark Star",
+        "artist_credit": "Grateful Dead",
+        "required_credits": [
+          {
+            "name": "Grateful Dead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live/Dead",
+        "release_year_hint": 1969,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002335"
+        }
+      },
+      {
+        "candidate_id": "P07-016",
+        "role": "primary",
+        "title": "Chonks",
+        "artist_credit": "Snarky Puppy",
+        "required_credits": [
+          {
+            "name": "Snarky Puppy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Royal Albert Hall",
+        "release_year_hint": 2019,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002312"
+        }
+      },
+      {
+        "candidate_id": "P07-017",
+        "role": "primary",
+        "title": "Massacre",
+        "artist_credit": "Thin Lizzy",
+        "required_credits": [
+          {
+            "name": "Thin Lizzy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live and Dangerous",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002381"
+        }
+      },
+      {
+        "candidate_id": "P07-018",
+        "role": "primary",
+        "title": "I Want You Right Now",
+        "artist_credit": "MC5",
+        "required_credits": [
+          {
+            "name": "MC5",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Kick Out the Jams",
+        "release_year_hint": 1969,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002308"
+        }
+      },
+      {
+        "candidate_id": "P07-019",
+        "role": "primary",
+        "title": "The Other Woman",
+        "artist_credit": "Nina Simone",
+        "required_credits": [
+          {
+            "name": "Nina Simone",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Nina Simone at Town Hall",
+        "release_year_hint": 1959,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002320"
+        }
+      },
+      {
+        "candidate_id": "P07-020",
+        "role": "primary",
+        "title": "I Might Be Wrong",
+        "artist_credit": "Radiohead",
+        "required_credits": [
+          {
+            "name": "Radiohead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "I Might Be Wrong: Live Recordings",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002360"
+        }
+      },
+      {
+        "candidate_id": "P07-021",
+        "role": "primary",
+        "title": "Starship",
+        "artist_credit": "MC5",
+        "required_credits": [
+          {
+            "name": "MC5",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Kick Out the Jams",
+        "release_year_hint": 1969,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002366"
+        }
+      },
+      {
+        "candidate_id": "P07-022",
+        "role": "primary",
+        "title": "Return Home",
+        "artist_credit": "Nina Simone",
+        "required_credits": [
+          {
+            "name": "Nina Simone",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Nina Simone at Town Hall",
+        "release_year_hint": 1959,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002355"
+        }
+      },
+      {
+        "candidate_id": "P07-023",
+        "role": "primary",
+        "title": "Party Girl",
+        "artist_credit": "U2",
+        "required_credits": [
+          {
+            "name": "U2",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Under a Blood Red Sky",
+        "release_year_hint": 1983,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001082"
+        }
+      },
+      {
+        "candidate_id": "P07-024",
+        "role": "primary",
+        "title": "Make You Feel My Love",
+        "artist_credit": "Adele",
+        "required_credits": [
+          {
+            "name": "Adele",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Royal Albert Hall",
+        "release_year_hint": 2011,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001085"
+        }
+      },
+      {
+        "candidate_id": "P07-025",
+        "role": "primary",
+        "title": "Magic Bus",
+        "artist_credit": "The Who",
+        "required_credits": [
+          {
+            "name": "The Who",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Leeds",
+        "release_year_hint": 1970,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000386"
+        }
+      },
+      {
+        "candidate_id": "P07-026",
+        "role": "primary",
+        "title": "Aerodynamic Beats / Forget About the World",
+        "artist_credit": "Daft Punk, Gabrielle",
+        "required_credits": [
+          {
+            "name": "Daft Punk",
+            "role": "primary"
+          },
+          {
+            "name": "Gabrielle",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Alive 2007",
+        "release_year_hint": 2007,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001038"
+        }
+      },
+      {
+        "candidate_id": "P07-027",
+        "role": "primary",
+        "title": "I’m Your Man",
+        "artist_credit": "Leonard Cohen",
+        "required_credits": [
+          {
+            "name": "Leonard Cohen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in London",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001059"
+        }
+      },
+      {
+        "candidate_id": "P07-028",
+        "role": "primary",
+        "title": "Over",
+        "artist_credit": "Portishead",
+        "required_credits": [
+          {
+            "name": "Portishead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Roseland NYC Live",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001043"
+        }
+      },
+      {
+        "candidate_id": "P07-029",
+        "role": "primary",
+        "title": "Summertime Blues",
+        "artist_credit": "The Who",
+        "required_credits": [
+          {
+            "name": "The Who",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Leeds",
+        "release_year_hint": 1970,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000390"
+        }
+      },
+      {
+        "candidate_id": "P07-030",
+        "role": "primary",
+        "title": "Hymn for the Weekend",
+        "artist_credit": "Coldplay",
+        "required_credits": [
+          {
+            "name": "Coldplay",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in Buenos Aires",
+        "release_year_hint": 2018,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002324"
+        }
+      },
+      {
+        "candidate_id": "P07-031",
+        "role": "primary",
+        "title": "The Boys Are Back in Town",
+        "artist_credit": "Thin Lizzy",
+        "required_credits": [
+          {
+            "name": "Thin Lizzy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live and Dangerous",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002400"
+        }
+      },
+      {
+        "candidate_id": "P07-032",
+        "role": "primary",
+        "title": "In My Secret Life",
+        "artist_credit": "Leonard Cohen",
+        "required_credits": [
+          {
+            "name": "Leonard Cohen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in London",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001093"
+        }
+      },
+      {
+        "candidate_id": "P07-033",
+        "role": "primary",
+        "title": "The Man Who Sold the World",
+        "artist_credit": "Nirvana",
+        "required_credits": [
+          {
+            "name": "Nirvana",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "MTV Unplugged in New York",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000328"
+        }
+      },
+      {
+        "candidate_id": "P07-034",
+        "role": "primary",
+        "title": "María va",
+        "artist_credit": "Mercedes Sosa",
+        "required_credits": [
+          {
+            "name": "Mercedes Sosa",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Mercedes Sosa en Argentina",
+        "release_year_hint": 1982,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002342"
+        }
+      },
+      {
+        "candidate_id": "P07-035",
+        "role": "primary",
+        "title": "Té para tres",
+        "artist_credit": "Soda Stereo",
+        "required_credits": [
+          {
+            "name": "Soda Stereo",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "El último concierto",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001044"
+        }
+      },
+      {
+        "candidate_id": "P07-036",
+        "role": "primary",
+        "title": "Lines on My Face",
+        "artist_credit": "Peter Frampton",
+        "required_credits": [
+          {
+            "name": "Peter Frampton",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Frampton Comes Alive!",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001021"
+        }
+      },
+      {
+        "candidate_id": "P07-037",
+        "role": "primary",
+        "title": "Cowboys",
+        "artist_credit": "Portishead",
+        "required_credits": [
+          {
+            "name": "Portishead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Roseland NYC Live",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000992"
+        }
+      },
+      {
+        "candidate_id": "P07-038",
+        "role": "primary",
+        "title": "Firehouse",
+        "artist_credit": "KISS",
+        "required_credits": [
+          {
+            "name": "KISS",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000336"
+        }
+      },
+      {
+        "candidate_id": "P07-039",
+        "role": "primary",
+        "title": "Space Truckin’",
+        "artist_credit": "Deep Purple",
+        "required_credits": [
+          {
+            "name": "Deep Purple",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Made in Japan",
+        "release_year_hint": 1972,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000324"
+        }
+      },
+      {
+        "candidate_id": "P07-040",
+        "role": "primary",
+        "title": "Such a Night",
+        "artist_credit": "The Band, Dr. John",
+        "required_credits": [
+          {
+            "name": "The Band",
+            "role": "primary"
+          },
+          {
+            "name": "Dr. John",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "The Last Waltz",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002334"
+        }
+      },
+      {
+        "candidate_id": "P07-041",
+        "role": "primary",
+        "title": "Psycho Killer",
+        "artist_credit": "Talking Heads",
+        "required_credits": [
+          {
+            "name": "Talking Heads",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Stop Making Sense",
+        "release_year_hint": 1984,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000379"
+        }
+      },
+      {
+        "candidate_id": "P07-042",
+        "role": "primary",
+        "title": "Forever Young",
+        "artist_credit": "The Band, Bob Dylan",
+        "required_credits": [
+          {
+            "name": "The Band",
+            "role": "primary"
+          },
+          {
+            "name": "Bob Dylan",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "The Last Waltz",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002321"
+        }
+      },
+      {
+        "candidate_id": "P07-043",
+        "role": "primary",
+        "title": "Baby, I Love Your Way",
+        "artist_credit": "Peter Frampton",
+        "required_credits": [
+          {
+            "name": "Peter Frampton",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Frampton Comes Alive!",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000391"
+        }
+      },
+      {
+        "candidate_id": "P07-044",
+        "role": "primary",
+        "title": "Tear It Up",
+        "artist_credit": "Queen",
+        "required_credits": [
+          {
+            "name": "Queen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Wembley ’86",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001031"
+        }
+      },
+      {
+        "candidate_id": "P07-045",
+        "role": "primary",
+        "title": "One and Only",
+        "artist_credit": "Adele",
+        "required_credits": [
+          {
+            "name": "Adele",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Royal Albert Hall",
+        "release_year_hint": 2011,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001095"
+        }
+      },
+      {
+        "candidate_id": "P07-046",
+        "role": "primary",
+        "title": "Primavera 0",
+        "artist_credit": "Soda Stereo",
+        "required_credits": [
+          {
+            "name": "Soda Stereo",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "El último concierto",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001025"
+        }
+      },
+      {
+        "candidate_id": "P07-047",
+        "role": "primary",
+        "title": "Off He Goes",
+        "artist_credit": "Pearl Jam",
+        "required_credits": [
+          {
+            "name": "Pearl Jam",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002301"
+        }
+      },
+      {
+        "candidate_id": "P07-048",
+        "role": "primary",
+        "title": "Bird on the Wire",
+        "artist_credit": "Leonard Cohen",
+        "required_credits": [
+          {
+            "name": "Leonard Cohen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in London",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001088"
+        }
+      },
+      {
+        "candidate_id": "P07-049",
+        "role": "primary",
+        "title": "Hope She’ll Be Happier",
+        "artist_credit": "Bill Withers",
+        "required_credits": [
+          {
+            "name": "Bill Withers",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Carnegie Hall",
+        "release_year_hint": 1973,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002417"
+        }
+      },
+      {
+        "candidate_id": "P07-050",
+        "role": "primary",
+        "title": "Death Don’t Have No Mercy",
+        "artist_credit": "Grateful Dead",
+        "required_credits": [
+          {
+            "name": "Grateful Dead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live/Dead",
+        "release_year_hint": 1969,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001049"
+        }
+      },
+      {
+        "candidate_id": "P07-051",
+        "role": "primary",
+        "title": "Like a Hurricane",
+        "artist_credit": "Neil Young, Crazy Horse",
+        "required_credits": [
+          {
+            "name": "Neil Young",
+            "role": "primary"
+          },
+          {
+            "name": "Crazy Horse",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Live Rust",
+        "release_year_hint": 1979,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000998"
+        }
+      },
+      {
+        "candidate_id": "P07-052",
+        "role": "primary",
+        "title": "Borderline",
+        "artist_credit": "MC5",
+        "required_credits": [
+          {
+            "name": "MC5",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Kick Out the Jams",
+        "release_year_hint": 1969,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002314"
+        }
+      },
+      {
+        "candidate_id": "P07-053",
+        "role": "primary",
+        "title": "Sunday Bloody Sunday",
+        "artist_credit": "U2",
+        "required_credits": [
+          {
+            "name": "U2",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Under a Blood Red Sky",
+        "release_year_hint": 1983,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000382"
+        }
+      },
+      {
+        "candidate_id": "P07-054",
+        "role": "primary",
+        "title": "Años",
+        "artist_credit": "Mercedes Sosa",
+        "required_credits": [
+          {
+            "name": "Mercedes Sosa",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Mercedes Sosa en Argentina",
+        "release_year_hint": 1982,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002322"
+        }
+      },
+      {
+        "candidate_id": "P07-055",
+        "role": "primary",
+        "title": "Use Me",
+        "artist_credit": "Bill Withers",
+        "required_credits": [
+          {
+            "name": "Bill Withers",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Carnegie Hall",
+        "release_year_hint": 1973,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002420"
+        }
+      },
+      {
+        "candidate_id": "P07-056",
+        "role": "primary",
+        "title": "Democracy",
+        "artist_credit": "Leonard Cohen",
+        "required_credits": [
+          {
+            "name": "Leonard Cohen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in London",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001050"
+        }
+      },
+      {
+        "candidate_id": "P07-057",
+        "role": "primary",
+        "title": "MFC",
+        "artist_credit": "Pearl Jam",
+        "required_credits": [
+          {
+            "name": "Pearl Jam",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002357"
+        }
+      },
+      {
+        "candidate_id": "P07-058",
+        "role": "primary",
+        "title": "Warrior",
+        "artist_credit": "Thin Lizzy",
+        "required_credits": [
+          {
+            "name": "Thin Lizzy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live and Dangerous",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002351"
+        }
+      },
+      {
+        "candidate_id": "P07-059",
+        "role": "primary",
+        "title": "Humming",
+        "artist_credit": "Portishead",
+        "required_credits": [
+          {
+            "name": "Portishead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Roseland NYC Live",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000970"
+        }
+      },
+      {
+        "candidate_id": "P07-060",
+        "role": "primary",
+        "title": "Theme From Jack Johnson",
+        "artist_credit": "Miles Davis",
+        "required_credits": [
+          {
+            "name": "Miles Davis",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Agharta",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002287"
+        }
+      },
+      {
+        "candidate_id": "P07-061",
+        "role": "primary",
+        "title": "Cotton Eyed Joe",
+        "artist_credit": "Nina Simone",
+        "required_credits": [
+          {
+            "name": "Nina Simone",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Nina Simone at Town Hall",
+        "release_year_hint": 1959,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002286"
+        }
+      },
+      {
+        "candidate_id": "P07-062",
+        "role": "primary",
+        "title": "Single Ladies (Put a Ring on It)",
+        "artist_credit": "Beyoncé",
+        "required_credits": [
+          {
+            "name": "Beyoncé",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "HOMECOMING: THE LIVE ALBUM",
+        "release_year_hint": 2019,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000995"
+        }
+      },
+      {
+        "candidate_id": "P07-063",
+        "role": "primary",
+        "title": "You Don’t Love Me",
+        "artist_credit": "The Allman Brothers Band",
+        "required_credits": [
+          {
+            "name": "The Allman Brothers Band",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Fillmore East",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001086"
+        }
+      },
+      {
+        "candidate_id": "P07-064",
+        "role": "primary",
+        "title": "Emerald",
+        "artist_credit": "Thin Lizzy",
+        "required_credits": [
+          {
+            "name": "Thin Lizzy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live and Dangerous",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002404"
+        }
+      },
+      {
+        "candidate_id": "P07-065",
+        "role": "primary",
+        "title": "Highway Star",
+        "artist_credit": "Deep Purple",
+        "required_credits": [
+          {
+            "name": "Deep Purple",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Made in Japan",
+        "release_year_hint": 1972,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000356"
+        }
+      },
+      {
+        "candidate_id": "P07-066",
+        "role": "primary",
+        "title": "About a Girl",
+        "artist_credit": "Nirvana",
+        "required_credits": [
+          {
+            "name": "Nirvana",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "MTV Unplugged in New York",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000364"
+        }
+      },
+      {
+        "candidate_id": "P07-067",
+        "role": "primary",
+        "title": "Wherever I May Roam",
+        "artist_credit": "Metallica",
+        "required_credits": [
+          {
+            "name": "Metallica",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "S&M",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002349"
+        }
+      },
+      {
+        "candidate_id": "P07-068",
+        "role": "primary",
+        "title": "Better Man",
+        "artist_credit": "Pearl Jam",
+        "required_credits": [
+          {
+            "name": "Pearl Jam",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002285"
+        }
+      },
+      {
+        "candidate_id": "P07-069",
+        "role": "primary",
+        "title": "Rock and Roll All Nite",
+        "artist_credit": "KISS",
+        "required_credits": [
+          {
+            "name": "KISS",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000361"
+        }
+      },
+      {
+        "candidate_id": "P07-070",
+        "role": "primary",
+        "title": "The Loner",
+        "artist_credit": "Neil Young, Crazy Horse",
+        "required_credits": [
+          {
+            "name": "Neil Young",
+            "role": "primary"
+          },
+          {
+            "name": "Crazy Horse",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Live Rust",
+        "release_year_hint": 1979,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002346"
+        }
+      },
+      {
+        "candidate_id": "P07-071",
+        "role": "primary",
+        "title": "I Am a Child",
+        "artist_credit": "Neil Young, Crazy Horse",
+        "required_credits": [
+          {
+            "name": "Neil Young",
+            "role": "primary"
+          },
+          {
+            "name": "Crazy Horse",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Live Rust",
+        "release_year_hint": 1979,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002297"
+        }
+      },
+      {
+        "candidate_id": "P07-072",
+        "role": "primary",
+        "title": "Prelude, Part 2 / Maiysha",
+        "artist_credit": "Miles Davis",
+        "required_credits": [
+          {
+            "name": "Miles Davis",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Agharta",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002303"
+        }
+      },
+      {
+        "candidate_id": "P07-073",
+        "role": "primary",
+        "title": "Face to Face / Short Circuit",
+        "artist_credit": "Daft Punk",
+        "required_credits": [
+          {
+            "name": "Daft Punk",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive 2007",
+        "release_year_hint": 2007,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001029"
+        }
+      },
+      {
+        "candidate_id": "P07-074",
+        "role": "primary",
+        "title": "Green Green Grass of Home",
+        "artist_credit": "Johnny Cash",
+        "required_credits": [
+          {
+            "name": "Johnny Cash",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Folsom Prison",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000327"
+        }
+      },
+      {
+        "candidate_id": "P07-075",
+        "role": "primary",
+        "title": "Seven Seas of Rhye",
+        "artist_credit": "Queen",
+        "required_credits": [
+          {
+            "name": "Queen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Wembley ’86",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000387"
+        }
+      },
+      {
+        "candidate_id": "P07-076",
+        "role": "primary",
+        "title": "All Apologies",
+        "artist_credit": "Nirvana",
+        "required_credits": [
+          {
+            "name": "Nirvana",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "MTV Unplugged in New York",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000362"
+        }
+      },
+      {
+        "candidate_id": "P07-077",
+        "role": "primary",
+        "title": "Wild Is the Wind",
+        "artist_credit": "Nina Simone",
+        "required_credits": [
+          {
+            "name": "Nina Simone",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Nina Simone at Town Hall",
+        "release_year_hint": 1959,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002333"
+        }
+      },
+      {
+        "candidate_id": "P07-078",
+        "role": "primary",
+        "title": "Mighty Mighty (Spade and Whitey)",
+        "artist_credit": "Curtis Mayfield",
+        "required_credits": [
+          {
+            "name": "Curtis Mayfield",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Curtis/Live!",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002373"
+        }
+      },
+      {
+        "candidate_id": "P07-079",
+        "role": "primary",
+        "title": "Sueño con serpientes",
+        "artist_credit": "Mercedes Sosa",
+        "required_credits": [
+          {
+            "name": "Mercedes Sosa",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Mercedes Sosa en Argentina",
+        "release_year_hint": 1982,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002316"
+        }
+      },
+      {
+        "candidate_id": "P07-080",
+        "role": "primary",
+        "title": "Cae el sol",
+        "artist_credit": "Soda Stereo",
+        "required_credits": [
+          {
+            "name": "Soda Stereo",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "El último concierto",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001071"
+        }
+      },
+      {
+        "candidate_id": "P07-081",
+        "role": "primary",
+        "title": "Goodnight Now",
+        "artist_credit": "Cheap Trick",
+        "required_credits": [
+          {
+            "name": "Cheap Trick",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Cheap Trick at Budokan",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002410"
+        }
+      },
+      {
+        "candidate_id": "P07-082",
+        "role": "primary",
+        "title": "Hello There",
+        "artist_credit": "Cheap Trick",
+        "required_credits": [
+          {
+            "name": "Cheap Trick",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Cheap Trick at Budokan",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002419"
+        }
+      },
+      {
+        "candidate_id": "P07-083",
+        "role": "primary",
+        "title": "So Long, Marianne",
+        "artist_credit": "Leonard Cohen",
+        "required_credits": [
+          {
+            "name": "Leonard Cohen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in London",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001041"
+        }
+      },
+      {
+        "candidate_id": "P07-084",
+        "role": "primary",
+        "title": "Whole Lotta Rosie",
+        "artist_credit": "AC/DC",
+        "required_credits": [
+          {
+            "name": "AC/DC",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at River Plate",
+        "release_year_hint": 2012,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002412"
+        }
+      },
+      {
+        "candidate_id": "P07-085",
+        "role": "primary",
+        "title": "The Rocker",
+        "artist_credit": "Thin Lizzy",
+        "required_credits": [
+          {
+            "name": "Thin Lizzy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live and Dangerous",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002380"
+        }
+      },
+      {
+        "candidate_id": "P07-086",
+        "role": "primary",
+        "title": "100,000 Years",
+        "artist_credit": "KISS",
+        "required_credits": [
+          {
+            "name": "KISS",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000999"
+        }
+      },
+      {
+        "candidate_id": "P07-087",
+        "role": "primary",
+        "title": "The Last Waltz Suite: Out of the Blue",
+        "artist_credit": "The Band",
+        "required_credits": [
+          {
+            "name": "The Band",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Last Waltz",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001057"
+        }
+      },
+      {
+        "candidate_id": "P07-088",
+        "role": "primary",
+        "title": "La arenosa",
+        "artist_credit": "Mercedes Sosa",
+        "required_credits": [
+          {
+            "name": "Mercedes Sosa",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Mercedes Sosa en Argentina",
+        "release_year_hint": 1982,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002311"
+        }
+      },
+      {
+        "candidate_id": "P07-089",
+        "role": "primary",
+        "title": "Swamp",
+        "artist_credit": "Talking Heads",
+        "required_credits": [
+          {
+            "name": "Talking Heads",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Stop Making Sense",
+        "release_year_hint": 1984,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000371"
+        }
+      },
+      {
+        "candidate_id": "P07-090",
+        "role": "primary",
+        "title": "Köln, January 24, 1975, Part II c",
+        "artist_credit": "Keith Jarrett",
+        "required_credits": [
+          {
+            "name": "Keith Jarrett",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Köln Concert",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000990"
+        }
+      },
+      {
+        "candidate_id": "P07-091",
+        "role": "primary",
+        "title": "Dirty Deeds Done Dirt Cheap",
+        "artist_credit": "AC/DC",
+        "required_credits": [
+          {
+            "name": "AC/DC",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at River Plate",
+        "release_year_hint": 2012,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002384"
+        }
+      },
+      {
+        "candidate_id": "P07-092",
+        "role": "primary",
+        "title": "Sad but True",
+        "artist_credit": "Metallica",
+        "required_credits": [
+          {
+            "name": "Metallica",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "S&M",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002294"
+        }
+      },
+      {
+        "candidate_id": "P07-093",
+        "role": "primary",
+        "title": "I’ll Be Waiting",
+        "artist_credit": "Adele",
+        "required_credits": [
+          {
+            "name": "Adele",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Royal Albert Hall",
+        "release_year_hint": 2011,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002313"
+        }
+      },
+      {
+        "candidate_id": "P07-094",
+        "role": "primary",
+        "title": "Luna roja",
+        "artist_credit": "Soda Stereo",
+        "required_credits": [
+          {
+            "name": "Soda Stereo",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "El último concierto",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001053"
+        }
+      },
+      {
+        "candidate_id": "P07-095",
+        "role": "primary",
+        "title": "Canción animal",
+        "artist_credit": "Gustavo Cerati",
+        "required_credits": [
+          {
+            "name": "Gustavo Cerati",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "11 episodios sinfónicos",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001036"
+        }
+      },
+      {
+        "candidate_id": "P07-096",
+        "role": "primary",
+        "title": "Friend of Mine",
+        "artist_credit": "Bill Withers",
+        "required_credits": [
+          {
+            "name": "Bill Withers",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Carnegie Hall",
+        "release_year_hint": 1973,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002413"
+        }
+      },
+      {
+        "candidate_id": "P07-097",
+        "role": "primary",
+        "title": "In Memory of Elizabeth Reed",
+        "artist_credit": "The Allman Brothers Band",
+        "required_credits": [
+          {
+            "name": "The Allman Brothers Band",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Fillmore East",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001039"
+        }
+      },
+      {
+        "candidate_id": "P07-098",
+        "role": "primary",
+        "title": "Down South in New Orleans",
+        "artist_credit": "The Band, Bobby Charles",
+        "required_credits": [
+          {
+            "name": "The Band",
+            "role": "primary"
+          },
+          {
+            "name": "Bobby Charles",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "The Last Waltz",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001020"
+        }
+      },
+      {
+        "candidate_id": "P07-099",
+        "role": "primary",
+        "title": "Stone Junkie",
+        "artist_credit": "Curtis Mayfield",
+        "required_credits": [
+          {
+            "name": "Curtis Mayfield",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Curtis/Live!",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002416"
+        }
+      },
+      {
+        "candidate_id": "P07-100",
+        "role": "primary",
+        "title": "Sweet Little Angel",
+        "artist_credit": "B.B. King",
+        "required_credits": [
+          {
+            "name": "B.B. King",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Regal",
+        "release_year_hint": 1965,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001023"
+        }
+      },
+      {
+        "candidate_id": "P07-101",
+        "role": "reserve",
+        "title": "Nothing Can Change This Love",
+        "artist_credit": "Sam Cooke",
+        "required_credits": [
+          {
+            "name": "Sam Cooke",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Harlem Square Club, 1963",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000991"
+        }
+      },
+      {
+        "candidate_id": "P07-102",
+        "role": "reserve",
+        "title": "T.N.T.",
+        "artist_credit": "AC/DC",
+        "required_credits": [
+          {
+            "name": "AC/DC",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at River Plate",
+        "release_year_hint": 2012,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002331"
+        }
+      },
+      {
+        "candidate_id": "P07-103",
+        "role": "reserve",
+        "title": "A Kind of Magic",
+        "artist_credit": "Queen",
+        "required_credits": [
+          {
+            "name": "Queen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Wembley ’86",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000359"
+        }
+      },
+      {
+        "candidate_id": "P07-104",
+        "role": "reserve",
+        "title": "Cuando pase el temblor",
+        "artist_credit": "Soda Stereo",
+        "required_credits": [
+          {
+            "name": "Soda Stereo",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "El último concierto",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001004"
+        }
+      },
+      {
+        "candidate_id": "P07-105",
+        "role": "reserve",
+        "title": "We the People Who Are Darker Than Blue",
+        "artist_credit": "Curtis Mayfield",
+        "required_credits": [
+          {
+            "name": "Curtis Mayfield",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Curtis/Live!",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002418"
+        }
+      },
+      {
+        "candidate_id": "P07-106",
+        "role": "reserve",
+        "title": "Big Jack",
+        "artist_credit": "AC/DC",
+        "required_credits": [
+          {
+            "name": "AC/DC",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at River Plate",
+        "release_year_hint": 2012,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002382"
+        }
+      },
+      {
+        "candidate_id": "P07-107",
+        "role": "reserve",
+        "title": "First We Take Manhattan",
+        "artist_credit": "Leonard Cohen",
+        "required_credits": [
+          {
+            "name": "Leonard Cohen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in London",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001083"
+        }
+      },
+      {
+        "candidate_id": "P07-108",
+        "role": "reserve",
+        "title": "Doobie Wah",
+        "artist_credit": "Peter Frampton",
+        "required_credits": [
+          {
+            "name": "Peter Frampton",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Frampton Comes Alive!",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000384"
+        }
+      },
+      {
+        "candidate_id": "P07-109",
+        "role": "reserve",
+        "title": "Go",
+        "artist_credit": "Pearl Jam",
+        "required_credits": [
+          {
+            "name": "Pearl Jam",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002391"
+        }
+      },
+      {
+        "candidate_id": "P07-110",
+        "role": "reserve",
+        "title": "The National Anthem",
+        "artist_credit": "Radiohead",
+        "required_credits": [
+          {
+            "name": "Radiohead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "I Might Be Wrong: Live Recordings",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002317"
+        }
+      },
+      {
+        "candidate_id": "P07-111",
+        "role": "reserve",
+        "title": "Softly, as in a Morning Sunrise",
+        "artist_credit": "John Coltrane",
+        "required_credits": [
+          {
+            "name": "John Coltrane",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "“Live” at the Village Vanguard",
+        "release_year_hint": 1962,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002299"
+        }
+      },
+      {
+        "candidate_id": "P07-112",
+        "role": "reserve",
+        "title": "Gracias a la vida",
+        "artist_credit": "Mercedes Sosa",
+        "required_credits": [
+          {
+            "name": "Mercedes Sosa",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Mercedes Sosa en Argentina",
+        "release_year_hint": 1982,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002281"
+        }
+      },
+      {
+        "candidate_id": "P07-113",
+        "role": "reserve",
+        "title": "Tarova",
+        "artist_credit": "Snarky Puppy",
+        "required_credits": [
+          {
+            "name": "Snarky Puppy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Royal Albert Hall",
+        "release_year_hint": 2019,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002307"
+        }
+      },
+      {
+        "candidate_id": "P07-114",
+        "role": "reserve",
+        "title": "Don’t You Remember",
+        "artist_credit": "Adele",
+        "required_credits": [
+          {
+            "name": "Adele",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Royal Albert Hall",
+        "release_year_hint": 2011,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002284"
+        }
+      },
+      {
+        "candidate_id": "P07-115",
+        "role": "reserve",
+        "title": "All of You",
+        "artist_credit": "Bill Evans Trio, Scott LaFaro",
+        "required_credits": [
+          {
+            "name": "Bill Evans Trio",
+            "role": "primary"
+          },
+          {
+            "name": "Scott LaFaro",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Sunday at the Village Vanguard",
+        "release_year_hint": 1961,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000985"
+        }
+      },
+      {
+        "candidate_id": "P07-116",
+        "role": "reserve",
+        "title": "Gloria’s Step",
+        "artist_credit": "Bill Evans Trio, Scott LaFaro",
+        "required_credits": [
+          {
+            "name": "Bill Evans Trio",
+            "role": "primary"
+          },
+          {
+            "name": "Scott LaFaro",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Sunday at the Village Vanguard",
+        "release_year_hint": 1961,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000974"
+        }
+      },
+      {
+        "candidate_id": "P07-117",
+        "role": "reserve",
+        "title": "You Can Have Him",
+        "artist_credit": "Nina Simone",
+        "required_credits": [
+          {
+            "name": "Nina Simone",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Nina Simone at Town Hall",
+        "release_year_hint": 1959,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002363"
+        }
+      },
+      {
+        "candidate_id": "P07-118",
+        "role": "reserve",
+        "title": "You Upset Me Baby",
+        "artist_credit": "B.B. King",
+        "required_credits": [
+          {
+            "name": "B.B. King",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Regal",
+        "release_year_hint": 1965,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001051"
+        }
+      },
+      {
+        "candidate_id": "P07-119",
+        "role": "reserve",
+        "title": "Somebody Have Mercy",
+        "artist_credit": "Sam Cooke",
+        "required_credits": [
+          {
+            "name": "Sam Cooke",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Harlem Square Club, 1963",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002368"
+        }
+      },
+      {
+        "candidate_id": "P07-120",
+        "role": "reserve",
+        "title": "Rosalie / Cowgirl’s Song",
+        "artist_credit": "Thin Lizzy",
+        "required_credits": [
+          {
+            "name": "Thin Lizzy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live and Dangerous",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002408"
+        }
+      },
+      {
+        "candidate_id": "P07-121",
+        "role": "reserve",
+        "title": "Touch It / Technologic",
+        "artist_credit": "Daft Punk",
+        "required_credits": [
+          {
+            "name": "Daft Punk",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive 2007",
+        "release_year_hint": 2007,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001008"
+        }
+      },
+      {
+        "candidate_id": "P07-122",
+        "role": "reserve",
+        "title": "Daughter",
+        "artist_credit": "Pearl Jam",
+        "required_credits": [
+          {
+            "name": "Pearl Jam",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002369"
+        }
+      },
+      {
+        "candidate_id": "P07-123",
+        "role": "reserve",
+        "title": "Yoncé",
+        "artist_credit": "Beyoncé",
+        "required_credits": [
+          {
+            "name": "Beyoncé",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "HOMECOMING: THE LIVE ALBUM",
+        "release_year_hint": 2019,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001090"
+        }
+      },
+      {
+        "candidate_id": "P07-124",
+        "role": "reserve",
+        "title": "Do the Evolution",
+        "artist_credit": "Pearl Jam",
+        "required_credits": [
+          {
+            "name": "Pearl Jam",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002374"
+        }
+      },
+      {
+        "candidate_id": "P07-125",
+        "role": "reserve",
+        "title": "I Tried to Leave You",
+        "artist_credit": "Leonard Cohen",
+        "required_credits": [
+          {
+            "name": "Leonard Cohen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in London",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001011"
+        }
+      },
+      {
+        "candidate_id": "P07-126",
+        "role": "reserve",
+        "title": "Elderly Woman Behind the Counter in a Small Town",
+        "artist_credit": "Pearl Jam",
+        "required_credits": [
+          {
+            "name": "Pearl Jam",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002379"
+        }
+      },
+      {
+        "candidate_id": "P07-127",
+        "role": "reserve",
+        "title": "God Put a Smile Upon Your Face",
+        "artist_credit": "Coldplay",
+        "required_credits": [
+          {
+            "name": "Coldplay",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in Buenos Aires",
+        "release_year_hint": 2018,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002397"
+        }
+      },
+      {
+        "candidate_id": "P07-128",
+        "role": "reserve",
+        "title": "Canción con todos",
+        "artist_credit": "Mercedes Sosa",
+        "required_credits": [
+          {
+            "name": "Mercedes Sosa",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Mercedes Sosa en Argentina",
+        "release_year_hint": 1982,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002298"
+        }
+      },
+      {
+        "candidate_id": "P07-129",
+        "role": "reserve",
+        "title": "Turn On Your Lovelight",
+        "artist_credit": "Grateful Dead",
+        "required_credits": [
+          {
+            "name": "Grateful Dead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live/Dead",
+        "release_year_hint": 1969,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000385"
+        }
+      },
+      {
+        "candidate_id": "P07-130",
+        "role": "reserve",
+        "title": "Raíz",
+        "artist_credit": "Gustavo Cerati",
+        "required_credits": [
+          {
+            "name": "Gustavo Cerati",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "11 episodios sinfónicos",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000983"
+        }
+      },
+      {
+        "candidate_id": "P07-131",
+        "role": "reserve",
+        "title": "Half Day Closing",
+        "artist_credit": "Portishead",
+        "required_credits": [
+          {
+            "name": "Portishead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Roseland NYC Live",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001003"
+        }
+      },
+      {
+        "candidate_id": "P07-132",
+        "role": "reserve",
+        "title": "Got to Choose",
+        "artist_credit": "KISS",
+        "required_credits": [
+          {
+            "name": "KISS",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000357"
+        }
+      },
+      {
+        "candidate_id": "P07-133",
+        "role": "reserve",
+        "title": "Fine and Mellow",
+        "artist_credit": "Nina Simone",
+        "required_credits": [
+          {
+            "name": "Nina Simone",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Nina Simone at Town Hall",
+        "release_year_hint": 1959,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002361"
+        }
+      },
+      {
+        "candidate_id": "P07-134",
+        "role": "reserve",
+        "title": "Who Wants to Live Forever",
+        "artist_credit": "Queen",
+        "required_credits": [
+          {
+            "name": "Queen",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Wembley ’86",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000338"
+        }
+      },
+      {
+        "candidate_id": "P07-135",
+        "role": "reserve",
+        "title": "The Memory Remains",
+        "artist_credit": "Metallica",
+        "required_credits": [
+          {
+            "name": "Metallica",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "S&M",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002344"
+        }
+      },
+      {
+        "candidate_id": "P07-136",
+        "role": "reserve",
+        "title": "It’s My Own Fault",
+        "artist_credit": "B.B. King",
+        "required_credits": [
+          {
+            "name": "B.B. King",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Regal",
+        "release_year_hint": 1965,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002352"
+        }
+      },
+      {
+        "candidate_id": "P07-137",
+        "role": "reserve",
+        "title": "Feel It",
+        "artist_credit": "Sam Cooke",
+        "required_credits": [
+          {
+            "name": "Sam Cooke",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Harlem Square Club, 1963",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001078"
+        }
+      },
+      {
+        "candidate_id": "P07-138",
+        "role": "reserve",
+        "title": "In My Place",
+        "artist_credit": "Coldplay",
+        "required_credits": [
+          {
+            "name": "Coldplay",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in Buenos Aires",
+        "release_year_hint": 2018,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002348"
+        }
+      },
+      {
+        "candidate_id": "P07-139",
+        "role": "reserve",
+        "title": "Solar",
+        "artist_credit": "Bill Evans Trio, Scott LaFaro",
+        "required_credits": [
+          {
+            "name": "Bill Evans Trio",
+            "role": "primary"
+          },
+          {
+            "name": "Scott LaFaro",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Sunday at the Village Vanguard",
+        "release_year_hint": 1961,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001028"
+        }
+      },
+      {
+        "candidate_id": "P07-140",
+        "role": "reserve",
+        "title": "If It Be Your Will",
+        "artist_credit": "Leonard Cohen, The Webb Sisters",
+        "required_credits": [
+          {
+            "name": "Leonard Cohen",
+            "role": "primary"
+          },
+          {
+            "name": "The Webb Sisters",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Live in London",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000978"
+        }
+      },
+      {
+        "candidate_id": "P07-141",
+        "role": "reserve",
+        "title": "Plateau",
+        "artist_credit": "Nirvana",
+        "required_credits": [
+          {
+            "name": "Nirvana",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "MTV Unplugged in New York",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000377"
+        }
+      },
+      {
+        "candidate_id": "P07-142",
+        "role": "reserve",
+        "title": "Verbo carne",
+        "artist_credit": "Gustavo Cerati",
+        "required_credits": [
+          {
+            "name": "Gustavo Cerati",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "11 episodios sinfónicos",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001072"
+        }
+      },
+      {
+        "candidate_id": "P07-143",
+        "role": "reserve",
+        "title": "Having a Party",
+        "artist_credit": "Sam Cooke",
+        "required_credits": [
+          {
+            "name": "Sam Cooke",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Harlem Square Club, 1963",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001069"
+        }
+      },
+      {
+        "candidate_id": "P07-144",
+        "role": "reserve",
+        "title": "Help the Poor",
+        "artist_credit": "B.B. King",
+        "required_credits": [
+          {
+            "name": "B.B. King",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Regal",
+        "release_year_hint": 1965,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001084"
+        }
+      },
+      {
+        "candidate_id": "P07-145",
+        "role": "reserve",
+        "title": "Television Rules the Nation / Crescendolls",
+        "artist_credit": "Daft Punk",
+        "required_credits": [
+          {
+            "name": "Daft Punk",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive 2007",
+        "release_year_hint": 2007,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001074"
+        }
+      },
+      {
+        "candidate_id": "P07-146",
+        "role": "reserve",
+        "title": "Amor Argentina",
+        "artist_credit": "Coldplay",
+        "required_credits": [
+          {
+            "name": "Coldplay",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live in Buenos Aires",
+        "release_year_hint": 2018,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002407"
+        }
+      },
+      {
+        "candidate_id": "P07-147",
+        "role": "reserve",
+        "title": "Dark as the Dungeon",
+        "artist_credit": "Johnny Cash",
+        "required_credits": [
+          {
+            "name": "Johnny Cash",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Folsom Prison",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000329"
+        }
+      },
+      {
+        "candidate_id": "P07-148",
+        "role": "reserve",
+        "title": "Flushed From the Bathroom of Your Heart",
+        "artist_credit": "Johnny Cash",
+        "required_credits": [
+          {
+            "name": "Johnny Cash",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Folsom Prison",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001010"
+        }
+      },
+      {
+        "candidate_id": "P07-149",
+        "role": "reserve",
+        "title": "Only You",
+        "artist_credit": "Portishead",
+        "required_credits": [
+          {
+            "name": "Portishead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Roseland NYC Live",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001052"
+        }
+      },
+      {
+        "candidate_id": "P07-150",
+        "role": "reserve",
+        "title": "Lovesong",
+        "artist_credit": "Adele",
+        "required_credits": [
+          {
+            "name": "Adele",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at the Royal Albert Hall",
+        "release_year_hint": 2011,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001100"
+        }
+      },
+      {
+        "candidate_id": "P07-151",
+        "role": "reserve",
+        "title": "Child in Time",
+        "artist_credit": "Deep Purple",
+        "required_credits": [
+          {
+            "name": "Deep Purple",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Made in Japan",
+        "release_year_hint": 1972,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002289"
+        }
+      },
+      {
+        "candidate_id": "P07-152",
+        "role": "reserve",
+        "title": "Top Off",
+        "artist_credit": "Beyoncé",
+        "required_credits": [
+          {
+            "name": "Beyoncé",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "HOMECOMING: THE LIVE ALBUM",
+        "release_year_hint": 2019,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000984"
+        }
+      },
+      {
+        "candidate_id": "P07-153",
+        "role": "reserve",
+        "title": "Exactly Like You",
+        "artist_credit": "Nina Simone",
+        "required_credits": [
+          {
+            "name": "Nina Simone",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Nina Simone at Town Hall",
+        "release_year_hint": 1959,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-002353"
+        }
+      },
+      {
+        "candidate_id": "P07-154",
+        "role": "reserve",
+        "title": "Done Somebody Wrong",
+        "artist_credit": "The Allman Brothers Band",
+        "required_credits": [
+          {
+            "name": "The Allman Brothers Band",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Fillmore East",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001048"
+        }
+      },
+      {
+        "candidate_id": "P07-155",
+        "role": "reserve",
+        "title": "Partition",
+        "artist_credit": "Beyoncé",
+        "required_credits": [
+          {
+            "name": "Beyoncé",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "HOMECOMING: THE LIVE ALBUM",
+        "release_year_hint": 2019,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001079"
+        }
+      },
+      {
+        "candidate_id": "P07-156",
+        "role": "reserve",
+        "title": "Superheroes / Human After All / Rock’n Roll",
+        "artist_credit": "Daft Punk",
+        "required_credits": [
+          {
+            "name": "Daft Punk",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alive 2007",
+        "release_year_hint": 2007,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-001047"
+        }
+      },
+      {
+        "candidate_id": "P07-157",
+        "role": "reserve",
+        "title": "The Eleven",
+        "artist_credit": "Grateful Dead",
+        "required_credits": [
+          {
+            "name": "Grateful Dead",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live/Dead",
+        "release_year_hint": 1969,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000335"
+        }
+      },
+      {
+        "candidate_id": "P07-158",
+        "role": "reserve",
+        "title": "Folsom Prison Blues",
+        "artist_credit": "Johnny Cash",
+        "required_credits": [
+          {
+            "name": "Johnny Cash",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "At Folsom Prison",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000353"
+        }
+      },
+      {
+        "candidate_id": "P07-159",
+        "role": "reserve",
+        "title": "Young Man",
+        "artist_credit": "The Who",
+        "required_credits": [
+          {
+            "name": "The Who",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Live at Leeds",
+        "release_year_hint": 1970,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000331"
+        }
+      },
+      {
+        "candidate_id": "P07-160",
+        "role": "reserve",
+        "title": "Dumb",
+        "artist_credit": "Nirvana",
+        "required_credits": [
+          {
+            "name": "Nirvana",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "MTV Unplugged in New York",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true,
+        "user_metadata": {
+          "validation_case_id": "MBR-000380"
+        }
+      }
+    ]
+  }
+}

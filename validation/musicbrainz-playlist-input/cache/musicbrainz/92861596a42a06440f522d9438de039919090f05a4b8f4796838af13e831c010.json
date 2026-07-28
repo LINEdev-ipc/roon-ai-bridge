@@ -1,0 +1,111 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/ca282659-c699-4a8b-affe-fb4bbc717c45?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:16:10.287Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "releases": [
+      {
+        "release-events": [
+          {
+            "area": {
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "sort-name": "[Worldwide]",
+              "name": "[Worldwide]",
+              "type": null,
+              "disambiguation": "",
+              "type-id": null
+            },
+            "date": "2015-09-18"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "status": "Official",
+        "disambiguation": "",
+        "title": "En vivo en Mexico City",
+        "packaging": "None",
+        "artist-credit": [
+          {
+            "artist": {
+              "id": "5be7d200-5499-4bba-b29b-1ac554199d23",
+              "sort-name": "Calle 13",
+              "name": "Calle 13",
+              "country": "PR",
+              "type": "Group",
+              "disambiguation": "",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+            },
+            "name": "Calle 13",
+            "joinphrase": ""
+          }
+        ],
+        "country": "XW",
+        "release-group": {
+          "first-release-date": "2015-09-18",
+          "primary-type": "Album",
+          "title": "En vivo en Mexico City",
+          "artist-credit": [
+            {
+              "name": "Calle 13",
+              "artist": {
+                "id": "5be7d200-5499-4bba-b29b-1ac554199d23",
+                "sort-name": "Calle 13",
+                "name": "Calle 13",
+                "country": "PR",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "type": "Group"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "disambiguation": "",
+          "id": "337fe0ea-63f4-4a03-b030-c04769c081d9",
+          "releases": [],
+          "secondary-type-ids": [
+            "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+          ],
+          "secondary-types": [
+            "Live"
+          ]
+        },
+        "barcode": "382556425729",
+        "date": "2015-09-18",
+        "id": "9bbc5ade-bf97-4e41-b298-d48037cc6a90",
+        "text-representation": {
+          "language": "spa",
+          "script": "Latn"
+        },
+        "quality": "normal",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b"
+      }
+    ],
+    "id": "ca282659-c699-4a8b-affe-fb4bbc717c45",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "name": "Calle 13",
+        "artist": {
+          "name": "Calle 13",
+          "country": "PR",
+          "type": "Group",
+          "disambiguation": "",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "id": "5be7d200-5499-4bba-b29b-1ac554199d23",
+          "sort-name": "Calle 13"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "title": "Latinoamérica",
+    "length": 403000,
+    "first-release-date": "2015-09-18",
+    "video": false
+  }
+}

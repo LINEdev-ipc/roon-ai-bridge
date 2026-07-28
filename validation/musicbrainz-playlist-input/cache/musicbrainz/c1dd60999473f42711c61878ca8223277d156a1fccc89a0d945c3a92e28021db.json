@@ -1,0 +1,101 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/a379f60a-4e48-4304-8b4b-457e5263e58d?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:15:54.534Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "video": false,
+    "disambiguation": "",
+    "releases": [
+      {
+        "packaging-id": null,
+        "artist-credit": [
+          {
+            "name": "Radiohead",
+            "artist": {
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "country": "GB",
+              "sort-name": "Radiohead",
+              "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+              "type": "Group",
+              "name": "Radiohead",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "quality": "normal",
+        "packaging": null,
+        "id": "13154b1b-fd3c-4e85-aa0b-0e3a059a2875",
+        "status": "Bootleg",
+        "date": "2017",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "release-group": {
+          "first-release-date": "2017",
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+          ],
+          "id": "39baf9d2-f625-4bae-bec8-5505d81c80fd",
+          "secondary-types": [
+            "Compilation"
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Radiohead",
+              "artist": {
+                "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+                "country": "GB",
+                "sort-name": "Radiohead",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "name": "Radiohead",
+                "type": "Group"
+              }
+            }
+          ],
+          "title": "Every Last Crumb",
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+        },
+        "barcode": null,
+        "title": "Every Last Crumb",
+        "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+        "disambiguation": "",
+        "country": null,
+        "release-events": [
+          {
+            "date": "2017",
+            "area": null
+          }
+        ]
+      }
+    ],
+    "artist-credit": [
+      {
+        "artist": {
+          "disambiguation": "",
+          "type": "Group",
+          "name": "Radiohead",
+          "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "country": "GB",
+          "sort-name": "Radiohead"
+        },
+        "name": "Radiohead",
+        "joinphrase": ""
+      }
+    ],
+    "title": "Bloom (Jamie XX rework part 3)",
+    "length": 467346,
+    "first-release-date": "2017",
+    "id": "a379f60a-4e48-4304-8b4b-457e5263e58d"
+  }
+}

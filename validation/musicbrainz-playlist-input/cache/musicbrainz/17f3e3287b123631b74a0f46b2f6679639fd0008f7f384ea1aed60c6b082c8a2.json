@@ -1,0 +1,538 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28unfinished+AND+sympathy+AND+nellee+AND+hooper+AND+12+AND+mix%29+AND+artistname%3A%22Massive+Attack%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:05.263Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:05.633Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "ac77aa44-60a0-4d23-8325-03e6983a3414",
+        "score": 100,
+        "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+        "title": "Unfinished Sympathy (Nellee Hooper 12″ mix)",
+        "length": 384000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Massive Attack",
+            "artist": {
+              "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+              "name": "Massive Attack",
+              "sort-name": "Massive Attack",
+              "aliases": [
+                {
+                  "sort-name": "Massiv Attack",
+                  "name": "Massiv Attack",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Massive",
+                  "name": "Massive",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "92dcf5ba-0afa-4c34-bbde-0fb0bcec17a3",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+            "count": 1,
+            "title": "The Remixes, Vol. 1",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0b3705b7-8a03-44c0-9ba2-208d9d095093",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Remixes, Vol. 1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 11,
+            "media": [
+              {
+                "id": "fd621725-dd29-3d70-aaa2-be09f395e3b8",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e8afc7fd-2888-4257-bdda-98d368c947db",
+                    "number": "2",
+                    "title": "Unfinished Sympathy (Nellee Hooper 12″ mix)",
+                    "length": 384000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "712ae7cb-7ecb-44e4-90cb-3cdcd813708d",
+        "score": 100,
+        "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+        "title": "Unfinished Sympathy (Nellee Hooper 12″ mix)",
+        "length": 351533,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Massive Attack",
+            "artist": {
+              "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+              "name": "Massive Attack",
+              "sort-name": "Massive Attack",
+              "aliases": [
+                {
+                  "sort-name": "Massiv Attack",
+                  "name": "Massiv Attack",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Massive",
+                  "name": "Massive",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1991-02-11",
+        "releases": [
+          {
+            "id": "ca77dc66-b619-4820-abc1-bf47a227a90c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+            "count": 1,
+            "title": "Unfinished Sympathy",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3a73f54b-2bc7-3505-8b3b-afede6571397",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Unfinished Sympathy",
+              "primary-type": "Single"
+            },
+            "date": "2025-05-07",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2025-05-07",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 7,
+            "media": [
+              {
+                "id": "d3aae9e0-7b0b-43be-8979-ac48a6bad9ad",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "d100479c-d109-4914-be86-0c5170939ce6",
+                    "number": "3",
+                    "title": "Unfinished Sympathy (Nellee Hooper 12″ mix)",
+                    "length": 352440
+                  }
+                ],
+                "track-count": 7,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "641ee742-2f57-4122-8fd0-4ba9e610780b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "efff4554-84bf-3a15-a121-b286454d7d5f",
+            "count": 1,
+            "title": "Unfinished Sympathy (Nellee Hooper remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Massive",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3a73f54b-2bc7-3505-8b3b-afede6571397",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Unfinished Sympathy",
+              "primary-type": "Single"
+            },
+            "date": "1991",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1991",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "f214075b-eedd-3f3a-b243-0ec049f13bdb",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "567ecbfe-e4f9-3068-8089-7e8ebde975b1",
+                    "number": "A1",
+                    "title": "Unfinished Sympathy (Nellee Hooper 12\" mix)",
+                    "length": 350000
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "7b7b2fc8-5378-4ff6-8969-1765daf3bcd3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+            "count": 11,
+            "title": "Singles 90/98",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4fb8e533-e656-3775-b791-b471badf0222",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Singles 90/98",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1998-12-07",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1998-12-07",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 63,
+            "media": [
+              {
+                "id": "5df225dd-c3d7-3c84-8ee1-ea4702d2163b",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b78e234a-5555-341d-bd71-774eb4458b5f",
+                    "number": "3",
+                    "title": "Unfinished Sympathy (Nellee Hooper 12″ mix)",
+                    "length": 351533
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "96cce1d5-8305-4348-a682-13c2c79ee046",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+            "count": 1,
+            "title": "Blue Lines - The Remixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f30c1970-93eb-4d68-835f-053ff05b8c2c",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Blue Lines - The Remixes",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2006-01-30",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2006-01-30",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "a08bf362-151b-3b8d-9f41-40005ddffc3f",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ed015e3d-ed49-44c3-bb08-8504ea168a08",
+                    "number": "4",
+                    "title": "Unfinished Sympathy (Nellee Hooper 12\" mix)",
+                    "length": 351533
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "824dd3e7-e0e6-4be6-8d55-74b4c0140f97",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+            "count": 11,
+            "title": "Singles Collection",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4fb8e533-e656-3775-b791-b471badf0222",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Singles 90/98",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2003-03-03",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2003-03-03",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 61,
+            "media": [
+              {
+                "id": "3c86bccb-6e90-39ca-9c3c-f371466ae80c",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5a08377b-3c39-487a-9886-79f0d1caee31",
+                    "number": "3",
+                    "title": "Unfinished Sympathy (Nellee Hooper 12\" mix)",
+                    "length": 351533
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "8beacc57-73c0-452f-beae-2b43cb4bd612",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+            "count": 1,
+            "title": "Unfinished Sympathy",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3a73f54b-2bc7-3505-8b3b-afede6571397",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Unfinished Sympathy",
+              "primary-type": "Single"
+            },
+            "date": "1991-02-11",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1991-02-11",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "32189905-09e4-3763-a3a7-44622b14ecd2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a1f50e37-7c0c-3929-bdac-1fcdc0e46411",
+                    "number": "3",
+                    "title": "Unfinished Sympathy (Nellee Hooper 12\" mix)",
+                    "length": 351533
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 2
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBAAA9100060"
+        ],
+        "tags": [
+          {
+            "count": 3,
+            "name": "electronic"
+          },
+          {
+            "count": 3,
+            "name": "downtempo"
+          },
+          {
+            "count": 0,
+            "name": "alternative rock"
+          },
+          {
+            "count": 4,
+            "name": "trip hop"
+          },
+          {
+            "count": 1,
+            "name": "electronica dance"
+          }
+        ]
+      }
+    ]
+  }
+}

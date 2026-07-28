@@ -1,0 +1,113 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/dbd0516e-9dbc-4318-abca-d5976e9ce80d?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:15:45.966Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "disambiguation": "Pete Tong DJ-mix",
+    "title": "Brimful of Asha (Norman Cook remix)",
+    "first-release-date": "1998-04-03",
+    "video": false,
+    "length": 359000,
+    "artist-credit": [
+      {
+        "artist": {
+          "disambiguation": "",
+          "type": "Group",
+          "country": "GB",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "sort-name": "Cornershop",
+          "name": "Cornershop",
+          "id": "92046be7-0927-4835-a4ed-a90416747d53"
+        },
+        "joinphrase": "",
+        "name": "Cornershop"
+      }
+    ],
+    "releases": [
+      {
+        "artist-credit": [
+          {
+            "name": "Pete Tong",
+            "artist": {
+              "id": "b9585df2-bb26-4523-83fa-53d18b754d5b",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Tong, Pete",
+              "name": "Pete Tong",
+              "type": "Person",
+              "country": "GB",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "quality": "normal",
+        "barcode": "731455578621",
+        "id": "f57069d8-afac-4aa1-9311-8fed0a1d6790",
+        "date": "1998-04-03",
+        "packaging": null,
+        "status": "Official",
+        "country": "GB",
+        "packaging-id": null,
+        "disambiguation": "",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "title": "Essential Selection Spring 1998",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "release-events": [
+          {
+            "date": "1998-04-03",
+            "area": {
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "name": "United Kingdom",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "sort-name": "United Kingdom",
+              "type-id": null,
+              "type": null,
+              "disambiguation": ""
+            }
+          }
+        ],
+        "release-group": {
+          "disambiguation": "",
+          "title": "Essential Selection Spring 1998",
+          "first-release-date": "1998-04-03",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "artist-credit": [
+            {
+              "name": "Pete Tong",
+              "artist": {
+                "disambiguation": "",
+                "type": "Person",
+                "country": "GB",
+                "sort-name": "Tong, Pete",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Pete Tong",
+                "id": "b9585df2-bb26-4523-83fa-53d18b754d5b"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "secondary-types": [
+            "Compilation",
+            "DJ-mix"
+          ],
+          "secondary-type-ids": [
+            "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+            "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+          ],
+          "primary-type": "Album",
+          "id": "e5bf6802-1927-308a-9aff-6de28570b75e"
+        }
+      }
+    ],
+    "id": "dbd0516e-9dbc-4318-abca-d5976e9ce80d"
+  }
+}

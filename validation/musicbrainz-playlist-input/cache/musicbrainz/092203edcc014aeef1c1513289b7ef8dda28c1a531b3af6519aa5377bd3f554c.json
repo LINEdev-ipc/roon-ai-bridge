@@ -1,0 +1,166 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28hell+AND+to+AND+liars+AND+kolsch+AND+remix%29+AND+artistname%3A%22London+Grammar%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:41:55.751Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:41:56.125Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "fdf74bf8-6533-4064-9fe5-e4189816a7cf",
+        "score": 100,
+        "artist-credit-id": "e367a3f9-421c-347f-a52b-f8be85a8d4ca",
+        "title": "Hell to the Liars (Kölsch remix)",
+        "length": 762000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "London Grammar",
+            "artist": {
+              "id": "4dbe08c1-b40a-43b3-ab89-210000bd8ab2",
+              "name": "London Grammar",
+              "sort-name": "London Grammar"
+            }
+          }
+        ],
+        "first-release-date": "2023-07-21",
+        "releases": [
+          {
+            "id": "a0f3ae58-192f-46c9-b01e-0cc583a43881",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "The Remixes",
+            "status": "Official",
+            "release-group": {
+              "id": "476cba20-4228-4e7e-aab5-7e53c07d5946",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Remixes",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-07-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-07-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "a52c7db7-3dd3-3952-92de-92432e2361e5",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "65b935aa-ce00-487b-beb4-68e2c4df1638",
+                    "number": "11",
+                    "title": "Hell to the Liars (Kölsch remix)",
+                    "length": 762000
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 10
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCEN1700219"
+        ]
+      },
+      {
+        "id": "4ff51e4d-e47c-408c-8b47-2ab1793e4386",
+        "score": 100,
+        "artist-credit-id": "e367a3f9-421c-347f-a52b-f8be85a8d4ca",
+        "title": "Hell to the Liars (Kölsch remix)",
+        "length": 761884,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "London Grammar",
+            "artist": {
+              "id": "4dbe08c1-b40a-43b3-ab89-210000bd8ab2",
+              "name": "London Grammar",
+              "sort-name": "London Grammar"
+            }
+          }
+        ],
+        "first-release-date": "2017-09-01",
+        "releases": [
+          {
+            "id": "cc4ae382-ae5b-4a40-a517-f72a92bc5a51",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Hell to the Liars (Kölsch remix)",
+            "status": "Official",
+            "release-group": {
+              "id": "6c29114d-acc0-4765-9519-695d73694dd8",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Hell to the Liars (Kölsch remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2017-09-01",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2017-09-01",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "ae4a6fc6-62bb-39b8-8a8c-9e57bbebfb57",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "70632f87-5db5-46e1-ad74-0b0a540a5116",
+                    "number": "1",
+                    "title": "Hell to the Liars (Kölsch remix)",
+                    "length": 761884
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

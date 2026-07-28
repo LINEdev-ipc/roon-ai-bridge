@@ -1,0 +1,204 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28dub+AND+parade%29+AND+artistname%3A%22High+Tone%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:34:49.723Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:34:49.853Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "6123ba16-0000-41ea-af23-4da978a852ea",
+        "score": 100,
+        "artist-credit-id": "37792ab0-8eab-3233-8051-a876c416495f",
+        "title": "Dub Parade (Zen Mix)",
+        "length": 166489,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " meets ",
+            "name": "High Tone",
+            "artist": {
+              "id": "1291f699-f20e-43c1-9d95-761d7db60b79",
+              "name": "High Tone",
+              "sort-name": "High Tone",
+              "aliases": [
+                {
+                  "sort-name": "Hightone",
+                  "name": "Hightone",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Zenzile",
+            "artist": {
+              "id": "813d273f-a945-4c09-8318-49dba4fd13a4",
+              "name": "Zenzile",
+              "sort-name": "Zenzile",
+              "disambiguation": "French dub",
+              "aliases": [
+                {
+                  "sort-name": "Zenzile Sound System",
+                  "name": "Zenzile Sound System",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2021-11-12",
+        "releases": [
+          {
+            "id": "93894f52-3962-4bde-93c3-fe560f744381",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "37792ab0-8eab-3233-8051-a876c416495f",
+            "count": 2,
+            "title": "Zentone Chapter 2 [Zen Mix]",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " meets ",
+                "name": "High Tone",
+                "artist": {
+                  "id": "1291f699-f20e-43c1-9d95-761d7db60b79",
+                  "name": "High Tone",
+                  "sort-name": "High Tone"
+                }
+              },
+              {
+                "name": "Zenzile",
+                "artist": {
+                  "id": "813d273f-a945-4c09-8318-49dba4fd13a4",
+                  "name": "Zenzile",
+                  "sort-name": "Zenzile",
+                  "disambiguation": "French dub"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fe6e8f6-d998-4761-ae2f-c508b1e0e0eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zentone Chapter 2 [Zen Mix]",
+              "primary-type": "Album"
+            },
+            "date": "2021-11-12",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021-11-12",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "2554c796-d25b-4a66-a240-350f670f4b5f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f535bae8-d208-4ff9-8691-3ef230374e98",
+                    "number": "5",
+                    "title": "Dub Parade (Zen mix)",
+                    "length": 166489
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "aff55736-7f12-4f64-a907-5f576ec4a08f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "37792ab0-8eab-3233-8051-a876c416495f",
+            "count": 1,
+            "title": "Zentone Chapter 2 [Zen Mix]",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " meets ",
+                "name": "High Tone",
+                "artist": {
+                  "id": "1291f699-f20e-43c1-9d95-761d7db60b79",
+                  "name": "High Tone",
+                  "sort-name": "High Tone"
+                }
+              },
+              {
+                "name": "Zenzile",
+                "artist": {
+                  "id": "813d273f-a945-4c09-8318-49dba4fd13a4",
+                  "name": "Zenzile",
+                  "sort-name": "Zenzile",
+                  "disambiguation": "French dub"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0fe6e8f6-d998-4761-ae2f-c508b1e0e0eb",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Zentone Chapter 2 [Zen Mix]",
+              "primary-type": "Album"
+            },
+            "date": "2021-11-12",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021-11-12",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "c69fd8c2-47d8-3ae8-a0ab-a03d7cabe5d3",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9f4e2a1f-085e-4254-bdc1-c29252bccb5f",
+                    "number": "5",
+                    "title": "Dub Parade (Zen Mix)",
+                    "length": 166489
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

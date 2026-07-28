@@ -1,0 +1,198 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/61b49a55-b2c8-45bc-96a7-ef05841f8da2?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:37:03.947Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "genres": [],
+    "length": null,
+    "tags": [],
+    "isrcs": [],
+    "disambiguation": "",
+    "releases": [
+      {
+        "release-events": [
+          {
+            "area": {
+              "name": "United Kingdom",
+              "type": null,
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "disambiguation": "",
+              "sort-name": "United Kingdom",
+              "type-id": null,
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            },
+            "date": "2013-11-15"
+          }
+        ],
+        "genres": [],
+        "tags": [],
+        "country": "GB",
+        "disambiguation": "",
+        "date": "2013-11-15",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "release-group": {
+          "releases": [],
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "country": "GB",
+                "sort-name": "Dubkasm",
+                "disambiguation": "",
+                "type": "Group",
+                "name": "Dubkasm"
+              },
+              "name": "Dubkasm"
+            }
+          ],
+          "title": "Victory!",
+          "primary-type": "EP",
+          "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+          "genres": [],
+          "first-release-date": "2013-11-15",
+          "secondary-type-ids": [],
+          "id": "04a6d6ae-ea71-4275-a4e4-dabbc236cbc1",
+          "secondary-types": [],
+          "tags": []
+        },
+        "title": "Victory!",
+        "barcode": null,
+        "status": "Official",
+        "packaging": null,
+        "id": "d3499459-77fb-4015-a941-d34d0c7c42e8",
+        "artist-credit": [
+          {
+            "artist": {
+              "name": "Dubkasm",
+              "genres": [
+                {
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+                  "count": 1,
+                  "name": "dub",
+                  "disambiguation": ""
+                },
+                {
+                  "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+                  "name": "reggae",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "country": "GB",
+              "sort-name": "Dubkasm",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "name": "dub",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "reggae"
+                }
+              ],
+              "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+              "type": "Group",
+              "disambiguation": ""
+            },
+            "name": "Dubkasm",
+            "joinphrase": ""
+          }
+        ],
+        "media": [
+          {
+            "tracks": [
+              {
+                "title": "Victory!",
+                "number": "A1",
+                "position": 1,
+                "id": "99966f7e-9f45-408f-b7eb-d4ffd402ead1",
+                "length": null,
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "country": "GB",
+                      "sort-name": "Dubkasm",
+                      "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+                      "type": "Group",
+                      "name": "Dubkasm",
+                      "disambiguation": ""
+                    },
+                    "name": "Dubkasm",
+                    "joinphrase": ""
+                  }
+                ]
+              }
+            ],
+            "title": "",
+            "position": 1,
+            "format": "12\" Vinyl",
+            "track-count": 4,
+            "track-offset": 0,
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "id": "cf8cbcc8-128f-3db0-a707-0367314ad79e"
+          }
+        ],
+        "quality": "normal",
+        "packaging-id": null
+      }
+    ],
+    "title": "Victory!",
+    "first-release-date": "2013-11-15",
+    "relations": [],
+    "id": "61b49a55-b2c8-45bc-96a7-ef05841f8da2",
+    "artist-credit": [
+      {
+        "artist": {
+          "country": "GB",
+          "sort-name": "Dubkasm",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "tags": [
+            {
+              "count": 1,
+              "name": "dub"
+            },
+            {
+              "count": 1,
+              "name": "reggae"
+            }
+          ],
+          "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+          "name": "Dubkasm",
+          "genres": [
+            {
+              "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+              "disambiguation": "",
+              "name": "dub",
+              "count": 1
+            },
+            {
+              "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+              "count": 1,
+              "name": "reggae",
+              "disambiguation": ""
+            }
+          ],
+          "type": "Group",
+          "disambiguation": ""
+        },
+        "name": "Dubkasm",
+        "joinphrase": ""
+      }
+    ],
+    "video": false
+  }
+}

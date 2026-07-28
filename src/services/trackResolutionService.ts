@@ -226,6 +226,7 @@ export class TrackResolutionService {
       request.includeExactQuery === false ? "" : exactQuery,
       request.query.trim()
     ].filter(Boolean)));
+    const executedQueries: string[] = [];
     const results: MediaResult[] = [];
     const seen = new Set<string>();
     if (request.preferredResultId) {
@@ -252,6 +253,7 @@ export class TrackResolutionService {
     }
 
     for (const query of queries) {
+      executedQueries.push(query);
       const payload = await this.mediaService.search({
         query,
         types: ["track"],
@@ -274,11 +276,40 @@ export class TrackResolutionService {
     }
 
     if (!results.length) {
-      return { status: "missing", reason: "no_results", selected: null, candidates: [], queries };
+      return {
+        status: "missing",
+        reason: "no_results",
+        selected: null,
+        candidates: [],
+        queries: executedQueries
+      };
     }
 
     const ranked = this.rank(results, request, sourcePreference);
+    return this.classify(ranked, request, executedQueries);
+  }
 
+  reconcile(
+    request: TrackResolutionRequest,
+    results: MediaResult[],
+    queries: string[] = []
+  ): TrackResolution {
+    if (!results.length) {
+      return { status: "missing", reason: "no_results", selected: null, candidates: [], queries };
+    }
+    const ranked = this.rank(
+      results,
+      request,
+      request.sourcePreference || "streaming_first"
+    );
+    return this.classify(ranked, request, queries);
+  }
+
+  private classify(
+    ranked: RankedTrackCandidate[],
+    request: TrackResolutionRequest,
+    queries: string[]
+  ): TrackResolution {
     const best = ranked[0];
     const titleOnlyAmbiguity = !request.artist && ranked.find((candidate) =>
       candidate.result.result_id !== best?.result.result_id &&

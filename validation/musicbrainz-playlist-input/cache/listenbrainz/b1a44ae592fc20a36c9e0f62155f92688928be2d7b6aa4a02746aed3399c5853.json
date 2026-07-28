@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Stand+High+Patrol&recording_name=The+Big+Tree",
+  "fetched_at": "2026-07-28T12:15:38.380Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Stand High Patrol",
+      "recording_arg": "The Big Tree",
+      "artist_credit_name": "Stand High Patrol",
+      "release_name": "Midnight Walkers",
+      "recording_name": "The Big Tree",
+      "artist_credit_id": 965413,
+      "artist_mbids": [
+        "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4"
+      ],
+      "release_mbid": "0dee388b-d4a6-4537-bbd6-7d11bc817741",
+      "recording_mbid": "f74edb53-344c-4f93-91c6-48c3f77054c8"
+    }
+  ]
+}

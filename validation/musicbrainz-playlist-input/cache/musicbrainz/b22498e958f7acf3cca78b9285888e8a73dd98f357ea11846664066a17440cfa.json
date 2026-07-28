@@ -1,0 +1,107 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/7c3b71b0-55d0-48c7-b2fb-4beb572c1787?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:16:16.197Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "id": "7c3b71b0-55d0-48c7-b2fb-4beb572c1787",
+    "first-release-date": "2014",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "name": "Enrique Iglesias",
+        "artist": {
+          "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "ES",
+          "type": "Person",
+          "name": "Enrique Iglesias",
+          "sort-name": "Iglesias, Enrique",
+          "disambiguation": "Spanish pop singer"
+        }
+      }
+    ],
+    "releases": [
+      {
+        "quality": "normal",
+        "date": "2014",
+        "packaging-id": null,
+        "title": "Sex And Love",
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Enrique Iglesias",
+            "artist": {
+              "country": "ES",
+              "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "disambiguation": "Spanish pop singer",
+              "type": "Person",
+              "name": "Enrique Iglesias",
+              "sort-name": "Iglesias, Enrique"
+            }
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "name": "Europe",
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "type": null,
+              "sort-name": "Europe",
+              "disambiguation": "",
+              "type-id": null
+            },
+            "date": "2014"
+          }
+        ],
+        "country": "XE",
+        "release-group": {
+          "primary-type": "Album",
+          "disambiguation": "",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "title": "Sex and Love",
+          "releases": [],
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Enrique Iglesias",
+              "artist": {
+                "id": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "ES",
+                "type": "Person",
+                "name": "Enrique Iglesias",
+                "sort-name": "Iglesias, Enrique",
+                "disambiguation": "Spanish pop singer"
+              }
+            }
+          ],
+          "id": "8435582f-2e7b-4bb1-8614-89fa8312ea1a",
+          "first-release-date": "2014-03-13",
+          "secondary-type-ids": []
+        },
+        "status-id": null,
+        "text-representation": {
+          "language": null,
+          "script": null
+        },
+        "disambiguation": "",
+        "barcode": "602537761302",
+        "status": null,
+        "packaging": null,
+        "id": "baba28f4-2ea9-49a4-8ccb-4d907f618f8f"
+      }
+    ],
+    "video": false,
+    "title": "Bailando",
+    "length": 243000,
+    "disambiguation": ""
+  }
+}

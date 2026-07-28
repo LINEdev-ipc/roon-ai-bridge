@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Moderat&recording_name=Bad+Kingdom+%28DJ+Koze+Remix%29&release_name=Bad+Kingdom+Remixes",
+  "fetched_at": "2026-07-28T14:41:50.637Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Moderat",
+      "recording_arg": "Bad Kingdom (DJ Koze Remix)",
+      "artist_credit_name": "Moderat",
+      "release_name": "Bad Kingdom Remixes",
+      "recording_name": "Bad Kingdom (DJ Koze Remix)",
+      "artist_credit_id": 334869,
+      "artist_mbids": [
+        "7754905b-8bf7-48e2-935a-03d566fec464"
+      ],
+      "release_mbid": "b3a85396-4678-406e-ae86-193009e47e9e",
+      "recording_mbid": "7feb34c3-739e-4ec3-8663-fcd3b03111b4"
+    }
+  ]
+}

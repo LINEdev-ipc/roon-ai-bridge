@@ -1,0 +1,695 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/f74edb53-344c-4f93-91c6-48c3f77054c8?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:37:31.484Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "first-release-date": "2012-01-20",
+    "title": "The Big Tree",
+    "tags": [],
+    "video": false,
+    "isrcs": [
+      "DEZ651119808"
+    ],
+    "id": "f74edb53-344c-4f93-91c6-48c3f77054c8",
+    "length": 241000,
+    "genres": [],
+    "releases": [
+      {
+        "tags": [
+          {
+            "name": "contemporary reggae",
+            "count": 1
+          },
+          {
+            "count": 2,
+            "name": "dub"
+          },
+          {
+            "name": "france",
+            "count": 1
+          },
+          {
+            "name": "hip-hop/rap",
+            "count": 1
+          },
+          {
+            "name": "reggae",
+            "count": 2
+          }
+        ],
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "type-id": null,
+              "name": "[Worldwide]",
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "type": null
+            },
+            "date": "2012-01-20"
+          }
+        ],
+        "barcode": null,
+        "date": "2012-01-20",
+        "title": "Midnight walkers",
+        "packaging": null,
+        "status": "Official",
+        "release-group": {
+          "first-release-date": "2012-01-20",
+          "secondary-type-ids": [],
+          "title": "Midnight Walkers",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "primary-type": "Album",
+          "tags": [],
+          "secondary-types": [],
+          "id": "c947e5e4-bf2e-4072-a97a-ff3591bbc3fe",
+          "genres": [],
+          "artist-credit": [
+            {
+              "name": "Stand High Patrol",
+              "artist": {
+                "country": "FR",
+                "type": "Group",
+                "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+                "disambiguation": "",
+                "sort-name": "Stand High Patrol",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Stand High Patrol"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "disambiguation": ""
+        },
+        "packaging-id": null,
+        "disambiguation": "",
+        "artist-credit": [
+          {
+            "name": "Stand High Patrol",
+            "joinphrase": "",
+            "artist": {
+              "type": "Group",
+              "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+              "country": "FR",
+              "tags": [
+                {
+                  "name": "dub",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "name": "reggae",
+                  "count": 1
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Stand High Patrol",
+              "genres": [
+                {
+                  "name": "dub",
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+                  "name": "reggae"
+                }
+              ],
+              "sort-name": "Stand High Patrol",
+              "disambiguation": ""
+            }
+          }
+        ],
+        "text-representation": {
+          "script": null,
+          "language": null
+        },
+        "genres": [
+          {
+            "count": 2,
+            "disambiguation": "",
+            "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+            "name": "dub"
+          },
+          {
+            "disambiguation": "",
+            "count": 2,
+            "name": "reggae",
+            "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb"
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "title": "",
+            "position": 1,
+            "format": "Digital Media",
+            "track-offset": 7,
+            "id": "01fcd1d1-3dfe-3ad5-a168-10a9f8b617f7",
+            "track-count": 13,
+            "tracks": [
+              {
+                "title": "The Big Tree",
+                "position": 8,
+                "length": 241000,
+                "id": "357ff2b0-8db5-425b-970d-6e993074448a",
+                "number": "8",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "country": "FR",
+                      "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+                      "type": "Group",
+                      "sort-name": "Stand High Patrol",
+                      "disambiguation": "",
+                      "name": "Stand High Patrol",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+                    },
+                    "joinphrase": "",
+                    "name": "Stand High Patrol"
+                  }
+                ]
+              }
+            ],
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+          }
+        ],
+        "quality": "normal",
+        "country": "XW",
+        "id": "6f88ea6d-5057-4e51-bf64-9aab455f1188"
+      },
+      {
+        "status": "Official",
+        "packaging": "None",
+        "title": "Midnight Walkers",
+        "date": "2012-01-20",
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "France",
+              "disambiguation": "",
+              "name": "France",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "id": "08310658-51eb-3801-80de-5a0739207115",
+              "type": null
+            },
+            "date": "2012-01-20"
+          }
+        ],
+        "barcode": null,
+        "tags": [],
+        "id": "b32418c5-68d2-4c94-8217-647ac36a6391",
+        "country": "FR",
+        "quality": "normal",
+        "media": [
+          {
+            "tracks": [
+              {
+                "title": "The Big Tree",
+                "length": 241000,
+                "position": 8,
+                "id": "1d203677-8173-32c4-942f-5b0fd537b1a9",
+                "number": "8",
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "name": "Stand High Patrol",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "sort-name": "Stand High Patrol",
+                      "disambiguation": "",
+                      "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+                      "type": "Group",
+                      "country": "FR"
+                    },
+                    "joinphrase": "",
+                    "name": "Stand High Patrol"
+                  }
+                ]
+              }
+            ],
+            "track-count": 13,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "title": "",
+            "position": 1,
+            "id": "9934681d-a8aa-34ae-95c6-8c7ffa801567",
+            "format": "Digital Media",
+            "track-offset": 7
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "genres": [],
+        "artist-credit": [
+          {
+            "name": "Stand High Patrol",
+            "joinphrase": "",
+            "artist": {
+              "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+              "type": "Group",
+              "country": "FR",
+              "genres": [
+                {
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+                  "name": "dub",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+                  "name": "reggae"
+                }
+              ],
+              "tags": [
+                {
+                  "name": "dub",
+                  "count": 1
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "name": "reggae",
+                  "count": 1
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "name": "Stand High Patrol",
+              "disambiguation": "",
+              "sort-name": "Stand High Patrol"
+            }
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "release-group": {
+          "secondary-type-ids": [],
+          "first-release-date": "2012-01-20",
+          "title": "Midnight Walkers",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "id": "c947e5e4-bf2e-4072-a97a-ff3591bbc3fe",
+          "artist-credit": [
+            {
+              "name": "Stand High Patrol",
+              "artist": {
+                "disambiguation": "",
+                "sort-name": "Stand High Patrol",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Stand High Patrol",
+                "country": "FR",
+                "type": "Group",
+                "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": ""
+        }
+      },
+      {
+        "tags": [],
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "name": "[Worldwide]",
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "type": null,
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+            },
+            "date": "2012-01-20"
+          }
+        ],
+        "barcode": "4050486063743",
+        "packaging": "None",
+        "status": "Official",
+        "date": "2012-01-20",
+        "title": "Midnight Walkers",
+        "artist-credit": [
+          {
+            "name": "Stand High Patrol",
+            "joinphrase": "",
+            "artist": {
+              "country": "FR",
+              "type": "Group",
+              "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+              "sort-name": "Stand High Patrol",
+              "disambiguation": "",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "dub"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                },
+                {
+                  "name": "reggae",
+                  "count": 1
+                }
+              ],
+              "name": "Stand High Patrol",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+                  "name": "dub"
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+                  "name": "reggae",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ]
+            }
+          }
+        ],
+        "text-representation": {
+          "language": null,
+          "script": "Latn"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "tracks": [
+              {
+                "id": "77b93fc2-473c-4650-9e41-235eb28b82c5",
+                "number": "8",
+                "artist-credit": [
+                  {
+                    "name": "Stand High Patrol",
+                    "artist": {
+                      "sort-name": "Stand High Patrol",
+                      "disambiguation": "",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Stand High Patrol",
+                      "country": "FR",
+                      "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+                      "type": "Group"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "length": 241000,
+                "title": "The Big Tree",
+                "position": 8
+              }
+            ],
+            "track-count": 13,
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "title": "",
+            "position": 1,
+            "id": "0e905b4c-6d00-4c41-b6e2-5e574b533791",
+            "track-offset": 7,
+            "format": "Digital Media"
+          }
+        ],
+        "release-group": {
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "first-release-date": "2012-01-20",
+          "secondary-type-ids": [],
+          "title": "Midnight Walkers",
+          "artist-credit": [
+            {
+              "name": "Stand High Patrol",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "",
+                "sort-name": "Stand High Patrol",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Stand High Patrol",
+                "country": "FR",
+                "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+                "type": "Group"
+              }
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": "",
+          "id": "c947e5e4-bf2e-4072-a97a-ff3591bbc3fe"
+        },
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "disambiguation": "",
+        "id": "9484fac6-1648-4987-83fc-3d7361b8d7c6",
+        "quality": "normal",
+        "country": "XW"
+      },
+      {
+        "title": "Midnight Walkers",
+        "date": "",
+        "status": "Official",
+        "packaging": null,
+        "barcode": null,
+        "release-events": [
+          {
+            "area": {
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "FR"
+              ],
+              "name": "France",
+              "sort-name": "France",
+              "disambiguation": "",
+              "type": null,
+              "id": "08310658-51eb-3801-80de-5a0739207115"
+            },
+            "date": ""
+          }
+        ],
+        "tags": [],
+        "quality": "normal",
+        "country": "FR",
+        "id": "0dee388b-d4a6-4537-bbd6-7d11bc817741",
+        "packaging-id": null,
+        "disambiguation": "",
+        "release-group": {
+          "genres": [],
+          "artist-credit": [
+            {
+              "artist": {
+                "name": "Stand High Patrol",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "sort-name": "Stand High Patrol",
+                "type": "Group",
+                "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+                "country": "FR"
+              },
+              "joinphrase": "",
+              "name": "Stand High Patrol"
+            }
+          ],
+          "releases": [],
+          "disambiguation": "",
+          "id": "c947e5e4-bf2e-4072-a97a-ff3591bbc3fe",
+          "primary-type": "Album",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "first-release-date": "2012-01-20",
+          "title": "Midnight Walkers"
+        },
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 13,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "name": "Stand High Patrol",
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Stand High Patrol",
+                      "disambiguation": "",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Stand High Patrol",
+                      "country": "FR",
+                      "type": "Group",
+                      "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4"
+                    }
+                  }
+                ],
+                "id": "e7690ab9-7811-4b65-9f22-d9362e5045c4",
+                "number": "8",
+                "length": 241000,
+                "title": "The Big Tree",
+                "position": 8
+              }
+            ],
+            "format": "CD",
+            "track-offset": 7,
+            "id": "2b58b2c2-b4ce-3b55-9547-a24680a61423",
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "artist-credit": [
+          {
+            "artist": {
+              "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+              "type": "Group",
+              "country": "FR",
+              "genres": [
+                {
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+                  "name": "dub",
+                  "disambiguation": "",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic"
+                },
+                {
+                  "name": "reggae",
+                  "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+                  "disambiguation": "",
+                  "count": 1
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "dub"
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                },
+                {
+                  "name": "reggae",
+                  "count": 1
+                }
+              ],
+              "name": "Stand High Patrol",
+              "sort-name": "Stand High Patrol",
+              "disambiguation": ""
+            },
+            "joinphrase": "",
+            "name": "Stand High Patrol"
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "genres": []
+      }
+    ],
+    "artist-credit": [
+      {
+        "name": "Stand High Patrol",
+        "artist": {
+          "name": "Stand High Patrol",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "tags": [
+            {
+              "name": "dub",
+              "count": 1
+            },
+            {
+              "count": 1,
+              "name": "electronic"
+            },
+            {
+              "name": "reggae",
+              "count": 1
+            }
+          ],
+          "genres": [
+            {
+              "name": "dub",
+              "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+              "disambiguation": "",
+              "count": 1
+            },
+            {
+              "name": "electronic",
+              "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+              "disambiguation": "",
+              "count": 1
+            },
+            {
+              "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+              "name": "reggae",
+              "disambiguation": "",
+              "count": 1
+            }
+          ],
+          "sort-name": "Stand High Patrol",
+          "disambiguation": "",
+          "type": "Group",
+          "id": "6d6e26a8-e747-4a99-bdc7-ea73aa6a2bd4",
+          "country": "FR"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "relations": [],
+    "disambiguation": ""
+  }
+}

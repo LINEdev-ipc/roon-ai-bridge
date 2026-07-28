@@ -1,0 +1,631 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/3e8622a7-8baf-48ac-a708-34502365e30f?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:36:48.790Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "video": false,
+    "first-release-date": "2008-08-20",
+    "title": "Azmari Dub",
+    "relations": [
+      {
+        "begin": null,
+        "attribute-values": {},
+        "target-type": "work",
+        "attributes": [],
+        "type-id": "a3005666-a872-32c3-ad06-98af558e99b0",
+        "type": "performance",
+        "source-credit": "",
+        "target-credit": "",
+        "work": {
+          "id": "f44149bc-f0be-4da8-a060-92b764555d39",
+          "iswcs": [],
+          "languages": [],
+          "language": null,
+          "title": "Azmari Dub",
+          "disambiguation": "",
+          "type": "Song",
+          "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+          "attributes": []
+        },
+        "attribute-ids": {},
+        "end": null,
+        "direction": "forward",
+        "ended": false
+      }
+    ],
+    "tags": [
+      {
+        "name": "dub",
+        "count": 2
+      },
+      {
+        "count": 1,
+        "name": "electronic"
+      },
+      {
+        "count": 1,
+        "name": "hip hop"
+      },
+      {
+        "name": "reggae",
+        "count": 3
+      },
+      {
+        "name": "world-fusion",
+        "count": 1
+      }
+    ],
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+          "sort-name": "Dub Colossus",
+          "name": "Dub Colossus",
+          "country": "GB",
+          "tags": [
+            {
+              "count": 1,
+              "name": "ambient dub"
+            },
+            {
+              "count": 1,
+              "name": "club"
+            },
+            {
+              "name": "dub",
+              "count": 3
+            },
+            {
+              "count": 1,
+              "name": "electronic"
+            }
+          ],
+          "disambiguation": "",
+          "type": "Group",
+          "genres": [
+            {
+              "name": "ambient dub",
+              "id": "9c143ab1-1506-4134-ba40-1660fbad7f51",
+              "count": 1,
+              "disambiguation": ""
+            },
+            {
+              "name": "club",
+              "id": "bab69b07-8bb9-4415-b666-c37609cef80b",
+              "count": 1,
+              "disambiguation": ""
+            },
+            {
+              "name": "dub",
+              "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+              "disambiguation": "",
+              "count": 3
+            },
+            {
+              "disambiguation": "",
+              "count": 1,
+              "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+              "name": "electronic"
+            }
+          ],
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+        },
+        "name": "Dub Colossus"
+      }
+    ],
+    "disambiguation": "",
+    "releases": [
+      {
+        "date": "2008-08-20",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "id": "d0c3bf4a-f4cc-4824-a81c-40c38f383fd0",
+        "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+        "quality": "normal",
+        "genres": [],
+        "release-events": [
+          {
+            "area": {
+              "disambiguation": "",
+              "type": null,
+              "type-id": null,
+              "name": "United Kingdom",
+              "sort-name": "United Kingdom",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+            },
+            "date": "2008-08-20"
+          }
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Dub Colossus",
+            "artist": {
+              "sort-name": "Dub Colossus",
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+              "disambiguation": "",
+              "type": "Group",
+              "genres": [
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "id": "9c143ab1-1506-4134-ba40-1660fbad7f51",
+                  "name": "ambient dub"
+                },
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "club",
+                  "id": "bab69b07-8bb9-4415-b666-c37609cef80b"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "dub",
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5"
+                },
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "name": "electronic"
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "name": "ambient dub",
+                  "count": 1
+                },
+                {
+                  "count": 1,
+                  "name": "club"
+                },
+                {
+                  "name": "dub",
+                  "count": 3
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                }
+              ],
+              "country": "GB",
+              "name": "Dub Colossus"
+            }
+          }
+        ],
+        "tags": [],
+        "packaging": "Digipak",
+        "title": "In a Town Called Addis",
+        "media": [
+          {
+            "title": "",
+            "position": 1,
+            "tracks": [
+              {
+                "id": "edd19cc2-8bf5-342f-937c-3b20b81c3916",
+                "position": 1,
+                "length": 305000,
+                "number": "1",
+                "title": "Azmari Dub",
+                "artist-credit": [
+                  {
+                    "joinphrase": "",
+                    "artist": {
+                      "sort-name": "Dub Colossus",
+                      "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                      "disambiguation": "",
+                      "type": "Group",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "name": "Dub Colossus",
+                      "country": "GB"
+                    },
+                    "name": "Dub Colossus"
+                  }
+                ]
+              }
+            ],
+            "track-count": 13,
+            "track-offset": 0,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "id": "bfc04677-d75b-32cf-8df1-4ce08ad4eb92",
+            "format": "CD"
+          }
+        ],
+        "status": "Official",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "disambiguation": "",
+        "barcode": "5037005000310",
+        "release-group": {
+          "primary-type": "Album",
+          "genres": [],
+          "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73",
+          "first-release-date": "2008-08-20",
+          "title": "A Town Called Addis",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "tags": [],
+          "artist-credit": [
+            {
+              "name": "Dub Colossus",
+              "artist": {
+                "name": "Dub Colossus",
+                "country": "GB",
+                "type": "Group",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                "sort-name": "Dub Colossus"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "releases": [],
+          "secondary-type-ids": [],
+          "secondary-types": []
+        },
+        "country": "GB"
+      },
+      {
+        "country": "GB",
+        "barcode": "",
+        "release-group": {
+          "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73",
+          "genres": [],
+          "primary-type": "Album",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "releases": [],
+          "first-release-date": "2008-08-20",
+          "disambiguation": "",
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "type": "Group",
+                "name": "Dub Colossus",
+                "country": "GB",
+                "sort-name": "Dub Colossus",
+                "id": "aedc2e46-da48-43df-885a-b23dc051ee8c"
+              },
+              "name": "Dub Colossus"
+            }
+          ],
+          "title": "A Town Called Addis"
+        },
+        "media": [
+          {
+            "format": "Digital Media",
+            "id": "2f746ff3-c886-3421-8116-284a7f2c7c27",
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "track-offset": 0,
+            "track-count": 11,
+            "tracks": [
+              {
+                "artist-credit": [
+                  {
+                    "artist": {
+                      "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                      "sort-name": "Dub Colossus",
+                      "country": "GB",
+                      "name": "Dub Colossus",
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "type": "Group",
+                      "disambiguation": ""
+                    },
+                    "name": "Dub Colossus",
+                    "joinphrase": ""
+                  }
+                ],
+                "title": "Azmari Dub",
+                "length": 305000,
+                "number": "1",
+                "position": 1,
+                "id": "2b87e517-cbe6-332e-ac0e-a93452a73245"
+              }
+            ],
+            "position": 1,
+            "title": ""
+          }
+        ],
+        "disambiguation": "",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "status": "Official",
+        "tags": [],
+        "packaging": "None",
+        "artist-credit": [
+          {
+            "joinphrase": "",
+            "name": "Dub Colossus",
+            "artist": {
+              "tags": [
+                {
+                  "name": "ambient dub",
+                  "count": 1
+                },
+                {
+                  "name": "club",
+                  "count": 1
+                },
+                {
+                  "count": 3,
+                  "name": "dub"
+                },
+                {
+                  "count": 1,
+                  "name": "electronic"
+                }
+              ],
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "disambiguation": "",
+              "type": "Group",
+              "genres": [
+                {
+                  "count": 1,
+                  "disambiguation": "",
+                  "name": "ambient dub",
+                  "id": "9c143ab1-1506-4134-ba40-1660fbad7f51"
+                },
+                {
+                  "id": "bab69b07-8bb9-4415-b666-c37609cef80b",
+                  "name": "club",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "disambiguation": "",
+                  "count": 3,
+                  "name": "dub",
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5"
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "name": "Dub Colossus",
+              "country": "GB",
+              "sort-name": "Dub Colossus",
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c"
+            }
+          }
+        ],
+        "title": "A Town Called Addis",
+        "release-events": [
+          {
+            "date": "2008-08",
+            "area": {
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "sort-name": "United Kingdom",
+              "name": "United Kingdom",
+              "disambiguation": "",
+              "type": null,
+              "type-id": null
+            }
+          }
+        ],
+        "genres": [],
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "quality": "normal",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "id": "322a10fd-7d39-475d-b650-7fd1a1631f7c",
+        "date": "2008-08"
+      },
+      {
+        "media": [
+          {
+            "track-offset": 0,
+            "format": "Digital Media",
+            "id": "5c2604a4-ddad-36db-9021-199913959ffa",
+            "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+            "title": "",
+            "track-count": 13,
+            "tracks": [
+              {
+                "title": "Azmari Dub",
+                "artist-credit": [
+                  {
+                    "name": "Dub Colossus",
+                    "artist": {
+                      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                      "disambiguation": "",
+                      "type": "Group",
+                      "country": "GB",
+                      "name": "Dub Colossus",
+                      "sort-name": "Dub Colossus",
+                      "id": "aedc2e46-da48-43df-885a-b23dc051ee8c"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "position": 1,
+                "id": "0c01ff13-9c97-4ffe-b139-cb2d55a8eb0e",
+                "number": "1",
+                "length": 305044
+              }
+            ],
+            "position": 1
+          }
+        ],
+        "disambiguation": "",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "status": "Official",
+        "artist-credit": [
+          {
+            "artist": {
+              "country": "GB",
+              "name": "Dub Colossus",
+              "type": "Group",
+              "genres": [
+                {
+                  "disambiguation": "",
+                  "count": 1,
+                  "id": "9c143ab1-1506-4134-ba40-1660fbad7f51",
+                  "name": "ambient dub"
+                },
+                {
+                  "name": "club",
+                  "id": "bab69b07-8bb9-4415-b666-c37609cef80b",
+                  "count": 1,
+                  "disambiguation": ""
+                },
+                {
+                  "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+                  "name": "dub",
+                  "count": 3,
+                  "disambiguation": ""
+                },
+                {
+                  "name": "electronic",
+                  "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+                  "count": 1,
+                  "disambiguation": ""
+                }
+              ],
+              "disambiguation": "",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "ambient dub"
+                },
+                {
+                  "count": 1,
+                  "name": "club"
+                },
+                {
+                  "name": "dub",
+                  "count": 3
+                },
+                {
+                  "name": "electronic",
+                  "count": 1
+                }
+              ],
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+              "sort-name": "Dub Colossus"
+            },
+            "name": "Dub Colossus",
+            "joinphrase": ""
+          }
+        ],
+        "tags": [
+          {
+            "name": "united kingdom",
+            "count": 1
+          }
+        ],
+        "packaging": "None",
+        "title": "A Town Called Addis",
+        "country": "XW",
+        "barcode": null,
+        "release-group": {
+          "first-release-date": "2008-08-20",
+          "disambiguation": "",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Dub Colossus",
+                "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                "type": "Group",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "country": "GB",
+                "name": "Dub Colossus"
+              },
+              "name": "Dub Colossus"
+            }
+          ],
+          "tags": [],
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "title": "A Town Called Addis",
+          "secondary-types": [],
+          "secondary-type-ids": [],
+          "releases": [],
+          "genres": [],
+          "primary-type": "Album",
+          "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73"
+        },
+        "release-events": [
+          {
+            "date": "2019-09-24",
+            "area": {
+              "iso-3166-1-codes": [
+                "XW"
+              ],
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "sort-name": "[Worldwide]",
+              "name": "[Worldwide]",
+              "type-id": null,
+              "disambiguation": "",
+              "type": null
+            }
+          }
+        ],
+        "genres": [],
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "quality": "normal",
+        "date": "2019-09-24",
+        "id": "417886ec-c58d-4313-a67c-73127d94460d",
+        "text-representation": {
+          "language": "mul",
+          "script": "Latn"
+        }
+      }
+    ],
+    "length": 305000,
+    "isrcs": [
+      "GBTVV0700001"
+    ],
+    "genres": [
+      {
+        "id": "c72a5d45-75a8-4b35-9f48-67e49eb4b5e5",
+        "name": "dub",
+        "disambiguation": "",
+        "count": 2
+      },
+      {
+        "name": "electronic",
+        "id": "89255676-1f14-4dd8-bbad-fca839d6aff4",
+        "disambiguation": "",
+        "count": 1
+      },
+      {
+        "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c",
+        "name": "hip hop",
+        "disambiguation": "",
+        "count": 1
+      },
+      {
+        "disambiguation": "",
+        "count": 3,
+        "id": "02b2f720-d06e-42ce-85c2-1ecd4191ffcb",
+        "name": "reggae"
+      }
+    ],
+    "id": "3e8622a7-8baf-48ac-a708-34502365e30f"
+  }
+}

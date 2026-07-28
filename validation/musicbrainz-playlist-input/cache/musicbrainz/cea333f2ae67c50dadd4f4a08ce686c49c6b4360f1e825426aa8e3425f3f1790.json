@@ -1,0 +1,74 @@
+{
+  "url": "https://musicbrainz.org/ws/2/work/f983addd-59ca-44df-998c-8075a2a69f42?inc=artist-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:40:11.411Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "genres": [],
+    "languages": [
+      "spa",
+      "fra"
+    ],
+    "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+    "relations": [
+      {
+        "target-type": "artist",
+        "target-credit": "",
+        "begin": null,
+        "attributes": [],
+        "ended": false,
+        "direction": "backward",
+        "artist": {
+          "disambiguation": "French singer‐songwriter",
+          "sort-name": "Chao, Manu",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Manu Chao",
+          "country": "FR",
+          "type": "Person",
+          "id": "7570a0dd-5a67-401b-b19a-261eee01a284"
+        },
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "attribute-ids": {},
+        "end": null,
+        "source-credit": "",
+        "attribute-values": {},
+        "type": "composer"
+      },
+      {
+        "direction": "backward",
+        "ended": false,
+        "attributes": [],
+        "begin": null,
+        "target-credit": "",
+        "target-type": "artist",
+        "type": "lyricist",
+        "attribute-values": {},
+        "source-credit": "",
+        "end": null,
+        "attribute-ids": {},
+        "type-id": "3e48faba-ec01-47fd-8e89-30e81161661c",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Manu Chao",
+          "disambiguation": "French singer‐songwriter",
+          "sort-name": "Chao, Manu",
+          "type": "Person",
+          "id": "7570a0dd-5a67-401b-b19a-261eee01a284",
+          "country": "FR"
+        }
+      }
+    ],
+    "disambiguation": "",
+    "iswcs": [
+      "T-003.852.330-6"
+    ],
+    "language": "mul",
+    "id": "f983addd-59ca-44df-998c-8075a2a69f42",
+    "type": "Song",
+    "tags": [],
+    "attributes": [],
+    "title": "Me gustas tú"
+  }
+}

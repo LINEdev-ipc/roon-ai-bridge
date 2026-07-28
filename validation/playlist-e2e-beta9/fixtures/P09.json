@@ -1,0 +1,2437 @@
+{
+  "prompt_id": "P09",
+  "prompt": "Crea una playlist de 100 clásicos variados de los años 60, 70 y 80.",
+  "tool": "roon_save_playlist",
+  "arguments": {
+    "name": "Beta 9 P09",
+    "description": "Crea una playlist de 100 clásicos variados de los años 60, 70 y 80.",
+    "desired_count": 100,
+    "selection_complexity": "standard",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "candidate_id": "P09-001",
+        "role": "primary",
+        "title": "It’s Not Easy",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Aftermath",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000258"
+        }
+      },
+      {
+        "candidate_id": "P09-002",
+        "role": "primary",
+        "title": "High and Dry",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Aftermath",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000047"
+        }
+      },
+      {
+        "candidate_id": "P09-003",
+        "role": "primary",
+        "title": "Homesick",
+        "artist_credit": "The Cure",
+        "required_credits": [
+          {
+            "name": "The Cure",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Disintegration",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000883"
+        }
+      },
+      {
+        "candidate_id": "P09-004",
+        "role": "primary",
+        "title": "He’s Misstra Know‐It‐All",
+        "artist_credit": "Stevie Wonder",
+        "required_credits": [
+          {
+            "name": "Stevie Wonder",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Innervisions",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001614"
+        }
+      },
+      {
+        "candidate_id": "P09-005",
+        "role": "primary",
+        "title": "P.Y.T. (Pretty Young Thing)",
+        "artist_credit": "Michael Jackson",
+        "required_credits": [
+          {
+            "name": "Michael Jackson",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Thriller",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000218"
+        }
+      },
+      {
+        "candidate_id": "P09-006",
+        "role": "primary",
+        "title": "Hoodoo Man Blues",
+        "artist_credit": "Junior Wells’ Chicago Blues Band, Buddy Guy",
+        "required_credits": [
+          {
+            "name": "Junior Wells’ Chicago Blues Band",
+            "role": "primary"
+          },
+          {
+            "name": "Buddy Guy",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Hoodoo Man Blues",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001603"
+        }
+      },
+      {
+        "candidate_id": "P09-007",
+        "role": "primary",
+        "title": "Negativland",
+        "artist_credit": "Neu!",
+        "required_credits": [
+          {
+            "name": "Neu!",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Neu!",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001728"
+        }
+      },
+      {
+        "candidate_id": "P09-008",
+        "role": "primary",
+        "title": "Bigmouth Strikes Again",
+        "artist_credit": "The Smiths",
+        "required_credits": [
+          {
+            "name": "The Smiths",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Queen Is Dead",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001903"
+        }
+      },
+      {
+        "candidate_id": "P09-009",
+        "role": "primary",
+        "title": "Star",
+        "artist_credit": "David Bowie",
+        "required_credits": [
+          {
+            "name": "David Bowie",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000174"
+        }
+      },
+      {
+        "candidate_id": "P09-010",
+        "role": "primary",
+        "title": "Testify",
+        "artist_credit": "Stevie Ray Vaughan and Double Trouble",
+        "required_credits": [
+          {
+            "name": "Stevie Ray Vaughan and Double Trouble",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Texas Flood",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000803"
+        }
+      },
+      {
+        "candidate_id": "P09-011",
+        "role": "primary",
+        "title": "Necrophobic",
+        "artist_credit": "Slayer",
+        "required_credits": [
+          {
+            "name": "Slayer",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Reign in Blood",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001994"
+        }
+      },
+      {
+        "candidate_id": "P09-012",
+        "role": "primary",
+        "title": "Pride and Joy",
+        "artist_credit": "Stevie Ray Vaughan and Double Trouble",
+        "required_credits": [
+          {
+            "name": "Stevie Ray Vaughan and Double Trouble",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Texas Flood",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000635"
+        }
+      },
+      {
+        "candidate_id": "P09-013",
+        "role": "primary",
+        "title": "Any Colour You Like",
+        "artist_credit": "Pink Floyd",
+        "required_credits": [
+          {
+            "name": "Pink Floyd",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Dark Side of the Moon",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000018"
+        }
+      },
+      {
+        "candidate_id": "P09-014",
+        "role": "primary",
+        "title": "Samba de Orly",
+        "artist_credit": "Chico Buarque",
+        "required_credits": [
+          {
+            "name": "Chico Buarque",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Construção",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002185"
+        }
+      },
+      {
+        "candidate_id": "P09-015",
+        "role": "primary",
+        "title": "Tong Poo",
+        "artist_credit": "Yellow Magic Orchestra",
+        "required_credits": [
+          {
+            "name": "Yellow Magic Orchestra",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Yellow Magic Orchestra",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001562"
+        }
+      },
+      {
+        "candidate_id": "P09-016",
+        "role": "primary",
+        "title": "The Walls Converge",
+        "artist_credit": "London Symphony Orchestra, John Williams",
+        "required_credits": [
+          {
+            "name": "London Symphony Orchestra",
+            "role": "primary"
+          },
+          {
+            "name": "John Williams",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Star Wars",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000925"
+        }
+      },
+      {
+        "candidate_id": "P09-017",
+        "role": "primary",
+        "title": "The Morning Fog",
+        "artist_credit": "Kate Bush",
+        "required_credits": [
+          {
+            "name": "Kate Bush",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Hounds of Love",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000044"
+        }
+      },
+      {
+        "candidate_id": "P09-018",
+        "role": "primary",
+        "title": "Something",
+        "artist_credit": "The Beatles",
+        "required_credits": [
+          {
+            "name": "The Beatles",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Abbey Road",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000290"
+        }
+      },
+      {
+        "candidate_id": "P09-019",
+        "role": "primary",
+        "title": "Won’t Get Fooled Again",
+        "artist_credit": "The Who",
+        "required_credits": [
+          {
+            "name": "The Who",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Who’s Next",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000184"
+        }
+      },
+      {
+        "candidate_id": "P09-020",
+        "role": "primary",
+        "title": "Pedro Navaja",
+        "artist_credit": "Willie Colón, Rubén Blades",
+        "required_credits": [
+          {
+            "name": "Willie Colón",
+            "role": "primary"
+          },
+          {
+            "name": "Rubén Blades",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Siembra",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000692"
+        }
+      },
+      {
+        "candidate_id": "P09-021",
+        "role": "primary",
+        "title": "Trip Through Your Wires",
+        "artist_credit": "U2",
+        "required_credits": [
+          {
+            "name": "U2",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Joshua Tree",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000096"
+        }
+      },
+      {
+        "candidate_id": "P09-022",
+        "role": "primary",
+        "title": "Plateado sobre plateado (Huellas en el mar)",
+        "artist_credit": "Charly García",
+        "required_credits": [
+          {
+            "name": "Charly García",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Clics modernos",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001920"
+        }
+      },
+      {
+        "candidate_id": "P09-023",
+        "role": "primary",
+        "title": "Moonage Daydream",
+        "artist_credit": "David Bowie",
+        "required_credits": [
+          {
+            "name": "David Bowie",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000230"
+        }
+      },
+      {
+        "candidate_id": "P09-024",
+        "role": "primary",
+        "title": "Rap del exilio",
+        "artist_credit": "Charly García",
+        "required_credits": [
+          {
+            "name": "Charly García",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Piano bar",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002230"
+        }
+      },
+      {
+        "candidate_id": "P09-025",
+        "role": "primary",
+        "title": "Birdland",
+        "artist_credit": "Patti Smith",
+        "required_credits": [
+          {
+            "name": "Patti Smith",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Horses",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001756"
+        }
+      },
+      {
+        "candidate_id": "P09-026",
+        "role": "primary",
+        "title": "Alguna vez voy a ser libre",
+        "artist_credit": "Fito Páez",
+        "required_credits": [
+          {
+            "name": "Fito Páez",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Giros",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001768"
+        }
+      },
+      {
+        "candidate_id": "P09-027",
+        "role": "primary",
+        "title": "Ngiculela / Es una historia / I Am Singing",
+        "artist_credit": "Stevie Wonder",
+        "required_credits": [
+          {
+            "name": "Stevie Wonder",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Songs in the Key of Life",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000266"
+        }
+      },
+      {
+        "candidate_id": "P09-028",
+        "role": "primary",
+        "title": "The Desert / The Robot Auction",
+        "artist_credit": "London Symphony Orchestra, John Williams",
+        "required_credits": [
+          {
+            "name": "London Symphony Orchestra",
+            "role": "primary"
+          },
+          {
+            "name": "John Williams",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Star Wars",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001565"
+        }
+      },
+      {
+        "candidate_id": "P09-029",
+        "role": "primary",
+        "title": "Parasite",
+        "artist_credit": "Nick Drake",
+        "required_credits": [
+          {
+            "name": "Nick Drake",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Pink Moon",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002265"
+        }
+      },
+      {
+        "candidate_id": "P09-030",
+        "role": "primary",
+        "title": "Living for the City",
+        "artist_credit": "Stevie Wonder",
+        "required_credits": [
+          {
+            "name": "Stevie Wonder",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Innervisions",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001970"
+        }
+      },
+      {
+        "candidate_id": "P09-031",
+        "role": "primary",
+        "title": "Too High",
+        "artist_credit": "Stevie Wonder",
+        "required_credits": [
+          {
+            "name": "Stevie Wonder",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Innervisions",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002014"
+        }
+      },
+      {
+        "candidate_id": "P09-032",
+        "role": "primary",
+        "title": "Preta pretinha",
+        "artist_credit": "Novos Baianos",
+        "required_credits": [
+          {
+            "name": "Novos Baianos",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Acabou chorare",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000897"
+        }
+      },
+      {
+        "candidate_id": "P09-033",
+        "role": "primary",
+        "title": "Mouse Robot / Blasting Off",
+        "artist_credit": "London Symphony Orchestra, John Williams",
+        "required_credits": [
+          {
+            "name": "London Symphony Orchestra",
+            "role": "primary"
+          },
+          {
+            "name": "John Williams",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Star Wars",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000646"
+        }
+      },
+      {
+        "candidate_id": "P09-034",
+        "role": "primary",
+        "title": "Angel of Death",
+        "artist_credit": "Slayer",
+        "required_credits": [
+          {
+            "name": "Slayer",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Reign in Blood",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000932"
+        }
+      },
+      {
+        "candidate_id": "P09-035",
+        "role": "primary",
+        "title": "Higher Ground",
+        "artist_credit": "Stevie Wonder",
+        "required_credits": [
+          {
+            "name": "Stevie Wonder",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Innervisions",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001928"
+        }
+      },
+      {
+        "candidate_id": "P09-036",
+        "role": "primary",
+        "title": "May This Be Love",
+        "artist_credit": "The Jimi Hendrix Experience",
+        "required_credits": [
+          {
+            "name": "The Jimi Hendrix Experience",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Are You Experienced",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000320"
+        }
+      },
+      {
+        "candidate_id": "P09-037",
+        "role": "primary",
+        "title": "Another Brick in the Wall, Part 3",
+        "artist_credit": "Pink Floyd",
+        "required_credits": [
+          {
+            "name": "Pink Floyd",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Wall",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000251"
+        }
+      },
+      {
+        "candidate_id": "P09-038",
+        "role": "primary",
+        "title": "Fascination Street",
+        "artist_credit": "The Cure",
+        "required_credits": [
+          {
+            "name": "The Cure",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Disintegration",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002250"
+        }
+      },
+      {
+        "candidate_id": "P09-039",
+        "role": "primary",
+        "title": "Magnólia",
+        "artist_credit": "Jorge Ben Jor",
+        "required_credits": [
+          {
+            "name": "Jorge Ben Jor",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "A Tábua de Esmeralda",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002280"
+        }
+      },
+      {
+        "candidate_id": "P09-040",
+        "role": "primary",
+        "title": "And Dream of Sheep",
+        "artist_credit": "Kate Bush",
+        "required_credits": [
+          {
+            "name": "Kate Bush",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Hounds of Love",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000074"
+        }
+      },
+      {
+        "candidate_id": "P09-041",
+        "role": "primary",
+        "title": "Hands on the Wheel",
+        "artist_credit": "Willie Nelson",
+        "required_credits": [
+          {
+            "name": "Willie Nelson",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Red Headed Stranger",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002084"
+        }
+      },
+      {
+        "candidate_id": "P09-042",
+        "role": "primary",
+        "title": "Ptah, the El Daoud",
+        "artist_credit": "Alice Coltrane",
+        "required_credits": [
+          {
+            "name": "Alice Coltrane",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Ptah, the El Daoud",
+        "release_year_hint": 1970,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002236"
+        }
+      },
+      {
+        "candidate_id": "P09-043",
+        "role": "primary",
+        "title": "O filósofo",
+        "artist_credit": "Jorge Ben Jor",
+        "required_credits": [
+          {
+            "name": "Jorge Ben Jor",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "África Brasil",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000729"
+        }
+      },
+      {
+        "candidate_id": "P09-044",
+        "role": "primary",
+        "title": "The Planets, op. 32: VII. Neptune, the Mystic",
+        "artist_credit": "Chor der Wiener Staatsoper, Wiener Philharmoniker, Herbert von Karajan",
+        "required_credits": [
+          {
+            "name": "Chor der Wiener Staatsoper",
+            "role": "primary"
+          },
+          {
+            "name": "Wiener Philharmoniker",
+            "role": "featured"
+          },
+          {
+            "name": "Herbert von Karajan",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "The Planets",
+        "release_year_hint": 1962,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000744"
+        }
+      },
+      {
+        "candidate_id": "P09-045",
+        "role": "primary",
+        "title": "Hey You",
+        "artist_credit": "Pink Floyd",
+        "required_credits": [
+          {
+            "name": "Pink Floyd",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Wall",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000171"
+        }
+      },
+      {
+        "candidate_id": "P09-046",
+        "role": "primary",
+        "title": "Xica da Silva",
+        "artist_credit": "Jorge Ben Jor",
+        "required_credits": [
+          {
+            "name": "Jorge Ben Jor",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "África Brasil",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000950"
+        }
+      },
+      {
+        "candidate_id": "P09-047",
+        "role": "primary",
+        "title": "Contusion",
+        "artist_credit": "Stevie Wonder",
+        "required_credits": [
+          {
+            "name": "Stevie Wonder",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Songs in the Key of Life",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000037"
+        }
+      },
+      {
+        "candidate_id": "P09-048",
+        "role": "primary",
+        "title": "Chain of Fools",
+        "artist_credit": "Aretha Franklin",
+        "required_credits": [
+          {
+            "name": "Aretha Franklin",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Lady Soul",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000569"
+        }
+      },
+      {
+        "candidate_id": "P09-049",
+        "role": "primary",
+        "title": "Rydeen",
+        "artist_credit": "Yellow Magic Orchestra",
+        "required_credits": [
+          {
+            "name": "Yellow Magic Orchestra",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Solid State Survivor",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001540"
+        }
+      },
+      {
+        "candidate_id": "P09-050",
+        "role": "primary",
+        "title": "Flyin’ High (in the Friendly Sky)",
+        "artist_credit": "Marvin Gaye",
+        "required_credits": [
+          {
+            "name": "Marvin Gaye",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "What’s Going On",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000231"
+        }
+      },
+      {
+        "candidate_id": "P09-051",
+        "role": "primary",
+        "title": "Bargain",
+        "artist_credit": "The Who",
+        "required_credits": [
+          {
+            "name": "The Who",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Who’s Next",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001800"
+        }
+      },
+      {
+        "candidate_id": "P09-052",
+        "role": "primary",
+        "title": "Money Won’t Change You",
+        "artist_credit": "Aretha Franklin",
+        "required_credits": [
+          {
+            "name": "Aretha Franklin",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Lady Soul",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001711"
+        }
+      },
+      {
+        "candidate_id": "P09-053",
+        "role": "primary",
+        "title": "Firecracker",
+        "artist_credit": "Yellow Magic Orchestra",
+        "required_credits": [
+          {
+            "name": "Yellow Magic Orchestra",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Yellow Magic Orchestra",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000890"
+        }
+      },
+      {
+        "candidate_id": "P09-054",
+        "role": "primary",
+        "title": "I Can’t Help It",
+        "artist_credit": "Michael Jackson",
+        "required_credits": [
+          {
+            "name": "Michael Jackson",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Off the Wall",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001556"
+        }
+      },
+      {
+        "candidate_id": "P09-055",
+        "role": "primary",
+        "title": "Control",
+        "artist_credit": "Janet Jackson",
+        "required_credits": [
+          {
+            "name": "Janet Jackson",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Control",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001667"
+        }
+      },
+      {
+        "candidate_id": "P09-056",
+        "role": "primary",
+        "title": "Bancate ese defecto",
+        "artist_credit": "Charly García",
+        "required_credits": [
+          {
+            "name": "Charly García",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Clics modernos",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000649"
+        }
+      },
+      {
+        "candidate_id": "P09-057",
+        "role": "primary",
+        "title": "Mother",
+        "artist_credit": "Pink Floyd",
+        "required_credits": [
+          {
+            "name": "Pink Floyd",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Wall",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000190"
+        }
+      },
+      {
+        "candidate_id": "P09-058",
+        "role": "primary",
+        "title": "Ghetto Thang",
+        "artist_credit": "De La Soul",
+        "required_credits": [
+          {
+            "name": "De La Soul",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "3 Feet High and Rising",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002027"
+        }
+      },
+      {
+        "candidate_id": "P09-059",
+        "role": "primary",
+        "title": "Pastime Paradise",
+        "artist_credit": "Stevie Wonder",
+        "required_credits": [
+          {
+            "name": "Stevie Wonder",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Songs in the Key of Life",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000014"
+        }
+      },
+      {
+        "candidate_id": "P09-060",
+        "role": "primary",
+        "title": "Closedown",
+        "artist_credit": "The Cure",
+        "required_credits": [
+          {
+            "name": "The Cure",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Disintegration",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000937"
+        }
+      },
+      {
+        "candidate_id": "P09-061",
+        "role": "primary",
+        "title": "Track B — Duet Solo Dancers: Hearts’ Beat and Shades in Physical Embraces",
+        "artist_credit": "Charles Mingus",
+        "required_credits": [
+          {
+            "name": "Charles Mingus",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Black Saint and the Sinner Lady",
+        "release_year_hint": 1963,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000774"
+        }
+      },
+      {
+        "candidate_id": "P09-062",
+        "role": "primary",
+        "title": "Altar of Sacrifice",
+        "artist_credit": "Slayer",
+        "required_credits": [
+          {
+            "name": "Slayer",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Reign in Blood",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000709"
+        }
+      },
+      {
+        "candidate_id": "P09-063",
+        "role": "primary",
+        "title": "Can U Keep a Secret",
+        "artist_credit": "De La Soul",
+        "required_credits": [
+          {
+            "name": "De La Soul",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "3 Feet High and Rising",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001572"
+        }
+      },
+      {
+        "candidate_id": "P09-064",
+        "role": "primary",
+        "title": "Friction",
+        "artist_credit": "Television",
+        "required_credits": [
+          {
+            "name": "Television",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Marquee Moon",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001591"
+        }
+      },
+      {
+        "candidate_id": "P09-065",
+        "role": "primary",
+        "title": "The Thing That Should Not Be",
+        "artist_credit": "Metallica",
+        "required_credits": [
+          {
+            "name": "Metallica",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Master of Puppets",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000198"
+        }
+      },
+      {
+        "candidate_id": "P09-066",
+        "role": "primary",
+        "title": "Lady Jane",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Aftermath",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000005"
+        }
+      },
+      {
+        "candidate_id": "P09-067",
+        "role": "primary",
+        "title": "Deus lhe pague",
+        "artist_credit": "Chico Buarque",
+        "required_credits": [
+          {
+            "name": "Chico Buarque",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Construção",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001982"
+        }
+      },
+      {
+        "candidate_id": "P09-068",
+        "role": "primary",
+        "title": "I Never Loved a Man (the Way I Love You)",
+        "artist_credit": "Aretha Franklin",
+        "required_credits": [
+          {
+            "name": "Aretha Franklin",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "I Never Loved a Man the Way I Love You",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001914"
+        }
+      },
+      {
+        "candidate_id": "P09-069",
+        "role": "primary",
+        "title": "Ah ! Melody",
+        "artist_credit": "Serge Gainsbourg",
+        "required_credits": [
+          {
+            "name": "Serge Gainsbourg",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Histoire de Melody Nelson",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000880"
+        }
+      },
+      {
+        "candidate_id": "P09-070",
+        "role": "primary",
+        "title": "Cemetry Gates",
+        "artist_credit": "The Smiths",
+        "required_credits": [
+          {
+            "name": "The Smiths",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Queen Is Dead",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001751"
+        }
+      },
+      {
+        "candidate_id": "P09-071",
+        "role": "primary",
+        "title": "Hand of Doom",
+        "artist_credit": "Black Sabbath",
+        "required_credits": [
+          {
+            "name": "Black Sabbath",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Paranoid",
+        "release_year_hint": 1970,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000205"
+        }
+      },
+      {
+        "candidate_id": "P09-072",
+        "role": "primary",
+        "title": "Ballade de Melody Nelson",
+        "artist_credit": "Serge Gainsbourg",
+        "required_credits": [
+          {
+            "name": "Serge Gainsbourg",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Histoire de Melody Nelson",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000544"
+        }
+      },
+      {
+        "candidate_id": "P09-073",
+        "role": "primary",
+        "title": "Never Before",
+        "artist_credit": "Deep Purple",
+        "required_credits": [
+          {
+            "name": "Deep Purple",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Machine Head",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001697"
+        }
+      },
+      {
+        "candidate_id": "P09-074",
+        "role": "primary",
+        "title": "Cantina Band",
+        "artist_credit": "London Symphony Orchestra, John Williams",
+        "required_credits": [
+          {
+            "name": "London Symphony Orchestra",
+            "role": "primary"
+          },
+          {
+            "name": "John Williams",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Star Wars",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000870"
+        }
+      },
+      {
+        "candidate_id": "P09-075",
+        "role": "primary",
+        "title": "Hound Dog",
+        "artist_credit": "Junior Wells’ Chicago Blues Band, Buddy Guy",
+        "required_credits": [
+          {
+            "name": "Junior Wells’ Chicago Blues Band",
+            "role": "primary"
+          },
+          {
+            "name": "Buddy Guy",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Hoodoo Man Blues",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000811"
+        }
+      },
+      {
+        "candidate_id": "P09-076",
+        "role": "primary",
+        "title": "No me dejan salir",
+        "artist_credit": "Charly García",
+        "required_credits": [
+          {
+            "name": "Charly García",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Clics modernos",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000873"
+        }
+      },
+      {
+        "candidate_id": "P09-077",
+        "role": "primary",
+        "title": "Cerca de la revolución",
+        "artist_credit": "Charly García",
+        "required_credits": [
+          {
+            "name": "Charly García",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Piano bar",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001965"
+        }
+      },
+      {
+        "candidate_id": "P09-078",
+        "role": "primary",
+        "title": "People Get Ready",
+        "artist_credit": "Aretha Franklin",
+        "required_credits": [
+          {
+            "name": "Aretha Franklin",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Lady Soul",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001761"
+        }
+      },
+      {
+        "candidate_id": "P09-079",
+        "role": "primary",
+        "title": "Bring the Noise",
+        "artist_credit": "Public Enemy",
+        "required_credits": [
+          {
+            "name": "Public Enemy",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "It Takes a Nation of Millions to Hold Us Back",
+        "release_year_hint": 1988,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002243"
+        }
+      },
+      {
+        "candidate_id": "P09-080",
+        "role": "primary",
+        "title": "No Me Llores Más",
+        "artist_credit": "Willie Colón, Héctor Lavoe",
+        "required_credits": [
+          {
+            "name": "Willie Colón",
+            "role": "primary"
+          },
+          {
+            "name": "Héctor Lavoe",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Cosa nuestra",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002241"
+        }
+      },
+      {
+        "candidate_id": "P09-081",
+        "role": "primary",
+        "title": "Stopover Bombay",
+        "artist_credit": "Alice Coltrane",
+        "required_credits": [
+          {
+            "name": "Alice Coltrane",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Journey in Satchidananda",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000790"
+        }
+      },
+      {
+        "candidate_id": "P09-082",
+        "role": "primary",
+        "title": "Cantata de puentes amarillos",
+        "artist_credit": "Pescado Rabioso",
+        "required_credits": [
+          {
+            "name": "Pescado Rabioso",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Artaud",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000915"
+        }
+      },
+      {
+        "candidate_id": "P09-083",
+        "role": "primary",
+        "title": "Juana Peña",
+        "artist_credit": "Willie Colón, Héctor Lavoe",
+        "required_credits": [
+          {
+            "name": "Willie Colón",
+            "role": "primary"
+          },
+          {
+            "name": "Héctor Lavoe",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Cosa nuestra",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001570"
+        }
+      },
+      {
+        "candidate_id": "P09-084",
+        "role": "primary",
+        "title": "Melody",
+        "artist_credit": "Serge Gainsbourg",
+        "required_credits": [
+          {
+            "name": "Serge Gainsbourg",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Histoire de Melody Nelson",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000600"
+        }
+      },
+      {
+        "candidate_id": "P09-085",
+        "role": "primary",
+        "title": "Sly",
+        "artist_credit": "Herbie Hancock",
+        "required_credits": [
+          {
+            "name": "Herbie Hancock",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Head Hunters",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000678"
+        }
+      },
+      {
+        "candidate_id": "P09-086",
+        "role": "primary",
+        "title": "The Last Battle",
+        "artist_credit": "London Symphony Orchestra, John Williams",
+        "required_credits": [
+          {
+            "name": "London Symphony Orchestra",
+            "role": "primary"
+          },
+          {
+            "name": "John Williams",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Star Wars",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000534"
+        }
+      },
+      {
+        "candidate_id": "P09-087",
+        "role": "primary",
+        "title": "Ships on the Ocean",
+        "artist_credit": "Junior Wells’ Chicago Blues Band",
+        "required_credits": [
+          {
+            "name": "Junior Wells’ Chicago Blues Band",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Hoodoo Man Blues",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000922"
+        }
+      },
+      {
+        "candidate_id": "P09-088",
+        "role": "primary",
+        "title": "Rumba Mama",
+        "artist_credit": "Weather Report",
+        "required_credits": [
+          {
+            "name": "Weather Report",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Heavy Weather",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002178"
+        }
+      },
+      {
+        "candidate_id": "P09-089",
+        "role": "primary",
+        "title": "O namorado da viúva",
+        "artist_credit": "Jorge Ben Jor",
+        "required_credits": [
+          {
+            "name": "Jorge Ben Jor",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "A Tábua de Esmeralda",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002101"
+        }
+      },
+      {
+        "candidate_id": "P09-090",
+        "role": "primary",
+        "title": "Technopolis",
+        "artist_credit": "Yellow Magic Orchestra",
+        "required_credits": [
+          {
+            "name": "Yellow Magic Orchestra",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Solid State Survivor",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001769"
+        }
+      },
+      {
+        "candidate_id": "P09-091",
+        "role": "primary",
+        "title": "Watermelon Man",
+        "artist_credit": "Herbie Hancock",
+        "required_credits": [
+          {
+            "name": "Herbie Hancock",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Head Hunters",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000955"
+        }
+      },
+      {
+        "candidate_id": "P09-092",
+        "role": "primary",
+        "title": "Let’s Wait Awhile",
+        "artist_credit": "Janet Jackson",
+        "required_credits": [
+          {
+            "name": "Janet Jackson",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Control",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001772"
+        }
+      },
+      {
+        "candidate_id": "P09-093",
+        "role": "primary",
+        "title": "A Starosta, el idiota",
+        "artist_credit": "Pescado Rabioso",
+        "required_credits": [
+          {
+            "name": "Pescado Rabioso",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Artaud",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002184"
+        }
+      },
+      {
+        "candidate_id": "P09-094",
+        "role": "primary",
+        "title": "Smoke on the Water",
+        "artist_credit": "Deep Purple",
+        "required_credits": [
+          {
+            "name": "Deep Purple",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Machine Head",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000113"
+        }
+      },
+      {
+        "candidate_id": "P09-095",
+        "role": "primary",
+        "title": "Rainy Day, Dream Away",
+        "artist_credit": "The Jimi Hendrix Experience",
+        "required_credits": [
+          {
+            "name": "The Jimi Hendrix Experience",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Electric Ladyland",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000191"
+        }
+      },
+      {
+        "candidate_id": "P09-096",
+        "role": "primary",
+        "title": "Little Miss Strange",
+        "artist_credit": "The Jimi Hendrix Experience",
+        "required_credits": [
+          {
+            "name": "The Jimi Hendrix Experience",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Electric Ladyland",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000310"
+        }
+      },
+      {
+        "candidate_id": "P09-097",
+        "role": "primary",
+        "title": "Narciso y Quasimodo",
+        "artist_credit": "Fito Páez",
+        "required_credits": [
+          {
+            "name": "Fito Páez",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Giros",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001539"
+        }
+      },
+      {
+        "candidate_id": "P09-098",
+        "role": "primary",
+        "title": "Ziggy Stardust",
+        "artist_credit": "David Bowie",
+        "required_credits": [
+          {
+            "name": "David Bowie",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000232"
+        }
+      },
+      {
+        "candidate_id": "P09-099",
+        "role": "primary",
+        "title": "Mad Pierrot",
+        "artist_credit": "Yellow Magic Orchestra",
+        "required_credits": [
+          {
+            "name": "Yellow Magic Orchestra",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Yellow Magic Orchestra",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000554"
+        }
+      },
+      {
+        "candidate_id": "P09-100",
+        "role": "primary",
+        "title": "Harlequin",
+        "artist_credit": "Weather Report",
+        "required_credits": [
+          {
+            "name": "Weather Report",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Heavy Weather",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001732"
+        }
+      },
+      {
+        "candidate_id": "P09-101",
+        "role": "reserve",
+        "title": "Absolute Ego Dance",
+        "artist_credit": "Yellow Magic Orchestra",
+        "required_credits": [
+          {
+            "name": "Yellow Magic Orchestra",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Solid State Survivor",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001822"
+        }
+      },
+      {
+        "candidate_id": "P09-102",
+        "role": "reserve",
+        "title": "Hateful",
+        "artist_credit": "The Clash",
+        "required_credits": [
+          {
+            "name": "The Clash",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "London Calling",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001706"
+        }
+      },
+      {
+        "candidate_id": "P09-103",
+        "role": "reserve",
+        "title": "Cars Hiss by My Window",
+        "artist_credit": "The Doors",
+        "required_credits": [
+          {
+            "name": "The Doors",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "L.A. Woman",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000300"
+        }
+      },
+      {
+        "candidate_id": "P09-104",
+        "role": "reserve",
+        "title": "Baby, Baby, Baby",
+        "artist_credit": "Aretha Franklin",
+        "required_credits": [
+          {
+            "name": "Aretha Franklin",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "I Never Loved a Man the Way I Love You",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001657"
+        }
+      },
+      {
+        "candidate_id": "P09-105",
+        "role": "reserve",
+        "title": "Land: Horses / Land of a Thousand Dances / La Mer (de)",
+        "artist_credit": "Patti Smith",
+        "required_credits": [
+          {
+            "name": "Patti Smith",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Horses",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001652"
+        }
+      },
+      {
+        "candidate_id": "P09-106",
+        "role": "reserve",
+        "title": "Young Lust",
+        "artist_credit": "Pink Floyd",
+        "required_credits": [
+          {
+            "name": "Pink Floyd",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Wall",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000158"
+        }
+      },
+      {
+        "candidate_id": "P09-107",
+        "role": "reserve",
+        "title": "Rock and Roll Ain’t Noise Pollution",
+        "artist_credit": "AC/DC",
+        "required_credits": [
+          {
+            "name": "AC/DC",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Back in Black",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000094"
+        }
+      },
+      {
+        "candidate_id": "P09-108",
+        "role": "reserve",
+        "title": "Voodoo Child (slight return)",
+        "artist_credit": "The Jimi Hendrix Experience",
+        "required_credits": [
+          {
+            "name": "The Jimi Hendrix Experience",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Electric Ladyland",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000111"
+        }
+      },
+      {
+        "candidate_id": "P09-109",
+        "role": "reserve",
+        "title": "Giros",
+        "artist_credit": "Fito Páez",
+        "required_credits": [
+          {
+            "name": "Fito Páez",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Giros",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001821"
+        }
+      },
+      {
+        "candidate_id": "P09-110",
+        "role": "reserve",
+        "title": "Back in Our Minds",
+        "artist_credit": "Funkadelic",
+        "required_credits": [
+          {
+            "name": "Funkadelic",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Maggot Brain",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001726"
+        }
+      },
+      {
+        "candidate_id": "P09-111",
+        "role": "reserve",
+        "title": "Highway Star",
+        "artist_credit": "Deep Purple",
+        "required_credits": [
+          {
+            "name": "Deep Purple",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Machine Head",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000104"
+        }
+      },
+      {
+        "candidate_id": "P09-112",
+        "role": "reserve",
+        "title": "Polythene Pam",
+        "artist_credit": "The Beatles",
+        "required_credits": [
+          {
+            "name": "The Beatles",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Abbey Road",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000082"
+        }
+      },
+      {
+        "candidate_id": "P09-113",
+        "role": "reserve",
+        "title": "Place to Be",
+        "artist_credit": "Nick Drake",
+        "required_credits": [
+          {
+            "name": "Nick Drake",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Pink Moon",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002235"
+        }
+      },
+      {
+        "candidate_id": "P09-114",
+        "role": "reserve",
+        "title": "Run to the Hills",
+        "artist_credit": "Iron Maiden",
+        "required_credits": [
+          {
+            "name": "Iron Maiden",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Number of the Beast",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000821"
+        }
+      },
+      {
+        "candidate_id": "P09-115",
+        "role": "reserve",
+        "title": "Nos siguen pegando abajo (Pecado mortal)",
+        "artist_credit": "Charly García",
+        "required_credits": [
+          {
+            "name": "Charly García",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Clics modernos",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000705"
+        }
+      },
+      {
+        "candidate_id": "P09-116",
+        "role": "reserve",
+        "title": "All Along the Watchtower",
+        "artist_credit": "The Jimi Hendrix Experience",
+        "required_credits": [
+          {
+            "name": "The Jimi Hendrix Experience",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Electric Ladyland",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000038"
+        }
+      },
+      {
+        "candidate_id": "P09-117",
+        "role": "reserve",
+        "title": "All I Want",
+        "artist_credit": "Joni Mitchell",
+        "required_credits": [
+          {
+            "name": "Joni Mitchell",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Blue",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000224"
+        }
+      },
+      {
+        "candidate_id": "P09-118",
+        "role": "reserve",
+        "title": "Acrobat",
+        "artist_credit": "Yellow Magic Orchestra",
+        "required_credits": [
+          {
+            "name": "Yellow Magic Orchestra",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Yellow Magic Orchestra",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000666"
+        }
+      },
+      {
+        "candidate_id": "P09-119",
+        "role": "reserve",
+        "title": "Have a Drink on Me",
+        "artist_credit": "AC/DC",
+        "required_credits": [
+          {
+            "name": "AC/DC",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Back in Black",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000248"
+        }
+      },
+      {
+        "candidate_id": "P09-120",
+        "role": "reserve",
+        "title": "Plainsong",
+        "artist_credit": "The Cure",
+        "required_credits": [
+          {
+            "name": "The Cure",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Disintegration",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002162"
+        }
+      },
+      {
+        "candidate_id": "P09-121",
+        "role": "reserve",
+        "title": "Natural’s Not in It",
+        "artist_credit": "Gang of Four",
+        "required_credits": [
+          {
+            "name": "Gang of Four",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Entertainment!",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001809"
+        }
+      },
+      {
+        "candidate_id": "P09-122",
+        "role": "reserve",
+        "title": "Death or Glory",
+        "artist_credit": "The Clash",
+        "required_credits": [
+          {
+            "name": "The Clash",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "London Calling",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002167"
+        }
+      },
+      {
+        "candidate_id": "P09-123",
+        "role": "reserve",
+        "title": "Suffragette City",
+        "artist_credit": "David Bowie",
+        "required_credits": [
+          {
+            "name": "David Bowie",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000039"
+        }
+      },
+      {
+        "candidate_id": "P09-124",
+        "role": "reserve",
+        "title": "When Someone Wants to Leave",
+        "artist_credit": "Dolly Parton",
+        "required_credits": [
+          {
+            "name": "Dolly Parton",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Jolene",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000707"
+        }
+      },
+      {
+        "candidate_id": "P09-125",
+        "role": "reserve",
+        "title": "Gloria",
+        "artist_credit": "Patti Smith",
+        "required_credits": [
+          {
+            "name": "Patti Smith",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Horses",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001955"
+        }
+      }
+    ]
+  }
+}

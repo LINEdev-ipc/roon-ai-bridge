@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Underworld&recording_name=Born+Slippy+.NUXX",
+  "fetched_at": "2026-07-28T12:15:48.614Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Underworld",
+      "recording_arg": "Born Slippy .NUXX",
+      "artist_credit_name": "Underworld",
+      "release_name": "Second Toughest in the Infants",
+      "recording_name": "Born Slippy .NUXX",
+      "artist_credit_id": 923,
+      "artist_mbids": [
+        "ba2f4f3b-0293-4bc8-bb94-2f73b5207343"
+      ],
+      "release_mbid": "393ecb75-d35b-38bc-93de-7b15234840b2",
+      "recording_mbid": "88ea3c0f-edd9-43d1-8d44-5e45a9321c86"
+    }
+  ]
+}

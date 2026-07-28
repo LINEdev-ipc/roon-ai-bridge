@@ -1,0 +1,1931 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28people%29+AND+artistname%3A%22Libianca%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:58.475Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:58.847Z",
+    "count": 10,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "91228546-bc5f-4578-aac9-c3982da454df",
+        "score": 100,
+        "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+        "title": "People",
+        "length": 184791,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-12-08",
+        "releases": [
+          {
+            "id": "d342f2cb-6539-41f7-b0f5-2207a8f46ac3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+            "count": 1,
+            "title": "Walk Away",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "cf26553e-4cb0-4e1d-8d3d-7fd022b762d6",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Walk Away",
+              "primary-type": "EP"
+            },
+            "track-count": 6,
+            "media": [
+              {
+                "id": "7f6b81ef-7c84-39c3-a731-7a48caff240b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b64ecc31-0ad6-4d1d-83a1-ff0368b0fee8",
+                    "number": "5",
+                    "title": "People",
+                    "length": 184791
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ea4ec594-4a92-4fb1-96ff-ac633a981421",
+        "score": 100,
+        "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+        "title": "People",
+        "length": 184000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-04-21",
+        "releases": [
+          {
+            "id": "6d8b0b56-cf6f-4c92-93e5-2cf094eedff0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "101a3bf2-1f3e-445f-ad78-50535ec46b0f",
+            "count": 1,
+            "title": "People (Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              },
+              {
+                "name": "Becky G",
+                "artist": {
+                  "id": "eb90c8b8-d733-4c14-a293-105c3d1ba9b3",
+                  "name": "Becky G",
+                  "sort-name": "Becky G",
+                  "disambiguation": "American singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4268dd31-8a72-402a-9622-9097e06222b1",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-04-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-04-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "16cb1015-dc40-33da-8475-3c074547a45a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "7efb184d-719c-46ea-9fbe-c63853edff10",
+                    "number": "3",
+                    "title": "People",
+                    "length": 184000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 2
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "QZTB52268087"
+        ]
+      },
+      {
+        "id": "f9e199c0-e783-43f6-9c6f-cdd5845e5385",
+        "score": 100,
+        "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+        "title": "People",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-01-27",
+        "releases": [
+          {
+            "id": "66c5fb39-30b9-4658-8338-82de0cd156f2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "UK Official Singles Chart Top40",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e5403464-bdcf-4533-b80c-cfadd3122019",
+              "type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "primary-type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "title": "UK Official Singles Chart",
+              "primary-type": "Other"
+            },
+            "date": "2023-01-27",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2023-01-27",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "c55835bb-a5f3-38e7-ac00-bc41b826bff1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "501030b6-6301-49f9-8b51-a1e8d50ffa05",
+                    "number": "18",
+                    "title": "People"
+                  }
+                ],
+                "track-count": 40,
+                "track-offset": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "24789836-a73e-48fe-ae8b-c1125d7493aa",
+        "score": 100,
+        "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+        "title": "People",
+        "length": 184120,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022-12-06",
+        "releases": [
+          {
+            "id": "70ae9c57-4078-45ce-8d43-b625b7dbc8b4",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "So Fresh: The Hits of Autumn 2023",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "618f2d35-93bf-48b3-8207-9355df37588d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "So Fresh: The Hits of Autumn 2023",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2023",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "8dc60f89-ccad-499c-98d6-1b80f800ff8b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a3d4f4e8-693a-4d6e-b213-5106725ac158",
+                    "number": "4",
+                    "title": "People"
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "d77be99d-bd9c-4ac0-a30e-37c8c5962f6b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "So Fresh - The Hits Of Autumn 2023",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "618f2d35-93bf-48b3-8207-9355df37588d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "So Fresh: The Hits of Autumn 2023",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-04-21",
+            "country": "AU",
+            "release-events": [
+              {
+                "date": "2023-04-21",
+                "area": {
+                  "id": "106e0bec-b638-3b37-b731-f53d507dc00e",
+                  "name": "Australia",
+                  "sort-name": "Australia",
+                  "iso-3166-1-codes": [
+                    "AU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "d3e2e4d7-eda2-418d-8652-94bd0e4d97df",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "74117a5a-149b-4dc0-a0b1-a12f1aa5f3b0",
+                    "number": "4",
+                    "title": "People",
+                    "length": 183790
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "aeed9461-1613-465e-a8fc-62bf4a34980e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bravo Hits 122",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "54580127-3027-4543-99e3-fd412a354173",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bravo Hits 122",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-07-28",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2023-07-28",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              },
+              {
+                "date": "2023-07-28",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              },
+              {
+                "date": "2023-07-28",
+                "area": {
+                  "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+                  "name": "Switzerland",
+                  "sort-name": "Switzerland",
+                  "iso-3166-1-codes": [
+                    "CH"
+                  ]
+                }
+              }
+            ],
+            "track-count": 48,
+            "media": [
+              {
+                "id": "6e50e032-8f66-3c1e-80df-72ba6533bbb2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7182cc4c-8422-4429-969d-f3c80e8ee66a",
+                    "number": "24",
+                    "title": "People",
+                    "length": 185813
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 23
+              }
+            ]
+          },
+          {
+            "id": "4d2aeb16-a957-4067-8608-98f8709e505f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4198ee76-779b-4fcb-9222-5c47716fc653",
+            "count": 1,
+            "title": "People",
+            "status": "Official",
+            "disambiguation": "Remixes",
+            "artist-credit": [
+              {
+                "joinphrase": " & ",
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              },
+              {
+                "name": "Cian Ducrot",
+                "artist": {
+                  "id": "b2764057-7b17-42fd-84db-2b67f9d91915",
+                  "name": "Cian Ducrot",
+                  "sort-name": "Ducrot, Cian"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2e6b32e1-2df8-4151-bcad-bca49c788760",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-03-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-03-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "6550daf1-9eca-3332-b617-393664d0d7b9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "17e9ae6d-e822-4753-ba5c-a62d1c7fb3ec",
+                    "number": "3",
+                    "title": "People",
+                    "length": 184791
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "fe1067e2-df42-4eab-ba69-2b818940e135",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "MNM Big Hits: Best of 2023",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ba2c5473-27f3-4fcb-9b8e-d7bc504e2307",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "MNM Big Hits: Best of 2023",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-12-08",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2023-12-08",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 63,
+            "media": [
+              {
+                "id": "bd7908ec-00b8-3fc1-9728-ba4bbbe7809a",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "22e463d4-feec-4883-9e09-c0f43641ed1b",
+                    "number": "15",
+                    "title": "People",
+                    "length": 184000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "f7eb79e0-3e22-4afd-8fc2-68a73f2ade91",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Now That’s What I Call Music! 114",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3433a9ce-4eaf-45d6-8c04-3178b47808e2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Now That’s What I Call Music! 114",
+              "disambiguation": "UK",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-04-14",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2023-04-14",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 50,
+            "media": [
+              {
+                "id": "ed6732e7-7e5e-322b-83cb-7711e3a158a7",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1a6729e3-14ee-41c2-b332-238a7be2b405",
+                    "number": "30",
+                    "title": "People",
+                    "length": 184120
+                  }
+                ],
+                "track-count": 50,
+                "track-offset": 29
+              }
+            ]
+          },
+          {
+            "id": "6235fd14-4d32-4d73-84de-f488e165ff5f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Now That’s What I Call Music! 114",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3433a9ce-4eaf-45d6-8c04-3178b47808e2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Now That’s What I Call Music! 114",
+              "disambiguation": "UK",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-04-14",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2023-04-14",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 50,
+            "media": [
+              {
+                "id": "b0eea4d0-7a78-3991-a8f3-81424ab1a13c",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c534637b-7824-4534-8fd1-2c9408834f45",
+                    "number": "5",
+                    "title": "People",
+                    "length": 184120
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "b03fcd0d-a6ed-448b-9c04-4dbdcddd75c3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+            "count": 1,
+            "title": "People",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d2093225-8515-4525-bc0c-e457451a71ea",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single"
+            },
+            "track-count": 1,
+            "media": [
+              {
+                "id": "b757db43-0bfd-3fde-a040-50705a754a88",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bdee3f8e-a29e-4fe5-a45e-45decc9d22c4",
+                    "number": "1",
+                    "title": "People",
+                    "length": 184791
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "QZTB52268087"
+        ]
+      },
+      {
+        "id": "5dacafcb-4f1e-4707-acc3-f7b380301324",
+        "score": 100,
+        "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+        "title": "People",
+        "length": 184000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-05-12",
+        "releases": [
+          {
+            "id": "97fa258a-1e25-4e14-a691-f0b563c8829b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Hit Music Only! 2023",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ea6f551a-05f0-40aa-accc-7501fa730ed3",
+              "title": "NRJ Hit Music Only! 2023",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-05-12",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2023-05-12",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 57,
+            "media": [
+              {
+                "id": "84ea9b3b-b451-3a04-b483-85903f16b189",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e0260485-5f66-4667-ad0e-a0d7999421cb",
+                    "number": "7",
+                    "title": "People",
+                    "length": 184000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 6
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "afrobeat"
+          },
+          {
+            "count": 1,
+            "name": "happy"
+          }
+        ]
+      },
+      {
+        "id": "97070fcd-461c-4c45-addd-3a56ee62bc9e",
+        "score": 91,
+        "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+        "title": "People (sped up)",
+        "length": 157000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-04-21",
+        "releases": [
+          {
+            "id": "6d8b0b56-cf6f-4c92-93e5-2cf094eedff0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "101a3bf2-1f3e-445f-ad78-50535ec46b0f",
+            "count": 1,
+            "title": "People (Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              },
+              {
+                "name": "Becky G",
+                "artist": {
+                  "id": "eb90c8b8-d733-4c14-a293-105c3d1ba9b3",
+                  "name": "Becky G",
+                  "sort-name": "Becky G",
+                  "disambiguation": "American singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4268dd31-8a72-402a-9622-9097e06222b1",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-04-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-04-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "16cb1015-dc40-33da-8475-3c074547a45a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1addade0-a480-41b1-8c3a-34a801ab2423",
+                    "number": "2",
+                    "title": "People (sped up)",
+                    "length": 157000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBARL2300450"
+        ]
+      },
+      {
+        "id": "3d262760-c5b1-40fd-bf6e-f79db9f48143",
+        "score": 89,
+        "artist-credit-id": "bde76748-5765-4ff2-afc2-f5d21d50e8e6",
+        "title": "People (Fred again.. remix)",
+        "length": 312000,
+        "disambiguation": "part of “Fred again.. Rooftop Live (Arun’s Roof, London)” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2024-09-13",
+        "releases": [
+          {
+            "id": "5624644f-53d4-405d-9762-79d555ee9f61",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "3a0976c6-ad33-3bac-99d2-a83dcf636c2e",
+            "count": 1,
+            "title": "Fred again.. Rooftop Live (Arun’s Roof, London)",
+            "status": "Bootleg",
+            "disambiguation": "Electronic_Cod_6892 Cut",
+            "artist-credit": [
+              {
+                "name": "Fred again..",
+                "artist": {
+                  "id": "bca46a0c-25c9-42ca-98c2-e64c8a5e337e",
+                  "name": "Fred again..",
+                  "sort-name": "Fred again..",
+                  "disambiguation": "UK producer, songwriter, multi-instrumentalist and DJ"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ef141af7-01f7-4e9e-94f4-cd6b8dfe7dfa",
+              "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "title": "Fred again.. Rooftop Live (Arun’s Roof, London)",
+              "primary-type": "Broadcast",
+              "secondary-types": [
+                "Live",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2024-09-13",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2024-09-13",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 25,
+            "media": [
+              {
+                "id": "bb4de4bc-efa8-4619-a96f-0398d40a8025",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1f15a7b1-220e-4270-824a-e1efa9af073b",
+                    "number": "3",
+                    "title": "People (Fred again.. Edit)",
+                    "length": 345000
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "3b426238-aff5-4803-b8e9-07422935c16d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "3a0976c6-ad33-3bac-99d2-a83dcf636c2e",
+            "count": 1,
+            "title": "Fred again.. Rooftop Live (Arun’s Roof, London)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Fred again..",
+                "artist": {
+                  "id": "bca46a0c-25c9-42ca-98c2-e64c8a5e337e",
+                  "name": "Fred again..",
+                  "sort-name": "Fred again..",
+                  "disambiguation": "UK producer, songwriter, multi-instrumentalist and DJ"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ef141af7-01f7-4e9e-94f4-cd6b8dfe7dfa",
+              "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "title": "Fred again.. Rooftop Live (Arun’s Roof, London)",
+              "primary-type": "Broadcast",
+              "secondary-types": [
+                "Live",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "track-count": 24,
+            "media": [
+              {
+                "id": "e69652b5-6f33-3714-ae91-51a41df989ea",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ec6db4cb-0c71-4062-a616-a27122b4513c",
+                    "number": "3",
+                    "title": "People (Fred again.. remix)",
+                    "length": 312000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 2
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "US23A9018184"
+        ]
+      },
+      {
+        "id": "6ab25d97-41e6-4a21-bdb9-fdc43e8d721d",
+        "score": 80,
+        "artist-credit-id": "101a3bf2-1f3e-445f-ad78-50535ec46b0f",
+        "title": "People",
+        "length": 202000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Becky G",
+            "artist": {
+              "id": "eb90c8b8-d733-4c14-a293-105c3d1ba9b3",
+              "name": "Becky G",
+              "sort-name": "Becky G",
+              "disambiguation": "American singer",
+              "aliases": [
+                {
+                  "sort-name": "G., Bicky",
+                  "name": "Bicky G.",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Gomez, Rebbeca M",
+                  "name": "Rebbeca M Gomez",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Gomez, Rebecca M.",
+                  "name": "Rebecca M. Gomez",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Gomez, Rebecca",
+                  "name": "Rebecca Gomez",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Gomez, Rebbeca",
+                  "name": "Rebbeca Gomez",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Gomez, Rebbeca Marie",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Rebbeca Marie Gomez",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-04-21",
+        "releases": [
+          {
+            "id": "6d8b0b56-cf6f-4c92-93e5-2cf094eedff0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "101a3bf2-1f3e-445f-ad78-50535ec46b0f",
+            "count": 1,
+            "title": "People (Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              },
+              {
+                "name": "Becky G",
+                "artist": {
+                  "id": "eb90c8b8-d733-4c14-a293-105c3d1ba9b3",
+                  "name": "Becky G",
+                  "sort-name": "Becky G",
+                  "disambiguation": "American singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4268dd31-8a72-402a-9622-9097e06222b1",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-04-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-04-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "16cb1015-dc40-33da-8475-3c074547a45a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "64447e0d-ec80-438d-a20e-3c284283ddbc",
+                    "number": "1",
+                    "title": "People",
+                    "length": 202000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBARL2300499"
+        ]
+      },
+      {
+        "id": "91d0b9cf-a947-4f75-bac2-d3a8fc4f442e",
+        "score": 80,
+        "artist-credit-id": "b04b177a-547d-4959-b19e-f8ff9326d914",
+        "title": "People",
+        "length": 184000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Cian Ducrot",
+            "artist": {
+              "id": "b2764057-7b17-42fd-84db-2b67f9d91915",
+              "name": "Cian Ducrot",
+              "sort-name": "Ducrot, Cian",
+              "aliases": [
+                {
+                  "sort-name": "Ducrot, Cian Brendan",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Cian Brendan Ducrot",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-03-17",
+        "releases": [
+          {
+            "id": "a13dcd20-86df-4d00-99ab-11b7fff5992b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Qmusic Presents: Het Beste Uit de Top 40 2023 #2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2294dc92-5eed-4cbf-ba32-39ae7a2a1b94",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Qmusic Presents: Het Beste Uit de Top 40 2023 #2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-07-07",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2023-07-07",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 25,
+            "media": [
+              {
+                "id": "26b9659f-2834-34b8-83ad-211f2d47fb69",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "95daf8e7-c4a7-48d7-a114-4e1d7bfa93ae",
+                    "number": "4",
+                    "title": "People",
+                    "length": 183226
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "6d8b0b56-cf6f-4c92-93e5-2cf094eedff0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "101a3bf2-1f3e-445f-ad78-50535ec46b0f",
+            "count": 1,
+            "title": "People (Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              },
+              {
+                "name": "Becky G",
+                "artist": {
+                  "id": "eb90c8b8-d733-4c14-a293-105c3d1ba9b3",
+                  "name": "Becky G",
+                  "sort-name": "Becky G",
+                  "disambiguation": "American singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4268dd31-8a72-402a-9622-9097e06222b1",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-04-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-04-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "16cb1015-dc40-33da-8475-3c074547a45a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "788bdcbc-2155-4e94-8b4f-368802e37b8a",
+                    "number": "5",
+                    "title": "People",
+                    "length": 184000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "4d2aeb16-a957-4067-8608-98f8709e505f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4198ee76-779b-4fcb-9222-5c47716fc653",
+            "count": 1,
+            "title": "People",
+            "status": "Official",
+            "disambiguation": "Remixes",
+            "artist-credit": [
+              {
+                "joinphrase": " & ",
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              },
+              {
+                "name": "Cian Ducrot",
+                "artist": {
+                  "id": "b2764057-7b17-42fd-84db-2b67f9d91915",
+                  "name": "Cian Ducrot",
+                  "sort-name": "Ducrot, Cian"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2e6b32e1-2df8-4151-bcad-bca49c788760",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-03-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-03-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "6550daf1-9eca-3332-b617-393664d0d7b9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0fb24631-c1d9-4ac4-a7e9-262d524ceef6",
+                    "number": "1",
+                    "title": "People",
+                    "length": 184633
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBARL2300384"
+        ]
+      },
+      {
+        "id": "6eedee74-8e1d-467c-8bb5-3df26d96d020",
+        "score": 69,
+        "artist-credit-id": "c6ba4dfa-fccf-4de1-b767-b5a9797c1f87",
+        "title": "People",
+        "length": 184000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Libianca",
+            "artist": {
+              "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+              "name": "Libianca",
+              "sort-name": "Libianca",
+              "aliases": [
+                {
+                  "sort-name": "Fonji, Libianca Kenzonkinboum",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Libianca Kenzonkinboum Fonji",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " & ",
+            "name": "Ayra Starr",
+            "artist": {
+              "id": "c4ac4b97-2eac-46f6-85ae-f916c93847e4",
+              "name": "Ayra Starr",
+              "sort-name": "Starr, Ayra",
+              "disambiguation": "Nigerian singer/songwriter",
+              "aliases": [
+                {
+                  "sort-name": "Ayra Starr",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Ayra Starr",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Aderibigbe, Oyinkansola Sarah",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Oyinkansola Sarah Aderibigbe",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Omah Lay",
+            "artist": {
+              "id": "b63bd4fd-2050-4c92-a237-576f6f6c97cb",
+              "name": "Omah Lay",
+              "sort-name": "Lay, Omah",
+              "disambiguation": "Nigerian Afro-fusion",
+              "aliases": [
+                {
+                  "sort-name": "Omah Lay",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Omah Lay",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Prince",
+                  "name": "Prince",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Stanley Omah Didia",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Stanley Omah Didia",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2023-03-17",
+        "releases": [
+          {
+            "id": "6d8b0b56-cf6f-4c92-93e5-2cf094eedff0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "101a3bf2-1f3e-445f-ad78-50535ec46b0f",
+            "count": 1,
+            "title": "People (Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " feat. ",
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              },
+              {
+                "name": "Becky G",
+                "artist": {
+                  "id": "eb90c8b8-d733-4c14-a293-105c3d1ba9b3",
+                  "name": "Becky G",
+                  "sort-name": "Becky G",
+                  "disambiguation": "American singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4268dd31-8a72-402a-9622-9097e06222b1",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-04-21",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-04-21",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "16cb1015-dc40-33da-8475-3c074547a45a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bd411e2e-cbef-4ec5-bcf8-e8bd27c4b24a",
+                    "number": "4",
+                    "title": "People",
+                    "length": 184000
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "4d2aeb16-a957-4067-8608-98f8709e505f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4198ee76-779b-4fcb-9222-5c47716fc653",
+            "count": 1,
+            "title": "People",
+            "status": "Official",
+            "disambiguation": "Remixes",
+            "artist-credit": [
+              {
+                "joinphrase": " & ",
+                "name": "Libianca",
+                "artist": {
+                  "id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+                  "name": "Libianca",
+                  "sort-name": "Libianca"
+                }
+              },
+              {
+                "name": "Cian Ducrot",
+                "artist": {
+                  "id": "b2764057-7b17-42fd-84db-2b67f9d91915",
+                  "name": "Cian Ducrot",
+                  "sort-name": "Ducrot, Cian"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2e6b32e1-2df8-4151-bcad-bca49c788760",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "People",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2023-03-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-03-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "6550daf1-9eca-3332-b617-393664d0d7b9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "92c98c46-4c7c-48a4-9f71-ea44283a560a",
+                    "number": "2",
+                    "title": "People",
+                    "length": 184633
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBARL2300305"
+        ]
+      }
+    ]
+  }
+}

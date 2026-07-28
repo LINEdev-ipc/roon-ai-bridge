@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Zaz&recording_name=Je+veux&release_name=Zaz",
+  "fetched_at": "2026-07-28T14:42:42.491Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Zaz",
+      "recording_arg": "Je veux",
+      "artist_credit_name": "Zaz",
+      "release_name": "Zaz",
+      "recording_name": "Je veux",
+      "artist_credit_id": 720786,
+      "artist_mbids": [
+        "e3214827-bd09-4d53-a88c-893d61556352"
+      ],
+      "release_mbid": "83edc997-d7be-4cab-9838-338fb47c1205",
+      "recording_mbid": "6bf37317-c387-4d87-a5dd-48fcde0cacdb"
+    }
+  ]
+}

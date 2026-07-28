@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Goldfrapp&recording_name=Strict+Machine",
+  "fetched_at": "2026-07-28T14:41:16.386Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Goldfrapp",
+      "recording_arg": "Strict Machine",
+      "artist_credit_name": "Goldfrapp",
+      "release_name": "Black Cherry",
+      "recording_name": "Strict Machine",
+      "artist_credit_id": 21786,
+      "artist_mbids": [
+        "7b885d42-3c41-4f43-9944-a5855ec5155e"
+      ],
+      "release_mbid": "140ef599-a079-40c8-960d-39e1c6da1edd",
+      "recording_mbid": "72428053-d408-4314-a41d-7871942f51d5"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Caribou&recording_name=Odessa",
+  "fetched_at": "2026-07-28T14:41:21.197Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Caribou",
+      "recording_arg": "Odessa",
+      "artist_credit_name": "Caribou",
+      "release_name": "Swim",
+      "recording_name": "Odessa",
+      "artist_credit_id": 235523,
+      "artist_mbids": [
+        "735e3514-a8ae-401f-af3b-6300df1b8d2c"
+      ],
+      "release_mbid": "0c727a84-e19b-3217-b47c-2228c786d46a",
+      "recording_mbid": "913a3e4e-595c-405a-a66f-62faae38ff1b"
+    }
+  ]
+}

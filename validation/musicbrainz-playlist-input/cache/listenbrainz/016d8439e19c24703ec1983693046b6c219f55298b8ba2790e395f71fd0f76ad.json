@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=M83&recording_name=Midnight+City+%28Eric+Prydz+Private+Remix%29",
+  "fetched_at": "2026-07-28T12:15:54.659Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "M83",
+      "recording_arg": "Midnight City (Eric Prydz Private Remix)",
+      "artist_credit_name": "M83",
+      "release_name": "Hurry Up, We’re Dreaming",
+      "recording_name": "Midnight City (Eric Prydz private remix)",
+      "artist_credit_id": 77161,
+      "artist_mbids": [
+        "6d7b7cd4-254b-4c25-83f6-dd20f98ceacd"
+      ],
+      "release_mbid": "8e891c6b-47ea-4406-9dba-f8969daa8545",
+      "recording_mbid": "168022f4-20d2-494f-a67e-a669a510f1e2"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Thievery+Corporation&recording_name=Lebanese+Blonde&release_name=The+Mirror+Conspiracy",
+  "fetched_at": "2026-07-28T14:41:04.034Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Thievery Corporation",
+      "recording_arg": "Lebanese Blonde",
+      "artist_credit_name": "Thievery Corporation",
+      "release_name": "The Mirror Conspiracy",
+      "recording_name": "Lebanese Blonde",
+      "artist_credit_id": 2475,
+      "artist_mbids": [
+        "a505bb48-ad65-4af4-ae47-29149715bff9"
+      ],
+      "release_mbid": "1de73c08-5755-3646-ad2c-a6657aa00fd4",
+      "recording_mbid": "27a32525-c99d-47d3-8f58-58e924313136"
+    }
+  ]
+}

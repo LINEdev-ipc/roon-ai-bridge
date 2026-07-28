@@ -1,0 +1,426 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Teardrop+%28Mazaruni+Dub+One%29%22+AND+artist%3A%22Massive+Attack%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:38:55.060Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:38:55.085Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "377735ac-7c33-469f-ae0c-e7ddd84cb2f3",
+        "score": 100,
+        "artist-credit-id": "e5a6757d-d732-3d05-8ed7-8ad5a3e18eaf",
+        "title": "Teardrop (Mazaruni dub one)",
+        "length": 364898,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "Massive Attack",
+            "artist": {
+              "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+              "name": "Massive Attack",
+              "sort-name": "Massive Attack",
+              "aliases": [
+                {
+                  "sort-name": "Massiv Attack",
+                  "name": "Massiv Attack",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Massive",
+                  "name": "Massive",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Mad Professor",
+            "artist": {
+              "id": "ea3b97e8-8a76-4ea7-8e6f-3ebf40acaeb8",
+              "name": "Mad Professor",
+              "sort-name": "Mad Professor",
+              "aliases": [
+                {
+                  "sort-name": "Fraser, Neil",
+                  "name": "Neil Fraser",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "N. Fraser",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "N. Fraser",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fraser, Neil Joseph Stephen",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Neil Joseph Stephen Fraser",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fraser, Neil Joseph Stephen",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Neil Joseph Stephen Fraser",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Crazy Mad Professor",
+                  "name": "Crazy Mad Professor",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "The Mad Professor",
+                  "name": "The Mad Professor",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2019-08-23",
+        "releases": [
+          {
+            "id": "f52f5b91-773e-43cc-b15f-f5f53eddaa30",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+            "count": 2,
+            "title": "Mezzanine",
+            "status": "Official",
+            "disambiguation": "deluxe; remastered 2019",
+            "artist-credit": [
+              {
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6f9f6899-c0d3-311d-ae87-a10ae6bc53a9",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Mezzanine",
+              "primary-type": "Album"
+            },
+            "date": "2019-08-23",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-08-23",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "bbb8801f-3905-3d6b-bf7a-c3c15651de8f",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a2ea5e18-1ff8-46a7-bba2-2df55704b5a7",
+                    "number": "3",
+                    "title": "Teardrop (Mazaruni Dub One)",
+                    "length": 364898
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "aca552aa-7329-4659-8281-d68de02d6e4f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "261f02c2-75a6-313f-9dd8-1716f73f3ce8",
+            "count": 2,
+            "title": "Mezzanine",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6f9f6899-c0d3-311d-ae87-a10ae6bc53a9",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Mezzanine",
+              "primary-type": "Album"
+            },
+            "date": "2019-08-23",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2019-08-23",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "a3ef0ba4-2a8c-3870-87fa-82bf8bad24e1",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f63f9032-3fb5-4f30-b209-7acfe101c5bb",
+                    "number": "3",
+                    "title": "Teardrop (Mazaruni Dub One)",
+                    "length": 367146
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 2
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBUM71805032"
+        ]
+      },
+      {
+        "id": "668c23d7-b624-4410-82d4-09d7b658dfbf",
+        "score": 100,
+        "artist-credit-id": "9848e339-442a-3291-a40a-7d0fafad5c73",
+        "title": "Teardrop (Mazaruni Dub One)",
+        "length": 365000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " V ",
+            "name": "Massive Attack",
+            "artist": {
+              "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+              "name": "Massive Attack",
+              "sort-name": "Massive Attack",
+              "aliases": [
+                {
+                  "sort-name": "Massiv Attack",
+                  "name": "Massiv Attack",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Massive",
+                  "name": "Massive",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Mad Professor",
+            "artist": {
+              "id": "ea3b97e8-8a76-4ea7-8e6f-3ebf40acaeb8",
+              "name": "Mad Professor",
+              "sort-name": "Mad Professor",
+              "aliases": [
+                {
+                  "sort-name": "Fraser, Neil",
+                  "name": "Neil Fraser",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "N. Fraser",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "N. Fraser",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fraser, Neil Joseph Stephen",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Neil Joseph Stephen Fraser",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Fraser, Neil Joseph Stephen",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Neil Joseph Stephen Fraser",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Crazy Mad Professor",
+                  "name": "Crazy Mad Professor",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "The Mad Professor",
+                  "name": "The Mad Professor",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2019-09-20",
+        "releases": [
+          {
+            "id": "63ec4640-3f10-45af-a640-3ae7151b5260",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "9848e339-442a-3291-a40a-7d0fafad5c73",
+            "count": 1,
+            "title": "Massive Attack V Mad Professor Part II (Mezzanine Remix Tapes '98)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " V ",
+                "name": "Massive Attack",
+                "artist": {
+                  "id": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+                  "name": "Massive Attack",
+                  "sort-name": "Massive Attack"
+                }
+              },
+              {
+                "name": "Mad Professor",
+                "artist": {
+                  "id": "ea3b97e8-8a76-4ea7-8e6f-3ebf40acaeb8",
+                  "name": "Mad Professor",
+                  "sort-name": "Mad Professor"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5321b921-d036-4bb8-a166-8fcdc57b118f",
+              "type-id": "0c60f497-ff81-3818-befd-abfc84a4858b",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Massive Attack V Mad Professor Part II (Mezzanine Remix Tapes '98)",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2019-09-20",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2019-09-20",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "efc05a63-3c38-317f-9397-f38125022b7a",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "21f98bd3-66e1-4d83-a35a-45d40d39d73f",
+                    "number": "A3",
+                    "title": "Teardrop (Mazaruni Dub One)",
+                    "length": 365000
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

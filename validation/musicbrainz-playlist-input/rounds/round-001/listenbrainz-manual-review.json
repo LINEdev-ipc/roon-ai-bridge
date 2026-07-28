@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "round_id": "round-001",
+  "reviewed_at": "2026-07-28T12:25:00.000Z",
+  "scope": "Every result that was neither a prior-reference agreement nor a ListenBrainz miss.",
+  "decisions": [
+    {
+      "candidate_id": "PLI-001-005",
+      "decision": "review",
+      "reason": "ListenBrainz found the requested title and artist, but only on Atomic Subsonic; the LLM-proposed album Renegade Rocker is unsupported."
+    },
+    {
+      "candidate_id": "PLI-001-013",
+      "decision": "review",
+      "reason": "Likely title correction from Smile Is the Key to Smile Is the Ke(y), but both the proposed album and exact title differ."
+    },
+    {
+      "candidate_id": "PLI-002-001",
+      "decision": "review",
+      "reason": "Artist+title and artist+title+album select different recordings of the same named Todd Terry mix, with materially different durations."
+    },
+    {
+      "candidate_id": "PLI-002-002",
+      "decision": "reject",
+      "reason": "The selected recording is explicitly a fragment of a Ministry of Sound DJ mix, not a demonstrated standalone remix."
+    },
+    {
+      "candidate_id": "PLI-002-003",
+      "decision": "reject",
+      "reason": "ListenBrainz selected a 359-second Pete Tong DJ-mix recording instead of the 241-second Norman Cook single version."
+    },
+    {
+      "candidate_id": "PLI-002-006",
+      "decision": "review",
+      "reason": "Album and non-album lookups select different .NUXX recordings (approximately 9:45 and 11:38); the request does not identify which one."
+    },
+    {
+      "candidate_id": "PLI-002-009",
+      "decision": "reject",
+      "reason": "The selected Reckoner remix is explicitly part of a continuous fabric DJ mix."
+    },
+    {
+      "candidate_id": "PLI-002-010",
+      "decision": "review",
+      "reason": "Title and named version agree, but the proposed TKOL RMX release is unsupported and the selected recording is only linked to Every Last Crumb."
+    },
+    {
+      "candidate_id": "PLI-002-011",
+      "decision": "accept",
+      "reason": "Exact named Eric Prydz private remix, non-video, compatible artist, and a standalone release with the same version name."
+    },
+    {
+      "candidate_id": "PLI-003-002",
+      "decision": "accept",
+      "reason": "Both ListenBrainz strategies agree; MusicBrainz verifies title, artist, album and a non-video recording."
+    },
+    {
+      "candidate_id": "PLI-003-003",
+      "decision": "review",
+      "reason": "Title and artist agree, but the DiscO-Zone album is unsupported and the selected three-minute recording may be a different edit."
+    },
+    {
+      "candidate_id": "PLI-003-004",
+      "decision": "reject",
+      "reason": "ListenBrainz selected a 158-second Mas Que Nada recording without the requested Timeless album or Black Eyed Peas credit."
+    },
+    {
+      "candidate_id": "PLI-003-005",
+      "decision": "reject",
+      "reason": "ListenBrainz selected the Multishow ao vivo live recording instead of the requested studio recording from Sim."
+    },
+    {
+      "candidate_id": "PLI-003-006",
+      "decision": "reject",
+      "reason": "ListenBrainz selected a radio edit although the request asked for the standard recording.",
+      "baseline_issue": "The previous exact reference also needs review because its MusicBrainz artist credit includes Kanye West while the proposal did not."
+    },
+    {
+      "candidate_id": "PLI-003-007",
+      "decision": "reject",
+      "reason": "ListenBrainz selected the En vivo en Mexico City live recording instead of the requested studio album recording."
+    },
+    {
+      "candidate_id": "PLI-003-008",
+      "decision": "reject",
+      "reason": "ListenBrainz selected a MusicBrainz recording marked as video; the prior album-first result is the non-video studio candidate."
+    },
+    {
+      "candidate_id": "PLI-003-010",
+      "decision": "reject",
+      "reason": "The selected Gangnam Style MusicBrainz entity is marked as video."
+    },
+    {
+      "candidate_id": "PLI-003-011",
+      "decision": "review",
+      "reason": "Both strategies agree on title and album, but MusicBrainz does not verify the requested Descemer Bueno and Gente de Zona credit or language/version."
+    },
+    {
+      "candidate_id": "PLI-003-013",
+      "decision": "reject",
+      "reason": "ListenBrainz selected the later Un canto por México, vol. 2 recording instead of the requested Musas recording with Los Macorinos."
+    }
+  ]
+}

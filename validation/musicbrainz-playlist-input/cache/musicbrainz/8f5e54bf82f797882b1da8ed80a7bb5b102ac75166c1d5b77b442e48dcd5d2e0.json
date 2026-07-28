@@ -1,0 +1,125 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22El+mal+querer%22+AND+artist%3A%22Rosal%C3%ADa%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:53:01.184Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:53:01.235Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "bb525db3-81e4-4c05-b529-23fa05f35c12",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "9c60b206-e4fe-3202-9ce4-a44c95bfd1fc",
+        "count": 3,
+        "title": "EL MAL QUERER",
+        "first-release-date": "2018-11-02",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "ROSALÍA",
+            "artist": {
+              "id": "25f3abd9-63b5-471a-bd25-feb9672dfa11",
+              "name": "ROSALÍA",
+              "sort-name": "ROSALÍA",
+              "disambiguation": "Spanish singer",
+              "aliases": [
+                {
+                  "sort-name": "ROSALÍA, LA",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "LA ROSALÍA",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Vila Tobella, Rosalía",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Rosalía Vila Tobella",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": "1993",
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "97385235-42ba-4a83-8002-5b9e5e4f0d16",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "EL MAL QUERER",
+            "status": "Official"
+          },
+          {
+            "id": "5fdcd1ae-93b0-462f-b11e-405ff1485e4a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "EL MAL QUERER",
+            "status": "Official"
+          },
+          {
+            "id": "ce7591dd-625d-4697-90f1-57245b08e206",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "EL MAL QUERER",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": -1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": -1,
+            "name": "electro"
+          },
+          {
+            "count": -1,
+            "name": "hip hop"
+          },
+          {
+            "count": 2,
+            "name": "flamenco"
+          },
+          {
+            "count": -1,
+            "name": "latin"
+          },
+          {
+            "count": 2,
+            "name": "art pop"
+          },
+          {
+            "count": 2,
+            "name": "alternative r&b"
+          },
+          {
+            "count": 2,
+            "name": "flamenco pop"
+          },
+          {
+            "count": 2,
+            "name": "flamenco nuevo"
+          },
+          {
+            "count": 1,
+            "name": "bulería"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Radiohead&recording_name=Everything+in+Its+Right+Place",
+  "fetched_at": "2026-07-28T14:41:01.600Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Radiohead",
+      "recording_arg": "Everything in Its Right Place",
+      "artist_credit_name": "Radiohead",
+      "release_name": "Kid A",
+      "recording_name": "Everything in Its Right Place",
+      "artist_credit_id": 66,
+      "artist_mbids": [
+        "a74b1b7f-71a5-4011-9441-d0b5e4122711"
+      ],
+      "release_mbid": "e1bdf797-8b89-4d4c-8986-bcb0974d9726",
+      "recording_mbid": "60bd9d53-01ff-4562-8058-eb44b3940317"
+    }
+  ]
+}

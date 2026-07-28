@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Tyla&recording_name=Water&release_name=Tyla",
+  "fetched_at": "2026-07-28T12:16:22.487Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Tyla",
+      "recording_arg": "Water",
+      "artist_credit_name": "Tyla",
+      "release_name": "TYLA",
+      "recording_name": "Water",
+      "artist_credit_id": 3730325,
+      "artist_mbids": [
+        "45425c84-9092-4e2c-b732-e1d0280b580a"
+      ],
+      "release_mbid": "f792faa4-80cb-4d7e-b381-0006110c2285",
+      "recording_mbid": "df1fd341-2119-441e-a863-7d21eaa3ab94"
+    }
+  ]
+}

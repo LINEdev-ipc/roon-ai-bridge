@@ -1,0 +1,1039 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28papillon+AND+tiesto+AND+remix%29+AND+artistname%3A%22Editors%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:06.505Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:06.874Z",
+    "count": 5,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "e293dc3c-00ad-4429-8cbb-924c8c95e3d9",
+        "score": 100,
+        "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+        "title": "Papillon (Tiesto remix)",
+        "length": 237000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Editors",
+            "artist": {
+              "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+              "name": "Editors",
+              "sort-name": "Editors",
+              "aliases": [
+                {
+                  "sort-name": "The Editors",
+                  "name": "The Editors",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2012",
+        "releases": [
+          {
+            "id": "367c8e87-da1e-4e61-b42c-f0629318c274",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Spring Break 2012",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "fc583fdc-f78b-4697-8134-8138024109d4",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Spring Break 2012",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 60,
+            "media": [
+              {
+                "id": "c4740f62-92de-3c0b-b189-8a2c35589023",
+                "position": 3,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "f3f83fbc-e168-4661-bbe3-78e5ced0b0b1",
+                    "number": "13",
+                    "title": "Papillon (Tiesto remix)",
+                    "length": 237000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "e34213af-34f6-4d6a-89d4-8ce081b14bd0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Spring Break 2012",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "fc583fdc-f78b-4697-8134-8138024109d4",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Spring Break 2012",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2012",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2012",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "a2957c16-3228-311b-af7c-065e66f3b77d",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2097302d-ef6d-45e3-a8b3-6afc33e41383",
+                    "number": "13",
+                    "title": "Papillon (Tiesto remix)",
+                    "length": 237000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 12
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "BEUM70900512"
+        ]
+      },
+      {
+        "id": "9dd3edca-2d01-4342-b818-d5821d94bb4b",
+        "score": 85,
+        "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+        "title": "Papillon (Tiësto remix)",
+        "length": 238000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Editors",
+            "artist": {
+              "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+              "name": "Editors",
+              "sort-name": "Editors",
+              "aliases": [
+                {
+                  "sort-name": "The Editors",
+                  "name": "The Editors",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2010-11-22",
+        "releases": [
+          {
+            "id": "cdf2b2d4-c38e-49f0-80a0-e67e91537e7e",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Dance Hits 2010 - Vol.01",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "23a08536-cd61-4cf8-9992-bfbbd7f97fe1",
+              "title": "Dance Hits 2010 - Vol.01",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "f51ab7ac-37f2-42c3-9378-5c520b4db459",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "067091c6-29c9-4601-b428-3bc58da4d243",
+                    "number": "7",
+                    "title": "Papillon (Tiësto Remix)"
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "a71e8cad-6db8-461a-b655-45e038068248",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "De Maxx Long Player 19: Another Remix Edition",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d8c6679c-d2fa-4c53-87f0-f486a1872bb0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "De Maxx Long Player 19: Another Remix Edition",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-11-22",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2010-11-22",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "69cf9f02-bd9e-3c5d-8727-5625fcfcf34a",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a8cd32d5-5d15-3a28-ae3c-13776f871c47",
+                    "number": "3",
+                    "title": "Papillon (Tiësto remix)",
+                    "length": 238000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 2
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBGAC0900054"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "trance"
+          },
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "dance"
+          },
+          {
+            "count": 1,
+            "name": "house"
+          }
+        ]
+      },
+      {
+        "id": "c3b84d4b-2af5-4656-9544-ea8839c773d3",
+        "score": 85,
+        "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+        "title": "Papillon (Tiësto remix)",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Editors",
+            "artist": {
+              "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+              "name": "Editors",
+              "sort-name": "Editors",
+              "aliases": [
+                {
+                  "sort-name": "The Editors",
+                  "name": "The Editors",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2011",
+        "releases": [
+          {
+            "id": "d44f34fa-8b7a-4a36-95ce-cfc68a014c25",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "88c861e4-d75b-3f10-811c-091ad2904ebf",
+            "count": 2,
+            "title": "Club Life, Volume One: Las Vegas",
+            "status": "Official",
+            "disambiguation": "A|X Music Series Volume 17",
+            "artist-credit": [
+              {
+                "name": "Tiësto",
+                "artist": {
+                  "id": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
+                  "name": "Tiësto",
+                  "sort-name": "Tiësto",
+                  "disambiguation": "Dutch DJ and record producer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9cde4c28-05c6-4940-9ec1-262cf7fac090",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Club Life, Volume One: Las Vegas",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2011",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2011",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 21,
+            "media": [
+              {
+                "id": "a2c4f7bb-2958-391c-b56c-4f2bb82ce300",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d3e1c9fb-3124-36e7-a7ab-172929a1e749",
+                    "number": "2",
+                    "title": "Papillon (Tiësto remix)"
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "73be44c8-c5b0-4489-a0d6-a34f956f446c",
+        "score": 85,
+        "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+        "title": "Papillon (Tiësto remix)",
+        "length": 485000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Editors",
+            "artist": {
+              "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+              "name": "Editors",
+              "sort-name": "Editors",
+              "aliases": [
+                {
+                  "sort-name": "The Editors",
+                  "name": "The Editors",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2009-10-02",
+        "releases": [
+          {
+            "id": "099e8b0f-816d-4116-bf58-00a645a10453",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Serious Beats 61",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bec3d790-7e8e-4963-bafc-354dab16a252",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Serious Beats 61",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-10-26",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2009-10-26",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "8b467bc6-a5c0-36fd-9a52-8674d1dc3c50",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5079703d-f2c3-3c34-9c81-a2727a40ef45",
+                    "number": "1",
+                    "title": "Papillon (Tiësto remix)",
+                    "length": 482000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "fe1bb0c9-3193-462e-99fb-c663475cd039",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+            "count": 1,
+            "title": "Papillon",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Editors",
+                "artist": {
+                  "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+                  "name": "Editors",
+                  "sort-name": "Editors"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "63b32f4a-8d4f-42a4-a1aa-89ed89a895ae",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Papillon",
+              "primary-type": "Single"
+            },
+            "date": "2009-10-12",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2009-10-12",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "5f5dde43-1a03-3a9a-84d2-d7834fee2807",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "065fe189-ea80-3817-8f17-209a1671d415",
+                    "number": "2",
+                    "title": "Papillon (Tiësto remix)",
+                    "length": 485000
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "55ca94fc-e492-4245-b16e-23963386ac19",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+            "count": 1,
+            "title": "Papillon",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Editors",
+                "artist": {
+                  "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+                  "name": "Editors",
+                  "sort-name": "Editors"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "63b32f4a-8d4f-42a4-a1aa-89ed89a895ae",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Papillon",
+              "primary-type": "Single"
+            },
+            "date": "2009",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2009",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "4fce1645-749b-3b43-8b49-cdad88d2b1e4",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3ea5e476-f0ab-3183-898b-a56e064ee3af",
+                    "number": "2",
+                    "title": "Papillon (Tiësto remix)",
+                    "length": 483056
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "87a1bee3-60c4-495e-9237-ac1ea8ed49aa",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+            "count": 1,
+            "title": "Papillon",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Editors",
+                "artist": {
+                  "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+                  "name": "Editors",
+                  "sort-name": "Editors"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "63b32f4a-8d4f-42a4-a1aa-89ed89a895ae",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Papillon",
+              "primary-type": "Single"
+            },
+            "date": "2009-10-02",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2009-10-02",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "0405ca15-e800-37be-96e1-fff7da8cdb0c",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "3d1c29a3-25d5-3780-be96-b97d6535a84d",
+                    "number": "5",
+                    "title": "Papillon (Tiësto remix)",
+                    "length": 489000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "ce5af416-6f99-3b67-a056-0b2179a79e74",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+            "count": 1,
+            "title": "Papillon",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Editors",
+                "artist": {
+                  "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+                  "name": "Editors",
+                  "sort-name": "Editors"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "63b32f4a-8d4f-42a4-a1aa-89ed89a895ae",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Papillon",
+              "primary-type": "Single"
+            },
+            "date": "2009",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2009",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "badee37f-00d5-3c9a-aae6-c9b83dafc857",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c2411817-3f63-34db-bd04-e46952002798",
+                    "number": "5",
+                    "title": "Papillon (Tiësto remix)",
+                    "length": 489000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 4
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBGAC0900054"
+        ]
+      },
+      {
+        "id": "b29215f5-13cd-402e-8374-b67d426e4042",
+        "score": 72,
+        "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+        "title": "Papillon (Tiësto remix radio edit)",
+        "length": 249000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Editors",
+            "artist": {
+              "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+              "name": "Editors",
+              "sort-name": "Editors",
+              "aliases": [
+                {
+                  "sort-name": "The Editors",
+                  "name": "The Editors",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2009-10-02",
+        "releases": [
+          {
+            "id": "712dc3f4-7f41-4a05-b18c-c5d3269020d1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+            "count": 1,
+            "title": "Papillon",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Editors",
+                "artist": {
+                  "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+                  "name": "Editors",
+                  "sort-name": "Editors"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "63b32f4a-8d4f-42a4-a1aa-89ed89a895ae",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Papillon",
+              "primary-type": "Single"
+            },
+            "date": "2009",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2009",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "4f1177fa-8070-382b-97a8-9fb8d9191196",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "877e3107-d227-39e3-a21c-69c3ca95e00f",
+                    "number": "4",
+                    "title": "Papillon (Tiesto remix radio edit)",
+                    "length": 249000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "55ca94fc-e492-4245-b16e-23963386ac19",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+            "count": 1,
+            "title": "Papillon",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Editors",
+                "artist": {
+                  "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+                  "name": "Editors",
+                  "sort-name": "Editors"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "63b32f4a-8d4f-42a4-a1aa-89ed89a895ae",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Papillon",
+              "primary-type": "Single"
+            },
+            "date": "2009",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2009",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 2,
+            "media": [
+              {
+                "id": "4fce1645-749b-3b43-8b49-cdad88d2b1e4",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "de9ac797-7bc8-3f1f-953f-791d53379189",
+                    "number": "1",
+                    "title": "Papillon (Tiësto remix) (radio edit)",
+                    "length": 246073
+                  }
+                ],
+                "track-count": 2,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "87a1bee3-60c4-495e-9237-ac1ea8ed49aa",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+            "count": 1,
+            "title": "Papillon",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Editors",
+                "artist": {
+                  "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+                  "name": "Editors",
+                  "sort-name": "Editors"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "63b32f4a-8d4f-42a4-a1aa-89ed89a895ae",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Papillon",
+              "primary-type": "Single"
+            },
+            "date": "2009-10-02",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2009-10-02",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "0405ca15-e800-37be-96e1-fff7da8cdb0c",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "12bc3843-5d7f-3d26-b0c2-988bcf346874",
+                    "number": "2",
+                    "title": "Papillon (Tiësto remix radio edit)",
+                    "length": 249000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "ce5af416-6f99-3b67-a056-0b2179a79e74",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "510e7315-b003-3e2e-9f85-09011ba9af46",
+            "count": 1,
+            "title": "Papillon",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Editors",
+                "artist": {
+                  "id": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+                  "name": "Editors",
+                  "sort-name": "Editors"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "63b32f4a-8d4f-42a4-a1aa-89ed89a895ae",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Papillon",
+              "primary-type": "Single"
+            },
+            "date": "2009",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2009",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "badee37f-00d5-3c9a-aae6-c9b83dafc857",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "bafb0d53-4d99-3efb-bc4d-562b7e30dbf8",
+                    "number": "2",
+                    "title": "Papillon (Tiësto remix radio edit)",
+                    "length": 249000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBGAC0900053"
+        ]
+      }
+    ]
+  }
+}

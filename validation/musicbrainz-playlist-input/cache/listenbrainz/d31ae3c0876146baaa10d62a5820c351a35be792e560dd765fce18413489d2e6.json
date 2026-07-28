@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Moby&recording_name=We+Are+All+Made+of+Stars&release_name=18",
+  "fetched_at": "2026-07-28T14:41:14.746Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Moby",
+      "recording_arg": "We Are All Made of Stars",
+      "artist_credit_name": "Moby",
+      "release_name": "18",
+      "recording_name": "We Are All Made of Stars",
+      "artist_credit_id": 359,
+      "artist_mbids": [
+        "8970d868-0723-483b-a75b-51088913d3d4"
+      ],
+      "release_mbid": "a4552a95-aea1-3518-9883-baa0c1e72f9a",
+      "recording_mbid": "bb7dcc7a-0b4e-413f-89a3-c3e4ba2d7ff3"
+    }
+  ]
+}

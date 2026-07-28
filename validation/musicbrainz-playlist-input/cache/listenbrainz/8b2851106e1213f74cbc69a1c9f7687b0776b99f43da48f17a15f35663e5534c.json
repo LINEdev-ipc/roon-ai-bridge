@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Calle+13&recording_name=Latinoam%C3%A9rica",
+  "fetched_at": "2026-07-28T12:16:09.224Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Calle 13",
+      "recording_arg": "Latinoamérica",
+      "artist_credit_name": "Calle 13",
+      "release_name": "En vivo en Mexico City",
+      "recording_name": "Latinoamérica",
+      "artist_credit_id": 311401,
+      "artist_mbids": [
+        "5be7d200-5499-4bba-b29b-1ac554199d23"
+      ],
+      "release_mbid": "9bbc5ade-bf97-4e41-b298-d48037cc6a90",
+      "recording_mbid": "ca282659-c699-4a8b-affe-fb4bbc717c45"
+    }
+  ]
+}

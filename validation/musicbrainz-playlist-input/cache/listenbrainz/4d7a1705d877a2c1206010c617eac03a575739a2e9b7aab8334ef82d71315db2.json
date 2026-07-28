@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Four+Tet&recording_name=Two+Thousand+and+Seventeen&release_name=New+Energy",
+  "fetched_at": "2026-07-28T14:41:24.499Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Four Tet",
+      "recording_arg": "Two Thousand and Seventeen",
+      "artist_credit_name": "Four Tet",
+      "release_name": "New Energy",
+      "recording_name": "Two Thousand and Seventeen",
+      "artist_credit_id": 35755,
+      "artist_mbids": [
+        "3bcff06f-675a-451f-9075-99e8657047e8"
+      ],
+      "release_mbid": "c3111ab9-2e00-45b1-85a1-e383010da1c3",
+      "recording_mbid": "59feedf2-8212-4352-80c9-820b00bd36ce"
+    }
+  ]
+}

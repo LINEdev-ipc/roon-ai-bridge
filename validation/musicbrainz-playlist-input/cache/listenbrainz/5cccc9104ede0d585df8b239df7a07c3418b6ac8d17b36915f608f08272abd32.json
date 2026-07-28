@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Massive+Attack&recording_name=Teardrop&release_name=Mezzanine",
+  "fetched_at": "2026-07-28T14:41:09.078Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Massive Attack",
+      "recording_arg": "Teardrop",
+      "artist_credit_name": "Massive Attack",
+      "release_name": "Mezzanine",
+      "recording_name": "Teardrop",
+      "artist_credit_id": 4,
+      "artist_mbids": [
+        "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8"
+      ],
+      "release_mbid": "2fa63133-a4c9-3f41-8deb-162189de83ff",
+      "recording_mbid": "f3bba4cd-8018-468b-902e-bc8f029593e5"
+    }
+  ]
+}

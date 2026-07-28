@@ -1,0 +1,272 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22T%C3%BA+s%C3%AD+sabes+quererme%22+AND+rgid%3A1d072395-ecbc-4134-bad0-3e591569689c&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:52:59.852Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:52:59.903Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "cfc57a42-fc7a-4d08-8fda-5a4b89ea71ec",
+        "score": 100,
+        "artist-credit-id": "318e61c4-3afc-3c8a-ae9c-b911a186e524",
+        "title": "Tú sí sabes quererme",
+        "length": 244944,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " con ",
+            "name": "Natalia Lafourcade",
+            "artist": {
+              "id": "2ceb4e66-4eaa-4dba-ad3a-30df3b742557",
+              "name": "Natalia Lafourcade",
+              "sort-name": "Lafourcade, Natalia",
+              "aliases": [
+                {
+                  "sort-name": "Lafourcade Silva, María Natalia",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "María Natalia Lafourcade Silva",
+                  "locale": "es_MX",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Los Macorinos",
+            "artist": {
+              "id": "34a09b28-202f-4604-9b02-9f6f04bea986",
+              "name": "Los Macorinos",
+              "sort-name": "Macorinos, Los"
+            }
+          }
+        ],
+        "first-release-date": "2017-01-27",
+        "releases": [
+          {
+            "id": "dd030fb2-26ea-4b90-a33d-ce124e8b76b1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "318e61c4-3afc-3c8a-ae9c-b911a186e524",
+            "count": 1,
+            "title": "Musas: Un homenaje al folclore latinoamericano en manos de Los Macorinos, vol. 1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " con ",
+                "name": "Natalia Lafourcade",
+                "artist": {
+                  "id": "2ceb4e66-4eaa-4dba-ad3a-30df3b742557",
+                  "name": "Natalia Lafourcade",
+                  "sort-name": "Lafourcade, Natalia"
+                }
+              },
+              {
+                "name": "Los Macorinos",
+                "artist": {
+                  "id": "34a09b28-202f-4604-9b02-9f6f04bea986",
+                  "name": "Los Macorinos",
+                  "sort-name": "Macorinos, Los"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1d072395-ecbc-4134-bad0-3e591569689c",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Musas: Un homenaje al folclore latinoamericano en manos de Los Macorinos, vol. 1",
+              "primary-type": "Album"
+            },
+            "date": "2017-05-05",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2017-05-05",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              },
+              {
+                "date": "2017-05-10",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "7f610b4e-3a20-37f9-aef4-0baaf6131710",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b8403709-46c5-4710-8f6d-c8b3aea07b6f",
+                    "number": "1",
+                    "title": "Tú sí sabes quererme",
+                    "length": 244933
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "e795c26e-772c-4389-9848-7ae5efab3ec0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "318e61c4-3afc-3c8a-ae9c-b911a186e524",
+            "count": 1,
+            "title": "Musas: Un homenaje al folclore latinoamericano en manos de Los Macorinos, vol. 1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " con ",
+                "name": "Natalia Lafourcade",
+                "artist": {
+                  "id": "2ceb4e66-4eaa-4dba-ad3a-30df3b742557",
+                  "name": "Natalia Lafourcade",
+                  "sort-name": "Lafourcade, Natalia"
+                }
+              },
+              {
+                "name": "Los Macorinos",
+                "artist": {
+                  "id": "34a09b28-202f-4604-9b02-9f6f04bea986",
+                  "name": "Los Macorinos",
+                  "sort-name": "Macorinos, Los"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1d072395-ecbc-4134-bad0-3e591569689c",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Musas: Un homenaje al folclore latinoamericano en manos de Los Macorinos, vol. 1",
+              "primary-type": "Album"
+            },
+            "date": "2017-05-05",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-05-05",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "0008a5d0-2bfe-3208-8980-584e3eb6a765",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ddd49ed6-98ed-43dd-b771-592f3eccc628",
+                    "number": "1",
+                    "title": "Tú sí sabes quererme",
+                    "length": 244944
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f138bda9-6d9f-4461-b964-e5bbd8cfa2e6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "318e61c4-3afc-3c8a-ae9c-b911a186e524",
+            "count": 1,
+            "title": "Tú sí sabes quererme",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " con ",
+                "name": "Natalia Lafourcade",
+                "artist": {
+                  "id": "2ceb4e66-4eaa-4dba-ad3a-30df3b742557",
+                  "name": "Natalia Lafourcade",
+                  "sort-name": "Lafourcade, Natalia"
+                }
+              },
+              {
+                "name": "Los Macorinos",
+                "artist": {
+                  "id": "34a09b28-202f-4604-9b02-9f6f04bea986",
+                  "name": "Los Macorinos",
+                  "sort-name": "Macorinos, Los"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "33c208ea-287e-4978-bfa8-3b52eab95d3f",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Tú sí sabes quererme",
+              "primary-type": "Single"
+            },
+            "date": "2017-01-27",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-01-27",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "4059d0cc-7890-3891-8201-3cab7cb57655",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "021f5b2d-6fcb-4ad1-b7cd-aae051cb3b2f",
+                    "number": "1",
+                    "title": "Tú sí sabes quererme",
+                    "length": 245000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "MXF011600414"
+        ]
+      }
+    ]
+  }
+}

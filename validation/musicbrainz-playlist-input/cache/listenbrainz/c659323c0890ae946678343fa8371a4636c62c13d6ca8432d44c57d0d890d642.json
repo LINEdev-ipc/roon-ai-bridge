@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Kelly+Lee+Owens&recording_name=Melt%21",
+  "fetched_at": "2026-07-28T14:41:30.362Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Kelly Lee Owens",
+      "recording_arg": "Melt!",
+      "artist_credit_name": "Kelly Lee Owens",
+      "release_name": "Inner Song",
+      "recording_name": "Melt!",
+      "artist_credit_id": 1717463,
+      "artist_mbids": [
+        "9d88eaab-f90a-4fbe-b84f-20da5518cd26"
+      ],
+      "release_mbid": "599e5bc1-cbc1-4d85-978f-ccc573326b91",
+      "recording_mbid": "13aaaccb-7974-49bd-846c-1ec6bc53ef46"
+    }
+  ]
+}

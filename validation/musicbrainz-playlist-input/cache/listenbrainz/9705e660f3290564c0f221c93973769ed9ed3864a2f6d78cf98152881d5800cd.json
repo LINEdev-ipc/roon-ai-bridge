@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Desireless&recording_name=Voyage%2C+voyage&release_name=Fran%C3%A7ois",
+  "fetched_at": "2026-07-28T14:42:39.856Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Desireless",
+      "recording_arg": "Voyage, voyage",
+      "artist_credit_name": "Desireless",
+      "release_name": "François",
+      "recording_name": "Voyage, voyage",
+      "artist_credit_id": 43549,
+      "artist_mbids": [
+        "b9a23705-56e8-4fb6-9543-7f43ab62eac7"
+      ],
+      "release_mbid": "b1b7e780-c0eb-48da-881e-8a182c0509b6",
+      "recording_mbid": "c8e68330-9420-4d6d-b5ef-3481fc71f340"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=London+Grammar&recording_name=Hell+to+the+Liars+%28K%C3%B6lsch+Remix%29",
+  "fetched_at": "2026-07-28T14:41:54.516Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "London Grammar",
+      "recording_arg": "Hell to the Liars (Kölsch Remix)",
+      "artist_credit_name": "London Grammar",
+      "release_name": "The Remixes",
+      "recording_name": "Hell to the Liars (Kölsch remix)",
+      "artist_credit_id": 1142211,
+      "artist_mbids": [
+        "4dbe08c1-b40a-43b3-ab89-210000bd8ab2"
+      ],
+      "release_mbid": "a0f3ae58-192f-46c9-b01e-0cc583a43881",
+      "recording_mbid": "fdf74bf8-6533-4064-9fe5-e4189816a7cf"
+    }
+  ]
+}

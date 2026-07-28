@@ -1,0 +1,86 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Pecados+y+milagros%22+AND+artist%3A%22Lila+Downs%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:52:39.371Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:52:39.421Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "1816c693-92cb-4d7e-8ce1-ee2da89d64c9",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "a2beb8fb-f2e6-3489-ac0e-146cdf52b9d9",
+        "count": 3,
+        "title": "Pecados y milagros",
+        "first-release-date": "2011-10-18",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Lila Downs",
+            "artist": {
+              "id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+              "name": "Lila Downs",
+              "sort-name": "Downs, Lila",
+              "aliases": [
+                {
+                  "sort-name": "Sánchez, Ana Lila Downs",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Ana Lila Downs Sánchez",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "5c47b00d-7731-4326-a5b6-72ddb93cb090",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Pecados y milagros",
+            "status": "Official"
+          },
+          {
+            "id": "5d25b6dc-58ea-40ca-a878-2ae4c7362be7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Pecados y milagros",
+            "status": "Official"
+          },
+          {
+            "id": "2e398577-1429-4f2d-9aff-85873633b9b9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Pecados y milagros",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "rock"
+          },
+          {
+            "count": 1,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "folk"
+          },
+          {
+            "count": 1,
+            "name": "latin"
+          }
+        ]
+      }
+    ]
+  }
+}

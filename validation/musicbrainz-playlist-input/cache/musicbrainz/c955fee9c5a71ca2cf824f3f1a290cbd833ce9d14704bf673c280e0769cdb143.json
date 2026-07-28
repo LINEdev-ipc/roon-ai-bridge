@@ -1,0 +1,219 @@
+{
+  "url": "https://musicbrainz.org/ws/2/work/69bb0da5-c48c-45b4-a94c-c7e6a8a8cc21?inc=artist-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:43:13.639Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+    "relations": [
+      {
+        "type-id": "a255bca1-b157-4518-9108-7b147dc3fc68",
+        "direction": "backward",
+        "source-credit": "",
+        "target-type": "artist",
+        "begin": null,
+        "type": "writer",
+        "ended": false,
+        "target-credit": "Khaogelo Moagi",
+        "artist": {
+          "sort-name": "Master KG",
+          "country": "ZA",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "b2a3cd7c-19dd-419e-b2e8-c1e2f8b3dff4",
+          "name": "Master KG",
+          "type": "Person",
+          "disambiguation": "South African musician and record producer"
+        },
+        "attribute-values": {},
+        "attribute-ids": {},
+        "end": null,
+        "attributes": []
+      },
+      {
+        "type": "writer",
+        "target-credit": "Nomcemo Nothule Knwanyana",
+        "ended": false,
+        "begin": null,
+        "source-credit": "",
+        "target-type": "artist",
+        "type-id": "a255bca1-b157-4518-9108-7b147dc3fc68",
+        "direction": "backward",
+        "end": null,
+        "attributes": [],
+        "artist": {
+          "id": "4e39c7cd-a631-4399-bbd8-13107be50938",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Zikode, Nomcebo",
+          "country": "ZA",
+          "disambiguation": "",
+          "type": "Person",
+          "name": "Nomcebo Zikode"
+        },
+        "attribute-ids": {},
+        "attribute-values": {}
+      }
+    ],
+    "id": "69bb0da5-c48c-45b4-a94c-c7e6a8a8cc21",
+    "type": "Song",
+    "tags": [],
+    "iswcs": [
+      "T-301.541.345-9"
+    ],
+    "genres": [],
+    "languages": [
+      "zul"
+    ],
+    "title": "Jerusalema",
+    "attributes": [
+      {
+        "type": "PRS tune code",
+        "value": "565782EW",
+        "type-id": "cd76035f-b94e-4e47-850d-aa2cd825d1a6"
+      },
+      {
+        "type": "SGACEDOM ID",
+        "value": "5189141",
+        "type-id": "33fe1f90-d812-48ef-839f-bc151afecaca"
+      },
+      {
+        "value": "5189141",
+        "type-id": "fd46ccc3-b3bb-4c5a-b40d-23b81899ef46",
+        "type": "SPAC ID"
+      },
+      {
+        "type": "ACAM ID",
+        "type-id": "955305a2-58ec-4c64-94f7-7fb9b209416c",
+        "value": "5189141"
+      },
+      {
+        "type": "AEI ID",
+        "type-id": "d12e548d-4579-4ddd-abb6-9ffa4fee6826",
+        "value": "5189141"
+      },
+      {
+        "type-id": "43b74305-291f-4ae3-9e59-0dca457c00fe",
+        "value": "5189141",
+        "type": "SACIM ID"
+      },
+      {
+        "value": "5189141",
+        "type-id": "5ab3cd1a-b9ad-4244-8b32-b3a958d4ede6",
+        "type": "NICAUTOR ID"
+      },
+      {
+        "type-id": "a9551cb7-ee2c-4b05-87b6-18ef0e549865",
+        "value": "5189141",
+        "type": "AACIMH ID"
+      },
+      {
+        "type-id": "3667d8d9-9fe4-4df0-873b-4dc00a886d80",
+        "value": "5189141",
+        "type": "SOBODAYCOM ID"
+      },
+      {
+        "value": "11872118",
+        "type-id": "4bcbb212-a973-46ee-8160-e9f0f89ca6ef",
+        "type": "SAYCE ID"
+      },
+      {
+        "type": "APA ID",
+        "value": "6622177",
+        "type-id": "84afca1d-80dc-4d44-8d7a-e1e84e70aa65"
+      },
+      {
+        "value": "2332063",
+        "type-id": "d8aa6512-314a-478d-bd30-e8d7411509cb",
+        "type": "SADAIC ID"
+      },
+      {
+        "type": "AKM ID",
+        "type-id": "eee68598-7f51-44a7-bd5a-fc728f1854d2",
+        "value": "2608337701"
+      },
+      {
+        "type": "SAYCO ID",
+        "type-id": "4439b1a5-47da-4774-9caa-8b8589129297",
+        "value": "13325133"
+      },
+      {
+        "type": "SACEM ID",
+        "value": "43 069 101 11",
+        "type-id": "d08147e2-d167-3c2b-bbe4-af6643a194f9"
+      },
+      {
+        "type": "ECAD ID",
+        "type-id": "d37a8c27-8f83-47c7-954d-175d35759990",
+        "value": "29173006"
+      },
+      {
+        "type": "GEMA ID",
+        "type-id": "01eeee67-f514-3801-bdce-279e04872f91",
+        "value": "26240709-001"
+      },
+      {
+        "value": "209604147",
+        "type-id": "00370bc6-7388-34a1-aa5b-b0e081ccb53d",
+        "type": "SOCAN ID"
+      },
+      {
+        "value": "699265779",
+        "type-id": "d05fce14-b3d7-370c-8655-e27ac2e4e290",
+        "type": "SESAC ID"
+      },
+      {
+        "value": "A0EZN8J00",
+        "type-id": "b2e4067b-a9e4-44fb-bfcd-3c1fc41dc06d",
+        "type": "SABAM ID"
+      },
+      {
+        "type": "LatinNet ID",
+        "type-id": "78cf692f-a43b-46fc-993b-635c5bd86375",
+        "value": "8714"
+      },
+      {
+        "type": "JASRAC ID",
+        "type-id": "31048fcc-3dbb-3979-8f85-805afb933e0c",
+        "value": "1O7-5185-0"
+      },
+      {
+        "type": "PRS tune code",
+        "type-id": "cd76035f-b94e-4e47-850d-aa2cd825d1a6",
+        "value": "416775CV"
+      },
+      {
+        "type-id": "a6492434-b847-4f1b-9869-9184ade990ed",
+        "value": "W-021668957",
+        "type": "BUMA/STEMRA ID"
+      },
+      {
+        "type": "APDAYC ID",
+        "type-id": "b66d6f47-2a58-4bc1-ac75-b44c47a198f8",
+        "value": "10831953"
+      },
+      {
+        "type": "SUISA ID",
+        "value": "006672 134 39",
+        "type-id": "034f35ae-d250-3749-95e7-854e606d5960"
+      },
+      {
+        "value": "8257626",
+        "type-id": "f15e9a05-231e-415b-8b7d-8ec44c736bde",
+        "type": "SPA ID"
+      },
+      {
+        "type": "ECAD ID",
+        "type-id": "d37a8c27-8f83-47c7-954d-175d35759990",
+        "value": "28849394"
+      },
+      {
+        "value": "W-008304988",
+        "type-id": "f56a68ae-ecd4-423a-8c66-bfebb6ca2de8",
+        "type": "SAMRO ID"
+      }
+    ],
+    "language": "zul",
+    "disambiguation": "Master KG & Nomcebo song"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Lana+Del+Rey&recording_name=Summertime+Sadness+%28Cedric+Gervais+Remix%29",
+  "fetched_at": "2026-07-28T14:41:45.141Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Lana Del Rey",
+      "recording_arg": "Summertime Sadness (Cedric Gervais Remix)",
+      "artist_credit_name": "Lana Del Rey",
+      "release_name": "Ministry of Sound: Sessions Ten",
+      "recording_name": "Summertime Sadness (Cedric Gervais remix)",
+      "artist_credit_id": 861416,
+      "artist_mbids": [
+        "b7539c32-53e7-4908-bda3-81449c367da6"
+      ],
+      "release_mbid": "5cacb26a-0f0b-4d1a-954b-fc9542234437",
+      "recording_mbid": "1533f45b-2fee-4df1-b86c-192c970e21aa"
+    }
+  ]
+}

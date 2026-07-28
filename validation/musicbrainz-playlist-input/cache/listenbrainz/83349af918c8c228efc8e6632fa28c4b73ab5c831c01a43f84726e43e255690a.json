@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Dubmatix&recording_name=Champion+Sound",
+  "fetched_at": "2026-07-28T12:15:34.386Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Dubmatix",
+      "recording_arg": "Champion Sound",
+      "artist_credit_name": "Dubmatix",
+      "release_name": "Atomic Subsonic",
+      "recording_name": "Champion Sound",
+      "artist_credit_id": 442865,
+      "artist_mbids": [
+        "398d8aef-7939-4d64-b9ee-3b1114836d44"
+      ],
+      "release_mbid": "ba3fda35-b26d-415d-a696-bd7f846ff939",
+      "recording_mbid": "96ff250b-5c6c-4433-acd7-541053af2dff"
+    }
+  ]
+}

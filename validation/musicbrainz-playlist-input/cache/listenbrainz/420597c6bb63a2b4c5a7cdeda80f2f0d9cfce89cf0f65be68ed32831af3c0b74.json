@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Editors&recording_name=Papillon+%28Ti%C3%ABsto+Remix%29&release_name=Papillon",
+  "fetched_at": "2026-07-28T14:42:05.321Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Editors",
+      "recording_arg": "Papillon (Tiësto Remix)",
+      "artist_credit_name": "Editors",
+      "release_name": "Papillon",
+      "recording_name": "Papillon (Tiësto remix)",
+      "artist_credit_id": 226505,
+      "artist_mbids": [
+        "0efe858c-89e5-4e47-906a-356fa953fd6e"
+      ],
+      "release_mbid": "fe1bb0c9-3193-462e-99fb-c663475cd039",
+      "recording_mbid": "73be44c8-c5b0-4489-a0d6-a34f956f446c"
+    }
+  ]
+}

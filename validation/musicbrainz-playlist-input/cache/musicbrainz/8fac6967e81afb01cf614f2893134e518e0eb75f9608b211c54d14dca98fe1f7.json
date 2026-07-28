@@ -1,0 +1,151 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28fat+AND+panther%29+AND+artistname%3A%22Prince+Fatty%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:40:07.422Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:40:07.560Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "e0db024c-cb8c-4d7a-b0df-1b43c3a0b34b",
+        "score": 100,
+        "artist-credit-id": "bcddee5d-d0c3-3bff-92f8-b355badfae4f",
+        "title": "Fat Panther",
+        "length": 190506,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Prince Fatty",
+            "artist": {
+              "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+              "name": "Prince Fatty",
+              "sort-name": "Prince Fatty"
+            }
+          }
+        ],
+        "first-release-date": "2007-07-16",
+        "releases": [
+          {
+            "id": "33e37ea9-5f7b-402d-9eb7-6d397536dfd8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Survival of the Fattest",
+            "status": "Official",
+            "release-group": {
+              "id": "90912bd8-60a0-3c7d-ad42-b95005715c50",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Survival of the Fattest",
+              "primary-type": "Album"
+            },
+            "date": "2007-07-16",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2007-07-16",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "a5b631fe-2cd9-3eb2-8b42-a53c7c7fe2e6",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a4c8f15e-d050-36b1-8e57-1472ecbd4583",
+                    "number": "2",
+                    "title": "Fat Panther",
+                    "length": 190506
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b0fa8241-14fe-4976-96e2-0fe0358c4df6",
+        "score": 93,
+        "artist-credit-id": "bcddee5d-d0c3-3bff-92f8-b355badfae4f",
+        "title": "The Fat Panther",
+        "length": 190000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Prince Fatty",
+            "artist": {
+              "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+              "name": "Prince Fatty",
+              "sort-name": "Prince Fatty"
+            }
+          }
+        ],
+        "first-release-date": "2008-08-08",
+        "releases": [
+          {
+            "id": "3a2a054c-be2d-48e9-9ab0-9abf189d724f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Survival of the Fattest",
+            "status": "Official",
+            "release-group": {
+              "id": "90912bd8-60a0-3c7d-ad42-b95005715c50",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Survival of the Fattest",
+              "primary-type": "Album"
+            },
+            "date": "2008-08-08",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2008-08-08",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "96389c29-8efb-3fcf-b2bf-f98adc0498d0",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "824a614e-65bf-3170-a33c-d8a671d282d8",
+                    "number": "2",
+                    "title": "The Fat Panther",
+                    "length": 190000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

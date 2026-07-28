@@ -1,0 +1,66 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Labotomie%22+AND+artist%3A%22Tetra+Hydro+K%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:51:28.239Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:51:28.289Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "2c2d511e-6560-411c-b3e8-5de0eecf3a8d",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "449fdd36-84cb-3887-8fe1-5eac50af55be",
+        "count": 1,
+        "title": "Labotomie",
+        "first-release-date": "2016-04-23",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Tetra Hydro K",
+            "artist": {
+              "id": "1c575d9d-1bc0-4ab2-b680-fa4e1db06bb1",
+              "name": "Tetra Hydro K",
+              "sort-name": "Tetra Hydro K",
+              "aliases": [
+                {
+                  "sort-name": "THK",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "THK",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": "2025-09-19",
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "b16ad3e0-26ae-4a53-b2cc-a3cb1037dc6c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Labotomie",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "dub"
+          },
+          {
+            "count": 1,
+            "name": "dub techno"
+          }
+        ]
+      }
+    ]
+  }
+}

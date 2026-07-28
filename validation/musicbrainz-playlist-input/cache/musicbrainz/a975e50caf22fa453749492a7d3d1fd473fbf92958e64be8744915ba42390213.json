@@ -1,0 +1,118 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28digital+AND+robot%29+AND+artistname%3A%22Manudigital%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:41:08.481Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:41:08.621Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "028c8c5a-2b34-441e-8d15-8545bdacdd6e",
+        "score": 100,
+        "artist-credit-id": "d1271a05-9374-3275-99fc-8d4f077e6a1e",
+        "title": "Digital Robot",
+        "length": 230000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Manudigital",
+            "artist": {
+              "id": "e4d4bf5a-e200-4844-9745-d806b58cf827",
+              "name": "Manudigital",
+              "sort-name": "Manudigital",
+              "disambiguation": "Riddim maker, bass player, producer",
+              "aliases": [
+                {
+                  "sort-name": "Heron, Emmanuel",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Emmanuel Heron",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "George Palmer",
+            "artist": {
+              "id": "8e5ebd96-5641-4204-8695-14eb1bccc389",
+              "name": "George Palmer",
+              "sort-name": "George Palmer",
+              "disambiguation": "Reggae singer"
+            }
+          }
+        ],
+        "first-release-date": "2016-02-19",
+        "releases": [
+          {
+            "id": "a543b8d9-4bf7-4665-b61d-3a1983c833f8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1d527a69-ed5b-36d3-81ce-f5838b795e82",
+            "count": 1,
+            "title": "Digital Pixel",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Manudigital",
+                "artist": {
+                  "id": "e4d4bf5a-e200-4844-9745-d806b58cf827",
+                  "name": "Manudigital",
+                  "sort-name": "Manudigital",
+                  "disambiguation": "Riddim maker, bass player, producer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4b0d4af2-7c95-419b-83c2-a0be18421a68",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Digital Pixel",
+              "primary-type": "Album"
+            },
+            "date": "2016-02-19",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2016-02-19",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "4c2c7334-eb90-39ad-a975-a939309525ca",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ea9361d1-9ed7-4503-9719-0ea546e30655",
+                    "number": "15",
+                    "title": "Digital Robot",
+                    "length": 230000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 14
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

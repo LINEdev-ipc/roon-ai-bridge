@@ -1,0 +1,1779 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28enjoy+AND+silence+AND+hands+AND+feet+AND+mix%29+AND+artistname%3A%22Depeche+Mode%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:03.441Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:03.807Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "45c2a3ee-2a3d-4ddd-8c62-454ae7c6b083",
+        "score": 100,
+        "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+        "title": "Enjoy the Silence (Hands and Feet mix)",
+        "length": 440000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Depeche Mode",
+            "artist": {
+              "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+              "name": "Depeche Mode",
+              "sort-name": "Depeche Mode",
+              "aliases": [
+                {
+                  "sort-name": "デペッシュ・モード",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "デペッシュ・モード",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "DM",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "DM",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1990-02-05",
+        "releases": [
+          {
+            "id": "8aee0426-8bc6-4aae-b44c-fb475f83f640",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Periodic Table of Synthpop: 12\" 2",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4e31aabb-9425-4434-8f11-fb69c5724b2d",
+              "type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "primary-type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "title": "Periodic Table of Synthpop: 12\" 2",
+              "primary-type": "Other",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2021",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2021",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "3a8dd3ea-3321-4620-847f-c92241774812",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5cea24f8-9c2d-4186-8c16-2b039cd535e5",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 436134
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "2434701d-50e1-4f47-aa2d-63204e4b6de0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "1990",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "b7db94db-79e1-3fda-a70b-a8fb363e3e41",
+                "position": 1,
+                "format": "8cm CD",
+                "track": [
+                  {
+                    "id": "db837fc8-d574-45d8-9c35-7136a084940d",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 441293
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "d51cc542-a1f4-4453-a9b7-631b1eb863a3",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "World of Electronic Music Vol.5",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0a91cb45-1b7c-48c1-b579-5be154a554ec",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "World of Electronic Music Vol.5",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 130,
+            "media": [
+              {
+                "id": "4a82125a-f5c9-3a58-86c8-144bb4c6d2bb",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "7f93bbb0-cb29-4d6d-84d3-e8e0b5aaae2b",
+                    "number": "75",
+                    "title": "Enjoy the Silence (dance mix)",
+                    "length": 438123
+                  }
+                ],
+                "track-count": 130,
+                "track-offset": 74
+              }
+            ]
+          },
+          {
+            "id": "b094b307-5e2a-4fd0-8d76-cc6a1d1e7656",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 2,
+            "title": "The Remixes 86>98",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c0c61382-7786-345e-b962-89407f08edb9",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Remixes 86>98",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1999",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 21,
+            "media": [
+              {
+                "id": "6eec5b07-5d15-3eb3-8c10-4b20ac8b461f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b069f817-09a9-4b05-b839-3a955d665dcf",
+                    "number": "9",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 439240
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "22b20d20-759c-4816-a976-c14374f36ebd",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Dance Remixes ’99",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0e126ef1-b5f9-359d-ab12-80a3277b3433",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Dance Remixes ’99",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1999",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "1999",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "3678f0f1-56fc-32fc-8131-d34acd8e2e72",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "aaa32101-8085-39bf-9816-ce91c5912d3a",
+                    "number": "10",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 436974
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "0a65a775-308e-4d2c-9617-f332a78bfd0b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1990",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "c8ac7875-676c-3bbd-b695-2a3f50486ee3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4247f485-4875-46ec-9d18-09045595dc37",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 440000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "fecdc8f7-6e96-4fa3-a9a5-acb6d2dfe535",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Dance Hits & Remixes",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3a8301e3-180a-3c54-8f48-81dbf1e1729a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Dance Hits & Remixes",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2002",
+            "country": "RU",
+            "release-events": [
+              {
+                "date": "2002",
+                "area": {
+                  "id": "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+                  "name": "Russia",
+                  "sort-name": "Russia",
+                  "iso-3166-1-codes": [
+                    "RU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "e0c1fded-f8fa-33d6-8b9d-6fbbc3117bb8",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3d5ddb85-77a1-3369-a66f-1ea185979588",
+                    "number": "10",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 439240
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "d2c32d33-2dce-43ab-915d-9269a2bb21ba",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990-02-05",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1990-02-05",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "f5ad7b9e-62e1-3c0f-b94d-fd3359a5ebcc",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6d73190f-0187-377a-b180-faef0b4208f4",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 441293
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "8fa1f0f4-7c12-3009-be96-3e7b47b55eb0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990-02-05",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1990-02-05",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "ecef2d95-757b-3623-b50d-ac147ff34181",
+                "position": 1,
+                "format": "8cm CD",
+                "track": [
+                  {
+                    "id": "9a330d3d-40c6-35f9-b9c6-6d52c9312cd6",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 441293
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "b766f8e9-b29a-4b25-9fb8-fbe808b64b79",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "disambiguation": "cardboard sleeve",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990-02-27",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1990-02-27",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "907b1f6e-8cfd-351e-8e35-5eb9d0143d37",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ef1b7851-42fd-336e-b2fd-1cfdd2cc331c",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 440293
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "23af546b-343e-413c-a955-6d59d2b424b6",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 2,
+            "title": "The Remixes 86>98",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c0c61382-7786-345e-b962-89407f08edb9",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Remixes 86>98",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2001",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2001",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 21,
+            "media": [
+              {
+                "id": "6cd02b4c-ff7e-393b-959a-4efe4fc9a9ed",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2576a689-2e0f-3fc2-b068-4829b4e8ecc8",
+                    "number": "9",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 439240
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "0ed053e6-31f4-457e-8070-3486e90febd2",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Venetian Dreams",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4f5143bf-db56-4cad-8b01-aa378558fd68",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Venetian Dreams",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1997",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1997",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "32cb886f-854b-3269-a9fe-6312db4a5378",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7b268b2c-9fc6-3b0a-b028-4e43ddba62cb",
+                    "number": "13",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 437000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "e5f48c3f-8d8f-4e72-ab5c-8396990177ff",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "1990",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "ba5fd650-7765-3dcd-bbea-2dae98ae2e0f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e7654616-6a7b-382d-94d7-674f7cf92fe6",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 440293
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "3ec10bf7-1e51-46b6-9bbf-54cc54f72647",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1990",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 5,
+            "media": [
+              {
+                "id": "b30ecf77-091b-396f-bd2b-2ea911617922",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "cac29318-21a5-4638-947f-cd27864cba11",
+                    "number": "B1",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 440293
+                  }
+                ],
+                "track-count": 5,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "67cf905e-8e7c-4f29-8c17-753e3589328d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990-02-05",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1990-02-05",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 4,
+            "media": [
+              {
+                "id": "41d73cec-1d13-37d1-a6ee-aa6d282266b8",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "666010d7-a92f-3f48-8e42-47650b892f7d",
+                    "number": "A2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 441293
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "5039ebc9-7a0a-4cea-b6cc-e94273d6624c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "disambiguation": "jewel case",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "1990-02-27",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1990-02-27",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "eb4d4f4c-9ab5-32ad-83dd-8af3e3dc9fbe",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "88f2d5b8-03b5-4b95-83c9-579a7f337e14",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 440293
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "synth and techno pop"
+          }
+        ]
+      },
+      {
+        "id": "e7224447-072a-43bc-b086-50c8a3c5f342",
+        "score": 100,
+        "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+        "title": "Enjoy the Silence (Hands and Feet mix)",
+        "length": 401466,
+        "disambiguation": "3″ edit",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Depeche Mode",
+            "artist": {
+              "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+              "name": "Depeche Mode",
+              "sort-name": "Depeche Mode",
+              "aliases": [
+                {
+                  "sort-name": "デペッシュ・モード",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "デペッシュ・モード",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "DM",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "DM",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1991-04-21",
+        "releases": [
+          {
+            "id": "748584b7-a9e5-44a3-90c1-205653f4cc28",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Violator | The 12\" Singles",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "602d5798-c2e6-4be9-9d63-903106e8e8a1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Violator | The 12″ Singles",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022-04-01",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2022-04-01",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 29,
+            "media": [
+              {
+                "id": "431f6d9e-dccf-449b-a8fb-9d27318b262e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a4cbcc8e-2628-4038-b036-ff32bef7fbad",
+                    "number": "8",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 408175
+                  }
+                ],
+                "track-count": 29,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "a615c785-4a2e-44c5-a835-aa0e08be5fc5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 10,
+            "title": "Violator | The 12″ Singles",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "602d5798-c2e6-4be9-9d63-903106e8e8a1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Violator | The 12″ Singles",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2020-07-17",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2020-07-17",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 29,
+            "media": [
+              {
+                "id": "7fb6ecc9-5ea8-3c51-9898-084be353c955",
+                "position": 3,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "fb3c0c55-beb4-4c8c-b071-69acc132ec30",
+                    "number": "E2",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 401000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "41b378b2-0c35-413a-a3c3-0f124e5b0d89",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 6,
+            "title": "Singles 19–24",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1d41c326-b816-4b4b-8db8-0f23962ad204",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Singles 19–24",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2004-03-29",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2004-03-29",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "f63665b8-2cb9-3a0b-8638-3ac779c7cfc0",
+                "position": 6,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ebd9cd68-a87e-4e8f-b639-1a766fe87f79",
+                    "number": "3",
+                    "title": "Enjoy the Silence (Hands and Feet mix 3″ edit)",
+                    "length": 401000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "e85603cd-9510-436c-823b-98db96e5288d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 29,
+            "title": "The Complete Depeche Mode",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "27773d37-fef8-4e19-97af-a1c40003b28d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Complete Depeche Mode",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2006-12-19",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2006-12-19",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 644,
+            "media": [
+              {
+                "id": "15fac015-aaff-3f01-b2d3-2f8f5a90b8ce",
+                "position": 21,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "511024c8-b5dd-4163-b1f5-2cd38a1ad2d0",
+                    "number": "46",
+                    "title": "Enjoy the Silence (Hands and Feet mix 3″ edit)",
+                    "length": 401000
+                  }
+                ],
+                "track-count": 52,
+                "track-offset": 45
+              }
+            ]
+          },
+          {
+            "id": "f4ccb8ab-b46a-4a26-9fad-41f231310216",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Violator | The 12″ Singles",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "602d5798-c2e6-4be9-9d63-903106e8e8a1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Violator | The 12″ Singles",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2020-07-17",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2020-07-17",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 29,
+            "media": [
+              {
+                "id": "439446eb-4216-39d5-bf92-dc1b90f00395",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "347d2f5b-7ce2-4e23-99ba-28e469db74a3",
+                    "number": "8",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 408000
+                  }
+                ],
+                "track-count": 29,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "b826d0e0-b902-4d82-842f-526bcb93a34b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "DMBX4",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1d41c326-b816-4b4b-8db8-0f23962ad204",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Singles 19–24",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-01-12",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2018-01-12",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "feb4e38a-7733-3862-b581-c606024afc78",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0b26f7d1-3d71-4a75-9a75-ab90b681d1d7",
+                    "number": "46",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 399000
+                  }
+                ],
+                "track-count": 52,
+                "track-offset": 45
+              }
+            ]
+          },
+          {
+            "id": "b9c4e95f-d7d8-4d64-b83d-32ea3e76cf1a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "2004-03-29",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2004-03-29",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "ad284221-7865-30e9-a76f-1b5237f6e40b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "11ed8885-d98f-3767-af5c-294f12cba405",
+                    "number": "3",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 401466
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "8747b6cc-86cf-3dd6-9c56-d362f27e2217",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "Enjoy the Silence",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "af2f353d-90a9-3e03-bbcd-5395d3ff5bbd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Enjoy the Silence",
+              "primary-type": "Single"
+            },
+            "date": "2004-03-30",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2004-03-30",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 9,
+            "media": [
+              {
+                "id": "53f0bfdf-e6e9-3ffd-a2bd-9099e878ed35",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "27ea3a70-3ad2-3bc6-9beb-62b2f4b3bb00",
+                    "number": "3",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 401466
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "06164181-404e-4314-89bb-72d6815e7786",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 2,
+            "title": "Ultra Rare Remixes: The Mutebank Collection, Vol. 10",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "02264cec-b215-40b5-b9ea-1ce0aefe8c10",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ultra Rare Remixes: The Mutebank Collection, Vol. 10",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "track-count": 22,
+            "media": [
+              {
+                "id": "54b6c514-8a71-300d-9d05-b027cb58d31e",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7a80e717-4920-47a4-8e5c-a4d229625af8",
+                    "number": "2",
+                    "title": "Enjoy the Silence (Hands and Feet mix) (edit)",
+                    "length": 401466
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "cd080239-8e87-4862-a772-a540eb543b20",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 4,
+            "title": "X¹",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dcf49ce2-bc50-4c38-9e8f-848ec3367eb6",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "X¹",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1991-04-21",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "1991-04-21",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 33,
+            "media": [
+              {
+                "id": "38871de9-308e-3233-a80c-8313128a10b2",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d50e9257-2a56-343c-a8b4-a85bd742589e",
+                    "number": "9",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 402000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "2492651f-0d46-4c0e-bb2c-ae7cae69cd4e",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "e08931ce-524d-3a94-b7a7-c7aa15b7131c",
+            "count": 1,
+            "title": "The Remixes 86>98",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Depeche Mode",
+                "artist": {
+                  "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+                  "name": "Depeche Mode",
+                  "sort-name": "Depeche Mode"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c0c61382-7786-345e-b962-89407f08edb9",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Remixes 86>98",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "1998",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1998",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "80820c89-b5cc-35ef-b8f2-4591cc6f1092",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d817215d-3bb8-346f-b611-b5711dda5b95",
+                    "number": "6",
+                    "title": "Enjoy the Silence (Hands and Feet mix)",
+                    "length": 401000
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 5
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBAJH0400047",
+          "USWB11901535"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "new wave"
+          },
+          {
+            "count": 1,
+            "name": "synth-pop"
+          },
+          {
+            "count": 2,
+            "name": "synth and techno pop"
+          }
+        ]
+      }
+    ]
+  }
+}

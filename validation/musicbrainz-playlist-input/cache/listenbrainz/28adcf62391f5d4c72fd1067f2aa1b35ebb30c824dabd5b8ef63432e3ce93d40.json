@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=BIBI&recording_name=BIBI+Vengeance",
+  "fetched_at": "2026-07-28T12:16:21.688Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "BIBI",
+      "recording_arg": "BIBI Vengeance",
+      "artist_credit_name": "BIBI",
+      "release_name": "Lowlife Princess: Noir",
+      "recording_name": "Bibi Vengeance",
+      "artist_credit_id": 2498321,
+      "artist_mbids": [
+        "21c93d2d-dc10-4f8f-ae91-7285eff37c2f"
+      ],
+      "release_mbid": "984fed7a-0852-4107-bb4a-03e36de7e40b",
+      "recording_mbid": "2f281525-9d18-49b1-a82f-f537aeea9a57"
+    }
+  ]
+}

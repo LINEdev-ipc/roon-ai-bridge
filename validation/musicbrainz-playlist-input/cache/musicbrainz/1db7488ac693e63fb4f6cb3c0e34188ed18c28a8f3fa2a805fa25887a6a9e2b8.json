@@ -1,0 +1,107 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/61b49a55-b2c8-45bc-96a7-ef05841f8da2?inc=artist-credits%2Breleases%2Brelease-groups&fmt=json",
+  "fetched_at": "2026-07-28T12:15:36.791Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "releases": [
+      {
+        "id": "d3499459-77fb-4015-a941-d34d0c7c42e8",
+        "date": "2013-11-15",
+        "barcode": null,
+        "packaging": null,
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "packaging-id": null,
+        "country": "GB",
+        "quality": "normal",
+        "artist-credit": [
+          {
+            "name": "Dubkasm",
+            "artist": {
+              "country": "GB",
+              "disambiguation": "",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "sort-name": "Dubkasm",
+              "name": "Dubkasm",
+              "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+              "type": "Group"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "status": "Official",
+        "title": "Victory!",
+        "release-group": {
+          "releases": [],
+          "secondary-type-ids": [],
+          "title": "Victory!",
+          "id": "04a6d6ae-ea71-4275-a4e4-dabbc236cbc1",
+          "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+          "disambiguation": "",
+          "primary-type": "EP",
+          "artist-credit": [
+            {
+              "name": "Dubkasm",
+              "joinphrase": "",
+              "artist": {
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "country": "GB",
+                "disambiguation": "",
+                "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe",
+                "type": "Group",
+                "sort-name": "Dubkasm",
+                "name": "Dubkasm"
+              }
+            }
+          ],
+          "secondary-types": [],
+          "first-release-date": "2013-11-15"
+        },
+        "release-events": [
+          {
+            "date": "2013-11-15",
+            "area": {
+              "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+              "type": null,
+              "name": "United Kingdom",
+              "sort-name": "United Kingdom",
+              "iso-3166-1-codes": [
+                "GB"
+              ],
+              "type-id": null,
+              "disambiguation": ""
+            }
+          }
+        ],
+        "text-representation": {
+          "language": "eng",
+          "script": "Latn"
+        },
+        "disambiguation": ""
+      }
+    ],
+    "title": "Victory!",
+    "id": "61b49a55-b2c8-45bc-96a7-ef05841f8da2",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "name": "Dubkasm",
+        "artist": {
+          "disambiguation": "",
+          "country": "GB",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "name": "Dubkasm",
+          "sort-name": "Dubkasm",
+          "type": "Group",
+          "id": "6200e493-3b28-4af7-a75d-97f0e37d4dbe"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "length": null,
+    "video": false,
+    "first-release-date": "2013-11-15"
+  }
+}

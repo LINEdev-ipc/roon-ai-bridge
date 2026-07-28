@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=The+Knife&recording_name=Heartbeats&release_name=Deep+Cuts",
+  "fetched_at": "2026-07-28T14:41:13.426Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "The Knife",
+      "recording_arg": "Heartbeats",
+      "artist_credit_name": "The Knife",
+      "release_name": "Deep Cuts",
+      "recording_name": "Heartbeats",
+      "artist_credit_id": 61967,
+      "artist_mbids": [
+        "bf710b71-48e5-4e15-9bd6-96debb2e4e98"
+      ],
+      "release_mbid": "0ee5701b-d0bc-4455-9dcc-36e69a2e66da",
+      "recording_mbid": "db4c9220-df76-4b42-b6f5-8bf52cc80f77"
+    }
+  ]
+}

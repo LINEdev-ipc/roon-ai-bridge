@@ -1,0 +1,795 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=alias%3A%28smalltown+AND+boy+AND+12+AND+version%29+AND+artistname%3A%22Bronski+Beat%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:47:03.420Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:47:03.800Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "693af62f-690a-4f6a-bd8d-8734df4873d1",
+        "score": 100,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (original 12″ mix)",
+        "length": 538320,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1984",
+        "releases": [
+          {
+            "id": "ccfaeff6-86ee-423e-a578-5e8fa9e643a7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "13271165-20ed-4cba-96c0-9a68f5757400",
+            "count": 2,
+            "title": "The Very Best Of Jimmy Somerville, Bronski Beat & The Communards (Collector's Edition)",
+            "status": "Official",
+            "disambiguation": "collector's edition",
+            "artist-credit": [
+              {
+                "joinphrase": ", ",
+                "name": "Jimmy Somerville",
+                "artist": {
+                  "id": "09bc57df-6fc7-40f7-b7e6-2261481f801e",
+                  "name": "Jimmy Somerville",
+                  "sort-name": "Somerville, Jimmy"
+                }
+              },
+              {
+                "joinphrase": " & ",
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              },
+              {
+                "name": "The Communards",
+                "artist": {
+                  "id": "7696c8a8-f971-4b8a-820e-b8bd922bfa57",
+                  "name": "The Communards",
+                  "sort-name": "Communards, The"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ee33ef09-b799-3db0-94c5-6624705904ae",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Very Best of Jimmy Somerville, Bronski Beat and The Communards",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-15",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-12-15",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 27,
+            "media": [
+              {
+                "id": "896b5f95-cae6-4f01-a488-8b8c07c8fb33",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6fd0ec94-177c-4b89-bb08-179b17fd1f58",
+                    "number": "1",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 539093
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "9baaada5-6760-4043-9a5d-d0621abc9584",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4433e15e-9c54-3140-b70d-b5db77437851",
+            "count": 3,
+            "title": "So80s (Soeighties) 2",
+            "status": "Official",
+            "disambiguation": "Remastered",
+            "artist-credit": [
+              {
+                "name": "Blank & Jones",
+                "artist": {
+                  "id": "6606c527-376a-47b4-bb35-748d01e14f6d",
+                  "name": "Blank & Jones",
+                  "sort-name": "Blank & Jones",
+                  "disambiguation": "German electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "97af2ade-5568-4834-b600-40fc6224cae7",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Blank & Jones Present So80s (SoEighties) 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2015-02",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2015-02",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "bdb1ff7b-ce38-305c-a5a6-34b3c5f7b392",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "89739120-14a2-41dc-bc1d-338ae93fad84",
+                    "number": "9",
+                    "title": "Smalltown Boy (original 12″ mix)",
+                    "length": 540186
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "e05c2ad5-8960-49e0-917a-72ab3d6f2750",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "Smalltown Boy",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a974d2df-773b-3e43-8ee8-7c24956e5f36",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Smalltown Boy",
+              "primary-type": "Single"
+            },
+            "date": "1984",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "1984",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "da16334a-b22e-3bf2-9295-b90b35057b6c",
+                "position": 1,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "0997e019-f51b-4702-8aa2-23c12c767b20",
+                    "number": "A",
+                    "title": "Smalltown Boy",
+                    "length": 540000
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f3d531c0-d9f8-4336-a385-7352350736c7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "12 Inch Dance: 80s Synthpop",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c0df89a2-3777-46ba-ab27-02357bee6e91",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "12 Inch Dance: 80s Synthpop",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-09-05",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2014-09-05",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 31,
+            "media": [
+              {
+                "id": "bc4897b1-856b-3c86-9b6a-6c38254f031b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8b909af0-b5c8-4ac6-b1e1-a1b05736a5cd",
+                    "number": "12",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 537333
+                  }
+                ],
+                "track-count": 31,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "79c099c7-42fa-408a-bf2f-13fe7ae80ce7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "12 Inch Dance: 80s Synthpop",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c0df89a2-3777-46ba-ab27-02357bee6e91",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "12 Inch Dance: 80s Synthpop",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2014-09-08",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2014-09-08",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "2fe3c668-b1a6-389f-83ff-6220737e22f7",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f3e73a88-28c6-4cc7-8991-bb53f06992bf",
+                    "number": "2",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 536626
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "09aae207-26f9-428b-bba7-a8b9afc65b7b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Die Hit-Giganten: Best of Maxi-Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2955951d-c178-485b-a955-1d90b166e86d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Die Hit-Giganten: Best of Maxi-Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2015-01-16",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2015-01-16",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 36,
+            "media": [
+              {
+                "id": "4c1f09ef-04d7-3686-b4e1-a1592f23815d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d12d2241-60d9-406c-968a-9e45f3c5ce0c",
+                    "number": "3",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 538320
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "780e369a-5489-429d-aa0f-f10dd95b7c03",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "27b1a3bf-e2f1-3dd8-9a06-981c36093632",
+            "count": 2,
+            "title": "The Very Best of Jimmy Somerville, Bronski Beat and The Communards",
+            "status": "Official",
+            "disambiguation": "collector's edition",
+            "artist-credit": [
+              {
+                "name": "Jimmy Somerville",
+                "artist": {
+                  "id": "09bc57df-6fc7-40f7-b7e6-2261481f801e",
+                  "name": "Jimmy Somerville",
+                  "sort-name": "Somerville, Jimmy"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ee33ef09-b799-3db0-94c5-6624705904ae",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Very Best of Jimmy Somerville, Bronski Beat and The Communards",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2002-11-05",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2002-11-05",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 27,
+            "media": [
+              {
+                "id": "912182db-b719-3256-9e34-88b4dd2f185d",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ce6b9777-b81b-33f7-9e37-a661e7578944",
+                    "number": "1",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 539093
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "f77f4e1f-61e4-4a35-baa9-02c46de5c4a4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NDR2: XXL Maxi Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "00f89a66-c9fe-4681-a61f-cab3838cfd01",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NDR2: XXL Maxi Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-06-17",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2011-06-17",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 35,
+            "media": [
+              {
+                "id": "3737acb0-1605-3b97-bffe-25bda4611ecf",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "31aaf64d-78a9-38d5-a6ee-e56a6ddd3338",
+                    "number": "3",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 538266
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "fb30b4bb-11e3-4f8f-83d8-417734a9bf8a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "Back to the 80’s: De hits uit de jaren ’80: The Long Versions",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6c577e16-98de-4947-8d4b-4301c1fa850e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Back to the 80’s: De hits uit de jaren ’80: The Long Versions",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2002",
+            "country": "NL",
+            "release-events": [
+              {
+                "date": "2002",
+                "area": {
+                  "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                  "name": "Netherlands",
+                  "sort-name": "Netherlands",
+                  "iso-3166-1-codes": [
+                    "NL"
+                  ]
+                }
+              }
+            ],
+            "track-count": 41,
+            "media": [
+              {
+                "id": "52379d28-e981-3a44-9267-0ab0407cdbb2",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e3b80eb7-176a-3f90-bcf8-7e637d81b2f0",
+                    "number": "8",
+                    "title": "Smalltown Boy",
+                    "length": 537000
+                  }
+                ],
+                "track-count": 9,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "7125648e-9acf-4ab2-8414-40c66d635d2e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Classic Cuts, Volume 156: 80s Pop: The 12″ Mixes",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "cbbf47b7-090a-43d1-af78-d61f727e603e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Classic Cuts, Volume 156: 80s Pop: The 12″ Mixes",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2016",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2016",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 20,
+            "media": [
+              {
+                "id": "f7ccbf2a-2b43-303c-a8bf-3223d9a54a73",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "02d134b4-5a56-4b1b-bb91-0834e13f2f2a",
+                    "number": "3",
+                    "title": "Smalltown Boy (12″ version)",
+                    "length": 538000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "dde9eb1d-5810-4f34-9bf8-521396df42ce",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "4433e15e-9c54-3140-b70d-b5db77437851",
+            "count": 3,
+            "title": "Blank & Jones Present So80s (SoEighties) 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Blank & Jones",
+                "artist": {
+                  "id": "6606c527-376a-47b4-bb35-748d01e14f6d",
+                  "name": "Blank & Jones",
+                  "sort-name": "Blank & Jones",
+                  "disambiguation": "German electronic music duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "97af2ade-5568-4834-b600-40fc6224cae7",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Blank & Jones Present So80s (SoEighties) 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-03-26",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2010-03-26",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "4c10973c-4398-316b-84ad-6687f77db0af",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "b4e960df-fbb9-348f-8991-2cac7cf5a560",
+                    "number": "9",
+                    "title": "Smalltown Boy (original 12″ mix)",
+                    "length": 540000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 8
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBAAP0200009"
+        ]
+      }
+    ]
+  }
+}

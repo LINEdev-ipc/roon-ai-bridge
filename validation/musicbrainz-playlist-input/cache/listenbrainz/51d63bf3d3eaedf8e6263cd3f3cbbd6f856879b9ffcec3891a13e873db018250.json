@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Everything+But+the+Girl&recording_name=Missing+%28Todd+Terry+Club+Mix%29&release_name=Missing",
+  "fetched_at": "2026-07-28T12:15:41.461Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Everything But the Girl",
+      "recording_arg": "Missing (Todd Terry Club Mix)",
+      "artist_credit_name": "Everything but the Girl",
+      "release_name": "Missing",
+      "recording_name": "Missing (Todd Terry club mix)",
+      "artist_credit_id": 319,
+      "artist_mbids": [
+        "959cf5bf-ee29-4af6-a85a-0b480181d988"
+      ],
+      "release_mbid": "15d6c9cd-ca19-4478-84e4-b37c5488774f",
+      "recording_mbid": "ca6af88b-6627-415d-8dc5-0244dbdb0a20"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "url": "https://musicbrainz.org/ws/2/work/f44149bc-f0be-4da8-a060-92b764555d39?inc=artist-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:36:53.951Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "relations": [
+      {
+        "source-credit": "",
+        "direction": "backward",
+        "attributes": [],
+        "end": null,
+        "begin": null,
+        "type": "writer",
+        "type-id": "a255bca1-b157-4518-9108-7b147dc3fc68",
+        "target-credit": "",
+        "artist": {
+          "name": "Count Dubulah",
+          "sort-name": "Count Dubulah",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "245a53b7-1269-47e3-bf96-fbb7bff6fd45",
+          "country": null
+        },
+        "target-type": "artist",
+        "ended": false,
+        "attribute-values": {},
+        "attribute-ids": {}
+      },
+      {
+        "artist": {
+          "name": "Sintayehu Zenebe",
+          "sort-name": "Zenebe, Sintayehu",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "866b0926-5ca7-4e97-af21-86418f2c9fc1",
+          "country": "ET"
+        },
+        "target-credit": "",
+        "target-type": "artist",
+        "ended": false,
+        "attribute-values": {},
+        "attribute-ids": {},
+        "source-credit": "",
+        "direction": "backward",
+        "attributes": [],
+        "end": null,
+        "begin": null,
+        "type": "writer",
+        "type-id": "a255bca1-b157-4518-9108-7b147dc3fc68"
+      }
+    ],
+    "genres": [],
+    "language": null,
+    "title": "Azmari Dub",
+    "iswcs": [],
+    "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+    "disambiguation": "",
+    "type": "Song",
+    "attributes": [],
+    "tags": [],
+    "id": "f44149bc-f0be-4da8-a060-92b764555d39",
+    "languages": []
+  }
+}

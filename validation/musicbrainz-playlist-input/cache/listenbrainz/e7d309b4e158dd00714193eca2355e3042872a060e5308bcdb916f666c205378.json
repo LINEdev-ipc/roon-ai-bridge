@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Bicep&recording_name=Glue&release_name=Bicep",
+  "fetched_at": "2026-07-28T14:41:27.360Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Bicep",
+      "recording_arg": "Glue",
+      "artist_credit_name": "Bicep",
+      "release_name": "Bicep",
+      "recording_name": "Glue",
+      "artist_credit_id": 889834,
+      "artist_mbids": [
+        "10e8f0df-90f9-4957-aedd-c4e0d187e3a8"
+      ],
+      "release_mbid": "7e567033-10f8-40d8-835e-67a8ad8865e9",
+      "recording_mbid": "5fc2f070-a762-4f00-93b6-123f68d3aedc"
+    }
+  ]
+}

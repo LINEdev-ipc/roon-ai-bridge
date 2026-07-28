@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Prince+Fatty&recording_name=The+Fat+Panther&release_name=Survival+of+the+Fattest",
+  "fetched_at": "2026-07-28T12:15:32.641Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Prince Fatty",
+      "recording_arg": "The Fat Panther",
+      "artist_credit_name": "Prince Fatty",
+      "release_name": "Survival of the Fattest",
+      "recording_name": "The Fat Panther",
+      "artist_credit_id": 390481,
+      "artist_mbids": [
+        "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a"
+      ],
+      "release_mbid": "3a2a054c-be2d-48e9-9ab0-9abf189d724f",
+      "recording_mbid": "b0fa8241-14fe-4976-96e2-0fe0358c4df6"
+    }
+  ]
+}

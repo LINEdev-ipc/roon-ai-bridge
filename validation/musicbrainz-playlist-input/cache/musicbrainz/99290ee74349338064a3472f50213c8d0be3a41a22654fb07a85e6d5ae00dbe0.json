@@ -1,0 +1,331 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22You+Got+the+Love%22+AND+artist%3A%22The+Source%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:52:30.765Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:52:30.813Z",
+    "count": 2,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "24b07839-3a80-4529-a65f-ba49553730a7",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "score": 100,
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "artist-credit-id": "445a36fc-2b88-3383-be34-3cb0c0490f53",
+        "count": 19,
+        "title": "You Got the Love",
+        "first-release-date": "1986",
+        "primary-type": "Single",
+        "artist-credit": [
+          {
+            "joinphrase": " featuring ",
+            "name": "The Source",
+            "artist": {
+              "id": "080c9809-0542-4ed1-aaa0-4502242c3e7f",
+              "name": "The Source",
+              "sort-name": "Source, The",
+              "disambiguation": "John Truelove, “You Got the Love” feat. Candi Staton",
+              "aliases": [
+                {
+                  "sort-name": "The Source Feat. Candi Staton",
+                  "name": "The Source Feat. Candi Staton",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Candi Staton",
+            "artist": {
+              "id": "6afcc957-d742-41c6-ad0b-31b2f1967353",
+              "name": "Candi Staton",
+              "sort-name": "Staton, Candi",
+              "aliases": [
+                {
+                  "sort-name": "Staton, Canzetta Maria",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Canzetta Maria Staton",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Cando Staton",
+                  "name": "Cando Staton",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Candi Stanton",
+                  "name": "Candi Stanton",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Candi Station",
+                  "name": "Candi Station",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Candy Staton",
+                  "name": "Candy Staton",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "b15fc3a3-5a5a-460a-a931-b0c4731411dc",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "title": "You Got the Love (Remixes)",
+            "status": "Promotion"
+          },
+          {
+            "id": "9d4d3251-6429-47a8-9efb-9a28fae023c6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "4ddf2b8c-33b6-4684-9984-f1f40828d0f6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "ad816c36-c4d5-4efe-84d0-5b82678105ed",
+            "title": "You Got the Love (Erens Bootleg mix)"
+          },
+          {
+            "id": "d9452faa-88d4-4a2c-8fcc-972dfabc577d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "7e315bb6-f57e-4025-a17d-c282a4c79338",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "08b36375-0efa-4062-992c-d062b38c92a0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "67027852-23b2-4ef5-9caa-ab88856dc273",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "a99daec0-4e6b-4018-b6fc-dec869111eff",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "2d700c64-7117-49c2-a090-c4c024466056",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "bcad4261-03d6-48ad-947a-746b9dc6ea1f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "0d97a8a8-fa0b-4f7c-9883-3ca7541ec0d7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "8c62b402-a1c5-4858-ab10-e7ed4f280489",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got The Love (Erens Bootleg Mix)",
+            "status": "Official"
+          },
+          {
+            "id": "f10235df-23ca-40fe-9531-4213b38c46a0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "fd28e788-3e68-4a64-9c1d-0b4afbecd1db",
+            "title": "You Got The Love"
+          },
+          {
+            "id": "0ae59705-5a80-45b2-a95e-f89916e8824c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love (The Remixes)",
+            "status": "Official"
+          },
+          {
+            "id": "ccc99dde-7ee8-40a9-b596-7ffe098c21f3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got The Love",
+            "status": "Official"
+          },
+          {
+            "id": "999e32bb-054f-4d88-9f4c-8964de45475f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got the Love",
+            "status": "Official"
+          },
+          {
+            "id": "82bc805c-3ff9-47e9-b6b7-c546267f30ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "You Got The Love",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "house"
+          }
+        ]
+      },
+      {
+        "id": "1f213961-3139-490f-8990-5bbd9d8057da",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "score": 88,
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "artist-credit-id": "4f37f14a-3d22-3caf-b772-4ba007055bb8",
+        "count": 1,
+        "title": "You Got The Love (Losers Remix)",
+        "first-release-date": "2013-11-25",
+        "primary-type": "Single",
+        "secondary-types": [
+          "Remix"
+        ],
+        "secondary-type-ids": [
+          "0c60f497-ff81-3818-befd-abfc84a4858b"
+        ],
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "The Source",
+            "artist": {
+              "id": "080c9809-0542-4ed1-aaa0-4502242c3e7f",
+              "name": "The Source",
+              "sort-name": "Source, The",
+              "disambiguation": "John Truelove, “You Got the Love” feat. Candi Staton",
+              "aliases": [
+                {
+                  "sort-name": "The Source Feat. Candi Staton",
+                  "name": "The Source Feat. Candi Staton",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Candi Staton",
+            "artist": {
+              "id": "6afcc957-d742-41c6-ad0b-31b2f1967353",
+              "name": "Candi Staton",
+              "sort-name": "Staton, Candi",
+              "aliases": [
+                {
+                  "sort-name": "Staton, Canzetta Maria",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Canzetta Maria Staton",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Cando Staton",
+                  "name": "Cando Staton",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Candi Stanton",
+                  "name": "Candi Stanton",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Candi Station",
+                  "name": "Candi Station",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Candy Staton",
+                  "name": "Candy Staton",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "9a3333c2-3e82-45af-820a-57ff2751241c",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "title": "You Got The Love (Losers Remix)",
+            "status": "Bootleg"
+          }
+        ]
+      }
+    ]
+  }
+}

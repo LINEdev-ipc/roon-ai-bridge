@@ -1,0 +1,197 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28bibi+AND+vengeance%29+AND+release%3A%28lowlife+AND+princess+AND+noir%29+AND+artistname%3A%22BIBI%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:45:47.680Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:45:47.832Z",
+    "count": 2,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "2f281525-9d18-49b1-a82f-f537aeea9a57",
+        "score": 100,
+        "artist-credit-id": "8c6aad6e-cd78-30b3-818e-e572e6639efa",
+        "title": "Bibi Vengeance",
+        "length": 167000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "BIBI",
+            "artist": {
+              "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+              "name": "BIBI",
+              "sort-name": "BIBI",
+              "disambiguation": "South Korean singer",
+              "aliases": [
+                {
+                  "sort-name": "BIBI",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "비비",
+                  "locale": "ko_KR",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022",
+        "releases": [
+          {
+            "id": "984fed7a-0852-4107-bb4a-03e36de7e40b",
+            "artist-credit-id": "8c6aad6e-cd78-30b3-818e-e572e6639efa",
+            "count": 1,
+            "title": "Lowlife Princess: Noir",
+            "artist-credit": [
+              {
+                "name": "BIBI",
+                "artist": {
+                  "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                  "name": "BIBI",
+                  "sort-name": "BIBI",
+                  "disambiguation": "South Korean singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2219f553-4557-46c6-8f44-117194a795f2",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Lowlife Princess: Noir",
+              "primary-type": "Album"
+            },
+            "date": "2022",
+            "country": "KR",
+            "release-events": [
+              {
+                "date": "2022",
+                "area": {
+                  "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+                  "name": "South Korea",
+                  "sort-name": "South Korea",
+                  "iso-3166-1-codes": [
+                    "KR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "122c7338-9099-416c-a216-56bb8cce3120",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "07b8801a-ca6c-4378-9df5-b3bee28c4dec",
+                    "number": "3",
+                    "title": "Bibi Vengeance",
+                    "length": 167000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ac2b5601-387d-4006-94ac-627b6e1f6c0c",
+        "score": 92,
+        "artist-credit-id": "8c6aad6e-cd78-30b3-818e-e572e6639efa",
+        "title": "Bibi Vengeance (clean ver.)",
+        "length": 165000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "BIBI",
+            "artist": {
+              "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+              "name": "BIBI",
+              "sort-name": "BIBI",
+              "disambiguation": "South Korean singer",
+              "aliases": [
+                {
+                  "sort-name": "BIBI",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "비비",
+                  "locale": "ko_KR",
+                  "type": "Artist name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022",
+        "releases": [
+          {
+            "id": "984fed7a-0852-4107-bb4a-03e36de7e40b",
+            "artist-credit-id": "8c6aad6e-cd78-30b3-818e-e572e6639efa",
+            "count": 1,
+            "title": "Lowlife Princess: Noir",
+            "artist-credit": [
+              {
+                "name": "BIBI",
+                "artist": {
+                  "id": "21c93d2d-dc10-4f8f-ae91-7285eff37c2f",
+                  "name": "BIBI",
+                  "sort-name": "BIBI",
+                  "disambiguation": "South Korean singer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2219f553-4557-46c6-8f44-117194a795f2",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Lowlife Princess: Noir",
+              "primary-type": "Album"
+            },
+            "date": "2022",
+            "country": "KR",
+            "release-events": [
+              {
+                "date": "2022",
+                "area": {
+                  "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+                  "name": "South Korea",
+                  "sort-name": "South Korea",
+                  "iso-3166-1-codes": [
+                    "KR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "122c7338-9099-416c-a216-56bb8cce3120",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f7316a1f-8fad-4f5e-9a3d-5dab9d4e8801",
+                    "number": "13",
+                    "title": "Bibi Vengeance (clean ver.)",
+                    "length": 165000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 12
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

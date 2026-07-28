@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Michel+Tel%C3%B3&recording_name=Ai+se+eu+te+pego",
+  "fetched_at": "2026-07-28T12:16:11.634Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Michel Teló",
+      "recording_arg": "Ai se eu te pego",
+      "artist_credit_name": "Michel Teló",
+      "release_name": "Ai Se Eu Te Pego!",
+      "recording_name": "Ai se eu te pego!",
+      "artist_credit_id": 727130,
+      "artist_mbids": [
+        "6d00cc0d-2027-41d4-be9f-13770037354b"
+      ],
+      "release_mbid": "d407c763-786a-4799-87cc-af7fd1b3c595",
+      "recording_mbid": "f04f2b7a-29a2-4df2-a099-5a06712db862"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Stromae&recording_name=Papaoutai",
+  "fetched_at": "2026-07-28T14:42:43.725Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Stromae",
+      "recording_arg": "Papaoutai",
+      "artist_credit_name": "Stromae",
+      "release_name": "Racine carrée",
+      "recording_name": "Papaoutai",
+      "artist_credit_id": 685411,
+      "artist_mbids": [
+        "ab2528d9-719f-4261-8098-21849222a0f2"
+      ],
+      "release_mbid": "de57c1d9-5e65-420f-a896-1332e87d4c09",
+      "recording_mbid": "6574951b-e03c-400c-b807-476c4a7b7635"
+    }
+  ]
+}

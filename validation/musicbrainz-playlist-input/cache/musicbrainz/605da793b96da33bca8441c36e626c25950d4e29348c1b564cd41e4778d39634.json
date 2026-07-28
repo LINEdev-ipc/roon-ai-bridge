@@ -1,0 +1,513 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Boxes+and+Amps%22+AND+artist%3A%22Zion+Train%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:36:36.467Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:36:36.490Z",
+    "count": 6,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "e5d83d71-86e5-444c-b329-67e3e623817b",
+        "score": 100,
+        "artist-credit-id": "ca5994b6-93d2-3339-9719-5293a8582e1c",
+        "title": "Boxes and Amps (Vibronics)",
+        "length": 219000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zion Train",
+            "artist": {
+              "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+              "name": "Zion Train",
+              "sort-name": "Zion Train"
+            }
+          }
+        ],
+        "first-release-date": "2009-09-21",
+        "releases": [
+          {
+            "id": "20c56d61-30ec-4b36-8c2c-418c6e2b91db",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Live As One - Remixed",
+            "status": "Official",
+            "release-group": {
+              "id": "d559c5b3-738f-4b95-91d4-1e92fd760be2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live As One - Remixed",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-09-21",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2009-09-21",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "e74f207c-0e15-3874-afc4-4deb6bf4fa26",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "163c7704-ec54-43df-9fe1-7bba2a5d82c0",
+                    "number": "5",
+                    "title": "Boxes and Amps (Vibronics)",
+                    "length": 219000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e067529a-0516-4572-8209-c8afa16c5f49",
+        "score": 95,
+        "artist-credit-id": "77f52f5c-2b2b-3fdb-a9e4-42e7af1f059b",
+        "title": "Boxes and Amps",
+        "length": 190640,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Zion Train",
+            "artist": {
+              "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+              "name": "Zion Train",
+              "sort-name": "Zion Train"
+            }
+          },
+          {
+            "name": "Dubdadda",
+            "artist": {
+              "id": "0dc404ae-6db6-495f-a903-feebcd46bb70",
+              "name": "Dubdadda",
+              "sort-name": "Dubdadda",
+              "aliases": [
+                {
+                  "sort-name": "Johno",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Johno",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Johnson, Michael",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Michael Johnson",
+                  "locale": "en",
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2007-09-10",
+        "releases": [
+          {
+            "id": "ed3f811f-b65c-4387-a677-7933a744f3cd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "ca5994b6-93d2-3339-9719-5293a8582e1c",
+            "count": 1,
+            "title": "Live as One",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Zion Train",
+                "artist": {
+                  "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+                  "name": "Zion Train",
+                  "sort-name": "Zion Train"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c41f23f9-8aaf-3c91-911a-5ce54fcbf8c9",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live as One",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2007-09-10",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2007-09-10",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "81534a07-f1ce-35b2-a6ab-e5521d978560",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6390a603-af2f-321a-a11d-1269a8547a68",
+                    "number": "1",
+                    "title": "Boxes and Amps",
+                    "length": 190640
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ffa3941e-de29-4d33-be07-0c767e9a6144",
+        "score": 94,
+        "artist-credit-id": "ca5994b6-93d2-3339-9719-5293a8582e1c",
+        "title": "Boxes and Amps (Rob Smith)",
+        "length": 313000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zion Train",
+            "artist": {
+              "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+              "name": "Zion Train",
+              "sort-name": "Zion Train"
+            }
+          }
+        ],
+        "first-release-date": "2009-09-21",
+        "releases": [
+          {
+            "id": "20c56d61-30ec-4b36-8c2c-418c6e2b91db",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Live As One - Remixed",
+            "status": "Official",
+            "release-group": {
+              "id": "d559c5b3-738f-4b95-91d4-1e92fd760be2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live As One - Remixed",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-09-21",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2009-09-21",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "e74f207c-0e15-3874-afc4-4deb6bf4fa26",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bd6eda35-0ef5-4bba-af38-92f593828295",
+                    "number": "3",
+                    "title": "Boxes and Amps (Rob Smith)",
+                    "length": 313000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5bbb3ce8-46de-4738-912c-9e06d18e4e14",
+        "score": 94,
+        "artist-credit-id": "ca5994b6-93d2-3339-9719-5293a8582e1c",
+        "title": "Boxes and Amps (Dub Terror)",
+        "length": 235000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zion Train",
+            "artist": {
+              "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+              "name": "Zion Train",
+              "sort-name": "Zion Train"
+            }
+          }
+        ],
+        "first-release-date": "2009-09-21",
+        "releases": [
+          {
+            "id": "20c56d61-30ec-4b36-8c2c-418c6e2b91db",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Live As One - Remixed",
+            "status": "Official",
+            "release-group": {
+              "id": "d559c5b3-738f-4b95-91d4-1e92fd760be2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live As One - Remixed",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-09-21",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2009-09-21",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "e74f207c-0e15-3874-afc4-4deb6bf4fa26",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "755b686e-98eb-4895-94fd-bc484904f8a3",
+                    "number": "14",
+                    "title": "Boxes and Amps (Dub Terror)",
+                    "length": 235000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 13
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b92dd0e7-820d-4162-ac32-46604d1e3759",
+        "score": 86,
+        "artist-credit-id": "ca5994b6-93d2-3339-9719-5293a8582e1c",
+        "title": "Boxes and Amps (Digital and Latin remix)",
+        "length": 394000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zion Train",
+            "artist": {
+              "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+              "name": "Zion Train",
+              "sort-name": "Zion Train"
+            }
+          }
+        ],
+        "first-release-date": "2008",
+        "releases": [
+          {
+            "id": "9b1fec42-1113-4264-8bc3-74d448e06254",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "Out of Control: Sabotage War - Anti-Repressions Soli-Compilation",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "95712ccd-f2c5-4093-b83d-bf48a9172fb2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Out of Control: Sabotage War - Anti-Repressions Soli-Compilation",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2008",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2008",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 62,
+            "media": [
+              {
+                "id": "463a9f72-5137-3edf-80f9-e25fe7191e35",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9a2670c4-734d-4d0b-9092-a76bea74070e",
+                    "number": "5",
+                    "title": "Boxes and Amps (Digital and Latin remix)",
+                    "length": 394000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a7a71c28-ebfb-4767-9574-64df156d5caf",
+        "score": 79,
+        "artist-credit-id": "ca5994b6-93d2-3339-9719-5293a8582e1c",
+        "title": "Boxes and Amps (Do You Love The Soundsystem Rmx)",
+        "length": 267000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Zion Train",
+            "artist": {
+              "id": "3010655f-9ff2-4753-b4f7-803c4118f450",
+              "name": "Zion Train",
+              "sort-name": "Zion Train"
+            }
+          }
+        ],
+        "first-release-date": "2009-09-21",
+        "releases": [
+          {
+            "id": "20c56d61-30ec-4b36-8c2c-418c6e2b91db",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Live As One - Remixed",
+            "status": "Official",
+            "release-group": {
+              "id": "d559c5b3-738f-4b95-91d4-1e92fd760be2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live As One - Remixed",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-09-21",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2009-09-21",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "e74f207c-0e15-3874-afc4-4deb6bf4fa26",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7cf73306-570b-4e91-9eb7-29589db8209c",
+                    "number": "8",
+                    "title": "Boxes and Amps (Do You Love The Soundsystem Rmx)",
+                    "length": 267000
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 7
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

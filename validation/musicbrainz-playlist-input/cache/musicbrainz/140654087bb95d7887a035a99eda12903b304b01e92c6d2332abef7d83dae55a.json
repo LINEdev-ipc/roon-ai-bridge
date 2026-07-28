@@ -1,0 +1,164 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording/b0fa8241-14fe-4976-96e2-0fe0358c4df6?inc=artist-credits+isrcs+releases+release-groups+media+work-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:36:35.151Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "tags": [],
+    "video": false,
+    "first-release-date": "2008-08-08",
+    "title": "The Fat Panther",
+    "genres": [],
+    "releases": [
+      {
+        "packaging": "Digipak",
+        "status": "Official",
+        "date": "2008-08-08",
+        "title": "Survival of the Fattest",
+        "tags": [],
+        "release-events": [
+          {
+            "area": {
+              "sort-name": "United States",
+              "disambiguation": "",
+              "type-id": null,
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "name": "United States",
+              "type": null,
+              "id": "489ce91b-6658-3307-9877-795b68554c98"
+            },
+            "date": "2008-08-08"
+          }
+        ],
+        "barcode": "661868318623",
+        "id": "3a2a054c-be2d-48e9-9ab0-9abf189d724f",
+        "quality": "normal",
+        "country": "US",
+        "artist-credit": [
+          {
+            "artist": {
+              "country": "GB",
+              "type": "Person",
+              "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+              "disambiguation": "",
+              "sort-name": "Prince Fatty",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "tags": [
+                {
+                  "count": 1,
+                  "name": "soul and reggae"
+                }
+              ],
+              "name": "Prince Fatty",
+              "genres": []
+            },
+            "joinphrase": "",
+            "name": "Prince Fatty"
+          }
+        ],
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "genres": [],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "media": [
+          {
+            "track-offset": 1,
+            "format": "CD",
+            "id": "96389c29-8efb-3fcf-b2bf-f98adc0498d0",
+            "position": 1,
+            "title": "",
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-count": 13,
+            "tracks": [
+              {
+                "title": "The Fat Panther",
+                "position": 2,
+                "length": 190000,
+                "artist-credit": [
+                  {
+                    "name": "Prince Fatty",
+                    "artist": {
+                      "country": "GB",
+                      "type": "Person",
+                      "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+                      "sort-name": "Prince Fatty",
+                      "disambiguation": "",
+                      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                      "name": "Prince Fatty"
+                    },
+                    "joinphrase": ""
+                  }
+                ],
+                "id": "824a614e-65bf-3170-a33c-d8a671d282d8",
+                "number": "2"
+              }
+            ]
+          }
+        ],
+        "release-group": {
+          "secondary-type-ids": [],
+          "first-release-date": "2007-07-16",
+          "title": "Survival of the Fattest",
+          "tags": [],
+          "primary-type": "Album",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "id": "90912bd8-60a0-3c7d-ad42-b95005715c50",
+          "artist-credit": [
+            {
+              "name": "Prince Fatty",
+              "joinphrase": "",
+              "artist": {
+                "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+                "type": "Person",
+                "country": "GB",
+                "name": "Prince Fatty",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Prince Fatty",
+                "disambiguation": ""
+              }
+            }
+          ],
+          "releases": [],
+          "genres": [],
+          "disambiguation": ""
+        },
+        "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+        "disambiguation": ""
+      }
+    ],
+    "artist-credit": [
+      {
+        "artist": {
+          "country": "GB",
+          "type": "Person",
+          "id": "e5c1825b-8d27-47de-9c6b-a2d6cde9be0a",
+          "sort-name": "Prince Fatty",
+          "disambiguation": "",
+          "name": "Prince Fatty",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "tags": [
+            {
+              "name": "soul and reggae",
+              "count": 1
+            }
+          ],
+          "genres": []
+        },
+        "joinphrase": "",
+        "name": "Prince Fatty"
+      }
+    ],
+    "relations": [],
+    "disambiguation": "",
+    "isrcs": [],
+    "id": "b0fa8241-14fe-4976-96e2-0fe0358c4df6",
+    "length": 190000
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Rooted+and+Grounded%22+AND+artist%3A%22Alpha+Steppa%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:50:41.313Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:50:41.361Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "6d6904e7-f46f-497f-8a6e-66ad9288c56b",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "37a9abbb-b6c5-3f32-b398-d67978238157",
+        "count": 2,
+        "title": "Rooted & Grounded",
+        "first-release-date": "2015-10-09",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Alpha Steppa",
+            "artist": {
+              "id": "a9f4f838-b718-483c-9e94-8668e0eca586",
+              "name": "Alpha Steppa",
+              "sort-name": "Steppa, Alpha"
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "26cea7ff-ec54-43a6-93d0-0f18976760f8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Rooted & Grounded",
+            "status": "Official"
+          },
+          {
+            "id": "7eeee237-5f12-4a5f-8828-cacb7169ace9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Rooted & Grounded",
+            "status": "Official"
+          }
+        ]
+      }
+    ]
+  }
+}

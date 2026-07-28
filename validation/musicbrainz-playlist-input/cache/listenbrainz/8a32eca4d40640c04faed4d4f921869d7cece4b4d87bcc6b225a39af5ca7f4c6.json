@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Duran+Duran&recording_name=Hungry+Like+the+Wolf+%28Night+Version%29",
+  "fetched_at": "2026-07-28T14:42:08.014Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Duran Duran",
+      "recording_arg": "Hungry Like the Wolf (Night Version)",
+      "artist_credit_name": "Duran Duran",
+      "release_name": "Rio",
+      "recording_name": "Hungry Like the Wolf (night version)",
+      "artist_credit_id": 1146,
+      "artist_mbids": [
+        "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5"
+      ],
+      "release_mbid": "6cb2e885-1684-4d80-839b-db40818e0b46",
+      "recording_mbid": "422f6317-4803-4224-9752-ced4c8182600"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "url": "https://musicbrainz.org/ws/2/work/97caa732-7c79-44a1-9c4b-8ce1dfb312f7?inc=artist-rels+genres+tags&fmt=json",
+  "fetched_at": "2026-07-28T11:39:01.152Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "genres": [],
+    "type": "Song",
+    "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+    "attributes": [],
+    "languages": [
+      "eng"
+    ],
+    "id": "97caa732-7c79-44a1-9c4b-8ce1dfb312f7",
+    "disambiguation": "",
+    "title": "Walking on a Dream",
+    "language": "eng",
+    "tags": [],
+    "relations": [
+      {
+        "attribute-ids": {},
+        "end": null,
+        "ended": false,
+        "artist": {
+          "sort-name": "Sloan, Jonathan",
+          "id": "bdf204b6-8cab-4d95-bd33-679192b63352",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "name": "Jonathan Sloan",
+          "country": null
+        },
+        "direction": "backward",
+        "begin": null,
+        "attribute-values": {},
+        "source-credit": "",
+        "type": "composer",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "attributes": [],
+        "target-type": "artist",
+        "target-credit": ""
+      },
+      {
+        "begin": null,
+        "attribute-values": {},
+        "target-type": "artist",
+        "type-id": "d59d99ea-23d4-4a80-b066-edca32ee158f",
+        "attributes": [],
+        "source-credit": "",
+        "type": "composer",
+        "target-credit": "",
+        "attribute-ids": {},
+        "end": null,
+        "direction": "backward",
+        "artist": {
+          "country": "AU",
+          "name": "Luke Steele",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "id": "7d661adb-5d8c-421a-aee1-bb6f4c0c0992",
+          "sort-name": "Steele, Luke"
+        },
+        "ended": false
+      },
+      {
+        "attribute-ids": {},
+        "direction": "backward",
+        "artist": {
+          "sort-name": "Littlemore, Nick",
+          "id": "13d92e1d-d230-4827-84ba-14643630751d",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "AU",
+          "name": "Nick Littlemore"
+        },
+        "ended": false,
+        "end": null,
+        "attribute-values": {},
+        "begin": null,
+        "target-credit": "",
+        "target-type": "artist",
+        "attributes": [],
+        "type-id": "3e48faba-ec01-47fd-8e89-30e81161661c",
+        "source-credit": "",
+        "type": "lyricist"
+      },
+      {
+        "ended": false,
+        "artist": {
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Jonathan Sloan",
+          "country": null,
+          "sort-name": "Sloan, Jonathan",
+          "id": "bdf204b6-8cab-4d95-bd33-679192b63352"
+        },
+        "direction": "backward",
+        "end": null,
+        "attribute-ids": {},
+        "target-credit": "",
+        "type": "lyricist",
+        "source-credit": "",
+        "attributes": [],
+        "type-id": "3e48faba-ec01-47fd-8e89-30e81161661c",
+        "target-type": "artist",
+        "attribute-values": {},
+        "begin": null
+      }
+    ],
+    "iswcs": [
+      "T-060.993.446-4"
+    ]
+  }
+}

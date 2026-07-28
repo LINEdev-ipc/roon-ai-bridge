@@ -1,0 +1,246 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28azmari+AND+dub%29+AND+release%3A%28town+AND+called+AND+addis%29+AND+artistname%3A%22Dub+Colossus%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:40:32.244Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:40:32.381Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "3e8622a7-8baf-48ac-a708-34502365e30f",
+        "score": 100,
+        "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+        "title": "Azmari Dub",
+        "length": 305000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Dub Colossus",
+            "artist": {
+              "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+              "name": "Dub Colossus",
+              "sort-name": "Dub Colossus",
+              "aliases": [
+                {
+                  "sort-name": "Dub Colossus Dub Band",
+                  "name": "Dub Colossus Dub Band",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2008-08-20",
+        "releases": [
+          {
+            "id": "417886ec-c58d-4313-a67c-73127d94460d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+            "count": 1,
+            "title": "A Town Called Addis",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Dub Colossus",
+                "artist": {
+                  "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                  "name": "Dub Colossus",
+                  "sort-name": "Dub Colossus"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A Town Called Addis",
+              "primary-type": "Album"
+            },
+            "date": "2019-09-24",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-09-24",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "5c2604a4-ddad-36db-9021-199913959ffa",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0c01ff13-9c97-4ffe-b139-cb2d55a8eb0e",
+                    "number": "1",
+                    "title": "Azmari Dub",
+                    "length": 305044
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "d0c3bf4a-f4cc-4824-a81c-40c38f383fd0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+            "count": 1,
+            "title": "In a Town Called Addis",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Dub Colossus",
+                "artist": {
+                  "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                  "name": "Dub Colossus",
+                  "sort-name": "Dub Colossus"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A Town Called Addis",
+              "primary-type": "Album"
+            },
+            "date": "2008-08-20",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2008-08-20",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "bfc04677-d75b-32cf-8df1-4ce08ad4eb92",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "edd19cc2-8bf5-342f-937c-3b20b81c3916",
+                    "number": "1",
+                    "title": "Azmari Dub",
+                    "length": 305000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "322a10fd-7d39-475d-b650-7fd1a1631f7c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1cf99c4a-91ee-3d35-be33-6844042f191d",
+            "count": 1,
+            "title": "A Town Called Addis",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Dub Colossus",
+                "artist": {
+                  "id": "aedc2e46-da48-43df-885a-b23dc051ee8c",
+                  "name": "Dub Colossus",
+                  "sort-name": "Dub Colossus"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7d3d0098-c679-3be7-b60f-835aa24f1d73",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "A Town Called Addis",
+              "primary-type": "Album"
+            },
+            "date": "2008-08",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2008-08",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 11,
+            "media": [
+              {
+                "id": "2f746ff3-c886-3421-8116-284a7f2c7c27",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2b87e517-cbe6-332e-ac0e-a93452a73245",
+                    "number": "1",
+                    "title": "Azmari Dub",
+                    "length": 305000
+                  }
+                ],
+                "track-count": 11,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBTVV0700001"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "hip hop"
+          },
+          {
+            "count": 3,
+            "name": "reggae"
+          },
+          {
+            "count": 2,
+            "name": "dub"
+          },
+          {
+            "count": 1,
+            "name": "world-fusion"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Portishead&recording_name=The+Rip",
+  "fetched_at": "2026-07-28T14:41:17.958Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Portishead",
+      "recording_arg": "The Rip",
+      "artist_credit_name": "Portishead",
+      "release_name": "Third",
+      "recording_name": "The Rip",
+      "artist_credit_id": 65,
+      "artist_mbids": [
+        "8f6bd1e4-fbe1-4f50-aa9b-94c450ec0f11"
+      ],
+      "release_mbid": "930345b1-a970-3495-a1dd-55147bea7741",
+      "recording_mbid": "a7ed3365-affa-4331-8bd9-1ececaf9ae77"
+    }
+  ]
+}

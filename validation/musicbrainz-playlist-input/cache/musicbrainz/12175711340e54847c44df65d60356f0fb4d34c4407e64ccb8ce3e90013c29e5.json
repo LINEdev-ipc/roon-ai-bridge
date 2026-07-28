@@ -1,0 +1,62 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Shapes+and+Shadows%22+AND+artist%3A%22Panda+Dub%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:50:48.679Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:50:48.724Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "4a7407dd-5303-4714-9779-f4d9e37ede27",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "13961a62-f51d-32f5-8f98-8c8e8bcd8ae6",
+        "count": 1,
+        "title": "Shapes & Shadows",
+        "first-release-date": "2017-03-01",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Panda Dub",
+            "artist": {
+              "id": "08557f73-6b1c-4281-ad93-ffa660f5b266",
+              "name": "Panda Dub",
+              "sort-name": "Panda Dub"
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "c5a2e5d8-3d68-400c-9d20-6c984230343f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Shapes & Shadows",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "electronic"
+          },
+          {
+            "count": 1,
+            "name": "electro"
+          },
+          {
+            "count": 1,
+            "name": "reggae"
+          },
+          {
+            "count": 1,
+            "name": "dub"
+          }
+        ]
+      }
+    ]
+  }
+}

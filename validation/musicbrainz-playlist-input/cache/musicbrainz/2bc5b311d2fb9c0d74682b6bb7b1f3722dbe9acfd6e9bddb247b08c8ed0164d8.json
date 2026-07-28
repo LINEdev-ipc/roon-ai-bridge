@@ -1,0 +1,1172 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28lesalpx%29+AND+artistname%3A%22Floating+Points%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:41:30.308Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:41:30.678Z",
+    "count": 5,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "d539fa94-e9c6-4b10-8430-9cbade49f1db",
+        "score": 100,
+        "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+        "title": "LesAlpx",
+        "length": 281142,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Floating Points",
+            "artist": {
+              "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+              "name": "Floating Points",
+              "sort-name": "Floating Points",
+              "aliases": [
+                {
+                  "sort-name": "SS",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "SS",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Samuel Thomas",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Samuel Thomas Shepherd",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Sam",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Sam Shepherd",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Floatingpoints",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Floatingpoints",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2019-06-18",
+        "releases": [
+          {
+            "id": "f891fc54-79ed-4eea-8b0e-1250625b58b6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Crush",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b13fa4c-36b8-46b5-bfa1-b9345491565b",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Crush",
+              "primary-type": "Album"
+            },
+            "date": "2019-10-18",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2019-10-18",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "5b381758-f703-4da6-a7f5-9f4d3dfb8d71",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "77826bd3-66d8-4006-9213-0dd61167a352",
+                    "number": "6",
+                    "title": "LesAlpx",
+                    "length": 282027
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "6329eda8-4771-471e-9149-e3681d4c6cce",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Crush",
+            "status": "Official",
+            "disambiguation": "Japan Bonus Track",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b13fa4c-36b8-46b5-bfa1-b9345491565b",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Crush",
+              "primary-type": "Album"
+            },
+            "date": "2019",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2019",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "571198c6-d8e8-42e3-be7b-6c53431bad48",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e82ab6ad-32e0-4b32-b903-a44e8292f833",
+                    "number": "6",
+                    "title": "LesAlpx"
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "f10bb74d-5864-44a7-b00b-399536619445",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Crush",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b13fa4c-36b8-46b5-bfa1-b9345491565b",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Crush",
+              "primary-type": "Album"
+            },
+            "date": "2019-10-18",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-10-18",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "e2610e74-b273-31b7-86c8-ac16e390ef70",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4a68a755-7e2c-4475-b729-5be33ec52253",
+                    "number": "6",
+                    "title": "LesAlpx",
+                    "length": 282027
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "c03f2154-35b8-4965-b8aa-bfadc60d66b4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Anasickmodular",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a9b570d8-6f25-43d5-9ee3-41fe50930f92",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Anasickmodular",
+              "primary-type": "Single"
+            },
+            "date": "2019-10-01",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-10-01",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "53dbd4ee-898c-3ec4-ba83-0517289fe0e6",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ff98749d-7c09-403f-a75f-b196df37a9a3",
+                    "number": "2",
+                    "title": "LesAlpx",
+                    "length": 281141
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "2e7caf57-af4d-4e90-a0f3-2126bdbf6693",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Crush",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b13fa4c-36b8-46b5-bfa1-b9345491565b",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Crush",
+              "primary-type": "Album"
+            },
+            "date": "2019-10-18",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2019-10-18",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "86c78556-2d6a-3439-b32e-b1921582e2cc",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "13946db7-e26a-4b5c-a1bc-35b4cc6a88e0",
+                    "number": "6",
+                    "title": "LesAlpx",
+                    "length": 282000
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "16a6b051-f1d5-43d1-86c4-e64d6bf2d172",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Crush",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b13fa4c-36b8-46b5-bfa1-b9345491565b",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Crush",
+              "primary-type": "Album"
+            },
+            "date": "2019-10-18",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-10-18",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 12,
+            "media": [
+              {
+                "id": "ab846b13-f83e-337e-aab0-943f8c931f63",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a3aade92-b288-4653-a089-2ff5011177e1",
+                    "number": "6",
+                    "title": "LesAlpx",
+                    "length": 281142
+                  }
+                ],
+                "track-count": 12,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "0ed3e589-e76d-4ef7-b9bf-630a88f549c4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "LesAlpx / Coorabell",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0273247c-f721-4e22-ba21-f42cb4b615fd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "LesAlpx / Coorabell",
+              "primary-type": "Single"
+            },
+            "date": "2019-07-12",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-07-12",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "97f1cd63-d452-3b29-aac1-d94d1f674db2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4d98f463-398e-4897-87c0-f1c918f3d8ec",
+                    "number": "1",
+                    "title": "LesAlpx",
+                    "length": 281142
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "3e971b2f-3fed-4a80-b6db-c732dfb33ad5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "LesAlpx",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0273247c-f721-4e22-ba21-f42cb4b615fd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "LesAlpx / Coorabell",
+              "primary-type": "Single"
+            },
+            "date": "2019-06-18",
+            "country": "MX",
+            "release-events": [
+              {
+                "date": "2019-06-18",
+                "area": {
+                  "id": "3e08b2cd-69f3-317c-b1e4-e71be581839e",
+                  "name": "Mexico",
+                  "sort-name": "Mexico",
+                  "iso-3166-1-codes": [
+                    "MX"
+                  ]
+                }
+              },
+              {
+                "date": "2019-06-18",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "6bd768c0-2dc2-3343-b747-5bfac0e75c8d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8466068a-87fb-43dd-90d6-e0b43b424078",
+                    "number": "1",
+                    "title": "LesAlpx",
+                    "length": 281000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCFB1900139"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "idm"
+          },
+          {
+            "count": 1,
+            "name": "tech house"
+          }
+        ]
+      },
+      {
+        "id": "a8957593-1449-43c9-a659-39728047c2cb",
+        "score": 93,
+        "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+        "title": "LesAlpx (dub)",
+        "length": 344281,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Floating Points",
+            "artist": {
+              "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+              "name": "Floating Points",
+              "sort-name": "Floating Points",
+              "aliases": [
+                {
+                  "sort-name": "SS",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "SS",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Samuel Thomas",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Samuel Thomas Shepherd",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Sam",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Sam Shepherd",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Floatingpoints",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Floatingpoints",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2019-10-18",
+        "releases": [
+          {
+            "id": "6329eda8-4771-471e-9149-e3681d4c6cce",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Crush",
+            "status": "Official",
+            "disambiguation": "Japan Bonus Track",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b13fa4c-36b8-46b5-bfa1-b9345491565b",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Crush",
+              "primary-type": "Album"
+            },
+            "date": "2019",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2019",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "571198c6-d8e8-42e3-be7b-6c53431bad48",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6486db43-d408-4020-a6af-31a9fbbbb627",
+                    "number": "13",
+                    "title": "LesAlpx dub"
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 12
+              }
+            ]
+          },
+          {
+            "id": "f891fc54-79ed-4eea-8b0e-1250625b58b6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Crush",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3b13fa4c-36b8-46b5-bfa1-b9345491565b",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Crush",
+              "primary-type": "Album"
+            },
+            "date": "2019-10-18",
+            "country": "JP",
+            "release-events": [
+              {
+                "date": "2019-10-18",
+                "area": {
+                  "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                  "name": "Japan",
+                  "sort-name": "Japan",
+                  "iso-3166-1-codes": [
+                    "JP"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "5b381758-f703-4da6-a7f5-9f4d3dfb8d71",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9d58310a-b02c-4fb7-8601-d72451b369c4",
+                    "number": "13",
+                    "title": "LesAlpx (dub)",
+                    "length": 344281
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 12
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCFB1900203"
+        ]
+      },
+      {
+        "id": "cd6a484e-d55d-4d8e-818a-61b68d0866fd",
+        "score": 93,
+        "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+        "title": "LesAlpx (extended)",
+        "length": 633000,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Floating Points",
+            "artist": {
+              "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+              "name": "Floating Points",
+              "sort-name": "Floating Points",
+              "aliases": [
+                {
+                  "sort-name": "SS",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "SS",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Samuel Thomas",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Samuel Thomas Shepherd",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Sam",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Sam Shepherd",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Floatingpoints",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Floatingpoints",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2019-07-12",
+        "releases": [
+          {
+            "id": "0ed3e589-e76d-4ef7-b9bf-630a88f549c4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "LesAlpx / Coorabell",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0273247c-f721-4e22-ba21-f42cb4b615fd",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "LesAlpx / Coorabell",
+              "primary-type": "Single"
+            },
+            "date": "2019-07-12",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2019-07-12",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 3,
+            "media": [
+              {
+                "id": "97f1cd63-d452-3b29-aac1-d94d1f674db2",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "e004f2d3-b2c2-42d7-b88e-b24c42ba59ff",
+                    "number": "2",
+                    "title": "LesAlpx (extended)",
+                    "length": 633000
+                  }
+                ],
+                "track-count": 3,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "64186698-4d71-4ad5-8c11-d0b8887888c9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Bleep 100 Tracks 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0672536b-e638-40f3-9f2b-114523daaf8b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bleep 100 Tracks 2019",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2019-12-26",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2019-12-26",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "6675e4ca-ee10-3890-85ff-81a6602119d8",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "f25293be-e967-4f90-92e1-23fd7c341454",
+                    "number": "40",
+                    "title": "Lesalpx (Extended Version)"
+                  }
+                ],
+                "track-count": 100,
+                "track-offset": 39
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCFB1900114"
+        ]
+      },
+      {
+        "id": "9fddcfaf-a68d-4cba-b3e7-2b3a136f4db2",
+        "score": 93,
+        "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+        "title": "Lesalpx (extended)",
+        "length": 232000,
+        "disambiguation": "part of “Beats in Space 155: Tim Sweeney” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Floating Points",
+            "artist": {
+              "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+              "name": "Floating Points",
+              "sort-name": "Floating Points",
+              "aliases": [
+                {
+                  "sort-name": "SS",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "SS",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Samuel Thomas",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Samuel Thomas Shepherd",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Sam",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Sam Shepherd",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Floatingpoints",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Floatingpoints",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2025-04-04",
+        "releases": [
+          {
+            "id": "a017b0a7-6e27-4e22-bb5f-dc478032935c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "a35178dd-62fc-319b-b523-87947e8b3222",
+            "count": 1,
+            "title": "Beats in Space 155: Tim Sweeney",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Tim Sweeney",
+                "artist": {
+                  "id": "e75997bc-251e-4f01-a1fc-8aa6ee26ac85",
+                  "name": "Tim Sweeney",
+                  "sort-name": "Sweeney, Tim"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "716e9816-07ec-47d1-9f02-025a2592ae54",
+              "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+              "title": "Beats in Space 155: Tim Sweeney",
+              "primary-type": "Broadcast",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "track-count": 18,
+            "media": [
+              {
+                "id": "1852e6e0-990e-4e41-bc7c-bf986ac2b6cd",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "6aefc1e6-8bad-4db1-95b3-d885ca38d6ab",
+                    "number": "8",
+                    "title": "Lesalpx (extended)",
+                    "length": 232000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 7
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "US23A8231612"
+        ]
+      },
+      {
+        "id": "91526f2c-e565-494d-a8c2-af786e7d0870",
+        "score": 93,
+        "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+        "title": "Lesalpx (extended)",
+        "length": 372000,
+        "disambiguation": "part of “Woodstock69: Floating Points in Amsterdam, Jul 21, 2019” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Floating Points",
+            "artist": {
+              "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+              "name": "Floating Points",
+              "sort-name": "Floating Points",
+              "aliases": [
+                {
+                  "sort-name": "SS",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "SS",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Samuel Thomas",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Samuel Thomas Shepherd",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Shepherd, Sam",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Sam Shepherd",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Floatingpoints",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Floatingpoints",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2019-07-21",
+        "releases": [
+          {
+            "id": "62d0867c-fd4b-4c3b-9b6f-f40afb864329",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "1afb993e-d35d-356a-8009-ef69443888b6",
+            "count": 1,
+            "title": "Woodstock69: Floating Points in Amsterdam, Jul 21, 2019",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Floating Points",
+                "artist": {
+                  "id": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+                  "name": "Floating Points",
+                  "sort-name": "Floating Points"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7b5ee1b7-79c0-42bf-81f7-088ed14c9053",
+              "type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "primary-type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+              "title": "Woodstock69: Floating Points in Amsterdam, Jul 21, 2019",
+              "primary-type": "Other",
+              "secondary-types": [
+                "Live",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "track-count": 109,
+            "media": [
+              {
+                "id": "56c594d1-75bd-396c-aeb9-3b5764e34630",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "982189f1-88f8-4a59-aaa5-180e8de42bc6",
+                    "number": "98",
+                    "title": "Lesalpx (extended)",
+                    "length": 372000
+                  }
+                ],
+                "track-count": 109,
+                "track-offset": 97
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "US23A9357358"
+        ]
+      }
+    ]
+  }
+}

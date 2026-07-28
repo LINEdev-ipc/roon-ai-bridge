@@ -1,0 +1,343 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28latinoamerica%29+AND+firstreleasedate%3A%5B2009+TO+2011%5D+AND+artistname%3A%22Calle+13%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T12:44:05.375Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T12:44:05.523Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "ad5f7744-3dd8-4d0d-b77a-7949dc023e74",
+        "score": 100,
+        "artist-credit-id": "28d7a3a6-63b4-40e9-a6c0-a0d0298a3339",
+        "title": "Latinoamérica",
+        "length": 304133,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " feat. ",
+            "name": "Calle 13",
+            "artist": {
+              "id": "5be7d200-5499-4bba-b29b-1ac554199d23",
+              "name": "Calle 13",
+              "sort-name": "Calle 13"
+            }
+          },
+          {
+            "joinphrase": " / ",
+            "name": "Totó la Momposina",
+            "artist": {
+              "id": "6904c849-97ab-4bf2-af51-467e8dd98ec9",
+              "name": "Totó la Momposina",
+              "sort-name": "Totó la Momposina",
+              "aliases": [
+                {
+                  "sort-name": "Toto La Memposina",
+                  "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                  "name": "Toto La Memposina",
+                  "locale": null,
+                  "type": "Search hint",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bazanta Vides, Sonia",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Sonia Bazanta Vides",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " / ",
+            "name": "Susana Baca",
+            "artist": {
+              "id": "176af481-a5db-4902-84e0-393e7811b8c4",
+              "name": "Susana Baca",
+              "sort-name": "Baca, Susana",
+              "aliases": [
+                {
+                  "sort-name": "Suzana Baca",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Suzana Baca",
+                  "locale": null,
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Baca, Susana",
+                  "name": "Baca, Susana",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Susana Esther Baca de la Colina",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Susana Esther Baca de la Colina",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "name": "Maria Rita",
+            "artist": {
+              "id": "3c12ecf2-91da-4d4a-8462-e4d5d9e273e7",
+              "name": "Maria Rita",
+              "sort-name": "Rita, Maria",
+              "disambiguation": "Elis Regina's daughter, MPB singer active 2000s–present",
+              "aliases": [
+                {
+                  "sort-name": "Maria Rita",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "Maria Rita",
+                  "locale": "pt",
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Rita Maria",
+                  "name": "Rita Maria",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Mariano, Maria Rita Camargo",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Maria Rita Camargo Mariano",
+                  "locale": "pt_BR",
+                  "type": "Legal name",
+                  "primary": true,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2009",
+        "releases": [
+          {
+            "id": "69681680-c9ed-499d-9eaf-4e0fec233b18",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "b041d173-5f82-3cf5-9a28-5eb484c65189",
+            "count": 1,
+            "title": "Entren los que quieran",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Calle 13",
+                "artist": {
+                  "id": "5be7d200-5499-4bba-b29b-1ac554199d23",
+                  "name": "Calle 13",
+                  "sort-name": "Calle 13"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a627d288-40e7-4ab2-9ef1-e6d3296a49c1",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Entren los que quieran",
+              "primary-type": "Album"
+            },
+            "date": "2010-11-19",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2010-11-19",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "002ab5a0-bcf9-405b-a973-630a000403c1",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "96110ec3-20d2-468c-9164-f3b53eedf58f",
+                    "number": "7",
+                    "title": "Latinoamérica",
+                    "length": 304133
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "e61a0c99-0e3e-42df-be76-fb114c92a37c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "b041d173-5f82-3cf5-9a28-5eb484c65189",
+            "count": 1,
+            "title": "Entren los que quieran",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Calle 13",
+                "artist": {
+                  "id": "5be7d200-5499-4bba-b29b-1ac554199d23",
+                  "name": "Calle 13",
+                  "sort-name": "Calle 13"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a627d288-40e7-4ab2-9ef1-e6d3296a49c1",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Entren los que quieran",
+              "primary-type": "Album"
+            },
+            "date": "2009",
+            "country": "CO",
+            "release-events": [
+              {
+                "date": "2009",
+                "area": {
+                  "id": "02b60d8d-7164-339d-868d-22d147d9f74a",
+                  "name": "Colombia",
+                  "sort-name": "Colombia",
+                  "iso-3166-1-codes": [
+                    "CO"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "6d7ea5e0-45fc-3332-9d08-836d55f2417b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e580cc90-2c11-436c-a619-d27b102126b0",
+                    "number": "7",
+                    "title": "Latinoamérica",
+                    "length": 304133
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "6f0864db-6abb-49e5-8a76-34ae9fb3a322",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "b041d173-5f82-3cf5-9a28-5eb484c65189",
+            "count": 1,
+            "title": "Entren los que quieran",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Calle 13",
+                "artist": {
+                  "id": "5be7d200-5499-4bba-b29b-1ac554199d23",
+                  "name": "Calle 13",
+                  "sort-name": "Calle 13"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a627d288-40e7-4ab2-9ef1-e6d3296a49c1",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Entren los que quieran",
+              "primary-type": "Album"
+            },
+            "date": "2010-11-22",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "2010-11-22",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "3174245b-4691-3fb6-b194-9ffda7c7b9f2",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "378e1883-b2d3-3c02-a925-3ce167fc09fb",
+                    "number": "7",
+                    "title": "Latinoamérica",
+                    "length": 304133
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 6
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "USSD11000423"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "hip hop"
+          },
+          {
+            "count": 1,
+            "name": "spanish"
+          },
+          {
+            "count": 2,
+            "name": "latin"
+          },
+          {
+            "count": 2,
+            "name": "reggaeton"
+          }
+        ]
+      }
+    ]
+  }
+}

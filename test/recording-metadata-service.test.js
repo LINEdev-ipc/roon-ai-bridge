@@ -328,11 +328,11 @@ test("MusicBrainz verifies a stored recording MBID while keeping a distinct arti
   assert.deepEqual(result.trace.candidate_counts, { returned: 1, accepted: 1, rejected: 0 });
 });
 
-test("MusicBrainz search preserves apostrophes while removing a remaster suffix", async () => {
+test("MusicBrainz search uses significant title words after removing a remaster suffix", async () => {
   const service = new RecordingMetadataService(async (url) => {
     assert.equal(
       url.searchParams.get("query"),
-      'recording:"Won\'t Get Fooled Again" AND artist:"The Who"'
+      'recording:(won AND get AND fooled AND again) AND artistname:"The Who" AND video:false'
     );
     return new Response(JSON.stringify({ recordings: [] }), { status: 200 });
   }, { minRequestIntervalMs: 0 });
@@ -350,7 +350,7 @@ test("MusicBrainz search preserves apostrophes while removing a remaster suffix"
 test("MusicBrainz treats remaster as release evidence rather than a recording variant", async () => {
   const service = new RecordingMetadataService(async (url) => {
     if (url.pathname.endsWith("/recording")) {
-      assert.match(url.searchParams.get("query"), /recording:"Highway Star"/);
+      assert.match(url.searchParams.get("query"), /recording:\(highway AND star\)/);
       return new Response(JSON.stringify({ recordings: [
         {
           id: "highway-studio",
@@ -392,28 +392,19 @@ test("MusicBrainz treats remaster as release evidence rather than a recording va
   assert.deepEqual(result.trace.rejected_candidates[0].reasons, ["variant_mismatch"]);
 });
 
-test("MusicBrainz falls back from an incompatible observed release to the base recording", async () => {
+test("MusicBrainz treats an observed release as soft evidence in one broad recording search", async () => {
   const queries = [];
   const service = new RecordingMetadataService(async (url) => {
     if (url.pathname.endsWith("/recording")) {
       const query = url.searchParams.get("query");
       queries.push(query);
-      const recordings = query.includes('release:"Live Steppenwolf"')
-        ? [{
-            id: "born-live",
-            title: "Born To Be Wild",
-            disambiguation: "live recording",
-            score: 100,
-            "artist-credit": [{ name: "Steppenwolf" }],
-            releases: [{ title: "Live Steppenwolf" }]
-          }]
-        : [{
-            id: "born-studio",
-            title: "Born To Be Wild",
-            score: 100,
-            "artist-credit": [{ name: "Steppenwolf" }],
-            releases: [{ title: "Steppenwolf" }]
-          }];
+      const recordings = [{
+        id: "born-studio",
+        title: "Born To Be Wild",
+        score: 100,
+        "artist-credit": [{ name: "Steppenwolf" }],
+        releases: [{ title: "Steppenwolf" }]
+      }];
       return new Response(JSON.stringify({ recordings }), { status: 200 });
     }
     return new Response(JSON.stringify({
@@ -437,8 +428,8 @@ test("MusicBrainz falls back from an incompatible observed release to the base r
 
   assert.equal(result.status, "exact");
   assert.equal(result.metadata.recording_id, "born-studio");
-  assert.equal(queries.length, 2);
-  assert.ok(result.trace.accepted_warnings.includes("release_observation_did_not_identify_recording"));
+  assert.equal(queries.length, 1);
+  assert.doesNotMatch(queries[0], /release:/);
 });
 
 test("MusicBrainz does not treat the mere presence of an ISRC as identity evidence", async () => {

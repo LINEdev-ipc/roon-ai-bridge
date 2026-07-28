@@ -1,0 +1,50 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Hostile+Environment%22+AND+artist%3A%22Creation+Rebel%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:51:31.560Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:51:31.610Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "1095c33b-dfe1-43d6-875e-36b51087e1b3",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "6a320c3f-7d7b-3b3f-a81e-9ab0106b51ed",
+        "count": 2,
+        "title": "Hostile Environment",
+        "first-release-date": "2023-09-15",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Creation Rebel",
+            "artist": {
+              "id": "6ccfa72c-91ab-4b12-b40e-0069d2b85031",
+              "name": "Creation Rebel",
+              "sort-name": "Creation Rebel"
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "9244808b-dbed-4c08-bc22-f997749e9bca",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Hostile Environment",
+            "status": "Official"
+          },
+          {
+            "id": "2acef767-4cde-428b-810f-9287943a40a9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Hostile Environment",
+            "status": "Official"
+          }
+        ]
+      }
+    ]
+  }
+}

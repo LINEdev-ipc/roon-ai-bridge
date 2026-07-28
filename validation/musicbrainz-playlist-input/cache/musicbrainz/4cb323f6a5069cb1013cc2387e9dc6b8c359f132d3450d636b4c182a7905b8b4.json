@@ -1,0 +1,5004 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28katchi%29+AND+artistname%3A%22Ofenbach%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:42:47.523Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:42:47.887Z",
+    "count": 19,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "abd527ab-da3a-47b3-ae84-bd364a0be941",
+        "score": 100,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi",
+        "length": 149307,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017-12-08",
+        "releases": [
+          {
+            "id": "8d1078e2-998f-40d7-aaaa-2f24c1d8e0c7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Ö3 Greatest Hits, Vol. 80",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "78ac7780-fb9a-40ce-8481-d25ab0f0b152",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ö3 Greatest Hits 80",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-16",
+            "country": "CH",
+            "release-events": [
+              {
+                "date": "2018-03-16",
+                "area": {
+                  "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+                  "name": "Switzerland",
+                  "sort-name": "Switzerland",
+                  "iso-3166-1-codes": [
+                    "CH"
+                  ]
+                }
+              }
+            ],
+            "track-count": 23,
+            "media": [
+              {
+                "id": "0f3e2bdb-2328-3be4-aa30-e9942cf957c9",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c3f21ce1-52f1-4d9c-b113-bf97695de71c",
+                    "number": "2",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 149307
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "f1fe2b43-c412-4c37-89ba-1bf56b05d09d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Ö3 Greatest Hits 80",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "78ac7780-fb9a-40ce-8481-d25ab0f0b152",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Ö3 Greatest Hits 80",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-16",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2018-03-16",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 23,
+            "media": [
+              {
+                "id": "ab899486-aaa8-3925-90b5-b3dcd548077e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "54277566-16ca-4301-a2d0-fef686697d58",
+                    "number": "2",
+                    "title": "Katchi",
+                    "length": 149000
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "7a9188ac-89b3-4c3a-9555-c5638bc5e589",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Après Ski-Hits 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b2145e8c-aa1c-4dbf-b577-d246393788de",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Après Ski-Hits 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-08",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2017-12-08",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 50,
+            "media": [
+              {
+                "id": "d88b83a3-c32b-3712-bfa6-550d84adc4fb",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d8e253c0-58dc-4b44-8e2d-471215ed8179",
+                    "number": "4",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 25,
+                "track-offset": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a085f9d8-7620-4bec-b590-95b0ad84ad51",
+        "score": 100,
+        "artist-credit-id": "ed7dd58f-1deb-37d6-912b-12c800ac416a",
+        "title": "Katchi",
+        "length": 151000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017",
+        "releases": [
+          {
+            "id": "f9cd6586-b36b-4e6e-9567-6e5df2eef825",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Hit’s Winter!",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5e3985b4-6a6e-4865-9d32-40cd0b93ca84",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Hit’s Winter!",
+              "disambiguation": "2017",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017",
+            "country": "IT",
+            "release-events": [
+              {
+                "date": "2017",
+                "area": {
+                  "id": "c6500277-9a3d-349b-bf30-41afdbf42add",
+                  "name": "Italy",
+                  "sort-name": "Italy",
+                  "iso-3166-1-codes": [
+                    "IT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 22,
+            "media": [
+              {
+                "id": "18a2f7ae-700c-3707-8c68-c8985bd1126d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f61def3e-9929-4e93-a19f-5c7acd2fa8b4",
+                    "number": "4",
+                    "title": "Katchi",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "16e47380-2cc8-4480-b892-09cfede5623f",
+        "score": 100,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi",
+        "length": 151000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2019-04-12",
+        "releases": [
+          {
+            "id": "302b6973-cb24-420d-a4de-8faaec237cbb",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fd2d11a1-fdfd-3ce7-b23f-c39d598f9996",
+            "count": 1,
+            "title": "Ofenbach",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Ofenbach",
+                "artist": {
+                  "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+                  "name": "Ofenbach",
+                  "sort-name": "Ofenbach",
+                  "disambiguation": "French DJ duo"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0437e050-ae49-4f7e-8f1b-c1e25a7095dc",
+              "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+              "title": "Ofenbach",
+              "primary-type": "EP"
+            },
+            "date": "2019-04-12",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2019-04-12",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 8,
+            "media": [
+              {
+                "id": "a944019e-d9c9-3b67-8823-951b633a3859",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "84d6137e-76b7-46c5-a9a7-02465a79361f",
+                    "number": "1",
+                    "title": "Katchi",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 8,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12376e6d-fead-4696-abc7-6badc0732927",
+        "score": 100,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi",
+        "length": 154000,
+        "disambiguation": "part of “Kontor: Top of the Clubs, Volume 78” DJ‐mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2018-04-13",
+        "releases": [
+          {
+            "id": "a358ad0b-544c-4f76-91a1-29485c732b79",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "Kontor: Top of the Clubs, Volume 78",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8d9eb057-af49-4a6e-9472-80247f68e5c4",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Kontor: Top of the Clubs, Volume 78",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2018-04-13",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-04-13",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 92,
+            "media": [
+              {
+                "id": "1195ed96-7b6c-3f32-a712-34bb2beb07a9",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "72163dac-3c3d-4298-aa08-4289aaae5ec5",
+                    "number": "6",
+                    "title": "Katchi",
+                    "length": 154000
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "afac290e-9566-43ef-a7f3-ab4344a6f803",
+        "score": 100,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi",
+        "length": 165000,
+        "disambiguation": "part of a “Kontor: Top of the Clubs, MMXVIII” DJ-mix",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2018-11-09",
+        "releases": [
+          {
+            "id": "57cb97ba-de73-4c50-a31e-e57334d81c00",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Kontor: Top of the Clubs: The Biggest Hits of the Year MMXVIII",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c77794b-e287-4b2f-94b1-31e8d2acfdee",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Kontor: Top of the Clubs: The Biggest Hits of the Year MMXVIII",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2018-11-09",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-11-09",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 69,
+            "media": [
+              {
+                "id": "a4b2b6e6-a76c-3e9a-b841-ee05a2cd9b2f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a8a4448c-b3d3-45bc-ad62-f4db3fff87f1",
+                    "number": "8",
+                    "title": "Katchi",
+                    "length": 165000
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6a75a7e6-949d-4dad-a7cd-cab7172a6aa1",
+        "score": 100,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2018-01-19",
+        "releases": [
+          {
+            "id": "aec3c868-6dae-41aa-af19-b40614397dfd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Urban Dance 23",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "b0ce6366-9284-4ebf-b903-02d7bda23b90",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Urban Dance 23",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 68,
+            "media": [
+              {
+                "id": "1894a62b-f051-414d-a273-8c58c239bd8d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a818eeb1-abf7-401c-adc1-b12b0631d6db",
+                    "number": "1",
+                    "title": "Katchi"
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a2443e48-4193-4ec1-b497-9fece45355e2",
+        "score": 100,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi",
+        "length": 151000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017-08-25",
+        "releases": [
+          {
+            "id": "ea36b01d-cf8b-4465-af15-169d236c9c1e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Club Sounds: The Ultimate Club Dance Collection, Vol. 84",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "01b9b3c8-1924-4846-a4c8-ee8d16b61cb4",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Club Sounds: The Ultimate Club Dance Collection, Vol. 84",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-09-02",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-09-02",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 69,
+            "media": [
+              {
+                "id": "767f6a9e-d19b-375b-961e-0055c4cba5f7",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c65ac6f5-924c-4532-a0f8-ecea9f27d9de",
+                    "number": "2",
+                    "title": "Katchi",
+                    "length": 152893
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "4ef24bf1-b9c1-4d93-ae2c-bf03e4faa752",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "ChartBoxx 4.2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1ab663a9-ec74-4097-a2fc-79c61a953188",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "ChartBoxx 4.2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-05-25",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-05-25",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 21,
+            "media": [
+              {
+                "id": "3cf10b60-b6ea-3cd0-8d83-2fcbfa9a0e15",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "dffac7b6-a2af-42bc-abaa-244a818f4b84",
+                    "number": "20",
+                    "title": "Katchi",
+                    "length": 152880
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "eec5abcd-799b-443c-b440-50cf47e76bb1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Fetenhits: Fußball WM 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "16201d8b-3136-4923-9e0b-72af55d9f60c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Fetenhits: Fußball WM 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-06-08",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-06-08",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 68,
+            "media": [
+              {
+                "id": "41f08fef-dd6f-35fa-a6ed-712998c44903",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "89c9dec1-2356-4439-8811-ef0642668437",
+                    "number": "7",
+                    "title": "Katchi",
+                    "length": 150520
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "5a9d1d5f-da6b-48a3-87da-e3620a9e54ad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Absolute Music 84",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2040d29f-9306-42cb-868c-de9b17319acc",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Absolute Music 84",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-04-20",
+            "country": "SE",
+            "release-events": [
+              {
+                "date": "2018-04-20",
+                "area": {
+                  "id": "23d10872-f5ae-3f0c-bf55-332788a16ecb",
+                  "name": "Sweden",
+                  "sort-name": "Sweden",
+                  "iso-3166-1-codes": [
+                    "SE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "f7c86363-00c5-333e-bb3c-8f6676927a3a",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4cf97191-6b3f-4394-b0e3-8d79d30b660e",
+                    "number": "10",
+                    "title": "Katchi",
+                    "length": 152720
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "778885da-e64d-4554-9026-372272269ee5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Spring Break 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e1b0e2f4-6080-4e31-b143-22dc6a7ab91b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Spring Break 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 64,
+            "media": [
+              {
+                "id": "5569184c-f3cd-479f-b475-fc647f8d75cf",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9418402b-a5c6-4505-926c-e1534aed6490",
+                    "number": "11",
+                    "title": "Katchi",
+                    "length": 151293
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "d7585489-b855-412e-ba47-6f8090ae2212",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Smash Hits 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "0962f186-07e3-4e0a-ab77-b67b163b691f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Smash Hits 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-01-19",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-01-19",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "8f78afc5-2f11-3bed-81ac-ba3e76731844",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3afd9205-36cf-4847-ad1a-b52409e667e0",
+                    "number": "1",
+                    "title": "Katchi",
+                    "length": 152906
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "6b32520e-be2f-4513-96d2-428ef7ec9aa1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Fun Radio Ibiza Experience 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c2039226-cf21-4633-a284-1b3ca972d264",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Fun Radio Ibiza Experience 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 60,
+            "media": [
+              {
+                "id": "e2d0598e-5e26-39a7-a7f1-a7faeebc2edb",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "dac3d49d-5982-4a18-9ac7-b2594895c43a",
+                    "number": "2",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "becbfe8e-0b33-417e-92cf-10776efe3233",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "#Cauetslachesursacompile",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5b33fd95-2c80-474d-bcd6-78de32f794ff",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "#Cauetslachesursacompile",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-01",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-12-01",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 67,
+            "media": [
+              {
+                "id": "c11e3efa-ad62-3d02-96c9-95d2de11cda9",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "438be409-71fa-482b-85aa-b76d98f1e751",
+                    "number": "1",
+                    "title": "Katchi",
+                    "length": 152880
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "ffe6d049-e25a-47cd-8727-b2b4f4963231",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "110 Hits 2018 Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "aa826ef0-a898-4c31-b783-3eb6b4526d7a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "110 Hits 2018 Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-05-11",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-05-11",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 110,
+            "media": [
+              {
+                "id": "ed89e539-114e-3432-90c5-0730f6854047",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7d3e9ff1-89ff-4092-ac6f-6bfdcfcec173",
+                    "number": "20",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "b1600825-2987-4fa1-87f9-efc9b23e56c3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Megahits 2018: Die Erste",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3055cad4-656e-4f99-b0b6-3176e77c68ab",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Megahits 2018: Die Erste",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-01-26",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-01-26",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 47,
+            "media": [
+              {
+                "id": "5d29470a-a5ff-3895-9efb-459fba8ff00a",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "7e39853e-bcbf-4fd2-9674-7284f9df6d9f",
+                    "number": "3",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 47,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "10c9b28b-39c5-4874-b092-9da78e8447c3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Megahits 2018: Die Erste",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3055cad4-656e-4f99-b0b6-3176e77c68ab",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Megahits 2018: Die Erste",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-15",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2017-12-15",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 47,
+            "media": [
+              {
+                "id": "3991ee43-3215-35f9-9781-1d0af13ce9fb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "bba371c0-f549-4ad3-9e25-5f140d710f1a",
+                    "number": "3",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 24,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "3824cf17-dfab-4e6f-81fa-2678f0e875a0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "RTL Hits Sommer 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1bc5218d-6679-49a3-9163-cf0193c480fb",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "RTL Hits Sommer 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-05-25",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-05-25",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 42,
+            "media": [
+              {
+                "id": "a9c82d7a-adc9-3d63-bf50-2f8480f33851",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3e8da110-6e9d-48ba-a1e7-97a2f9504fa8",
+                    "number": "18",
+                    "title": "Katchi",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "45072627-254b-41ec-a96a-bc6720531cbd",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Club Sounds: The Ultimate Club Dance Collection: Best of 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6f4ea3ea-7fc9-47f7-9f7a-f5beaabb3bb0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Club Sounds: The Ultimate Club Dance Collection: Best of 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-11-16",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-11-16",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 65,
+            "media": [
+              {
+                "id": "6a85b093-b1ca-3f13-b2fe-ff17cb1ad9fa",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "460edf38-7f71-45ec-bab9-864ccca23942",
+                    "number": "2",
+                    "title": "Katchi",
+                    "length": 152893
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "64d8d5f4-84f2-4736-b6f2-1693801f62ee",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "NRJ Future Hits 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "f836540f-c30e-45fc-8e02-650f937b3815",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Future Hits 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "e904c869-f19d-3563-9215-8145c6c0429d",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e9d8b0ad-822e-4bd4-a55d-55cd185595bf",
+                    "number": "10",
+                    "title": "Katchi",
+                    "length": 152613
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "e8243fc3-d743-4e77-979d-b037e2e4993b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "NRJ Music Awards 2017",
+            "status": "Official",
+            "disambiguation": "deluxe edition",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "596cdf9d-8e1e-45eb-a238-46ca6b7481a6",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Music Awards 2017",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-08",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-12-08",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 88,
+            "media": [
+              {
+                "id": "6673e727-9f9a-339a-9051-5d8ddf15e998",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5a63bbfc-b3b4-4020-94ac-49f90bf13b58",
+                    "number": "3",
+                    "title": "Katchi",
+                    "length": 153013
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "58e8b377-b9f5-4f61-b5bc-1e11068b1f14",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ 300% Hits 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ee60480a-416c-4a41-a42f-398561139afa",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ 300% Hits 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-02-08",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-02-08",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "d896be6b-d205-3147-897e-1fb2999ea050",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7f461c5d-1ea3-4c6a-808c-dd91f15c6d43",
+                    "number": "20",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150520
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "68fa8f8d-0594-4304-95f0-158656fa26a6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Winter Hits 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "83df5342-a125-41a1-9d9f-2b43e75383fb",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Winter Hits 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-01-05",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-01-05",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "854f2e51-ddef-3b48-8687-179c5fc601c4",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4a79d7fb-1468-404a-a9b1-00e7b847065e",
+                    "number": "1",
+                    "title": "Katchi",
+                    "length": 151400
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "c800f173-fa98-4e85-9f5c-e665d50d9e7b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Extravadance 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "049ef8c2-919d-43b3-80cd-b1bfbe7b6630",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Extravadance 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "db1d992f-8004-39f6-af92-88d7249753c0",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7fb9cfd5-4999-48a7-80f3-d73bdd9dd420",
+                    "number": "18",
+                    "title": "Katchi",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "c14d1d12-2698-4b9b-8454-969d64dcc50b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Kontor Summer Jam 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "a7ca3c29-52c0-4675-bdaa-95e10fbeb5ee",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Kontor Summer Jam 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-08-10",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-08-10",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 66,
+            "media": [
+              {
+                "id": "efe2afea-97cd-3f79-81a0-fe36b34c48d6",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "952273ea-270d-4dcc-a951-4d5192aa1235",
+                    "number": "5",
+                    "title": "Katchi",
+                    "length": 152226
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "e7e30b79-f29c-4f33-9239-5c64b722d046",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "#hits Printemps 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4c066c08-8c63-4814-a4d8-60dbd00f7e3b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "#hits Printemps 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-04-27",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-04-27",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 46,
+            "media": [
+              {
+                "id": "064705a3-eb80-3a91-a121-494a652cefba",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4a37b112-dc5f-4031-9896-5061fa6cc3e0",
+                    "number": "10",
+                    "title": "Katchi",
+                    "length": 152866
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 9
+              }
+            ]
+          },
+          {
+            "id": "be57281a-8e8e-4152-bf5d-94cbaeb41171",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Fun Dance 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c01e4b04-7c73-48ca-8870-9535731e419b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Fun Dance 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-30",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-03-30",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "754d6b64-6944-3f5a-8e8d-47cc14a058de",
+                "position": 2,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "49846f26-4b40-4a3b-809b-abbfda0d31ad",
+                    "number": "6",
+                    "title": "Katchi",
+                    "length": 150396
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "6d203409-8ea0-4f7b-b9e8-eb259965e2b2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "ENERGY Party Hits 2020",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "53f031be-d745-457c-9271-a9668fd526c7",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "ENERGY Party Hits 2020",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2020-02-07",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2020-02-07",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              },
+              {
+                "date": "2020-02-07",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              },
+              {
+                "date": "2020-02-07",
+                "area": {
+                  "id": "1333ff06-8e3d-3c8e-9f3a-13a2a38b41df",
+                  "name": "Switzerland",
+                  "sort-name": "Switzerland",
+                  "iso-3166-1-codes": [
+                    "CH"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "ba4782a5-be6f-30ac-93a2-109cab3eb8a8",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "f7e39fed-8511-4092-956e-ff10f4626c66",
+                    "number": "28",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150436
+                  }
+                ],
+                "track-count": 44,
+                "track-offset": 27
+              }
+            ]
+          },
+          {
+            "id": "09be00a9-a25f-4afe-b2b2-d1f3ea8ee936",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Let’s Dance: Das Tanzalbum 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "db52d8c9-f071-4e1e-8417-1841429d46b2",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Let’s Dance: Das Tanzalbum 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-04-06",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-04-06",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "a7518ffa-f230-3af8-922f-2b1b24a26b69",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7c72c670-0962-4132-9b0c-f9f8bf7388b7",
+                    "number": "12",
+                    "title": "Katchi (disco Fox)",
+                    "length": 150840
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "f298197b-7cfc-4366-9f79-c8413301a73e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Toggo Music 48",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "69599e6a-c1fd-40b5-b0fa-02c51f658f1a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Toggo Music 48",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 23,
+            "media": [
+              {
+                "id": "c76ffee1-64c4-3ba5-92b1-0a514af25bb1",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3b648375-3744-4612-9c92-653f280ab900",
+                    "number": "3",
+                    "title": "Katchi",
+                    "length": 152893
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "00fdcdd7-15a2-43a4-922d-3c651b4cd970",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Music Awards 2017",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "18c4f105-9a47-48a2-901b-8253575358d1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Music Awards 2017",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-10-27",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-10-27",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 69,
+            "media": [
+              {
+                "id": "04b3abbf-d860-3bfe-b05b-21e012015b6c",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "e1e0a98a-6244-4278-a3fe-c006018db45f",
+                    "number": "4",
+                    "title": "Katchi",
+                    "length": 152986
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "13a1cb09-3ddd-4fe7-98a4-6800b13222c1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Hits 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "288673da-29db-4a42-bbca-bdcb037e91f7",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Hits 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-22",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-12-22",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "fd975c13-a506-369e-921d-89f88592a768",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1afab03a-5626-44ac-8e1b-e7bf3be6600a",
+                    "number": "4",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150520
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "462bcda7-6a81-4ff9-b248-da4be1ee9ea7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Katchi",
+            "status": "Official",
+            "release-group": {
+              "id": "067cb09b-829e-4415-8a80-cff9efa55a93",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Katchi",
+              "primary-type": "Single"
+            },
+            "date": "2017-08-25",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-08-25",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "791ad4c2-fb6a-3fad-883a-7b342cfd5f02",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ad015cca-5af2-4b1b-942a-1e3f352277a0",
+                    "number": "1",
+                    "title": "Katchi",
+                    "length": 151011
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "c4506531-f726-4bee-9b7a-cad742f208a3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "La Playlist NRJ 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "03260833-96a1-4f88-b40e-23c732ebad41",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "La Playlist NRJ 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-04-20",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-04-20",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "259bed87-4abc-3a61-95de-9f46eb370173",
+                "position": 3,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "c57e43b4-1c8e-4456-b2ab-729324ec37ca",
+                    "number": "4",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 152973
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "e14b2d73-ae2f-4c27-8b67-3278e22de90a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Virgin Radio 2018, Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "646bb672-52c2-4c33-bca4-196866f508b5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Virgin Radio 2018, Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-16",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-03-16",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 44,
+            "media": [
+              {
+                "id": "69e8bd2a-ab87-3f8a-b993-7213370d7b5b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1d241199-0217-4330-9fd5-f301af4913b6",
+                    "number": "22",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150907
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 21
+              }
+            ]
+          },
+          {
+            "id": "dcc7cfd9-7f2e-4ecf-82c7-faf8e6b329ea",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ 300% Hits 2017, Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "775320f8-5c67-460c-9522-305c0555197d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ 300% Hits 2017, Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-10-06",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-10-06",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "10d9b77b-94ba-3ca6-9ad1-b5f602f8a0f0",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4889191e-8753-4e8e-80a4-2bcf97a46245",
+                    "number": "2",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150520
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "c98fdcfc-2adc-4a24-826b-9e46f48be390",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ 300% Hits 2017, Vol. 2",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "775320f8-5c67-460c-9522-305c0555197d",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ 300% Hits 2017, Vol. 2",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-10-06",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-10-06",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "5d3ce015-8fe4-3c3b-a3f2-ce7aca3d2a39",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "87fa351c-49c4-4277-a225-635d5910d275",
+                    "number": "2",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150520
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "68db28b9-76b2-4512-b475-f78ddeb7a70b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Les Hits RTL 2017",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e64b1474-fa52-462f-af33-8c0f88e3e265",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Les Hits RTL 2017",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 43,
+            "media": [
+              {
+                "id": "f29dab6a-1c49-307d-9a2b-5cfe231c1d27",
+                "position": 3,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "4818eacc-9bb7-47b2-a93b-c53c1f4b5c8f",
+                    "number": "4",
+                    "title": "Katchi",
+                    "length": 152960
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "9d294a79-4930-4d01-a53e-cb5fe5eb8f69",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Fun Radio: Fun Club 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "61e5db79-5cd7-4d4b-b599-dd6893506165",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Fun Radio: Fun Club 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-02-02",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-02-02",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 63,
+            "media": [
+              {
+                "id": "e4facb5b-c94a-3aa4-bf36-521958c4e263",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d3cafa1c-60f8-4d50-b0ed-7a5f6cd9bd00",
+                    "number": "1",
+                    "title": "Katchi",
+                    "length": 152880
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "86032640-6986-409d-a044-4d65b9084380",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Les Artistes RTL 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "9cbe48b2-5d47-497c-9a93-147bcedad792",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Les Artistes RTL 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-06-29",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-06-29",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 40,
+            "media": [
+              {
+                "id": "19c3df3a-8b84-3f69-a0a4-188676694a47",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a34431d0-1dc5-4661-8a00-f7001d1b6387",
+                    "number": "6",
+                    "title": "Katchi",
+                    "length": 150520
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "d957022b-cb3a-42d7-be84-a4230184dfdf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Hit Music Only 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "6072698d-bf0c-4eaa-ab8c-12aef5dd85e5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Hit Music Only 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-04-06",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-04-06",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "130afd39-f669-36e0-aa00-7a528d3845f9",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "53e6e983-a93e-4c99-a974-344738ce02d5",
+                    "number": "20",
+                    "title": "Katchi (Ofenback vs. Nick Waterhouse)",
+                    "length": 150520
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 19
+              }
+            ]
+          },
+          {
+            "id": "7c32b65f-7830-4758-8699-9e16c9621873",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Hot Parade Dance: Winter 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "08d622ad-28ff-41ae-ae03-28eb94020228",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Hot Parade Dance: Winter 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "IT",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "c6500277-9a3d-349b-bf30-41afdbf42add",
+                  "name": "Italy",
+                  "sort-name": "Italy",
+                  "iso-3166-1-codes": [
+                    "IT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 45,
+            "media": [
+              {
+                "id": "1ab3621f-65f8-3573-a553-8d743cc4f66b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a117dacb-7f37-4d71-b9bb-85534dfd8ef5",
+                    "number": "1",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "3da48c58-e12a-4aad-be3d-86e25841f0ec",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "The Dome, Vol. 84",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dcb1808d-5992-456a-b5f8-6bc8e5bfa9d0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Dome, Vol. 84",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-01",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2017-12-01",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 47,
+            "media": [
+              {
+                "id": "711961c7-725e-3154-a8a3-7271d1221386",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a4f2eced-8e17-4b51-821a-fa0e01438f94",
+                    "number": "6",
+                    "title": "Katchi",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "d283aab3-2aad-4a3d-8c74-868e3bf9d60a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Winter hits 2018 Coffret",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "cef004c2-7220-4ddd-8008-dda4eec5efe3",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Winter hits 2018 Coffret",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 60,
+            "media": [
+              {
+                "id": "4532aab3-1d3b-3725-aebf-4e5814228683",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "28185a21-2361-4f68-8ad2-23884ac925d5",
+                    "number": "9",
+                    "title": "Katchi",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "32332717-d7fe-4be0-bb81-70218735ac21",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "NRJ Hits 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "288673da-29db-4a42-bbca-bdcb037e91f7",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "NRJ Hits 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-22",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-12-22",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 54,
+            "media": [
+              {
+                "id": "dfa50741-481d-3a36-bd0a-766e1e2606dc",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2b6635eb-4b6d-4c00-a627-b05de1e5895e",
+                    "number": "4",
+                    "title": "Katchi",
+                    "length": 150396
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "6c663263-308a-4ee9-93d2-fa79fea5906b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bravo Hits 99",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d0f8c498-00dd-41d3-8f18-7b58c494ee5f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bravo Hits 99",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017",
+            "country": "AT",
+            "release-events": [
+              {
+                "date": "2017",
+                "area": {
+                  "id": "caac77d1-a5c8-3e6e-8e27-90b44dcc1446",
+                  "name": "Austria",
+                  "sort-name": "Austria",
+                  "iso-3166-1-codes": [
+                    "AT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 46,
+            "media": [
+              {
+                "id": "652d6930-82f7-3316-8f12-517e0db74d70",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0b84b98d-38fb-4ea0-beaf-0e7c113dc57b",
+                    "number": "8",
+                    "title": "Katchi",
+                    "length": 152413
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "39ced496-eb73-4601-8dc0-ff9f64c26098",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Virgin Radio 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e86b0a81-4bd4-43f9-be92-ae9e9ec6298a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Virgin Radio 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-11-10",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-11-10",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 60,
+            "media": [
+              {
+                "id": "dbb8874f-f605-3c33-a1f9-267464f48f4e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "61ee7178-2c1b-4e8f-a8c5-c8dec848b865",
+                    "number": "1",
+                    "title": "Katchi",
+                    "length": 153000
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "54f93716-ce2d-4928-bc83-98e069759617",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Bravo Hits 99",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "d0f8c498-00dd-41d3-8f18-7b58c494ee5f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Bravo Hits 99",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-10-06",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2017-10-06",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 46,
+            "media": [
+              {
+                "id": "205dde6d-f604-377b-8c39-f73fef8601ed",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "a194b781-ea9d-433d-9d17-d662936aaaa2",
+                    "number": "8",
+                    "title": "Katchi",
+                    "length": 152413
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 7
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR1A91701091"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "pop"
+          }
+        ]
+      },
+      {
+        "id": "9f39d042-045f-4e2d-9d73-5e15279b72d5",
+        "score": 88,
+        "artist-credit-id": "0c852cac-426c-4d2c-a593-c830281ac0c8",
+        "title": "Katchi",
+        "length": 118600,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " / ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "joinphrase": " / ",
+            "name": "Amir",
+            "artist": {
+              "id": "0e455850-74bd-4129-b95e-80c30b0d3297",
+              "name": "Amir",
+              "sort-name": "Amir",
+              "disambiguation": "Eurovision 2016 singer for France, Amir Haddad",
+              "aliases": [
+                {
+                  "sort-name": "חדד, עמיר",
+                  "name": "עמיר חדד",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Haddad, Laurent Amir Khlifa Khedider",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Laurent Amir Khlifa Khedider Haddad",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Amir Haddad",
+                  "name": "Amir Haddad",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Amir",
+                  "name": "Amir",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " / ",
+            "name": "Philippe Lacheau",
+            "artist": {
+              "id": "2509f46b-f70f-46c5-9ee3-eea225de0a9b",
+              "name": "Philippe Lacheau",
+              "sort-name": "Lacheau, Philippe",
+              "disambiguation": "French actor, screenwriter and film director"
+            }
+          },
+          {
+            "name": "Les Enfoirés",
+            "artist": {
+              "id": "03f6d51c-1682-4978-bfc5-4bf2d2de98ad",
+              "name": "Les Enfoirés",
+              "sort-name": "Enfoirés, Les",
+              "aliases": [
+                {
+                  "sort-name": "Les enfoires 2002",
+                  "name": "Les enfoires 2002",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Les Enfoires",
+                  "name": "Les Enfoires",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Les Enfoirés 2002",
+                  "name": "Les Enfoirés 2002",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Les Enfoirés 2003",
+                  "name": "Les Enfoirés 2003",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2022-03-05",
+        "releases": [
+          {
+            "id": "7969294d-b627-4515-b9c5-2d22bf71a758",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "23020a32-1376-3d85-a249-5479ef0a97ec",
+            "count": 2,
+            "title": "Un air d’enfoirés",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Les Enfoirés",
+                "artist": {
+                  "id": "03f6d51c-1682-4978-bfc5-4bf2d2de98ad",
+                  "name": "Les Enfoirés",
+                  "sort-name": "Enfoirés, Les"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5adc04dd-d564-476f-b15f-9a509eadd380",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Un air d'enfoirés",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2022-03-05",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2022-03-05",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 28,
+            "media": [
+              {
+                "id": "f9b97bf7-fff2-3d44-b3f5-1defd685c3c6",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "ed0d1005-ec90-438a-9c00-b7ec29133e45",
+                    "number": "9",
+                    "title": "Katchi",
+                    "length": 118600
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "7d6dbf04-8daf-4818-a788-e48c8dc7e664",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "23020a32-1376-3d85-a249-5479ef0a97ec",
+            "count": 1,
+            "title": "Un air d'enfoirés",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Les Enfoirés",
+                "artist": {
+                  "id": "03f6d51c-1682-4978-bfc5-4bf2d2de98ad",
+                  "name": "Les Enfoirés",
+                  "sort-name": "Enfoirés, Les"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5adc04dd-d564-476f-b15f-9a509eadd380",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Un air d'enfoirés",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2022-03-05",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2022-03-05",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "1a3f8b16-a8c1-37ee-9927-91856dd3bb18",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8d54fa4c-a77e-4853-a0f9-01e1ad951b9d",
+                    "number": "9",
+                    "title": "Katchi",
+                    "length": 118600
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7027a42b-c21e-47fe-ab36-a081c62a80af",
+        "score": 88,
+        "artist-credit-id": "f7c39a85-04c7-3569-a5db-6007cde2e14f",
+        "title": "Katchi",
+        "length": 275000,
+        "disambiguation": "live, 2019‐09‐12: Pappy & Harriet’s, Pioneertown, CA, USA",
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": ", ",
+            "name": "Les Enfoirés",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "joinphrase": ", ",
+            "name": "Amir",
+            "artist": {
+              "id": "0e455850-74bd-4129-b95e-80c30b0d3297",
+              "name": "Amir",
+              "sort-name": "Amir",
+              "disambiguation": "Eurovision 2016 singer for France, Amir Haddad",
+              "aliases": [
+                {
+                  "sort-name": "חדד, עמיר",
+                  "name": "עמיר חדד",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Haddad, Laurent Amir Khlifa Khedider",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Laurent Amir Khlifa Khedider Haddad",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Amir Haddad",
+                  "name": "Amir Haddad",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Amir",
+                  "name": "Amir",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          },
+          {
+            "joinphrase": " & ",
+            "name": "Philippe Lacheau",
+            "artist": {
+              "id": "2509f46b-f70f-46c5-9ee3-eea225de0a9b",
+              "name": "Philippe Lacheau",
+              "sort-name": "Lacheau, Philippe",
+              "disambiguation": "French actor, screenwriter and film director"
+            }
+          },
+          {
+            "name": "Les Enfoirés",
+            "artist": {
+              "id": "03f6d51c-1682-4978-bfc5-4bf2d2de98ad",
+              "name": "Les Enfoirés",
+              "sort-name": "Enfoirés, Les",
+              "aliases": [
+                {
+                  "sort-name": "Les enfoires 2002",
+                  "name": "Les enfoires 2002",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Les Enfoires",
+                  "name": "Les Enfoires",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Les Enfoirés 2002",
+                  "name": "Les Enfoirés 2002",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Les Enfoirés 2003",
+                  "name": "Les Enfoirés 2003",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2020-07-24",
+        "releases": [
+          {
+            "id": "4edf29ae-d355-4c9d-8c1f-5dec04212cc6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "0e88f84b-0e24-3ed6-bfe2-702fccbb4d79",
+            "count": 1,
+            "title": "Live at Pappy & Harriet’s: In Person From the High Desert",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Nick Waterhouse",
+                "artist": {
+                  "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+                  "name": "Nick Waterhouse",
+                  "sort-name": "Waterhouse, Nick",
+                  "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "322bfdcf-0883-4ba5-ab4f-5cc9114b6117",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live at Pappy & Harriet’s: In Person From the High Desert",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "date": "2020-11-13",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2020-11-13",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 18,
+            "media": [
+              {
+                "id": "380ab836-662c-3e38-9c05-c8283146f39d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0af194b8-db84-45f9-bcd2-33babd997332",
+                    "number": "11",
+                    "title": "Katchi",
+                    "length": 275320
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 10
+              }
+            ]
+          },
+          {
+            "id": "59f0bf54-2933-44c8-8405-065e48b0335c",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "0e88f84b-0e24-3ed6-bfe2-702fccbb4d79",
+            "count": 1,
+            "title": "Live at Pappy & Harriet’s: In Person From the High Desert",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Nick Waterhouse",
+                "artist": {
+                  "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+                  "name": "Nick Waterhouse",
+                  "sort-name": "Waterhouse, Nick",
+                  "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "322bfdcf-0883-4ba5-ab4f-5cc9114b6117",
+              "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Live at Pappy & Harriet’s: In Person From the High Desert",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Live"
+              ],
+              "secondary-type-ids": [
+                "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+              ]
+            },
+            "track-count": 18,
+            "media": [
+              {
+                "id": "f09d38ec-0451-3da8-8c38-654cb449094e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "5d6f9697-f3ba-4c30-b838-456ab169b8b2",
+                    "number": "11",
+                    "title": "Katchi",
+                    "length": 275000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 10
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "USD8D2075011"
+        ]
+      },
+      {
+        "id": "93bc6327-6a70-4777-aed3-5f0c0017bfb2",
+        "score": 84,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi (Mokoa remix)",
+        "length": 193000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017-11-17",
+        "releases": [
+          {
+            "id": "7a07f95c-7465-4666-bbd4-8a5147e10c2a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Katchi (Remixes)",
+            "status": "Official",
+            "release-group": {
+              "id": "067cb09b-829e-4415-8a80-cff9efa55a93",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Katchi",
+              "primary-type": "Single"
+            },
+            "date": "2017-11-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-11-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "b3e96e61-ff71-3bcc-bcd5-0525825deb53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "02f426fd-61b4-43e8-bcc5-91a1b7c716c9",
+                    "number": "5",
+                    "title": "Katchi (Mokoa remix)",
+                    "length": 193000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 4
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR9W11722627"
+        ]
+      },
+      {
+        "id": "596d52f7-1000-48d2-9b1e-38757c28706a",
+        "score": 84,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi (extended mix)",
+        "length": 230933,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017-11-17",
+        "releases": [
+          {
+            "id": "7a07f95c-7465-4666-bbd4-8a5147e10c2a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Katchi (Remixes)",
+            "status": "Official",
+            "release-group": {
+              "id": "067cb09b-829e-4415-8a80-cff9efa55a93",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Katchi",
+              "primary-type": "Single"
+            },
+            "date": "2017-11-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-11-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "b3e96e61-ff71-3bcc-bcd5-0525825deb53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "7e05e12f-ee28-4612-b25c-42e4c66275a8",
+                    "number": "1",
+                    "title": "Katchi (extended mix)",
+                    "length": 230933
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR9W11722625"
+        ]
+      },
+      {
+        "id": "68a1c38b-863e-48e4-89eb-05257d9cfcc6",
+        "score": 84,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi (Mozambo remix)",
+        "length": 178000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017-11-17",
+        "releases": [
+          {
+            "id": "7a07f95c-7465-4666-bbd4-8a5147e10c2a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Katchi (Remixes)",
+            "status": "Official",
+            "release-group": {
+              "id": "067cb09b-829e-4415-8a80-cff9efa55a93",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Katchi",
+              "primary-type": "Single"
+            },
+            "date": "2017-11-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-11-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "b3e96e61-ff71-3bcc-bcd5-0525825deb53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ec16fd2b-51e8-4437-a4ca-c8b688b19279",
+                    "number": "4",
+                    "title": "Katchi (Mozambo remix)",
+                    "length": 178000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 3
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR9W11722628"
+        ]
+      },
+      {
+        "id": "4bb765bb-e4f7-4e75-bbb2-b5222b88e67e",
+        "score": 79,
+        "artist-credit-id": "18a756d0-f37b-3fd2-91ea-c590ecf301d2",
+        "title": "Katchi (Smack remix)",
+        "length": 217000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "joinphrase": " feat. ",
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          },
+          {
+            "name": "Gemeni",
+            "artist": {
+              "id": "5c3225cf-649e-4ee6-9a33-acdc6707706c",
+              "name": "Gemeni",
+              "sort-name": "Gemeni"
+            }
+          }
+        ],
+        "first-release-date": "2017-11-17",
+        "releases": [
+          {
+            "id": "7a07f95c-7465-4666-bbd4-8a5147e10c2a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+            "count": 1,
+            "title": "Katchi (Remixes)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "joinphrase": " vs. ",
+                "name": "Ofenbach",
+                "artist": {
+                  "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+                  "name": "Ofenbach",
+                  "sort-name": "Ofenbach",
+                  "disambiguation": "French DJ duo"
+                }
+              },
+              {
+                "name": "Nick Waterhouse",
+                "artist": {
+                  "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+                  "name": "Nick Waterhouse",
+                  "sort-name": "Waterhouse, Nick",
+                  "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "067cb09b-829e-4415-8a80-cff9efa55a93",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Katchi",
+              "primary-type": "Single"
+            },
+            "date": "2017-11-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-11-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "b3e96e61-ff71-3bcc-bcd5-0525825deb53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "cb33687a-1f71-4a3d-a726-4d861c3528af",
+                    "number": "6",
+                    "title": "Katchi (Smack remix)",
+                    "length": 217000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 5
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR9W11722630"
+        ]
+      },
+      {
+        "id": "37e9f092-9cdd-490c-9f44-f63cae510bfd",
+        "score": 79,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi (Clement Leroux remix)",
+        "length": 150000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017-11-17",
+        "releases": [
+          {
+            "id": "7a07f95c-7465-4666-bbd4-8a5147e10c2a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Katchi (Remixes)",
+            "status": "Official",
+            "release-group": {
+              "id": "067cb09b-829e-4415-8a80-cff9efa55a93",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Katchi",
+              "primary-type": "Single"
+            },
+            "date": "2017-11-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-11-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "b3e96e61-ff71-3bcc-bcd5-0525825deb53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "b552b307-ee46-406c-8796-30b74a1f815b",
+                    "number": "2",
+                    "title": "Katchi (Clement Leroux remix)",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 1
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR9W11722626"
+        ]
+      },
+      {
+        "id": "0b7666b5-4a30-4473-bb2f-732b994469b5",
+        "score": 79,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi (Cha Cha 31)",
+        "length": 152000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2018",
+        "releases": [
+          {
+            "id": "e4a98e75-46a0-421d-9f3f-5e057fc914d3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "The Ultimate Latin Album 19: And I Love Her",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1cbd66e5-6626-413a-bfc0-88a2eb31d932",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Ultimate Latin Album 19: And I Love Her",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 43,
+            "media": [
+              {
+                "id": "4b76d64d-be2e-3d39-a506-f97899e82e24",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "deaa3ade-39cf-41eb-a856-da7e4d959c21",
+                    "number": "17",
+                    "title": "Katchi (Cha Cha 31)",
+                    "length": 152000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b51e5922-f0bd-41a8-96f6-03375f857071",
+        "score": 74,
+        "artist-credit-id": "ed7dd58f-1deb-37d6-912b-12c800ac416a",
+        "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+        "length": 151011,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2018-11-09",
+        "releases": [
+          {
+            "id": "92b09424-9b48-410b-acf0-5e10d301cbc4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Kontor: Top of the Clubs: The Biggest Hits of the Year, MMXVIII",
+            "status": "Official",
+            "disambiguation": "unmixed + mixes",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3c77794b-e287-4b2f-94b1-31e8d2acfdee",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Kontor: Top of the Clubs: The Biggest Hits of the Year MMXVIII",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2018-11-09",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-11-09",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 72,
+            "media": [
+              {
+                "id": "2b927875-3b0c-3c05-8a79-a846adebc844",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "49944cab-0742-4f6f-85f2-005688a6995d",
+                    "number": "17",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 151011
+                  }
+                ],
+                "track-count": 72,
+                "track-offset": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6c4136c4-8ba0-4e62-9d7c-b965fd43ca8c",
+        "score": 74,
+        "artist-credit-id": "ed7dd58f-1deb-37d6-912b-12c800ac416a",
+        "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+        "length": 150000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017-12-15",
+        "releases": [
+          {
+            "id": "9642ad5e-f2e2-473c-9c3e-97892a23d0a4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "#Dance 2018: Club & Dance News, Vol. 4",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1a3352a3-f62e-4d1a-ba61-c1dbae731793",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "#Dance 2018: Club & Dance News, Vol. 4",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-03-16",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2018-03-16",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 46,
+            "media": [
+              {
+                "id": "91b89f5e-e5fd-311f-bce4-16854834deac",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3cdbb284-33c4-461d-bf67-e4e8534bb85b",
+                    "number": "9",
+                    "title": "Katchi",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 23,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "08821842-3fdf-484b-b0ae-d504e8850d2e",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Party Fun 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "bca80b91-960f-41e6-881a-fc1869ba17ee",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Party Fun 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-15",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2017-12-15",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 63,
+            "media": [
+              {
+                "id": "e45931a8-ed80-3bde-85f6-3221d92bfbe5",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "f2b234f2-464a-472f-bcc8-bdfb292aaf21",
+                    "number": "1",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 150000
+                  }
+                ],
+                "track-count": 21,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "624be591-32ef-4e0c-90cc-7c47c8fb84f4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Clubfete 2018: 63 Club Dance & Party Hits",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2c801c16-ffc6-418f-9eb3-6fab4be832d3",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Clubfete 2018: 63 Club Dance & Party Hits",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2017-12-15",
+            "country": "DE",
+            "release-events": [
+              {
+                "date": "2017-12-15",
+                "area": {
+                  "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                  "name": "Germany",
+                  "sort-name": "Germany",
+                  "iso-3166-1-codes": [
+                    "DE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 66,
+            "media": [
+              {
+                "id": "b16e6529-7cdc-30c5-bf5c-91e42b20d877",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "a8c5dca4-c0ed-47cd-bf2b-f7619518f18f",
+                    "number": "1",
+                    "title": "Katchi (Ofenbach vs. Nick Waterhouse)",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 66,
+                "track-offset": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7ceabb8b-a065-40b0-93f5-e1fe13ee5a8f",
+        "score": 74,
+        "artist-credit-id": "ed7dd58f-1deb-37d6-912b-12c800ac416a",
+        "title": "Katchi (The Doo Wap Song)",
+        "length": 151000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " & ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2018-05-18",
+        "releases": [
+          {
+            "id": "f11426d9-da6f-4a9e-bc21-4c9a0f5fd0d2",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 3,
+            "title": "Talents France Bleu 2018",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2a7318f2-d72e-4876-92a0-dbb1520882f8",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Talents France Bleu 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-05-18",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2018-05-18",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 38,
+            "media": [
+              {
+                "id": "af67faeb-f8a1-3bb7-a6e1-255e9c6925c3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2d2d969e-dd9e-4d98-898d-0d49fc93910f",
+                    "number": "12",
+                    "title": "Katchi (The Doo Wap Song)",
+                    "length": 151000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "165128ec-94a0-42c5-b28c-cd6196ced397",
+        "score": 71,
+        "artist-credit-id": "d4198f94-891a-3107-ae73-41e02bcf6b83",
+        "title": "Katchi (Mr Belt & Wezol remix)",
+        "length": 283000,
+        "video": null,
+        "artist-credit": [
+          {
+            "joinphrase": " vs. ",
+            "name": "Ofenbach",
+            "artist": {
+              "id": "1d81a1be-1b66-427d-9335-c777a259eadb",
+              "name": "Ofenbach",
+              "sort-name": "Ofenbach",
+              "disambiguation": "French DJ duo"
+            }
+          },
+          {
+            "name": "Nick Waterhouse",
+            "artist": {
+              "id": "b20e16f4-4af2-4234-93ca-6c79525269a1",
+              "name": "Nick Waterhouse",
+              "sort-name": "Waterhouse, Nick",
+              "disambiguation": "US singer‐songwriter, guitarist, and record producer"
+            }
+          }
+        ],
+        "first-release-date": "2017-11-17",
+        "releases": [
+          {
+            "id": "7a07f95c-7465-4666-bbd4-8a5147e10c2a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Katchi (Remixes)",
+            "status": "Official",
+            "release-group": {
+              "id": "067cb09b-829e-4415-8a80-cff9efa55a93",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Katchi",
+              "primary-type": "Single"
+            },
+            "date": "2017-11-17",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2017-11-17",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 6,
+            "media": [
+              {
+                "id": "b3e96e61-ff71-3bcc-bcd5-0525825deb53",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2bc9cfcc-41a7-4f94-9b61-9a0030638ba4",
+                    "number": "3",
+                    "title": "Katchi (Mr Belt & Wezol remix)",
+                    "length": 283000
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 2
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FR9W11722629"
+        ]
+      }
+    ]
+  }
+}

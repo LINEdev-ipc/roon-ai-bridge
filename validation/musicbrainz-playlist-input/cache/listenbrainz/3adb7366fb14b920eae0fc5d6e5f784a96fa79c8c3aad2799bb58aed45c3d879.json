@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Florence+%2B+the+Machine&recording_name=You%27ve+Got+the+Love+%28The+xx+Remix%29",
+  "fetched_at": "2026-07-28T14:41:48.112Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Florence + the Machine",
+      "recording_arg": "You've Got the Love (The xx Remix)",
+      "artist_credit_name": "Florence + the Machine",
+      "release_name": "Award Tour: The 2011 Grammy Remix",
+      "recording_name": "You’ve Got the Love (The xx remix)",
+      "artist_credit_id": 852717,
+      "artist_mbids": [
+        "5fee3020-513b-48c2-b1f7-4681b01db0c6"
+      ],
+      "release_mbid": "96db8e17-6ae3-4217-a985-c639634030b2",
+      "recording_mbid": "1cb4ccfc-8832-4bdc-941a-85b81bec9118"
+    }
+  ]
+}

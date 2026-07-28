@@ -1,0 +1,102 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Mini+World%22+AND+artist%3A%22Indila%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:52:48.596Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:52:48.648Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "b2b34c72-b92f-45fc-95ec-b92c10308e7e",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "6f1b24d6-f757-36bc-82a8-35c540f874bd",
+        "count": 7,
+        "title": "Mini World",
+        "first-release-date": "2014-02-21",
+        "primary-type": "Album",
+        "artist-credit": [
+          {
+            "name": "Indila",
+            "artist": {
+              "id": "eee14992-d2ab-4c46-b1e2-51080504ba50",
+              "name": "Indila",
+              "sort-name": "Indila",
+              "aliases": [
+                {
+                  "sort-name": "Sedraïa, Adila",
+                  "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                  "name": "Adila Sedraïa",
+                  "locale": null,
+                  "type": "Legal name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "e796a71d-1c47-4543-b266-1b90a98e6772",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Mini World",
+            "status": "Official"
+          },
+          {
+            "id": "93d4545d-486b-4762-a4a2-8c3452487b6a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Mini World",
+            "status": "Official"
+          },
+          {
+            "id": "9eac45c9-d676-4b31-9072-16ecdb6e9221",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "title": "Mini World",
+            "status": "Bootleg"
+          },
+          {
+            "id": "56a1b07e-b1a4-461b-88b1-dd6705c1aade",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Mini World",
+            "status": "Official"
+          },
+          {
+            "id": "2faeabf0-53b4-4601-8983-68337f569bad",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Mini World",
+            "status": "Official"
+          },
+          {
+            "id": "eb90656b-6987-4b8f-86e7-b68f387f45c5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Mini World",
+            "status": "Official"
+          },
+          {
+            "id": "c3032102-0c27-4f8c-9c5f-6b1c22a88210",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Mini World",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 3,
+            "name": "pop"
+          },
+          {
+            "count": 1,
+            "name": "vocal"
+          }
+        ]
+      }
+    ]
+  }
+}

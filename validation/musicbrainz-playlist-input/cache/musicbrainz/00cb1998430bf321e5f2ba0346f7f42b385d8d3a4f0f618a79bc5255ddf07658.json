@@ -1,0 +1,92 @@
+{
+  "url": "https://musicbrainz.org/ws/2/release-group?query=releasegroup%3A%22Na+balada%22+AND+artist%3A%22Michel+Tel%C3%B3%22&fmt=json&limit=50",
+  "fetched_at": "2026-07-28T11:52:42.014Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:52:42.065Z",
+    "count": 1,
+    "offset": 0,
+    "release-groups": [
+      {
+        "id": "21389a8c-c96b-4782-a894-be8f59a030c8",
+        "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+        "score": 100,
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "artist-credit-id": "2d8b82c5-eaa0-3357-af1f-a1ffd07f69f6",
+        "count": 5,
+        "title": "Na balada",
+        "first-release-date": "2011",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Live"
+        ],
+        "secondary-type-ids": [
+          "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+        ],
+        "artist-credit": [
+          {
+            "name": "Michel Teló",
+            "artist": {
+              "id": "6d00cc0d-2027-41d4-be9f-13770037354b",
+              "name": "Michel Teló",
+              "sort-name": "Teló, Michel",
+              "aliases": [
+                {
+                  "sort-name": "ミシェル・テロ",
+                  "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                  "name": "ミシェル・テロ",
+                  "locale": "ja",
+                  "type": "Artist name",
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "releases": [
+          {
+            "id": "b170c02a-e911-4e49-abac-1527b810bd13",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Michel na Balada",
+            "status": "Official"
+          },
+          {
+            "id": "2b43c37d-c81f-4be7-ab1d-8ef80206e805",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Na balada",
+            "status": "Official"
+          },
+          {
+            "id": "dd2df005-3881-41bc-b179-96ed54c94d79",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Na balada",
+            "status": "Official"
+          },
+          {
+            "id": "c5d8c470-e92d-4ff6-8168-f046da726569",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Na balada (Ao vivo)",
+            "status": "Official"
+          },
+          {
+            "id": "4ea793cc-91ce-4018-886c-14064c56f65b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "title": "Na balada",
+            "status": "Official"
+          }
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "latin"
+          }
+        ]
+      }
+    ]
+  }
+}

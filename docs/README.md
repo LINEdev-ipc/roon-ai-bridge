@@ -20,6 +20,7 @@ This documentation covers the current v0.20.0 beta repository:
 - [v0.20.0 Beta 6 MusicBrainz Catalog and Roon Binding Validation](v0.20.0-beta.6-musicbrainz-catalog-validation.md)
 - [v0.20.0 Beta 7 Playlist Reconstruction Validation](v0.20.0-beta.7-playlist-reconstruction-validation.md)
 - [v0.20.0 Beta 8 Playlist Build and Async Reconstruction Validation](v0.20.0-beta.8-playlist-build-validation.md)
+- [v0.20.0 Beta 9 Integrated Playlist Validation](v0.20.0-beta.9-integrated-playlist-validation.md)
 - [v0.18.0 Release Notes](v0.18.0-release-notes.md)
 - [v0.18.0 Validation](v0.18.0-validation.md)
 - [v0.18.0 Architecture Validation](v0.18.0-architecture-validation.md)

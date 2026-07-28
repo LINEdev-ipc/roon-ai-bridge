@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Massive+Attack&recording_name=Unfinished+Sympathy+%28Nellee+Hooper+12%22+Mix%29",
+  "fetched_at": "2026-07-28T14:42:03.500Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Massive Attack",
+      "recording_arg": "Unfinished Sympathy (Nellee Hooper 12\" Mix)",
+      "artist_credit_name": "Massive Attack",
+      "release_name": "Unfinished Sympathy",
+      "recording_name": "Unfinished Sympathy (Nellee Hooper 12″ mix)",
+      "artist_credit_id": 4,
+      "artist_mbids": [
+        "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8"
+      ],
+      "release_mbid": "8beacc57-73c0-452f-beae-2b43cb4bd612",
+      "recording_mbid": "712ae7cb-7ecb-44e4-90cb-3cdcd813708d"
+    }
+  ]
+}

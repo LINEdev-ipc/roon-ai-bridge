@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Underworld&recording_name=Born+Slippy+.NUXX&release_name=Born+Slippy",
+  "fetched_at": "2026-07-28T12:15:48.561Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Underworld",
+      "recording_arg": "Born Slippy .NUXX",
+      "artist_credit_name": "Underworld",
+      "release_name": "Born Slippy",
+      "recording_name": "Born Slippy .NUXX",
+      "artist_credit_id": 923,
+      "artist_mbids": [
+        "ba2f4f3b-0293-4bc8-bb94-2f73b5207343"
+      ],
+      "release_mbid": "766799fc-5538-4345-a88a-056493ab2c32",
+      "recording_mbid": "c96829e6-2685-4f10-aced-0370b52645ac"
+    }
+  ]
+}

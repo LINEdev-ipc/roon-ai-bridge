@@ -1,0 +1,2445 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28sodade%29+AND+release%3A%28miss+AND+perfumado%29+AND+artistname%3A%22Ces%C3%A1ria+%C3%89vora%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:47:22.716Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:47:23.085Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "f16edae0-861b-4825-9692-a5cda82fc7b4",
+        "score": 100,
+        "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+        "title": "Sodade",
+        "length": 293306,
+        "disambiguation": "solo version",
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Cesária Évora",
+            "artist": {
+              "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+              "name": "Cesária Évora",
+              "sort-name": "Évora, Cesária",
+              "aliases": [
+                {
+                  "sort-name": "Evora, Cesaria",
+                  "name": "Evora, Cesaria",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Césaria Évora",
+                  "name": "Césaria Évora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Ceasaria Evora",
+                  "name": "Ceasaria Evora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Cesaria Evora",
+                  "name": "Cesaria Evora",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "1992-06",
+        "releases": [
+          {
+            "id": "a1666b16-92bb-4486-8218-3d84c03f2d46",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Grand Collection",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "70b1aee9-00b8-460b-bb1d-f3cd7442b0db",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Grand Collection",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2003",
+            "country": "RU",
+            "release-events": [
+              {
+                "date": "2003",
+                "area": {
+                  "id": "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+                  "name": "Russia",
+                  "sort-name": "Russia",
+                  "iso-3166-1-codes": [
+                    "RU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 19,
+            "media": [
+              {
+                "id": "12c7a337-6ca9-32bb-a8b8-d717f6656314",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1fbc2750-4c95-4879-889b-17402a2c88fd",
+                    "number": "3",
+                    "title": "Sodade",
+                    "length": 292000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "d7ea775d-8c94-4254-bf3c-f5d36a5dd9b5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Anthology",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 18,
+            "media": [
+              {
+                "id": "c9e03310-90eb-36f4-a06b-8212af90841d",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "64d7d460-b251-322f-be1b-743e8dcc957a",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 296826
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "5acb3178-ecfd-4310-9b26-b9ab068ff8e5",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 2,
+            "title": "The Essential",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "1c653e23-2643-438e-905d-7250de29714f",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Essential",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2015",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2015",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "36c60eb6-7d56-306f-98f0-88bca22cacfc",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5fb8cf0c-45ac-4172-9279-b793b028c40c",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 294000
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b828a688-7e5f-455d-86de-a71b03389914",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Trance Planet - Volume One",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e009c8de-55a4-3502-85ee-e6d89d55babe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Trance Planet, Volume 1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1994",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1994",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "f957dd8b-c9d3-30c4-a2c2-4fe44c7e8550",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "0079bf18-08d4-4b56-985e-02e375965607",
+                    "number": "7",
+                    "title": "Sodade",
+                    "length": 291000
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "47a8c97e-43e6-4b96-a7ac-f91cd600773b",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Anthologie: Mornas & Coladeras",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 22,
+            "media": [
+              {
+                "id": "bd504fcd-43dc-3a3f-bdb9-2bebbc1a4963",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "4e37bb1a-3014-4124-b4a6-411121a75994",
+                    "number": "15",
+                    "title": "Sodade",
+                    "length": 294000
+                  }
+                ],
+                "track-count": 22,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "35463822-c68f-448f-ae5e-0c25d86a86bc",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Nova 40 ans de Grand Mix",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e79b5440-526a-44da-803d-aa0bf08ef949",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nova 40 ans de Grand Mix",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2023-11-15",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2023-11-15",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 41,
+            "media": [
+              {
+                "id": "eb040fd1-faa2-3151-9afb-882b7d30c36b",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "68d0d65e-7e99-4fc2-9a45-d8a54a061019",
+                    "number": "12",
+                    "title": "Sodade",
+                    "length": 293640
+                  }
+                ],
+                "track-count": 41,
+                "track-offset": 11
+              }
+            ]
+          },
+          {
+            "id": "faaec77f-e69b-4960-b01f-ebf9514f6cc8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "The Women Album",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "5fecad14-9a20-4410-be2a-1e7e0cb02194",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Women Album",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1996-01-22",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1996-01-22",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "34e897a4-b7dc-3af5-9fcc-6a95e1d77092",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2b1c08c4-aaa3-4f4d-a6e7-3f397dd9a391",
+                    "number": "16",
+                    "title": "Sodade",
+                    "length": 293506
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "e233c1c3-823b-4205-942e-b2ad0ae3437a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Je n’aime pas la world, mais ça j’aime bien !",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8bdff894-a6d6-41e0-bddd-f968ca28bd54",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Je n’aime pas la world, mais ça j’aime bien !",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 27,
+            "media": [
+              {
+                "id": "1eabc25d-6769-38a1-a06f-55424be0c5ea",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "45bc25ce-0513-4178-8a57-48f8c033c9d1",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 296226
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "073a748c-5976-4ec6-9ab2-be4e0082b648",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "Exitos Na Tua Língua",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ecffadc0-6a76-31a0-bdaf-750f1c91b76e",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Exitos Na Tua Língua",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2005",
+            "country": "PT",
+            "release-events": [
+              {
+                "date": "2005",
+                "area": {
+                  "id": "781b0c54-3d54-362d-a941-8a617def4992",
+                  "name": "Portugal",
+                  "sort-name": "Portugal",
+                  "iso-3166-1-codes": [
+                    "PT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 39,
+            "media": [
+              {
+                "id": "31bb7c68-ef38-325e-91fe-f0191e318e7b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "2008d7e1-9264-3fb6-984f-9165b87983f2",
+                    "number": "18",
+                    "title": "Sodade",
+                    "length": 293266
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 17
+              }
+            ]
+          },
+          {
+            "id": "d3286109-ada3-4f29-8231-088f517a4aea",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "20 jaar Folkfestival Dranouter",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "ad5911e8-82ae-369d-bc5d-e72aaa55af2b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "20 jaar Folkfestival Dranouter",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1994",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "1994",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 34,
+            "media": [
+              {
+                "id": "bf514299-c14b-33f2-b8bb-5565dc327747",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9e9223c1-d288-3a95-b5f8-8cc3a8c1463a",
+                    "number": "3",
+                    "title": "Sodade",
+                    "length": 293560
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "9f964da9-99be-4556-82c5-4ef5e244cf53",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 2,
+            "title": "Anthologie – Mornas & Coladeras",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "32280f27-8109-4574-9c3d-68c89984a458",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Anthologie",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2002-07-15",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2002-07-15",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 37,
+            "media": [
+              {
+                "id": "580fa03c-52a5-3d2d-ad02-a535614b623d",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "68265d43-39fe-4d3a-b316-c4f610e289ed",
+                    "number": "6",
+                    "title": "Sodade",
+                    "length": 221000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "f261ac8b-6435-4c39-9326-0424a1eca752",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Miss Perfumado",
+            "status": "Official",
+            "disambiguation": "20th anniversary edition",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "be6e9478-a32d-3a5f-9ad0-f0be447ac42d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Miss Perfumado",
+              "primary-type": "Album"
+            },
+            "date": "2012-10-29",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2012-10-29",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 30,
+            "media": [
+              {
+                "id": "23dcb784-aaf5-38cb-b4f3-3550ff1eb160",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0f95653b-555c-4e1e-b929-9fe4101cc071",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 294560
+                  }
+                ],
+                "track-count": 30,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "b0724e16-8a2a-4de6-aeb1-5119b723cfb6",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 20,
+            "title": "1960-2010: Africa, 50 Years of Music",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2270a715-52ed-4ef6-bf22-95c94e54ca5a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "1960-2010: Africa, 50 Years of Music",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2011-11",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2011-11",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 201,
+            "media": [
+              {
+                "id": "d62cd165-e87c-3c86-a71c-6443f0562fdc",
+                "position": 17,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "838308ed-6bf1-4705-a45a-09db7247f6e6",
+                    "number": "2",
+                    "title": "Sodade",
+                    "length": 295320
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "8f174fe9-39e0-4721-99a5-1dece7398b1a",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Sodade",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2fcabe22-48bd-30ea-ae63-8aaad0a69179",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sodade",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1994",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "1994",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "5daf01b2-e7d6-3b59-9d99-7b8232c5945c",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "83303001-328a-4f4c-bd0b-c5bb8e6598b2",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 293773
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "9de470dc-999d-49a4-9259-00fd8c619837",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Miss Perfumado",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "be6e9478-a32d-3a5f-9ad0-f0be447ac42d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Miss Perfumado",
+              "primary-type": "Album"
+            },
+            "date": "2002",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2002",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "de91a18f-4b10-3b85-b06c-a0ab0a27269b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "8d0aab82-afd4-4c10-97e8-86d3a5ef75d4",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 294000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "98ea90cb-07a1-499d-9b88-7c49ed53d262",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 18,
+            "title": "1960-2010: Africa, 50 Years of Music",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2270a715-52ed-4ef6-bf22-95c94e54ca5a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "1960-2010: Africa, 50 Years of Music",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010-07-19",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2010-07-19",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 185,
+            "media": [
+              {
+                "id": "6400fec5-8b04-3891-9f05-e5c8cc577c7e",
+                "position": 17,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "424750a3-0b50-47ec-a180-b1fad98108fd",
+                    "number": "2",
+                    "title": "Sodade",
+                    "length": 295320
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "2b4b2286-b4a0-47d2-ab67-fb7e841f4d12",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Les Musiques du routard : Best of the World",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8cc6ec5a-4999-4aa4-a259-ec4500c31080",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Les Musiques du routard : Best of the World",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1998",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1998",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 15,
+            "media": [
+              {
+                "id": "7c3b955d-46d7-3706-8e3e-32db991de1fe",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "894b227f-3430-3558-93c4-de436074d21f",
+                    "number": "5",
+                    "title": "Sodade",
+                    "length": 288253
+                  }
+                ],
+                "track-count": 15,
+                "track-offset": 4
+              }
+            ]
+          },
+          {
+            "id": "f3fee2fd-6a87-4124-a456-85f93db0e023",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Le Monde De Cesaria Evora",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3e3f3048-77ee-4d32-8b9b-b4383d094d87",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Le Monde De Cesaria Evora",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1999-12-28",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1999-12-28",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "dc458e59-0555-3706-b37a-cc9b51d53644",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cb81a6a8-52f1-3e2e-89fa-c81646377e2f",
+                    "number": "14",
+                    "title": "Sodade",
+                    "length": 292040
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "f6c0fb63-946b-43fb-b92f-a3cf00a7ec41",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Grands Airs d’ici et d’ailleurs",
+            "status": "Promotion",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "dc7815e2-4749-3fc9-8b68-ae7fd694cfe0",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Grands Airs d’ici et d’ailleurs",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1994",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1994",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 10,
+            "media": [
+              {
+                "id": "68188276-0b09-3e90-b685-4e739eca24ec",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "79ca7e0d-f211-3fca-b4f3-2fb96cc71ef3",
+                    "number": "3",
+                    "title": "Sodade",
+                    "length": 294773
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "6cc5e67b-bcf5-49f3-ae28-a2819c2df362",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 2,
+            "title": "The Essential Cesaria Evora",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "7e012ba2-9438-4ce3-a066-40a53cd4642a",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Essential Cesaria Evora",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2010",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2010",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 32,
+            "media": [
+              {
+                "id": "56608b6b-6ab6-3189-88b7-81df2ead8b2b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "dc84e0e8-adb1-3d88-82f4-83b2f2b56e37",
+                    "number": "6",
+                    "title": "Sodade",
+                    "length": 293813
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "d54eb96b-aabd-4c27-8c46-f5157a44cf2c",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "20 Greatest Songs",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "91f2249a-0f53-3947-ace3-6811d92393c1",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "20 Greatest Songs",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 20,
+            "media": [
+              {
+                "id": "d2ebf270-19f0-3162-9dc8-214f6ba968ab",
+                "position": 1,
+                "track": [
+                  {
+                    "id": "601c1af2-4b29-34e1-92e0-b7d7ee277930",
+                    "number": "7",
+                    "title": "Sodade",
+                    "length": 292200
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "6e159235-1ed0-4e84-8f96-70d9739d5587",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "The Magic of Cesária Évora",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "57ca6dfd-f3ae-4b6d-91b1-6eb3e40fd6d3",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "The Magic of Cesária Évora",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "track-count": 18,
+            "media": [
+              {
+                "id": "110dc8ae-eaa3-3213-a2d4-78e4c0f22ccb",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cb8a06d6-413a-49e4-ba51-e13b676896e5",
+                    "number": "8",
+                    "title": "Sodade",
+                    "length": 295000
+                  }
+                ],
+                "track-count": 18,
+                "track-offset": 7
+              }
+            ]
+          },
+          {
+            "id": "8185789e-9bdc-472a-b768-68b414ab8a39",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 3,
+            "title": "Best of Cesária Évora",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "11f1a564-6bd5-4527-8a90-a5f0d047b84c",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Best of Cesária Évora",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-11-23",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2009-11-23",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 48,
+            "media": [
+              {
+                "id": "656459ec-009f-319c-bc18-b09a9f445a3b",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c6909ea0-a536-460f-9dba-20b9a6800602",
+                    "number": "2",
+                    "title": "Sodade",
+                    "length": 293813
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 1
+              }
+            ]
+          },
+          {
+            "id": "004c1a99-9e4d-4dc8-a5fb-f794edbf317c",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "All Gold of the World",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "3f7cdca7-3080-4900-9cc4-24e4ac1df97b",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "All Gold of the World",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2003",
+            "country": "RU",
+            "release-events": [
+              {
+                "date": "2003",
+                "area": {
+                  "id": "1f1fc3a4-9500-39b8-9f10-f0a465557eef",
+                  "name": "Russia",
+                  "sort-name": "Russia",
+                  "iso-3166-1-codes": [
+                    "RU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "dffd23a0-d526-3975-8e2c-9f39df9597d8",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "1f603fc7-c7b6-4ece-a104-0f89c263bb46",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 295000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "2abcc3fe-c5ae-49a2-b8f6-ca3899c91884",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "100% Afrique",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "eff4cce0-800e-485e-b991-86a3b7d239dc",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "100% Afrique",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1998-03-13",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1998-03-13",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "e8bfd8b2-a38f-3428-b0ec-b2d375f4bb89",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "466edefb-1372-4b2e-864c-337deaffd984",
+                    "number": "9",
+                    "title": "Sodade"
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 8
+              }
+            ]
+          },
+          {
+            "id": "2747731a-f1bf-4314-b37e-328deb3eb7d7",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Sodade, o melhor de Cesaria Evora",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "4062ef53-8834-4471-9ebd-4355367d4b21",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sodade, o melhor de Cesaria Evora",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1994",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1994",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 16,
+            "media": [
+              {
+                "id": "a4e8bf47-faf7-34a0-b5f9-0b6af6f10c2f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "7a145988-a8b4-47cb-9742-15f5c81627b8",
+                    "number": "16",
+                    "title": "Sodade",
+                    "length": 290933
+                  }
+                ],
+                "track-count": 16,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "65643613-db1e-4cb4-a4e9-2a444048d74d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "Trance Planet",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2bbb202e-8ab4-3297-b907-e1cf5bb39386",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Trance Planet",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1998-10-20",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1998-10-20",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "f32aa2b2-8abe-3f0d-aff0-8c5840029256",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "086b8b4f-cace-39ee-aafc-ca527727bd24",
+                    "number": "7",
+                    "title": "Sodade",
+                    "length": 291000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "63f42e98-67f9-4fd7-b255-7fe4ea6d9bb9",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Sodade",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2fcabe22-48bd-30ea-ae63-8aaad0a69179",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Sodade",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1994",
+            "country": "BR",
+            "release-events": [
+              {
+                "date": "1994",
+                "area": {
+                  "id": "f45b47f8-5796-386e-b172-6c31b009a5d8",
+                  "name": "Brazil",
+                  "sort-name": "Brazil",
+                  "iso-3166-1-codes": [
+                    "BR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "5d215103-cab8-300e-8fcc-3e97f47fe743",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "5845e5c1-bb60-3392-9581-6338439defe6",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 293773
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "a163c645-d992-4e45-94f0-a14d76f98536",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Miss Perfumado",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "be6e9478-a32d-3a5f-9ad0-f0be447ac42d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Miss Perfumado",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "213321c2-7234-3a12-a5d9-bd48431b10bc",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "d0dfba0c-93ee-3c0c-9694-e0631c8d76b3",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 293306
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "217b84ab-0a31-3962-a56c-4f193744951f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Miss Perfumado",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "be6e9478-a32d-3a5f-9ad0-f0be447ac42d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Miss Perfumado",
+              "primary-type": "Album"
+            },
+            "date": "1992-06",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "1992-06",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "e6196c90-9a24-33a5-a054-d42cdbaa9337",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "6275c17e-60a0-3d94-b577-bf105d8d216e",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 293306
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "0977262c-d2b9-4381-8d49-63e5db740ae8",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 2,
+            "title": "Café Atlantico",
+            "status": "Official",
+            "disambiguation": "limited 2-disc edition incl. mini best of",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "187c9575-4188-3fff-b29e-e7b5fff845e7",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Café Atlantico",
+              "primary-type": "Album"
+            },
+            "date": "2000",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 23,
+            "media": [
+              {
+                "id": "5727be10-7c82-318f-9bd2-8ea295c2e93f",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "39fec6ef-3708-38f8-b808-daaeee01fa45",
+                    "number": "6",
+                    "title": "Sodade",
+                    "length": 292960
+                  }
+                ],
+                "track-count": 6,
+                "track-offset": 5
+              }
+            ]
+          },
+          {
+            "id": "201c8dea-67d2-460f-ba5a-8316f62f74e3",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Nirvana",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "04b65f0e-7264-34f3-b365-90fe682b0f55",
+              "type-id": "22a628ad-c082-3c4f-b1b6-d41665107b88",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Nirvana",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Soundtrack"
+              ],
+              "secondary-type-ids": [
+                "22a628ad-c082-3c4f-b1b6-d41665107b88"
+              ]
+            },
+            "date": "1997-02-07",
+            "country": "IT",
+            "release-events": [
+              {
+                "date": "1997-02-07",
+                "area": {
+                  "id": "c6500277-9a3d-349b-bf30-41afdbf42add",
+                  "name": "Italy",
+                  "sort-name": "Italy",
+                  "iso-3166-1-codes": [
+                    "IT"
+                  ]
+                }
+              }
+            ],
+            "track-count": 17,
+            "media": [
+              {
+                "id": "be81095e-e524-322c-a383-26f387ed84a3",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "3b4a570c-9628-338a-9f43-09619ee01593",
+                    "number": "4",
+                    "title": "Sodade",
+                    "length": 293253
+                  }
+                ],
+                "track-count": 17,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "8334e04c-d0a9-4015-9bff-d2648527e2cf",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 2,
+            "title": "One World",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "8a978dfd-f6e7-3c36-a133-e2b35433bd17",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "One World",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1998",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "1998",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 39,
+            "media": [
+              {
+                "id": "4bf57234-a33d-3d3f-a268-4318ca4325c2",
+                "position": 2,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "eebaecfc-8061-316c-b336-dcaf86e73880",
+                    "number": "14",
+                    "title": "Sodade",
+                    "length": 291626
+                  }
+                ],
+                "track-count": 20,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "be6a1a44-c856-4569-b832-44c75d307f2b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "fe45688f-c169-3500-8031-cbaa2a4db520",
+            "count": 1,
+            "title": "Miss Perfumado",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Cesária Évora",
+                "artist": {
+                  "id": "ceafdf2f-bc18-4b99-8c71-d1834b0065c3",
+                  "name": "Cesária Évora",
+                  "sort-name": "Évora, Cesária"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "be6e9478-a32d-3a5f-9ad0-f0be447ac42d",
+              "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Miss Perfumado",
+              "primary-type": "Album"
+            },
+            "date": "1992",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "1992",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 13,
+            "media": [
+              {
+                "id": "faf85cc6-c7cb-329a-8055-ed208d0f3234",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "c6053077-775d-375b-b160-2c5dbc378feb",
+                    "number": "1",
+                    "title": "Sodade",
+                    "length": 293306
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 0
+              }
+            ]
+          },
+          {
+            "id": "a9874cdb-9f95-366a-a4ce-036596f5b779",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Trance Planet, Volume 1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e009c8de-55a4-3502-85ee-e6d89d55babe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Trance Planet, Volume 1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1994",
+            "country": "XE",
+            "release-events": [
+              {
+                "date": "1994",
+                "area": {
+                  "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                  "name": "Europe",
+                  "sort-name": "Europe",
+                  "iso-3166-1-codes": [
+                    "XE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "c1db144e-fb76-3e4d-b7d9-f7b7db7df4bf",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "80d305f7-1912-39ed-b398-952501be6472",
+                    "number": "7",
+                    "title": "Sodade",
+                    "length": 292733
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "d2070af7-9515-457f-ae0d-a7fb64baf0e0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 4,
+            "title": "Trance Planet",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "2bbb202e-8ab4-3297-b907-e1cf5bb39386",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Trance Planet",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2000",
+            "country": "US",
+            "release-events": [
+              {
+                "date": "2000",
+                "area": {
+                  "id": "489ce91b-6658-3307-9877-795b68554c98",
+                  "name": "United States",
+                  "sort-name": "United States",
+                  "iso-3166-1-codes": [
+                    "US"
+                  ]
+                }
+              }
+            ],
+            "track-count": 52,
+            "media": [
+              {
+                "id": "601c5b61-623e-3220-ab84-3c27ccd6761f",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "951dc2f9-e3e2-3bf3-9763-84fd6e4b7025",
+                    "number": "7",
+                    "title": "Sodade",
+                    "length": 291000
+                  }
+                ],
+                "track-count": 13,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "b5d646a5-30e5-454d-bc13-895fe3b6ba5b",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Trance Planet, Volume 1",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "e009c8de-55a4-3502-85ee-e6d89d55babe",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Trance Planet, Volume 1",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "1994-06-21",
+            "country": "CA",
+            "release-events": [
+              {
+                "date": "1994-06-21",
+                "area": {
+                  "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+                  "name": "Canada",
+                  "sort-name": "Canada",
+                  "iso-3166-1-codes": [
+                    "CA"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "2ce30732-b6af-3836-bef8-1dbf5a9255fa",
+                "position": 1,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "9f3f476a-8285-33ed-81d8-287e8cb80c8a",
+                    "number": "7",
+                    "title": "Sodade",
+                    "length": 292733
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 6
+              }
+            ]
+          },
+          {
+            "id": "a207c85b-c27f-4fb4-87cd-54e8c31bb2a4",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "100 hits RTL des 50 dernières années",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "eafc93e2-e16e-490a-be2f-d9527d884a35",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "100 hits RTL des 50 dernières années",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2009-10-05",
+            "country": "FR",
+            "release-events": [
+              {
+                "date": "2009-10-05",
+                "area": {
+                  "id": "08310658-51eb-3801-80de-5a0739207115",
+                  "name": "France",
+                  "sort-name": "France",
+                  "iso-3166-1-codes": [
+                    "FR"
+                  ]
+                }
+              }
+            ],
+            "track-count": 100,
+            "media": [
+              {
+                "id": "5a72bdca-2654-3709-bec5-6da44e6cc873",
+                "position": 4,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "57f997a2-d226-3851-909e-21a046b2b207",
+                    "number": "10",
+                    "title": "Sodade",
+                    "length": 291000
+                  }
+                ],
+                "track-count": 19,
+                "track-offset": 9
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "FRX629224019",
+          "FRX629224010",
+          "FR1129200050"
+        ],
+        "tags": [
+          {
+            "count": 1,
+            "name": "latin"
+          },
+          {
+            "count": 1,
+            "name": "african"
+          },
+          {
+            "count": 2,
+            "name": "afro-cuban"
+          }
+        ]
+      }
+    ]
+  }
+}

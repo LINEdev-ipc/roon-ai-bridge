@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acrr-lookup/json?artist_credit_name=Lykke+Li&recording_name=I+Follow+Rivers+%28The+Magician+Remix%29&release_name=I+Follow+Rivers",
+  "fetched_at": "2026-07-28T14:41:44.735Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Lykke Li",
+      "recording_arg": "I Follow Rivers (The Magician Remix)",
+      "artist_credit_name": "Lykke Li",
+      "release_name": "I Follow Rivers",
+      "recording_name": "I Follow Rivers (The Magician remix)",
+      "artist_credit_id": 489870,
+      "artist_mbids": [
+        "cc7d4686-ea02-45fd-956e-94c1a322558c"
+      ],
+      "release_mbid": "eda5690d-af6a-405b-a1d8-bbdff3d89fef",
+      "recording_mbid": "8ec7848b-e266-4abc-99bf-b651206762ad"
+    }
+  ]
+}

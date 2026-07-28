@@ -1,0 +1,641 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%22Opal+%28Four+Tet+Remix%29%22+AND+artist%3A%22Bicep%22+AND+release%3A%22Opal+%28Four+Tet+Remix%29%22&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T11:39:29.825Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T11:39:29.851Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "09253ca0-1e05-4d58-8f54-635b1b9b3daa",
+        "score": 100,
+        "artist-credit-id": "d5b65c82-6539-39e6-94b4-6cad47a4a7cc",
+        "title": "Opal (Four Tet remix)",
+        "length": 494257,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bicep",
+            "artist": {
+              "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+              "name": "Bicep",
+              "sort-name": "Bicep"
+            }
+          }
+        ],
+        "first-release-date": "2018-03-08",
+        "releases": [
+          {
+            "id": "4d81d001-3441-4331-8659-58eea2fd16fe",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 6,
+            "title": "Serious Beats 100 Anniversary Edition",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c7c6ff1f-e283-450a-9957-81dcdac812f6",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Serious Beats 100 Anniversary Edition",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022-11-25",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2022-11-25",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 62,
+            "media": [
+              {
+                "id": "e18db4cd-313c-347f-9915-fd0e959bc4c2",
+                "position": 4,
+                "format": "CD",
+                "track": [
+                  {
+                    "id": "cd460182-d322-4133-8f0c-bd54c9e6b39b",
+                    "number": "4",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494760
+                  }
+                ],
+                "track-count": 10,
+                "track-offset": 3
+              }
+            ]
+          },
+          {
+            "id": "fcf74bb2-b596-4fb2-bd64-3e4a92887dca",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Serious Beats 100 Anniversary Edition",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c7c6ff1f-e283-450a-9957-81dcdac812f6",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Serious Beats 100 Anniversary Edition",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022-11-25",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2022-11-25",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              },
+              {
+                "date": "2022-11-25",
+                "area": {
+                  "id": "563d21b7-4a8e-35e2-83a7-7804baefbfa7",
+                  "name": "Luxembourg",
+                  "sort-name": "Luxembourg",
+                  "iso-3166-1-codes": [
+                    "LU"
+                  ]
+                }
+              }
+            ],
+            "track-count": 62,
+            "media": [
+              {
+                "id": "a7f55b2c-6626-3ebc-8ac6-b3984de0ab0d",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "ab300735-056c-49e5-8c36-dca8e19d0e24",
+                    "number": "35",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494257
+                  }
+                ],
+                "track-count": 62,
+                "track-offset": 34
+              }
+            ]
+          },
+          {
+            "id": "08bf32e6-3519-4a82-99ea-07ee2c7f3b38",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 5,
+            "title": "Serious Beats 100 (Anniversary Edition) (The Ultimate Saga of House - Box Set I)",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "c7c6ff1f-e283-450a-9957-81dcdac812f6",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Serious Beats 100 Anniversary Edition",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2022-11-25",
+            "country": "BE",
+            "release-events": [
+              {
+                "date": "2022-11-25",
+                "area": {
+                  "id": "5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc",
+                  "name": "Belgium",
+                  "sort-name": "Belgium",
+                  "iso-3166-1-codes": [
+                    "BE"
+                  ]
+                }
+              }
+            ],
+            "track-count": 21,
+            "media": [
+              {
+                "id": "aecccb85-0a7b-3f46-b10c-c2f45b5d81ee",
+                "position": 2,
+                "format": "12\" Vinyl",
+                "track": [
+                  {
+                    "id": "cdaf369b-52d8-4bc7-ba9a-987123454a08",
+                    "number": "D1",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494000
+                  }
+                ],
+                "track-count": 4,
+                "track-offset": 2
+              }
+            ]
+          },
+          {
+            "id": "54352350-deae-435e-80c4-8f27f919b05f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Tomorrowland 2018: The Story of Planaxis",
+            "status": "Official",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "895d7c66-6894-4485-a52b-e278690d4bc8",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Tomorrowland 2018: The Story of Planaxis",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+              ]
+            },
+            "date": "2018-07-20",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-07-20",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 56,
+            "media": [
+              {
+                "id": "d439edf3-8a7b-3dc5-9a82-b6d44793ca32",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "2eaf7734-149f-4c95-891a-74d675551490",
+                    "number": "55",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494000
+                  }
+                ],
+                "track-count": 56,
+                "track-offset": 54
+              }
+            ]
+          },
+          {
+            "id": "c9a228ab-a03c-449c-844c-e62f1d44d78f",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Defected Presents: Most Rated Ibiza 2018",
+            "status": "Official",
+            "disambiguation": "unmixed + mixes, beatport",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "352605f2-66be-4aa1-a809-354bf8c085f5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Defected Presents: Most Rated Ibiza 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2018-07-27",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-07-27",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 51,
+            "media": [
+              {
+                "id": "fca9e585-775d-3c2e-9236-14466f93c457",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "0db6fd57-5f34-41ae-85a0-7c29cce5fdbc",
+                    "number": "16",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494276
+                  }
+                ],
+                "track-count": 51,
+                "track-offset": 15
+              }
+            ]
+          },
+          {
+            "id": "34b71169-b6a7-4813-a4a9-74aa78be9ca1",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Defected Presents: Most Rated Ibiza 2018",
+            "status": "Official",
+            "disambiguation": "unmixed, iTunes GB",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "352605f2-66be-4aa1-a809-354bf8c085f5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Defected Presents: Most Rated Ibiza 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2018-07-27",
+            "country": "GB",
+            "release-events": [
+              {
+                "date": "2018-07-27",
+                "area": {
+                  "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                  "name": "United Kingdom",
+                  "sort-name": "United Kingdom",
+                  "iso-3166-1-codes": [
+                    "GB"
+                  ]
+                }
+              }
+            ],
+            "track-count": 50,
+            "media": [
+              {
+                "id": "70cd34eb-db89-3ee4-b5f7-e033b34ac087",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "cee7f645-1de6-4257-bd76-a1024e3566a7",
+                    "number": "15",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494257
+                  }
+                ],
+                "track-count": 50,
+                "track-offset": 14
+              }
+            ]
+          },
+          {
+            "id": "8baefe24-3462-491f-93d6-09fc9e11add0",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Defected Presents: Most Rated Ibiza 2018",
+            "status": "Official",
+            "disambiguation": "unmixed, iTunes US",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "352605f2-66be-4aa1-a809-354bf8c085f5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Defected Presents: Most Rated Ibiza 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2018-07-27",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-07-27",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 50,
+            "media": [
+              {
+                "id": "b02bdbb2-c8fc-34ea-b534-0a5159ea8aac",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "8da9d5ee-2c4d-4c4f-9ed8-6a9664d82b90",
+                    "number": "14",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494257
+                  }
+                ],
+                "track-count": 50,
+                "track-offset": 13
+              }
+            ]
+          },
+          {
+            "id": "f4fe66c2-c129-45f1-9086-00608e6a8a9d",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "artist-credit-id": "949a7fd5-fe73-3e8f-922e-01ff4ca958f7",
+            "count": 1,
+            "title": "Defected Presents: Most Rated Ibiza 2018",
+            "status": "Official",
+            "disambiguation": "unmixed + mixes, Juno & Amazon",
+            "artist-credit": [
+              {
+                "name": "Various Artists",
+                "artist": {
+                  "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+                  "name": "Various Artists",
+                  "sort-name": "Various Artists",
+                  "disambiguation": "add compilations to this artist"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "352605f2-66be-4aa1-a809-354bf8c085f5",
+              "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+              "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+              "title": "Defected Presents: Most Rated Ibiza 2018",
+              "primary-type": "Album",
+              "secondary-types": [
+                "Compilation",
+                "DJ-mix"
+              ],
+              "secondary-type-ids": [
+                "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+                "0d47f47a-3fe5-3d69-ac9d-d566c23968bf"
+              ]
+            },
+            "date": "2018-07-27",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-07-27",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 53,
+            "media": [
+              {
+                "id": "5e440ad7-4fe6-3568-84b9-4e483d0c859e",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "72f23fa0-b8dd-47dc-8b5b-956a0dd8add7",
+                    "number": "17",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494000
+                  }
+                ],
+                "track-count": 53,
+                "track-offset": 16
+              }
+            ]
+          },
+          {
+            "id": "fa34586e-b26d-4e6b-b8d3-6bee960f0e35",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "count": 1,
+            "title": "Opal (Four Tet remix)",
+            "status": "Official",
+            "release-group": {
+              "id": "620e1cbc-a1f4-49bb-b6c1-4dcfbf1990b0",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Opal (Four Tet remix)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2018-03-08",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2018-03-08",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 1,
+            "media": [
+              {
+                "id": "62f42caf-abf2-3bad-941a-0f276c98b3ff",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "9e659e63-60ee-43bd-8804-bbe9f8dc9db0",
+                    "number": "1",
+                    "title": "Opal (Four Tet remix)",
+                    "length": 494000
+                  }
+                ],
+                "track-count": 1,
+                "track-offset": 0
+              }
+            ]
+          }
+        ],
+        "isrcs": [
+          "GBCFB1800028"
+        ],
+        "tags": [
+          {
+            "count": 2,
+            "name": "electronic"
+          }
+        ]
+      }
+    ]
+  }
+}

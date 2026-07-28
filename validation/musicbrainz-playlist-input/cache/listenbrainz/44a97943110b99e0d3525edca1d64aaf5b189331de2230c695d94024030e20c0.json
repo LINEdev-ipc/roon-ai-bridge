@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Bonobo&recording_name=Kerala",
+  "fetched_at": "2026-07-28T14:41:25.936Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Bonobo",
+      "recording_arg": "Kerala",
+      "artist_credit_name": "Bonobo",
+      "release_name": "Migration",
+      "recording_name": "Kerala",
+      "artist_credit_id": 24146,
+      "artist_mbids": [
+        "9a709693-b4f8-4da9-8cc1-038c911a61be"
+      ],
+      "release_mbid": "c06d5b18-af19-41ee-9210-8904f2465c0e",
+      "recording_mbid": "5f4e240a-8769-4033-ad2f-bbe9314b2932"
+    }
+  ]
+}

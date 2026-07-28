@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Moloko&recording_name=Sing+It+Back+%28Boris+Musical+Mix%29",
+  "fetched_at": "2026-07-28T12:15:46.083Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Moloko",
+      "recording_arg": "Sing It Back (Boris Musical Mix)",
+      "artist_credit_name": "Moloko",
+      "release_name": "Things to Make and Do",
+      "recording_name": "Sing It Back (Boris Musical mix)",
+      "artist_credit_id": 650,
+      "artist_mbids": [
+        "2f94016a-3880-4d8c-9af9-0e197ee77189"
+      ],
+      "release_mbid": "38d8e9ed-f125-415e-9ef9-fb86684c3197",
+      "recording_mbid": "c70c3a4f-88c1-4a29-99d5-362c65334741"
+    }
+  ]
+}

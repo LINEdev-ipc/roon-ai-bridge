@@ -4,6 +4,7 @@ import { PlaylistService } from "../../services/playlistService";
 import { RoonMediaService } from "../../roon/roonMediaService";
 import { createStderrLogger } from "../../utils/logger";
 import { createDatabase } from "../../db/database";
+import { ListenBrainzMetadataService } from "../../services/listenBrainzMetadataService";
 import { MetadataProviderCacheService } from "../../services/metadataProviderCacheService";
 import { PlaylistCatalogDiagnosticsService } from "../../services/playlistCatalogDiagnosticsService";
 import { PlaylistBuildService } from "../../services/playlistBuildService";
@@ -35,8 +36,13 @@ const database = createDatabase(config);
 const playlistService = new PlaylistService(config, database);
 const metadataProviderCacheService = new MetadataProviderCacheService(database);
 metadataProviderCacheService.purgeExpired();
+const listenBrainzMetadataService = new ListenBrainzMetadataService(
+  fetch,
+  metadataProviderCacheService
+);
 const recordingMetadataService = new RecordingMetadataService(fetch, {
-  cache: metadataProviderCacheService
+  cache: metadataProviderCacheService,
+  listenBrainz: listenBrainzMetadataService
 });
 const playlistCatalogDiagnosticsService = new PlaylistCatalogDiagnosticsService(
   playlistService,

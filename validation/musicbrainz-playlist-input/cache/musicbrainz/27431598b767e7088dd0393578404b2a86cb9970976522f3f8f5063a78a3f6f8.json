@@ -1,0 +1,129 @@
+{
+  "url": "https://musicbrainz.org/ws/2/recording?query=recording%3A%28smalltown+AND+boy+AND+12+AND+version%29+AND+release%3A%28smalltown+AND+boy%29+AND+artistname%3A%22Bronski+Beat%22+AND+video%3Afalse&fmt=json&limit=100",
+  "fetched_at": "2026-07-28T14:47:01.962Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "created": "2026-07-28T14:47:02.343Z",
+    "count": 1,
+    "offset": 0,
+    "recordings": [
+      {
+        "id": "d925a49f-1a2a-4a21-8d81-b356bebd1fb4",
+        "score": 100,
+        "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+        "title": "Smalltown Boy (Full 12\" version)",
+        "length": 539920,
+        "video": null,
+        "artist-credit": [
+          {
+            "name": "Bronski Beat",
+            "artist": {
+              "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+              "name": "Bronski Beat",
+              "sort-name": "Bronski Beat",
+              "aliases": [
+                {
+                  "sort-name": "Branski Beat",
+                  "name": "Branski Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronskie Beat",
+                  "name": "Bronskie Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                },
+                {
+                  "sort-name": "Bronsky Beat",
+                  "name": "Bronsky Beat",
+                  "locale": null,
+                  "type": null,
+                  "primary": null,
+                  "begin-date": null,
+                  "end-date": null
+                }
+              ]
+            }
+          }
+        ],
+        "first-release-date": "2012",
+        "releases": [
+          {
+            "id": "843773ae-f575-4195-93bb-2dee5b728df4",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "artist-credit-id": "2cc38107-9d4e-3a3a-b717-004041e2aaf9",
+            "count": 1,
+            "title": "Smalltown Boy (The Remixes Anthology)",
+            "status": "Bootleg",
+            "artist-credit": [
+              {
+                "name": "Bronski Beat",
+                "artist": {
+                  "id": "27acebf2-5440-42a7-9db6-19ad2c9dea38",
+                  "name": "Bronski Beat",
+                  "sort-name": "Bronski Beat"
+                }
+              }
+            ],
+            "release-group": {
+              "id": "93bfdd7f-d5fd-4330-b5f5-405faff097d8",
+              "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+              "title": "Smalltown Boy (The Remixes Anthology)",
+              "primary-type": "Single",
+              "secondary-types": [
+                "Remix"
+              ],
+              "secondary-type-ids": [
+                "0c60f497-ff81-3818-befd-abfc84a4858b"
+              ]
+            },
+            "date": "2012",
+            "country": "XW",
+            "release-events": [
+              {
+                "date": "2012",
+                "area": {
+                  "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                  "name": "[Worldwide]",
+                  "sort-name": "[Worldwide]",
+                  "iso-3166-1-codes": [
+                    "XW"
+                  ]
+                }
+              }
+            ],
+            "track-count": 14,
+            "media": [
+              {
+                "id": "8d70f7f3-1876-41d9-9485-49313deb39f6",
+                "position": 1,
+                "format": "Digital Media",
+                "track": [
+                  {
+                    "id": "1eda1ebd-64fd-4e73-b295-3d180564157c",
+                    "number": "3",
+                    "title": "Smalltown Boy (Full 12\" version)",
+                    "length": 539920
+                  }
+                ],
+                "track-count": 14,
+                "track-offset": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

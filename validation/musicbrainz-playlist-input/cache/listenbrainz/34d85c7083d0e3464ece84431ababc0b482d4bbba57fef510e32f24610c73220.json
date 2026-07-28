@@ -1,0 +1,24 @@
+{
+  "url": "https://labs.api.listenbrainz.org/acr-lookup/json?artist_credit_name=Youssou+N%27Dour&recording_name=7+Seconds",
+  "fetched_at": "2026-07-28T14:42:28.940Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": [
+    {
+      "index": 0,
+      "artist_credit_arg": "Youssou N'Dour",
+      "recording_arg": "7 Seconds",
+      "artist_credit_name": "Youssou N'Dour",
+      "release_name": "7 Seconds: The Best Of Youssou N'Dour",
+      "recording_name": "7 Seconds",
+      "artist_credit_id": 4449982,
+      "artist_mbids": [
+        "af081ea2-7a2c-4fbd-8200-92d62056b5f5"
+      ],
+      "release_mbid": "2a45789f-a86f-4886-8b10-bc737d39975a",
+      "recording_mbid": "5a3e7d0c-2734-4e77-88c0-a45e387610f0"
+    }
+  ]
+}
