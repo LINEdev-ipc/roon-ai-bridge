@@ -525,6 +525,21 @@ curl -X POST http://localhost:3000/playlists/bad-bunny-test/resolve \
   -d '{"force":false,"source_preference":"highest_quality"}'
 ```
 
+The current maintenance endpoint combines legacy migration, MusicBrainz
+metadata recovery and fresh Roon playback bindings:
+
+```bash
+curl -X POST http://localhost:3000/playlists/bad-bunny-test/rebuild \
+  -H "Content-Type: application/json" \
+  -d '{"scope":"all","source_preference":"streaming_first"}'
+```
+
+Use `scope:"issues"` for only incomplete or unresolved entries, or
+`scope:"selected"` with a non-empty `track_ids` array. Reconstruction preserves
+the playlist name, description, songs, order, cover, manual associations and
+user metadata. The older `/resolve` and `/metadata/refresh` routes remain
+available as compatibility endpoints, but new clients should use `/rebuild`.
+
 Refresh only the audio metadata of already-resolved entries without changing
 their recording identity:
 

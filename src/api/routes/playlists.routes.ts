@@ -248,6 +248,24 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
+  router.post(["/playlists/:playlist_id/rebuild", "/virtual-playlists/:playlist_id/rebuild"], async (req, res, next) => {
+    try {
+      context.logger.info("Virtual playlist reconstruction received", {
+        playlistId: req.params.playlist_id,
+        scope: req.body?.scope || "issues",
+        trackCount: Array.isArray(req.body?.track_ids) ? req.body.track_ids.length : null
+      });
+      res.json(await context.playlistRepairService.rebuildPlaylist({
+        playlistId: req.params.playlist_id,
+        trackIds: Array.isArray(req.body?.track_ids) ? req.body.track_ids : undefined,
+        scope: req.body?.scope,
+        sourcePreference: req.body?.source_preference
+      }));
+    } catch (error) {
+      next(error);
+    }
+  });
+
   router.post(["/playlists/:playlist_id/metadata/refresh", "/virtual-playlists/:playlist_id/metadata/refresh"], async (req, res, next) => {
     try {
       context.logger.info("Virtual playlist metadata refresh received", {

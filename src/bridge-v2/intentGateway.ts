@@ -607,10 +607,10 @@ export class IntentGateway extends TransportIntentHandler {
     );
   }
 
-  async resolvePlaylist(input: {
+  async rebuildPlaylist(input: {
     playlist_id: string;
     track_ids?: string[];
-    scope?: "unresolved" | "selected" | "all";
+    scope?: "issues" | "selected" | "all";
     selections?: Array<{ track_id: string; result_id: string }>;
   }): Promise<OperationResult> {
     const manual: Array<Awaited<ReturnType<PlaylistRepairService["selectTrack"]>>> = [];
@@ -628,29 +628,18 @@ export class IntentGateway extends TransportIntentHandler {
       ? (input.track_ids || []).filter((trackId) => !manuallySelected.has(trackId))
       : undefined;
     const shouldResolve = input.scope !== "selected" || Boolean(selectedIds?.length);
-    const legacyPlaylistService = this.context.playlistService as any;
-    const data = shouldResolve && !this.context.playlistRepairService && typeof legacyPlaylistService.getPlaylist !== "function"
-      ? {
-          ...(await legacyPlaylistService.resolveVirtualPlaylistItems(input.playlist_id, {
-            mediaService: this.context.mediaService,
-            logger: this.context.logger,
-            sourcePreference: "streaming_first",
-            trackIds: selectedIds,
-            force: input.scope === "all" || input.scope === "selected"
-          })),
-          enrichment: null
-        }
-      : shouldResolve
-      ? await this.playlistRepairService.repairPlaylist({
+    const data = shouldResolve
+      ? await this.playlistRepairService.rebuildPlaylist({
           playlistId: input.playlist_id,
           trackIds: selectedIds,
-          force: input.scope === "all" || input.scope === "selected",
+          scope: input.scope || "issues",
           sourcePreference: "streaming_first"
         })
       : {
           playlist: this.context.playlistService.getPlaylist(input.playlist_id),
           resolution: [],
-          enrichment: null
+          enrichment: null,
+          report: null
         };
     const playlist = data.playlist || (
       typeof (this.context.playlistService as any).getPlaylist === "function"
@@ -658,8 +647,8 @@ export class IntentGateway extends TransportIntentHandler {
         : { playlist_id: input.playlist_id, tracks: [] }
     );
     const result = this.playlistMutationResult(
-      "roon_resolve_playlist",
-      "Playlist resolution completed.",
+      "roon_rebuild_playlist",
+      "Playlist reconstruction completed.",
       playlist
     );
     return {
@@ -668,12 +657,25 @@ export class IntentGateway extends TransportIntentHandler {
         ...(result.data as Record<string, unknown>),
         resolution_attempts: data.resolution,
         metadata_enrichment: data.enrichment,
+        reconstruction: data.report,
         manual_selections: manual.map((entry) => ({
           track_id: entry.track.track_id,
           enrichment: entry.enrichment
         }))
       }
     };
+  }
+
+  async resolvePlaylist(input: {
+    playlist_id: string;
+    track_ids?: string[];
+    scope?: "unresolved" | "selected" | "all";
+    selections?: Array<{ track_id: string; result_id: string }>;
+  }): Promise<OperationResult> {
+    return this.rebuildPlaylist({
+      ...input,
+      scope: input.scope === "unresolved" || !input.scope ? "issues" : input.scope
+    });
   }
 
   async refreshPlaylistMetadata(input: {

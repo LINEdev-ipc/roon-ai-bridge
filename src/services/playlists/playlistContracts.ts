@@ -34,6 +34,7 @@ export type TrackIdentityMetadata = {
   version: 1;
   catalog_separated: true;
   fingerprint: string;
+  recording_id: string | null;
   title: string | null;
   artist: string | null;
   album: string | null;

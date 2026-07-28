@@ -102,7 +102,7 @@ test("registers the compact MCP v2 intent catalog", () => {
 
   registerBridgeV2Tools(server, context);
 
-  assert.equal(tools.size, 36);
+  assert.equal(tools.size, 35);
   for (const [name, registration] of tools) {
     assert.match(registration.options.description, /^Use this when/);
     assert.ok(registration.options.outputSchema.status, `${name} should declare status output`);
@@ -126,10 +126,12 @@ test("registers the compact MCP v2 intent catalog", () => {
     "roon_prepare_playlist_cover",
     "roon_set_playlist_cover",
     "roon_play_playlist_track",
-    "roon_refresh_playlist_metadata",
+    "roon_rebuild_playlist",
     "roon_get_configuration",
     "roon_run_diagnostics"
   ]) assert.ok(tools.has(name), `${name} should be exposed`);
+  assert.equal(tools.has("roon_resolve_playlist"), false);
+  assert.equal(tools.has("roon_refresh_playlist_metadata"), false);
   assert.equal(tools.get("roon_edit_playlist_tracks").options.annotations.destructiveHint, true);
   assert.equal(tools.get("roon_import_playlist").options.annotations.destructiveHint, true);
   assert.match(tools.get("roon_set_playlist_cover").options.description, /1024x1024 square sRGB source/);
@@ -194,7 +196,7 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
     const payload = await readMcpJson(response);
     const tools = new Map(payload.result.tools.map((tool) => [tool.name, tool]));
 
-    assert.equal(tools.size, 42);
+    assert.equal(tools.size, 41);
     assert.ok(tools.get("roon_get_state").inputSchema.properties.scope);
     assert.ok(tools.get("roon_play_media").inputSchema.properties.zone);
     assert.ok(tools.get("roon_play_media").inputSchema.properties.media);
@@ -221,7 +223,7 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.release_year_hint);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.recording_intent);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.required_credits);
-    assert.match(savePlaylist.description, /exactly two replenishment rounds/i);
+    assert.match(savePlaylist.description, /three genuine replenishment rounds/i);
     assert.match(savePlaylist.description, /result_id never bypasses validation/i);
     assert.ok(savePlaylist.outputSchema.properties.status.enum.includes("needs_input"));
     assert.match(coverTool.description, /images below 768x768 are rejected/);
@@ -285,12 +287,17 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
       tracks: [{ title: "Unavailable Two", artist_credit: "Unknown Artist Two" }]
     });
     assert.equal(roundOne.status, "needs_input");
-    const finalBuild = await callTool(4, {
+    const roundTwo = await callTool(4, {
       build_id: initialBuild.data.build_id,
       tracks: [{ title: "Unavailable Three", artist_credit: "Unknown Artist Three" }]
     });
-    assert.equal(finalBuild.status, "completed");
-    assert.equal(finalBuild.data.build_summary.missing_count, 1);
+    assert.equal(roundTwo.status, "needs_input");
+    const finalBuild = await callTool(5, {
+      build_id: initialBuild.data.build_id,
+      tracks: [{ title: "Unavailable Four", artist_credit: "Unknown Artist Four" }]
+    });
+    assert.equal(finalBuild.status, "failed");
+    assert.equal(finalBuild.error.code, "PLAYLIST_BUILD_INCOMPLETE");
   } finally {
     await new Promise((resolve) => server.close(resolve));
     database.close();

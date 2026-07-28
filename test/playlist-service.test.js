@@ -1496,6 +1496,232 @@ test("playback retries the original resolved query when enriched artist credits 
   assert.equal(service.getPlaylist(playlist.playlist_id).tracks[0].resolution.status, "resolved");
 });
 
+test("playback accepts equivalent Roon editions for a canonical MusicBrainz recording", async () => {
+  const config = tempConfig();
+  const service = new PlaylistService(config);
+  const catalog = {
+    status: "exact",
+    reason: "unique_compatible_recording",
+    fetched_at: "2026-07-28T10:00:00.000Z",
+    recording: {
+      musicbrainz_id: "mb-hours",
+      title: "Hours",
+      disambiguation: null,
+      video: false,
+      duration_seconds: 344,
+      duration_source: "musicbrainz_recording_median",
+      artist_credit: [{ musicbrainz_id: "mb-tycho", name: "Tycho", join_phrase: "" }],
+      isrcs: ["US2J71104502"]
+    },
+    composers: [],
+    lyricists: [],
+    genres: [],
+    release_group: {
+      musicbrainz_id: "mb-dive",
+      title: "Dive",
+      artist_credit: [{ musicbrainz_id: "mb-tycho", name: "Tycho", join_phrase: "" }],
+      first_release_date: "2011-10-04",
+      release_year: 2011,
+      primary_type: "Album",
+      secondary_types: [],
+      disambiguation: null,
+      selection_reason: "earliest_official_album"
+    },
+    release: null,
+    work: null,
+    credits: [],
+    cover_art: null,
+    roon_binding: null,
+    provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+    warnings: []
+  };
+  const playlist = service.createPlaylist({
+    name: "Canonical playback",
+    tracks: [{
+      query: "Hours Tycho",
+      title: "Hours",
+      artist: "Tycho",
+      album: "Dive",
+      audio_metadata: {
+        title: "Hours",
+        artist: "Tycho",
+        album: "Dive",
+        duration_seconds: 344,
+        source: "tidal",
+        metadata_status: "exact",
+        catalog
+      },
+      resolution: { status: "resolved", selected_result_id: "old-hours" }
+    }]
+  });
+  const candidate = (id, album) => ({
+    result_id: id,
+    roon_item_key: `key:${id}`,
+    type: "track",
+    media_type: "track",
+    title: "Hours",
+    artist: "Tycho, Zac Brown",
+    artists: [
+      { type: "artist", title: "Tycho", artist: null, result_id: null },
+      { type: "artist", title: "Zac Brown", artist: null, result_id: null }
+    ],
+    subtitle: "Tycho, Zac Brown",
+    album,
+    album_artist: "Tycho",
+    duration_seconds: 344,
+    version_hint: "studio",
+    version_penalties: [],
+    source: "tidal",
+    source_confidence: "high",
+    quality: null,
+    image_key: null,
+    is_library: false,
+    playable: true,
+    is_best_match: false,
+    selection_required: true,
+    match_score: 100,
+    confidence: "high",
+    match_reasons: [],
+    match_penalties: [],
+    warnings: [],
+    expires_at: new Date(Date.now() + 60_000).toISOString()
+  });
+  const plays = [];
+  const mediaService = {
+    async search(request) {
+      const results = [candidate("hours-us", "Dive"), candidate("hours-eu", "Dive (Deluxe)")];
+      return {
+        query: request.query,
+        results,
+        recommended_result_id: null,
+        selection_required: true,
+        warnings: []
+      };
+    },
+    async play(resultId, zoneId, mode) {
+      plays.push({ resultId, zoneId, mode });
+      return { ok: true };
+    }
+  };
+  const zone = { zone_id: "office", state: "paused", is_play_allowed: true };
+  const roonClient = {
+    isCoreConnected: () => true,
+    getZone: () => zone,
+    isTransportReady: () => true,
+    getTransport: () => ({
+      control(_zone, command, callback) {
+        if (command === "play") zone.state = "playing";
+        callback(false);
+      }
+    })
+  };
+
+  const result = await service.playPlaylist(
+    roonClient,
+    playlist.playlist_id,
+    { zone_id: "office", mode: "play_now" },
+    { mediaService }
+  );
+  const stored = service.getPlaylist(playlist.playlist_id).tracks[0];
+
+  assert.equal(result.ok, true);
+  assert.deepEqual(plays, [{ resultId: "hours-us", zoneId: "office", mode: "replace_queue" }]);
+  assert.equal(stored.artist, "Tycho");
+  assert.equal(stored.album, "Dive");
+  assert.equal(stored.audio_metadata.catalog.recording.musicbrainz_id, "mb-hours");
+  assert.equal(stored.resolution.status, "resolved");
+});
+
+test("a transient ambiguous playback search does not degrade a stored canonical binding", async () => {
+  const config = tempConfig();
+  const service = new PlaylistService(config);
+  const playlist = service.createPlaylist({
+    name: "Durable binding",
+    tracks: [{
+      query: "Hours Tycho",
+      title: "Hours",
+      artist: "Tycho",
+      album: "Dive",
+      roon_item_key: "stored-hours",
+      audio_metadata: {
+        title: "Hours",
+        artist: "Tycho",
+        album: "Dive",
+        duration_seconds: 344,
+        source: "tidal",
+        metadata_status: "exact",
+        catalog: {
+          status: "exact",
+          recording: {
+            musicbrainz_id: "mb-hours",
+            title: "Hours",
+            artist_credit: [{ name: "Tycho", join_phrase: "" }],
+            duration_seconds: 344,
+            isrcs: []
+          },
+          release_group: { musicbrainz_id: "mb-dive", title: "Dive", release_year: 2011 },
+          composers: [],
+          lyricists: [],
+          genres: []
+        }
+      },
+      resolution: { status: "resolved", selected_result_id: "stored-result" }
+    }]
+  });
+  const wrongCandidate = (id) => ({
+    result_id: id,
+    roon_item_key: `key:${id}`,
+    type: "track",
+    media_type: "track",
+    title: "Hours (Live)",
+    artist: "Tycho",
+    subtitle: "Tycho",
+    album: "Live",
+    version_hint: "live",
+    version_penalties: [],
+    source: "tidal",
+    source_confidence: "high",
+    playable: true,
+    selection_required: true,
+    match_score: 90,
+    confidence: "medium",
+    match_reasons: [],
+    match_penalties: [],
+    warnings: [],
+    expires_at: new Date(Date.now() + 60_000).toISOString()
+  });
+  const result = await service.playPlaylist(
+    {
+      getZone: () => ({ zone_id: "office", state: "playing", is_play_allowed: true }),
+      isTransportReady: () => true,
+      getTransport: () => ({ control() {} })
+    },
+    playlist.playlist_id,
+    { zone_id: "office", mode: "play_now" },
+    {
+      mediaService: {
+        async search() {
+          return {
+            results: [wrongCandidate("live-one"), wrongCandidate("live-two")],
+            recommended_result_id: null,
+            selection_required: true,
+            warnings: []
+          };
+        },
+        async play() {
+          throw new Error("must not play a different version");
+        }
+      }
+    }
+  );
+  const stored = service.getPlaylist(playlist.playlist_id).tracks[0];
+
+  assert.equal(result.ok, false);
+  assert.equal(stored.resolution.status, "resolved");
+  assert.equal(stored.resolution.selected_result_id, "stored-result");
+  assert.equal(stored.audio_metadata.catalog.recording.musicbrainz_id, "mb-hours");
+});
+
 test("play_now leaves the current queue untouched when the first identity is ambiguous", async () => {
   const config = tempConfig();
   const service = new PlaylistService(config);

@@ -161,12 +161,12 @@ Expected tool: `roon_search_media`.
 
 Model-facing searches prefer TIDAL by default. Playlist creation and repair use
 strict track identity resolution before source or quality is considered. After
-`roon_save_playlist`, `roon_edit_playlist_tracks`, `roon_resolve_playlist` or
-`roon_refresh_playlist_metadata`,
-ChatGPT must inspect `verified` and `resolution_summary.unresolved`; it must not
-describe the playlist as fully checked while `verified` is false or unresolved
-is greater than zero. `resolution.status: "manual"` means an explicit result was
-selected, while `selection_origin` distinguishes model and portal-user choices.
+`roon_save_playlist`, `roon_edit_playlist_tracks` or
+`roon_rebuild_playlist`, ChatGPT must inspect `verified`,
+`resolution_summary.unresolved` and the reconstruction report; it must not
+describe the playlist as fully checked while unresolved entries remain.
+`resolution.status: "manual"` means an explicit result was selected, while
+`selection_origin` distinguishes model and portal-user choices.
 
 ```text
 ¿Qué está sonando?

@@ -152,7 +152,7 @@ test("temporary playlist builds preserve their purpose and lifecycle across repl
   assert.equal(playlistService.listPlaylists({ scope: "temporary" }).total, 1);
 });
 
-test("playlist build waits for two replenishment rounds and then saves a safe shorter playlist", async () => {
+test("playlist build never saves an incomplete playlist after three replenishment rounds", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const media = fakeMedia((request) => {
     if (request.query.includes("First Song")) return [mediaTrack("first", "First Song", "Artist One")];
@@ -168,7 +168,7 @@ test("playlist build waits for two replenishment rounds and then saves a safe sh
   });
   assert.equal(initial.phase, "needs_candidates");
   assert.equal(initial.next_round, 1);
-  assert.equal(initial.rounds_remaining, 2);
+  assert.equal(initial.rounds_remaining, 3);
   assert.equal(initial.missing_count, 2);
   assert.equal(playlistService.listPlaylists().total, 0);
 
@@ -178,21 +178,58 @@ test("playlist build waits for two replenishment rounds and then saves a safe sh
   });
   assert.equal(roundOne.phase, "needs_candidates");
   assert.equal(roundOne.next_round, 2);
-  assert.equal(roundOne.rounds_remaining, 1);
+  assert.equal(roundOne.rounds_remaining, 2);
   assert.equal(playlistService.listPlaylists().total, 0);
 
-  const final = await builder.build({
+  const roundTwo = await builder.build({
     build_id: initial.build_id,
     tracks: [{ candidate_id: "r2", title: "Second Song", artist_credit: "Artist Two" }]
   });
-  assert.equal(final.phase, "finalized");
-  assert.equal(final.complete, false);
-  assert.equal(final.desired_count, 3);
-  assert.equal(final.added_count, 2);
-  assert.equal(final.missing_count, 1);
-  assert.equal(final.playlist.tracks_count, 2);
-  assert.deepEqual(final.playlist.tracks.map((track) => track.resolution.status), ["resolved", "resolved"]);
-  assert.equal(playlistService.validatePlaylist(final.playlist.playlist_id).summary.unresolved, 0);
+  assert.equal(roundTwo.phase, "needs_candidates");
+  assert.equal(roundTwo.rounds_remaining, 1);
+  await assert.rejects(
+    builder.build({
+      build_id: initial.build_id,
+      tracks: [{ candidate_id: "r3", title: "Still Unavailable", artist_credit: "Nobody Else" }]
+    }),
+    (error) => error.code === "PLAYLIST_BUILD_INCOMPLETE"
+  );
+  assert.equal(playlistService.listPlaylists().total, 0);
+});
+
+test("playlist build treats an exact repeated batch as an idempotent retry", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia((request) =>
+    request.query.includes("First Song")
+      ? [mediaTrack("first-idempotent", "First Song", "Artist One")]
+      : request.query.includes("Second Song")
+        ? [mediaTrack("second-idempotent", "Second Song", "Artist Two")]
+        : []
+  );
+  const builder = new PlaylistBuildService(playlistService, media);
+  const request = {
+    name: "Idempotent build",
+    desired_count: 2,
+    tracks: [{ candidate_id: "first", title: "First Song", artist_credit: "Artist One" }]
+  };
+  const initial = await builder.build(request);
+  const searchesAfterInitial = media.searches.length;
+  const retry = await builder.build({
+    build_id: initial.build_id,
+    tracks: request.tracks
+  });
+
+  assert.deepEqual(retry, initial);
+  assert.equal(media.searches.length, searchesAfterInitial);
+  assert.equal(retry.next_round, 1);
+
+  const completed = await builder.build({
+    build_id: initial.build_id,
+    tracks: [{ candidate_id: "second", title: "Second Song", artist_credit: "Artist Two" }]
+  });
+  assert.equal(completed.phase, "finalized");
+  assert.equal(completed.complete, true);
+  assert.equal(completed.playlist.tracks_count, 2);
 });
 
 test("playlist build rejects an unintended live result and fills the target from a reserve", async () => {
@@ -343,15 +380,19 @@ test("playlist build handles exact non-Latin title and artist identities", async
 
 test("playlist preflight resolves MusicBrainz before Roon and persists the canonical recording identity", async () => {
   const playlistService = new PlaylistService(tempConfig());
-  const roonTrack = mediaTrack("canonical-roon", "Canonical Song", "Canonical Artist", {
-    album: "Canonical Album",
-    durationSeconds: 240
+  const roonTrack = mediaTrack("canonical-roon", "Canonical Song", "Canonical Artist, Secondary Credit", {
+    album: "Roon Edition",
+    durationSeconds: 239
   });
   const media = fakeMedia((request) =>
     request.query === "Canonical Song Canonical Artist" ? [roonTrack] : []
   );
+  let enrichmentCalls = 0;
   const metadataService = {
-    enrichResult: async (result) => ({
+    enrichResult: async (result, hints) => {
+      enrichmentCalls += 1;
+      assert.equal(hints.catalog_profile.recording.musicbrainz_id, "mb-recording-1");
+      return ({
       result,
       audio_metadata: {
         title: result.title,
@@ -365,7 +406,8 @@ test("playlist preflight resolves MusicBrainz before Roon and persists the canon
         album_result_id: null,
         warnings: []
       }
-    })
+      });
+    }
   };
   let binding = null;
   const trackCatalogService = {
@@ -389,7 +431,17 @@ test("playlist preflight resolves MusicBrainz before Roon and persists the canon
           composers: ["Composer"],
           lyricists: ["Lyricist"],
           genres: [{ name: "rock", count: 2, entity: "recording" }],
-          release_group: null,
+          release_group: {
+            musicbrainz_id: "mb-release-group-1",
+            title: "Canonical Album",
+            artist_credit: [{ musicbrainz_id: "mb-artist-1", name: "Canonical Artist", join_phrase: "" }],
+            first_release_date: "2011-10-04",
+            release_year: 2011,
+            primary_type: "Album",
+            secondary_types: [],
+            disambiguation: null,
+            selection_reason: "earliest_official_album"
+          },
           release: null,
           work: null,
           credits: [],
@@ -436,6 +488,9 @@ test("playlist preflight resolves MusicBrainz before Roon and persists the canon
   assert.equal(result.accepted, true);
   assert.equal(result.candidate.musicbrainz_recording_id, "mb-recording-1");
   assert.equal(result.track.audio_metadata.recording.musicbrainz_id, "mb-recording-1");
+  assert.equal(result.track.artist, "Canonical Artist");
+  assert.equal(result.track.album, "Canonical Album");
+  assert.equal(result.track.audio_metadata.duration_seconds, 240);
   assert.equal(result.track.audio_metadata.composer, "Composer");
   assert.equal(result.track.resolution.catalog_identity.recording.musicbrainz_id, "mb-recording-1");
   assert.deepEqual(binding, {
@@ -444,6 +499,7 @@ test("playlist preflight resolves MusicBrainz before Roon and persists the canon
     origin: "automatic"
   });
   assert.deepEqual(media.searches.map((request) => request.query), ["Canonical Song Canonical Artist"]);
+  assert.equal(enrichmentCalls, 1);
 });
 
 test("playlist preflight sends ambiguous MusicBrainz identities to manual selection without searching Roon", async () => {

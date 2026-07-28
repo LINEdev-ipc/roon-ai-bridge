@@ -3,6 +3,23 @@
 All notable production changes are documented here. Validation evidence for
 each release lives under [`docs/`](docs/README.md).
 
+## 0.20.0 Beta 7 - Unreleased
+
+- Make MusicBrainz recording identity authoritative for stored title, artist,
+  release group and duration while keeping only the transient playable binding
+  from Roon.
+- Accept equivalent Roon editions for an exact canonical recording and keep a
+  valid stored binding intact when a later playback search is ambiguous.
+- Make playlist-build retries idempotent, allow three genuine replenishment
+  rounds and refuse to persist a playlist below its requested size.
+- Consolidate resolution, migration and metadata refresh into
+  `roon_rebuild_playlist`, preserving song selection, order, cover, manual
+  associations and user metadata for current and legacy playlists.
+- Remove redundant Roon album traversal and duplicate MusicBrainz enrichment
+  from catalog-backed playlist creation.
+- Redesign portal song details around identity, publication and credits, with
+  artist/album navigation and MusicBrainz reference links.
+
 ## 0.20.0 Beta 5 - Unreleased
 
 - Require an observed matching ISRC instead of treating catalog completeness as

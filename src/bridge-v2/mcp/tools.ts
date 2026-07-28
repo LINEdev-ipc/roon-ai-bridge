@@ -316,7 +316,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_save_playlist", {
     title: "Save RoonIA Playlist",
-    description: "Use this when the user explicitly wants to save a permanent playlist or replace its complete track list; use roon_create_temporary_playlist for contextual music they only want to hear now. Send title plus artist_credit for every primary and reserve. RoonIA resolves the canonical MusicBrainz recording first, then accepts only a compatible playable Roon binding; ambiguous or unavailable recordings are omitted for manual selection. For a requested size, include roughly 50-75% reserves. If status=needs_input, call this tool again with its build_id and new candidates. RoonIA allows exactly two replenishment rounds and a result_id never bypasses validation.",
+    description: "Use this when the user explicitly wants to save a permanent playlist or replace its complete track list; use roon_create_temporary_playlist for contextual music they only want to hear now. Send title plus artist_credit for every primary and reserve. RoonIA resolves the canonical MusicBrainz recording first, then accepts only a compatible playable Roon binding; a supplied result_id never bypasses validation. Ambiguous or unavailable recordings are omitted for manual selection. For a requested size, include roughly 50-75% reserves. If status=needs_input, call this tool again with its build_id and new candidates. Exact retries are idempotent, up to three genuine replenishment rounds are allowed and an incomplete requested size is never saved.",
     annotations: write,
     inputSchema: {
       build_id: z.string().uuid().optional().describe("Return value from a prior needs_input response. On replenishment calls, submit only build_id and new tracks."),
@@ -331,7 +331,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_create_temporary_playlist", {
     title: "Create Temporary RoonIA Playlist",
-    description: "Use this when the user asks for contextual music for an activity, mood or occasion without asking to save it permanently. Provide a short intent summary plus primary and reserve tracks with title and artist_credit. RoonIA resolves MusicBrainz identity before creating a compatible Roon playback binding. If status=needs_input, call this tool again with build_id and fresh candidates. After completion call roon_play_playlist with the returned playlist_id and the requested queue mode. Do not use this when the user explicitly asks to keep or save the playlist.",
+    description: "Use this when the user asks for contextual music for an activity, mood or occasion without asking to save it permanently. Provide a short intent summary plus primary and reserve tracks with title and artist_credit. RoonIA resolves MusicBrainz identity before creating a compatible Roon playback binding. If status=needs_input, call this tool again with build_id and fresh candidates; exact retries are idempotent and an incomplete requested size is never saved. After completion call roon_play_playlist with the returned playlist_id and requested queue mode. Do not use this when the user explicitly asks to keep or save the playlist.",
     annotations: write,
     inputSchema: {
       build_id: z.string().uuid().optional().describe("Return value from a prior needs_input response for this temporary playlist build."),
@@ -435,31 +435,20 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
     }
   }, (input) => gateway.analyzePlaylist(input));
 
-  register("roon_resolve_playlist", {
-    title: "Resolve RoonIA Playlist",
-    description: "Use this when stale, missing, ambiguous or incorrectly associated playlist tracks should be searched again and restored. It uses strict track identity matching, then prefers an equivalent TIDAL recording and its best known quality. Use selected with track_ids to repair chosen entries, all for a full rebuild, or unresolved by default. Do not claim completion while verified=false or resolution_summary.unresolved is nonzero.",
+  register("roon_rebuild_playlist", {
+    title: "Rebuild RoonIA Playlist",
+    description: "Use this when an existing RoonIA playlist should be migrated to the current MusicBrainz identity model, have canonical metadata refreshed and reconstruct its playable Roon bindings without changing its songs, order, cover or user metadata. Use issues by default, selected for explicit track_ids or all for a complete rebuild. This replaces the deprecated resolve and metadata-refresh tools; it never invents new songs.",
     annotations: write,
     inputSchema: {
       playlist_id: z.string().min(1),
       track_ids: z.array(z.string().min(1)).min(1).optional(),
-      scope: z.enum(["unresolved", "selected", "all"]).default("unresolved"),
+      scope: z.enum(["issues", "selected", "all"]).default("issues"),
       selections: z.array(z.object({
         track_id: z.string().min(1),
         result_id: z.string().min(1)
       })).optional()
     }
-  }, (input) => gateway.resolvePlaylist(input));
-
-  register("roon_refresh_playlist_metadata", {
-    title: "Refresh RoonIA Playlist Metadata",
-    description: "Use this when resolved playlist tracks need coherent recording, release, duration, credits, year, source or artwork metadata refreshed without changing their selected identity. Results distinguish exact, partial, conflict and unverified metadata instead of guessing across editions. Use incomplete by default, selected with track_ids for chosen entries, or all for a full refresh. Use roon_resolve_playlist instead when a track is missing, ambiguous or incorrectly associated.",
-    annotations: write,
-    inputSchema: {
-      playlist_id: z.string().min(1),
-      track_ids: z.array(z.string().min(1)).min(1).optional(),
-      scope: z.enum(["incomplete", "selected", "all"]).default("incomplete")
-    }
-  }, (input) => gateway.refreshPlaylistMetadata(input));
+  }, (input) => gateway.rebuildPlaylist(input));
 
   register("roon_export_playlist", {
     title: "Export RoonIA Playlist",

@@ -145,20 +145,22 @@ cannot re-add an existing recording. Identity-changing updates are resolved
 before returning.
 An update with `changes.result_id` can repair one incorrect association
 manually.
-`roon_resolve_playlist` can retry unresolved entries, selected `track_ids` or
-the complete playlist. It also accepts explicit `track_id`/`result_id`
+`roon_rebuild_playlist` is the single model-visible maintenance intent. It
+migrates legacy tracks to the current MusicBrainz recording identity, repairs
+Roon playback bindings and completes canonical metadata without changing the
+selected songs, order, cover or user metadata. It accepts issue-only, selected
+`track_ids` and full-playlist scopes, plus explicit `track_id`/`result_id`
 selections after the model or portal user chooses an ambiguous candidate.
-Successful resolution is followed by metadata enrichment without consuming a
-playlist reserve. Recording identity and catalog metadata are separate:
-`roon_refresh_playlist_metadata` replaces the recording/release observation for
-already-resolved tracks without changing the selected identity. Album edition,
-artwork, version and track membership must agree before a release is accepted;
-MusicBrainz facts require a verified release or ISRC anchor. The result reports
-`exact`, `partial`, `conflict` or `unverified` instead of selecting a plausible
-edition silently. Playlist mutations include `resolution_summary` and are
-only returned with `verified: true` when every track is resolved or explicitly
-selected. Explicit model selections record `selection_origin: "model"`; the
-legacy `manual` status alone must not be described as human verification.
+It replaces the overlapping `roon_resolve_playlist` and
+`roon_refresh_playlist_metadata` tools. Their HTTP routes remain compatibility
+aliases for older portal or API clients.
+
+An exact MusicBrainz recording supplies the stored title, artist credit,
+release group and duration. Roon supplies the currently playable item and its
+service-specific artwork. Equivalent country editions may satisfy playback,
+but a remix, live performance or other recording family may not. A transient
+ambiguous Roon search is reported for that playback attempt and does not erase
+the last durable canonical identity or binding.
 
 Starting with v0.20.0 beta.1, `roon_analyze_playlist` accepts up to ten explicit
 `catalog_track_ids` and returns an identity V2 MusicBrainz diagnostic in shadow

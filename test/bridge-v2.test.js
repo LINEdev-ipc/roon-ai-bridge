@@ -303,7 +303,7 @@ test("v2 playlist creation validates model candidates and never trusts result_id
   assert.equal(result.data.build_summary.complete, true);
 });
 
-test("v2 playlist save never persists an unresolved candidate and finalizes safely after two replenishment rounds", async () => {
+test("v2 playlist save never persists an unresolved candidate or an incomplete playlist", async () => {
   const context = gatewayContext(roonClient(), {
     search: async (request) => ({
       query: request.query,
@@ -337,32 +337,39 @@ test("v2 playlist save never persists an unresolved candidate and finalizes safe
   assert.equal(roundOne.status, "needs_input");
   assert.equal(saves, 0);
 
-  const result = await gateway.savePlaylist({
+  const roundTwo = await gateway.savePlaylist({
     build_id: initial.data.build_id,
     tracks: [{ title: "Also missing", artist_credit: "Unknown Artist Two" }]
   });
-  assert.equal(result.status, "completed");
-  assert.equal(saves, 1);
-  assert.equal(result.data.tracks.length, 0);
-  assert.equal(result.data.build_summary.complete, false);
-  assert.equal(result.data.build_summary.missing_count, 1);
-  assert.equal(result.data.resolution_summary.unresolved, 0);
-  assert.match(result.summary, /1 (?:is|are) missing/i);
-  assert.equal(result.warnings.length, 1);
+  assert.equal(roundTwo.status, "needs_input");
+  assert.equal(saves, 0);
+  await assert.rejects(
+    gateway.savePlaylist({
+      build_id: initial.data.build_id,
+      tracks: [{ title: "Still unavailable", artist_credit: "Unknown Artist Three" }]
+    }),
+    (error) => error.code === "PLAYLIST_BUILD_INCOMPLETE"
+  );
+  assert.equal(saves, 0);
 });
 
-test("v2 playlist repair forwards selected tracks and force mode", async () => {
+test("v2 playlist reconstruction forwards selected tracks through the consolidated service", async () => {
   const context = gatewayContext(roonClient(), {});
   let options;
-  context.playlistService = {
-    resolveVirtualPlaylistItems: async (_playlistId, received) => {
+  const gateway = new IntentGateway(context);
+  gateway.playlistRepairService = {
+    rebuildPlaylist: async (received) => {
       options = received;
-      return { resolution: [{ track_id: "t2", status: "resolved" }] };
+      return {
+        playlist: { playlist_id: "p1", name: "Legacy", tracks: [], tracks_count: 0 },
+        resolution: [{ track_id: "t2", status: "resolved" }],
+        enrichment: { completed: 1 },
+        report: { complete: true, migrated: 1 }
+      };
     }
   };
-  const gateway = new IntentGateway(context);
 
-  const result = await gateway.resolvePlaylist({
+  const result = await gateway.rebuildPlaylist({
     playlist_id: "p1",
     track_ids: ["t2"],
     scope: "selected"
@@ -370,7 +377,9 @@ test("v2 playlist repair forwards selected tracks and force mode", async () => {
 
   assert.equal(result.status, "completed");
   assert.deepEqual(options.trackIds, ["t2"]);
-  assert.equal(options.force, true);
+  assert.equal(options.scope, "selected");
+  assert.equal(result.operation, "roon_rebuild_playlist");
+  assert.equal(result.data.reconstruction.migrated, 1);
 });
 
 test("v2 playlist analysis can add read-only identity V2 shadow diagnostics", async () => {

@@ -21,7 +21,13 @@ import {
   type RecordingCatalogCandidate,
   type RecordingCatalogMetadata
 } from "./recordingMetadataService";
+import type { TrackCatalogProfile } from "./trackCatalogService";
 import { TrackResolutionService } from "./trackResolutionService";
+import {
+  applyCatalogMetadata,
+  catalogArtistCredit,
+  catalogProfileFromAudio
+} from "./playlists/catalogMetadata";
 
 type FieldProvenance = Record<string, {
   source: "roon" | "musicbrainz";
@@ -214,7 +220,12 @@ export class PlaylistMetadataEnrichmentService {
 
   async enrichResult(
     source: MediaResult,
-    hints: { title?: string | null; artist?: string | null; album?: string | null } = {}
+    hints: {
+      title?: string | null;
+      artist?: string | null;
+      album?: string | null;
+      catalog_profile?: TrackCatalogProfile | null;
+    } = {}
   ): Promise<EnrichedMediaResult> {
     const observedAt = new Date().toISOString();
     const warnings: string[] = [];
@@ -229,7 +240,11 @@ export class PlaylistMetadataEnrichmentService {
     let albumResultId = result.links?.album?.result_id || null;
     let release: PlaylistReleaseMetadata | null = null;
 
-    if (albumResultId) {
+    // A catalog profile already supplies the canonical release and recording.
+    // In that path the selected Roon result is only the playback binding, so
+    // walking Roon's album/artist hierarchy adds latency without improving the
+    // stored identity.
+    if (!hints.catalog_profile && albumResultId) {
       try {
         const verified = await this.verifiedRelease(source, albumResultId);
         if (verified) {
@@ -242,7 +257,7 @@ export class PlaylistMetadataEnrichmentService {
       }
     }
 
-    if (!release && typeof this.mediaService.getTrackMetadata === "function") {
+    if (!hints.catalog_profile && !release && typeof this.mediaService.getTrackMetadata === "function") {
       try {
         const detail = await this.mediaService.getTrackMetadata(source.result_id);
         const detailAlbumId = detail.links?.album?.result_id || albumResultId;
@@ -283,7 +298,7 @@ export class PlaylistMetadataEnrichmentService {
     }
 
     const requestedAlbum = result.album || hints.album || null;
-    if (!release && requestedAlbum) {
+    if (!hints.catalog_profile && !release && requestedAlbum) {
       try {
         const search = await this.mediaService.search({
           query: [requestedAlbum, source.album_artist || source.artist || hints.artist].filter(Boolean).join(" "),
@@ -310,7 +325,7 @@ export class PlaylistMetadataEnrichmentService {
       }
     }
 
-    if (!release && source.image_key) {
+    if (!hints.catalog_profile && !release && source.image_key) {
       try {
         const artistHints = Array.from(new Map([
           ...(source.artists || []).map((artist) => artist.title),
@@ -345,7 +360,7 @@ export class PlaylistMetadataEnrichmentService {
       }
     }
 
-    if (!release && requestedAlbum) {
+    if (!hints.catalog_profile && !release && requestedAlbum) {
       conflicts.push({
         type: "release_mismatch",
         message: "The requested album could not be verified against the selected Roon track and artwork."
@@ -360,7 +375,7 @@ export class PlaylistMetadataEnrichmentService {
     const resultIsrc = typeof (result as MediaResult & { isrc?: unknown }).isrc === "string"
       ? String((result as MediaResult & { isrc?: string }).isrc)
       : null;
-    if (this.recordingMetadataService && title && artist) {
+    if (!hints.catalog_profile && this.recordingMetadataService && title && artist) {
       try {
         const resolved = await this.recordingMetadataService.lookup({
           title,
@@ -391,7 +406,7 @@ export class PlaylistMetadataEnrichmentService {
       }
     }
 
-    const audio = audioMetadataFromMedia(result as MediaResult & Record<string, unknown>);
+    let audio = audioMetadataFromMedia(result as MediaResult & Record<string, unknown>);
     if (release) {
       audio.album = release.title;
       audio.album_artist = release.album_artist;
@@ -447,18 +462,41 @@ export class PlaylistMetadataEnrichmentService {
       if (release && external.release_year && !release.release_year) release.release_year = external.release_year;
       if (release && external.original_release_year) release.original_release_year = external.original_release_year;
     }
+    const profile = hints.catalog_profile;
+    const profileRecording = profile?.recording;
+    if (profile && profileRecording) {
+      const canonicalArtist = catalogArtistCredit(profile);
+      recording = {
+        musicbrainz_id: profileRecording.musicbrainz_id,
+        title: profileRecording.title,
+        artist: canonicalArtist,
+        disambiguation: profileRecording.disambiguation,
+        duration_seconds: profileRecording.duration_seconds,
+        isrcs: profileRecording.isrcs,
+        composers: profile.composers,
+        lyricists: profile.lyricists,
+        genres: profile.genres.map((genre) => genre.name),
+        confidence: "high"
+      };
+      audio = applyCatalogMetadata(audio, profile);
+      warnings.push(...profile.warnings);
+    }
 
     const completeness = metadataCompleteness(audio);
     const metadataStatus: PlaylistMetadataStatus = conflicts.length
       ? "conflict"
-      : release && completeness.complete && (Boolean(result.duration_seconds) || Boolean(recording?.duration_seconds))
+      : completeness.complete && (
+          profileRecording
+            ? Boolean(recording?.duration_seconds)
+            : Boolean(release && (result.duration_seconds || recording?.duration_seconds))
+        )
         ? "exact"
         : release || recording
           ? "partial"
           : "unverified";
     audio.metadata_status = metadataStatus;
     audio.field_provenance = provenance;
-    if (!release) warnings.push("release_reference_unavailable");
+    if (!release && !hints.catalog_profile?.release_group) warnings.push("release_reference_unavailable");
     const report: MetadataEnrichmentReport = {
       status: metadataStatus === "exact" ? "completed" : "partial",
       metadata_status: metadataStatus,
@@ -561,7 +599,8 @@ export class PlaylistMetadataEnrichmentService {
       const enriched = await this.enrichResult(result, {
         title: track.identity.title || track.title,
         artist: track.identity.artist || track.artist,
-        album: track.identity.album
+        album: track.identity.album,
+        catalog_profile: catalogProfileFromAudio(track.audio_metadata)
       });
       const replaced = replaceCatalogAudioMetadata(track.audio_metadata, enriched.audio_metadata) || {};
       const completeness = metadataCompleteness(replaced);

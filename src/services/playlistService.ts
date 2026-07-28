@@ -21,6 +21,11 @@ import {
   metadataCompleteness,
   replaceCatalogAudioMetadata
 } from "./playlists/playlistMetadataPolicy";
+import {
+  applyCatalogMetadata,
+  catalogArtistCredit,
+  catalogProfileFromAudio
+} from "./playlists/catalogMetadata";
 
 import {
   CUSTOM_COVER_PREFIX,
@@ -328,6 +333,41 @@ function canonicalText(value: unknown): string {
     .trim();
 }
 
+function playbackVersionFamily(title: unknown, hint: unknown): string {
+  const value = canonicalText([title, hint].filter(Boolean).join(" "));
+  if (/\b(?:live|concert|en vivo|directo)\b/.test(value)) return "live";
+  if (/\b(?:remix|rework)\b/.test(value)) return "remix";
+  if (/\b(?:radio edit|single edit|edit)\b/.test(value)) return "edit";
+  if (/\b(?:acoustic|unplugged)\b/.test(value)) return "acoustic";
+  if (/\b(?:demo|session|take)\b/.test(value)) return "demo";
+  return "studio";
+}
+
+function playbackTitle(value: unknown): string {
+  return canonicalText(value)
+    .replace(/\b(?:remaster(?:ed)?|album version|single version|original version|stereo|mono)\b.*$/g, "")
+    .trim();
+}
+
+function equivalentPlaybackCandidate(track: VirtualPlaylistTrack, result: MediaResult): boolean {
+  const expectedTitle = playbackTitle(track.identity.title || track.title);
+  const actualTitle = playbackTitle(result.title);
+  if (!expectedTitle || expectedTitle !== actualTitle) return false;
+  const expectedArtist = canonicalText(track.identity.artist || track.artist);
+  const actualArtist = canonicalText(result.artist || result.subtitle);
+  if (expectedArtist && actualArtist && !(
+    ` ${actualArtist} `.includes(` ${expectedArtist} `) ||
+    ` ${expectedArtist} `.includes(` ${actualArtist} `)
+  )) return false;
+  if (
+    playbackVersionFamily(track.identity.title || track.title, track.identity.version_hint) !==
+    playbackVersionFamily(result.title, result.version_hint)
+  ) return false;
+  const expectedDuration = optionalFiniteInteger(track.identity.duration_seconds);
+  const actualDuration = optionalFiniteInteger(result.duration_seconds);
+  return expectedDuration === null || actualDuration === null || Math.abs(expectedDuration - actualDuration) <= 4;
+}
+
 function identityFromTrack(input: {
   query: string;
   title?: unknown;
@@ -339,6 +379,8 @@ function identityFromTrack(input: {
 }): TrackIdentityMetadata {
   const audio = input.audioMetadata || {};
   const existing = input.existing || null;
+  const recordingId = catalogProfileFromAudio(audio)?.recording?.musicbrainz_id ||
+    existing?.recording_id || null;
   const title = optionalString(audio.title) || optionalString(input.title) || existing?.title || null;
   const artist = optionalString(audio.artist) || optionalString(input.artist) || existing?.artist || null;
   const album = optionalString(audio.album) || optionalString(input.album) || existing?.album || null;
@@ -354,7 +396,9 @@ function identityFromTrack(input: {
     .filter(Boolean)
     .join(" ")
     .trim() || input.query;
-  const fingerprintMaterial = [isrc || "", title || input.query, artist || "", album || "", duration || "", versionHint || ""]
+  const fingerprintMaterial = recordingId
+    ? `musicbrainz-recording:${canonicalText(recordingId)}`
+    : [isrc || "", title || input.query, artist || "", album || "", duration || "", versionHint || ""]
     .map(canonicalText)
     .join("|");
 
@@ -364,6 +408,7 @@ function identityFromTrack(input: {
     fingerprint: input.preserveExistingFingerprint && optionalString(existing?.fingerprint)
       ? existing!.fingerprint
       : `sha256:${crypto.createHash("sha256").update(fingerprintMaterial).digest("hex")}`,
+    recording_id: recordingId,
     title,
     artist,
     album,
@@ -533,8 +578,21 @@ function normalizeTrackInput(
   const split = splitStoredMetadata(storedMetadata);
   const selectedCandidate = objectValue(split.resolution?.selected_candidate);
   const selectionBackedIdentity = Boolean(selectedCandidate && objectValue(split.resolution?.metadata_enrichment));
-  storedMetadata.identity = identityFromTrack(selectionBackedIdentity
+  const catalogProfile = catalogProfileFromAudio(split.audio_metadata);
+  if (catalogProfile?.recording) {
+    storedMetadata.audio_metadata = applyCatalogMetadata(split.audio_metadata, catalogProfile);
+  }
+  storedMetadata.identity = identityFromTrack(catalogProfile?.recording
     ? {
+        query,
+        title: catalogProfile.recording.title,
+        artist: catalogArtistCredit(catalogProfile),
+        album: catalogProfile.release_group?.title,
+        audioMetadata: storedMetadata.audio_metadata as AudioMetadata,
+        existing: split.identity
+      }
+    : selectionBackedIdentity
+      ? {
         query,
         title: selectedCandidate?.title,
         artist: selectedCandidate?.artist,
@@ -542,7 +600,7 @@ function normalizeTrackInput(
         audioMetadata: audioMetadataFromMedia(selectedCandidate as MediaResult & Record<string, unknown>),
         existing: null
       }
-    : {
+      : {
         query,
         title,
         artist,
@@ -1544,10 +1602,21 @@ export class PlaylistService {
     const currentTrack = this.mapTrack(row);
     const metadata = parseMetadata(row.metadata_json) || {};
     const split = splitStoredMetadata(metadata);
-    const audioMetadata = replaceCatalogAudioMetadata(currentTrack.audio_metadata, observed);
-    // Enrichment improves descriptive fields but must not redefine the durable
-    // recording identity chosen by the resolver or the user.
-    const identity = currentTrack.identity;
+    let audioMetadata = replaceCatalogAudioMetadata(currentTrack.audio_metadata, observed);
+    const catalogProfile = catalogProfileFromAudio(observed);
+    if (catalogProfile?.recording) {
+      audioMetadata = applyCatalogMetadata(audioMetadata, catalogProfile);
+    }
+    const identity = catalogProfile?.recording
+      ? identityFromTrack({
+          query: currentTrack.query,
+          title: catalogProfile.recording.title,
+          artist: catalogArtistCredit(catalogProfile),
+          album: catalogProfile.release_group?.title,
+          audioMetadata,
+          existing: currentTrack.identity
+        })
+      : currentTrack.identity;
     const resolution = {
       ...(split.resolution || {}),
       metadata_enrichment: enrichment
@@ -1558,7 +1627,8 @@ export class PlaylistService {
       : audioMetadata;
     this.database.db.prepare(
       `UPDATE virtual_playlist_tracks
-       SET title = :title,
+       SET query = :query,
+           title = :title,
            artist = :artist,
            album = :album,
            metadata_json = :metadata_json
@@ -1566,6 +1636,7 @@ export class PlaylistService {
     ).run({
       playlist_id: playlistId,
       track_id: trackId,
+      query: catalogProfile?.recording ? identity.canonical_query : row.query,
       title: optionalString(nextAudio?.title) || row.title,
       artist: optionalString(nextAudio?.artist) || row.artist,
       // Album is a replaceable release observation. Clear a legacy value when
@@ -2043,12 +2114,23 @@ export class PlaylistService {
     const metadata = parseMetadata(row.metadata_json);
     const split = splitStoredMetadata(metadata);
     const imageKey = imageKeyFromMetadata(metadata);
+    const catalogProfile = catalogProfileFromAudio(split.audio_metadata);
     const hasStoredIdentity = Boolean(split.identity?.version === 1 && optionalString(split.identity?.fingerprint));
     const selectedCandidate = objectValue(split.resolution?.selected_candidate);
     const selectionBackedIdentity = Boolean(
       hasStoredIdentity && selectedCandidate && objectValue(split.resolution?.metadata_enrichment)
     );
-    const identity = selectionBackedIdentity
+    const identity = catalogProfile?.recording
+      ? identityFromTrack({
+          query: row.query,
+          title: catalogProfile.recording.title,
+          artist: catalogArtistCredit(catalogProfile),
+          album: catalogProfile.release_group?.title,
+          audioMetadata: split.audio_metadata,
+          existing: split.identity,
+          preserveExistingFingerprint: true
+        })
+      : selectionBackedIdentity
       ? {
           ...identityFromTrack({
             query: row.query,
@@ -2232,7 +2314,13 @@ export class PlaylistService {
         results: match.candidates.length
       });
 
-      const best = match.selected || match.candidates[0];
+      const equivalent = match.status === "ambiguous" &&
+        Boolean(catalogProfileFromAudio(storedTrack.audio_metadata)?.recording)
+        ? match.candidates.find((candidate) =>
+            equivalentPlaybackCandidate(storedTrack, candidate.result)
+          )
+        : null;
+      const best = match.selected || equivalent || match.candidates[0];
       if (!best) {
         const unresolved = this.updateTrackResolution(row, {
           status: "missing",
@@ -2247,8 +2335,8 @@ export class PlaylistService {
       }
 
       const roonItemKey = best.result.roon_item_key || null;
-      const accepted = match.status === "resolved";
-      const status: VirtualPlaylistResolutionStatus = match.status;
+      const accepted = match.status === "resolved" || Boolean(equivalent);
+      const status: VirtualPlaylistResolutionStatus = accepted ? "resolved" : match.status;
       const stored = this.updateTrackResolution(row, {
         status,
         query,
@@ -2257,7 +2345,8 @@ export class PlaylistService {
         reason: match.reason,
         result: best.result,
         candidates: match.candidates.map((candidate) => candidate.result),
-        selectionOrigin: "automatic"
+        selectionOrigin: "automatic",
+        preserveCatalogMetadata: Boolean(catalogProfileFromAudio(storedTrack.audio_metadata))
       });
 
       const logMeta = {
@@ -2472,6 +2561,14 @@ export class PlaylistService {
       sourcePreference: sourcePreference || "streaming_first"
     });
     if (match.status === "ambiguous") {
+      const equivalent = catalogProfileFromAudio(track.audio_metadata)?.recording
+        ? match.candidates.find((candidate) =>
+            equivalentPlaybackCandidate(track, candidate.result)
+          )
+        : null;
+      if (equivalent) {
+        return { result: equivalent.result, score: equivalent.identity_score };
+      }
       throw new ApiError(
         "PLAYLIST_TRACK_AMBIGUOUS",
         "Several Roon recordings match the stored identity too closely",
@@ -2582,22 +2679,6 @@ export class PlaylistService {
       });
       return true;
     } catch (error) {
-      if (
-        error instanceof ApiError &&
-        (error.code === "PLAYLIST_TRACK_AMBIGUOUS" ||
-          error.code === "PLAYLIST_TRACK_NOT_CONFIDENT" ||
-          error.code === "SEARCH_NO_RESULTS")
-      ) {
-        const row = this.getTrackRowOrThrow(playlistId, track.track_id);
-        this.updateTrackResolution(row, {
-          status: error.code === "PLAYLIST_TRACK_AMBIGUOUS" ? "ambiguous" : "missing",
-          query: track.query,
-          roonItemKey: null,
-          score: typeof error.details.best_score === "number" ? error.details.best_score : null,
-          reason: error.message
-        });
-        this.touchPlaylist(playlistId);
-      }
       if (error instanceof ApiError) {
         failures.push({
           track_id: track.track_id,

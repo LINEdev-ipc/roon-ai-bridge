@@ -15,6 +15,10 @@ import {
 } from "./trackCatalogService";
 import type { AudioMetadata } from "./playlists/playlistContracts";
 import {
+  applyCatalogMetadata,
+  catalogArtistCredit
+} from "./playlists/catalogMetadata";
+import {
   RankedTrackCandidate,
   TrackResolution,
   TrackResolutionService
@@ -144,6 +148,8 @@ type BuildSession = {
   purpose: PlaylistBuildPurpose;
   intent: string | null;
   expiryDays: number | null;
+  batchResults: Map<string, PlaylistBuildResult>;
+  finalized: boolean;
 };
 
 export type PlaylistBuildResult = {
@@ -168,7 +174,7 @@ export type PlaylistBuildResult = {
   };
 };
 
-const MAX_ADDITIONAL_ROUNDS = 2;
+const MAX_ADDITIONAL_ROUNDS = 3;
 const SESSION_TTL_MS = 30 * 60 * 1000;
 const RESOLUTION_CONCURRENCY = 3;
 
@@ -186,6 +192,10 @@ function optionalInteger(value: unknown): number | null {
   return typeof value === "number" && Number.isFinite(value)
     ? Math.floor(value)
     : null;
+}
+
+function buildBatchKey(tracks: unknown[]): string {
+  return crypto.createHash("sha256").update(JSON.stringify(tracks)).digest("hex");
 }
 
 function normalize(value: unknown): string {
@@ -450,6 +460,8 @@ export class PlaylistBuildService {
   async build(request: PlaylistBuildRequest): Promise<PlaylistBuildResult> {
     this.purgeExpiredSessions();
     const buildId = optionalString(request.build_id);
+    const rawTracks = Array.isArray(request.tracks) ? request.tracks : [];
+    const batchKey = buildBatchKey(rawTracks);
     const requestedPurpose: PlaylistBuildPurpose = request.purpose === "temporary_playlist"
       ? "temporary_playlist"
       : "saved_playlist";
@@ -461,10 +473,26 @@ export class PlaylistBuildService {
           build_id: buildId
         });
       }
-      if (existing.round >= MAX_ADDITIONAL_ROUNDS) {
-        throw new ApiError("PLAYLIST_BUILD_FINALIZED", "Playlist build already used both replenishment rounds", {
+      const replay = existing.batchResults.get(batchKey);
+      if (replay) {
+        this.logger?.info("Playlist preflight idempotent replay", {
+          buildId,
+          round: replay.round,
+          phase: replay.phase
+        });
+        return replay;
+      }
+      if (existing.finalized) {
+        throw new ApiError("PLAYLIST_BUILD_FINALIZED", "Playlist build was already finalized", {
           build_id: buildId
         });
+      }
+      if (existing.round >= MAX_ADDITIONAL_ROUNDS) {
+        throw new ApiError(
+          "PLAYLIST_BUILD_INCOMPLETE",
+          "Playlist build already used all three replenishment rounds without reaching the requested size",
+          { build_id: buildId }
+        );
       }
       if (existing.purpose !== requestedPurpose) {
         throw new ApiError("PLAYLIST_BUILD_PURPOSE_MISMATCH", "Playlist build belongs to a different workflow", {
@@ -513,12 +541,13 @@ export class PlaylistBuildService {
         updatedAt: Date.now(),
         purpose: requestedPurpose,
         intent: optionalString(request.intent),
-        expiryDays
+        expiryDays,
+        batchResults: new Map(),
+        finalized: false
       };
       if (desiredCount !== null) this.sessions.set(session.buildId, session);
     }
 
-    const rawTracks = Array.isArray(request.tracks) ? request.tracks : [];
     const candidates = rawTracks.map((track, index) => normalizeCandidate(track, session.round, index));
     candidates.sort((left, right) =>
       (left.role === "primary" ? 0 : 1) - (right.role === "primary" ? 0 : 1)
@@ -532,8 +561,22 @@ export class PlaylistBuildService {
       session.noAdjacentSameArtist
     );
     const missing = target === null ? null : Math.max(0, target - scheduled.selected.length);
-    const shouldFinalize = target === null || missing === 0 || session.round >= MAX_ADDITIONAL_ROUNDS;
+    const shouldFinalize = target === null || missing === 0;
     if (!shouldFinalize) {
+      if (session.round >= MAX_ADDITIONAL_ROUNDS) {
+        this.sessions.set(session.buildId, session);
+        throw new ApiError(
+          "PLAYLIST_BUILD_INCOMPLETE",
+          "Playlist could not reach the requested size with the submitted candidates",
+          {
+            build_id: session.buildId,
+            desired_count: target,
+            accepted_count: scheduled.selected.length,
+            missing_count: missing,
+            rejected_count: session.rejected.length
+          }
+        );
+      }
       this.sessions.set(session.buildId, session);
       this.logger?.info("Playlist preflight needs replenishment", {
         buildId: session.buildId,
@@ -543,7 +586,9 @@ export class PlaylistBuildService {
         missingCount: missing,
         rejectedCount: session.rejected.length
       });
-      return this.result(session, "needs_candidates", null, scheduled, missing);
+      const pending = this.result(session, "needs_candidates", null, scheduled, missing);
+      session.batchResults.set(batchKey, pending);
+      return pending;
     }
 
     const preparedTracks = scheduled.selected.map((candidate) => candidate.storedTrack);
@@ -561,7 +606,7 @@ export class PlaylistBuildService {
           description: session.description === null ? undefined : session.description,
           tracks: preparedTracks
         });
-    this.sessions.delete(session.buildId);
+    session.finalized = true;
     this.logger?.info("Playlist preflight finalized", {
       buildId: session.buildId,
       playlistId: playlist.playlist_id,
@@ -571,7 +616,10 @@ export class PlaylistBuildService {
       missingCount: missing,
       rejectedCount: session.rejected.length
     });
-    return this.result(session, "finalized", playlist, scheduled, missing);
+    const finalized = this.result(session, "finalized", playlist, scheduled, missing);
+    session.batchResults.set(batchKey, finalized);
+    if (session.desiredCount) this.sessions.set(session.buildId, session);
+    return finalized;
   }
 
   private async processCandidates(session: BuildSession, candidates: NormalizedCandidate[]): Promise<void> {
@@ -689,7 +737,7 @@ export class PlaylistBuildService {
       count: 25,
       sourcePreference: this.sourcePreference
     });
-    let selected = await this.selectStrictCandidate(bindingCandidate, resolution);
+    let selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
     let stage = "title_artist";
     if (!selected && candidate.albumHint) {
       stage = "title_artist_album";
@@ -704,7 +752,7 @@ export class PlaylistBuildService {
         sourcePreference: this.sourcePreference,
         includeExactQuery: false
       });
-      selected = await this.selectStrictCandidate(bindingCandidate, resolution);
+      selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
     }
     if (!selected) {
       const needsEnrichment = resolution.candidates.some((entry) => baseGate(bindingCandidate, entry.result));
@@ -719,39 +767,10 @@ export class PlaylistBuildService {
       };
     }
 
-    const hydrated = await this.hydrate(selected.result, candidate, resolution.queries);
+    const hydrated = await this.hydrate(selected.result, candidate, resolution.queries, catalogProfile);
     const result = hydrated.result;
     if (catalogProfile?.recording && this.trackCatalogService) {
-      hydrated.audioMetadata.title = catalogProfile.recording.title;
-      hydrated.audioMetadata.artist = canonicalArtist;
-      hydrated.audioMetadata.album_artist = canonicalArtist;
-      if (catalogProfile.release_group?.title) {
-        hydrated.audioMetadata.album = catalogProfile.release_group.title;
-      }
-      hydrated.audioMetadata.recording = {
-        musicbrainz_id: catalogProfile.recording.musicbrainz_id,
-        title: catalogProfile.recording.title,
-        artist: canonicalArtist,
-        artist_credit: catalogProfile.recording.artist_credit,
-        disambiguation: catalogProfile.recording.disambiguation,
-        duration_seconds: catalogProfile.recording.duration_seconds,
-        duration_source: catalogProfile.recording.duration_source,
-        isrcs: catalogProfile.recording.isrcs,
-        composers: catalogProfile.composers,
-        lyricists: catalogProfile.lyricists,
-        genres: catalogProfile.genres.map((genre) => genre.name),
-        confidence: "high"
-      };
-      hydrated.audioMetadata.composers = catalogProfile.composers;
-      hydrated.audioMetadata.composer = catalogProfile.composers.join(", ");
-      hydrated.audioMetadata.lyricists = catalogProfile.lyricists;
-      hydrated.audioMetadata.genres = catalogProfile.genres.map((genre) => genre.name);
-      hydrated.audioMetadata.genre = catalogProfile.genres.map((genre) => genre.name).join(", ");
-      hydrated.audioMetadata.isrcs = catalogProfile.recording.isrcs;
-      if (catalogProfile.recording.isrcs[0]) {
-        hydrated.audioMetadata.isrc = catalogProfile.recording.isrcs[0];
-      }
-      hydrated.audioMetadata.catalog = catalogProfile;
+      hydrated.audioMetadata = applyCatalogMetadata(hydrated.audioMetadata, catalogProfile);
       hydrated.metadataEnrichment.catalog = catalogProfile;
       const binding = this.trackCatalogService.bind(
         catalogProfile.recording.musicbrainz_id,
@@ -793,7 +812,8 @@ export class PlaylistBuildService {
 
   private async selectStrictCandidate(
     input: NormalizedCandidate,
-    resolution: TrackResolution
+    resolution: TrackResolution,
+    catalogProfile: TrackCatalogProfile | null = null
   ): Promise<RankedTrackCandidate | null> {
     const baseCandidates = resolution.candidates.filter((candidate) => baseGate(input, candidate.result));
     if (!baseCandidates.length) return null;
@@ -808,7 +828,7 @@ export class PlaylistBuildService {
 
     const hydrated = (await Promise.all(baseCandidates.slice(0, 3).map(async (candidate) => ({
       candidate,
-      hydrated: await this.hydrate(candidate.result, input, resolution.queries)
+      hydrated: await this.hydrate(candidate.result, input, resolution.queries, catalogProfile)
     })))).filter((entry) => hardGate(input, entry.hydrated.result));
     if (hydrated.length === 1) return hydrated[0].candidate;
     if (!hydrated.length) return null;
@@ -832,7 +852,8 @@ export class PlaylistBuildService {
   private async hydrate(
     result: MediaResult,
     input: NormalizedCandidate,
-    queries: string[]
+    queries: string[],
+    catalogProfile: TrackCatalogProfile | null = null
   ): Promise<{
     result: MediaResult;
     observation: RoonObservation;
@@ -842,7 +863,8 @@ export class PlaylistBuildService {
     const enriched = await this.metadataService.enrichResult(result, {
       title: input.title,
       artist: input.artist,
-      album: input.albumHint
+      album: input.albumHint,
+      catalog_profile: catalogProfile
     });
     const hydrated = enriched.result;
     const albumResultId = enriched.report.album_result_id;
@@ -876,11 +898,8 @@ export class PlaylistBuildService {
     metadataEnrichment: Record<string, unknown>,
     catalogProfile: TrackCatalogProfile | null
   ): Record<string, unknown> {
-    const canonicalArtist = catalogProfile?.recording?.artist_credit.length
-      ? catalogProfile.recording.artist_credit
-        .map((credit) => `${credit.name}${credit.join_phrase}`)
-        .join("")
-      : result.artist || result.subtitle || input.artist;
+    const canonicalArtist = catalogArtistCredit(catalogProfile)
+      || result.artist || result.subtitle || input.artist;
     const canonicalTitle = catalogProfile?.recording?.title || result.title;
     const canonicalAlbum = catalogProfile?.release_group?.title || result.album;
     const canonicalQuery = `${canonicalTitle} ${canonicalArtist}`;
