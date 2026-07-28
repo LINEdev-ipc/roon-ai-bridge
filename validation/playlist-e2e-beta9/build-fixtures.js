@@ -57,7 +57,8 @@ const ROCK = new Set([
   "vampire weekend", "yeah yeah yeahs", "battles", "bon iver", "cat power",
   "deafheaven", "elliott smith", "jason isbell", "king gizzard the lizard wizard",
   "korn", "leonard cohen", "patti smith", "paul mccartney", "phoebe bridgers",
-  "sufjan stevens", "tame impala", "waxahatchee", "wolf alice", "ryan adams"
+  "sufjan stevens", "tame impala", "waxahatchee", "wolf alice", "ryan adams",
+  "olivia rodrigo", "amy winehouse"
 ].map(normalize));
 
 const INTERNATIONAL = new Set([
@@ -86,6 +87,9 @@ const CALM = new Set([
 ]);
 
 const METAL = /\b(?:metallica|black sabbath|dream theater|slayer|iron maiden|megadeth|judas priest)\b/i;
+const STANDARD = (entry) =>
+  entry.source_category === "default" &&
+  (entry.recording_intent || "standard") === "standard";
 
 const specs = [
   {
@@ -93,36 +97,42 @@ const specs = [
     prompt: "Crea una playlist de 100 canciones de electrónica con bajos potentes.",
     complexity: "standard",
     multiplier: 1.25,
-    filter: (entry) => ELECTRONIC.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && ELECTRONIC.has(normalize(entry.artist)),
+    fallbackFilter: (entry) => ELECTRONIC.has(normalize(entry.artist))
   },
   {
     id: "P02",
     prompt: "Haz una playlist de 100 canciones para conducir de noche, con mucha energía y sensación de película de acción.",
     complexity: "constrained",
     multiplier: 1.4,
-    filter: (entry) => ACTION.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && ACTION.has(normalize(entry.artist)),
+    fallbackFilter: (entry) => ACTION.has(normalize(entry.artist))
   },
   {
     id: "P03",
     prompt: "Prepara una playlist de 100 canciones para hacer HIIT en casa mezclando géneros, pero sin metal.",
     complexity: "constrained",
     multiplier: 1.4,
-    filter: (entry) => year(entry.release_date) >= 1990 && !METAL.test(entry.artist)
+    filter: (entry) => STANDARD(entry) && year(entry.release_date) >= 1990 && !METAL.test(entry.artist),
+    fallbackFilter: (entry) => year(entry.release_date) >= 1990 && !METAL.test(entry.artist)
   },
   {
     id: "P04",
     prompt: "Haz una playlist de 100 canciones de rock de los últimos 20 años.",
     complexity: "constrained",
     multiplier: 1.4,
+    maxPerArtist: 10,
     release_year_from: 2006,
-    filter: (entry) => year(entry.release_date) >= 2006 && ROCK.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && year(entry.release_date) >= 2006 && ROCK.has(normalize(entry.artist)),
+    fallbackFilter: (entry) => year(entry.release_date) >= 2006 && ROCK.has(normalize(entry.artist))
   },
   {
     id: "P05",
     prompt: "Crea una playlist de 100 canciones internacionales en distintos idiomas para descubrir música de otros países.",
     complexity: "constrained",
     multiplier: 1.4,
-    filter: (entry) => INTERNATIONAL.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && INTERNATIONAL.has(normalize(entry.artist)),
+    fallbackFilter: (entry) => INTERNATIONAL.has(normalize(entry.artist))
   },
   {
     id: "P06",
@@ -160,17 +170,27 @@ const specs = [
     prompt: "Haz una playlist de 100 canciones instrumentales y ambientales para trabajar concentrado.",
     complexity: "constrained",
     multiplier: 1.4,
-    filter: (entry) => CALM.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && CALM.has(normalize(entry.artist)),
+    fallbackFilter: (entry) => CALM.has(normalize(entry.artist))
   }
 ];
 
 function select(pool, spec) {
   const needed = Math.ceil(DESIRED * spec.multiplier);
-  const candidates = pool
+  const preferred = pool
     .filter(spec.filter)
     .sort((left, right) =>
       hash(spec.id, left.case_id).localeCompare(hash(spec.id, right.case_id))
     );
+  const fallback = spec.fallbackFilter
+    ? pool
+      .filter((entry) => !spec.filter(entry) && spec.fallbackFilter(entry))
+      .sort((left, right) =>
+        hash(`${spec.id}:fallback`, left.case_id)
+          .localeCompare(hash(`${spec.id}:fallback`, right.case_id))
+      )
+    : [];
+  const candidates = [...preferred, ...fallback];
   const selected = [];
   const recordings = new Set();
   const artistCounts = new Map();
@@ -178,7 +198,7 @@ function select(pool, spec) {
     if (recordings.has(entry.recording_id)) continue;
     const artistKey = normalize(entry.artist);
     const artistCount = artistCounts.get(artistKey) || 0;
-    if (artistCount >= 8) continue;
+    if (artistCount >= (spec.maxPerArtist || 8)) continue;
     recordings.add(entry.recording_id);
     artistCounts.set(artistKey, artistCount + 1);
     selected.push(entry);

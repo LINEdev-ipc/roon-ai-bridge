@@ -101,6 +101,7 @@ type ResolveCatalogInput = {
   isrc?: string | null;
   duration_seconds?: number | null;
   release_year_observation?: number | null;
+  metadata_depth?: "identity" | "full";
   release_year?: number | null;
   track_number?: number | null;
   disc_number?: number | null;
@@ -222,6 +223,10 @@ export class TrackCatalogService {
       resolution = await this.recordingMetadataService.lookup(input);
     } catch (error) {
       const reason = error instanceof Error ? error.message : String(error);
+      const providerRequests = Number(
+        (error as Error & { musicbrainz_provider_requests?: number })
+          ?.musicbrainz_provider_requests || 0
+      );
       return {
         resolution: {
           status: "not_found",
@@ -232,7 +237,7 @@ export class TrackCatalogService {
             cache_hit: false,
             cache_layer: null,
             elapsed_ms: 0,
-            provider_requests: 0,
+            provider_requests: providerRequests,
             search_attempts: [],
             candidate_counts: { returned: 0, accepted: 0, rejected: 0 },
             rejected_candidates: [],
@@ -251,10 +256,19 @@ export class TrackCatalogService {
     }
 
     const metadata = resolution.metadata;
+    const existingProfile = input.metadata_depth === "identity"
+      ? this.get(metadata.recording_id)
+      : null;
+    if (
+      existingProfile?.status === "exact" &&
+      !(existingProfile.warnings || []).includes("metadata_enrichment_pending")
+    ) {
+      return { resolution, profile: existingProfile };
+    }
     const selected = this.selectRelease(metadata, input);
     let release: ReleaseTrackCatalogMetadata | null = null;
     const warnings = [...resolution.trace.accepted_warnings];
-    if (selected.edition) {
+    if (selected.edition && input.metadata_depth !== "identity") {
       try {
         const exact = await this.recordingMetadataService.lookupReleaseTrack(
           selected.edition.release_id,

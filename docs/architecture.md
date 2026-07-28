@@ -89,12 +89,16 @@ stable facades while pure contracts and policies move into focused modules.
    transport when `pnpm run mcp` is invoked.
 8. `POST /mcp` and `GET /mcp` expose the 36 canonical intents and six focused
    widget entry points over Streamable HTTP.
-9. New playlist candidates resolve a canonical MusicBrainz recording before a
-   strict Roon search. Catalog metadata and the observed playable Roon binding
-   remain separate.
-10. Typed media search creates short-lived references and re-resolves selected
+9. New playlist candidates resolve canonical MusicBrainz recording identity
+   while speculative Roon discovery runs in parallel. Equivalent country,
+   service and compilation editions can share a binding when title, credits,
+   version family and canonical ISRC or duration agree.
+10. The playable playlist is saved after identity and binding validation.
+    Work credits, genres and other full MusicBrainz metadata are then
+    retrieved in the background and merged into the saved tracks.
+11. Typed media search creates short-lived references and re-resolves selected
    media in a fresh Roon Browse session before acting.
-11. On SIGTERM or SIGINT, both HTTP listeners stop accepting work before Roon
+12. On SIGTERM or SIGINT, both HTTP listeners stop accepting work before Roon
     discovery, scheduled checks, logs and SQLite are closed in order.
 
 ## Persistence

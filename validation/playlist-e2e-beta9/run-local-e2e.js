@@ -44,7 +44,7 @@ async function waitForRoon(client, timeoutMs) {
     await wait(5000);
   }
   throw new Error(
-    "The isolated RoonIA Beta 9 Validation extension was not authorized or browse did not become ready"
+    "The isolated RoonIA playlist validation extension was not authorized or browse did not become ready"
   );
 }
 
@@ -87,7 +87,7 @@ async function main() {
   const state = fs.existsSync(STATE_FILE)
     ? readJson(STATE_FILE)
     : {
-        version: "0.20.0-beta.9",
+        version: "0.20.0-beta.10",
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
         extension: {
@@ -96,12 +96,14 @@ async function main() {
         },
         results: []
       };
+  state.version = "0.20.0-beta.10";
   const base = loadConfig();
   const config = {
     ...base,
     dataDir: DATA,
     enablePortal: false,
     enableMcp: false,
+    enableBrowse: true,
     enableAuth: false,
     apiToken: null,
     portalAdminToken: null,
@@ -167,7 +169,11 @@ async function main() {
         `Starting ${item.prompt_id}: ${item.prompt} (${item.candidate_count} candidates)\n`
       );
       try {
-        const result = await runtime.context.playlistBuildService.build(fixture.arguments);
+        const result = await runtime.context.playlistBuildService.build({
+          ...fixture.arguments,
+          diagnostics: true,
+          enqueue_metadata_enrichment: false
+        });
         const record = {
           prompt_id: item.prompt_id,
           prompt: item.prompt,

@@ -65,6 +65,8 @@ export type PlaylistBuildRequest = {
   purpose?: unknown;
   intent?: unknown;
   expiry_days?: unknown;
+  diagnostics?: unknown;
+  enqueue_metadata_enrichment?: unknown;
 };
 
 type PlaylistBuildPurpose = "saved_playlist" | "temporary_playlist";
@@ -153,6 +155,8 @@ type BuildSession = {
   intent: string | null;
   expiryDays: number | null;
   candidateMetrics: CandidateResolutionMetrics[];
+  diagnostics: boolean;
+  enqueueMetadataEnrichment: boolean;
 };
 
 type CandidateResolutionMetrics = {
@@ -221,6 +225,14 @@ export type PlaylistBuildResult = {
       supplied_candidates: number;
       sufficient: boolean | null;
     };
+    metadata_enrichment: {
+      mode: "background" | "disabled";
+      queued_tracks: number;
+    };
+  };
+  diagnostics?: {
+    rejected_candidates: RejectedCandidate[];
+    candidate_metrics: CandidateResolutionMetrics[];
   };
 };
 
@@ -562,7 +574,9 @@ export class PlaylistBuildService {
       purpose: requestedPurpose,
       intent: optionalString(request.intent),
       expiryDays,
-      candidateMetrics: []
+      candidateMetrics: [],
+      diagnostics: request.diagnostics === true,
+      enqueueMetadataEnrichment: request.enqueue_metadata_enrichment !== false
     };
     for (const [field, value] of [
       ["release_year_from", session.releaseYearFrom],
@@ -631,7 +645,80 @@ export class PlaylistBuildService {
       rejectedCount: session.rejected.length,
       elapsedMs: Date.now() - session.startedAt
     });
+    const enrichmentCandidates = scheduled.selected.filter((candidate) =>
+      candidate.catalogProfile?.warnings.includes("metadata_enrichment_pending")
+    );
+    if (session.enqueueMetadataEnrichment && enrichmentCandidates.length) {
+      this.queueMetadataEnrichment(playlist, scheduled.selected);
+    }
     return this.result(session, "finalized", playlist, scheduled, missing);
+  }
+
+  private queueMetadataEnrichment(
+    playlist: VirtualPlaylist,
+    candidates: PreparedCandidate[]
+  ): void {
+    if (!this.trackCatalogService) return;
+    const queued = candidates.flatMap((candidate, position) => {
+      if (!candidate.catalogProfile?.warnings.includes("metadata_enrichment_pending")) return [];
+      const track = playlist.tracks[position];
+      return track ? [{ candidate, trackId: track.track_id }] : [];
+    });
+    setImmediate(() => {
+      void this.enrichPlaylistMetadata(playlist.playlist_id, queued);
+    });
+  }
+
+  private async enrichPlaylistMetadata(
+    playlistId: string,
+    queued: Array<{ candidate: PreparedCandidate; trackId: string }>
+  ): Promise<void> {
+    if (!this.trackCatalogService) return;
+    for (const { candidate, trackId } of queued) {
+      const recordingId = candidate.catalogProfile?.recording?.musicbrainz_id;
+      if (!recordingId) continue;
+      try {
+        const full = await this.trackCatalogService.resolve({
+          recording_id: recordingId,
+          title: candidate.catalogProfile?.recording?.title || candidate.input.title,
+          artist: candidate.catalogProfile?.recording?.artist_credit[0]?.name
+            || candidate.input.artist,
+          album_observation: candidate.input.albumHint,
+          release_year_observation: candidate.input.releaseYearHint,
+          version_hint: versionHint(candidate.input.recordingIntent),
+          metadata_depth: "full"
+        });
+        if (full.profile.status !== "exact" || !full.profile.recording) continue;
+        const playlist = this.playlistService.getPlaylist(playlistId);
+        const track = playlist.tracks.find((entry) => entry.track_id === trackId);
+        if (!track) continue;
+        const resolution = objectValue(track.resolution) || {};
+        const metadataEnrichment = objectValue(resolution.metadata_enrichment) || {};
+        this.playlistService.updateTrack(playlistId, trackId, {
+          audio_metadata: applyCatalogMetadata(track.audio_metadata, full.profile),
+          resolution: {
+            ...resolution,
+            catalog_identity: full.profile,
+            metadata_enrichment: {
+              ...metadataEnrichment,
+              catalog: full.profile
+            }
+          }
+        });
+        this.logger?.info("Playlist track metadata enrichment completed", {
+          playlistId,
+          trackId,
+          recordingId
+        });
+      } catch (error) {
+        this.logger?.warn("Playlist track metadata enrichment failed", {
+          playlistId,
+          trackId,
+          recordingId,
+          error: error instanceof Error ? error.message : String(error)
+        });
+      }
+    }
   }
 
   private async processCandidates(session: BuildSession, candidates: NormalizedCandidate[]): Promise<void> {
@@ -791,7 +878,8 @@ export class PlaylistBuildService {
           artist: candidate.requiredCredits[0]?.name || candidate.artist,
           album_observation: candidate.albumHint,
           release_year_observation: candidate.releaseYearHint,
-          version_hint: versionHint(candidate.recordingIntent)
+          version_hint: versionHint(candidate.recordingIntent),
+          metadata_depth: "identity"
         }).then((catalog) => {
           catalogMs = Date.now() - catalogStartedAt;
           const trace = catalog.resolution?.trace;
@@ -989,6 +1077,35 @@ export class PlaylistBuildService {
       ? hydrated.filter((entry) => entry.hydrated.result.release_year === input.releaseYearHint)
       : [];
     if (yearMatches.length === 1) return yearMatches[0].candidate;
+    const canonicalIsrcs = new Set(
+      (catalogProfile?.recording?.isrcs || []).map(normalize).filter(Boolean)
+    );
+    const isrcMatches = canonicalIsrcs.size
+      ? hydrated.filter((entry) => {
+          const observed = entry.hydrated.result as MediaResult & {
+            isrc?: string | null;
+            isrcs?: string[];
+          };
+          return [observed.isrc, ...(observed.isrcs || [])]
+            .map(normalize)
+            .some((isrc) => canonicalIsrcs.has(isrc));
+        })
+      : [];
+    if (isrcMatches.length) return isrcMatches[0].candidate;
+    const canonicalDuration = catalogProfile?.recording?.duration_seconds || null;
+    const durationMatches = canonicalDuration
+      ? hydrated.filter((entry) =>
+          entry.hydrated.result.duration_seconds !== null &&
+          entry.hydrated.result.duration_seconds !== undefined &&
+          Math.abs(entry.hydrated.result.duration_seconds - canonicalDuration) <= 3
+        )
+      : [];
+    if (durationMatches.length) {
+      // Roon may expose the same MusicBrainz recording through several country,
+      // service or compilation editions. Once title, credits, version family
+      // and canonical duration agree, edition differences are not ambiguity.
+      return durationMatches[0].candidate;
+    }
     const observedKeys = hydrated
       .map((entry) => observedRecordingKey(entry.hydrated.result))
       .filter((key): key is string => Boolean(key));
@@ -1240,8 +1357,20 @@ export class PlaylistBuildService {
           sufficient: recommendedCandidates === null
             ? null
             : session.suppliedCandidates >= recommendedCandidates
+        },
+        metadata_enrichment: {
+          mode: session.enqueueMetadataEnrichment ? "background" : "disabled",
+          queued_tracks: scheduled.selected.filter((candidate) =>
+            candidate.catalogProfile?.warnings.includes("metadata_enrichment_pending")
+          ).length
         }
-      }
+      },
+      ...(session.diagnostics ? {
+        diagnostics: {
+          rejected_candidates: session.rejected,
+          candidate_metrics: session.candidateMetrics
+        }
+      } : {})
     };
   }
 }

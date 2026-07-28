@@ -129,6 +129,135 @@ test("MusicBrainz retries bounded 503 responses before reporting a result", asyn
   assert.deepEqual(waits, [0]);
 });
 
+test("MusicBrainz retries transient network failures before reporting a result", async () => {
+  let requests = 0;
+  const waits = [];
+  const service = new RecordingMetadataService(async () => {
+    requests += 1;
+    if (requests === 1) {
+      const error = new Error("request aborted");
+      error.name = "AbortError";
+      throw error;
+    }
+    return new Response(JSON.stringify({ recordings: [] }), { status: 200 });
+  }, {
+    minRequestIntervalMs: 0,
+    maxRetries: 2,
+    retryBaseMs: 0,
+    sleep: async (milliseconds) => { waits.push(milliseconds); }
+  });
+
+  const result = await service.lookup({ title: "Unknown", artist: "Unknown" });
+  assert.equal(result.status, "not_found");
+  assert.equal(requests, 2);
+  assert.deepEqual(waits, [0]);
+  assert.equal(result.trace.provider_requests, 2);
+});
+
+test("MusicBrainz limits repeated network failures so one lookup cannot block the playlist queue", async () => {
+  let requests = 0;
+  const service = new RecordingMetadataService(async () => {
+    requests += 1;
+    throw new Error("network unavailable");
+  }, {
+    minRequestIntervalMs: 0,
+    maxRetries: 5,
+    retryBaseMs: 0,
+    sleep: async () => undefined
+  });
+
+  await assert.rejects(
+    service.lookup({ title: "Unknown", artist: "Unknown" }),
+    (error) => /network unavailable/.test(error.message)
+      && error.musicbrainz_provider_requests === 2
+  );
+  assert.equal(requests, 2);
+});
+
+test("identity metadata depth resolves from one search request and defers full enrichment", async () => {
+  let requests = 0;
+  const service = new RecordingMetadataService(async (url) => {
+    requests += 1;
+    assert.equal(url.pathname, "/ws/2/recording");
+    return new Response(JSON.stringify({ recordings: [{
+      id: "identity-recording",
+      title: "Identity Song",
+      length: 241000,
+      score: 100,
+      isrcs: ["GBTEST2600001"],
+      "artist-credit": [{
+        name: "Identity Artist",
+        artist: { id: "identity-artist", name: "Identity Artist" },
+        joinphrase: ""
+      }],
+      releases: [{
+        id: "identity-release",
+        title: "Identity Album",
+        date: "2026-02-03",
+        status: "Official",
+        "release-group": {
+          id: "identity-group",
+          "primary-type": "Album",
+          "secondary-types": []
+        }
+      }]
+    }] }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Identity Song",
+    artist: "Identity Artist",
+    album_observation: "Identity Album",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(requests, 1);
+  assert.equal(result.status, "exact");
+  assert.equal(result.reason, "unique_compatible_recording_from_release_observation_identity_only");
+  assert.equal(result.metadata.recording_id, "identity-recording");
+  assert.equal(result.metadata.duration_seconds, 241);
+  assert.deepEqual(result.metadata.composers, []);
+  assert.equal(result.trace.provider_requests, 1);
+  assert.ok(result.trace.accepted_warnings.includes("metadata_enrichment_pending"));
+});
+
+test("version searches fall back to core title words when MusicBrainz omits the supplied mix name", async () => {
+  const queries = [];
+  const service = new RecordingMetadataService(async (url) => {
+    const query = url.searchParams.get("query");
+    queries.push(query);
+    if (queries.length === 1) {
+      assert.match(query, /ewan AND pearson/);
+      return new Response(JSON.stringify({ recordings: [] }), { status: 200 });
+    }
+    assert.equal(
+      query,
+      'recording:(ride AND white AND horse) AND artistname:"Goldfrapp" AND video:false'
+    );
+    return new Response(JSON.stringify({ recordings: [{
+      id: "goldfrapp-remix",
+      title: "Ride a White Horse",
+      disambiguation: "Ewan Pearson Disco Odyssey Part 1 remix",
+      length: 495000,
+      score: 100,
+      "artist-credit": [{ name: "Goldfrapp" }],
+      releases: [{ title: "Ride a White Horse", status: "Official" }]
+    }] }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Ride a White Horse (Ewan Pearson Disco Odyssey Part 1)",
+    artist: "Goldfrapp",
+    version_hint: "remix",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(queries.length, 2);
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "goldfrapp-remix");
+  assert.ok(result.trace.accepted_warnings.includes("version_search_used_core_title_fallback"));
+});
+
 test("MusicBrainz keeps release identity separate and resolves an exact release track duration", async () => {
   const service = new RecordingMetadataService(async (url) => {
     if (url.pathname.endsWith("/recording")) {

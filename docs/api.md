@@ -666,18 +666,23 @@ Implemented tools:
 
 Important MCP contracts:
 
-- For playlist creation, discover uncertain or niche candidates with several
-  focused `roon_search_media` calls and copy the exact title, artist, album and
-  `result_id`. MusicBrainz then verifies canonical identity and release dates;
-  Roon only supplies the playable binding.
+- For playlist creation, propose the full candidate pool directly in one
+  `roon_save_playlist` or `roon_create_temporary_playlist` call. Do not call
+  `roon_search_media` per song. Supply 125% candidates for standard requests,
+  140% for constrained requests and 160% for exact versions; RoonIA consumes
+  reserves internally.
+- MusicBrainz establishes recording identity on the creation critical path
+  while Roon discovery runs in parallel. Full MusicBrainz credits, works and
+  genres are merged into the saved tracks by background enrichment.
 - `recording_intent` represents a recording version (`live`, `remix`, `dub`,
   and so on), never a genre. Ordinary dub tracks remain `standard` unless the
   title explicitly identifies a dub version or mix.
 - `roon_save_playlist` and `roon_create_temporary_playlist` accept
-  `release_year_from` and `release_year_to`. After three replenishment rounds,
-  any verified tracks are saved as an incomplete but usable playlist and the
-  result reports `added`, `missing`, `complete` and a bounded rejection
-  summary. No playlist is stored when zero candidates pass.
+  `release_year_from` and `release_year_to`. Any verified tracks are saved as
+  an incomplete but usable playlist when the supplied pool cannot reach the
+  target. The result reports `added`, `missing`, `complete`, provider timing,
+  cache usage and a bounded rejection summary. No playlist is stored when zero
+  candidates pass.
 - `roon_rebuild_playlist` starts or polls an asynchronous rebuild. Start it
   with `playlist_id`; poll the same tool with the returned `job_id` until the
   status is `completed` or `failed`.

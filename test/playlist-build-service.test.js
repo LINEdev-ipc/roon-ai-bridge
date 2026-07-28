@@ -446,6 +446,7 @@ test("playlist preflight overlaps speculative Roon discovery with MusicBrainz an
       assert.equal(input.artist, "Model Artist");
       assert.equal(input.release_year, undefined);
       assert.equal(input.release_year_observation, 2011);
+      assert.equal(input.metadata_depth, "identity");
       return {
         resolution: { status: "exact" },
         profile: {
@@ -536,6 +537,184 @@ test("playlist preflight overlaps speculative Roon discovery with MusicBrainz an
     "Canonical Song Canonical Artist"
   ]);
   assert.equal(enrichmentCalls, 1);
+});
+
+test("playlist binding accepts equivalent Roon editions when canonical duration agrees", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => [
+    mediaTrack("edition-gb", "Edition Song", "Edition Artist", {
+      album: "Original Album (GB)",
+      durationSeconds: 240
+    }),
+    mediaTrack("edition-us", "Edition Song", "Edition Artist", {
+      album: "Original Album (US)",
+      durationSeconds: 240
+    })
+  ]);
+  const trackCatalogService = {
+    resolve: async () => ({
+      resolution: {
+        status: "exact",
+        trace: {
+          provider_requests: 1,
+          cache_hit: false,
+          listenbrainz: null
+        }
+      },
+      profile: {
+        status: "exact",
+        reason: "unique_compatible_recording_identity_only",
+        recording: {
+          musicbrainz_id: "edition-recording",
+          title: "Edition Song",
+          artist_credit: [{
+            musicbrainz_id: "edition-artist",
+            name: "Edition Artist",
+            join_phrase: ""
+          }],
+          disambiguation: null,
+          duration_seconds: 240,
+          duration_source: "musicbrainz_recording_median",
+          isrcs: []
+        },
+        composers: [],
+        lyricists: [],
+        genres: [],
+        release_group: {
+          musicbrainz_id: "edition-group",
+          title: "Original Album",
+          artist_credit: [],
+          first_release_date: "2020-01-01",
+          release_year: 2020,
+          primary_type: "Album",
+          secondary_types: [],
+          disambiguation: null,
+          selection_reason: "earliest_official_album"
+        },
+        release: null,
+        work: null,
+        credits: [],
+        cover_art: null,
+        roon_binding: null,
+        provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+        warnings: ["metadata_enrichment_pending"]
+      }
+    }),
+    bind: () => ({ status: "observed" })
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    undefined,
+    trackCatalogService
+  );
+
+  const result = await builder.build({
+    name: "Equivalent editions",
+    desired_count: 1,
+    enqueue_metadata_enrichment: false,
+    tracks: [{
+      title: "Edition Song",
+      artist_credit: "Edition Artist",
+      performance_sensitive: true
+    }]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.added_count, 1);
+  assert.equal(result.playlist.tracks[0].resolution.selected_candidate.result_id, "edition-gb");
+  assert.deepEqual(result.performance.metadata_enrichment, {
+    mode: "disabled",
+    queued_tracks: 1
+  });
+});
+
+test("playlist creation queues full MusicBrainz enrichment after the playable list is saved", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => [
+    mediaTrack("background-track", "Background Song", "Background Artist", {
+      album: "Background Album",
+      durationSeconds: 215
+    })
+  ]);
+  const profile = (full) => ({
+    status: "exact",
+    reason: full ? "verified_recording_mbid" : "unique_compatible_recording_identity_only",
+    recording: {
+      musicbrainz_id: "background-recording",
+      title: "Background Song",
+      artist_credit: [{
+        musicbrainz_id: "background-artist",
+        name: "Background Artist",
+        join_phrase: ""
+      }],
+      disambiguation: null,
+      duration_seconds: 215,
+      duration_source: "musicbrainz_recording_median",
+      isrcs: ["GBTEST2600002"]
+    },
+    composers: full ? ["Background Composer"] : [],
+    lyricists: [],
+    genres: full ? [{ name: "electronic", count: 1, entity: "recording" }] : [],
+    release_group: {
+      musicbrainz_id: "background-group",
+      title: "Background Album",
+      artist_credit: [],
+      first_release_date: "2026-01-01",
+      release_year: 2026,
+      primary_type: "Album",
+      secondary_types: [],
+      disambiguation: null,
+      selection_reason: "earliest_official_album"
+    },
+    release: null,
+    work: null,
+    credits: [],
+    cover_art: null,
+    roon_binding: null,
+    provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+    warnings: full ? [] : ["metadata_enrichment_pending"]
+  });
+  const resolveInputs = [];
+  const trackCatalogService = {
+    resolve: async (input) => {
+      resolveInputs.push(input);
+      return {
+        resolution: { status: "exact" },
+        profile: profile(Boolean(input.recording_id))
+      };
+    },
+    bind: () => ({ status: "observed" })
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    undefined,
+    trackCatalogService
+  );
+
+  const result = await builder.build({
+    name: "Background enrichment",
+    tracks: [{ title: "Background Song", artist_credit: "Background Artist" }]
+  });
+
+  assert.deepEqual(result.performance.metadata_enrichment, {
+    mode: "background",
+    queued_tracks: 1
+  });
+  await new Promise((resolve) => setImmediate(resolve));
+  await new Promise((resolve) => setImmediate(resolve));
+  const stored = playlistService.getPlaylist(result.playlist.playlist_id).tracks[0];
+  assert.equal(resolveInputs.length, 2);
+  assert.equal(resolveInputs[0].metadata_depth, "identity");
+  assert.equal(resolveInputs[1].metadata_depth, "full");
+  assert.equal(resolveInputs[1].recording_id, "background-recording");
+  assert.equal(stored.audio_metadata.composer, "Background Composer");
+  assert.equal(stored.audio_metadata.genre, "electronic");
 });
 
 test("playlist preflight can reject ambiguous MusicBrainz identity after speculative Roon discovery", async () => {
@@ -662,6 +841,7 @@ test("playlist build keeps complete rejection counts with a bounded MCP payload"
   const result = await builder.build({
     name: "Bounded failures",
     desired_count: 2,
+    diagnostics: true,
     tracks
   });
 
@@ -669,4 +849,6 @@ test("playlist build keeps complete rejection counts with a bounded MCP payload"
   assert.equal(result.rejection_summary.total, 30);
   assert.equal(result.rejection_summary.returned_candidates, 25);
   assert.equal(result.rejected.length, 25);
+  assert.equal(result.diagnostics.rejected_candidates.length, 30);
+  assert.equal(result.diagnostics.candidate_metrics.length, 31);
 });

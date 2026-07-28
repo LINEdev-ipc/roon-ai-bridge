@@ -293,6 +293,83 @@ test("keeps an ambiguous MusicBrainz result out of the canonical database", asyn
   }
 });
 
+test("preserves failed MusicBrainz request counts in catalog diagnostics", async () => {
+  const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), "roonia-track-catalog-"));
+  const database = createDatabase(config(dataDir));
+  try {
+    const service = new TrackCatalogService(database, {
+      lookup: async () => {
+        const error = new Error("network unavailable");
+        error.musicbrainz_provider_requests = 2;
+        throw error;
+      }
+    });
+    const { resolution, profile } = await service.resolve({
+      title: "Unavailable Song",
+      artist: "Unavailable Artist",
+      metadata_depth: "identity"
+    });
+
+    assert.equal(profile.reason, "musicbrainz_provider_error");
+    assert.equal(resolution.trace.provider_requests, 2);
+  } finally {
+    database.close();
+    fs.rmSync(dataDir, { recursive: true, force: true });
+  }
+});
+
+test("identity-only lookups never replace previously persisted full catalog metadata", async () => {
+  const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), "roonia-track-catalog-"));
+  const database = createDatabase(config(dataDir));
+  let calls = 0;
+  try {
+    const service = new TrackCatalogService(database, {
+      lookup: async () => {
+        calls += 1;
+        const metadata = catalogMetadata();
+        if (calls > 1) {
+          metadata.work = null;
+          metadata.credits = [];
+          metadata.composers = [];
+          metadata.lyricists = [];
+          metadata.genres = [];
+          metadata.genre_details = [];
+        }
+        const providerTrace = trace();
+        if (calls > 1) providerTrace.accepted_warnings = ["metadata_enrichment_pending"];
+        return {
+          status: "exact",
+          reason: calls > 1
+            ? "unique_compatible_recording_identity_only"
+            : "unique_compatible_recording",
+          metadata,
+          candidates: [],
+          trace: providerTrace
+        };
+      }
+    });
+
+    const full = await service.resolve({
+      title: "Everything in Its Right Place",
+      artist: "Radiohead"
+    });
+    const identity = await service.resolve({
+      title: "Everything in Its Right Place",
+      artist: "Radiohead",
+      metadata_depth: "identity"
+    });
+
+    assert.deepEqual(full.profile.composers, ["Thom Yorke"]);
+    assert.deepEqual(identity.profile.composers, ["Thom Yorke"]);
+    assert.equal(identity.profile.work.musicbrainz_id, "work-1");
+    assert.ok(!identity.profile.warnings.includes("metadata_enrichment_pending"));
+    assert.deepEqual(service.get("recording-1").composers, ["Thom Yorke"]);
+  } finally {
+    database.close();
+    fs.rmSync(dataDir, { recursive: true, force: true });
+  }
+});
+
 test("normalizes an album to its release group without guessing a country edition", async () => {
   const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), "roonia-track-catalog-"));
   const database = createDatabase(config(dataDir));
