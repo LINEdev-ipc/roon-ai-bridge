@@ -28,6 +28,7 @@ type Dataset = "acr-lookup" | "acrr-lookup";
 const PROVIDER = "listenbrainz";
 const POSITIVE_TTL_MS = 14 * 24 * 60 * 60 * 1000;
 const NEGATIVE_TTL_MS = 6 * 60 * 60 * 1000;
+const REQUEST_TIMEOUT_MS = 2000;
 
 function normalize(value: unknown): string {
   return String(value || "")
@@ -115,7 +116,7 @@ export class ListenBrainzMetadataService {
             url.searchParams.set("release_name", input.album);
           }
           const response = await this.fetchImpl(url, {
-            signal: AbortSignal.timeout(12_000),
+            signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
             headers: {
               Accept: "application/json",
               "User-Agent": `RoonAI-Bridge/${APP_VERSION} (https://github.com/LINEdev-ipc/roon-ai-bridge)`

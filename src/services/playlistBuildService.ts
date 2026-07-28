@@ -272,8 +272,9 @@ function normalize(value: unknown): string {
 
 function canonicalTitle(value: unknown): string {
   const raw = String(value || "")
-    .replace(/\s*[\[(]\s*(?:live\b[^)\]]*|[^)\]]*\b(?:remix|rework|dub mix|dub version|radio edit|acoustic version|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed)?|digital master)\b[^)\]]*)[\])]\s*$/iu, "")
-    .replace(/\s+-\s+(?:live\b.*|.*\b(?:remix|rework|dub mix|dub version|radio edit|acoustic version|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed)?|digital master)\b.*)$/iu, "")
+    .replace(/\s*[([]\s*\d{2,3}\s*[\])]\s*$/u, "")
+    .replace(/\s*[\[(]\s*(?:live\b[^)\]]*|[^)\]]*\b(?:remix|rework|dub mix|dub version|radio edit|acoustic version|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master)\b[^)\]]*)[\])]\s*$/iu, "")
+    .replace(/\s+-\s+(?:live\b.*|.*\b(?:remix|rework|dub mix|dub version|radio edit|acoustic version|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master)\b.*)$/iu, "")
     .replace(/\s+\b(?:single version|album version|original version|stereo version|mono version)\b.*$/iu, "");
   return normalize(raw);
 }
@@ -321,9 +322,23 @@ function versionFamily(result: Pick<MediaResult, "title" | "version_hint">): Pla
   return "standard";
 }
 
-function versionAllowed(intent: PlaylistRecordingIntent, result: MediaResult): boolean {
+function versionAllowed(
+  intent: PlaylistRecordingIntent,
+  result: MediaResult,
+  requestedTitle: string
+): boolean {
   const actual = versionFamily(result);
-  if (intent === "standard") return actual === "standard" || actual === "remaster";
+  if (intent === "standard") {
+    if (actual === "standard" || actual === "remaster") return true;
+    if (
+      actual === "remix" &&
+      /\b(?:mix|remix|rework)\b/iu.test(requestedTitle) &&
+      canonicalTitle(requestedTitle) === canonicalTitle(result.title)
+    ) {
+      return true;
+    }
+    return false;
+  }
   return actual === intent;
 }
 
@@ -352,7 +367,7 @@ function baseGate(input: NormalizedCandidate, result: MediaResult): boolean {
   const credits = resultCredits(result);
   const primaryCredit = input.requiredCredits[0]?.name || input.artist;
   if (!creditMatches(primaryCredit, credits)) return false;
-  return versionAllowed(input.recordingIntent, result);
+  return versionAllowed(input.recordingIntent, result, input.title);
 }
 
 function hardGate(input: NormalizedCandidate, result: MediaResult): boolean {
@@ -1055,6 +1070,21 @@ export class PlaylistBuildService {
     const baseCandidates = resolution.candidates.filter((candidate) => baseGate(input, candidate.result));
     if (!baseCandidates.length) return null;
     const strictCandidates = baseCandidates.filter((candidate) => hardGate(input, candidate.result));
+    const directCanonicalMatches = strictCandidates.filter((candidate) =>
+      candidate.result.direct_match === true &&
+      (candidate.result.direct_match_score || 0) >= 90 &&
+      canonicalTitle(candidate.result.title) === canonicalTitle(input.title)
+    );
+    if (directCanonicalMatches.length === 1) return directCanonicalMatches[0];
+    if (
+      directCanonicalMatches.length > 1 &&
+      directCanonicalMatches.every((candidate) => !candidate.result.album) &&
+      new Set(directCanonicalMatches.map((candidate) =>
+        resultCredits(candidate.result).sort().join("|")
+      )).size === 1
+    ) {
+      return directCanonicalMatches[0];
+    }
     if (!input.performanceSensitive && strictCandidates.length === 1) return strictCandidates[0];
     if (!input.performanceSensitive && resolution.status === "resolved") {
       const resolved = strictCandidates.find((candidate) =>

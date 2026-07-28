@@ -59,8 +59,9 @@ function baseVersion(version: VersionHint | null | undefined): "studio" | "live"
 }
 
 function baseTitle(value: string): string {
-  return normalize(value)
-    .replace(/\b(?:live|en vivo|directo|remaster(?:ed)?|remix|mix|radio edit|edit|cover|tribute|version|binaural|3d)\b.*$/g, "")
+  return normalize(String(value || "")
+    .replace(/\s*[([]\s*\d{2,3}\s*[\])]\s*$/u, " "))
+    .replace(/\b(?:live|en vivo|directo|remaster(?:ed|ing)?|remix|mix|radio edit|edit|cover|tribute|version|binaural|3d)\b.*$/g, "")
     .trim();
 }
 

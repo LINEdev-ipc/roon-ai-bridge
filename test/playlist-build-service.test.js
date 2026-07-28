@@ -282,6 +282,59 @@ test("playlist build never promotes two indistinguishable strict matches out of 
   assert.equal(result.rejected.find((item) => item.candidate_id === "ambiguous").status, "needs_enrichment");
 });
 
+test("canonical Roon direct matches tolerate edition annotations and canonical mix titles", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia((request) => {
+    if (request.query.includes("180db_")) {
+      return [mediaTrack("aphex-tempo", "180db_ [130]", "Aphex Twin, Richard D. James")];
+    }
+    if (request.query.includes("Cosmic Surfin")) {
+      return [mediaTrack(
+        "ymo-remaster",
+        "Cosmic Surfin' (2018 Bob Ludwig Remastering)",
+        "Haruomi Hosono, Yellow Magic Orchestra"
+      )];
+    }
+    if (request.query.includes("syro u473t8")) {
+      return [mediaTrack(
+        "aphex-canonical-mix",
+        "Syro u473t8+e [Piezoluminescence Mix]",
+        "Aphex Twin, Richard D. James",
+        { versionHint: "remix" }
+      )];
+    }
+    if (request.query.includes("Natural Blues")) {
+      return [
+        mediaTrack("moby-direct-a", "Natural Blues", "Alan Lomax, Moby, Vera Hall"),
+        mediaTrack("moby-direct-b", "Natural Blues", "Alan Lomax, Moby, Vera Hall")
+      ];
+    }
+    return [];
+  });
+
+  const result = await new PlaylistBuildService(playlistService, media).build({
+    name: "Canonical direct matches",
+    desired_count: 4,
+    tracks: [
+      { title: "180db_", artist_credit: "Aphex Twin" },
+      { title: "Cosmic Surfin’", artist_credit: "Yellow Magic Orchestra" },
+      {
+        title: "syro u473t8+e (piezoluminescence mix)",
+        artist_credit: "Aphex Twin",
+        recording_intent: "standard"
+      },
+      { title: "Natural Blues", artist_credit: "Moby" }
+    ]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.added_count, 4);
+  assert.deepEqual(
+    result.playlist.tracks.map((track) => track.resolution.selected_result_id),
+    ["aphex-tempo", "ymo-remaster", "aphex-canonical-mix", "moby-direct-a"]
+  );
+});
+
 test("playlist build reorders the final resolved set so the same artist is never adjacent", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const tracks = {

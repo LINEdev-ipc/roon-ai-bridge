@@ -174,6 +174,32 @@ test("MusicBrainz limits repeated network failures so one lookup cannot block th
   assert.equal(requests, 2);
 });
 
+test("MusicBrainz spaces request starts without letting one slow response block unrelated lookups", async () => {
+  const pending = [];
+  let requests = 0;
+  const service = new RecordingMetadataService(async () => {
+    requests += 1;
+    return new Promise((resolve) => pending.push(resolve));
+  }, {
+    minRequestIntervalMs: 0,
+    maxRetries: 0
+  });
+
+  const first = service.lookup({ title: "First", artist: "Artist" });
+  await new Promise((resolve) => setImmediate(resolve));
+  const second = service.lookup({ title: "Second", artist: "Artist" });
+  await new Promise((resolve) => setImmediate(resolve));
+
+  assert.equal(requests, 2);
+  for (const resolve of pending) {
+    resolve(new Response(JSON.stringify({ recordings: [] }), { status: 200 }));
+  }
+  assert.deepEqual(
+    (await Promise.all([first, second])).map((result) => result.status),
+    ["not_found", "not_found"]
+  );
+});
+
 test("identity metadata depth resolves from one search request and defers full enrichment", async () => {
   let requests = 0;
   const service = new RecordingMetadataService(async (url) => {

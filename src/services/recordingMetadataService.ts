@@ -623,6 +623,20 @@ export class RecordingMetadataService {
     this.sleep = options.sleep || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds)));
   }
 
+  private async waitForRequestSlot(): Promise<void> {
+    let releaseRequest: () => void = () => undefined;
+    const previous = this.requestChain;
+    this.requestChain = new Promise<void>((resolve) => { releaseRequest = resolve; });
+    await previous;
+    try {
+      const waitMs = Math.max(0, this.minRequestIntervalMs - (Date.now() - this.lastRequestAt));
+      if (waitMs) await this.sleep(waitMs);
+      this.lastRequestAt = Date.now();
+    } finally {
+      releaseRequest();
+    }
+  }
+
   private retryDelay(response: Response, attempt: number): number {
     const retryAfter = response.headers.get("retry-after");
     if (retryAfter) {
@@ -635,53 +649,42 @@ export class RecordingMetadataService {
   }
 
   private async requestJson(url: URL, trace?: MutableCatalogProviderTrace): Promise<JsonRecord> {
-    let releaseRequest: () => void = () => undefined;
-    const previous = this.requestChain;
-    this.requestChain = new Promise<void>((resolve) => { releaseRequest = resolve; });
-    await previous;
-    try {
-      for (let attempt = 0; attempt <= this.maxRetries; attempt += 1) {
-        const waitMs = Math.max(0, this.minRequestIntervalMs - (Date.now() - this.lastRequestAt));
-        if (waitMs) await this.sleep(waitMs);
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 6000);
-        let receivedResponse = false;
-        try {
-          if (trace) trace.provider_requests += 1;
-          const response = await this.fetchImpl(url, {
-            headers: {
-              Accept: "application/json",
-              "User-Agent": `RoonAI-Bridge/${APP_VERSION} (https://github.com/LINEdev-ipc/roon-ai-bridge)`
-            },
-            signal: controller.signal
-          });
-          receivedResponse = true;
-          this.lastRequestAt = Date.now();
-          if (response.ok) return await response.json() as JsonRecord;
-          const retryable = response.status === 429 || response.status === 503;
-          if (!retryable || attempt === this.maxRetries) {
-            throw new Error(`MusicBrainz returned HTTP ${response.status}`);
-          }
-          await this.sleep(this.retryDelay(response, attempt));
-        } catch (error) {
-          this.lastRequestAt = Date.now();
-          const networkRetryLimit = Math.min(this.maxRetries, 1);
-          if (receivedResponse || attempt >= networkRetryLimit) {
-            const failure = error instanceof Error ? error : new Error(String(error));
-            Object.assign(failure, {
-              musicbrainz_provider_requests: trace?.provider_requests || 0
-            });
-            throw failure;
-          }
-          await this.sleep(this.retryBaseMs * (2 ** attempt));
-        } finally {
-          clearTimeout(timeout);
+    for (let attempt = 0; attempt <= this.maxRetries; attempt += 1) {
+      await this.waitForRequestSlot();
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 6000);
+      let receivedResponse = false;
+      try {
+        if (trace) trace.provider_requests += 1;
+        const response = await this.fetchImpl(url, {
+          headers: {
+            Accept: "application/json",
+            "User-Agent": `RoonAI-Bridge/${APP_VERSION} (https://github.com/LINEdev-ipc/roon-ai-bridge)`
+          },
+          signal: controller.signal
+        });
+        receivedResponse = true;
+        if (response.ok) return await response.json() as JsonRecord;
+        const retryable = response.status === 429 || response.status === 503;
+        if (!retryable || attempt === this.maxRetries) {
+          throw new Error(`MusicBrainz returned HTTP ${response.status}`);
         }
+        await this.sleep(this.retryDelay(response, attempt));
+      } catch (error) {
+        const networkRetryLimit = Math.min(this.maxRetries, 1);
+        if (receivedResponse || attempt >= networkRetryLimit) {
+          const failure = error instanceof Error ? error : new Error(String(error));
+          Object.assign(failure, {
+            musicbrainz_provider_requests: trace?.provider_requests || 0
+          });
+          throw failure;
+        }
+        await this.sleep(this.retryBaseMs * (2 ** attempt));
+      } finally {
+        clearTimeout(timeout);
       }
-      throw new Error("MusicBrainz request failed after retries");
-    } finally {
-      releaseRequest();
     }
+    throw new Error("MusicBrainz request failed after retries");
   }
 
   private cacheKey(input: {

@@ -58,7 +58,8 @@ const ROCK = new Set([
   "deafheaven", "elliott smith", "jason isbell", "king gizzard the lizard wizard",
   "korn", "leonard cohen", "patti smith", "paul mccartney", "phoebe bridgers",
   "sufjan stevens", "tame impala", "waxahatchee", "wolf alice", "ryan adams",
-  "olivia rodrigo", "amy winehouse"
+  "olivia rodrigo", "amy winehouse", "billie eilish", "taylor swift",
+  "kacey musgraves", "danger mouse", "adele"
 ].map(normalize));
 
 const INTERNATIONAL = new Set([
@@ -97,24 +98,22 @@ const specs = [
     prompt: "Crea una playlist de 100 canciones de electrónica con bajos potentes.",
     complexity: "standard",
     multiplier: 1.25,
-    filter: (entry) => STANDARD(entry) && ELECTRONIC.has(normalize(entry.artist)),
-    fallbackFilter: (entry) => ELECTRONIC.has(normalize(entry.artist))
+    maxPerArtist: 12,
+    filter: (entry) => STANDARD(entry) && ELECTRONIC.has(normalize(entry.artist))
   },
   {
     id: "P02",
     prompt: "Haz una playlist de 100 canciones para conducir de noche, con mucha energía y sensación de película de acción.",
     complexity: "constrained",
     multiplier: 1.4,
-    filter: (entry) => STANDARD(entry) && ACTION.has(normalize(entry.artist)),
-    fallbackFilter: (entry) => ACTION.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && ACTION.has(normalize(entry.artist))
   },
   {
     id: "P03",
     prompt: "Prepara una playlist de 100 canciones para hacer HIIT en casa mezclando géneros, pero sin metal.",
     complexity: "constrained",
     multiplier: 1.4,
-    filter: (entry) => STANDARD(entry) && year(entry.release_date) >= 1990 && !METAL.test(entry.artist),
-    fallbackFilter: (entry) => year(entry.release_date) >= 1990 && !METAL.test(entry.artist)
+    filter: (entry) => STANDARD(entry) && year(entry.release_date) >= 1990 && !METAL.test(entry.artist)
   },
   {
     id: "P04",
@@ -123,16 +122,14 @@ const specs = [
     multiplier: 1.4,
     maxPerArtist: 10,
     release_year_from: 2006,
-    filter: (entry) => STANDARD(entry) && year(entry.release_date) >= 2006 && ROCK.has(normalize(entry.artist)),
-    fallbackFilter: (entry) => year(entry.release_date) >= 2006 && ROCK.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && year(entry.release_date) >= 2006 && ROCK.has(normalize(entry.artist))
   },
   {
     id: "P05",
     prompt: "Crea una playlist de 100 canciones internacionales en distintos idiomas para descubrir música de otros países.",
     complexity: "constrained",
     multiplier: 1.4,
-    filter: (entry) => STANDARD(entry) && INTERNATIONAL.has(normalize(entry.artist)),
-    fallbackFilter: (entry) => INTERNATIONAL.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && INTERNATIONAL.has(normalize(entry.artist))
   },
   {
     id: "P06",
@@ -170,8 +167,7 @@ const specs = [
     prompt: "Haz una playlist de 100 canciones instrumentales y ambientales para trabajar concentrado.",
     complexity: "constrained",
     multiplier: 1.4,
-    filter: (entry) => STANDARD(entry) && CALM.has(normalize(entry.artist)),
-    fallbackFilter: (entry) => CALM.has(normalize(entry.artist))
+    filter: (entry) => STANDARD(entry) && CALM.has(normalize(entry.artist))
   }
 ];
 
@@ -182,15 +178,7 @@ function select(pool, spec) {
     .sort((left, right) =>
       hash(spec.id, left.case_id).localeCompare(hash(spec.id, right.case_id))
     );
-  const fallback = spec.fallbackFilter
-    ? pool
-      .filter((entry) => !spec.filter(entry) && spec.fallbackFilter(entry))
-      .sort((left, right) =>
-        hash(`${spec.id}:fallback`, left.case_id)
-          .localeCompare(hash(`${spec.id}:fallback`, right.case_id))
-      )
-    : [];
-  const candidates = [...preferred, ...fallback];
+  const candidates = preferred;
   const selected = [];
   const recordings = new Set();
   const artistCounts = new Map();
