@@ -13,7 +13,7 @@ playable Roon result, create the binding and persist the playlist.
 The fixture pool is intentionally larger than the requested playlist:
 
 - standard: 125 candidates;
-- constrained: 140 candidates;
+- constrained: 150 candidates;
 - exact versions: 160 candidates.
 
 Generated fixtures and run artifacts are retained so later 200-track or larger

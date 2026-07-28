@@ -86,7 +86,7 @@ saved or temporary RoonIA playlists.
 `roon_save_playlist` accepts one batch containing primary proposals and
 reserves. The model creates the complete structured pool itself and calls the
 tool once; it does not call `roon_search_media` first. Standard requests carry
-at least 125% of the requested count, constrained requests 140%, and exact
+at least 125% of the requested count, constrained requests 150%, and exact
 versions or performance-sensitive requests 160%. MusicBrainz remains the
 authority that decides recording identity, ListenBrainz contributes advisory
 candidate evidence, and Roon supplies only the playable binding.

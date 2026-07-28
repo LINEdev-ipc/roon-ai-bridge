@@ -335,6 +335,108 @@ test("canonical Roon direct matches tolerate edition annotations and canonical m
   );
 });
 
+test("cover artists and album-anchored live or acoustic performances bind without invented title suffixes", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia((request) => {
+    if (request.query.includes("Hallelujah")) {
+      return [mediaTrack("buckley-cover", "Hallelujah", "Jeff Buckley", {
+        album: "Grace"
+      })];
+    }
+    if (request.query.includes("Inevitable")) {
+      return [mediaTrack("shakira-unplugged", "Inevitable", "Shakira", {
+        album: "MTV Unplugged"
+      })];
+    }
+    if (request.query.includes("Pennyroyal Tea")) {
+      return [mediaTrack("nirvana-live", "Pennyroyal Tea", "Nirvana", {
+        album: "MTV Unplugged in New York"
+      })];
+    }
+    if (request.query.includes("Wrong Acoustic")) {
+      return [mediaTrack("wrong-studio", "Wrong Acoustic", "Artist", {
+        album: "Studio Album"
+      })];
+    }
+    if (request.query.includes("Reserve Song")) {
+      return [mediaTrack("reserve-studio", "Reserve Song", "Artist")];
+    }
+    return [];
+  });
+
+  const result = await new PlaylistBuildService(playlistService, media).build({
+    name: "Performance semantics",
+    desired_count: 4,
+    tracks: [
+      {
+        title: "Hallelujah",
+        artist_credit: "Jeff Buckley",
+        album_hint: "Grace",
+        recording_intent: "cover"
+      },
+      {
+        title: "Inevitable",
+        artist_credit: "Shakira",
+        album_hint: "MTV Unplugged",
+        recording_intent: "acoustic"
+      },
+      {
+        title: "Pennyroyal Tea",
+        artist_credit: "Nirvana",
+        album_hint: "MTV Unplugged in New York",
+        recording_intent: "live"
+      },
+      {
+        candidate_id: "wrong-acoustic",
+        title: "Wrong Acoustic",
+        artist_credit: "Artist",
+        album_hint: "Acoustic Sessions",
+        recording_intent: "acoustic"
+      },
+      {
+        role: "reserve",
+        title: "Reserve Song",
+        artist_credit: "Artist"
+      }
+    ]
+  });
+
+  assert.equal(result.complete, true);
+  assert.deepEqual(
+    result.playlist.tracks.map((track) => track.resolution.selected_result_id),
+    ["buckley-cover", "shakira-unplugged", "nirvana-live", "reserve-studio"]
+  );
+  assert.equal(
+    result.rejected.find((candidate) => candidate.candidate_id === "wrong-acoustic").status,
+    "missing"
+  );
+});
+
+test("an empty diagnostic build preserves every rejection in the error details", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const builder = new PlaylistBuildService(playlistService, fakeMedia(() => []));
+
+  await assert.rejects(
+    builder.build({
+      name: "Diagnostic failure",
+      desired_count: 2,
+      diagnostics: true,
+      tracks: [
+        { candidate_id: "missing-1", title: "Missing One", artist_credit: "Nobody" },
+        { candidate_id: "missing-2", title: "Missing Two", artist_credit: "Nobody" }
+      ]
+    }),
+    (error) => {
+      assert.equal(error.code, "PLAYLIST_BUILD_INCOMPLETE");
+      assert.equal(error.details.rejected_count, 2);
+      assert.equal(error.details.rejected.length, 2);
+      assert.equal(error.details.diagnostics.rejected_candidates.length, 2);
+      assert.equal(error.details.diagnostics.candidate_metrics.length, 2);
+      return true;
+    }
+  );
+});
+
 test("playlist build reorders the final resolved set so the same artist is never adjacent", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const tracks = {

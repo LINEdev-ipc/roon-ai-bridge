@@ -6,7 +6,7 @@
     "name": "Beta 9 P09",
     "description": "Crea una playlist de 100 clásicos variados de los años 60, 70 y 80.",
     "desired_count": 100,
-    "selection_complexity": "standard",
+    "selection_complexity": "constrained",
     "no_adjacent_same_artist": true,
     "tracks": [
       {
@@ -2430,6 +2430,489 @@
         "performance_sensitive": false,
         "user_metadata": {
           "validation_case_id": "MBR-001955"
+        }
+      },
+      {
+        "candidate_id": "P09-126",
+        "role": "reserve",
+        "title": "O homem da gravata florida",
+        "artist_credit": "Jorge Ben Jor",
+        "required_credits": [
+          {
+            "name": "Jorge Ben Jor",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "A Tábua de Esmeralda",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001953"
+        }
+      },
+      {
+        "candidate_id": "P09-127",
+        "role": "reserve",
+        "title": "The Princess Appears",
+        "artist_credit": "London Symphony Orchestra, John Williams",
+        "required_credits": [
+          {
+            "name": "London Symphony Orchestra",
+            "role": "primary"
+          },
+          {
+            "name": "John Williams",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Star Wars",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001628"
+        }
+      },
+      {
+        "candidate_id": "P09-128",
+        "role": "reserve",
+        "title": "Riders on the Storm",
+        "artist_credit": "The Doors",
+        "required_credits": [
+          {
+            "name": "The Doors",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "L.A. Woman",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000226"
+        }
+      },
+      {
+        "candidate_id": "P09-129",
+        "role": "reserve",
+        "title": "Don’t Stop",
+        "artist_credit": "The Stone Roses",
+        "required_credits": [
+          {
+            "name": "The Stone Roses",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Stone Roses",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001803"
+        }
+      },
+      {
+        "candidate_id": "P09-130",
+        "role": "reserve",
+        "title": "Promesas sobre el bidet",
+        "artist_credit": "Charly García",
+        "required_credits": [
+          {
+            "name": "Charly García",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Piano bar",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001605"
+        }
+      },
+      {
+        "candidate_id": "P09-131",
+        "role": "reserve",
+        "title": "Which Will",
+        "artist_credit": "Nick Drake",
+        "required_credits": [
+          {
+            "name": "Nick Drake",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Pink Moon",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002207"
+        }
+      },
+      {
+        "candidate_id": "P09-132",
+        "role": "reserve",
+        "title": "Superchería",
+        "artist_credit": "Pescado Rabioso",
+        "required_credits": [
+          {
+            "name": "Pescado Rabioso",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Artaud",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000748"
+        }
+      },
+      {
+        "candidate_id": "P09-133",
+        "role": "reserve",
+        "title": "Alucinação",
+        "artist_credit": "Belchior",
+        "required_credits": [
+          {
+            "name": "Belchior",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alucinação",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001753"
+        }
+      },
+      {
+        "candidate_id": "P09-134",
+        "role": "reserve",
+        "title": "Tuve tu amor",
+        "artist_credit": "Charly García",
+        "required_credits": [
+          {
+            "name": "Charly García",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Piano bar",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002140"
+        }
+      },
+      {
+        "candidate_id": "P09-135",
+        "role": "reserve",
+        "title": "With or Without You",
+        "artist_credit": "U2",
+        "required_credits": [
+          {
+            "name": "U2",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Joshua Tree",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000001"
+        }
+      },
+      {
+        "candidate_id": "P09-136",
+        "role": "reserve",
+        "title": "Bitches Brew",
+        "artist_credit": "Miles Davis",
+        "required_credits": [
+          {
+            "name": "Miles Davis",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Bitches Brew",
+        "release_year_hint": 1970,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001975"
+        }
+      },
+      {
+        "candidate_id": "P09-137",
+        "role": "reserve",
+        "title": "Lilia",
+        "artist_credit": "Milton Nascimento",
+        "required_credits": [
+          {
+            "name": "Milton Nascimento",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Clube da Esquina",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000617"
+        }
+      },
+      {
+        "candidate_id": "P09-138",
+        "role": "reserve",
+        "title": "The Mystery of the Mystery",
+        "artist_credit": "Dolly Parton",
+        "required_credits": [
+          {
+            "name": "Dolly Parton",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Coat of Many Colors",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002145"
+        }
+      },
+      {
+        "candidate_id": "P09-139",
+        "role": "reserve",
+        "title": "Bullet the Blue Sky",
+        "artist_credit": "U2",
+        "required_credits": [
+          {
+            "name": "U2",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Joshua Tree",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001992"
+        }
+      },
+      {
+        "candidate_id": "P09-140",
+        "role": "reserve",
+        "title": "Isn’t She Lovely",
+        "artist_credit": "Stevie Wonder",
+        "required_credits": [
+          {
+            "name": "Stevie Wonder",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Songs in the Key of Life",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000278"
+        }
+      },
+      {
+        "candidate_id": "P09-141",
+        "role": "reserve",
+        "title": "Bye Bye Badman",
+        "artist_credit": "The Stone Roses",
+        "required_credits": [
+          {
+            "name": "The Stone Roses",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Stone Roses",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-002221"
+        }
+      },
+      {
+        "candidate_id": "P09-142",
+        "role": "reserve",
+        "title": "Como nossos pais",
+        "artist_credit": "Belchior",
+        "required_credits": [
+          {
+            "name": "Belchior",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Alucinação",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001587"
+        }
+      },
+      {
+        "candidate_id": "P09-143",
+        "role": "reserve",
+        "title": "A Better Place to Live",
+        "artist_credit": "Dolly Parton",
+        "required_credits": [
+          {
+            "name": "Dolly Parton",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Coat of Many Colors",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001620"
+        }
+      },
+      {
+        "candidate_id": "P09-144",
+        "role": "reserve",
+        "title": "We’re Ready",
+        "artist_credit": "Junior Wells’ Chicago Blues Band, Buddy Guy",
+        "required_credits": [
+          {
+            "name": "Junior Wells’ Chicago Blues Band",
+            "role": "primary"
+          },
+          {
+            "name": "Buddy Guy",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Hoodoo Man Blues",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001537"
+        }
+      },
+      {
+        "candidate_id": "P09-145",
+        "role": "reserve",
+        "title": "Rock & Roll Band",
+        "artist_credit": "Boston",
+        "required_credits": [
+          {
+            "name": "Boston",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Boston",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000268"
+        }
+      },
+      {
+        "candidate_id": "P09-146",
+        "role": "reserve",
+        "title": "Watching You Without Me",
+        "artist_credit": "Kate Bush",
+        "required_credits": [
+          {
+            "name": "Kate Bush",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Hounds of Love",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000301"
+        }
+      },
+      {
+        "candidate_id": "P09-147",
+        "role": "reserve",
+        "title": "Long Hot Summer Night",
+        "artist_credit": "The Jimi Hendrix Experience",
+        "required_credits": [
+          {
+            "name": "The Jimi Hendrix Experience",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Electric Ladyland",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000244"
+        }
+      },
+      {
+        "candidate_id": "P09-148",
+        "role": "reserve",
+        "title": "Tell Me",
+        "artist_credit": "Stevie Ray Vaughan and Double Trouble",
+        "required_credits": [
+          {
+            "name": "Stevie Ray Vaughan and Double Trouble",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Texas Flood",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000523"
+        }
+      },
+      {
+        "candidate_id": "P09-149",
+        "role": "reserve",
+        "title": "Jesus Saves",
+        "artist_credit": "Slayer",
+        "required_credits": [
+          {
+            "name": "Slayer",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Reign in Blood",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-000597"
+        }
+      },
+      {
+        "candidate_id": "P09-150",
+        "role": "reserve",
+        "title": "Cable a tierra",
+        "artist_credit": "Fito Páez",
+        "required_credits": [
+          {
+            "name": "Fito Páez",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Giros",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false,
+        "user_metadata": {
+          "validation_case_id": "MBR-001718"
         }
       }
     ]

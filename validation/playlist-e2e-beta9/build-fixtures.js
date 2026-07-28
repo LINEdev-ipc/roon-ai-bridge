@@ -59,7 +59,8 @@ const ROCK = new Set([
   "korn", "leonard cohen", "patti smith", "paul mccartney", "phoebe bridgers",
   "sufjan stevens", "tame impala", "waxahatchee", "wolf alice", "ryan adams",
   "olivia rodrigo", "amy winehouse", "billie eilish", "taylor swift",
-  "kacey musgraves", "danger mouse", "adele"
+  "kacey musgraves", "danger mouse", "adele", "lorde", "lcd soundsystem",
+  "gustavo cerati"
 ].map(normalize));
 
 const INTERNATIONAL = new Set([
@@ -105,22 +106,22 @@ const specs = [
     id: "P02",
     prompt: "Haz una playlist de 100 canciones para conducir de noche, con mucha energía y sensación de película de acción.",
     complexity: "constrained",
-    multiplier: 1.4,
+    multiplier: 1.5,
     filter: (entry) => STANDARD(entry) && ACTION.has(normalize(entry.artist))
   },
   {
     id: "P03",
     prompt: "Prepara una playlist de 100 canciones para hacer HIIT en casa mezclando géneros, pero sin metal.",
     complexity: "constrained",
-    multiplier: 1.4,
+    multiplier: 1.5,
     filter: (entry) => STANDARD(entry) && year(entry.release_date) >= 1990 && !METAL.test(entry.artist)
   },
   {
     id: "P04",
     prompt: "Haz una playlist de 100 canciones de rock de los últimos 20 años.",
     complexity: "constrained",
-    multiplier: 1.4,
-    maxPerArtist: 10,
+    multiplier: 1.5,
+    maxPerArtist: 12,
     release_year_from: 2006,
     filter: (entry) => STANDARD(entry) && year(entry.release_date) >= 2006 && ROCK.has(normalize(entry.artist))
   },
@@ -128,7 +129,7 @@ const specs = [
     id: "P05",
     prompt: "Crea una playlist de 100 canciones internacionales en distintos idiomas para descubrir música de otros países.",
     complexity: "constrained",
-    multiplier: 1.4,
+    multiplier: 1.5,
     filter: (entry) => STANDARD(entry) && INTERNATIONAL.has(normalize(entry.artist))
   },
   {
@@ -155,8 +156,8 @@ const specs = [
   {
     id: "P09",
     prompt: "Crea una playlist de 100 clásicos variados de los años 60, 70 y 80.",
-    complexity: "standard",
-    multiplier: 1.25,
+    complexity: "constrained",
+    multiplier: 1.5,
     filter: (entry) => {
       const releaseYear = year(entry.release_date);
       return entry.source_category === "default" && releaseYear >= 1960 && releaseYear <= 1989;
@@ -166,7 +167,7 @@ const specs = [
     id: "P10",
     prompt: "Haz una playlist de 100 canciones instrumentales y ambientales para trabajar concentrado.",
     complexity: "constrained",
-    multiplier: 1.4,
+    multiplier: 1.5,
     filter: (entry) => STANDARD(entry) && CALM.has(normalize(entry.artist))
   }
 ];

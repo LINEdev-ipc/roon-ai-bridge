@@ -239,7 +239,7 @@ export type PlaylistBuildResult = {
 const RESOLUTION_CONCURRENCY = 6;
 const RESERVE_MULTIPLIERS: Record<PlaylistSelectionComplexity, number> = {
   standard: 1.25,
-  constrained: 1.4,
+  constrained: 1.5,
   exact_versions: 1.6
 };
 
@@ -306,28 +306,44 @@ function resultCredits(result: MediaResult): string[] {
 }
 
 function versionFamily(result: Pick<MediaResult, "title" | "version_hint">): PlaylistRecordingIntent | "remaster" {
-  if (result.version_hint === "live" || result.version_hint === "remix" || result.version_hint === "cover") {
-    return result.version_hint;
-  }
   const title = result.title || "";
   const versionSuffix = /(?:[\[(]\s*[^)\]]*[\])]\s*$|\s+-\s+.+$)/u.test(title);
   if (versionSuffix && /\b(?:live|en vivo|directo|concert)\b/iu.test(title)) return "live";
   if (/\b(?:dub mix|dub version|version dub)\b/iu.test(title) || (versionSuffix && /\bdub\b/iu.test(title))) return "dub";
   if (/\b(?:remix|rework)\b/iu.test(title) || (versionSuffix && /\bmix\b/iu.test(title))) return "remix";
   if (/\b(?:karaoke|tribute|homage|cover version|originally performed|made popular)\b/iu.test(title)) return "cover";
-  if (versionSuffix && /\bacoustic\b/iu.test(title)) return "acoustic";
+  if (versionSuffix && /\b(?:acoustic|unplugged)\b/iu.test(title)) return "acoustic";
   if (/\b(?:radio edit|acapella|instrumental version|demo version|re-record(?:ed|ing)?|sped up|slowed|nightcore|mashup|medley)\b/iu.test(title)) return "alternate";
   if (/\b(?:remaster(?:ed)?|digital master)\b/iu.test(title) || result.version_hint === "remaster") return "remaster";
+  if (result.version_hint === "live" || result.version_hint === "remix" || result.version_hint === "cover") {
+    return result.version_hint;
+  }
   if (result.version_hint === "edit" || result.version_hint === "alternate") return "alternate";
   return "standard";
 }
 
 function versionAllowed(
-  intent: PlaylistRecordingIntent,
-  result: MediaResult,
-  requestedTitle: string
+  input: NormalizedCandidate,
+  result: MediaResult
 ): boolean {
+  const intent = input.recordingIntent;
   const actual = versionFamily(result);
+  const requestedTitle = input.title;
+  const albumMatches = Boolean(
+    input.albumHint &&
+    result.album &&
+    (
+      normalize(input.albumHint) === normalize(result.album) ||
+      phraseIncludes(normalize(input.albumHint), normalize(result.album)) ||
+      phraseIncludes(normalize(result.album), normalize(input.albumHint))
+    )
+  );
+  const editionEvidence = [
+    requestedTitle,
+    input.albumHint,
+    result.title,
+    result.album
+  ].filter(Boolean).join(" ");
   if (intent === "standard") {
     if (actual === "standard" || actual === "remaster") return true;
     if (
@@ -339,13 +355,37 @@ function versionAllowed(
     }
     return false;
   }
+  if (intent === "cover") {
+    // A cover is identified by its performing artist and canonical recording.
+    // Roon normally exposes it as that artist's standard recording rather than
+    // putting the word "cover" in the visible title.
+    return actual === "cover" || actual === "standard" || actual === "remaster";
+  }
+  if (
+    intent === "live" &&
+    (actual === "standard" || actual === "remaster") &&
+    albumMatches &&
+    /\b(?:live|concert|en vivo|directo|unplugged)\b/iu.test(editionEvidence)
+  ) {
+    return true;
+  }
+  if (
+    intent === "acoustic" &&
+    (actual === "standard" || actual === "remaster" || actual === "alternate") &&
+    albumMatches &&
+    /\b(?:acoustic|unplugged|acústico|acustico)\b/iu.test(editionEvidence)
+  ) {
+    return true;
+  }
   return actual === intent;
 }
 
 function versionHint(intent: PlaylistRecordingIntent): VersionHint {
   if (intent === "standard") return "studio";
-  if (intent === "live" || intent === "remix" || intent === "cover") return intent;
-  if (intent === "acoustic" || intent === "dub" || intent === "alternate") return "alternate";
+  if (intent === "live" || intent === "remix") return intent;
+  if (intent === "cover" || intent === "acoustic") return "studio";
+  if (intent === "dub") return "remix";
+  if (intent === "alternate") return "alternate";
   return "studio";
 }
 
@@ -361,13 +401,17 @@ function creditMatches(expected: string, credits: string[]): boolean {
   ) || phraseIncludes(combined, wanted);
 }
 
-function baseGate(input: NormalizedCandidate, result: MediaResult): boolean {
+function identityGate(input: NormalizedCandidate, result: MediaResult): boolean {
   if (!result.playable || !result.roon_item_key || result.media_type !== "track") return false;
   if (canonicalTitle(input.title) !== canonicalTitle(result.title)) return false;
   const credits = resultCredits(result);
   const primaryCredit = input.requiredCredits[0]?.name || input.artist;
   if (!creditMatches(primaryCredit, credits)) return false;
-  return versionAllowed(input.recordingIntent, result, input.title);
+  return true;
+}
+
+function baseGate(input: NormalizedCandidate, result: MediaResult): boolean {
+  return identityGate(input, result) && versionAllowed(input, result);
 }
 
 function hardGate(input: NormalizedCandidate, result: MediaResult): boolean {
@@ -626,13 +670,30 @@ export class PlaylistBuildService {
     );
     const missing = target === null ? null : Math.max(0, target - scheduled.selected.length);
     if (scheduled.selected.length === 0 && rawTracks.length > 0) {
+      const byStatus: Record<string, number> = {};
+      const byReason: Record<string, number> = {};
+      for (const rejection of session.rejected) {
+        byStatus[rejection.status] = (byStatus[rejection.status] || 0) + 1;
+        byReason[rejection.reason] = (byReason[rejection.reason] || 0) + 1;
+      }
       throw new ApiError(
         "PLAYLIST_BUILD_INCOMPLETE",
         "No submitted recording could be verified, so an empty playlist was not created",
         {
           desired_count: target,
           accepted_count: 0,
-          rejected_count: session.rejected.length
+          rejected_count: session.rejected.length,
+          rejection_summary: {
+            by_status: byStatus,
+            by_reason: byReason
+          },
+          rejected: session.rejected.slice(0, 25),
+          ...(session.diagnostics ? {
+            diagnostics: {
+              rejected_candidates: session.rejected,
+              candidate_metrics: session.candidateMetrics
+            }
+          } : {})
         }
       );
     }
@@ -700,7 +761,7 @@ export class PlaylistBuildService {
             || candidate.input.artist,
           album_observation: candidate.input.albumHint,
           release_year_observation: candidate.input.releaseYearHint,
-          version_hint: versionHint(candidate.input.recordingIntent),
+          version_hint: candidate.input.recordingIntent,
           metadata_depth: "full"
         });
         if (full.profile.status !== "exact" || !full.profile.recording) continue;
@@ -893,7 +954,7 @@ export class PlaylistBuildService {
           artist: candidate.requiredCredits[0]?.name || candidate.artist,
           album_observation: candidate.albumHint,
           release_year_observation: candidate.releaseYearHint,
-          version_hint: versionHint(candidate.recordingIntent),
+          version_hint: candidate.recordingIntent,
           metadata_depth: "identity"
         }).then((catalog) => {
           catalogMs = Date.now() - catalogStartedAt;
@@ -1067,8 +1128,13 @@ export class PlaylistBuildService {
     resolution: TrackResolution,
     catalogProfile: TrackCatalogProfile | null = null
   ): Promise<RankedTrackCandidate | null> {
-    const baseCandidates = resolution.candidates.filter((candidate) => baseGate(input, candidate.result));
-    if (!baseCandidates.length) return null;
+    const identityCandidates = resolution.candidates.filter((candidate) =>
+      identityGate(input, candidate.result)
+    );
+    if (!identityCandidates.length) return null;
+    const baseCandidates = identityCandidates.filter((candidate) =>
+      versionAllowed(input, candidate.result)
+    );
     const strictCandidates = baseCandidates.filter((candidate) => hardGate(input, candidate.result));
     const directCanonicalMatches = strictCandidates.filter((candidate) =>
       candidate.result.direct_match === true &&
@@ -1093,7 +1159,7 @@ export class PlaylistBuildService {
       if (resolved) return resolved;
     }
 
-    const hydrated = (await Promise.all(baseCandidates.slice(0, 3).map(async (candidate) => ({
+    const hydrated = (await Promise.all(identityCandidates.slice(0, 3).map(async (candidate) => ({
       candidate,
       hydrated: await this.hydrate(candidate.result, input, resolution.queries, catalogProfile)
     })))).filter((entry) => hardGate(input, entry.hydrated.result));

@@ -669,7 +669,7 @@ Important MCP contracts:
 - For playlist creation, propose the full candidate pool directly in one
   `roon_save_playlist` or `roon_create_temporary_playlist` call. Do not call
   `roon_search_media` per song. Supply 125% candidates for standard requests,
-  140% for constrained requests and 160% for exact versions; RoonIA consumes
+  150% for constrained requests and 160% for exact versions; RoonIA consumes
   reserves internally.
 - MusicBrainz establishes recording identity on the creation critical path
   while Roon discovery runs in parallel. Full MusicBrainz credits, works and

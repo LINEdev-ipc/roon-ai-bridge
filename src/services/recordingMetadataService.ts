@@ -464,6 +464,8 @@ function releaseSearchAlias(value: string): string {
 type VariantProfile = {
   live: boolean;
   remix: boolean;
+  dub: boolean;
+  acoustic: boolean;
   edit: boolean;
   atmosphere: boolean;
   demo: boolean;
@@ -476,9 +478,19 @@ type VariantProfile = {
 
 function variantProfile(value: unknown, hint?: string | null): VariantProfile {
   const text = normalize([value, hint].filter(Boolean).join(" "));
+  const dub = /\b(?:dub mix|dub version|version dub|dubs)\b/.test(text);
+  const acoustic = /\b(?:acoustic|unplugged|acustico)\b/.test(text);
+  const masteringMix = /\boriginal(?:\s+\w+){0,3}\s+mix\b|\b(?:stereo|mono)\s+mix\b/.test(text);
+  const namedMix = /\b(?:remix(?:es)?|rework|remodel|rewound)\b/.test(text) ||
+    (
+      /\bmix(?:es)?\b/.test(text) &&
+      !masteringMix
+    );
   return {
     live: /\b(?:live|concert|en vivo|directo)\b/.test(text),
-    remix: /\bremix\b/.test(text),
+    remix: namedMix,
+    dub,
+    acoustic,
     edit: /\b(?:single edit|radio edit|edit)\b/.test(text),
     atmosphere: /\b(?:atmos|dolby atmos|5 1|binaural|3d)\b/.test(text),
     demo: /\b(?:demo|session|take)\b/.test(text),
@@ -504,6 +516,8 @@ function variantStrength(requested: VariantProfile, candidateText: string): numb
   if (requested.year && candidate.year !== requested.year) return null;
   if (requested.live !== candidate.live && (requested.live || candidate.live)) return null;
   if (requested.remix !== candidate.remix && (requested.remix || candidate.remix)) return null;
+  if (requested.dub !== candidate.dub && (requested.dub || candidate.dub)) return null;
+  if (requested.acoustic !== candidate.acoustic && (requested.acoustic || candidate.acoustic)) return null;
   if (requested.edit !== candidate.edit && (requested.edit || candidate.edit)) return null;
   if (requested.demo !== candidate.demo && (requested.demo || candidate.demo)) return null;
   if (requested.atmosphere !== candidate.atmosphere && (requested.atmosphere || candidate.atmosphere)) return null;
@@ -512,7 +526,10 @@ function variantStrength(requested: VariantProfile, candidateText: string): numb
   if (requested.year) return 8;
   if (requested.remaster && !candidate.remaster && !candidate.year) return null;
   if (requested.original) return candidate.original ? 8 : null;
-  if (requested.live || requested.remix || requested.edit || requested.demo || requested.atmosphere || requested.alternate) return 7;
+  if (
+    requested.live || requested.remix || requested.dub || requested.acoustic ||
+    requested.edit || requested.demo || requested.atmosphere || requested.alternate
+  ) return 7;
   if (candidate.original) return 6;
   return candidateText.trim() ? 3 : 5;
 }
@@ -707,7 +724,7 @@ export class RecordingMetadataService {
       input.release_year_observation || "",
       input.metadata_depth || "full"
     ].join("|");
-    return `recording-resolution:v6:${crypto.createHash("sha256").update(material).digest("hex")}`;
+    return `recording-resolution:v7:${crypto.createHash("sha256").update(material).digest("hex")}`;
   }
 
   private remember(cacheKey: string, value: RecordingCatalogResolution): RecordingCatalogResolution {
@@ -1082,6 +1099,7 @@ export class RecordingMetadataService {
         : "verified_recording_mbid";
     } else {
       const versionSpecific = requestedVariant.live || requestedVariant.remix ||
+        requestedVariant.dub || requestedVariant.acoustic ||
         requestedVariant.edit || requestedVariant.demo || requestedVariant.atmosphere ||
         requestedVariant.alternate;
       const searchTitle = versionSpecific
@@ -1150,7 +1168,10 @@ export class RecordingMetadataService {
         const duration = durationSeconds(recording.length);
         if (input.duration_seconds && duration && Math.abs(duration - input.duration_seconds) > 2) reasons.push("duration_mismatch");
         const disambiguation = typeof recording.disambiguation === "string" ? recording.disambiguation : "";
-        const strength = variantStrength(requestedVariant, `${recording.title} ${disambiguation}`);
+        const variantEvidence = versionSpecific
+          ? `${recording.title} ${disambiguation} ${releaseTitles(recording).join(" ")}`
+          : `${recording.title} ${disambiguation}`;
+        const strength = variantStrength(requestedVariant, variantEvidence);
         if (strength === null) reasons.push("variant_mismatch");
         if (reasons.length) {
           if (trace.rejected_candidates.length < 12) {

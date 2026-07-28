@@ -284,6 +284,85 @@ test("version searches fall back to core title words when MusicBrainz omits the 
   assert.ok(result.trace.accepted_warnings.includes("version_search_used_core_title_fallback"));
 });
 
+test("MusicBrainz treats a published mix label as remix evidence", async () => {
+  const service = new RecordingMetadataService(async () =>
+    new Response(JSON.stringify({ recordings: [{
+      id: "telefon-tel-aviv-mix",
+      title: "All Around (Telefon Tel Aviv mix)",
+      length: 274000,
+      score: 100,
+      "artist-credit": [{ name: "Bebel Gilberto" }],
+      releases: [{ title: "Remixed", status: "Official" }]
+    }] }), { status: 200 }), { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "All Around (Telefon Tel Aviv mix)",
+    artist: "Bebel Gilberto",
+    album_observation: "Remixed",
+    version_hint: "remix",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "telefon-tel-aviv-mix");
+});
+
+test("MusicBrainz can identify a plain remix title from its remix release", async () => {
+  const service = new RecordingMetadataService(async () =>
+    new Response(JSON.stringify({ recordings: [{
+      id: "people-remix",
+      title: "Are People People?",
+      length: 264000,
+      score: 100,
+      "artist-credit": [{ name: "Depeche Mode" }],
+      releases: [{ title: "Remixes 81–04", status: "Official" }]
+    }] }), { status: 200 }), { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Are People People?",
+    artist: "Depeche Mode",
+    album_observation: "Remixes 81–04",
+    version_hint: "remix",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "people-remix");
+});
+
+test("MusicBrainz uses an unplugged release to identify an acoustic recording", async () => {
+  const service = new RecordingMetadataService(async () =>
+    new Response(JSON.stringify({ recordings: [
+      {
+        id: "shakira-studio",
+        title: "Inevitable",
+        length: 193000,
+        score: 100,
+        "artist-credit": [{ name: "Shakira" }],
+        releases: [{ title: "Dónde están los ladrones?", status: "Official" }]
+      },
+      {
+        id: "shakira-unplugged",
+        title: "Inevitable",
+        length: 219000,
+        score: 96,
+        "artist-credit": [{ name: "Shakira" }],
+        releases: [{ title: "MTV Unplugged", status: "Official" }]
+      }
+    ] }), { status: 200 }), { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Inevitable",
+    artist: "Shakira",
+    album_observation: "MTV Unplugged",
+    version_hint: "acoustic",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "shakira-unplugged");
+});
+
 test("MusicBrainz keeps release identity separate and resolves an exact release track duration", async () => {
   const service = new RecordingMetadataService(async (url) => {
     if (url.pathname.endsWith("/recording")) {
