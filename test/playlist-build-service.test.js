@@ -473,7 +473,11 @@ test("real-shaped acoustic results bind after release verification across Roon v
   };
   const metadataService = {
     enrichResult: async (result, hints) => {
-      assert.equal(hints.verify_release, true);
+      assert.equal(
+        hints.verify_release,
+        result.result_id === "shakira-unplugged",
+        `unexpected release verification policy for ${result.result_id}`
+      );
       const album = result.result_id === "shakira-unplugged" ? "MTV Unplugged" : "Unplugged";
       const duration = result.result_id === "shakira-unplugged" ? 219 : 224;
       return {
@@ -539,6 +543,227 @@ test("real-shaped acoustic results bind after release verification across Roon v
   assert.ok(media.searches.every((request) => !request.query.includes("Luis Fernando Ochoa")));
 });
 
+test("published remixes and covers bind without requiring unavailable Roon album metadata", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia((request) => {
+    if (request.query.includes("Home")) {
+      return [mediaTrack(
+        "depeche-home-remix",
+        "Home (Air \"Around the Golf\" Remix)",
+        "Martin L. Gore, Jean-Benoît Dunckel, Nicolas Godin, Depeche Mode",
+        { versionHint: "remix" }
+      )];
+    }
+    if (request.query.includes("Wild Is the Wind")) {
+      return [mediaTrack(
+        "cat-power-cover",
+        "Wild Is the Wind",
+        "Dimitri Tiomkin, Ned Washington, Cat Power"
+      )];
+    }
+    return [];
+  });
+  const profile = (input) => ({
+    status: "exact",
+    reason: "unique_compatible_recording_from_release_observation_identity_only",
+    recording: {
+      musicbrainz_id: `mb-${input.title}`,
+      title: input.title,
+      artist_credit: [{
+        musicbrainz_id: `artist-${input.artist}`,
+        name: input.artist,
+        join_phrase: ""
+      }],
+      disambiguation: null,
+      duration_seconds: null,
+      duration_source: null,
+      isrcs: []
+    },
+    composers: [],
+    lyricists: [],
+    genres: [],
+    release_group: {
+      musicbrainz_id: `group-${input.album_observation}`,
+      title: input.album_observation,
+      artist_credit: [],
+      first_release_date: null,
+      release_year: input.release_year_observation,
+      primary_type: "Album",
+      secondary_types: [],
+      disambiguation: null,
+      selection_reason: "catalog_album_matches_observed_album"
+    },
+    release: null,
+    work: null,
+    credits: [],
+    cover_art: null,
+    roon_binding: null,
+    provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+    warnings: []
+  });
+  const trackCatalogService = {
+    resolve: async (input) => ({ resolution: { status: "exact" }, profile: profile(input) }),
+    bind: () => ({ status: "observed" })
+  };
+  const enrichmentCalls = [];
+  const metadataService = {
+    enrichResult: async (result, hints) => {
+      enrichmentCalls.push({ result, hints });
+      assert.equal(hints.verify_release, false);
+      return {
+        result,
+        audio_metadata: {
+          title: result.title,
+          artist: result.artist,
+          album: null,
+          metadata_status: "partial"
+        },
+        report: {
+          observed_at: "2026-07-29T00:00:00.000Z",
+          album_result_id: null,
+          warnings: []
+        }
+      };
+    }
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    metadataService,
+    trackCatalogService
+  );
+
+  const result = await builder.build({
+    name: "Strong recording evidence",
+    desired_count: 2,
+    enqueue_metadata_enrichment: false,
+    tracks: [
+      {
+        title: "Home (Air \"Around the Golf\" Remix)",
+        artist_credit: "Depeche Mode",
+        album_hint: "Remixes 81–04",
+        recording_intent: "remix"
+      },
+      {
+        title: "Wild Is the Wind",
+        artist_credit: "Cat Power",
+        album_hint: "The Covers Record",
+        recording_intent: "cover"
+      }
+    ]
+  });
+
+  assert.equal(result.complete, true);
+  assert.deepEqual(
+    result.playlist.tracks.map((track) => track.resolution.selected_result_id),
+    ["depeche-home-remix", "cat-power-cover"]
+  );
+  assert.equal(enrichmentCalls.length, 2);
+});
+
+test("a Roon live suffix must carry the requested release anchor before fast binding", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => [
+    mediaTrack(
+      "nina-wrong-fast",
+      "The Other Woman (Live In New York, 1964)",
+      "Nina Simone, Jessie Mae Robinson",
+      { versionHint: "live" }
+    ),
+    mediaTrack(
+      "nina-town-hall-fast",
+      "The Other Woman (Live at Town Hall)",
+      "Nina Simone, Jessie Mae Robinson",
+      { versionHint: "live" }
+    )
+  ]);
+  const profile = {
+    status: "exact",
+    reason: "unique_compatible_recording_from_release_observation_identity_only",
+    recording: {
+      musicbrainz_id: "mb-nina-town-hall-fast",
+      title: "The Other Woman",
+      artist_credit: [{ musicbrainz_id: "nina", name: "Nina Simone", join_phrase: "" }],
+      disambiguation: "live, 1959: Town Hall",
+      duration_seconds: null,
+      duration_source: null,
+      isrcs: []
+    },
+    composers: [],
+    lyricists: [],
+    genres: [],
+    release_group: {
+      musicbrainz_id: "group-town-hall-fast",
+      title: "Nina Simone at Town Hall",
+      artist_credit: [],
+      first_release_date: "1959",
+      release_year: 1959,
+      primary_type: "Album",
+      secondary_types: ["Live"],
+      disambiguation: null,
+      selection_reason: "catalog_album_matches_observed_album"
+    },
+    release: null,
+    work: null,
+    credits: [],
+    cover_art: null,
+    roon_binding: null,
+    provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+    warnings: []
+  };
+  const trackCatalogService = {
+    resolve: async () => ({ resolution: { status: "exact" }, profile }),
+    bind: () => ({ status: "observed" })
+  };
+  const metadataService = {
+    enrichResult: async (result, hints) => {
+      assert.equal(result.result_id, "nina-town-hall-fast");
+      assert.equal(hints.verify_release, false);
+      return {
+        result,
+        audio_metadata: {
+          title: result.title,
+          artist: result.artist,
+          album: null,
+          metadata_status: "partial"
+        },
+        report: {
+          observed_at: "2026-07-29T00:00:00.000Z",
+          album_result_id: null,
+          warnings: []
+        }
+      };
+    }
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    metadataService,
+    trackCatalogService
+  );
+
+  const result = await builder.build({
+    name: "Anchored concert suffix",
+    desired_count: 1,
+    enqueue_metadata_enrichment: false,
+    tracks: [{
+      title: "The Other Woman",
+      artist_credit: "Nina Simone",
+      album_hint: "Nina Simone at Town Hall",
+      release_year_hint: 1959,
+      recording_intent: "live",
+      performance_sensitive: true
+    }]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.playlist.tracks[0].resolution.selected_result_id, "nina-town-hall-fast");
+});
+
 test("exact live binding rejects another concert and selects the requested release", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const media = fakeMedia(() => [
@@ -550,7 +775,7 @@ test("exact live binding rejects another concert and selects the requested relea
     ),
     mediaTrack(
       "nina-town-hall",
-      "The Other Woman (Live at Town Hall)",
+      "The Other Woman (Live)",
       "Nina Simone, Jessie Mae Robinson",
       { versionHint: "live" }
     )

@@ -368,6 +368,67 @@ test("MusicBrainz uses an unplugged release to identify an acoustic recording", 
   assert.match(queries[0], /release:"MTV Unplugged"/);
 });
 
+test("MusicBrainz treats a harmless live suffix as the same unplugged release", async () => {
+  const service = new RecordingMetadataService(async () =>
+    new Response(JSON.stringify({ recordings: [{
+      id: "shakira-unplugged-live-suffix",
+      title: "Inevitable",
+      length: 219000,
+      score: 100,
+      "artist-credit": [{ name: "Shakira" }],
+      releases: [{ title: "MTV Unplugged (Live)", status: "Official" }]
+    }] }), { status: 200 }), { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Inevitable",
+    artist: "Shakira",
+    album_observation: "MTV Unplugged",
+    require_release_match: true,
+    version_hint: "acoustic",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "shakira-unplugged-live-suffix");
+});
+
+test("MusicBrainz keeps the release requirement through a core-title fallback", async () => {
+  const queries = [];
+  const service = new RecordingMetadataService(async (url) => {
+    const query = url.searchParams.get("query");
+    queries.push(query);
+    if (query.includes("Around") || query.includes("Golf")) {
+      return new Response(JSON.stringify({ recordings: [{
+        id: "wrong-remix-release",
+        title: "Home",
+        score: 100,
+        "artist-credit": [{ name: "Depeche Mode" }],
+        releases: [{ title: "Unrelated Mixes", status: "Official" }]
+      }] }), { status: 200 });
+    }
+    return new Response(JSON.stringify({ recordings: [{
+      id: "still-wrong-remix-release",
+      title: "Home",
+      score: 100,
+      "artist-credit": [{ name: "Depeche Mode" }],
+      releases: [{ title: "Unrelated Mixes", status: "Official" }]
+    }] }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Home (Air Around the Golf remix)",
+    artist: "Depeche Mode",
+    album_observation: "Remixes 81–04",
+    require_release_match: true,
+    version_hint: "remix",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "not_found");
+  assert.ok(queries.length >= 2);
+  assert.ok(queries.every((query) => query.includes('release:"Remixes 81–04"')));
+});
+
 test("MusicBrainz never substitutes another concert when an exact release anchor is required", async () => {
   const queries = [];
   const service = new RecordingMetadataService(async (url) => {

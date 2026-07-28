@@ -301,8 +301,9 @@ export class PlaylistMetadataEnrichmentService {
     const requestedAlbum = result.album || hints.album || null;
     if (verifyRoonRelease && !release && requestedAlbum) {
       try {
+        const requestedArtist = source.album_artist || hints.artist || source.artist;
         const search = await this.mediaService.search({
-          query: [requestedAlbum, source.album_artist || source.artist || hints.artist].filter(Boolean).join(" "),
+          query: [requestedAlbum, requestedArtist].filter(Boolean).join(" "),
           types: ["album"],
           count: 10,
           sourcePreference: this.sourcePreference
@@ -310,7 +311,7 @@ export class PlaylistMetadataEnrichmentService {
         const exact = search.results.find((candidate) =>
           candidate.media_type === "album" &&
           sameText(candidate.title, requestedAlbum) &&
-          artistMatches(candidate, source.album_artist || source.artist || hints.artist)
+          artistMatches(candidate, requestedArtist)
         );
         if (exact) {
           const verified = await this.verifiedRelease(source, exact.result_id);
@@ -329,8 +330,10 @@ export class PlaylistMetadataEnrichmentService {
     if (verifyRoonRelease && !release && source.image_key) {
       try {
         const artistHints = Array.from(new Map([
+          ...splitArtistCredit(hints.artist),
+          ...splitArtistCredit(source.album_artist),
           ...(source.artists || []).map((artist) => artist.title),
-          ...splitArtistCredit(hints.artist || source.artist)
+          ...splitArtistCredit(source.artist)
         ].filter(Boolean).map((artist) => [normalize(artist), artist])).values()).slice(0, 5);
         for (const artistHint of artistHints) {
           const artistSearch = await this.mediaService.search({

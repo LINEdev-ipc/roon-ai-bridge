@@ -371,12 +371,20 @@ function versionAllowed(
   if (
     intent === "acoustic" &&
     (
-      actual === "standard" || actual === "remaster" ||
-      actual === "alternate" || actual === "live"
+      actual === "standard" || actual === "remaster"
     ) &&
     albumMatches &&
     /\b(?:acoustic|unplugged|acústico|acustico)\b/iu.test(editionEvidence)
   ) {
+    return true;
+  }
+  if (
+    intent === "acoustic" &&
+    (actual === "alternate" || actual === "live") &&
+    /\b(?:acoustic|unplugged|acústico|acustico)\b/iu.test(input.albumHint || "")
+  ) {
+    // Roon frequently classifies unplugged performances as live or alternate
+    // before it exposes their album. Evidence is still required later.
     return true;
   }
   return actual === intent;
@@ -418,6 +426,43 @@ function hasPublishedVersionLabel(title: string): boolean {
     .test(title);
 }
 
+const RELEASE_ANCHOR_STOPWORDS = new Set([
+  "acoustic", "acustico", "album", "at", "concert", "de", "del", "directo",
+  "el", "en", "in", "la", "las", "live", "los", "recordings", "remaster",
+  "remastered", "the", "unplugged", "version", "y"
+]);
+
+function releaseAnchorTokens(value: string | null): string[] {
+  return normalize(value)
+    .split(" ")
+    .filter((token) => token.length >= 3 && !RELEASE_ANCHOR_STOPWORDS.has(token));
+}
+
+function resultCarriesReleaseAnchor(
+  input: NormalizedCandidate,
+  result: MediaResult
+): boolean {
+  if (
+    !input.albumHint ||
+    !["live", "acoustic"].includes(input.recordingIntent) ||
+    !hasPublishedVersionLabel(result.title)
+  ) {
+    return false;
+  }
+  const observed = normalize(result.title);
+  const normalizedAlbum = normalize(input.albumHint);
+  if (phraseIncludes(observed, normalizedAlbum)) return true;
+  const shared = releaseAnchorTokens(input.albumHint)
+    .filter((token) => phraseIncludes(observed, token));
+  if (shared.length >= 2 || shared.some((token) => token.length >= 5 || token === "mtv")) {
+    return true;
+  }
+  const observedYears = new Set(
+    Array.from(result.title.matchAll(/\b(?:19|20)\d{2}\b/gu), (match) => Number(match[0]))
+  );
+  return Boolean(input.releaseYearHint && observedYears.has(input.releaseYearHint));
+}
+
 function recordingEvidenceAllowed(
   input: NormalizedCandidate,
   result: MediaResult,
@@ -437,12 +482,14 @@ function recordingEvidenceAllowed(
   }
 
   if (
-    !catalogProfile &&
     hasPublishedVersionLabel(input.title) &&
-    normalize(input.title) === normalize(result.title)
+    normalize(input.title) === normalize(result.title) &&
+    !["live", "acoustic"].includes(input.recordingIntent)
   ) {
     return true;
   }
+  if (input.recordingIntent === "cover") return true;
+  if (resultCarriesReleaseAnchor(input, result)) return true;
 
   const canonicalDuration = catalogProfile?.recording?.duration_seconds || null;
   const durationMatches = Boolean(
@@ -451,13 +498,10 @@ function recordingEvidenceAllowed(
     Math.abs(result.duration_seconds - canonicalDuration) <= 3
   );
   if (!durationMatches) return false;
-  if (input.recordingIntent === "standard" || input.recordingIntent === "cover") return true;
-  if (!hasPublishedVersionLabel(input.title)) return false;
-  const requested = normalize(input.title);
-  const observed = normalize(result.title);
-  return requested === observed ||
-    phraseIncludes(requested, observed) ||
-    phraseIncludes(observed, requested);
+  // At this point title, performer and version family already passed the hard
+  // gate. Canonical duration is sufficient to bind the recording even when
+  // Roon omits its album or exposes an equivalent country/service edition.
+  return true;
 }
 
 function candidateSnapshot(result: MediaResult): Record<string, unknown> {
@@ -1182,7 +1226,20 @@ export class PlaylistBuildService {
     }
 
     const hydrationStartedAt = Date.now();
-    const hydrated = await hydrateCached(selected.result, resolution.queries);
+    const strongBindingEvidence = recordingEvidenceAllowed(
+      candidate,
+      selected.result,
+      catalogProfile
+    );
+    const hydrated = strongBindingEvidence
+      ? await this.hydrate(
+          selected.result,
+          candidate,
+          resolution.queries,
+          catalogProfile,
+          false
+        )
+      : await hydrateCached(selected.result, resolution.queries);
     hydrationMs = Date.now() - hydrationStartedAt;
     const result = hydrated.result;
     if (catalogProfile?.recording && this.trackCatalogService) {
@@ -1248,6 +1305,12 @@ export class PlaylistBuildService {
       (candidate.result.direct_match_score || 0) >= 90 &&
       canonicalTitle(candidate.result.title) === canonicalTitle(input.title)
     );
+    const strongUnhydratedMatches = strictCandidates.filter((candidate) =>
+      recordingEvidenceAllowed(input, candidate.result, catalogProfile)
+    );
+    if (requiresRecordingEvidence && strongUnhydratedMatches.length) {
+      return strongUnhydratedMatches[0];
+    }
     if (!requiresRecordingEvidence && directCanonicalMatches.length === 1) {
       return directCanonicalMatches[0];
     }
@@ -1333,14 +1396,15 @@ export class PlaylistBuildService {
     result: MediaResult,
     input: NormalizedCandidate,
     queries: string[],
-    catalogProfile: TrackCatalogProfile | null = null
+    catalogProfile: TrackCatalogProfile | null = null,
+    verifyRelease = true
   ): Promise<HydratedCandidateResult> {
     const enriched = await this.metadataService.enrichResult(result, {
       title: input.title,
       artist: input.artist,
       album: input.albumHint,
       catalog_profile: catalogProfile,
-      verify_release: Boolean(input.albumHint) &&
+      verify_release: verifyRelease && Boolean(input.albumHint) &&
         (exactRecordingFamily(input) || input.performanceSensitive)
     });
     const hydrated = enriched.result;

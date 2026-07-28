@@ -315,6 +315,48 @@ test("exact playlist binding verifies the Roon release even with a canonical cat
   assert.equal(result.audio_metadata.recording.musicbrainz_id, "mb-shakira-unplugged");
 });
 
+test("release verification searches with the requested performer before polluted Roon credits", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const searches = [];
+  const sparse = mediaTrack({
+    title: "Home (Air \"Around the Golf\" Remix)",
+    artist: "Martin L. Gore, Jean-Benoît Dunckel, Nicolas Godin, Depeche Mode",
+    artists: [
+      { type: "artist", title: "Martin L. Gore", artist: null, result_id: null },
+      { type: "artist", title: "Jean-Benoît Dunckel", artist: null, result_id: null },
+      { type: "artist", title: "Nicolas Godin", artist: null, result_id: null },
+      { type: "artist", title: "Depeche Mode", artist: null, result_id: null }
+    ],
+    album: null,
+    album_artist: null,
+    image_key: null,
+    version_hint: "remix",
+    links: { artist: null, artists: [], album: null }
+  });
+  const media = {
+    async getTrackMetadata() {
+      return sparse;
+    },
+    async search(request) {
+      searches.push(request);
+      return { results: [] };
+    },
+    async getAlbumDetail() {
+      throw new Error("no album result was returned");
+    }
+  };
+  const service = new PlaylistMetadataEnrichmentService(playlistService, media);
+  await service.enrichResult(sparse, {
+    title: "Home (Air \"Around the Golf\" Remix)",
+    artist: "Depeche Mode",
+    album: "Remixes 81–04",
+    verify_release: true
+  });
+
+  assert.equal(searches[0].query, "Remixes 81–04 Depeche Mode");
+  assert.doesNotMatch(searches[0].query, /Martin L\. Gore|Jean-Benoît|Nicolas Godin/);
+});
+
 test("duplicate refreshes for the same playlist track share one Roon operation", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const playlist = playlistService.createPlaylist({

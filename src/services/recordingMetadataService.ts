@@ -446,7 +446,8 @@ function variantCoreSearchTitle(value: unknown): string {
 }
 
 function releaseKey(value: unknown): string {
-  return normalize(String(value || "").replace(/\s*[([](?:19|20)\d{2}[\])]\s*$/u, " "))
+  return normalize(String(value || "")
+    .replace(/\s*[([]\s*(?:(?:19|20)\d{2}|live|(?:\d{4}\s+)?remaster(?:ed)?(?:\s+\d{4})?|[^)\]]*\bedition)\s*[\])]\s*$/iu, " "))
     .replace(/\b(?:super deluxe(?: edition)?|deluxe edition|expanded edition)\b/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -514,10 +515,26 @@ function recordingVariantProfile(value: unknown, hint?: string | null): VariantP
 function variantStrength(requested: VariantProfile, candidateText: string): number | null {
   const candidate = variantProfile(candidateText);
   if (requested.year && candidate.year !== requested.year) return null;
-  if (requested.live !== candidate.live && (requested.live || candidate.live)) return null;
+  const acousticLivePerformance =
+    requested.acoustic && candidate.acoustic && candidate.live;
+  if (
+    requested.live !== candidate.live &&
+    (requested.live || candidate.live) &&
+    !acousticLivePerformance
+  ) {
+    return null;
+  }
   if (requested.remix !== candidate.remix && (requested.remix || candidate.remix)) return null;
   if (requested.dub !== candidate.dub && (requested.dub || candidate.dub)) return null;
-  if (requested.acoustic !== candidate.acoustic && (requested.acoustic || candidate.acoustic)) return null;
+  const liveAcousticPerformance =
+    requested.live && candidate.live && candidate.acoustic;
+  if (
+    requested.acoustic !== candidate.acoustic &&
+    (requested.acoustic || candidate.acoustic) &&
+    !liveAcousticPerformance
+  ) {
+    return null;
+  }
   if (requested.edit !== candidate.edit && (requested.edit || candidate.edit)) return null;
   if (requested.demo !== candidate.demo && (requested.demo || candidate.demo)) return null;
   if (requested.atmosphere !== candidate.atmosphere && (requested.atmosphere || candidate.atmosphere)) return null;
@@ -726,7 +743,7 @@ export class RecordingMetadataService {
       input.release_year_observation || "",
       input.metadata_depth || "full"
     ].join("|");
-    return `recording-resolution:v8:${crypto.createHash("sha256").update(material).digest("hex")}`;
+    return `recording-resolution:v9:${crypto.createHash("sha256").update(material).digest("hex")}`;
   }
 
   private remember(cacheKey: string, value: RecordingCatalogResolution): RecordingCatalogResolution {
@@ -1119,7 +1136,8 @@ export class RecordingMetadataService {
         : recordingSearchTitle(input.title) || input.title;
       const releaseTitle = input.album || input.album_observation || null;
       const releaseAlias = releaseTitle ? releaseSearchAlias(releaseTitle) : null;
-      const searchRelease = input.album || (versionSpecific ? releaseTitle : null);
+      const searchRelease = input.album ||
+        (input.require_release_match || versionSpecific ? releaseTitle : null);
       let requiredRelease = (input.album || input.require_release_match) ? releaseTitle : null;
       let usedCoreTitleFallback = false;
       const listenBrainzPromise = this.listenBrainz?.lookup({
@@ -1259,7 +1277,7 @@ export class RecordingMetadataService {
           if (typeof recording.id === "string") mergedRecordings.set(recording.id, recording);
         }
         recordings = [...mergedRecordings.values()];
-        requiredRelease = null;
+        if (!input.require_release_match) requiredRelease = null;
         ranked = rank(recordings, requiredRelease);
         trace.accepted_warnings.push("version_search_used_core_title_fallback");
       }
