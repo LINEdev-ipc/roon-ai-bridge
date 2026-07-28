@@ -104,6 +104,13 @@ type RoonObservation = {
   warnings: string[];
 };
 
+type HydratedCandidateResult = {
+  result: MediaResult;
+  observation: RoonObservation;
+  audioMetadata: AudioMetadata;
+  metadataEnrichment: Record<string, unknown>;
+};
+
 type PreparedCandidate = {
   input: NormalizedCandidate;
   result: MediaResult;
@@ -273,8 +280,8 @@ function normalize(value: unknown): string {
 function canonicalTitle(value: unknown): string {
   const raw = String(value || "")
     .replace(/\s*[([]\s*\d{2,3}\s*[\])]\s*$/u, "")
-    .replace(/\s*[\[(]\s*(?:live\b[^)\]]*|[^)\]]*\b(?:remix|rework|dub mix|dub version|radio edit|acoustic version|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master)\b[^)\]]*)[\])]\s*$/iu, "")
-    .replace(/\s+-\s+(?:live\b.*|.*\b(?:remix|rework|dub mix|dub version|radio edit|acoustic version|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master)\b.*)$/iu, "")
+    .replace(/\s*[\[(]\s*(?:(?:live|en vivo|directo|concert)\b[^)\]]*|[^)\]]*\b(?:remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master)\b[^)\]]*)[\])]\s*$/iu, "")
+    .replace(/\s+-\s+(?:(?:live|en vivo|directo|concert)\b.*|.*\b(?:remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master)\b.*)$/iu, "")
     .replace(/\s+\b(?:single version|album version|original version|stereo version|mono version)\b.*$/iu, "");
   return normalize(raw);
 }
@@ -329,15 +336,7 @@ function versionAllowed(
   const intent = input.recordingIntent;
   const actual = versionFamily(result);
   const requestedTitle = input.title;
-  const albumMatches = Boolean(
-    input.albumHint &&
-    result.album &&
-    (
-      normalize(input.albumHint) === normalize(result.album) ||
-      phraseIncludes(normalize(input.albumHint), normalize(result.album)) ||
-      phraseIncludes(normalize(result.album), normalize(input.albumHint))
-    )
-  );
+  const albumMatches = albumMatchesInput(input, result);
   const editionEvidence = [
     requestedTitle,
     input.albumHint,
@@ -371,7 +370,10 @@ function versionAllowed(
   }
   if (
     intent === "acoustic" &&
-    (actual === "standard" || actual === "remaster" || actual === "alternate") &&
+    (
+      actual === "standard" || actual === "remaster" ||
+      actual === "alternate" || actual === "live"
+    ) &&
     albumMatches &&
     /\b(?:acoustic|unplugged|acústico|acustico)\b/iu.test(editionEvidence)
   ) {
@@ -383,10 +385,79 @@ function versionAllowed(
 function versionHint(intent: PlaylistRecordingIntent): VersionHint {
   if (intent === "standard") return "studio";
   if (intent === "live" || intent === "remix") return intent;
-  if (intent === "cover" || intent === "acoustic") return "studio";
+  if (intent === "cover") return "studio";
+  if (intent === "acoustic") return "unknown";
   if (intent === "dub") return "remix";
   if (intent === "alternate") return "alternate";
   return "studio";
+}
+
+function albumMatchesInput(input: NormalizedCandidate, result: MediaResult): boolean {
+  return Boolean(
+    input.albumHint &&
+    result.album &&
+    (
+      normalize(input.albumHint) === normalize(result.album) ||
+      phraseIncludes(normalize(input.albumHint), normalize(result.album)) ||
+      phraseIncludes(normalize(result.album), normalize(input.albumHint))
+    )
+  );
+}
+
+function exactRecordingFamily(input: NormalizedCandidate): boolean {
+  return input.recordingIntent !== "standard";
+}
+
+function resultIsrcs(result: MediaResult): string[] {
+  const observed = result as MediaResult & { isrc?: string | null; isrcs?: string[] };
+  return [observed.isrc, ...(observed.isrcs || [])].map(normalize).filter(Boolean);
+}
+
+function hasPublishedVersionLabel(title: string): boolean {
+  return /\b(?:live|concert|en vivo|directo|remix|mix|rework|refix|dub|acoustic|unplugged|edit|alternate|version)\b/iu
+    .test(title);
+}
+
+function recordingEvidenceAllowed(
+  input: NormalizedCandidate,
+  result: MediaResult,
+  catalogProfile: TrackCatalogProfile | null
+): boolean {
+  if (!exactRecordingFamily(input) && !input.performanceSensitive) return true;
+  if (albumMatchesInput(input, result)) return true;
+
+  const canonicalIsrcs = new Set(
+    (catalogProfile?.recording?.isrcs || []).map(normalize).filter(Boolean)
+  );
+  if (
+    canonicalIsrcs.size &&
+    resultIsrcs(result).some((isrc) => canonicalIsrcs.has(isrc))
+  ) {
+    return true;
+  }
+
+  if (
+    !catalogProfile &&
+    hasPublishedVersionLabel(input.title) &&
+    normalize(input.title) === normalize(result.title)
+  ) {
+    return true;
+  }
+
+  const canonicalDuration = catalogProfile?.recording?.duration_seconds || null;
+  const durationMatches = Boolean(
+    canonicalDuration &&
+    result.duration_seconds &&
+    Math.abs(result.duration_seconds - canonicalDuration) <= 3
+  );
+  if (!durationMatches) return false;
+  if (input.recordingIntent === "standard" || input.recordingIntent === "cover") return true;
+  if (!hasPublishedVersionLabel(input.title)) return false;
+  const requested = normalize(input.title);
+  const observed = normalize(result.title);
+  return requested === observed ||
+    phraseIncludes(requested, observed) ||
+    phraseIncludes(observed, requested);
 }
 
 function candidateSnapshot(result: MediaResult): Record<string, unknown> {
@@ -760,6 +831,8 @@ export class PlaylistBuildService {
           artist: candidate.catalogProfile?.recording?.artist_credit[0]?.name
             || candidate.input.artist,
           album_observation: candidate.input.albumHint,
+          require_release_match: exactRecordingFamily(candidate.input) &&
+            Boolean(candidate.input.albumHint),
           release_year_observation: candidate.input.releaseYearHint,
           version_hint: candidate.input.recordingIntent,
           metadata_depth: "full"
@@ -953,6 +1026,7 @@ export class PlaylistBuildService {
           title: candidate.title,
           artist: candidate.requiredCredits[0]?.name || candidate.artist,
           album_observation: candidate.albumHint,
+          require_release_match: exactRecordingFamily(candidate) && Boolean(candidate.albumHint),
           release_year_observation: candidate.releaseYearHint,
           version_hint: candidate.recordingIntent,
           metadata_depth: "identity"
@@ -972,7 +1046,7 @@ export class PlaylistBuildService {
     ]);
     let catalogProfile: TrackCatalogProfile | null = null;
     let canonicalTitle = candidate.title;
-    let canonicalArtist = candidate.artist;
+    let bindingArtist = candidate.requiredCredits[0]?.name || candidate.artist;
     let bindingCandidate = candidate;
     if (catalog) {
       catalogProfile = catalog.profile;
@@ -1002,51 +1076,77 @@ export class PlaylistBuildService {
         );
       }
       canonicalTitle = catalogProfile.recording.title;
-      canonicalArtist = catalogProfile.recording.artist_credit.length
-        ? catalogProfile.recording.artist_credit
-          .map((credit) => `${credit.name}${credit.join_phrase}`)
-          .join("")
-        : candidate.artist;
+      const canonicalCredits = catalogProfile.recording.artist_credit
+        .map((credit) => credit.name)
+        .filter(Boolean);
+      const equivalentCredit = canonicalCredits.find((credit) =>
+        creditMatches(bindingArtist, [normalize(credit)])
+      );
+      bindingArtist = equivalentCredit || canonicalCredits[0] || bindingArtist;
       bindingCandidate = {
         ...candidate,
         title: canonicalTitle,
-        artist: canonicalArtist,
-        requiredCredits: [
-          ...catalogProfile.recording.artist_credit.map((credit, index) => ({
-            name: credit.name,
-            role: index === 0 ? "primary" : "featured"
-          })),
-          ...candidate.requiredCredits.filter((credit) =>
-            !["primary", "featured"].includes(credit.role)
-          )
-        ]
+        artist: bindingArtist,
+        requiredCredits: equivalentCredit
+          ? candidate.requiredCredits
+          : [
+              { name: bindingArtist, role: "primary" },
+              ...candidate.requiredCredits.filter((credit) =>
+                !["primary", "featured"].includes(credit.role)
+              )
+            ]
       };
     }
-    const baseQuery = `${canonicalTitle} ${canonicalArtist}`;
+    const baseQuery = `${canonicalTitle} ${bindingArtist}`;
     const canonicalRequest = {
       query: baseQuery,
       title: canonicalTitle,
-      artist: canonicalArtist,
+      artist: bindingArtist,
       album: candidate.albumHint,
       releaseYear: candidate.releaseYearHint,
       versionHint: versionHint(candidate.recordingIntent),
       count: 25,
       sourcePreference: this.sourcePreference
     } as const;
+    const hydrationCache = new Map<string, Promise<HydratedCandidateResult>>();
+    const hydrateCached = (
+      result: MediaResult,
+      queries: string[]
+    ): Promise<HydratedCandidateResult> => {
+      const key = [result.result_id, ...queries].join("|");
+      const existing = hydrationCache.get(key);
+      if (existing) return existing;
+      const pending = this.hydrate(result, candidate, queries, catalogProfile);
+      hydrationCache.set(key, pending);
+      return pending;
+    };
     let resolution = resolver.reconcile(
       canonicalRequest,
       speculativeResolution.candidates.map((entry) => entry.result),
       speculativeResolution.queries
     );
-    let selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
+    let selected = await this.selectStrictCandidate(
+      bindingCandidate,
+      resolution,
+      catalogProfile,
+      (result) => hydrateCached(result, resolution.queries)
+    );
     let stage = selected ? "speculative_title_artist" : "canonical_title_artist";
     speculativeBindingReused = Boolean(selected);
-    if (!selected) {
+    const canonicalAlreadySearched = speculativeResolution.queries.some((query) =>
+      normalize(query) === normalize(`${canonicalTitle} ${bindingArtist}`)
+    );
+    if (!selected && !canonicalAlreadySearched) {
       const fallbackStartedAt = Date.now();
       resolution = await resolver.resolve(canonicalRequest);
       roonFallbackMs += Date.now() - fallbackStartedAt;
       roonSearches += resolution.queries.length;
-      selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
+      selected = await this.selectStrictCandidate(
+        bindingCandidate,
+        resolution,
+        catalogProfile,
+        (result) => hydrateCached(result, resolution.queries)
+      );
     }
     if (!selected && candidate.albumHint) {
       stage = "title_artist_album";
@@ -1054,7 +1154,7 @@ export class PlaylistBuildService {
       resolution = await resolver.resolve({
         query: `${baseQuery} ${candidate.albumHint}`,
         title: canonicalTitle,
-        artist: canonicalArtist,
+        artist: bindingArtist,
         album: candidate.albumHint,
         releaseYear: candidate.releaseYearHint,
         versionHint: versionHint(candidate.recordingIntent),
@@ -1064,7 +1164,12 @@ export class PlaylistBuildService {
       });
       roonFallbackMs += Date.now() - fallbackStartedAt;
       roonSearches += resolution.queries.length;
-      selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
+      selected = await this.selectStrictCandidate(
+        bindingCandidate,
+        resolution,
+        catalogProfile,
+        (result) => hydrateCached(result, resolution.queries)
+      );
     }
     if (!selected) {
       const needsEnrichment = resolution.candidates.some((entry) => baseGate(bindingCandidate, entry.result));
@@ -1077,7 +1182,7 @@ export class PlaylistBuildService {
     }
 
     const hydrationStartedAt = Date.now();
-    const hydrated = await this.hydrate(selected.result, candidate, resolution.queries, catalogProfile);
+    const hydrated = await hydrateCached(selected.result, resolution.queries);
     hydrationMs = Date.now() - hydrationStartedAt;
     const result = hydrated.result;
     if (catalogProfile?.recording && this.trackCatalogService) {
@@ -1126,7 +1231,8 @@ export class PlaylistBuildService {
   private async selectStrictCandidate(
     input: NormalizedCandidate,
     resolution: TrackResolution,
-    catalogProfile: TrackCatalogProfile | null = null
+    catalogProfile: TrackCatalogProfile | null = null,
+    hydrateResult?: (result: MediaResult) => Promise<HydratedCandidateResult>
   ): Promise<RankedTrackCandidate | null> {
     const identityCandidates = resolution.candidates.filter((candidate) =>
       identityGate(input, candidate.result)
@@ -1136,13 +1242,17 @@ export class PlaylistBuildService {
       versionAllowed(input, candidate.result)
     );
     const strictCandidates = baseCandidates.filter((candidate) => hardGate(input, candidate.result));
+    const requiresRecordingEvidence = exactRecordingFamily(input) || input.performanceSensitive;
     const directCanonicalMatches = strictCandidates.filter((candidate) =>
       candidate.result.direct_match === true &&
       (candidate.result.direct_match_score || 0) >= 90 &&
       canonicalTitle(candidate.result.title) === canonicalTitle(input.title)
     );
-    if (directCanonicalMatches.length === 1) return directCanonicalMatches[0];
+    if (!requiresRecordingEvidence && directCanonicalMatches.length === 1) {
+      return directCanonicalMatches[0];
+    }
     if (
+      !requiresRecordingEvidence &&
       directCanonicalMatches.length > 1 &&
       directCanonicalMatches.every((candidate) => !candidate.result.album) &&
       new Set(directCanonicalMatches.map((candidate) =>
@@ -1151,18 +1261,26 @@ export class PlaylistBuildService {
     ) {
       return directCanonicalMatches[0];
     }
-    if (!input.performanceSensitive && strictCandidates.length === 1) return strictCandidates[0];
-    if (!input.performanceSensitive && resolution.status === "resolved") {
+    if (!requiresRecordingEvidence && strictCandidates.length === 1) return strictCandidates[0];
+    if (!requiresRecordingEvidence && resolution.status === "resolved") {
       const resolved = strictCandidates.find((candidate) =>
         candidate.result.result_id === resolution.selected?.result.result_id
       );
       if (resolved) return resolved;
     }
 
-    const hydrated = (await Promise.all(identityCandidates.slice(0, 3).map(async (candidate) => ({
+    const hydrationLimit = requiresRecordingEvidence ? 4 : 3;
+    const hydrated = (await Promise.all(identityCandidates.slice(0, hydrationLimit).map(async (candidate) => ({
       candidate,
-      hydrated: await this.hydrate(candidate.result, input, resolution.queries, catalogProfile)
-    })))).filter((entry) => hardGate(input, entry.hydrated.result));
+      hydrated: await (
+        hydrateResult
+          ? hydrateResult(candidate.result)
+          : this.hydrate(candidate.result, input, resolution.queries, catalogProfile)
+      )
+    })))).filter((entry) =>
+      hardGate(input, entry.hydrated.result) &&
+      recordingEvidenceAllowed(input, entry.hydrated.result, catalogProfile)
+    );
     if (hydrated.length === 1) return hydrated[0].candidate;
     if (!hydrated.length) return null;
     const albumMatches = input.albumHint
@@ -1216,17 +1334,14 @@ export class PlaylistBuildService {
     input: NormalizedCandidate,
     queries: string[],
     catalogProfile: TrackCatalogProfile | null = null
-  ): Promise<{
-    result: MediaResult;
-    observation: RoonObservation;
-    audioMetadata: AudioMetadata;
-    metadataEnrichment: Record<string, unknown>;
-  }> {
+  ): Promise<HydratedCandidateResult> {
     const enriched = await this.metadataService.enrichResult(result, {
       title: input.title,
       artist: input.artist,
       album: input.albumHint,
-      catalog_profile: catalogProfile
+      catalog_profile: catalogProfile,
+      verify_release: Boolean(input.albumHint) &&
+        (exactRecordingFamily(input) || input.performanceSensitive)
     });
     const hydrated = enriched.result;
     const albumResultId = enriched.report.album_result_id;

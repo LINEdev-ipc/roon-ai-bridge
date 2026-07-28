@@ -710,6 +710,7 @@ export class RecordingMetadataService {
     artist: string;
     album?: string | null;
     album_observation?: string | null;
+    require_release_match?: boolean;
     version_hint?: string | null;
     isrc?: string | null;
     duration_seconds?: number | null;
@@ -720,11 +721,12 @@ export class RecordingMetadataService {
       normalize(input.recording_id),
       normalize(input.title), normalize(input.artist), releaseKey(input.album),
       releaseKey(input.album_observation),
+      input.require_release_match ? "required-release" : "observed-release",
       normalize(input.version_hint), normalize(input.isrc), input.duration_seconds || "",
       input.release_year_observation || "",
       input.metadata_depth || "full"
     ].join("|");
-    return `recording-resolution:v7:${crypto.createHash("sha256").update(material).digest("hex")}`;
+    return `recording-resolution:v8:${crypto.createHash("sha256").update(material).digest("hex")}`;
   }
 
   private remember(cacheKey: string, value: RecordingCatalogResolution): RecordingCatalogResolution {
@@ -1024,6 +1026,7 @@ export class RecordingMetadataService {
     artist: string;
     album?: string | null;
     album_observation?: string | null;
+    require_release_match?: boolean;
     version_hint?: string | null;
     isrc?: string | null;
     duration_seconds?: number | null;
@@ -1065,14 +1068,23 @@ export class RecordingMetadataService {
       const rejectionReasons: string[] = [];
       if (baseRecordingTitle(detail.title) !== expectedTitle) rejectionReasons.push("title_mismatch");
       const disambiguation = typeof detail.disambiguation === "string" ? detail.disambiguation : "";
-      if (variantStrength(requestedVariant, `${detail.title || ""} ${disambiguation}`) === null) {
+      const variantEvidence = [
+        detail.title,
+        disambiguation,
+        ...releaseTitles(detail)
+      ].filter(Boolean).join(" ");
+      if (variantStrength(requestedVariant, variantEvidence) === null) {
         rejectionReasons.push("variant_mismatch");
       }
       const detailedIsrcs = strings(detail.isrcs);
       if (expectedIsrc && detailedIsrcs.length && !detailedIsrcs.some((isrc) => normalize(isrc) === expectedIsrc)) {
         rejectionReasons.push("isrc_mismatch");
       }
-      if (input.album && !compatibleReleases(detail, input.album).length) rejectionReasons.push("release_mismatch");
+      const requiredRelease = input.album ||
+        (input.require_release_match ? input.album_observation : null);
+      if (requiredRelease && !compatibleReleases(detail, requiredRelease).length) {
+        rejectionReasons.push("release_mismatch");
+      }
       const detailedArtists = artistNames(detail["artist-credit"]);
       anchoredArtistMismatch = detailedArtists.length > 0
         && !detailedArtists.some((artist) => artistEquivalent(artist, expectedArtist));
@@ -1107,17 +1119,23 @@ export class RecordingMetadataService {
         : recordingSearchTitle(input.title) || input.title;
       const releaseTitle = input.album || input.album_observation || null;
       const releaseAlias = releaseTitle ? releaseSearchAlias(releaseTitle) : null;
-      let requiredRelease = input.album ? releaseTitle : null;
+      const searchRelease = input.album || (versionSpecific ? releaseTitle : null);
+      let requiredRelease = (input.album || input.require_release_match) ? releaseTitle : null;
       let usedCoreTitleFallback = false;
       const listenBrainzPromise = this.listenBrainz?.lookup({
         title: input.title,
         artist: input.artist,
         album: releaseTitle
       }) || Promise.resolve(null);
-      let recordings = await this.search(searchTitle, input.artist, input.album ? releaseAlias : null, trace);
-      if (!recordings.length && input.album && releaseAlias) {
+      let recordings = await this.search(
+        searchTitle,
+        input.artist,
+        searchRelease ? releaseAlias : null,
+        trace
+      );
+      if (!recordings.length && searchRelease && releaseAlias) {
         recordings = await this.search(searchTitle, input.artist, null, trace);
-        requiredRelease = null;
+        if (!input.require_release_match) requiredRelease = null;
         trace.accepted_warnings.push("explicit_release_did_not_identify_recording");
       }
       const coreSearchTitle = versionSpecific
@@ -1129,8 +1147,13 @@ export class RecordingMetadataService {
         coreSearchTitle &&
         normalize(coreSearchTitle) !== normalize(searchTitle)
       ) {
-        recordings = await this.search(coreSearchTitle, input.artist, null, trace);
-        requiredRelease = null;
+        recordings = await this.search(
+          coreSearchTitle,
+          input.artist,
+          input.require_release_match ? releaseAlias : null,
+          trace
+        );
+        if (!input.require_release_match) requiredRelease = null;
         usedCoreTitleFallback = true;
         trace.accepted_warnings.push("version_search_used_core_title_fallback");
       }
@@ -1225,7 +1248,12 @@ export class RecordingMetadataService {
         coreSearchTitle &&
         normalize(coreSearchTitle) !== normalize(searchTitle)
       ) {
-        const fallbackRecordings = await this.search(coreSearchTitle, input.artist, null, trace);
+        const fallbackRecordings = await this.search(
+          coreSearchTitle,
+          input.artist,
+          input.require_release_match ? releaseAlias : null,
+          trace
+        );
         const mergedRecordings = new Map<string, JsonRecord>();
         for (const recording of [...recordings, ...fallbackRecordings]) {
           if (typeof recording.id === "string") mergedRecordings.set(recording.id, recording);

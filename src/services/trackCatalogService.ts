@@ -97,6 +97,7 @@ type ResolveCatalogInput = {
   artist: string;
   album?: string | null;
   album_observation?: string | null;
+  require_release_match?: boolean;
   version_hint?: string | null;
   isrc?: string | null;
   duration_seconds?: number | null;

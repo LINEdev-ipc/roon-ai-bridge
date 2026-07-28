@@ -235,6 +235,86 @@ test("metadata enrichment opens a resolved track detail when search results omit
   assert.equal(result.report.warnings.includes("album_reference_unavailable"), false);
 });
 
+test("exact playlist binding verifies the Roon release even with a canonical catalog profile", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  let detailCalls = 0;
+  const sparse = mediaTrack({
+    title: "Inevitable (En Vivo)",
+    artist: "Shakira",
+    version_hint: "live",
+    album: null,
+    album_artist: null,
+    duration_seconds: null,
+    links: { artist: null, artists: [], album: null }
+  });
+  const media = {
+    async getTrackMetadata() {
+      detailCalls += 1;
+      return mediaTrack({
+        title: "Inevitable (En Vivo)",
+        artist: "Shakira",
+        version_hint: "live",
+        album: "MTV Unplugged",
+        album_artist: "Shakira",
+        duration_seconds: 219,
+        track_number: 6,
+        release_year: 1999,
+        links: { artist: null, artists: [], album: null }
+      });
+    },
+    async search() { return { results: [] }; },
+    async getAlbumDetail() { throw new Error("direct track detail already verified the release"); }
+  };
+  const profile = {
+    status: "exact",
+    reason: "unique_compatible_recording_from_release_observation_identity_only",
+    recording: {
+      musicbrainz_id: "mb-shakira-unplugged",
+      title: "Inevitable",
+      artist_credit: [{ musicbrainz_id: "shakira", name: "Shakira", join_phrase: "" }],
+      disambiguation: "acoustic performance",
+      duration_seconds: 219,
+      duration_source: "musicbrainz_recording_median",
+      isrcs: []
+    },
+    composers: [],
+    lyricists: [],
+    genres: [],
+    release_group: {
+      musicbrainz_id: "group-mtv-unplugged",
+      title: "MTV Unplugged",
+      artist_credit: [],
+      first_release_date: "1999",
+      release_year: 1999,
+      primary_type: "Album",
+      secondary_types: ["Live"],
+      disambiguation: null,
+      selection_reason: "catalog_album_matches_observed_album"
+    },
+    release: null,
+    work: null,
+    credits: [],
+    cover_art: null,
+    roon_binding: null,
+    provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+    warnings: []
+  };
+  const service = new PlaylistMetadataEnrichmentService(playlistService, media);
+  const result = await service.enrichResult(sparse, {
+    title: "Inevitable",
+    artist: "Shakira",
+    album: "MTV Unplugged",
+    catalog_profile: profile,
+    verify_release: true
+  });
+
+  assert.equal(detailCalls, 1);
+  assert.equal(result.result.album, "MTV Unplugged");
+  assert.equal(result.result.duration_seconds, 219);
+  assert.equal(result.report.release.verified_by, "roon_direct_album_navigation");
+  assert.equal(result.audio_metadata.recording.musicbrainz_id, "mb-shakira-unplugged");
+});
+
 test("duplicate refreshes for the same playlist track share one Roon operation", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const playlist = playlistService.createPlaylist({

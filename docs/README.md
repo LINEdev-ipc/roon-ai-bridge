@@ -24,6 +24,7 @@ This documentation covers the current v0.20.0 beta repository:
 - [v0.20.0 Beta 10 Playlist Identity Fast Path Validation](v0.20.0-beta.10-playlist-identity-fast-path-validation.md)
 - [v0.20.0 Beta 11 Canonical Binding and Provider Scheduling Validation](v0.20.0-beta.11-canonical-binding-validation.md)
 - [v0.20.0 Beta 12 Exact Recording Families Validation](v0.20.0-beta.12-exact-recording-families-validation.md)
+- [v0.20.0 Beta 13 Release-Anchored Binding Validation](v0.20.0-beta.13-release-anchored-binding-validation.md)
 - [v0.18.0 Release Notes](v0.18.0-release-notes.md)
 - [v0.18.0 Validation](v0.18.0-validation.md)
 - [v0.18.0 Architecture Validation](v0.18.0-architecture-validation.md)

@@ -412,6 +412,241 @@ test("cover artists and album-anchored live or acoustic performances bind withou
   );
 });
 
+test("real-shaped acoustic results bind after release verification across Roon version classes", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => [
+    mediaTrack("shakira-unplugged", "Inevitable (En Vivo)", "Luis Fernando Ochoa, Shakira", {
+      versionHint: "live"
+    }),
+    mediaTrack(
+      "corrs-unplugged",
+      "What Can I Do (MTV Unplugged Version)",
+      "Andrea Corr, Caroline Corr, Jim Corr, Sharon Corr, The Corrs",
+      { versionHint: "alternate" }
+    )
+  ]);
+  const catalog = (input) => ({
+    status: "exact",
+    reason: "unique_compatible_recording_from_release_observation_identity_only",
+    recording: {
+      musicbrainz_id: input.title === "Inevitable" ? "mb-shakira-unplugged" : "mb-corrs-unplugged",
+      title: input.title,
+      artist_credit: input.title === "Inevitable"
+        ? [
+            { musicbrainz_id: "writer", name: "Luis Fernando Ochoa", join_phrase: ", " },
+            { musicbrainz_id: "shakira", name: "Shakira", join_phrase: "" }
+          ]
+        : [{ musicbrainz_id: "corrs", name: "The Corrs", join_phrase: "" }],
+      disambiguation: "acoustic performance",
+      duration_seconds: input.title === "Inevitable" ? 219 : 224,
+      duration_source: "musicbrainz_recording_median",
+      isrcs: []
+    },
+    composers: [],
+    lyricists: [],
+    genres: [],
+    release_group: {
+      musicbrainz_id: `group-${input.title}`,
+      title: input.album_observation,
+      artist_credit: [],
+      first_release_date: "1999",
+      release_year: 1999,
+      primary_type: "Album",
+      secondary_types: ["Live"],
+      disambiguation: null,
+      selection_reason: "catalog_album_matches_observed_album"
+    },
+    release: null,
+    work: null,
+    credits: [],
+    cover_art: null,
+    roon_binding: null,
+    provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+    warnings: ["metadata_enrichment_pending"]
+  });
+  const trackCatalogService = {
+    resolve: async (input) => {
+      assert.equal(input.require_release_match, true);
+      return { resolution: { status: "exact" }, profile: catalog(input) };
+    },
+    bind: () => ({ status: "observed" })
+  };
+  const metadataService = {
+    enrichResult: async (result, hints) => {
+      assert.equal(hints.verify_release, true);
+      const album = result.result_id === "shakira-unplugged" ? "MTV Unplugged" : "Unplugged";
+      const duration = result.result_id === "shakira-unplugged" ? 219 : 224;
+      return {
+        result: { ...result, album, duration_seconds: duration },
+        audio_metadata: {
+          title: result.title,
+          artist: result.artist,
+          album,
+          duration_seconds: duration,
+          metadata_status: "exact"
+        },
+        report: {
+          observed_at: "2026-07-28T22:00:00.000Z",
+          album_result_id: `album-${result.result_id}`,
+          warnings: []
+        }
+      };
+    }
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    metadataService,
+    trackCatalogService
+  );
+
+  const shakira = await builder.prepareCandidate({
+    title: "Inevitable",
+    artist_credit: "Shakira",
+    album_hint: "MTV Unplugged",
+    recording_intent: "acoustic"
+  });
+  assert.equal(shakira.accepted, true, JSON.stringify(shakira));
+
+  const result = await builder.build({
+    name: "Acoustic release evidence",
+    desired_count: 2,
+    enqueue_metadata_enrichment: false,
+    tracks: [
+      {
+        title: "Inevitable",
+        artist_credit: "Shakira",
+        album_hint: "MTV Unplugged",
+        recording_intent: "acoustic"
+      },
+      {
+        title: "What Can I Do",
+        artist_credit: "The Corrs",
+        album_hint: "Unplugged",
+        recording_intent: "acoustic"
+      }
+    ]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.added_count, 2);
+  assert.deepEqual(
+    result.playlist.tracks.map((track) => track.resolution.selected_result_id),
+    ["shakira-unplugged", "corrs-unplugged"]
+  );
+  assert.ok(media.searches.every((request) => !request.query.includes("Luis Fernando Ochoa")));
+});
+
+test("exact live binding rejects another concert and selects the requested release", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => [
+    mediaTrack(
+      "nina-wrong-concert",
+      "The Other Woman (Live In New York, 1964)",
+      "Nina Simone, Jessie Mae Robinson",
+      { versionHint: "live" }
+    ),
+    mediaTrack(
+      "nina-town-hall",
+      "The Other Woman (Live at Town Hall)",
+      "Nina Simone, Jessie Mae Robinson",
+      { versionHint: "live" }
+    )
+  ]);
+  const profile = {
+    status: "exact",
+    reason: "unique_compatible_recording_from_release_observation_identity_only",
+    recording: {
+      musicbrainz_id: "mb-nina-town-hall",
+      title: "The Other Woman",
+      artist_credit: [{ musicbrainz_id: "nina", name: "Nina Simone", join_phrase: "" }],
+      disambiguation: "live, 1959: Town Hall",
+      duration_seconds: 185,
+      duration_source: "musicbrainz_recording_median",
+      isrcs: []
+    },
+    composers: [],
+    lyricists: [],
+    genres: [],
+    release_group: {
+      musicbrainz_id: "group-town-hall",
+      title: "Nina Simone at Town Hall",
+      artist_credit: [],
+      first_release_date: "1959",
+      release_year: 1959,
+      primary_type: "Album",
+      secondary_types: ["Live"],
+      disambiguation: null,
+      selection_reason: "catalog_album_matches_observed_album"
+    },
+    release: null,
+    work: null,
+    credits: [],
+    cover_art: null,
+    roon_binding: null,
+    provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+    warnings: ["metadata_enrichment_pending"]
+  };
+  const trackCatalogService = {
+    resolve: async (input) => {
+      assert.equal(input.require_release_match, true);
+      return { resolution: { status: "exact" }, profile };
+    },
+    bind: () => ({ status: "observed" })
+  };
+  const metadataService = {
+    enrichResult: async (result, hints) => {
+      assert.equal(hints.verify_release, true);
+      const correct = result.result_id === "nina-town-hall";
+      const album = correct ? "Nina Simone at Town Hall" : "Live & Kickin (Vol. 1)";
+      const duration = correct ? 185 : 255;
+      return {
+        result: { ...result, album, duration_seconds: duration },
+        audio_metadata: {
+          title: result.title,
+          artist: result.artist,
+          album,
+          duration_seconds: duration,
+          metadata_status: "exact"
+        },
+        report: {
+          observed_at: "2026-07-28T22:00:00.000Z",
+          album_result_id: `album-${result.result_id}`,
+          warnings: []
+        }
+      };
+    }
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    metadataService,
+    trackCatalogService
+  );
+
+  const result = await builder.build({
+    name: "Exact concert",
+    desired_count: 1,
+    enqueue_metadata_enrichment: false,
+    tracks: [{
+      title: "The Other Woman",
+      artist_credit: "Nina Simone",
+      album_hint: "Nina Simone at Town Hall",
+      release_year_hint: 1959,
+      recording_intent: "live",
+      performance_sensitive: true
+    }]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.playlist.tracks[0].resolution.selected_result_id, "nina-town-hall");
+  assert.equal(result.playlist.tracks[0].album, "Nina Simone at Town Hall");
+});
+
 test("an empty diagnostic build preserves every rejection in the error details", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const builder = new PlaylistBuildService(playlistService, fakeMedia(() => []));

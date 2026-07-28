@@ -115,6 +115,46 @@ test("source and quality never outweigh the correct artist and studio version", 
   assert.equal(resolved.selected.result.result_id, "correct-local");
 });
 
+test("unknown version discovery keeps live and alternate acoustic candidates eligible", async () => {
+  let strategy;
+  const mediaService = {
+    async search(request) {
+      strategy = request.strategy;
+      return {
+        results: [
+          candidate("unplugged-live", {
+            title: "Inevitable (En Vivo)",
+            artist: "Shakira",
+            subtitle: "Shakira",
+            album: null,
+            version_hint: "live"
+          }),
+          candidate("unplugged-alternate", {
+            title: "Inevitable (MTV Unplugged Version)",
+            artist: "Shakira",
+            subtitle: "Shakira",
+            album: null,
+            version_hint: "alternate"
+          })
+        ],
+        warnings: []
+      };
+    }
+  };
+
+  const resolved = await new TrackResolutionService(mediaService).resolve({
+    query: "Inevitable Shakira MTV Unplugged",
+    title: "Inevitable",
+    artist: "Shakira",
+    album: "MTV Unplugged",
+    versionHint: "unknown"
+  });
+
+  assert.notEqual(resolved.reason, "no_results");
+  assert.equal(strategy.avoid_live, false);
+  assert.equal(strategy.avoid_remix, false);
+});
+
 test("a fresh exact Roon result is reused without repeating the catalog search", async () => {
   let searches = 0;
   const preferred = candidate("fresh-roon-result", {

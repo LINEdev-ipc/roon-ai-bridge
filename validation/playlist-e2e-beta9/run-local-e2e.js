@@ -87,7 +87,7 @@ async function main() {
   const state = fs.existsSync(STATE_FILE)
     ? readJson(STATE_FILE)
     : {
-        version: "0.20.0-beta.12",
+        version: "0.20.0-beta.13",
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
         extension: {
@@ -96,7 +96,7 @@ async function main() {
         },
         results: []
       };
-  state.version = "0.20.0-beta.12";
+  state.version = "0.20.0-beta.13";
   const base = loadConfig();
   const config = {
     ...base,

@@ -61,7 +61,10 @@ function baseVersion(version: VersionHint | null | undefined): "studio" | "live"
 function baseTitle(value: string): string {
   return normalize(String(value || "")
     .replace(/\s*[([]\s*\d{2,3}\s*[\])]\s*$/u, " "))
-    .replace(/\b(?:live|en vivo|directo|remaster(?:ed|ing)?|remix|mix|radio edit|edit|cover|tribute|version|binaural|3d)\b.*$/g, "")
+    .replace(
+      /\b(?:live|en vivo|directo|concert|remaster(?:ed|ing)?|remix|mix|rework|refix|dub|radio edit|edit|acoustic|unplugged|cover|tribute|version|alternate|binaural|3d)\b.*$/giu,
+      ""
+    )
     .trim();
 }
 
@@ -151,16 +154,18 @@ function identityScore(result: MediaResult, request: TrackResolutionRequest): { 
     }
   }
 
-  const requestedVersion = request.versionHint && request.versionHint !== "unknown"
-    ? baseVersion(request.versionHint)
-    : "studio";
-  const actualVersion = baseVersion(result.version_hint);
-  if (actualVersion === requestedVersion) {
-    score += requestedVersion === "studio" ? 15 : 12;
-    reasons.push(`requested_${requestedVersion}_version`);
-  } else {
-    score -= actualVersion === "live" || actualVersion === "remix" || actualVersion === "cover" ? 40 : 20;
-    penalties.push(`unexpected_${actualVersion}_version`);
+  const requestedVersion = request.versionHint === "unknown"
+    ? null
+    : baseVersion(request.versionHint);
+  if (requestedVersion) {
+    const actualVersion = baseVersion(result.version_hint);
+    if (actualVersion === requestedVersion) {
+      score += requestedVersion === "studio" ? 15 : 12;
+      reasons.push(`requested_${requestedVersion}_version`);
+    } else {
+      score -= actualVersion === "live" || actualVersion === "remix" || actualVersion === "cover" ? 40 : 20;
+      penalties.push(`unexpected_${actualVersion}_version`);
+    }
   }
 
   return { score: Math.max(0, Math.min(130, score)), reasons, penalties };

@@ -331,8 +331,10 @@ test("MusicBrainz can identify a plain remix title from its remix release", asyn
 });
 
 test("MusicBrainz uses an unplugged release to identify an acoustic recording", async () => {
-  const service = new RecordingMetadataService(async () =>
-    new Response(JSON.stringify({ recordings: [
+  const queries = [];
+  const service = new RecordingMetadataService(async (url) => {
+    queries.push(url.searchParams.get("query"));
+    return new Response(JSON.stringify({ recordings: [
       {
         id: "shakira-studio",
         title: "Inevitable",
@@ -349,18 +351,51 @@ test("MusicBrainz uses an unplugged release to identify an acoustic recording", 
         "artist-credit": [{ name: "Shakira" }],
         releases: [{ title: "MTV Unplugged", status: "Official" }]
       }
-    ] }), { status: 200 }), { minRequestIntervalMs: 0 });
+    ] }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
 
   const result = await service.lookup({
     title: "Inevitable",
     artist: "Shakira",
     album_observation: "MTV Unplugged",
+    require_release_match: true,
     version_hint: "acoustic",
     metadata_depth: "identity"
   });
 
   assert.equal(result.status, "exact");
   assert.equal(result.metadata.recording_id, "shakira-unplugged");
+  assert.match(queries[0], /release:"MTV Unplugged"/);
+});
+
+test("MusicBrainz never substitutes another concert when an exact release anchor is required", async () => {
+  const queries = [];
+  const service = new RecordingMetadataService(async (url) => {
+    queries.push(url.searchParams.get("query"));
+    return new Response(JSON.stringify({ recordings: [{
+      id: "nina-1985",
+      title: "The Other Woman",
+      disambiguation: "live, 1985: USA",
+      length: 255000,
+      score: 100,
+      "artist-credit": [{ name: "Nina Simone" }],
+      releases: [{ title: "Live & Kickin (Vol. 1)", status: "Official" }]
+    }] }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "The Other Woman",
+    artist: "Nina Simone",
+    album_observation: "Nina Simone at Town Hall",
+    require_release_match: true,
+    version_hint: "live",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "not_found");
+  assert.equal(result.reason, "no_compatible_recording");
+  assert.ok(queries.length >= 1);
+  assert.ok(queries.every((query) => query.includes('release:"Nina Simone at Town Hall"')));
 });
 
 test("MusicBrainz keeps release identity separate and resolves an exact release track duration", async () => {

@@ -225,6 +225,7 @@ export class PlaylistMetadataEnrichmentService {
       artist?: string | null;
       album?: string | null;
       catalog_profile?: TrackCatalogProfile | null;
+      verify_release?: boolean;
     } = {}
   ): Promise<EnrichedMediaResult> {
     const observedAt = new Date().toISOString();
@@ -239,12 +240,12 @@ export class PlaylistMetadataEnrichmentService {
     let result = source;
     let albumResultId = result.links?.album?.result_id || null;
     let release: PlaylistReleaseMetadata | null = null;
+    const verifyRoonRelease = !hints.catalog_profile || hints.verify_release === true;
 
-    // A catalog profile already supplies the canonical release and recording.
-    // In that path the selected Roon result is only the playback binding, so
-    // walking Roon's album/artist hierarchy adds latency without improving the
-    // stored identity.
-    if (!hints.catalog_profile && albumResultId) {
+    // A catalog profile normally supplies the canonical release and recording.
+    // Exact recording families opt back into Roon release navigation because
+    // the observed album is binding evidence, not canonical metadata.
+    if (verifyRoonRelease && albumResultId) {
       try {
         const verified = await this.verifiedRelease(source, albumResultId);
         if (verified) {
@@ -257,7 +258,7 @@ export class PlaylistMetadataEnrichmentService {
       }
     }
 
-    if (!hints.catalog_profile && !release && typeof this.mediaService.getTrackMetadata === "function") {
+    if (verifyRoonRelease && !release && typeof this.mediaService.getTrackMetadata === "function") {
       try {
         const detail = await this.mediaService.getTrackMetadata(source.result_id);
         const detailAlbumId = detail.links?.album?.result_id || albumResultId;
@@ -298,7 +299,7 @@ export class PlaylistMetadataEnrichmentService {
     }
 
     const requestedAlbum = result.album || hints.album || null;
-    if (!hints.catalog_profile && !release && requestedAlbum) {
+    if (verifyRoonRelease && !release && requestedAlbum) {
       try {
         const search = await this.mediaService.search({
           query: [requestedAlbum, source.album_artist || source.artist || hints.artist].filter(Boolean).join(" "),
@@ -325,7 +326,7 @@ export class PlaylistMetadataEnrichmentService {
       }
     }
 
-    if (!hints.catalog_profile && !release && source.image_key) {
+    if (verifyRoonRelease && !release && source.image_key) {
       try {
         const artistHints = Array.from(new Map([
           ...(source.artists || []).map((artist) => artist.title),
@@ -360,7 +361,7 @@ export class PlaylistMetadataEnrichmentService {
       }
     }
 
-    if (!hints.catalog_profile && !release && requestedAlbum) {
+    if (verifyRoonRelease && !release && requestedAlbum) {
       conflicts.push({
         type: "release_mismatch",
         message: "The requested album could not be verified against the selected Roon track and artwork."
