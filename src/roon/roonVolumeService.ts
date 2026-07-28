@@ -24,7 +24,7 @@ export type VolumeOutputState = {
 
 export type VolumeChangeResult = {
   ok: true;
-  action?: "roon_change_volume";
+  action?: "roon_set_volume";
   dry_run?: false;
   classification?: ReturnType<typeof getToolClassification>;
   zone_id: string;
@@ -173,7 +173,7 @@ export async function changeZoneVolume(
 
   if (options.dryRun) {
     return dryRunResponse(
-      "roon_change_volume",
+      "roon_set_volume",
       { before, after, volume_policy: volumePolicy },
       {
         before,
@@ -188,7 +188,7 @@ export async function changeZoneVolume(
       volumePolicy.outputs.find((policy) => policy.requires_confirmation) ||
       volumePolicy.outputs[0];
     return confirmationRequiredResponse(
-      "roon_change_volume",
+      "roon_set_volume",
       "volume_above_safe_limit",
       "Requested volume exceeds the configured safe limit.",
       {
@@ -248,9 +248,9 @@ export async function changeZoneVolume(
   const refreshedZone = verifiedZone || roonClient.getZone(zoneId) || zone;
   return {
     ok: true,
-    action: "roon_change_volume",
+    action: "roon_set_volume",
     dry_run: false,
-    classification: getToolClassification("roon_change_volume"),
+    classification: getToolClassification("roon_set_volume"),
     zone_id: zoneId,
     zone_name: refreshedZone.display_name,
     mode,

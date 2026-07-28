@@ -4,6 +4,9 @@ const test = require("node:test");
 const { IntentGateway } = require("../dist/bridge-v2/intentGateway");
 const { TargetResolver } = require("../dist/bridge-v2/targetResolver");
 const { normalizeServiceResult } = require("../dist/bridge-v2/contracts");
+const { PlaylistBuildService } = require("../dist/services/playlistBuildService");
+const { PlaylistMetadataEnrichmentService } = require("../dist/services/playlistMetadataEnrichmentService");
+const { PlaylistRepairService } = require("../dist/services/playlistRepairService");
 
 function zone(id, name, state = "stopped") {
   return { zone_id: id, display_name: name, state, outputs: [] };
@@ -26,7 +29,7 @@ function roonClient(zones = []) {
 
 function gatewayContext(client, mediaService) {
   const noop = () => {};
-  return {
+  const context = {
     config: {},
     logger: { info: noop, warn: noop, error: noop, debug: noop },
     roonClient: client,
@@ -35,6 +38,31 @@ function gatewayContext(client, mediaService) {
     zonePresetService: {},
     volumeLimitService: { activeSafetyLimits: () => [] }
   };
+  const playlistProxy = new Proxy({}, {
+    get(_target, property) {
+      const value = context.playlistService[property];
+      return typeof value === "function" ? value.bind(context.playlistService) : value;
+    }
+  });
+  context.playlistMetadataEnrichmentService = new PlaylistMetadataEnrichmentService(
+    playlistProxy,
+    mediaService,
+    context.logger
+  );
+  context.playlistBuildService = new PlaylistBuildService(
+    playlistProxy,
+    mediaService,
+    context.logger,
+    "streaming_first",
+    context.playlistMetadataEnrichmentService
+  );
+  context.playlistRepairService = new PlaylistRepairService(
+    playlistProxy,
+    mediaService,
+    context.playlistMetadataEnrichmentService,
+    context.logger
+  );
+  return context;
 }
 
 test("v2 target resolver accepts IDs and accent-insensitive exact names", () => {
@@ -353,18 +381,82 @@ test("v2 playlist save never persists an unresolved candidate or an incomplete p
   assert.equal(saves, 0);
 });
 
-test("v2 playlist reconstruction forwards selected tracks through the consolidated service", async () => {
+test("v2 playlist save reports a verified partial target as a completed mutation", async () => {
+  const context = gatewayContext(roonClient(), {});
+  context.playlistBuildService = {
+    build: async () => ({
+      phase: "finalized",
+      build_id: null,
+      round: 3,
+      next_round: null,
+      rounds_remaining: 0,
+      desired_count: 20,
+      added_count: 13,
+      missing_count: 7,
+      complete: false,
+      playlist: {
+        playlist_id: "partial",
+        name: "Partial",
+        tracks: [],
+        tracks_count: 13
+      },
+      accepted: [],
+      rejected: [],
+      not_selected: [],
+      unused_reserves: 0,
+      search_summary: { proposals_seen: 40, valid_recordings: 13, rejected: 27 },
+      rejection_summary: {
+        total: 27,
+        returned_candidates: 25,
+        by_status: { missing: 27 },
+        by_reason: { musicbrainz_not_found: 27 },
+        recovery_actions: []
+      }
+    })
+  };
+  context.playlistService = {
+    validatePlaylist: () => ({
+      summary: { ready: 13, unresolved: 0 },
+      issues: []
+    })
+  };
+  const result = await new IntentGateway(context).savePlaylist({
+    name: "Partial",
+    desired_count: 20,
+    tracks: []
+  });
+
+  assert.equal(result.status, "completed");
+  assert.equal(result.verified, true);
+  assert.equal(result.data.build_summary.complete, false);
+  assert.equal(result.data.build_summary.added_count, 13);
+  assert.equal(result.data.build_summary.missing_count, 7);
+  assert.match(result.summary, /13 verified tracks; 7 are missing/);
+});
+
+test("v2 playlist reconstruction starts the consolidated asynchronous service", async () => {
   const context = gatewayContext(roonClient(), {});
   let options;
   const gateway = new IntentGateway(context);
   gateway.playlistRepairService = {
-    rebuildPlaylist: async (received) => {
+    startRebuild: (received) => {
       options = received;
       return {
-        playlist: { playlist_id: "p1", name: "Legacy", tracks: [], tracks_count: 0 },
-        resolution: [{ track_id: "t2", status: "resolved" }],
-        enrichment: { completed: 1 },
-        report: { complete: true, migrated: 1 }
+        job_id: "11111111-1111-4111-8111-111111111111",
+        playlist_id: "p1",
+        status: "completed",
+        phase: "completed",
+        scope: "selected",
+        progress: { processed_tracks: 1, total_tracks: 1, message: "done" },
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+        error: null,
+        result: {
+          playlist: { playlist_id: "p1", name: "Legacy", tracks: [], tracks_count: 0 },
+          resolution: [{ track_id: "t2", status: "resolved" }],
+          enrichment: { completed: 1 },
+          report: { complete: true, migrated: 1 }
+        }
       };
     }
   };

@@ -6,6 +6,9 @@ import { createStderrLogger } from "../../utils/logger";
 import { createDatabase } from "../../db/database";
 import { MetadataProviderCacheService } from "../../services/metadataProviderCacheService";
 import { PlaylistCatalogDiagnosticsService } from "../../services/playlistCatalogDiagnosticsService";
+import { PlaylistBuildService } from "../../services/playlistBuildService";
+import { PlaylistMetadataEnrichmentService } from "../../services/playlistMetadataEnrichmentService";
+import { PlaylistRepairService } from "../../services/playlistRepairService";
 import { RecordingMetadataService } from "../../services/recordingMetadataService";
 import { TrackCatalogService } from "../../services/trackCatalogService";
 import { SystemManagementService } from "../../services/systemManagementService";
@@ -49,6 +52,28 @@ const trackCatalogService = new TrackCatalogService(
   metadataProviderCacheService,
   logger
 );
+const playlistMetadataEnrichmentService = new PlaylistMetadataEnrichmentService(
+  playlistService,
+  mediaService,
+  logger,
+  "streaming_first",
+  recordingMetadataService
+);
+const playlistRepairService = new PlaylistRepairService(
+  playlistService,
+  mediaService,
+  playlistMetadataEnrichmentService,
+  logger,
+  trackCatalogService
+);
+const playlistBuildService = new PlaylistBuildService(
+  playlistService,
+  mediaService,
+  logger,
+  "streaming_first",
+  playlistMetadataEnrichmentService,
+  trackCatalogService
+);
 const zonePresetService = new ZonePresetService(config, database);
 const volumeLimitService = new VolumeLimitService(config, database);
 
@@ -59,6 +84,9 @@ startBridgeV2McpServer({
   logger,
   roonClient,
   playlistService,
+  playlistBuildService,
+  playlistMetadataEnrichmentService,
+  playlistRepairService,
   playlistCatalogDiagnosticsService,
   trackCatalogService,
   mediaService,

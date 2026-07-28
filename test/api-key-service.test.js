@@ -130,15 +130,15 @@ test("reactivates revoked keys and persists per-tool permissions", () => {
     const created = service.create({
       name: "Restricted controller",
       role: "control",
-      tool_permissions: ["roon_status", "roon_list_zones"]
+      tool_permissions: ["roon_get_state", "roon_show_zones"]
     });
-    assert.deepEqual(created.tool_permissions, ["roon_list_zones", "roon_status"]);
+    assert.deepEqual(created.tool_permissions, ["roon_get_state", "roon_show_zones"]);
     service.revoke(created.key_id);
     assert.equal(service.authenticate(created.token), null);
     service.reactivate(created.key_id);
-    assert.deepEqual(service.authenticate(created.token).tool_permissions, ["roon_list_zones", "roon_status"]);
-    const updated = service.update(created.key_id, { tool_permissions: ["roon_status"] });
-    assert.deepEqual(updated.tool_permissions, ["roon_status"]);
+    assert.deepEqual(service.authenticate(created.token).tool_permissions, ["roon_get_state", "roon_show_zones"]);
+    const updated = service.update(created.key_id, { tool_permissions: ["roon_get_state"] });
+    assert.deepEqual(updated.tool_permissions, ["roon_get_state"]);
     assert.equal(service.delete(created.key_id).key_id, created.key_id);
     assert.equal(service.list().length, 0);
   } finally {
@@ -153,12 +153,12 @@ test("global tool settings and key allowlists are both enforced", () => {
   const keyService = new ApiKeyService(config(dataDir), database);
   const access = new ToolAccessService(database);
   try {
-    const key = keyService.create({ name: "One tool", role: "control", tool_permissions: ["roon_status"] });
-    assert.equal(access.canUse("roon_status", key), true);
-    assert.equal(access.canUse("roon_list_zones", key), false);
-    access.setEnabled("roon_status", false);
-    assert.equal(access.canUse("roon_status", key), false);
-    assert.equal(access.list(["roon_status"])[0].enabled, false);
+    const key = keyService.create({ name: "One tool", role: "control", tool_permissions: ["roon_get_state"] });
+    assert.equal(access.canUse("roon_get_state", key), true);
+    assert.equal(access.canUse("roon_show_zones", key), false);
+    access.setEnabled("roon_get_state", false);
+    assert.equal(access.canUse("roon_get_state", key), false);
+    assert.equal(access.list(["roon_get_state"])[0].enabled, false);
   } finally {
     database.close();
     fs.rmSync(dataDir, { recursive: true, force: true });

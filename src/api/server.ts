@@ -22,20 +22,10 @@ import { createZonePresetsRouter } from "./routes/zonePresets.routes";
 import { createVolumeLimitsRouter } from "./routes/volumeLimits.routes";
 import { createWidgetAssetsRouter, createWidgetsRouter } from "./routes/widgets.routes";
 import { createActionAuditMiddleware, createObservabilityRouter } from "./routes/observability.routes";
-import { PlaylistBuildService } from "../services/playlistBuildService";
 export type ApiContext = ApplicationContext;
 
 export function createServer(context: ApiContext): express.Express {
   const app = express();
-  // Keep one build-session owner for compatibility with manually composed test/embedded contexts.
-  const playlistBuildService = context.playlistBuildService || new PlaylistBuildService(
-    context.playlistService,
-    context.mediaService,
-    context.logger,
-    "streaming_first",
-    undefined,
-    context.trackCatalogService
-  );
   app.use(express.json({ limit: "8mb" }));
   app.use(createHealthRouter(context));
   app.use(createOAuthRouter(context));
@@ -67,7 +57,6 @@ export function createServer(context: ApiContext): express.Express {
       });
       const server = createBridgeV2McpServer({
         ...context,
-        playlistBuildService,
         activeApiKey: res.locals.apiKey || null
       });
       const transport = new StreamableHTTPServerTransport({

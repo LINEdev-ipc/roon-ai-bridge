@@ -8,6 +8,7 @@ import {
 
 export type TrackResolutionRequest = {
   query: string;
+  preferredResultId?: string | null;
   title?: string | null;
   artist?: string | null;
   album?: string | null;
@@ -31,7 +32,7 @@ export type RankedTrackCandidate = {
 
 export type TrackResolution = {
   status: "resolved" | "ambiguous" | "missing";
-  reason: "selected_equivalent_recording" | "multiple_recordings" | "low_identity_confidence" | "no_results";
+  reason: "selected_supplied_result" | "selected_equivalent_recording" | "multiple_recordings" | "low_identity_confidence" | "no_results";
   selected: RankedTrackCandidate | null;
   candidates: RankedTrackCandidate[];
   queries: string[];
@@ -227,6 +228,28 @@ export class TrackResolutionService {
     ].filter(Boolean)));
     const results: MediaResult[] = [];
     const seen = new Set<string>();
+    if (request.preferredResultId) {
+      try {
+        const preferred = this.mediaService.get(request.preferredResultId);
+        if (preferred.media_type === "track") {
+          seen.add(candidateIdentity(preferred));
+          results.push(preferred);
+          if (identityScore(preferred, request).score >= MIN_IDENTITY_SCORE) {
+            const ranked = this.rank(results, request, sourcePreference);
+            return {
+              status: "resolved",
+              reason: "selected_supplied_result",
+              selected: ranked[0],
+              candidates: ranked,
+              queries: []
+            };
+          }
+        }
+      } catch {
+        // Search references are intentionally short-lived. An expired reference
+        // falls back to deterministic title/artist discovery.
+      }
+    }
 
     for (const query of queries) {
       const payload = await this.mediaService.search({
@@ -254,26 +277,7 @@ export class TrackResolutionService {
       return { status: "missing", reason: "no_results", selected: null, candidates: [], queries };
     }
 
-    const ranked = results.map((result): RankedTrackCandidate => {
-      const identity = identityScore(result, request);
-      const generic = scoreSearchResult(result, {
-        query: request.query,
-        title: request.title,
-        artist: request.artist,
-        album: request.album,
-        sourcePreference
-      });
-      return {
-        result,
-        identity_score: identity.score,
-        match_score: generic.score,
-        source_rank: sourceRank(result, sourcePreference),
-        quality_rank: qualityRank(result),
-        reasons: Array.from(new Set([...identity.reasons, ...generic.reasons])),
-        penalties: Array.from(new Set([...identity.penalties, ...generic.penalties])),
-        recording_key: recordingKey(result)
-      };
-    }).sort((left, right) => compareCandidates(left, right, sourcePreference));
+    const ranked = this.rank(results, request, sourcePreference);
 
     const best = ranked[0];
     const titleOnlyAmbiguity = !request.artist && ranked.find((candidate) =>
@@ -299,5 +303,32 @@ export class TrackResolutionService {
     }
 
     return { status: "resolved", reason: "selected_equivalent_recording", selected: best, candidates: ranked.slice(0, 5), queries };
+  }
+
+  private rank(
+    results: MediaResult[],
+    request: TrackResolutionRequest,
+    sourcePreference: SourcePreference
+  ): RankedTrackCandidate[] {
+    return results.map((result): RankedTrackCandidate => {
+      const identity = identityScore(result, request);
+      const generic = scoreSearchResult(result, {
+        query: request.query,
+        title: request.title,
+        artist: request.artist,
+        album: request.album,
+        sourcePreference
+      });
+      return {
+        result,
+        identity_score: identity.score,
+        match_score: generic.score,
+        source_rank: sourceRank(result, sourcePreference),
+        quality_rank: qualityRank(result),
+        reasons: Array.from(new Set([...identity.reasons, ...generic.reasons])),
+        penalties: Array.from(new Set([...identity.penalties, ...generic.penalties])),
+        recording_key: recordingKey(result)
+      };
+    }).sort((left, right) => compareCandidates(left, right, sourcePreference));
   }
 }

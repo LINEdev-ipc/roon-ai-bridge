@@ -123,7 +123,7 @@ test("observability endpoints expose safe diagnostics, manifest and extension st
     const serialized = JSON.stringify(bundle);
     assert.match(serialized, /REDACTED/);
     assert.doesNotMatch(serialized, /super-secret|top-secret/);
-    assert.equal(bundle.app.version, "0.20.0-beta.7");
+    assert.equal(bundle.app.version, "0.20.0-beta.8");
   } finally {
     await new Promise((resolve) => server.close(resolve));
     database.close();
@@ -140,7 +140,7 @@ test("action log sanitizes arguments and clear requires confirmation", () => {
   try {
     const entry = actions.record({
       source: "mcp",
-      toolOrEndpoint: "roon_status",
+      toolOrEndpoint: "roon_get_state",
       arguments: { api_token: "secret-token", pin: "approval-pin", harmless: "visible" },
       result: { ok: true },
       durationMs: 4

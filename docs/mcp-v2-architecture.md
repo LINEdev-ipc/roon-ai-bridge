@@ -84,18 +84,27 @@ saved or temporary RoonIA playlists.
 ### Model-created playlist preflight
 
 `roon_save_playlist` accepts one batch containing primary proposals and
-reserves. Every proposal includes `title` and `artist_credit`; `album_hint` and
-`release_year_hint` are optional evidence that the model sends only when it is
-confident and the detail helps distinguish the intended recording. The first
-Roon query remains title plus artist. Album is added only by the controlled
-fallback, and year is used for scoring rather than copied into the query.
+reserves. For niche genres, dates or uncertain names, the model first calls
+`roon_search_media` with focused queries and copies the exact `title`,
+`artist_credit`, `album_hint` and temporary `result_id`. MusicBrainz remains
+the authority that decides the recording identity. A fresh compatible
+`result_id` is reused as the preferred Roon binding, avoiding a duplicate Roon
+search; an expired or incompatible reference falls back to deterministic
+title/artist search.
+
+`release_year_from` and `release_year_to` constrain the MusicBrainz release
+group's first-publication year. `release_year_hint` is only an observed
+candidate hint and must never be guessed.
 
 The preflight runs before any playlist write. It validates the title, every
 required artist or performance credit, the requested recording family and a
 playable Roon identity. Standard and remastered releases are equivalent for a
 standard request. Live, remix, cover, dub, acoustic and other alternate
-recordings require an explicit matching `recording_intent`. A model-provided
-`result_id` is temporary evidence and never bypasses these checks.
+recordings require an explicit matching `recording_intent`. The word `dub` in
+a genre or ordinary song title remains `standard`; only an explicit qualifier
+such as `Dub Mix` or `Dub Version` selects the dub recording family. A
+model-provided `result_id` is temporary evidence and never bypasses these
+checks.
 
 Candidates are resolved with bounded concurrency. Valid reserves fill rejected
 or duplicated primaries, then the final accepted set is reordered so the same
@@ -105,13 +114,15 @@ model hints and provenance in `user_metadata`, and the raw search/album-detail
 observation in `resolution.roon_observation`.
 
 When `desired_count` cannot be met, the tool returns `status: "needs_input"`
-with a short-lived `build_id` and does not create or modify a playlist. Server
-instructions tell the model to submit fresh candidates autonomously. Exactly
-two replenishment rounds are accepted. If the target is still not met after
-the second round, the verified shorter playlist is saved and
-`build_summary.missing_count` reports the shortfall. Build sessions live in
-the running process for 30 minutes; after a restart or expiration the model
-must start a new preflight.
+with a short-lived `build_id` and a structured `rejection_summary`. Server
+instructions map ambiguity, not-found, missing binding, duplicate and date
+failures to a concrete replenishment action. The individual rejection list is
+bounded to the latest 25 entries while the summary retains complete counts.
+Three genuine replenishment
+rounds are accepted. If the target is still not met, every verified track is
+saved atomically; `build_summary.added_count`, `missing_count` and `complete`
+state the exact outcome. A zero-track build still fails instead of creating an
+empty playlist. Build sessions live in the running process for 30 minutes.
 
 ### Temporary working playlists
 
@@ -151,9 +162,11 @@ Roon playback bindings and completes canonical metadata without changing the
 selected songs, order, cover or user metadata. It accepts issue-only, selected
 `track_ids` and full-playlist scopes, plus explicit `track_id`/`result_id`
 selections after the model or portal user chooses an ambiguous candidate.
-It replaces the overlapping `roon_resolve_playlist` and
-`roon_refresh_playlist_metadata` tools. Their HTTP routes remain compatibility
-aliases for older portal or API clients.
+Reconstruction runs as one asynchronous job per playlist. The initial call
+returns `status: "in_progress"` and a `job_id`; the same MCP tool polls that
+job until completion. The portal uses the same job and shows the MusicBrainz,
+Roon binding and metadata phases. There are no resolve, metadata-refresh or
+`/virtual-playlists` compatibility routes.
 
 An exact MusicBrainz recording supplies the stored title, artist credit,
 release group and duration. Roon supplies the currently playable item and its

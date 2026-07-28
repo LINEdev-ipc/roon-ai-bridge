@@ -1,3 +1,4 @@
+import crypto from "crypto";
 import type { RoonMediaService, SourcePreference } from "../roon/roonMediaService";
 import type { Logger } from "../utils/logger";
 import { ApiError } from "../utils/errors";
@@ -12,7 +13,44 @@ import {
 import { metadataCompleteness } from "./playlists/playlistMetadataPolicy";
 import type { VirtualPlaylistTrack } from "./playlists/playlistContracts";
 
+export type PlaylistRebuildJob = {
+  job_id: string;
+  playlist_id: string;
+  status: "queued" | "running" | "completed" | "failed";
+  phase: "queued" | "musicbrainz_identity" | "roon_binding" | "metadata" | "completed" | "failed";
+  scope: "issues" | "selected" | "all";
+  progress: {
+    processed_tracks: number;
+    total_tracks: number;
+    message: string;
+  };
+  created_at: string;
+  updated_at: string;
+  result: Record<string, unknown> | null;
+  error: {
+    code: string;
+    message: string;
+    details: Record<string, unknown>;
+  } | null;
+};
+
+type RebuildInput = {
+  playlistId: string;
+  trackIds?: string[];
+  scope?: "issues" | "selected" | "all";
+  sourcePreference?: SourcePreference;
+};
+
+type InternalPlaylistRebuildJob = PlaylistRebuildJob & {
+  input: RebuildInput;
+};
+
+const REBUILD_JOB_TTL_MS = 24 * 60 * 60 * 1000;
+
 export class PlaylistRepairService {
+  private readonly rebuildJobs = new Map<string, InternalPlaylistRebuildJob>();
+  private readonly activeRebuilds = new Map<string, string>();
+
   constructor(
     private readonly playlistService: PlaylistService,
     private readonly mediaService: RoonMediaService,
@@ -21,42 +59,101 @@ export class PlaylistRepairService {
     private readonly trackCatalogService?: TrackCatalogService
   ) {}
 
-  async rebuildPlaylist(input: {
-    playlistId: string;
-    trackIds?: string[];
-    scope?: "issues" | "selected" | "all";
-    sourcePreference?: SourcePreference;
-  }) {
-    const startedAt = Date.now();
-    const before = this.playlistService.getPlaylist(input.playlistId);
-    const requested = input.trackIds ? new Set(input.trackIds) : null;
-    if (requested) {
-      const known = new Set(before.tracks.map((track) => track.track_id));
-      const unknown = [...requested].filter((trackId) => !known.has(trackId));
-      if (unknown.length) {
-        throw new ApiError("PLAYLIST_TRACK_NOT_FOUND", "Virtual playlist track not found", {
-          playlist_id: input.playlistId,
-          track_ids: unknown
-        });
+  startRebuild(input: RebuildInput): PlaylistRebuildJob {
+    this.purgeRebuildJobs();
+    const { scope, candidates } = this.rebuildCandidates(input);
+    const activeJobId = this.activeRebuilds.get(input.playlistId);
+    if (activeJobId) {
+      const active = this.rebuildJobs.get(activeJobId);
+      if (active && (active.status === "queued" || active.status === "running")) {
+        return this.snapshot(active);
       }
     }
-    const scope = input.scope || (requested ? "selected" : "issues");
-    if (scope === "selected" && (!requested || requested.size === 0)) {
-      throw new ApiError("INVALID_PLAYLIST_TRACK", "track_ids are required when reconstruction scope is selected", {
-        playlist_id: input.playlistId,
-        scope
+    const now = new Date().toISOString();
+    const job: InternalPlaylistRebuildJob = {
+      job_id: crypto.randomUUID(),
+      playlist_id: input.playlistId,
+      status: "queued",
+      phase: "queued",
+      scope,
+      progress: {
+        processed_tracks: 0,
+        total_tracks: candidates.length,
+        message: candidates.length
+          ? `Queued reconstruction for ${candidates.length} tracks.`
+          : "No tracks currently require reconstruction."
+      },
+      created_at: now,
+      updated_at: now,
+      result: null,
+      error: null,
+      input: { ...input, scope }
+    };
+    this.rebuildJobs.set(job.job_id, job);
+    this.activeRebuilds.set(input.playlistId, job.job_id);
+    queueMicrotask(() => {
+      void this.runRebuildJob(job);
+    });
+    return this.snapshot(job);
+  }
+
+  getRebuild(jobId: string, playlistId?: string): PlaylistRebuildJob {
+    this.purgeRebuildJobs();
+    const job = this.rebuildJobs.get(jobId);
+    if (!job || (playlistId && job.playlist_id !== playlistId)) {
+      throw new ApiError("PLAYLIST_REBUILD_JOB_NOT_FOUND", "Playlist reconstruction job was not found", {
+        job_id: jobId,
+        playlist_id: playlistId || null
       });
     }
-    const candidates = before.tracks.filter((track) => {
-      if (requested && !requested.has(track.track_id)) return false;
-      if (scope === "all" || scope === "selected") return true;
-      const status = String(track.resolution?.status || "");
-      return !["resolved", "manual"].includes(status) ||
-        catalogProfileFromAudio(track.audio_metadata)?.status !== "exact" ||
-        !metadataCompleteness(track.audio_metadata).complete;
-    });
+    return this.snapshot(job);
+  }
+
+  private async runRebuildJob(job: InternalPlaylistRebuildJob): Promise<void> {
+    job.status = "running";
+    this.updateJob(job, "musicbrainz_identity", 0, "Resolving canonical MusicBrainz identities.");
+    try {
+      const result = await this.executeRebuild(job.input, job);
+      job.status = "completed";
+      job.phase = "completed";
+      job.result = result as unknown as Record<string, unknown>;
+      job.progress = {
+        processed_tracks: job.progress.total_tracks,
+        total_tracks: job.progress.total_tracks,
+        message: "Playlist reconstruction completed."
+      };
+      job.updated_at = new Date().toISOString();
+    } catch (error) {
+      const apiError = error instanceof ApiError
+        ? error
+        : new ApiError("INTERNAL_ERROR", error instanceof Error ? error.message : String(error));
+      job.status = "failed";
+      job.phase = "failed";
+      job.error = {
+        code: apiError.code,
+        message: apiError.message,
+        details: apiError.details
+      };
+      job.progress.message = apiError.message;
+      job.updated_at = new Date().toISOString();
+      this.logger?.warn("Playlist reconstruction job failed", {
+        jobId: job.job_id,
+        playlistId: job.playlist_id,
+        code: apiError.code,
+        message: apiError.message
+      });
+    } finally {
+      if (this.activeRebuilds.get(job.playlist_id) === job.job_id) {
+        this.activeRebuilds.delete(job.playlist_id);
+      }
+    }
+  }
+
+  private async executeRebuild(input: RebuildInput, job: InternalPlaylistRebuildJob) {
+    const startedAt = Date.now();
+    const { scope, candidates } = this.rebuildCandidates(input);
     const migration: Array<Record<string, unknown>> = [];
-    for (const track of candidates) {
+    for (const [index, track] of candidates.entries()) {
       try {
         migration.push(await this.migrateCatalogIdentity(input.playlistId, track));
       } catch (error) {
@@ -71,8 +168,15 @@ export class PlaylistRepairService {
           reason: `catalog_lookup_failed:${error instanceof Error ? error.message : String(error)}`
         });
       }
+      this.updateJob(
+        job,
+        "musicbrainz_identity",
+        index + 1,
+        `Resolved MusicBrainz identity ${index + 1}/${candidates.length}.`
+      );
     }
 
+    this.updateJob(job, "roon_binding", 0, `Reconstructing Roon bindings for ${candidates.length} tracks.`);
     const migratedPlaylist = this.playlistService.getPlaylist(input.playlistId);
     const resolveTrackIds = candidates
       .map((candidate) => migratedPlaylist.tracks.find((track) => track.track_id === candidate.track_id))
@@ -88,6 +192,7 @@ export class PlaylistRepairService {
           force: true
         })
       : { resolution: [] };
+    this.updateJob(job, "roon_binding", candidates.length, "Roon binding reconstruction completed.");
     const resolvedTrackIds = this.playlistService.getPlaylist(input.playlistId).tracks
       .filter((track) =>
         candidates.some((candidate) => candidate.track_id === track.track_id) &&
@@ -98,11 +203,15 @@ export class PlaylistRepairService {
         )
       )
       .map((track) => track.track_id);
-    const enrichment = await this.metadataService.refreshPlaylist(input.playlistId, {
-      trackIds: resolvedTrackIds,
-      force: true,
-      sourcePreference: input.sourcePreference
-    });
+    this.updateJob(job, "metadata", 0, `Refreshing canonical metadata for ${resolvedTrackIds.length} tracks.`);
+    const enrichment = resolvedTrackIds.length
+      ? await this.metadataService.refreshPlaylist(input.playlistId, {
+          trackIds: resolvedTrackIds,
+          force: true,
+          sourcePreference: input.sourcePreference
+        })
+      : null;
+    this.updateJob(job, "metadata", resolvedTrackIds.length, "Canonical metadata refresh completed.");
     const playlist = this.playlistService.getPlaylist(input.playlistId);
     const countStatus = (status: string) => playlist.tracks.filter((track) =>
       String(track.resolution?.status || "") === status
@@ -143,18 +252,82 @@ export class PlaylistRepairService {
     };
   }
 
-  async repairPlaylist(input: {
-    playlistId: string;
-    trackIds?: string[];
-    force?: boolean;
-    sourcePreference?: SourcePreference;
-  }) {
-    return this.rebuildPlaylist({
-      playlistId: input.playlistId,
-      trackIds: input.trackIds,
-      scope: input.force ? "all" : input.trackIds ? "selected" : "issues",
-      sourcePreference: input.sourcePreference
-    });
+  private rebuildCandidates(input: RebuildInput): {
+    scope: "issues" | "selected" | "all";
+    candidates: VirtualPlaylistTrack[];
+  } {
+    const playlist = this.playlistService.getPlaylist(input.playlistId);
+    const requested = input.trackIds ? new Set(input.trackIds) : null;
+    if (requested) {
+      const known = new Set(playlist.tracks.map((track) => track.track_id));
+      const unknown = [...requested].filter((trackId) => !known.has(trackId));
+      if (unknown.length) {
+        throw new ApiError("PLAYLIST_TRACK_NOT_FOUND", "Virtual playlist track not found", {
+          playlist_id: input.playlistId,
+          track_ids: unknown
+        });
+      }
+    }
+    const scope = input.scope || (requested ? "selected" : "issues");
+    if (scope === "selected" && (!requested || requested.size === 0)) {
+      throw new ApiError("INVALID_PLAYLIST_TRACK", "track_ids are required when reconstruction scope is selected", {
+        playlist_id: input.playlistId,
+        scope
+      });
+    }
+    return {
+      scope,
+      candidates: playlist.tracks.filter((track) => {
+        if (requested && !requested.has(track.track_id)) return false;
+        if (scope === "all" || scope === "selected") return true;
+        const status = String(track.resolution?.status || "");
+        return !["resolved", "manual"].includes(status) ||
+          catalogProfileFromAudio(track.audio_metadata)?.status !== "exact" ||
+          !metadataCompleteness(track.audio_metadata).complete;
+      })
+    };
+  }
+
+  private updateJob(
+    job: InternalPlaylistRebuildJob,
+    phase: PlaylistRebuildJob["phase"],
+    processedTracks: number,
+    message: string
+  ): void {
+    job.phase = phase;
+    job.progress = {
+      processed_tracks: processedTracks,
+      total_tracks: job.progress.total_tracks,
+      message
+    };
+    job.updated_at = new Date().toISOString();
+  }
+
+  private snapshot(job: InternalPlaylistRebuildJob): PlaylistRebuildJob {
+    return {
+      job_id: job.job_id,
+      playlist_id: job.playlist_id,
+      status: job.status,
+      phase: job.phase,
+      scope: job.scope,
+      progress: { ...job.progress },
+      created_at: job.created_at,
+      updated_at: job.updated_at,
+      result: job.result,
+      error: job.error
+    };
+  }
+
+  private purgeRebuildJobs(): void {
+    const cutoff = Date.now() - REBUILD_JOB_TTL_MS;
+    for (const [jobId, job] of this.rebuildJobs) {
+      if (
+        !["queued", "running"].includes(job.status) &&
+        Date.parse(job.updated_at) < cutoff
+      ) {
+        this.rebuildJobs.delete(jobId);
+      }
+    }
   }
 
   private async migrateCatalogIdentity(

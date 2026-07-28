@@ -171,14 +171,22 @@ test("playlist reconstruction migrates legacy identity while preserving order an
     }
   );
 
-  const result = await repair.rebuildPlaylist({
+  const started = repair.startRebuild({
     playlistId: playlist.playlist_id,
     scope: "all"
   });
+  const duplicateStart = repair.startRebuild({
+    playlistId: playlist.playlist_id,
+    scope: "all"
+  });
+  assert.equal(duplicateStart.job_id, started.job_id);
+  assert.equal(started.status, "queued");
+  assert.equal(started.progress.total_tracks, 1);
+  const result = await waitForRebuild(repair, started);
   const track = result.playlist.tracks[0];
 
   assert.equal(catalogLookups, 1);
-  assert.deepEqual(refreshTrackIds, []);
+  assert.equal(refreshTrackIds, null);
   assert.equal(result.playlist.name, "Legacy dinner");
   assert.equal(track.position, 1);
   assert.equal(track.title, "Hours");
@@ -232,13 +240,22 @@ test("playlist reconstruction reuses an existing exact MusicBrainz identity", as
     { resolve: async () => { catalogLookups += 1; } }
   );
 
-  const result = await repair.rebuildPlaylist({
+  const result = await waitForRebuild(repair, repair.startRebuild({
     playlistId: playlist.playlist_id,
     scope: "all"
-  });
+  }));
 
   assert.equal(catalogLookups, 0);
   assert.equal(result.report.preserved, 1);
   assert.equal(result.playlist.tracks[0].resolution.status, "manual");
   assert.equal(result.playlist.tracks[0].resolution.selected_result_id, "manual-hours");
 });
+async function waitForRebuild(service, started) {
+  let job = started;
+  for (let attempt = 0; attempt < 100 && !["completed", "failed"].includes(job.status); attempt += 1) {
+    await new Promise((resolve) => setImmediate(resolve));
+    job = service.getRebuild(job.job_id, job.playlist_id);
+  }
+  assert.equal(job.status, "completed", job.error?.message);
+  return job.result;
+}

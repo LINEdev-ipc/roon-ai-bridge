@@ -161,18 +161,19 @@ curl -X POST http://localhost:3000/roon/media/search/expand \
 
 Advanced playlist endpoints:
 
-- `GET /virtual-playlists/:playlist_id/validate`
-- `POST /virtual-playlists/:playlist_id/resolve`
-- `POST /virtual-playlists/:playlist_id/deduplicate`
-- `POST /virtual-playlists/:playlist_id/sort`
-- `GET /virtual-playlists/:playlist_id/export?format=json|csv|m3u`
-- `POST /virtual-playlists/import`
-- `POST /virtual-playlists/:playlist_id/tracks/:track_id/match`
-- `POST /virtual-playlists/:playlist_id/tracks/from-search-result`
+- `GET /playlists/:playlist_id/validate`
+- `POST /playlists/:playlist_id/rebuild`
+- `GET /playlists/:playlist_id/rebuild/:job_id`
+- `POST /playlists/:playlist_id/deduplicate`
+- `POST /playlists/:playlist_id/sort`
+- `GET /playlists/:playlist_id/export?format=json|csv|m3u`
+- `POST /playlists/import`
+- `POST /playlists/:playlist_id/tracks/:track_id/match`
+- `POST /playlists/:playlist_id/tracks/from-search-result`
 
-The existing `/playlists/...` routes expose the same behavior for portal
-compatibility. Track payloads preserve legacy `metadata` while also exposing
-separate `audio_metadata`, `user_metadata`, and `resolution` objects.
+`/playlists` is the only playlist route family. The former
+`/virtual-playlists`, `/resolve` and `/metadata/refresh` endpoints are not
+registered.
 
 Resolve and persist the canonical catalog profile for a temporary Roon track
 result:
@@ -516,47 +517,34 @@ Full replacement is destructive and returns `requires_confirmation:true` unless
 `confirm:true` is supplied in the JSON body. Pass `dry_run:true` to preview the
 replacement without changing the playlist.
 
-Retry resolution for missing, stale, ambiguous or failed entries, or force
-re-resolution of all entries:
-
-```bash
-curl -X POST http://localhost:3000/playlists/bad-bunny-test/resolve \
-  -H "Content-Type: application/json" \
-  -d '{"force":false,"source_preference":"highest_quality"}'
-```
-
-The current maintenance endpoint combines legacy migration, MusicBrainz
-metadata recovery and fresh Roon playback bindings:
+Reconstruction combines stored-data migration, MusicBrainz metadata recovery
+and fresh Roon playback bindings. It starts an asynchronous job:
 
 ```bash
 curl -X POST http://localhost:3000/playlists/bad-bunny-test/rebuild \
   -H "Content-Type: application/json" \
-  -d '{"scope":"all","source_preference":"streaming_first"}'
+  -d '{"scope":"issues","source_preference":"streaming_first"}'
 ```
 
 Use `scope:"issues"` for only incomplete or unresolved entries, or
 `scope:"selected"` with a non-empty `track_ids` array. Reconstruction preserves
 the playlist name, description, songs, order, cover, manual associations and
-user metadata. The older `/resolve` and `/metadata/refresh` routes remain
-available as compatibility endpoints, but new clients should use `/rebuild`.
+user metadata. The response is `202 Accepted`:
 
-Refresh only the audio metadata of already-resolved entries without changing
-their recording identity:
-
-```bash
-curl -X POST http://localhost:3000/playlists/bad-bunny-test/metadata/refresh \
-  -H "Content-Type: application/json" \
-  -d '{"force":false}'
+```json
+{
+  "job_id": "4aa0...",
+  "playlist_id": "bad-bunny-test",
+  "status": "queued",
+  "phase": "queued",
+  "progress": { "processed_tracks": 0, "total_tracks": 8 }
+}
 ```
 
-The refresh replaces the previous catalog observation atomically. It preserves
-the selected recording identity and user metadata, verifies that the track,
-album edition and artwork belong together, and returns `conflict` and
-`unverified` counts alongside the legacy completed/partial/skipped/failed
-totals. Each track stores `audio_metadata.metadata_status` as `exact`,
-`partial`, `conflict` or `unverified`, plus separate `recording`, `release` and
-`field_provenance` objects. Unverified external data is not copied into the
-track merely to fill an empty field.
+Poll `GET /playlists/bad-bunny-test/rebuild/<JOB_ID>`. Terminal status is
+`completed` with `result.playlist` and `result.report`, or `failed` with a
+structured error. Starting another reconstruction while one is active returns
+the same job.
 
 For one missing or ambiguous track, request fresh candidates and then persist
 an explicit playable selection. The `result_id` is temporary, so the selection
@@ -604,7 +592,7 @@ Deleting a playlist or removing a track requires confirmation. Without
 `confirm:true`, the response includes `confirmation_reason`, `human_summary`,
 `planned_action` and `confirm_payload`.
 
-Play or enqueue a virtual playlist:
+Play or enqueue a saved playlist:
 
 ```bash
 curl -X POST http://localhost:3000/playlists/bad-bunny-test/play \
@@ -624,7 +612,7 @@ After the first track starts, remaining identities are reconstructed and added
 in order. A persisted `roon_item_key` is never sent back to Roon as an action
 target.
 
-Virtual playlists are local to RoonIA and are stored in `data/roonia.sqlite`.
+Playlists are local to RoonIA and are stored in `data/roonia.sqlite`.
 On startup, legacy rows are enriched with persistent identity metadata without
 changing their `track_id`; legacy Browse keys are marked `stale`. Legacy JSON
 from `data/virtual-playlists.json` is migrated automatically when the SQLite
@@ -655,99 +643,49 @@ DATA_DIR=/opt/roon-ai-bridge/data ENABLE_BROWSE=true npm run mcp
 
 Implemented tools:
 
-- `roon_status`
-- `roon_list_zones`
-- `roon_control_playback`
-- `roon_change_volume`
-- `roon_transfer_playback`
-- `roon_group_zones`
-- `roon_ungroup_zone`
-- `roon_search`
-- `roon_play_by_query`
-- `roon_get_queue`
-- `roon_queue_by_query`
-- `roon_play_queue_item_from_here`
-- `roon_list_virtual_playlists`
-- `roon_create_virtual_playlist`
-- `roon_get_virtual_playlist`
-- `roon_update_virtual_playlist`
-- `roon_delete_virtual_playlist`
-- `roon_add_virtual_playlist_track`
-- `roon_update_virtual_playlist_track`
-- `roon_remove_virtual_playlist_track`
-- `roon_replace_virtual_playlist_tracks`
-- `roon_reorder_virtual_playlist_tracks`
-- `roon_resolve_virtual_playlist`
-- `roon_play_virtual_playlist`
-- `roon_list_temporary_playlists`
-- `roon_create_temporary_playlist`
-- `roon_promote_temporary_playlist`
-- `roon_search_media`
-- `roon_analyze_playlist` optionally accepts one to ten `catalog_track_ids` for
-  read-only MusicBrainz identity V2 diagnostics. In v0.20.0 beta.2 the result
-  resolves recording and release identities separately, includes release-group
-  ambiguity, duration provenance and edition-bound Cover Art Archive evidence.
-  The returned `catalog_diagnostics` always declares `mode=shadow` and
-  `mutates_playlist=false`.
-  Beta.3 adds bounded provider traces with cache layer, request counts, search
-  attempts and rejection reasons. A stored recording MBID is verified directly
-  before a new search, and `stored_metadata_audit` reports legacy exact fields
-  that lack release-track evidence.
-  Beta.4 preserves search punctuation, treats remastering as release evidence,
-  uses album observations as a reversible recording hint and can distinguish a
-  duplicate recording only when one compatible candidate has unique ISRC
-  evidence. Release diagnostics browse beyond the recording lookup's linked
-  entities and expose `candidate_provider_trace`; a bounded browse that ends
-  early returns `release_catalog_truncated_before_anchor` instead of declaring
-  a false conflict. Legacy exact releases contradicted by the catalog report
-  `stored_exact_release_conflicts_with_catalog`.
-  Beta.5 no longer treats the mere presence of an ISRC as evidence: the code
-  must match an observed ISRC or duplicates remain ambiguous. Legacy durations
-  participate in matching only with Roon or release-track provenance. Release
-  anchors are searched directly by recording MBID and title before bounded
-  browsing, and observed year, disc and track positions may narrow an edition;
-  MusicBrainz still has to verify the recording on the selected release track.
-- `roon_get_media_details`
-- `roon_list_artist_releases`
-- `roon_play_media`
-- `roon_start_radio`
-- `roon_add_media_to_queue`
-- `roon_list_outputs`
-- `roon_seek`
-- `roon_mute_output`
-- `roon_change_output_volume`
-- `roon_mute_all`
-- `roon_pause_all`
-- `roon_output_power`
-- `roon_change_playback_settings`
-- `roon_restart_queue`
-- `roon_run_browse_action`
-- `roon_get_image`
-
-Read-only tools include status, zone/output listing, queue reads, media search,
-media details, artist releases, image fetches and virtual playlist reads.
-State-changing tools include playback, queue mutation, volume/mute, grouping,
-playlist CRUD, media playback and output power/settings changes. Destructive or
-audible tools should be exercised manually against a real Roon Core.
+- State and discovery: `roon_get_state`, `roon_search_media`,
+  `roon_get_media_entity`, `roon_get_queue`.
+- Playlist reads: `roon_list_playlists`, `roon_list_temporary_playlists`,
+  `roon_get_playlist`, `roon_analyze_playlist`, `roon_export_playlist`.
+- Playlist writes: `roon_save_playlist`, `roon_create_temporary_playlist`,
+  `roon_promote_temporary_playlist`, `roon_edit_playlist_tracks`,
+  `roon_delete_playlist`, `roon_import_playlist`, `roon_rebuild_playlist`.
+- Covers and widgets: `roon_prepare_playlist_cover`,
+  `roon_set_playlist_cover`, `roon_show_now_playing`, `roon_show_zones`,
+  `roon_show_queue`, `roon_show_media`, `roon_show_playlist`,
+  `roon_show_playlist_library`.
+- Playback and queue: `roon_control_playback`, `roon_play_media`,
+  `roon_enqueue_media`, `roon_start_radio`, `roon_play_queue_item`,
+  `roon_play_playlist`, `roon_play_playlist_track`, `roon_transfer_playback`.
+- Zones and outputs: `roon_set_volume`, `roon_control_output`,
+  `roon_set_playback_options`, `roon_set_grouping`,
+  `roon_apply_zone_preset`.
+- Configuration and support: `roon_get_configuration`,
+  `roon_save_configuration`, `roon_delete_configuration`,
+  `roon_run_diagnostics`.
 
 Important MCP contracts:
 
-- `roon_list_zones` returns lightweight now-playing metadata by default. Pass
-  `include_image_data: true` only when inline base64 artwork is required.
-- `roon_search_media` is bound to typed search and never returns `roon_status`.
-  Pass `include_images: true` only for embedded cover data.
-- `roon_get_media_details` accepts a `result_id` from the same recent
-  `roon_search_media` session.
-- `roon_list_virtual_playlists` defaults to `include_tracks: false`; use
-  `limit`, `offset`, `track_limit` and `track_offset` for bounded payloads.
-- `roon_get_virtual_playlist` defaults to `include_tracks: true`, `limit: 50`
-  and `offset: 0`; use `include_tracks: false` for metadata only.
-- `roon_update_virtual_playlist_track` moves a track when `position` is
-  supplied; use `roon_reorder_virtual_playlist_tracks` for full-order updates.
-- `roon_control_playback` treats `pause` on paused zones and `play` on playing
-  zones as successful idempotent states.
-- `roon_change_volume` validates output ranges and returns refreshed output
-  volume state after the command.
+- For playlist creation, discover uncertain or niche candidates with several
+  focused `roon_search_media` calls and copy the exact title, artist, album and
+  `result_id`. MusicBrainz then verifies canonical identity and release dates;
+  Roon only supplies the playable binding.
+- `recording_intent` represents a recording version (`live`, `remix`, `dub`,
+  and so on), never a genre. Ordinary dub tracks remain `standard` unless the
+  title explicitly identifies a dub version or mix.
+- `roon_save_playlist` and `roon_create_temporary_playlist` accept
+  `release_year_from` and `release_year_to`. After three replenishment rounds,
+  any verified tracks are saved as an incomplete but usable playlist and the
+  result reports `added`, `missing`, `complete` and a bounded rejection
+  summary. No playlist is stored when zero candidates pass.
+- `roon_rebuild_playlist` starts or polls an asynchronous rebuild. Start it
+  with `playlist_id`; poll the same tool with the returned `job_id` until the
+  status is `completed` or `failed`.
+- `result_id` is only a short-lived preferred Roon result. It avoids a repeated
+  search when compatible but never bypasses MusicBrainz identity, title,
+  credits or version validation.
+- Destructive tools require confirmation. Audible tools should be exercised
+  manually against a real Roon Core.
 
 ## Safe Live Tests
 
@@ -1040,6 +978,7 @@ Planned error codes:
 - `VOLUME_NOT_SUPPORTED`
 - `INVALID_VOLUME_MODE`
 - `INVALID_VOLUME_VALUE`
+- `PLAYLIST_REBUILD_JOB_NOT_FOUND`
 - `NOT_IMPLEMENTED`
 - `INTERNAL_ERROR`
 ## Widget endpoints
@@ -1060,7 +999,6 @@ by default.
 - `GET /media/artists/:result_id`
 - `GET /media/:result_id/catalog`
 - `GET /roon/images/:image_key`
-- `GET /media/images/:image_key`
 
 The same contracts are available in the portal API under `/api/widgets/*`.
 

@@ -125,7 +125,7 @@ export function createWidgetsRouter(context: ApiContext): Router {
     }
   });
 
-  router.get(["/roon/images/:image_key", "/media/images/:image_key"], async (req, res, next) => {
+  router.get("/roon/images/:image_key", async (req, res, next) => {
     try {
       const image = await widgetService(context).getImage(req.params.image_key, {
         width: parseNumber(req.query.width, 320),

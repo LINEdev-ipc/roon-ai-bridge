@@ -124,7 +124,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
       const confirm = parseBoolean(req.query.confirm ?? req.body?.confirm, false);
       if (dryRun) {
         const before = context.playlistService.getPlaylist(req.params.playlist_id);
-        res.json(dryRunResponse("roon_delete_virtual_playlist", {
+        res.json(dryRunResponse("roon_delete_playlist", {
           before,
           after: null
         }, { before }));
@@ -133,7 +133,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
       if (!confirm) {
         res.json(
           confirmationRequiredResponse(
-            "roon_delete_virtual_playlist",
+            "roon_delete_playlist",
             "destructive_action",
             "This action deletes a virtual playlist and requires confirmation.",
             { playlist_id: req.params.playlist_id },
@@ -145,7 +145,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
       }
       const before = context.playlistService.getPlaylist(req.params.playlist_id);
       const result = context.playlistService.deletePlaylist(req.params.playlist_id);
-      res.json(mutationSuccess("roon_delete_virtual_playlist", result, { before, after: null }));
+      res.json(mutationSuccess("roon_delete_playlist", result, { before, after: null }));
     } catch (error) {
       next(error);
     }
@@ -189,7 +189,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
       const tracks = req.body?.tracks ?? req.body;
       const before = context.playlistService.getPlaylist(req.params.playlist_id);
       if (dryRun) {
-        res.json(dryRunResponse("roon_replace_virtual_playlist_tracks", {
+        res.json(dryRunResponse("roon_edit_playlist_tracks", {
           before,
           after: {
             playlist_id: req.params.playlist_id,
@@ -202,7 +202,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
       if (!confirm) {
         res.json(
           confirmationRequiredResponse(
-            "roon_replace_virtual_playlist_tracks",
+            "roon_edit_playlist_tracks",
             "destructive_action",
             "This action replaces all tracks in a virtual playlist and requires confirmation.",
             {
@@ -230,32 +230,14 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.post(["/playlists/:playlist_id/resolve", "/virtual-playlists/:playlist_id/resolve"], async (req, res, next) => {
-    try {
-      context.logger.info("Virtual playlist resolution retry received", {
-        playlistId: req.params.playlist_id,
-        force: req.body?.force
-      });
-      res.json(
-        await context.playlistRepairService.repairPlaylist({
-          playlistId: req.params.playlist_id,
-          force: Boolean(req.body?.force),
-          sourcePreference: req.body?.source_preference
-        })
-      );
-    } catch (error) {
-      next(error);
-    }
-  });
-
-  router.post(["/playlists/:playlist_id/rebuild", "/virtual-playlists/:playlist_id/rebuild"], async (req, res, next) => {
+  router.post("/playlists/:playlist_id/rebuild", (req, res, next) => {
     try {
       context.logger.info("Virtual playlist reconstruction received", {
         playlistId: req.params.playlist_id,
         scope: req.body?.scope || "issues",
         trackCount: Array.isArray(req.body?.track_ids) ? req.body.track_ids.length : null
       });
-      res.json(await context.playlistRepairService.rebuildPlaylist({
+      res.status(202).json(context.playlistRepairService.startRebuild({
         playlistId: req.params.playlist_id,
         trackIds: Array.isArray(req.body?.track_ids) ? req.body.track_ids : undefined,
         scope: req.body?.scope,
@@ -266,32 +248,23 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.post(["/playlists/:playlist_id/metadata/refresh", "/virtual-playlists/:playlist_id/metadata/refresh"], async (req, res, next) => {
+  router.get("/playlists/:playlist_id/rebuild/:job_id", (req, res, next) => {
     try {
-      context.logger.info("Virtual playlist metadata refresh received", {
-        playlistId: req.params.playlist_id,
-        trackCount: Array.isArray(req.body?.track_ids) ? req.body.track_ids.length : null,
-        force: Boolean(req.body?.force)
-      });
-      res.json(await context.playlistMetadataEnrichmentService.refreshPlaylist(
-        req.params.playlist_id,
-        {
-          trackIds: Array.isArray(req.body?.track_ids) ? req.body.track_ids : undefined,
-          force: Boolean(req.body?.force),
-          sourcePreference: req.body?.source_preference
-        }
+      res.json(context.playlistRepairService.getRebuild(
+        req.params.job_id,
+        req.params.playlist_id
       ));
     } catch (error) {
       next(error);
     }
   });
 
-  router.post(["/playlists/:playlist_id/tracks/:track_id/repair", "/virtual-playlists/:playlist_id/tracks/:track_id/repair"], async (req, res, next) => {
+  router.post("/playlists/:playlist_id/tracks/:track_id/repair", (req, res, next) => {
     try {
-      res.json(await context.playlistRepairService.repairPlaylist({
+      res.status(202).json(context.playlistRepairService.startRebuild({
         playlistId: req.params.playlist_id,
         trackIds: [req.params.track_id],
-        force: true,
+        scope: "selected",
         sourcePreference: req.body?.source_preference
       }));
     } catch (error) {
@@ -299,7 +272,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.get(["/playlists/:playlist_id/tracks/:track_id/candidates", "/virtual-playlists/:playlist_id/tracks/:track_id/candidates"], async (req, res, next) => {
+  router.get("/playlists/:playlist_id/tracks/:track_id/candidates", async (req, res, next) => {
     try {
       const playlist = context.playlistService.getPlaylist(req.params.playlist_id);
       const track = playlist.tracks.find((entry) => entry.track_id === req.params.track_id);
@@ -316,7 +289,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.get(["/playlists/:playlist_id/validate", "/virtual-playlists/:playlist_id/validate"], (req, res, next) => {
+  router.get("/playlists/:playlist_id/validate", (req, res, next) => {
     try {
       res.json(context.playlistService.validatePlaylist(req.params.playlist_id));
     } catch (error) {
@@ -324,7 +297,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.post(["/playlists/:playlist_id/deduplicate", "/virtual-playlists/:playlist_id/deduplicate"], (req, res, next) => {
+  router.post("/playlists/:playlist_id/deduplicate", (req, res, next) => {
     try {
       res.json(context.playlistService.deduplicatePlaylist(req.params.playlist_id, req.body || {}));
     } catch (error) {
@@ -332,7 +305,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.post(["/playlists/:playlist_id/sort", "/virtual-playlists/:playlist_id/sort"], (req, res, next) => {
+  router.post("/playlists/:playlist_id/sort", (req, res, next) => {
     try {
       res.json(context.playlistService.sortPlaylist(req.params.playlist_id, req.body || {}));
     } catch (error) {
@@ -340,7 +313,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.get(["/playlists/:playlist_id/export", "/virtual-playlists/:playlist_id/export"], (req, res, next) => {
+  router.get("/playlists/:playlist_id/export", (req, res, next) => {
     try {
       const format = String(req.query.format || "json");
       const payload = context.playlistService.exportPlaylist(req.params.playlist_id, format);
@@ -354,7 +327,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.post(["/playlists/import", "/virtual-playlists/import"], (req, res, next) => {
+  router.post("/playlists/import", (req, res, next) => {
     try {
       res.json(context.playlistService.importPlaylist(req.body || {}));
     } catch (error) {
@@ -362,7 +335,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.post(["/playlists/:playlist_id/tracks/:track_id/match", "/virtual-playlists/:playlist_id/tracks/:track_id/match"], async (req, res, next) => {
+  router.post("/playlists/:playlist_id/tracks/:track_id/match", async (req, res, next) => {
     try {
       res.json(await context.playlistRepairService.selectTrack({
         playlistId: req.params.playlist_id,
@@ -376,7 +349,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
     }
   });
 
-  router.post(["/playlists/:playlist_id/tracks/from-search-result", "/virtual-playlists/:playlist_id/tracks/from-search-result"], async (req, res, next) => {
+  router.post("/playlists/:playlist_id/tracks/from-search-result", async (req, res, next) => {
     try {
       const before = new Set(
         context.playlistService.getPlaylist(req.params.playlist_id).tracks.map((track) => track.track_id)
@@ -471,7 +444,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
       const confirm = parseBoolean(req.query.confirm ?? req.body?.confirm, false);
       const before = context.playlistService.getPlaylist(req.params.playlist_id);
       if (dryRun) {
-        res.json(dryRunResponse("roon_remove_virtual_playlist_track", {
+        res.json(dryRunResponse("roon_edit_playlist_tracks", {
           before,
           after: {
             ...before,
@@ -485,7 +458,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
       if (!confirm) {
         res.json(
           confirmationRequiredResponse(
-            "roon_remove_virtual_playlist_track",
+            "roon_edit_playlist_tracks",
             "destructive_action",
             "This action deletes a track from a virtual playlist and requires confirmation.",
             {
@@ -505,7 +478,7 @@ export function createPlaylistsRouter(context: ApiContext): Router {
         req.params.playlist_id,
         req.params.track_id
       );
-      res.json(mutationSuccess("roon_remove_virtual_playlist_track", result, { before, after: result }));
+      res.json(mutationSuccess("roon_edit_playlist_tracks", result, { before, after: result }));
     } catch (error) {
       next(error);
     }

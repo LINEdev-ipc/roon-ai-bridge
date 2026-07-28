@@ -3,7 +3,7 @@ const express = require("express");
 
 const app = express();
 const root = path.resolve(__dirname, "..");
-const previewVersion = "0.17.2";
+const previewVersion = "0.20.0-beta.8";
 const previewBuild = "local-preview";
 let previewVersionStatus = {current_version:previewVersion,current_build:previewBuild,channel:"beta",latest_version:previewVersion,latest_build:previewBuild,update_available:false,checked_at:"2026-07-13T10:00:00Z",error:null};
 let previewAutomaticUpdateChecks = true;
@@ -89,13 +89,28 @@ const playlists = [
   { playlist_id:"machines",name:"Machines & humans",description:"Krautrock, electro and modern minimalism.",cover_image_key:"kraft",tracks_count:35,track_count:35,total_duration_seconds:8860,duration_known_track_count:35,last_played_at:"2026-07-10T17:30:00Z",tracks:[] }
 ];
 const customCovers = new Map();
+const rebuildJobs = new Map();
 const keys = [
   { key_id:"chatgpt",name:"ChatGPT · Casa",key_prefix:"rnb_9L2kP…",role:"control",created_at:"2026-07-01T11:00:00Z",last_used_at:"2026-07-10T08:21:00Z",revoked_at:null,tool_permissions:null },
-  { key_id:"tablet",name:"Tablet del salón",key_prefix:"rnb_a8N1s…",role:"read",created_at:"2026-06-21T17:00:00Z",last_used_at:"2026-07-09T22:10:00Z",revoked_at:null,tool_permissions:["roon_status","roon_list_zones","roon_get_now_playing_widget"] },
+  { key_id:"tablet",name:"Tablet del salón",key_prefix:"rnb_a8N1s…",role:"read",created_at:"2026-06-21T17:00:00Z",last_used_at:"2026-07-09T22:10:00Z",revoked_at:null,tool_permissions:["roon_get_state","roon_show_zones","roon_show_now_playing"] },
   { key_id:"old",name:"Integración antigua",key_prefix:"rnb_v2Old…",role:"control",created_at:"2026-04-02T09:00:00Z",last_used_at:"2026-05-11T15:00:00Z",revoked_at:"2026-06-01T10:00:00Z",tool_permissions:null }
 ];
 const users = [{user_id:"iago",username:"iago",created_at:"2026-06-01T10:00:00Z"},{user_id:"guest",username:"invitado",created_at:"2026-07-05T12:00:00Z"}];
-const toolNames = ["roon_status","roon_list_zones","roon_get_now_playing_widget","roon_search_media","roon_play_media","roon_add_media_to_queue","roon_control_playback","roon_change_volume","roon_group_zones","roon_transfer_playback","roon_list_virtual_playlists","roon_create_virtual_playlist","roon_add_virtual_playlist_track","roon_apply_zone_preset"];
+const toolNames = [
+  "roon_get_state","roon_search_media","roon_get_media_entity","roon_get_queue",
+  "roon_list_playlists","roon_list_temporary_playlists","roon_get_playlist",
+  "roon_prepare_playlist_cover","roon_analyze_playlist","roon_export_playlist",
+  "roon_get_configuration","roon_run_diagnostics","roon_show_now_playing",
+  "roon_show_zones","roon_show_queue","roon_show_media","roon_show_playlist",
+  "roon_show_playlist_library","roon_control_playback","roon_set_volume",
+  "roon_control_output","roon_set_playback_options","roon_set_grouping",
+  "roon_transfer_playback","roon_play_media","roon_enqueue_media","roon_start_radio",
+  "roon_play_queue_item","roon_save_playlist","roon_create_temporary_playlist",
+  "roon_promote_temporary_playlist","roon_set_playlist_cover","roon_play_playlist",
+  "roon_play_playlist_track","roon_rebuild_playlist","roon_save_configuration",
+  "roon_apply_zone_preset","roon_edit_playlist_tracks","roon_delete_playlist",
+  "roon_import_playlist","roon_delete_configuration"
+];
 const tools = toolNames.map((name,index)=>({ name,title:name.replace("roon_","").replaceAll("_"," "),description:index<4?"Consulta el estado y la biblioteca de Roon sin modificar la reproducción.":"Ejecuta una acción verificada sobre reproducción, zonas o colecciones.",enabled:index!==13,classification:{read_only:index<4,mutation:index>=4,destructive:false} }));
 
 app.get("/assets/brand/:file", (req,res) => res.sendFile(path.join(root,"logos",req.params.file)));
@@ -127,6 +142,20 @@ app.delete("/api/playlists/:id/cover",(req,res)=>{const p=playlists.find(x=>x.pl
 app.get("/api/playlists/covers/:id",(req,res)=>{const image=customCovers.get(req.params.id);if(!image)return res.sendStatus(404);res.type(image.type).send(image.bytes);});
 function previewPlaylistDetail(p){const tracks=media.filter(x=>x.media_type==="track").map((x,i)=>({track_id:`t${i}`,title:x.title,artist:x.artist,album:x.album,image_key:x.image_key,query:`${x.title} ${x.artist}`,audio_metadata:{...x},identity:{duration_seconds:x.duration_seconds||null,release_year:x.release_year||null,source:x.source||null},resolution:{status:"resolved",selected_result_id:x.result_id},roon_binding:{state:"stale",item_key:null,reusable:false,last_observed_at:null}}));const ordered=p.preview_track_order?.map((id)=>tracks.find((track)=>track.track_id===id)).filter(Boolean)||tracks;return {...p,tracks:ordered};}
 app.get("/api/playlists/:id",(req,res)=>{const p=playlists.find(x=>x.playlist_id===req.params.id)||playlists[0];res.json(previewPlaylistDetail(p));});
+app.post("/api/playlists/:id/rebuild",(req,res)=>{
+  const p=playlists.find(x=>x.playlist_id===req.params.id)||playlists[0];
+  const job_id=`rebuild-${Date.now()}`;
+  rebuildJobs.set(job_id,{job_id,playlist_id:p.playlist_id,status:"running",phase:"musicbrainz_identity",progress:{processed:0,total:4,message:"Verificando identidades en MusicBrainz"},polls:0});
+  res.status(202).json(rebuildJobs.get(job_id));
+});
+app.get("/api/playlists/:id/rebuild/:jobId",(req,res)=>{
+  const job=rebuildJobs.get(req.params.jobId);
+  if(!job||job.playlist_id!==req.params.id)return res.sendStatus(404);
+  job.polls+=1;
+  if(job.polls===2)Object.assign(job,{phase:"roon_binding",progress:{processed:2,total:4,message:"Actualizando asociaciones de Roon"}});
+  if(job.polls>=3)Object.assign(job,{status:"completed",phase:"completed",progress:{processed:4,total:4,message:"Reconstrucción completada"},result:{playlist:previewPlaylistDetail(playlists.find(x=>x.playlist_id===req.params.id)||playlists[0]),report:{scope:"issues",processed:4,repaired:4,failed:0}}});
+  res.json(job);
+});
 app.post("/api/playlists/:id/tracks/reorder",(req,res)=>{const p=playlists.find(x=>x.playlist_id===req.params.id)||playlists[0];p.preview_track_order=Array.isArray(req.body.track_ids)?req.body.track_ids:null;res.json(previewPlaylistDetail(p));});
 app.post("/api/playlists/:id/tracks/:trackId/play",(_req,res)=>res.json({ok:true}));
 app.post("/api/playlists/:id/play",(_req,res)=>res.json({ok:true}));
@@ -138,7 +167,7 @@ app.get("/api/admin/output-volumes",(_req,res)=>res.json(zones.flatMap(z=>z.outp
 app.get("/api/admin/api-keys",(_req,res)=>res.json(keys));
 app.get("/api/admin/users",(_req,res)=>res.json(users));
 app.get("/api/admin/tools",(_req,res)=>res.json({tools,tools_count:tools.length,enabled_tools_count:tools.filter(x=>x.enabled).length}));
-app.get("/api/observability/actions",(_req,res)=>res.json({actions:[{tool_or_endpoint:"roon_play_media",source:"mcp",timestamp:"2026-07-10T08:19:00Z"},{tool_or_endpoint:"roon_change_volume",source:"portal",timestamp:"2026-07-10T08:16:00Z"},{tool_or_endpoint:"roon_search_media",source:"mcp",timestamp:"2026-07-10T08:14:00Z"}]}));
+app.get("/api/observability/actions",(_req,res)=>res.json({actions:[{tool_or_endpoint:"roon_play_media",source:"mcp",timestamp:"2026-07-10T08:19:00Z"},{tool_or_endpoint:"roon_set_volume",source:"portal",timestamp:"2026-07-10T08:16:00Z"},{tool_or_endpoint:"roon_search_media",source:"mcp",timestamp:"2026-07-10T08:14:00Z"}]}));
 app.get("/api/logs/recent",(_req,res)=>res.json({events:[{message:"Roon Core discovery ready",component:"roon",level:"info",timestamp:"2026-07-10T08:00:00Z"}]}));
 app.get("/api/diagnostics/bundle",(_req,res)=>res.json({http:{ready:true},roon:{core_connected:true,zones_count:3},mcp:{tools_count:14},recent_errors:[]}));
 app.get("/api/admin/settings",(_req,res)=>res.json({version:previewVersion,build:previewBuild,api_port:3000,portal_port:3001,node_environment:"development",browse_enabled:true,mcp_enabled:true,api_auth_enabled:true,public_base_url:"https://bridge.example.test",portal_base_url:"https://portal.example.test",update_channel:previewUpdateChannel,allow_beta_updates:previewAllowBeta,automatic_update_checks:previewAutomaticUpdateChecks,debug_mode:previewDebugMode}));

@@ -133,8 +133,8 @@ test("serves portal assets publicly but protects every administration endpoint",
     assert.match(portalPageText, /id="confirm-dialog"/);
     assert.match(portalPageText, /id="beta-exit-dialog"/);
     assert.match(portalPageText, /src="\/roonia-logo\.svg"/);
-    assert.match(portalPageText, /href="\/styles\.css\?v=20260720\.5"/);
-    assert.match(portalPageText, /src="\/app\.js\?v=20260720\.5"/);
+    assert.match(portalPageText, /href="\/styles\.css\?v=20260728\.1"/);
+    assert.match(portalPageText, /src="\/app\.js\?v=20260728\.1"/);
     assert.match(portalPageText, /id="playback-actions-popover"[^>]*popover="auto"[^>]*hidden/);
     assert.match(portalPageText, /id="mini-output-popover"[^>]*popover="manual"[^>]*hidden/);
     assert.doesNotMatch(portalPageText, /id="playback-actions-dialog"/);
@@ -314,12 +314,12 @@ test("serves portal assets publicly but protects every administration endpoint",
     assert.match(portalScriptText, /function playlistResolutionIssue/);
     assert.match(portalScriptText, /data-repair-playlist-track/);
     assert.match(portalScriptText, /data-select-playlist-match/);
-    assert.match(portalScriptText, /data-refresh-playlist-metadata/);
-    assert.match(portalScriptText, /function refreshPlaylistMetadata/);
-    assert.match(portalScriptText, /track_ids:\[track\.track_id\]/);
-    assert.match(portalScriptText, /Actualizando \$\{processed\+1\}\/\$\{eligible\.length\}/);
-    assert.match(portalScriptText, /totals\.conflict\} con conflicto/);
-    assert.match(portalScriptText, /totals\.unverified\} sin verificar/);
+    assert.match(portalScriptText, /data-rebuild-playlist/);
+    assert.match(portalScriptText, /function waitForPlaylistRebuild/);
+    assert.match(portalScriptText, /scope:"issues"/);
+    assert.match(portalScriptText, /rebuild\/\$\{encodeURIComponent\(job\.job_id\)\}/);
+    assert.doesNotMatch(portalScriptText, /data-refresh-playlist-metadata/);
+    assert.doesNotMatch(portalScriptText, /function refreshPlaylistMetadata/);
     assert.match(portalScriptText, /function metadataRows/);
     assert.match(portalScriptText, /Ver JSON técnico completo/);
     assert.match(portalScriptText, /Reasignar canción/);
@@ -572,6 +572,24 @@ test("serves portal assets publicly but protects every administration endpoint",
     assert.equal(userSession.status, 200);
     assert.equal((await userSession.json()).user.username, "administrator");
 
+    for (const removedPath of [
+      "/api/virtual-playlists/old/validate",
+      "/api/playlists/old/resolve",
+      "/api/playlists/old/metadata/refresh",
+      "/api/media/images/old-image"
+    ]) {
+      const removed = await fetch(`${baseUrl}${removedPath}`, {
+        method: removedPath.endsWith("resolve") || removedPath.endsWith("refresh") ? "POST" : "GET",
+        headers: {
+          Authorization: `Bearer ${setupBody.token}`,
+          "Content-Type": "application/json"
+        },
+        body: removedPath.endsWith("resolve") || removedPath.endsWith("refresh") ? "{}" : undefined
+      });
+      assert.equal(removed.status, 501, `${removedPath} must not remain registered`);
+      assert.equal((await removed.json()).error.code, "NOT_IMPLEMENTED");
+    }
+
     const connectionsResponse = await fetch(`${baseUrl}/api/admin/connections`, {
       headers: { Authorization: `Bearer ${setupBody.token}` }
     });
@@ -612,9 +630,9 @@ test("serves portal assets publicly but protects every administration endpoint",
         Authorization: `Bearer ${setupBody.token}`,
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ tool_permissions: ["roon_status"] })
+      body: JSON.stringify({ tool_permissions: ["roon_get_state"] })
     });
-    assert.deepEqual((await restricted.json()).tool_permissions, ["roon_status"]);
+    assert.deepEqual((await restricted.json()).tool_permissions, ["roon_get_state"]);
 
     const revokedResponse = await fetch(`${baseUrl}/api/admin/api-keys/${managed.key_id}/revoke`, {
       method: "POST",

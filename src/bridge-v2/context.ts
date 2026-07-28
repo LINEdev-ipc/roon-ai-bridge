@@ -24,9 +24,9 @@ export type BridgeV2Context = {
   roonClient: RoonClient;
   mediaService: RoonMediaService;
   playlistService: PlaylistService;
-  playlistBuildService?: PlaylistBuildService;
-  playlistMetadataEnrichmentService?: PlaylistMetadataEnrichmentService;
-  playlistRepairService?: PlaylistRepairService;
+  playlistBuildService: PlaylistBuildService;
+  playlistMetadataEnrichmentService: PlaylistMetadataEnrichmentService;
+  playlistRepairService: PlaylistRepairService;
   playlistCatalogDiagnosticsService?: PlaylistCatalogDiagnosticsService;
   trackCatalogService?: TrackCatalogService;
   systemManagementService?: SystemManagementService;

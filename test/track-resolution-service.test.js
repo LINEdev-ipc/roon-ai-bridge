@@ -115,6 +115,38 @@ test("source and quality never outweigh the correct artist and studio version", 
   assert.equal(resolved.selected.result.result_id, "correct-local");
 });
 
+test("a fresh exact Roon result is reused without repeating the catalog search", async () => {
+  let searches = 0;
+  const preferred = candidate("fresh-roon-result", {
+    source: "tidal",
+    source_confidence: "high",
+    album: "London Calling"
+  });
+  const mediaService = {
+    get(resultId) {
+      assert.equal(resultId, preferred.result_id);
+      return preferred;
+    },
+    async search() {
+      searches += 1;
+      throw new Error("an exact fresh result must not trigger another Roon search");
+    }
+  };
+
+  const resolved = await new TrackResolutionService(mediaService).resolve({
+    preferredResultId: preferred.result_id,
+    query: "London Calling The Clash",
+    title: "London Calling",
+    artist: "The Clash",
+    album: "London Calling"
+  });
+
+  assert.equal(resolved.status, "resolved");
+  assert.equal(resolved.reason, "selected_supplied_result");
+  assert.equal(resolved.selected.result.result_id, preferred.result_id);
+  assert.equal(searches, 0);
+});
+
 test("title-only requests remain ambiguous across different artists", async () => {
   const mediaService = {
     async search() {

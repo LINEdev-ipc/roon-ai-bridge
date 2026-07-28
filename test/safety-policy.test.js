@@ -203,9 +203,10 @@ test("/safety/policy exposes portal-consumable classifications and volume limits
     assert.equal(policy.version, 1);
     assert.equal(policy.confirmation_policy.playback_requires_confirmation, false);
     assert.equal(
-      policy.tool_classification.roon_delete_virtual_playlist.requires_confirmation_by_default,
+      policy.tool_classification.roon_delete_playlist.requires_confirmation_by_default,
       true
     );
+    assert.equal(policy.tool_classification.roon_resolve_virtual_playlist, undefined);
     assert.equal(policy.tool_classification.roon_play_media.destructive, false);
     assert.ok(policy.volume_limits.some((limit) => limit.zone_name === "Cocina"));
   } finally {

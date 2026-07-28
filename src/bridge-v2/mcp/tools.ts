@@ -9,7 +9,7 @@ const write = { readOnlyHint: false, destructiveHint: false, openWorldHint: fals
 const destructive = { readOnlyHint: false, destructiveHint: true, openWorldHint: false };
 
 const outputSchema = {
-  status: z.enum(["completed", "needs_input", "ambiguous", "confirmation_required", "not_available", "failed"]),
+  status: z.enum(["completed", "in_progress", "needs_input", "ambiguous", "confirmation_required", "not_available", "failed"]),
   operation: z.string(),
   summary: z.string(),
   verified: z.boolean(),
@@ -50,13 +50,14 @@ const requiredCredit = z.object({
 const playlistBuildCandidate = z.object({
   candidate_id: z.string().min(1).optional(),
   role: z.enum(["primary", "reserve"]).default("primary"),
-  result_id: z.string().min(1).optional().describe("Optional temporary search reference. It never bypasses title, credits or recording-version validation."),
+  result_id: z.string().min(1).optional().describe("Fresh track result_id returned by roon_search_media. Copy it whenever available: RoonIA uses it as the preferred playback binding, but it never bypasses MusicBrainz identity, credits or recording-version validation."),
   title: z.string().min(1),
   artist_credit: z.string().min(1),
   required_credits: z.array(requiredCredit).min(1).max(12).optional(),
-  album_hint: z.string().min(1).optional().describe("Include only when confidently known and useful for identifying the recording. It is normally a ranking hint, not initial query text."),
-  release_year_hint: z.number().int().min(1000).max(3000).optional().describe("Include only when confidently known. It is a validation/ranking hint, not normal initial query text."),
-  recording_intent: z.enum(["standard", "live", "remix", "cover", "dub", "acoustic", "alternate"]).default("standard"),
+  album_hint: z.string().min(1).optional().describe("Exact album title copied from Roon or another reliable observation. Include it whenever available because it resolves MusicBrainz ambiguity."),
+  release_year_hint: z.number().int().min(1000).max(3000).optional().describe("Observed release year for this candidate. Never guess it; global date constraints belong in release_year_from/release_year_to."),
+  recording_intent: z.enum(["standard", "live", "remix", "cover", "dub", "acoustic", "alternate"]).default("standard")
+    .describe("Recording version, never genre. A dub-genre song is standard unless its title identifies a specific dub version; use remix/live/cover/dub only for that exact requested version."),
   performance_sensitive: z.boolean().default(false).describe("Set true for jazz, classical or another selection where a particular performance matters."),
   user_metadata: looseObject.optional()
 });
@@ -316,7 +317,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_save_playlist", {
     title: "Save RoonIA Playlist",
-    description: "Use this when the user explicitly wants to save a permanent playlist or replace its complete track list; use roon_create_temporary_playlist for contextual music they only want to hear now. Send title plus artist_credit for every primary and reserve. RoonIA resolves the canonical MusicBrainz recording first, then accepts only a compatible playable Roon binding; a supplied result_id never bypasses validation. Ambiguous or unavailable recordings are omitted for manual selection. For a requested size, include roughly 50-75% reserves. If status=needs_input, call this tool again with its build_id and new candidates. Exact retries are idempotent, up to three genuine replenishment rounds are allowed and an incomplete requested size is never saved.",
+    description: "Use this when the user explicitly wants to save a permanent playlist or replace its complete track list; use roon_create_temporary_playlist for contextual music they only want to hear now. For niche genres, date constraints or uncertain titles, call roon_search_media first and copy each exact track title, artist_credit, album_hint and fresh result_id; do not invent candidates from memory. MusicBrainz remains the identity and metadata authority, and a result_id never bypasses validation. recording_intent describes a version, never a genre. Include reliable reserves. If status=needs_input, use rejection_summary to replace failures and call this tool again with build_id. After three replenishments RoonIA saves every verified track, even below desired_count, and reports added_count and missing_count.",
     annotations: write,
     inputSchema: {
       build_id: z.string().uuid().optional().describe("Return value from a prior needs_input response. On replenishment calls, submit only build_id and new tracks."),
@@ -324,6 +325,10 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
       name: z.string().min(1).optional(),
       description: z.string().optional(),
       desired_count: z.number().int().min(1).max(500).optional(),
+      release_year_from: z.number().int().min(1000).max(3000).optional()
+        .describe("Minimum MusicBrainz first-publication year, inclusive. Convert relative user constraints to an explicit year."),
+      release_year_to: z.number().int().min(1000).max(3000).optional()
+        .describe("Maximum MusicBrainz first-publication year, inclusive."),
       no_adjacent_same_artist: z.boolean().default(true),
       tracks: z.array(playlistBuildCandidate).max(750).optional()
     }
@@ -331,7 +336,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_create_temporary_playlist", {
     title: "Create Temporary RoonIA Playlist",
-    description: "Use this when the user asks for contextual music for an activity, mood or occasion without asking to save it permanently. Provide a short intent summary plus primary and reserve tracks with title and artist_credit. RoonIA resolves MusicBrainz identity before creating a compatible Roon playback binding. If status=needs_input, call this tool again with build_id and fresh candidates; exact retries are idempotent and an incomplete requested size is never saved. After completion call roon_play_playlist with the returned playlist_id and requested queue mode. Do not use this when the user explicitly asks to keep or save the playlist.",
+    description: "Use this when the user asks for contextual music for an activity, mood or occasion without asking to save it permanently. For niche or constrained requests, discover playable candidates with roon_search_media first and copy exact title, artist_credit, album_hint and result_id. RoonIA verifies MusicBrainz identity before binding Roon. If status=needs_input, replace failures using rejection_summary and call again with build_id. After three replenishments it saves every verified track and reports any shortfall. Then call roon_play_playlist. Do not use this when the user explicitly asks to keep the playlist.",
     annotations: write,
     inputSchema: {
       build_id: z.string().uuid().optional().describe("Return value from a prior needs_input response for this temporary playlist build."),
@@ -339,6 +344,8 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
       description: z.string().optional(),
       intent: z.string().min(1).max(500).optional().describe("Short summary of the activity, mood or listening context; do not copy the full conversation."),
       desired_count: z.number().int().min(1).max(500).default(15),
+      release_year_from: z.number().int().min(1000).max(3000).optional(),
+      release_year_to: z.number().int().min(1000).max(3000).optional(),
       no_adjacent_same_artist: z.boolean().default(true),
       tracks: z.array(playlistBuildCandidate).max(750).optional()
     }
@@ -437,10 +444,11 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_rebuild_playlist", {
     title: "Rebuild RoonIA Playlist",
-    description: "Use this when an existing RoonIA playlist should be migrated to the current MusicBrainz identity model, have canonical metadata refreshed and reconstruct its playable Roon bindings without changing its songs, order, cover or user metadata. Use issues by default, selected for explicit track_ids or all for a complete rebuild. This replaces the deprecated resolve and metadata-refresh tools; it never invents new songs.",
+    description: "Use this when an existing RoonIA playlist should be migrated to the current MusicBrainz identity model, have canonical metadata refreshed and reconstruct its playable Roon bindings without changing its songs, order, cover or user metadata. Start with playlist_id and use issues unless the user explicitly requests all or selected tracks. The operation runs asynchronously: while status=in_progress, call this same tool again with job_id until it completes. It never invents or replaces songs.",
     annotations: write,
     inputSchema: {
-      playlist_id: z.string().min(1),
+      job_id: z.string().uuid().optional().describe("Return value from an earlier in_progress reconstruction. When present, omit playlist_id and poll this same tool."),
+      playlist_id: z.string().min(1).optional(),
       track_ids: z.array(z.string().min(1)).min(1).optional(),
       scope: z.enum(["issues", "selected", "all"]).default("issues"),
       selections: z.array(z.object({

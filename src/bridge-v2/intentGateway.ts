@@ -13,7 +13,6 @@ import {
 import type { MediaType, SourcePreference } from "../roon/roonMediaService";
 import { APP_VERSION } from "../config/version";
 import { PlaylistBuildService } from "../services/playlistBuildService";
-import { PlaylistMetadataEnrichmentService } from "../services/playlistMetadataEnrichmentService";
 import { PlaylistRepairService } from "../services/playlistRepairService";
 import {
   MAX_CUSTOM_COVER_BYTES,
@@ -23,28 +22,12 @@ import { downloadToolImage, ToolFileReference } from "../services/toolFileServic
 
 export class IntentGateway extends TransportIntentHandler {
   private readonly playlistBuildService: PlaylistBuildService;
-  private readonly playlistMetadataEnrichmentService: PlaylistMetadataEnrichmentService;
   private readonly playlistRepairService: PlaylistRepairService;
 
   constructor(context: BridgeV2Context) {
     super(context);
-    this.playlistBuildService = context.playlistBuildService || new PlaylistBuildService(
-      context.playlistService,
-      context.mediaService,
-      context.logger,
-      "streaming_first",
-      undefined,
-      context.trackCatalogService
-    );
-    this.playlistMetadataEnrichmentService = context.playlistMetadataEnrichmentService ||
-      new PlaylistMetadataEnrichmentService(context.playlistService, context.mediaService, context.logger);
-    this.playlistRepairService = context.playlistRepairService || new PlaylistRepairService(
-      context.playlistService,
-      context.mediaService,
-      this.playlistMetadataEnrichmentService,
-      context.logger,
-      context.trackCatalogService
-    );
+    this.playlistBuildService = context.playlistBuildService;
+    this.playlistRepairService = context.playlistRepairService;
   }
 
   async searchMedia(input: {
@@ -220,6 +203,8 @@ export class IntentGateway extends TransportIntentHandler {
     name?: string;
     description?: string;
     desired_count?: number;
+    release_year_from?: number;
+    release_year_to?: number;
     no_adjacent_same_artist?: boolean;
     tracks?: unknown[];
   }): Promise<OperationResult> {
@@ -268,7 +253,8 @@ export class IntentGateway extends TransportIntentHandler {
           rejected: build.rejected,
           not_selected: build.not_selected,
           unused_reserves: build.unused_reserves,
-          search_summary: build.search_summary
+          search_summary: build.search_summary,
+          rejection_summary: build.rejection_summary
         }
       },
       warnings: [...mutation.warnings, ...completionWarning]
@@ -281,6 +267,8 @@ export class IntentGateway extends TransportIntentHandler {
     description?: string;
     intent?: string;
     desired_count?: number;
+    release_year_from?: number;
+    release_year_to?: number;
     no_adjacent_same_artist?: boolean;
     tracks?: unknown[];
   }): Promise<OperationResult> {
@@ -325,7 +313,8 @@ export class IntentGateway extends TransportIntentHandler {
           rejected: build.rejected,
           not_selected: build.not_selected,
           unused_reserves: build.unused_reserves,
-          search_summary: build.search_summary
+          search_summary: build.search_summary,
+          rejection_summary: build.rejection_summary
         }
       },
       references: {
@@ -608,11 +597,18 @@ export class IntentGateway extends TransportIntentHandler {
   }
 
   async rebuildPlaylist(input: {
-    playlist_id: string;
+    job_id?: string;
+    playlist_id?: string;
     track_ids?: string[];
     scope?: "issues" | "selected" | "all";
     selections?: Array<{ track_id: string; result_id: string }>;
   }): Promise<OperationResult> {
+    if (input.job_id) {
+      return this.rebuildJobResult(this.playlistRepairService.getRebuild(input.job_id));
+    }
+    if (!input.playlist_id) {
+      throw new ApiError("INVALID_PLAYLIST", "playlist_id is required to start a reconstruction");
+    }
     const manual: Array<Awaited<ReturnType<PlaylistRepairService["selectTrack"]>>> = [];
     for (const selection of input.selections || []) {
       manual.push(await this.playlistRepairService.selectTrack({
@@ -628,24 +624,75 @@ export class IntentGateway extends TransportIntentHandler {
       ? (input.track_ids || []).filter((trackId) => !manuallySelected.has(trackId))
       : undefined;
     const shouldResolve = input.scope !== "selected" || Boolean(selectedIds?.length);
-    const data = shouldResolve
-      ? await this.playlistRepairService.rebuildPlaylist({
-          playlistId: input.playlist_id,
-          trackIds: selectedIds,
-          scope: input.scope || "issues",
-          sourcePreference: "streaming_first"
-        })
-      : {
-          playlist: this.context.playlistService.getPlaylist(input.playlist_id),
-          resolution: [],
-          enrichment: null,
-          report: null
-        };
-    const playlist = data.playlist || (
-      typeof (this.context.playlistService as any).getPlaylist === "function"
-        ? this.context.playlistService.getPlaylist(input.playlist_id)
-        : { playlist_id: input.playlist_id, tracks: [] }
-    );
+    if (!shouldResolve) {
+      const playlist = this.context.playlistService.getPlaylist(input.playlist_id);
+      const result = this.playlistMutationResult(
+        "roon_rebuild_playlist",
+        "Playlist selections applied.",
+        playlist
+      );
+      return {
+        ...result,
+        data: {
+          ...(result.data as Record<string, unknown>),
+          manual_selections: manual.map((entry) => ({
+            track_id: entry.track.track_id,
+            enrichment: entry.enrichment
+          }))
+        }
+      };
+    }
+    const job = this.playlistRepairService.startRebuild({
+      playlistId: input.playlist_id,
+      trackIds: selectedIds,
+      scope: input.scope || "issues",
+      sourcePreference: "streaming_first"
+    });
+    const operation = this.rebuildJobResult(job);
+    if (!manual.length) return operation;
+    return {
+      ...operation,
+      data: {
+        ...(operation.data as Record<string, unknown>),
+        manual_selections: manual.map((entry) => ({
+          track_id: entry.track.track_id,
+          enrichment: entry.enrichment
+        }))
+      }
+    };
+  }
+
+  private rebuildJobResult(job: ReturnType<PlaylistRepairService["getRebuild"]>): OperationResult {
+    if (job.status === "failed") {
+      return {
+        status: "failed",
+        operation: "roon_rebuild_playlist",
+        summary: job.error?.message || "Playlist reconstruction failed.",
+        verified: false,
+        data: job,
+        references: { job_id: job.job_id, playlist_id: job.playlist_id },
+        warnings: [],
+        error: job.error || {
+          code: "INTERNAL_ERROR",
+          message: "Playlist reconstruction failed.",
+          details: {}
+        }
+      };
+    }
+    if (job.status !== "completed" || !job.result) {
+      return {
+        status: "in_progress",
+        operation: "roon_rebuild_playlist",
+        summary: job.progress.message,
+        verified: false,
+        data: job,
+        references: { job_id: job.job_id, playlist_id: job.playlist_id },
+        warnings: ["Reconstruction is still running; poll this same tool with job_id."]
+      };
+    }
+    const data = job.result as Record<string, any>;
+    const playlist = data.playlist;
+    const jobSummary = { ...job, result: null };
     const result = this.playlistMutationResult(
       "roon_rebuild_playlist",
       "Playlist reconstruction completed.",
@@ -655,58 +702,10 @@ export class IntentGateway extends TransportIntentHandler {
       ...result,
       data: {
         ...(result.data as Record<string, unknown>),
+        reconstruction_job: jobSummary,
         resolution_attempts: data.resolution,
         metadata_enrichment: data.enrichment,
-        reconstruction: data.report,
-        manual_selections: manual.map((entry) => ({
-          track_id: entry.track.track_id,
-          enrichment: entry.enrichment
-        }))
-      }
-    };
-  }
-
-  async resolvePlaylist(input: {
-    playlist_id: string;
-    track_ids?: string[];
-    scope?: "unresolved" | "selected" | "all";
-    selections?: Array<{ track_id: string; result_id: string }>;
-  }): Promise<OperationResult> {
-    return this.rebuildPlaylist({
-      ...input,
-      scope: input.scope === "unresolved" || !input.scope ? "issues" : input.scope
-    });
-  }
-
-  async refreshPlaylistMetadata(input: {
-    playlist_id: string;
-    track_ids?: string[];
-    scope?: "incomplete" | "selected" | "all";
-  }): Promise<OperationResult> {
-    const data = await this.playlistMetadataEnrichmentService.refreshPlaylist(input.playlist_id, {
-      trackIds: input.scope === "selected" ? input.track_ids : undefined,
-      force: input.scope === "all",
-      sourcePreference: "streaming_first"
-    });
-    const result = this.playlistMutationResult(
-      "roon_refresh_playlist_metadata",
-      "Playlist metadata refresh completed.",
-      data.playlist
-    );
-    return {
-      ...result,
-      data: {
-        ...(result.data as Record<string, unknown>),
-        metadata_refresh: {
-          attempted: data.attempted,
-          completed: data.completed,
-          partial: data.partial,
-          skipped: data.skipped,
-          failed: data.failed,
-          conflict: data.conflict,
-          unverified: data.unverified,
-          tracks: data.tracks
-        }
+        reconstruction: data.report
       }
     };
   }

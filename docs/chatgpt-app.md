@@ -168,6 +168,18 @@ describe the playlist as fully checked while unresolved entries remain.
 `resolution.status: "manual"` means an explicit result was selected, while
 `selection_origin` distinguishes model and portal-user choices.
 
+For niche genres, date limits or uncertain titles, ChatGPT searches Roon first
+with several focused queries and copies exact title, artist, album and
+`result_id` into the playlist proposal. MusicBrainz verifies each recording
+and the first-publication year. `recording_intent` is a recording version, not
+a genre: dub music normally uses `standard`. If replenishment still falls
+short, the verified partial playlist is saved and ChatGPT reports both
+`added_count` and `missing_count`.
+
+`roon_rebuild_playlist` returns `in_progress` while its asynchronous job runs.
+ChatGPT calls the same tool again with `job_id` until it returns `completed`;
+it must not claim the playlist was rebuilt before that terminal result.
+
 ```text
 ¿Qué está sonando?
 ```

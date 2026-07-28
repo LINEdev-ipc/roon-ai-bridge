@@ -58,6 +58,8 @@ export type PlaylistBuildRequest = {
   name?: unknown;
   description?: unknown;
   desired_count?: unknown;
+  release_year_from?: unknown;
+  release_year_to?: unknown;
   no_adjacent_same_artist?: unknown;
   tracks?: unknown;
   purpose?: unknown;
@@ -137,6 +139,8 @@ type BuildSession = {
   name: string | null;
   description: string | null;
   desiredCount: number;
+  releaseYearFrom: number | null;
+  releaseYearTo: number | null;
   noAdjacentSameArtist: boolean;
   round: number;
   prepared: PreparedCandidate[];
@@ -171,6 +175,13 @@ export type PlaylistBuildResult = {
     proposals_seen: number;
     valid_recordings: number;
     rejected: number;
+  };
+  rejection_summary: {
+    total: number;
+    returned_candidates: number;
+    by_status: Record<string, number>;
+    by_reason: Record<string, number>;
+    recovery_actions: string[];
   };
 };
 
@@ -210,10 +221,11 @@ function normalize(value: unknown): string {
 }
 
 function canonicalTitle(value: unknown): string {
-  return normalize(value)
-    .replace(/\b(?:remaster(?:ed)?|digital master|single version|album version|original version|stereo version|mono version)\b.*$/g, "")
-    .replace(/\b(?:live|en vivo|directo|remix|rework|dub|radio edit|acoustic|acapella|instrumental|demo|karaoke|cover)\b.*$/g, "")
-    .trim();
+  const raw = String(value || "")
+    .replace(/\s*[\[(]\s*(?:live\b[^)\]]*|[^)\]]*\b(?:remix|rework|dub mix|dub version|radio edit|acoustic version|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed)?|digital master)\b[^)\]]*)[\])]\s*$/iu, "")
+    .replace(/\s+-\s+(?:live\b.*|.*\b(?:remix|rework|dub mix|dub version|radio edit|acoustic version|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed)?|digital master)\b.*)$/iu, "")
+    .replace(/\s+\b(?:single version|album version|original version|stereo version|mono version)\b.*$/iu, "");
+  return normalize(raw);
 }
 
 function phraseIncludes(haystack: string, needle: string): boolean {
@@ -243,17 +255,18 @@ function resultCredits(result: MediaResult): string[] {
 }
 
 function versionFamily(result: Pick<MediaResult, "title" | "version_hint">): PlaylistRecordingIntent | "remaster" {
-  const value = `${result.title || ""} ${result.version_hint || ""}`;
-  if (/\b(?:live|en vivo|directo|concert)\b/i.test(value)) return "live";
-  if (/\b(?:remix|rework|mix)\b/i.test(value)) return "remix";
-  if (/\bdub\b/i.test(value)) return "dub";
-  if (/\b(?:karaoke|tribute|homage|cover|originally performed|made popular)\b/i.test(value)) return "cover";
-  if (/\bacoustic\b/i.test(value)) return "acoustic";
-  if (/\b(?:radio edit|edit|acapella|instrumental|demo|re-record(?:ed|ing)?|sped up|slowed|nightcore|mashup|medley)\b/i.test(value)) return "alternate";
-  if (/\b(?:remaster(?:ed)?|digital master)\b/i.test(value) || result.version_hint === "remaster") return "remaster";
   if (result.version_hint === "live" || result.version_hint === "remix" || result.version_hint === "cover") {
     return result.version_hint;
   }
+  const title = result.title || "";
+  const versionSuffix = /(?:[\[(]\s*[^)\]]*[\])]\s*$|\s+-\s+.+$)/u.test(title);
+  if (versionSuffix && /\b(?:live|en vivo|directo|concert)\b/iu.test(title)) return "live";
+  if (/\b(?:dub mix|dub version|version dub)\b/iu.test(title) || (versionSuffix && /\bdub\b/iu.test(title))) return "dub";
+  if (/\b(?:remix|rework)\b/iu.test(title) || (versionSuffix && /\bmix\b/iu.test(title))) return "remix";
+  if (/\b(?:karaoke|tribute|homage|cover version|originally performed|made popular)\b/iu.test(title)) return "cover";
+  if (versionSuffix && /\bacoustic\b/iu.test(title)) return "acoustic";
+  if (/\b(?:radio edit|acapella|instrumental version|demo version|re-record(?:ed|ing)?|sped up|slowed|nightcore|mashup|medley)\b/iu.test(title)) return "alternate";
+  if (/\b(?:remaster(?:ed)?|digital master)\b/iu.test(title) || result.version_hint === "remaster") return "remaster";
   if (result.version_hint === "edit" || result.version_hint === "alternate") return "alternate";
   return "standard";
 }
@@ -531,6 +544,8 @@ export class PlaylistBuildService {
         name,
         description: optionalString(request.description),
         desiredCount: desiredCount ?? 0,
+        releaseYearFrom: optionalInteger(request.release_year_from),
+        releaseYearTo: optionalInteger(request.release_year_to),
         noAdjacentSameArtist: request.no_adjacent_same_artist !== false,
         round: 0,
         prepared: [],
@@ -545,6 +560,24 @@ export class PlaylistBuildService {
         batchResults: new Map(),
         finalized: false
       };
+      for (const [field, value] of [
+        ["release_year_from", session.releaseYearFrom],
+        ["release_year_to", session.releaseYearTo]
+      ] as const) {
+        if (value !== null && (value < 1000 || value > 3000)) {
+          throw new ApiError("INVALID_PLAYLIST", `${field} must be between 1000 and 3000`);
+        }
+      }
+      if (
+        session.releaseYearFrom !== null &&
+        session.releaseYearTo !== null &&
+        session.releaseYearFrom > session.releaseYearTo
+      ) {
+        throw new ApiError(
+          "INVALID_PLAYLIST",
+          "release_year_from must be less than or equal to release_year_to"
+        );
+      }
       if (desiredCount !== null) this.sessions.set(session.buildId, session);
     }
 
@@ -561,7 +594,8 @@ export class PlaylistBuildService {
       session.noAdjacentSameArtist
     );
     const missing = target === null ? null : Math.max(0, target - scheduled.selected.length);
-    const shouldFinalize = target === null || missing === 0;
+    const shouldFinalize = target === null || missing === 0 ||
+      (session.round >= MAX_ADDITIONAL_ROUNDS && scheduled.selected.length > 0);
     if (!shouldFinalize) {
       if (session.round >= MAX_ADDITIONAL_ROUNDS) {
         this.sessions.set(session.buildId, session);
@@ -589,6 +623,18 @@ export class PlaylistBuildService {
       const pending = this.result(session, "needs_candidates", null, scheduled, missing);
       session.batchResults.set(batchKey, pending);
       return pending;
+    }
+    if (scheduled.selected.length === 0 && rawTracks.length > 0) {
+      throw new ApiError(
+        "PLAYLIST_BUILD_INCOMPLETE",
+        "No submitted recording could be verified, so an empty playlist was not created",
+        {
+          build_id: session.buildId,
+          desired_count: target,
+          accepted_count: 0,
+          rejected_count: session.rejected.length
+        }
+      );
     }
 
     const preparedTracks = scheduled.selected.map((candidate) => candidate.storedTrack);
@@ -642,7 +688,10 @@ export class PlaylistBuildService {
         }
         session.seenProposalKeys.add(key);
         try {
-          return await this.resolveCandidate(candidate);
+          return await this.resolveCandidate(candidate, {
+            from: session.releaseYearFrom,
+            to: session.releaseYearTo
+          });
         } catch (error) {
           this.logger?.warn("Playlist candidate preflight failed", {
             buildId: session.buildId,
@@ -674,7 +723,10 @@ export class PlaylistBuildService {
     }
   }
 
-  private async resolveCandidate(candidate: NormalizedCandidate): Promise<
+  private async resolveCandidate(
+    candidate: NormalizedCandidate,
+    releaseRange: { from: number | null; to: number | null } = { from: null, to: null }
+  ): Promise<
     { prepared: PreparedCandidate } | { rejected: RejectedCandidate }
   > {
     let catalogProfile: TrackCatalogProfile | null = null;
@@ -704,6 +756,25 @@ export class PlaylistBuildService {
           )
         };
       }
+      const firstReleaseYear = catalogProfile.release_group?.release_year ?? null;
+      if (
+        (releaseRange.from !== null || releaseRange.to !== null) &&
+        (
+          firstReleaseYear === null ||
+          (releaseRange.from !== null && firstReleaseYear < releaseRange.from) ||
+          (releaseRange.to !== null && firstReleaseYear > releaseRange.to)
+        )
+      ) {
+        return {
+          rejected: this.rejection(
+            candidate,
+            "ineligible",
+            firstReleaseYear === null
+              ? "musicbrainz_release_year_unverified"
+              : "musicbrainz_release_year_outside_requested_range"
+          )
+        };
+      }
       canonicalTitle = catalogProfile.recording.title;
       canonicalArtist = catalogProfile.recording.artist_credit.length
         ? catalogProfile.recording.artist_credit
@@ -729,6 +800,7 @@ export class PlaylistBuildService {
     const baseQuery = `${canonicalTitle} ${canonicalArtist}`;
     let resolution = await resolver.resolve({
       query: baseQuery,
+      preferredResultId: candidate.resultId,
       title: canonicalTitle,
       artist: canonicalArtist,
       album: candidate.albumHint,
@@ -738,11 +810,26 @@ export class PlaylistBuildService {
       sourcePreference: this.sourcePreference
     });
     let selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
-    let stage = "title_artist";
+    let stage = resolution.reason === "selected_supplied_result" ? "supplied_result" : "title_artist";
+    if (!selected && resolution.reason === "selected_supplied_result") {
+      resolution = await resolver.resolve({
+        query: baseQuery,
+        title: canonicalTitle,
+        artist: canonicalArtist,
+        album: candidate.albumHint,
+        releaseYear: candidate.releaseYearHint,
+        versionHint: versionHint(candidate.recordingIntent),
+        count: 25,
+        sourcePreference: this.sourcePreference
+      });
+      selected = await this.selectStrictCandidate(bindingCandidate, resolution, catalogProfile);
+      stage = "title_artist";
+    }
     if (!selected && candidate.albumHint) {
       stage = "title_artist_album";
       resolution = await resolver.resolve({
         query: `${baseQuery} ${candidate.albumHint}`,
+        preferredResultId: candidate.resultId,
         title: canonicalTitle,
         artist: canonicalArtist,
         album: candidate.albumHint,
@@ -992,6 +1079,29 @@ export class PlaylistBuildService {
       musicbrainz_recording_id: candidate.catalogProfile?.recording?.musicbrainz_id || null,
       resolution_reason: candidate.resolutionReason
     }));
+    const byStatus: Record<string, number> = {};
+    const byReason: Record<string, number> = {};
+    for (const rejection of session.rejected) {
+      byStatus[rejection.status] = (byStatus[rejection.status] || 0) + 1;
+      const reason = rejection.reason.split(":")[0];
+      byReason[reason] = (byReason[reason] || 0) + 1;
+    }
+    const recoveryActions = new Set<string>();
+    if (Object.keys(byReason).some((reason) => reason.startsWith("musicbrainz_ambiguous"))) {
+      recoveryActions.add("Retry ambiguous recordings with the exact album_hint copied from a Roon result.");
+    }
+    if (Object.keys(byReason).some((reason) => reason.startsWith("musicbrainz_not_found"))) {
+      recoveryActions.add("Replace not-found proposals with exact title, artist_credit, album_hint and result_id from a fresh Roon search.");
+    }
+    if (Object.keys(byReason).some((reason) => reason.startsWith("roon_binding_required"))) {
+      recoveryActions.add("Replace missing Roon bindings with a different playable track returned by roon_search_media.");
+    }
+    if (byStatus.duplicate) {
+      recoveryActions.add("Submit different recordings; do not repeat prior proposals or the same recording on another edition.");
+    }
+    if (Object.keys(byReason).some((reason) => reason.includes("release_year"))) {
+      recoveryActions.add("Replace tracks whose MusicBrainz first-publication year does not satisfy the requested range.");
+    }
     return {
       phase,
       build_id: phase === "needs_candidates" ? session.buildId : null,
@@ -1006,7 +1116,7 @@ export class PlaylistBuildService {
       complete: missing === null || missing === 0,
       playlist,
       accepted,
-      rejected: session.rejected,
+      rejected: session.rejected.slice(-25),
       not_selected: scheduled.excluded.map((candidate) => ({
         candidate_id: candidate.input.candidateId,
         title: candidate.result.title,
@@ -1022,6 +1132,13 @@ export class PlaylistBuildService {
         proposals_seen: session.seenProposalKeys.size,
         valid_recordings: session.prepared.length,
         rejected: session.rejected.length
+      },
+      rejection_summary: {
+        total: session.rejected.length,
+        returned_candidates: Math.min(25, session.rejected.length),
+        by_status: byStatus,
+        by_reason: byReason,
+        recovery_actions: [...recoveryActions]
       }
     };
   }

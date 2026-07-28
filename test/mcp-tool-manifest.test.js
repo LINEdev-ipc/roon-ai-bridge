@@ -10,8 +10,12 @@ const { BRIDGE_V2_INSTRUCTIONS } = require("../dist/bridge-v2/mcp/server");
 const { registerWidgetV2Tools } = require("../dist/bridge-v2/widgets/tools");
 const { createDatabase } = require("../dist/db/database");
 const { PlaylistService } = require("../dist/services/playlistService");
+const { PlaylistBuildService } = require("../dist/services/playlistBuildService");
+const { PlaylistMetadataEnrichmentService } = require("../dist/services/playlistMetadataEnrichmentService");
+const { PlaylistRepairService } = require("../dist/services/playlistRepairService");
 const { VolumeLimitService } = require("../dist/services/volumeLimitService");
 const { ZonePresetService } = require("../dist/services/zonePresetService");
+const { TOOL_CLASSIFICATION } = require("../dist/safety/actionSafety");
 
 function createConfig(dataDir) {
   return {
@@ -37,7 +41,23 @@ function createConfig(dataDir) {
 
 function createContext(config, database) {
   const noop = () => {};
-  return {
+  const playlistService = new PlaylistService(config, database);
+  const mediaService = {
+    async search(request) {
+      return {
+        query: request.query,
+        results: [],
+        recommended_result_id: null,
+        selection_required: false,
+        warnings: []
+      };
+    }
+  };
+  const playlistMetadataEnrichmentService = new PlaylistMetadataEnrichmentService(
+    playlistService,
+    mediaService
+  );
+  const context = {
     config,
     logger: { info: noop, warn: noop, error: noop, debug: noop },
     roonClient: {
@@ -52,8 +72,21 @@ function createContext(config, database) {
       isBrowseReady: () => false,
       isImageReady: () => false
     },
-    playlistService: new PlaylistService(config, database),
-    mediaService: {},
+    playlistService,
+    mediaService,
+    playlistMetadataEnrichmentService,
+    playlistBuildService: new PlaylistBuildService(
+      playlistService,
+      mediaService,
+      undefined,
+      "streaming_first",
+      playlistMetadataEnrichmentService
+    ),
+    playlistRepairService: new PlaylistRepairService(
+      playlistService,
+      mediaService,
+      playlistMetadataEnrichmentService
+    ),
     zonePresetService: new ZonePresetService(config, database),
     volumeLimitService: new VolumeLimitService(config, database),
     oauthService: {},
@@ -62,6 +95,7 @@ function createContext(config, database) {
     systemManagementService: {},
     outputVolumeSettingsService: {}
   };
+  return context;
 }
 
 async function readMcpJson(response) {
@@ -197,6 +231,11 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
     const tools = new Map(payload.result.tools.map((tool) => [tool.name, tool]));
 
     assert.equal(tools.size, 41);
+    assert.deepEqual(
+      Object.keys(TOOL_CLASSIFICATION).sort(),
+      [...tools.keys()].sort(),
+      "the safety catalog must contain only the active MCP tools"
+    );
     assert.ok(tools.get("roon_get_state").inputSchema.properties.scope);
     assert.ok(tools.get("roon_play_media").inputSchema.properties.zone);
     assert.ok(tools.get("roon_play_media").inputSchema.properties.media);
@@ -223,7 +262,16 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.release_year_hint);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.recording_intent);
     assert.ok(savePlaylist.inputSchema.properties.tracks.items.properties.required_credits);
-    assert.match(savePlaylist.description, /three genuine replenishment rounds/i);
+    assert.match(savePlaylist.description, /three replenishments/i);
+    assert.ok(savePlaylist.inputSchema.properties.release_year_from);
+    assert.ok(savePlaylist.inputSchema.properties.release_year_to);
+    assert.match(
+      savePlaylist.inputSchema.properties.tracks.items.properties.recording_intent.description,
+      /never genre/i
+    );
+    const rebuildPlaylist = tools.get("roon_rebuild_playlist");
+    assert.ok(rebuildPlaylist.inputSchema.properties.job_id);
+    assert.ok(rebuildPlaylist.outputSchema.properties.status.enum.includes("in_progress"));
     assert.match(savePlaylist.description, /result_id never bypasses validation/i);
     assert.ok(savePlaylist.outputSchema.properties.status.enum.includes("needs_input"));
     assert.match(coverTool.description, /images below 768x768 are rejected/);
