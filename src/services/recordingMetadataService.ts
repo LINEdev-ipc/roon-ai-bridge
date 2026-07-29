@@ -294,13 +294,44 @@ function artistNames(value: unknown): string[] {
   });
 }
 
+function combinedArtistCredit(value: unknown): string {
+  return records(value).map((credit) => {
+    const artist = objectValue(credit.artist);
+    const name = typeof credit.name === "string"
+      ? credit.name
+      : typeof artist?.name === "string"
+        ? artist.name
+        : "";
+    const joinPhrase = typeof credit.joinphrase === "string" ? credit.joinphrase : "";
+    return `${name}${joinPhrase}`;
+  }).join("").trim();
+}
+
 function artistEquivalent(left: unknown, right: unknown): boolean {
   const normalizedLeft = normalize(left);
   const normalizedRight = normalize(right);
   if (!normalizedLeft || !normalizedRight) return false;
   if (normalizedLeft === normalizedRight) return true;
   const withoutArticle = (value: string) => value.replace(/^the\s+/, "");
-  return withoutArticle(normalizedLeft) === withoutArticle(normalizedRight);
+  const leftWithoutArticle = withoutArticle(normalizedLeft);
+  const rightWithoutArticle = withoutArticle(normalizedRight);
+  if (leftWithoutArticle === rightWithoutArticle) return true;
+  const collectiveContains = (collective: string, member: string): boolean => {
+    if (collective.startsWith(`${member} and `) || collective.startsWith(`${member} with `)) {
+      return true;
+    }
+    if (member.split(" ").length < 2) return false;
+    return collective.includes(` and ${member}`) ||
+      collective.includes(` with ${member}`) ||
+      collective.includes(` featuring ${member}`);
+  };
+  return collectiveContains(leftWithoutArticle, rightWithoutArticle) ||
+    collectiveContains(rightWithoutArticle, leftWithoutArticle);
+}
+
+function artistCreditEquivalent(value: unknown, expected: unknown): boolean {
+  return artistNames(value).some((artist) => artistEquivalent(artist, expected)) ||
+    artistEquivalent(combinedArtistCredit(value), expected);
 }
 
 function artistCredit(value: unknown): RecordingCatalogMetadata["artist_credit"] {
@@ -411,12 +442,21 @@ function cacheTrace(
   layer: "memory" | "persistent",
   startedAt: number
 ): CatalogProviderTrace {
+  const previousListenBrainz = previous?.listenbrainz;
   return {
     ...(previous || completedTrace(emptyTrace(), startedAt)),
     cache_hit: true,
     cache_layer: layer,
     elapsed_ms: Math.max(0, Date.now() - startedAt),
-    provider_requests: 0
+    provider_requests: 0,
+    ...(previousListenBrainz ? {
+      listenbrainz: {
+        ...previousListenBrainz,
+        elapsed_ms: 0,
+        provider_requests: 0,
+        cache_hits: 0
+      }
+    } : {})
   };
 }
 
@@ -446,11 +486,15 @@ function variantCoreSearchTitle(value: unknown): string {
 }
 
 function releaseKey(value: unknown): string {
-  return normalize(String(value || "")
+  const normalized = normalize(String(value || "")
     .replace(/\s*[([]\s*(?:(?:19|20)\d{2}|live|(?:\d{4}\s+)?remaster(?:ed)?(?:\s+\d{4})?|[^)\]]*\bedition)\s*[\])]\s*$/iu, " "))
     .replace(/\b(?:super deluxe(?: edition)?|deluxe edition|expanded edition)\b/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+  const tokens = normalized.split(" ").filter(Boolean);
+  return tokens.length >= 2 && tokens.every((token) => token.length === 1)
+    ? tokens.join("")
+    : normalized;
 }
 
 function releaseSearchAlias(value: string): string {
@@ -557,8 +601,18 @@ function releaseTitles(recording: JsonRecord): string[] {
     .filter(Boolean);
 }
 
-function releaseVariantEvidence(recording: JsonRecord): string {
-  return records(recording.releases).flatMap((release) => {
+function releaseVariantEvidence(
+  recording: JsonRecord,
+  requiredRelease?: string | null
+): string {
+  // Compilation titles are not recording-version evidence. A recording can
+  // legitimately appear on unrelated releases whose names contain "Live",
+  // "Remix" or "DJ Mix". Only the requested compatible release may supply
+  // version evidence when the recording title itself is not descriptive.
+  const releases = requiredRelease
+    ? compatibleReleases(recording, requiredRelease)
+    : [];
+  return releases.flatMap((release) => {
     const group = releaseGroup(release);
     return [
       typeof release.title === "string" ? release.title : "",
@@ -750,6 +804,7 @@ export class RecordingMetadataService {
     duration_seconds?: number | null;
     release_year_observation?: number | null;
     metadata_depth?: "identity" | "full";
+    prefer_release_tracklist?: boolean;
   }): string {
     const material = [
       normalize(input.recording_id),
@@ -758,9 +813,10 @@ export class RecordingMetadataService {
       input.require_release_match ? "required-release" : "observed-release",
       normalize(input.version_hint), normalize(input.isrc), input.duration_seconds || "",
       input.release_year_observation || "",
-      input.metadata_depth || "full"
+      input.metadata_depth || "full",
+      input.prefer_release_tracklist ? "release-first" : "recording-first"
     ].join("|");
-    return `recording-resolution:v10:${crypto.createHash("sha256").update(material).digest("hex")}`;
+    return `recording-resolution:v18:${crypto.createHash("sha256").update(material).digest("hex")}`;
   }
 
   private remember(cacheKey: string, value: RecordingCatalogResolution): RecordingCatalogResolution {
@@ -880,7 +936,7 @@ export class RecordingMetadataService {
       const releaseAlias = releaseSearchAlias(releaseTitle);
       const terms = [
         `release:"${lucene(releaseAlias)}"`,
-        `artistname:"${lucene(artist)}"`,
+        `artist:"${lucene(artist)}"`,
         "video:false"
       ];
       const url = new URL("https://musicbrainz.org/ws/2/recording");
@@ -1116,7 +1172,7 @@ export class RecordingMetadataService {
     const recordingTerms = titleTokens(title).map(luceneTerm).join(" AND ");
     const terms = [
       `recording:(${recordingTerms})`,
-      `artistname:"${lucene(artist)}"`,
+      `artist:"${lucene(artist)}"`,
       album ? `release:"${lucene(album)}"` : ""
     ].filter(Boolean).concat("video:false");
     const url = new URL("https://musicbrainz.org/ws/2/recording");
@@ -1141,6 +1197,7 @@ export class RecordingMetadataService {
     duration_seconds?: number | null;
     release_year_observation?: number | null;
     metadata_depth?: "identity" | "full";
+    prefer_release_tracklist?: boolean;
   }): Promise<RecordingCatalogResolution> {
     const startedAt = Date.now();
     const cacheKey = this.cacheKey(input);
@@ -1175,13 +1232,15 @@ export class RecordingMetadataService {
       detailUrl.searchParams.set("fmt", "json");
       detail = await this.requestJson(detailUrl, trace);
       const rejectionReasons: string[] = [];
+      if (detail.video === true) rejectionReasons.push("video_recording");
       if (baseRecordingTitle(detail.title) !== expectedTitle) rejectionReasons.push("title_mismatch");
       const disambiguation = typeof detail.disambiguation === "string" ? detail.disambiguation : "";
+      const requiredRelease = input.album ||
+        (input.require_release_match ? input.album_observation : null);
       const variantEvidence = [
         detail.title,
         disambiguation,
-        ...releaseTitles(detail),
-        releaseVariantEvidence(detail)
+        releaseVariantEvidence(detail, requiredRelease)
       ].filter(Boolean).join(" ");
       if (variantStrength(requestedVariant, variantEvidence) === null) {
         rejectionReasons.push("variant_mismatch");
@@ -1190,14 +1249,12 @@ export class RecordingMetadataService {
       if (expectedIsrc && detailedIsrcs.length && !detailedIsrcs.some((isrc) => normalize(isrc) === expectedIsrc)) {
         rejectionReasons.push("isrc_mismatch");
       }
-      const requiredRelease = input.album ||
-        (input.require_release_match ? input.album_observation : null);
       if (requiredRelease && !compatibleReleases(detail, requiredRelease).length) {
         rejectionReasons.push("release_mismatch");
       }
       const detailedArtists = artistNames(detail["artist-credit"]);
       anchoredArtistMismatch = detailedArtists.length > 0
-        && !detailedArtists.some((artist) => artistEquivalent(artist, expectedArtist));
+        && !artistCreditEquivalent(detail["artist-credit"], expectedArtist);
       if (anchoredArtistMismatch) trace.accepted_warnings.push("artist_credit_differs_from_intent");
       trace.candidate_counts = { returned: 1, accepted: rejectionReasons.length ? 0 : 1, rejected: rejectionReasons.length ? 1 : 0 };
       if (rejectionReasons.length) {
@@ -1238,12 +1295,73 @@ export class RecordingMetadataService {
         artist: input.artist,
         album: releaseTitle
       }) || Promise.resolve(null);
-      let recordings = await this.search(
-        searchTitle,
-        input.artist,
-        searchRelease ? releaseAlias : null,
-        trace
-      );
+      let recordings: JsonRecord[] = [];
+      let resolvedFromReleaseTracklist = false;
+      if (input.prefer_release_tracklist && releaseTitle) {
+        let releaseRecordings: JsonRecord[] = [];
+        try {
+          releaseRecordings = await this.searchReleaseRecordings(
+            releaseTitle,
+            input.artist,
+            trace
+          );
+        } catch (error) {
+          trace.accepted_warnings.push(
+            `release_tracklist_provider_error_fell_back_to_recording_search:${
+              error instanceof Error ? error.message : String(error)
+            }`
+          );
+        }
+        const hasCompatibleReleaseTrack = releaseRecordings.some((recording) => {
+          if (typeof recording.title !== "string") return false;
+          if (recording.video === true) return false;
+          const titleExact = baseRecordingTitle(recording.title) === expectedTitle;
+          const titleCompatible = compatibleTitle(input.title, recording.title);
+          const medleyMismatch = /\/|\bmedley\b|\babertura\b/iu.test(recording.title) &&
+            !/\/|\bmedley\b|\babertura\b/iu.test(input.title);
+          if (!titleExact && (!titleCompatible || medleyMismatch)) return false;
+          const artists = artistNames(recording["artist-credit"]);
+          if (artists.length && !artistCreditEquivalent(recording["artist-credit"], expectedArtist)) {
+            return false;
+          }
+          if (!compatibleReleases(recording, releaseTitle).length) return false;
+          const isrcs = strings(recording.isrcs);
+          if (
+            expectedIsrc &&
+            !isrcs.some((isrc) => normalize(isrc) === expectedIsrc)
+          ) {
+            return false;
+          }
+          const duration = durationSeconds(recording.length);
+          if (
+            input.duration_seconds &&
+            duration &&
+            Math.abs(duration - input.duration_seconds) > 2
+          ) {
+            return false;
+          }
+          const disambiguation = typeof recording.disambiguation === "string"
+            ? recording.disambiguation
+            : "";
+          const variantEvidence = versionSpecific
+            ? `${recording.title} ${disambiguation} ${releaseVariantEvidence(recording, releaseTitle)}`
+            : `${recording.title} ${disambiguation}`;
+          return variantStrength(requestedVariant, variantEvidence) !== null;
+        });
+        if (hasCompatibleReleaseTrack) {
+          recordings = releaseRecordings;
+          requiredRelease = releaseTitle;
+          resolvedFromReleaseTracklist = true;
+        }
+      }
+      if (!recordings.length) {
+        recordings = await this.search(
+          searchTitle,
+          input.artist,
+          searchRelease ? releaseAlias : null,
+          trace
+        );
+      }
       if (!recordings.length && searchRelease && releaseAlias) {
         recordings = await this.search(searchTitle, input.artist, null, trace);
         if (!input.require_release_match) requiredRelease = null;
@@ -1278,13 +1396,64 @@ export class RecordingMetadataService {
           acr_count: listenBrainz.acr_mbids.length,
           acrr_count: listenBrainz.acrr_mbids.length
         };
-        trace.accepted_warnings.push(...listenBrainz.warnings.map((warning) => `listenbrainz:${warning}`));
+        trace.accepted_warnings.push(
+          ...listenBrainz.warnings.map((warning) => `listenbrainz:${warning}`)
+        );
       }
       const acr = new Set(listenBrainz?.acr_mbids || []);
       const acrr = new Set(listenBrainz?.acrr_mbids || []);
+      const jointlyMappedIds = [...acr].filter((recordingId) => acrr.has(recordingId));
+      const releaseMappedIds = Array.from(new Set(
+        (listenBrainz?.candidates || [])
+          .filter((candidate) =>
+            candidate.sources.includes("acrr") &&
+            Boolean(releaseTitle) &&
+            releaseKey(candidate.release_name) === releaseKey(releaseTitle)
+          )
+          .map((candidate) => candidate.recording_mbid)
+      ));
+      const canonicalMappingId = jointlyMappedIds.length === 1
+        ? jointlyMappedIds[0]
+        : releaseMappedIds.length === 1
+          ? releaseMappedIds[0]
+        : listenBrainz?.candidates.length === 1
+          ? listenBrainz.candidates[0].recording_mbid
+          : null;
+      const loadCanonicalMapping = async (): Promise<boolean> => {
+        if (
+          !canonicalMappingId ||
+          recordings.some((recording) => recording.id === canonicalMappingId)
+        ) {
+          return false;
+        }
+        try {
+          const mappingUrl = new URL(
+            `https://musicbrainz.org/ws/2/recording/${canonicalMappingId}`
+          );
+          setMusicBrainzIncludes(mappingUrl, [
+            "artist-credits", "isrcs", "releases", "release-groups", "media"
+          ]);
+          mappingUrl.searchParams.set("fmt", "json");
+          const mappedRecording = await this.requestJson(mappingUrl, trace);
+          if (typeof mappedRecording.id !== "string") return false;
+          recordings = [...recordings, mappedRecording];
+          trace.accepted_warnings.push(
+            "listenbrainz_canonical_mapping_loaded_from_musicbrainz"
+          );
+          return true;
+        } catch (error) {
+          trace.accepted_warnings.push(
+            `listenbrainz_canonical_mapping_provider_error:${
+              error instanceof Error ? error.message : String(error)
+            }`
+          );
+          return false;
+        }
+      };
       const rank = (values: JsonRecord[], requiredAlbum: string | null) => values.flatMap((recording) => {
         const reasons: string[] = [];
         if (typeof recording.id !== "string" || typeof recording.title !== "string") reasons.push("invalid_recording_shape");
+        if (recording.video === true) reasons.push("video_recording");
         const titleExact = typeof recording.title === "string" &&
           baseRecordingTitle(recording.title) === expectedTitle;
         const titleCompatible = typeof recording.title === "string" &&
@@ -1292,9 +1461,18 @@ export class RecordingMetadataService {
         const medleyMismatch = typeof recording.title === "string" &&
           /\/|\bmedley\b|\babertura\b/iu.test(recording.title) &&
           !/\/|\bmedley\b|\babertura\b/iu.test(input.title);
-        if (!titleExact && (!titleCompatible || medleyMismatch)) reasons.push("title_mismatch");
+        if (
+          !titleExact &&
+          (
+            !versionSpecific ||
+            !titleCompatible ||
+            medleyMismatch
+          )
+        ) reasons.push("title_mismatch");
         const artists = artistNames(recording["artist-credit"]);
-        if (artists.length && !artists.some((artist) => artistEquivalent(artist, expectedArtist))) reasons.push("artist_mismatch");
+        if (artists.length && !artistCreditEquivalent(recording["artist-credit"], expectedArtist)) {
+          reasons.push("artist_mismatch");
+        }
         const releases = compatibleReleases(recording, requiredAlbum);
         if (requiredAlbum && !releases.length) reasons.push("release_mismatch");
         const isrcs = strings(recording.isrcs);
@@ -1303,7 +1481,7 @@ export class RecordingMetadataService {
         if (input.duration_seconds && duration && Math.abs(duration - input.duration_seconds) > 2) reasons.push("duration_mismatch");
         const disambiguation = typeof recording.disambiguation === "string" ? recording.disambiguation : "";
         const variantEvidence = versionSpecific
-          ? `${recording.title} ${disambiguation} ${releaseVariantEvidence(recording)}`
+          ? `${recording.title} ${disambiguation} ${releaseVariantEvidence(recording, requiredAlbum)}`
           : `${recording.title} ${disambiguation}`;
         const strength = variantStrength(requestedVariant, variantEvidence);
         if (strength === null) reasons.push("variant_mismatch");
@@ -1352,6 +1530,10 @@ export class RecordingMetadataService {
         right.searchScore - left.searchScore
       );
       let ranked = rank(recordings, requiredRelease);
+      if (resolvedFromReleaseTracklist && ranked.length) {
+        trace.accepted_warnings.push("recording_recovered_from_release_tracklist");
+        resolutionReason = "unique_compatible_recording_from_release_tracklist";
+      }
       if (
         !ranked.length &&
         versionSpecific &&
@@ -1391,9 +1573,18 @@ export class RecordingMetadataService {
           resolutionReason = "unique_compatible_recording_from_release_tracklist";
         }
       }
-      trace.candidate_counts = { returned: recordings.length, accepted: ranked.length, rejected: recordings.length - ranked.length };
-      const snapshots = ranked.slice(0, 8).map(({ recording }) => candidateSnapshot(recording));
+      if (releaseMappedIds.length === 1 && await loadCanonicalMapping()) {
+        ranked = rank(recordings, requiredRelease);
+      }
+      if (!ranked.length && await loadCanonicalMapping()) {
+        ranked = rank(recordings, requiredRelease);
+      }
       if (!ranked.length) {
+        trace.candidate_counts = {
+          returned: recordings.length,
+          accepted: 0,
+          rejected: recordings.length
+        };
         return this.remember(cacheKey, {
           status: "not_found",
           reason: "no_compatible_recording",
@@ -1402,18 +1593,97 @@ export class RecordingMetadataService {
           trace: completedTrace(trace, startedAt)
         });
       }
-      const top = ranked[0];
-      const topSnapshot = candidateSnapshot(top.recording);
-      const competing = ranked.slice(1).find((candidate) => {
-        const snapshot = candidateSnapshot(candidate.recording);
-        const sharedIsrc = topSnapshot.isrcs.some((isrc) => snapshot.isrcs.includes(isrc));
-        const equivalentDuration = topSnapshot.duration_seconds !== null &&
-          snapshot.duration_seconds !== null &&
-          Math.abs(topSnapshot.duration_seconds - snapshot.duration_seconds) <= 2;
-        const sameSemanticIdentity = compatibleTitle(topSnapshot.title, snapshot.title) &&
-          (sharedIsrc || equivalentDuration);
-        return !sameSemanticIdentity && top.score - candidate.score < 20;
-      });
+      if (releaseMappedIds.length === 1) {
+        const releaseCanonical = ranked.find(({ recording }) =>
+          recording.id === releaseMappedIds[0]
+        );
+        if (releaseCanonical) {
+          ranked = [
+            releaseCanonical,
+            ...ranked.filter(({ recording }) => recording.id !== releaseMappedIds[0])
+          ];
+          trace.accepted_warnings.push(
+            "recording_selected_by_listenbrainz_release_mapping"
+          );
+          resolutionReason = "unique_compatible_recording_from_listenbrainz_release_mapping";
+        }
+      }
+      const findCompeting = (
+        values: typeof ranked
+      ): (typeof ranked)[number] | undefined => {
+        const currentTop = values[0];
+        const currentSnapshot = candidateSnapshot(currentTop.recording);
+        return values.slice(1).find((candidate) => {
+          const snapshot = candidateSnapshot(candidate.recording);
+          const sharedIsrc = currentSnapshot.isrcs.some((isrc) => snapshot.isrcs.includes(isrc));
+          const equivalentDuration = currentSnapshot.duration_seconds !== null &&
+            snapshot.duration_seconds !== null &&
+            Math.abs(currentSnapshot.duration_seconds - snapshot.duration_seconds) <= 2;
+          const sameSemanticIdentity = compatibleTitle(currentSnapshot.title, snapshot.title) &&
+            (sharedIsrc || equivalentDuration);
+          const sameRequestedReleaseTrack = resolvedFromReleaseTracklist &&
+            compatibleTitle(currentSnapshot.title, snapshot.title) &&
+            Boolean(releaseTitle) &&
+            compatibleReleases(currentTop.recording, releaseTitle).length > 0 &&
+            compatibleReleases(candidate.recording, releaseTitle).length > 0;
+          const sparseDuplicate = sameRequestedReleaseTrack &&
+            snapshot.duration_seconds === null &&
+            snapshot.isrcs.length === 0 &&
+            snapshot.disambiguation === null &&
+            (
+              currentSnapshot.duration_seconds !== null ||
+              currentSnapshot.isrcs.length > 0 ||
+              currentSnapshot.disambiguation !== null
+            );
+          const sameStandardReleaseTrack = sameRequestedReleaseTrack && !versionSpecific;
+          return !sameSemanticIdentity &&
+            !sameStandardReleaseTrack &&
+            !sparseDuplicate &&
+            currentTop.score - candidate.score < 20;
+        });
+      };
+      let competing = findCompeting(ranked);
+      if (competing && await loadCanonicalMapping()) {
+        ranked = rank(recordings, requiredRelease);
+        competing = findCompeting(ranked);
+      }
+      if (competing && listenBrainz?.candidates.length) {
+        const supported = ranked.filter(({ recording }) =>
+          typeof recording.id === "string" &&
+          (acr.has(recording.id) || acrr.has(recording.id))
+        );
+        const releaseMapped = new Set(releaseMappedIds);
+        const releaseSupported = supported.filter(({ recording }) =>
+          typeof recording.id === "string" && releaseMapped.has(recording.id)
+        );
+        const jointlySupported = supported.filter(({ recording }) =>
+          typeof recording.id === "string" &&
+          acr.has(recording.id) &&
+          acrr.has(recording.id)
+        );
+        const canonical = jointlySupported.length === 1
+          ? jointlySupported[0]
+          : releaseSupported.length === 1
+            ? releaseSupported[0]
+          : listenBrainz.candidates.length === 1 && supported.length === 1
+            ? supported[0]
+            : null;
+        if (canonical) {
+          ranked = [
+            canonical,
+            ...ranked.filter(({ recording }) => recording.id !== canonical.recording.id)
+          ];
+          competing = undefined;
+          trace.accepted_warnings.push("recording_selected_by_listenbrainz_canonical_mapping");
+          resolutionReason = "unique_compatible_recording_from_listenbrainz_mapping";
+        }
+      }
+      trace.candidate_counts = {
+        returned: recordings.length,
+        accepted: ranked.length,
+        rejected: recordings.length - ranked.length
+      };
+      const snapshots = ranked.slice(0, 8).map(({ recording }) => candidateSnapshot(recording));
       if (competing) {
         return this.remember(cacheKey, {
           status: "conflict",
@@ -1423,6 +1693,7 @@ export class RecordingMetadataService {
           trace: completedTrace(trace, startedAt)
         });
       }
+      const top = ranked[0];
       const selected = top.recording;
       if (
         resolutionReason === "unique_compatible_recording" &&

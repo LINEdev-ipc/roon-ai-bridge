@@ -46,6 +46,68 @@ test("MusicBrainz recording metadata reports a conflict instead of choosing the 
   assert.deepEqual(first.candidates.map((candidate) => candidate.duration_seconds), [429, 432]);
 });
 
+test("MusicBrainz searches and validates a combined collaboration artist credit", async () => {
+  let query = "";
+  const service = new RecordingMetadataService(async (url) => {
+    query = url.searchParams.get("query");
+    return new Response(JSON.stringify({ recordings: [{
+      id: "rumble",
+      title: "Rumble",
+      length: 146000,
+      score: 100,
+      "artist-credit": [
+        { name: "Skrillex", joinphrase: ", " },
+        { name: "Fred again..", joinphrase: " & " },
+        { name: "Flowdan", joinphrase: "" }
+      ],
+      releases: [{ title: "Rumble", date: "2023-01-04", status: "Official" }]
+    }] }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Rumble",
+    artist: "Skrillex, Fred again.. & Flowdan",
+    metadata_depth: "identity"
+  });
+
+  assert.match(query, /artist:"Skrillex, Fred again\.\. & Flowdan"/);
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "rumble");
+});
+
+test("MusicBrainz accepts a primary artist inside a collective credited name", async () => {
+  const service = new RecordingMetadataService(async () =>
+    new Response(JSON.stringify({ recordings: [{
+      id: "no-woman-live",
+      title: "No Woman, No Cry (live at the Lyceum, London 1975)",
+      length: 430000,
+      score: 100,
+      "artist-credit": [{ name: "Bob Marley & The Wailers" }],
+      releases: [{
+        title: "Live!",
+        status: "Official",
+        "release-group": {
+          id: "live-group",
+          title: "Live!",
+          "primary-type": "Album",
+          "secondary-types": ["Live"]
+        }
+      }]
+    }] }), { status: 200 }), { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "No Woman, No Cry - Live At The Lyceum, London/1975",
+    artist: "Bob Marley",
+    album_observation: "Live!",
+    require_release_match: true,
+    version_hint: "live",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "no-woman-live");
+});
+
 test("MusicBrainz recording metadata resolves an explicitly named mix and follows its work credits", async () => {
   const service = new RecordingMetadataService(async (url) => {
     if (url.pathname.endsWith("/recording")) {
@@ -320,6 +382,112 @@ test("MusicBrainz recovers standard recordings from a shared release tracklist c
   assert.equal(queries.filter((query) => query.startsWith('release:"Beggars Banquet"')).length, 1);
 });
 
+test("playlist identity resolution uses a verified album tracklist before an ambiguous recording search", async () => {
+  const queries = [];
+  const service = new RecordingMetadataService(async (url) => {
+    const query = url.searchParams.get("query");
+    queries.push(query);
+    assert.ok(query.startsWith('release:"Let It Bleed"'));
+    return new Response(JSON.stringify({ recordings: [
+      {
+        id: "gimme-shelter-original-stereo",
+        title: "Gimme Shelter",
+        length: 270000,
+        score: 100,
+        "artist-credit": [{ name: "The Rolling Stones" }],
+        releases: [{
+          title: "Let It Bleed",
+          date: "1969",
+          status: "Official",
+          "release-group": {
+            id: "let-it-bleed",
+            title: "Let It Bleed",
+            "primary-type": "Album",
+            "secondary-types": []
+          }
+        }]
+      },
+      {
+        id: "gimme-shelter-equivalent-edition",
+        title: "Gimme Shelter",
+        length: 274000,
+        score: 96,
+        "artist-credit": [{ name: "The Rolling Stones" }],
+        releases: [{
+          title: "Let It Bleed",
+          date: "1969",
+          status: "Official",
+          "release-group": {
+            id: "let-it-bleed",
+            title: "Let It Bleed",
+            "primary-type": "Album",
+            "secondary-types": []
+          }
+        }]
+      }
+    ] }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Gimme Shelter",
+    artist: "The Rolling Stones",
+    album_observation: "Let It Bleed",
+    release_year_observation: 1969,
+    metadata_depth: "identity",
+    prefer_release_tracklist: true
+  });
+
+  assert.equal(queries.length, 1);
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "gimme-shelter-original-stereo");
+  assert.equal(
+    result.reason,
+    "unique_compatible_recording_from_release_tracklist_identity_only"
+  );
+  assert.ok(result.trace.accepted_warnings.includes("recording_recovered_from_release_tracklist"));
+});
+
+test("playlist identity resolution falls back to recording search when the supplied album has no matching track", async () => {
+  const queries = [];
+  const service = new RecordingMetadataService(async (url) => {
+    const query = url.searchParams.get("query");
+    queries.push(query);
+    if (query.startsWith('release:"Wrong Album"')) {
+      return new Response(JSON.stringify({ recordings: [{
+        id: "another-song",
+        title: "Another Song",
+        "artist-credit": [{ name: "Example Artist" }],
+        releases: [{ title: "Wrong Album", status: "Official" }]
+      }] }), { status: 200 });
+    }
+    return new Response(JSON.stringify({ recordings: [{
+      id: "wanted-song",
+      title: "Wanted Song",
+      length: 210000,
+      score: 100,
+      "artist-credit": [{ name: "Example Artist" }],
+      releases: [{ title: "Actual Album", date: "2001", status: "Official" }]
+    }] }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Wanted Song",
+    artist: "Example Artist",
+    album_observation: "Wrong Album",
+    metadata_depth: "identity",
+    prefer_release_tracklist: true
+  });
+
+  assert.equal(queries.length, 2);
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "wanted-song");
+  assert.equal(result.reason, "unique_compatible_recording_identity_only");
+  assert.equal(
+    result.trace.accepted_warnings.includes("recording_recovered_from_release_tracklist"),
+    false
+  );
+});
+
 test("version searches fall back to core title words when MusicBrainz omits the supplied mix name", async () => {
   const queries = [];
   const service = new RecordingMetadataService(async (url) => {
@@ -331,7 +499,7 @@ test("version searches fall back to core title words when MusicBrainz omits the 
     }
     assert.equal(
       query,
-      'recording:(ride AND white AND horse) AND artistname:"Goldfrapp" AND video:false'
+      'recording:(ride AND white AND horse) AND artist:"Goldfrapp" AND video:false'
     );
     return new Response(JSON.stringify({ recordings: [{
       id: "goldfrapp-remix",
@@ -504,6 +672,146 @@ test("MusicBrainz treats a harmless live suffix as the same unplugged release", 
 
   assert.equal(result.status, "exact");
   assert.equal(result.metadata.recording_id, "shakira-unplugged-live-suffix");
+});
+
+test("MusicBrainz matches a letter-spaced official release title", async () => {
+  const service = new RecordingMetadataService(async () =>
+    new Response(JSON.stringify({ recordings: [{
+      id: "pink-floyd-pulse-live",
+      title: "Comfortably Numb",
+      disambiguation: "live, 1994-10-20: Earls Court, London, England, UK",
+      length: 575000,
+      score: 100,
+      "artist-credit": [{ name: "Pink Floyd" }],
+      releases: [{
+        title: "p·u·l·s·e",
+        status: "Official",
+        "release-group": {
+          id: "pulse-group",
+          title: "p·u·l·s·e",
+          "primary-type": "Album",
+          "secondary-types": ["Live"]
+        }
+      }]
+    }] }), { status: 200 }), { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Comfortably Numb",
+    artist: "Pink Floyd",
+    album_observation: "Pulse",
+    require_release_match: true,
+    version_hint: "live",
+    metadata_depth: "identity",
+    prefer_release_tracklist: true
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "pink-floyd-pulse-live");
+});
+
+test("MusicBrainz ignores an empty duplicate beside the documented recording on one live release", async () => {
+  const service = new RecordingMetadataService(async () =>
+    new Response(JSON.stringify({ recordings: [
+      {
+        id: "ratm-documented-live",
+        title: "Killing in the Name",
+        disambiguation: "live, 2000-09: Grand Olympic Auditorium, Los Angeles, CA, USA",
+        length: 304000,
+        isrcs: ["USSM10312740"],
+        score: 100,
+        "artist-credit": [{ name: "Rage Against the Machine" }],
+        releases: [{
+          title: "Live at the Grand Olympic Auditorium",
+          status: "Official",
+          "release-group": {
+            id: "grand-olympic-group",
+            title: "Live at the Grand Olympic Auditorium",
+            "primary-type": "Album",
+            "secondary-types": ["Live"]
+          }
+        }]
+      },
+      {
+        id: "ratm-empty-duplicate",
+        title: "Killing in the Name",
+        score: 95,
+        "artist-credit": [{ name: "Rage Against the Machine" }],
+        releases: [{
+          title: "Live at the Grand Olympic Auditorium",
+          status: "Official",
+          "release-group": {
+            id: "grand-olympic-group",
+            title: "Live at the Grand Olympic Auditorium",
+            "primary-type": "Album",
+            "secondary-types": ["Live"]
+          }
+        }]
+      }
+    ] }), { status: 200 }), { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Killing in the Name",
+    artist: "Rage Against the Machine",
+    album_observation: "Live at the Grand Olympic Auditorium",
+    require_release_match: true,
+    version_hint: "live",
+    metadata_depth: "identity",
+    prefer_release_tracklist: true
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "ratm-documented-live");
+});
+
+test("MusicBrainz ignores unrelated compilation names when validating a recording variant", async () => {
+  const service = new RecordingMetadataService(async () =>
+    new Response(JSON.stringify({ recordings: [{
+      id: "afterlife-mix",
+      title: "Another Chance (Afterlife mix)",
+      length: 420000,
+      score: 100,
+      "artist-credit": [{ name: "Roger Sanchez" }],
+      releases: [
+        {
+          title: "Another Chance",
+          status: "Official",
+          "release-group": {
+            id: "another-chance-group",
+            title: "Another Chance",
+            "primary-type": "Single",
+            "secondary-types": []
+          }
+        },
+        {
+          title: "Ibiza Live DJ Mix",
+          status: "Official",
+          "release-group": {
+            id: "ibiza-compilation-group",
+            title: "Ibiza Live DJ Mix",
+            "primary-type": "Album",
+            "secondary-types": ["Compilation"]
+          }
+        }
+      ]
+    }] }), { status: 200 }), { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Another Chance (Afterlife Mix)",
+    artist: "Roger Sanchez",
+    album_observation: "Another Chance",
+    require_release_match: true,
+    version_hint: "remix",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "afterlife-mix");
+  assert.equal(
+    result.trace.rejected_candidates.some((candidate) =>
+      candidate.reasons.includes("variant_mismatch")
+    ),
+    false
+  );
 });
 
 test("MusicBrainz keeps the release requirement through a core-title fallback", async () => {
@@ -713,10 +1021,45 @@ test("MusicBrainz reports a persistent cache hit without making a provider reque
     }
   };
   let requests = 0;
+  let listenBrainzRequests = 0;
   const firstService = new RecordingMetadataService(async () => {
     requests += 1;
-    return new Response(JSON.stringify({ recordings: [] }), { status: 200 });
-  }, { cache, minRequestIntervalMs: 0 });
+    return new Response(JSON.stringify({ recordings: [
+      {
+        id: "unknown-a",
+        title: "Unknown",
+        length: 180000,
+        score: 100,
+        "artist-credit": [{ name: "Unknown" }],
+        releases: []
+      },
+      {
+        id: "unknown-b",
+        title: "Unknown",
+        length: 220000,
+        score: 99,
+        "artist-credit": [{ name: "Unknown" }],
+        releases: []
+      }
+    ] }), { status: 200 });
+  }, {
+    cache,
+    minRequestIntervalMs: 0,
+    listenBrainz: {
+      async lookup() {
+        listenBrainzRequests += 1;
+        return {
+          elapsed_ms: 12,
+          provider_requests: 2,
+          cache_hits: 0,
+          candidates: [],
+          acr_mbids: [],
+          acrr_mbids: [],
+          warnings: []
+        };
+      }
+    }
+  });
   const first = await firstService.lookup({ title: "Unknown", artist: "Unknown" });
   const secondService = new RecordingMetadataService(async () => {
     throw new Error("persistent cache should prevent this request");
@@ -724,10 +1067,13 @@ test("MusicBrainz reports a persistent cache hit without making a provider reque
   const second = await secondService.lookup({ title: "Unknown", artist: "Unknown" });
 
   assert.equal(requests, 1);
+  assert.equal(listenBrainzRequests, 1);
   assert.equal(first.trace.cache_hit, false);
   assert.equal(second.trace.cache_hit, true);
   assert.equal(second.trace.cache_layer, "persistent");
   assert.equal(second.trace.provider_requests, 0);
+  assert.equal(second.trace.listenbrainz.provider_requests, 0);
+  assert.equal(second.trace.listenbrainz.cache_hits, 0);
 });
 
 test("MusicBrainz verifies a stored recording MBID while keeping a distinct artist credit explicit", async () => {
@@ -776,7 +1122,7 @@ test("MusicBrainz search uses significant title words after removing a remaster 
   const service = new RecordingMetadataService(async (url) => {
     assert.equal(
       url.searchParams.get("query"),
-      'recording:(won AND get AND fooled AND again) AND artistname:"The Who" AND video:false'
+      'recording:(won AND get AND fooled AND again) AND artist:"The Who" AND video:false'
     );
     return new Response(JSON.stringify({ recordings: [] }), { status: 200 });
   }, { minRequestIntervalMs: 0 });
@@ -919,6 +1265,337 @@ test("MusicBrainz does not treat the mere presence of an ISRC as identity eviden
   assert.equal(result.status, "conflict");
   assert.equal(result.reason, "multiple_compatible_recordings");
   assert.equal(result.metadata, null);
+});
+
+test("MusicBrainz rejects sequel and preview suffixes for a standard recording title", async () => {
+  const service = new RecordingMetadataService(async (url) => {
+    if (url.pathname.endsWith("/recording") && !url.pathname.match(/\/recording\/[^/]+$/)) {
+      return new Response(JSON.stringify({ recordings: [
+        {
+          id: "griztronics-original",
+          title: "Griztronics",
+          length: 198000,
+          score: 94,
+          "artist-credit": [{ name: "GRiZ & Subtronics" }],
+          releases: [{ title: "Bangers[2].Zip", status: "Official" }]
+        },
+        {
+          id: "griztronics-sequel",
+          title: "Griztronics II (Another Level)",
+          length: 206000,
+          score: 100,
+          "artist-credit": [{ name: "GRiZ & Subtronics" }],
+          releases: [{ title: "Rainbow Brain", status: "Official" }]
+        },
+        {
+          id: "griztronics-preview",
+          title: "Griztronics (YouTube preview)",
+          length: 118000,
+          score: 99,
+          "artist-credit": [{ name: "GRiZ & Subtronics" }],
+          releases: []
+        }
+      ] }), { status: 200 });
+    }
+    assert.equal(url.pathname, "/ws/2/recording/griztronics-original");
+    return new Response(JSON.stringify({
+      id: "griztronics-original",
+      title: "Griztronics",
+      length: 198000,
+      "artist-credit": [{ name: "GRiZ & Subtronics" }],
+      releases: [],
+      relations: [],
+      genres: [],
+      isrcs: []
+    }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Griztronics",
+    artist: "GRiZ & Subtronics",
+    version_hint: "standard"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "griztronics-original");
+  assert.deepEqual(
+    result.trace.rejected_candidates.map((candidate) => candidate.reasons),
+    [["title_mismatch"], ["title_mismatch"]]
+  );
+});
+
+test("MusicBrainz uses a unique ListenBrainz mapping to select a canonical compatible recording", async () => {
+  const service = new RecordingMetadataService(async (url) => {
+    if (url.pathname.endsWith("/recording") && !url.pathname.match(/\/recording\/[^/]+$/)) {
+      return new Response(JSON.stringify({ recordings: [
+        {
+          id: "firestarter-duplicate",
+          title: "Firestarter",
+          length: 220000,
+          score: 100,
+          "artist-credit": [{ name: "The Prodigy" }],
+          releases: [{ title: "The Fat of the Land", status: "Official" }]
+        },
+        {
+          id: "firestarter-other-duplicate",
+          title: "Firestarter",
+          length: 226000,
+          score: 99,
+          "artist-credit": [{ name: "The Prodigy" }],
+          releases: [{ title: "The Fat of the Land", status: "Official" }]
+        }
+      ] }), { status: 200 });
+    }
+    assert.equal(url.pathname, "/ws/2/recording/firestarter-canonical");
+    return new Response(JSON.stringify({
+      id: "firestarter-canonical",
+      title: "Firestarter",
+      length: 282000,
+      "artist-credit": [{ name: "The Prodigy" }],
+      releases: [],
+      relations: [],
+      genres: [],
+      isrcs: []
+    }), { status: 200 });
+  }, {
+    minRequestIntervalMs: 0,
+    listenBrainz: {
+      async lookup() {
+        return {
+          elapsed_ms: 3,
+          provider_requests: 2,
+          cache_hits: 0,
+          candidates: [{
+            recording_mbid: "firestarter-canonical",
+            release_mbid: null,
+            recording_name: "Firestarter",
+            release_name: "The Fat of the Land",
+            artist_credit_name: "The Prodigy",
+            artist_mbids: [],
+            sources: ["acr", "acrr"]
+          }],
+          acr_mbids: ["firestarter-canonical"],
+          acrr_mbids: ["firestarter-canonical"],
+          warnings: []
+        };
+      }
+    }
+  });
+
+  const result = await service.lookup({
+    title: "Firestarter",
+    artist: "The Prodigy",
+    album_observation: "The Fat of the Land",
+    version_hint: "standard"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "firestarter-canonical");
+  assert.equal(
+    result.reason,
+    "unique_compatible_recording_from_listenbrainz_mapping"
+  );
+  assert.ok(
+    result.trace.accepted_warnings.includes(
+      "recording_selected_by_listenbrainz_canonical_mapping"
+    )
+  );
+});
+
+test("MusicBrainz uses a unique release-specific ListenBrainz mapping for an exact live album", async () => {
+  const service = new RecordingMetadataService(async (url) => {
+    if (url.pathname.endsWith("/recording") && !url.pathname.match(/\/recording\/[^/]+$/)) {
+      return new Response(JSON.stringify({ recordings: [
+        {
+          id: "comfortably-numb-studio",
+          title: "Comfortably Numb",
+          length: 382000,
+          score: 100,
+          "artist-credit": [{ name: "Pink Floyd" }],
+          releases: [{ title: "The Wall", status: "Official" }]
+        },
+        {
+          id: "comfortably-numb-pulse-duplicate",
+          title: "Comfortably Numb",
+          disambiguation: "live, 1994: Earls Court",
+          length: 545000,
+          score: 99,
+          "artist-credit": [{ name: "Pink Floyd" }],
+          releases: [{
+            title: "p·u·l·s·e",
+            status: "Official",
+            "release-group": {
+              id: "pulse-group",
+              title: "p·u·l·s·e",
+              "primary-type": "Album",
+              "secondary-types": ["Live"]
+            }
+          }]
+        }
+      ] }), { status: 200 });
+    }
+    assert.equal(url.pathname, "/ws/2/recording/comfortably-numb-pulse");
+    return new Response(JSON.stringify({
+      id: "comfortably-numb-pulse",
+      title: "Comfortably Numb",
+      disambiguation: "live, 1994-10-20: Earls Court, London, England, UK",
+      length: 575000,
+      "artist-credit": [{ name: "Pink Floyd" }],
+      releases: [{
+        title: "p·u·l·s·e",
+        status: "Official",
+        "release-group": {
+          id: "pulse-group",
+          title: "p·u·l·s·e",
+          "primary-type": "Album",
+          "secondary-types": ["Live"]
+        }
+      }],
+      relations: [],
+      genres: [],
+      isrcs: []
+    }), { status: 200 });
+  }, {
+    minRequestIntervalMs: 0,
+    listenBrainz: {
+      async lookup() {
+        return {
+          elapsed_ms: 2,
+          provider_requests: 2,
+          cache_hits: 0,
+          candidates: [
+            {
+              recording_mbid: "comfortably-numb-studio",
+              release_mbid: "wall-release",
+              recording_name: "Comfortably Numb",
+              release_name: "The Wall",
+              artist_credit_name: "Pink Floyd",
+              artist_mbids: [],
+              sources: ["acr"]
+            },
+            {
+              recording_mbid: "comfortably-numb-pulse",
+              release_mbid: "pulse-release",
+              recording_name: "Comfortably Numb",
+              release_name: "p·u·l·s·e",
+              artist_credit_name: "Pink Floyd",
+              artist_mbids: [],
+              sources: ["acrr"]
+            }
+          ],
+          acr_mbids: ["comfortably-numb-studio"],
+          acrr_mbids: ["comfortably-numb-pulse"],
+          warnings: []
+        };
+      }
+    }
+  });
+
+  const result = await service.lookup({
+    title: "Comfortably Numb",
+    artist: "Pink Floyd",
+    album_observation: "Pulse",
+    require_release_match: true,
+    version_hint: "live",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "comfortably-numb-pulse");
+  assert.ok(
+    result.trace.accepted_warnings.includes(
+      "recording_selected_by_listenbrainz_canonical_mapping"
+    )
+  );
+});
+
+test("MusicBrainz never lets a release-specific video mapping displace an audio recording", async () => {
+  const service = new RecordingMetadataService(async (url) => {
+    if (url.pathname.endsWith("/recording") && !url.pathname.match(/\/recording\/[^/]+$/)) {
+      return new Response(JSON.stringify({ recordings: [{
+        id: "smoke-made-in-japan-audio",
+        title: "Smoke on the Water",
+        disambiguation: "live, 1972-08-15: Osaka, Japan",
+        length: 452000,
+        score: 98,
+        video: false,
+        "artist-credit": [{ name: "Deep Purple" }],
+        releases: [{
+          title: "Made in Japan",
+          status: "Official",
+          "release-group": {
+            id: "made-in-japan-group",
+            title: "Made in Japan",
+            "primary-type": "Album",
+            "secondary-types": ["Live"]
+          }
+        }]
+      }] }), { status: 200 });
+    }
+    assert.equal(url.pathname, "/ws/2/recording/smoke-made-in-japan-video");
+    return new Response(JSON.stringify({
+      id: "smoke-made-in-japan-video",
+      title: "Smoke on the Water",
+      disambiguation: "live video",
+      length: 448000,
+      video: true,
+      "artist-credit": [{ name: "Deep Purple" }],
+      releases: [{
+        title: "Made in Japan",
+        status: "Official",
+        "release-group": {
+          id: "made-in-japan-group",
+          title: "Made in Japan",
+          "primary-type": "Album",
+          "secondary-types": ["Live"]
+        }
+      }],
+      relations: [],
+      genres: [],
+      isrcs: []
+    }), { status: 200 });
+  }, {
+    minRequestIntervalMs: 0,
+    listenBrainz: {
+      async lookup() {
+        return {
+          elapsed_ms: 2,
+          provider_requests: 1,
+          cache_hits: 0,
+          candidates: [{
+            recording_mbid: "smoke-made-in-japan-video",
+            release_mbid: "made-in-japan-video-release",
+            recording_name: "Smoke on the Water",
+            release_name: "Made in Japan",
+            artist_credit_name: "Deep Purple",
+            artist_mbids: [],
+            sources: ["acrr"]
+          }],
+          acr_mbids: [],
+          acrr_mbids: ["smoke-made-in-japan-video"],
+          warnings: []
+        };
+      }
+    }
+  });
+
+  const result = await service.lookup({
+    title: "Smoke on the Water",
+    artist: "Deep Purple",
+    album_observation: "Made in Japan",
+    require_release_match: true,
+    version_hint: "live",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "smoke-made-in-japan-audio");
+  assert.ok(
+    result.trace.rejected_candidates.some((candidate) =>
+      candidate.recording_id === "smoke-made-in-japan-video" &&
+      candidate.reasons.includes("video_recording")
+    )
+  );
 });
 
 test("MusicBrainz uses an ISRC only when it matches the observed code", async () => {

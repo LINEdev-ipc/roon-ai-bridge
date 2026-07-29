@@ -1,0 +1,1546 @@
+{
+  "case_id": "R06",
+  "legacy_prompt_id": "P05",
+  "human_prompt": "Crea una playlist de 100 canciones internacionales en distintos idiomas para descubrir música de otros países.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "response_id": "resp_08514fcddc03d831006a695c6d350081a3a56b089f8d149c67",
+    "started_at": "2026-07-29T01:50:36.413Z",
+    "completed_at": "2026-07-29T01:52:33.050Z",
+    "elapsed_ms": 116637,
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "438f4e22066989a68628065de2b2993fc9a6d32e2df9c3b96a369c565d568c22",
+    "usage": {
+      "input_tokens": 1798,
+      "input_tokens_details": {
+        "cache_write_tokens": 23,
+        "cached_tokens": 1644
+      },
+      "output_tokens": 8103,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 9901
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "Pasaporte sonoro: 100 canciones del mundo",
+    "description": "Un viaje musical internacional por distintos países e idiomas: pop, rock, folk, electrónica, rap, soul y músicas tradicionales para descubrir nuevos sonidos.",
+    "desired_count": 100,
+    "selection_complexity": "constrained",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "candidate_id": "p001",
+        "role": "primary",
+        "title": "Alors on danse",
+        "artist_credit": "Stromae",
+        "album_hint": "Cheese",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p002",
+        "role": "primary",
+        "title": "Garota de Ipanema",
+        "artist_credit": "João Gilberto & Stan Getz feat. Astrud Gilberto",
+        "album_hint": "Getz/Gilberto",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p003",
+        "role": "primary",
+        "title": "99 Luftballons",
+        "artist_credit": "Nena",
+        "album_hint": "Nena",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p004",
+        "role": "primary",
+        "title": "Plastic Love",
+        "artist_credit": "Mariya Takeuchi",
+        "album_hint": "Variety",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p005",
+        "role": "primary",
+        "title": "Chan Chan",
+        "artist_credit": "Buena Vista Social Club",
+        "album_hint": "Buena Vista Social Club",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p006",
+        "role": "primary",
+        "title": "Dernière danse",
+        "artist_credit": "Indila",
+        "album_hint": "Mini World",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p007",
+        "role": "primary",
+        "title": "Tudo o Que Você Podia Ser",
+        "artist_credit": "Milton Nascimento & Lô Borges",
+        "album_hint": "Clube da Esquina",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p008",
+        "role": "primary",
+        "title": "Bella ciao",
+        "artist_credit": "Yves Montand",
+        "album_hint": "Chansons populaires de France",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p009",
+        "role": "primary",
+        "title": "Mas que nada",
+        "artist_credit": "Jorge Ben Jor",
+        "album_hint": "Samba Esquema Novo",
+        "release_year_hint": 1963,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p010",
+        "role": "primary",
+        "title": "A-Punk",
+        "artist_credit": "Vampire Weekend",
+        "album_hint": "Vampire Weekend",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p011",
+        "role": "primary",
+        "title": "Je veux",
+        "artist_credit": "Zaz",
+        "album_hint": "Zaz",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p012",
+        "role": "primary",
+        "title": "La camisa negra",
+        "artist_credit": "Juanes",
+        "album_hint": "Mi sangre",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p013",
+        "role": "primary",
+        "title": "Amor de índio",
+        "artist_credit": "Beto Guedes",
+        "album_hint": "Amor de Índio",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p014",
+        "role": "primary",
+        "title": "Voyage voyage",
+        "artist_credit": "Desireless",
+        "album_hint": "François",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p015",
+        "role": "primary",
+        "title": "Djadja",
+        "artist_credit": "Aya Nakamura",
+        "album_hint": "Nakamura",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p016",
+        "role": "primary",
+        "title": "Sodade",
+        "artist_credit": "Cesária Évora",
+        "album_hint": "Miss Perfumado",
+        "release_year_hint": 1992,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p017",
+        "role": "primary",
+        "title": "Hoppípolla",
+        "artist_credit": "Sigur Rós",
+        "album_hint": "Takk...",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p018",
+        "role": "primary",
+        "title": "Dragostea din tei",
+        "artist_credit": "O-Zone",
+        "album_hint": "DiscO-Zone",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p019",
+        "role": "primary",
+        "title": "Tuyo",
+        "artist_credit": "Rodrigo Amarante",
+        "album_hint": "Narcos: A Netflix Original Series Soundtrack",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p020",
+        "role": "primary",
+        "title": "Formidable",
+        "artist_credit": "Stromae",
+        "album_hint": "Racine carrée",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p021",
+        "role": "primary",
+        "title": "Volare (Nel blu dipinto di blu)",
+        "artist_credit": "Domenico Modugno",
+        "album_hint": "La strada dei successi",
+        "release_year_hint": 1958,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p022",
+        "role": "primary",
+        "title": "Bamboléo",
+        "artist_credit": "Gipsy Kings",
+        "album_hint": "Gipsy Kings",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p023",
+        "role": "primary",
+        "title": "Aquarela do Brasil",
+        "artist_credit": "Gal Costa",
+        "album_hint": "Aquarela do Brasil",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p024",
+        "role": "primary",
+        "title": "L'Italiano",
+        "artist_credit": "Toto Cutugno",
+        "album_hint": "L'Italiano",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p025",
+        "role": "primary",
+        "title": "La bohème",
+        "artist_credit": "Charles Aznavour",
+        "album_hint": "La bohème",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p026",
+        "role": "primary",
+        "title": "Sukiyaki",
+        "artist_credit": "Kyu Sakamoto",
+        "album_hint": "Sukiyaki and Other Japanese Hits",
+        "release_year_hint": 1961,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p027",
+        "role": "primary",
+        "title": "Gangnam Style",
+        "artist_credit": "PSY",
+        "album_hint": "Psy 6 (Six Rules), Part 1",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p028",
+        "role": "primary",
+        "title": "Aramam",
+        "artist_credit": "İbrahim Tatlıses",
+        "album_hint": "Aramam",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p029",
+        "role": "primary",
+        "title": "Aicha",
+        "artist_credit": "Khaled",
+        "album_hint": "Sahra",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p030",
+        "role": "primary",
+        "title": "Yéké Yéké",
+        "artist_credit": "Mory Kanté",
+        "album_hint": "Akwaba Beach",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p031",
+        "role": "primary",
+        "title": "7 Seconds",
+        "artist_credit": "Youssou N'Dour & Neneh Cherry",
+        "album_hint": "The Guide (Wommat)",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p032",
+        "role": "primary",
+        "title": "Pata Pata",
+        "artist_credit": "Miriam Makeba",
+        "album_hint": "Pata Pata",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p033",
+        "role": "primary",
+        "title": "Jerusalema",
+        "artist_credit": "Master KG feat. Nomcebo Zikode",
+        "album_hint": "Jerusalema",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p034",
+        "role": "primary",
+        "title": "Ye",
+        "artist_credit": "Burna Boy",
+        "album_hint": "Outside",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p035",
+        "role": "primary",
+        "title": "Water",
+        "artist_credit": "Tyla",
+        "album_hint": "Tyla",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p036",
+        "role": "primary",
+        "title": "Obaa Sima",
+        "artist_credit": "Ata Kak",
+        "album_hint": "Obaa Sima",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p037",
+        "role": "primary",
+        "title": "Agolo",
+        "artist_credit": "Angélique Kidjo",
+        "album_hint": "Ayé",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p038",
+        "role": "primary",
+        "title": "Wombo Lombo",
+        "artist_credit": "Angélique Kidjo",
+        "album_hint": "Fifa",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p039",
+        "role": "primary",
+        "title": "Sweet Mother",
+        "artist_credit": "Prince Nico Mbarga",
+        "album_hint": "Sweet Mother",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p040",
+        "role": "primary",
+        "title": "Zombie",
+        "artist_credit": "Fela Kuti & Africa 70",
+        "album_hint": "Zombie",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p041",
+        "role": "primary",
+        "title": "Homeless",
+        "artist_credit": "Ladysmith Black Mambazo",
+        "album_hint": "Shaka Zulu",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p042",
+        "role": "primary",
+        "title": "Umqombothi",
+        "artist_credit": "Yvonne Chaka Chaka",
+        "album_hint": "Thank You Mr. DJ",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p043",
+        "role": "primary",
+        "title": "Diaraby",
+        "artist_credit": "Ali Farka Touré with Ry Cooder",
+        "album_hint": "Talking Timbuktu",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p044",
+        "role": "primary",
+        "title": "Yamore",
+        "artist_credit": "Salif Keita feat. Cesária Évora",
+        "album_hint": "Moffou",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p045",
+        "role": "primary",
+        "title": "Premier Gaou",
+        "artist_credit": "Magic System",
+        "album_hint": "Premier Gaou",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p046",
+        "role": "primary",
+        "title": "Didi",
+        "artist_credit": "Khaled",
+        "album_hint": "Khaled",
+        "release_year_hint": 1992,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p047",
+        "role": "primary",
+        "title": "Lamma Bada Yatathanna",
+        "artist_credit": "Lena Chamamyan",
+        "album_hint": "Hal Asmar Ellon",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p048",
+        "role": "primary",
+        "title": "Nour El Ain",
+        "artist_credit": "Amr Diab",
+        "album_hint": "Nour El Ain",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p049",
+        "role": "primary",
+        "title": "Tamally Maak",
+        "artist_credit": "Amr Diab",
+        "album_hint": "Tamally Maak",
+        "release_year_hint": 2000,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p050",
+        "role": "primary",
+        "title": "Habibi Ya Nour El Ain",
+        "artist_credit": "Rachid Taha",
+        "album_hint": "Diwân 2",
+        "release_year_hint": 2006,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p051",
+        "role": "primary",
+        "title": "Ya Rayah",
+        "artist_credit": "Rachid Taha",
+        "album_hint": "Diwân",
+        "release_year_hint": 1998,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p052",
+        "role": "primary",
+        "title": "Desert Rose",
+        "artist_credit": "Sting feat. Cheb Mami",
+        "album_hint": "Brand New Day",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p053",
+        "role": "primary",
+        "title": "Gole Yakh",
+        "artist_credit": "Kourosh Yaghmaei",
+        "album_hint": "Back From the Brink: Pre-Revolution Psychedelic Rock from Iran: 1973–1979",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p054",
+        "role": "primary",
+        "title": "Soltane Ghalbha",
+        "artist_credit": "Aref",
+        "album_hint": "Soltane Ghalbha",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p055",
+        "role": "primary",
+        "title": "Man O To",
+        "artist_credit": "Googoosh",
+        "album_hint": "Man O To",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p056",
+        "role": "primary",
+        "title": "Jai Ho",
+        "artist_credit": "A. R. Rahman feat. Sukhwinder Singh, Tanvi Shah, Mahalaxmi Iyer & Vijay Prakash",
+        "album_hint": "Slumdog Millionaire: Music from the Motion Picture",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p057",
+        "role": "primary",
+        "title": "Chaiyya Chaiyya",
+        "artist_credit": "Sukhwinder Singh & Sapna Awasthi",
+        "album_hint": "Dil Se..",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p058",
+        "role": "primary",
+        "title": "Mundian To Bach Ke",
+        "artist_credit": "Panjabi MC",
+        "album_hint": "Legalised",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p059",
+        "role": "primary",
+        "title": "Pasoori",
+        "artist_credit": "Ali Sethi & Shae Gill",
+        "album_hint": "Coke Studio Pakistan Season 14",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p060",
+        "role": "primary",
+        "title": "Kana Yaari",
+        "artist_credit": "Kaifi Khalil, Eva B & Abdul Wahab Bugti",
+        "album_hint": "Coke Studio Pakistan Season 14",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p061",
+        "role": "primary",
+        "title": "Afreen Afreen",
+        "artist_credit": "Rahat Fateh Ali Khan & Momina Mustehsan",
+        "album_hint": "Coke Studio Pakistan Season 9",
+        "release_year_hint": 2016,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p062",
+        "role": "primary",
+        "title": "Aaj Jaane Ki Zid Na Karo",
+        "artist_credit": "Farida Khanum",
+        "album_hint": "Aaj Jaane Ki Zid Na Karo",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p063",
+        "role": "primary",
+        "title": "Tunak Tunak Tun",
+        "artist_credit": "Daler Mehndi",
+        "album_hint": "Tunak Tunak Tun",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p064",
+        "role": "primary",
+        "title": "Why This Kolaveri Di",
+        "artist_credit": "Dhanush",
+        "album_hint": "3",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p065",
+        "role": "primary",
+        "title": "Enjoy Enjaami",
+        "artist_credit": "Dhee feat. Arivu",
+        "album_hint": "Enjoy Enjaami",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p066",
+        "role": "primary",
+        "title": "Manike Mage Hithe",
+        "artist_credit": "Yohani & Satheeshan",
+        "album_hint": "Manike Mage Hithe",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p067",
+        "role": "primary",
+        "title": "Resham Firiri",
+        "artist_credit": "Kutumba",
+        "album_hint": "Mithila",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p068",
+        "role": "primary",
+        "title": "Rind Posh Maal",
+        "artist_credit": "Shankar Mahadevan",
+        "album_hint": "Mission Kashmir",
+        "release_year_hint": 2000,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p069",
+        "role": "primary",
+        "title": "Kala Chashma",
+        "artist_credit": "Amar Arshi, Badshah & Neha Kakkar",
+        "album_hint": "Baar Baar Dekho",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p070",
+        "role": "primary",
+        "title": "Naatu Naatu",
+        "artist_credit": "Rahul Sipligunj & Kaala Bhairava",
+        "album_hint": "RRR",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p071",
+        "role": "primary",
+        "title": "Mayonaka no Door / Stay With Me",
+        "artist_credit": "Miki Matsubara",
+        "album_hint": "Pocket Park",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p072",
+        "role": "primary",
+        "title": "Ue o Muite Arukō",
+        "artist_credit": "Kyu Sakamoto",
+        "album_hint": "Ue o Muite Arukō",
+        "release_year_hint": 1961,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p073",
+        "role": "primary",
+        "title": "Shinunoga E-Wa",
+        "artist_credit": "Fujii Kaze",
+        "album_hint": "Help Ever Hurt Never",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p074",
+        "role": "primary",
+        "title": "Marunouchi Sadistic",
+        "artist_credit": "Sheena Ringo",
+        "album_hint": "Muzai Moratorium",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p075",
+        "role": "primary",
+        "title": "PonPonPon",
+        "artist_credit": "Kyary Pamyu Pamyu",
+        "album_hint": "Pamyu Pamyu Revolution",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p076",
+        "role": "primary",
+        "title": "Lemon",
+        "artist_credit": "Kenshi Yonezu",
+        "album_hint": "Stray Sheep",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p077",
+        "role": "primary",
+        "title": "Kaikai Kitan",
+        "artist_credit": "Eve",
+        "album_hint": "Kaikai Kitan / Ao no Waltz",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p078",
+        "role": "primary",
+        "title": "Dynamite",
+        "artist_credit": "BTS",
+        "album_hint": "Be",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p079",
+        "role": "primary",
+        "title": "Ditto",
+        "artist_credit": "NewJeans",
+        "album_hint": "OMG",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p080",
+        "role": "primary",
+        "title": "Any Song",
+        "artist_credit": "Zico",
+        "album_hint": "Random Box",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p081",
+        "role": "primary",
+        "title": "Eyes, Nose, Lips",
+        "artist_credit": "Taeyang",
+        "album_hint": "Rise",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p082",
+        "role": "primary",
+        "title": "Eight",
+        "artist_credit": "IU feat. SUGA",
+        "album_hint": "Eight",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p083",
+        "role": "primary",
+        "title": "Hype Boy",
+        "artist_credit": "NewJeans",
+        "album_hint": "New Jeans",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p084",
+        "role": "primary",
+        "title": "The Moon Represents My Heart",
+        "artist_credit": "Teresa Teng",
+        "album_hint": "Love Songs of the Island, Vol. 4",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p085",
+        "role": "primary",
+        "title": "Tian Mi Mi",
+        "artist_credit": "Teresa Teng",
+        "album_hint": "Tian Mi Mi",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p086",
+        "role": "primary",
+        "title": "Wo Yao Ni De Ai",
+        "artist_credit": "Grace Chang",
+        "album_hint": "The Wild, Wild Rose",
+        "release_year_hint": 1960,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p087",
+        "role": "primary",
+        "title": "A Little Happiness",
+        "artist_credit": "Hebe Tien",
+        "album_hint": "Our Times Original Motion Picture Soundtrack",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p088",
+        "role": "primary",
+        "title": "Your Name Engraved Herein",
+        "artist_credit": "Crowd Lu",
+        "album_hint": "Your Name Engraved Herein Original Motion Picture Soundtrack",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p089",
+        "role": "primary",
+        "title": "Wo Men Bu Yi Yang",
+        "artist_credit": "Da Zhuang",
+        "album_hint": "Wo Men Bu Yi Yang",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p090",
+        "role": "primary",
+        "title": "Last Dance",
+        "artist_credit": "Wu Bai & China Blue",
+        "album_hint": "The End of Love",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p091",
+        "role": "primary",
+        "title": "Made in China",
+        "artist_credit": "Higher Brothers feat. Famous Dex",
+        "album_hint": "Black Cab",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p092",
+        "role": "primary",
+        "title": "Bèo dạt mây trôi",
+        "artist_credit": "Anh Khang feat. Quang Thắng",
+        "album_hint": "Bèo dạt mây trôi",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "p093",
+        "role": "primary",
+        "title": "See Tình",
+        "artist_credit": "Hoàng Thùy Linh",
+        "album_hint": "LINK",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p094",
+        "role": "primary",
+        "title": "Một Nhà",
+        "artist_credit": "Da LAB",
+        "album_hint": "Một Nhà",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p095",
+        "role": "primary",
+        "title": "Buwan",
+        "artist_credit": "Juan Karlos",
+        "album_hint": "Buwan",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p096",
+        "role": "primary",
+        "title": "Tala",
+        "artist_credit": "Sarah Geronimo",
+        "album_hint": "The Great Unknown",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p097",
+        "role": "primary",
+        "title": "Mundo",
+        "artist_credit": "IV of Spades",
+        "album_hint": "ClapClapClap!",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p098",
+        "role": "primary",
+        "title": "Hati-Hati di Jalan",
+        "artist_credit": "Tulus",
+        "album_hint": "Manusia",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p099",
+        "role": "primary",
+        "title": "Lathi",
+        "artist_credit": "Weird Genius feat. Sara Fajira",
+        "album_hint": "Lathi",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p100",
+        "role": "primary",
+        "title": "Sial",
+        "artist_credit": "Mahalini",
+        "album_hint": "Fábula",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r001",
+        "role": "reserve",
+        "title": "Rasa Sayang",
+        "artist_credit": "P. Ramlee & Saloma",
+        "album_hint": "Rasa Sayang",
+        "release_year_hint": 1959,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r002",
+        "role": "reserve",
+        "title": "Cindai",
+        "artist_credit": "Siti Nurhaliza",
+        "album_hint": "Cindai",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r003",
+        "role": "reserve",
+        "title": "Satu Bulan",
+        "artist_credit": "Bernadya",
+        "album_hint": "Terlintas",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r004",
+        "role": "reserve",
+        "title": "คิด(แต่ไม่)ถึง (Same Page?)",
+        "artist_credit": "Tilly Birds",
+        "album_hint": "It's Gonna Be OK",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r005",
+        "role": "reserve",
+        "title": "รักติดไซเรน",
+        "artist_credit": "ไอซ์ พาริส & แพรวา ณิชาภัทร",
+        "album_hint": "รักฉุดใจนายฉุกเฉิน Original Soundtrack",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r006",
+        "role": "reserve",
+        "title": "Lover Boy",
+        "artist_credit": "Phum Viphurit",
+        "album_hint": "Manchild",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r007",
+        "role": "reserve",
+        "title": "Champagne Supernova",
+        "artist_credit": "Dept",
+        "album_hint": "Ceramics Runway",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r008",
+        "role": "reserve",
+        "title": "Pen Pineapple Apple Pen",
+        "artist_credit": "Pikotaro",
+        "album_hint": "PPAP",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r009",
+        "role": "reserve",
+        "title": "Take Me Out",
+        "artist_credit": "HYUKOH",
+        "album_hint": "22",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r010",
+        "role": "reserve",
+        "title": "Matsuri",
+        "artist_credit": "Fujii Kaze",
+        "album_hint": "Love All Serve All",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r011",
+        "role": "reserve",
+        "title": "Bésame mucho",
+        "artist_credit": "Consuelo Velázquez",
+        "album_hint": "Bésame mucho",
+        "release_year_hint": 1940,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r012",
+        "role": "reserve",
+        "title": "Oye cómo va",
+        "artist_credit": "Tito Puente",
+        "album_hint": "El Rey Bravo",
+        "release_year_hint": 1962,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r013",
+        "role": "reserve",
+        "title": "Llorando se fue",
+        "artist_credit": "Los Kjarkas",
+        "album_hint": "Canto a la mujer de mi pueblo",
+        "release_year_hint": 1981,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r014",
+        "role": "reserve",
+        "title": "Gracias a la vida",
+        "artist_credit": "Violeta Parra",
+        "album_hint": "Las últimas composiciones",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r015",
+        "role": "reserve",
+        "title": "El derecho de vivir en paz",
+        "artist_credit": "Víctor Jara",
+        "album_hint": "El derecho de vivir en paz",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r016",
+        "role": "reserve",
+        "title": "Hasta la raíz",
+        "artist_credit": "Natalia Lafourcade",
+        "album_hint": "Hasta la raíz",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r017",
+        "role": "reserve",
+        "title": "Me gustas tú",
+        "artist_credit": "Manu Chao",
+        "album_hint": "Próxima estación: Esperanza",
+        "release_year_hint": 2001,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r018",
+        "role": "reserve",
+        "title": "Eres",
+        "artist_credit": "Café Tacvba",
+        "album_hint": "Cuatro caminos",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r019",
+        "role": "reserve",
+        "title": "De música ligera",
+        "artist_credit": "Soda Stereo",
+        "album_hint": "Canción animal",
+        "release_year_hint": 1990,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r020",
+        "role": "reserve",
+        "title": "En la ciudad de la furia",
+        "artist_credit": "Soda Stereo",
+        "album_hint": "Doble vida",
+        "release_year_hint": 1988,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r021",
+        "role": "reserve",
+        "title": "Flaca",
+        "artist_credit": "Andrés Calamaro",
+        "album_hint": "Alta suciedad",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r022",
+        "role": "reserve",
+        "title": "Tren al sur",
+        "artist_credit": "Los Prisioneros",
+        "album_hint": "Corazones",
+        "release_year_hint": 1990,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r023",
+        "role": "reserve",
+        "title": "La muralla verde",
+        "artist_credit": "Enanitos Verdes",
+        "album_hint": "Contrarreloj",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r024",
+        "role": "reserve",
+        "title": "Lamento boliviano",
+        "artist_credit": "Enanitos Verdes",
+        "album_hint": "Big Bang",
+        "release_year_hint": 1994,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r025",
+        "role": "reserve",
+        "title": "Cariñito",
+        "artist_credit": "Los Hijos del Sol",
+        "album_hint": "Cariñito",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r026",
+        "role": "reserve",
+        "title": "El cóndor pasa",
+        "artist_credit": "Los Incas",
+        "album_hint": "El cóndor pasa",
+        "release_year_hint": 1963,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r027",
+        "role": "reserve",
+        "title": "Soy pan, soy paz, soy más",
+        "artist_credit": "Mercedes Sosa",
+        "album_hint": "Mercedes Sosa '76",
+        "release_year_hint": 1976,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r028",
+        "role": "reserve",
+        "title": "Zamba para olvidar",
+        "artist_credit": "Daniel Toro",
+        "album_hint": "Zamba para olvidar",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r029",
+        "role": "reserve",
+        "title": "Ai se eu te pego",
+        "artist_credit": "Michel Teló",
+        "album_hint": "Na Balada",
+        "release_year_hint": 2011,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r030",
+        "role": "reserve",
+        "title": "Boa sorte / Good Luck",
+        "artist_credit": "Vanessa da Mata feat. Ben Harper",
+        "album_hint": "Sim",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r031",
+        "role": "reserve",
+        "title": "Construção",
+        "artist_credit": "Chico Buarque",
+        "album_hint": "Construção",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r032",
+        "role": "reserve",
+        "title": "O Leãozinho",
+        "artist_credit": "Caetano Veloso",
+        "album_hint": "Bicho",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r033",
+        "role": "reserve",
+        "title": "Águas de março",
+        "artist_credit": "Elis Regina & Antônio Carlos Jobim",
+        "album_hint": "Elis & Tom",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r034",
+        "role": "reserve",
+        "title": "País tropical",
+        "artist_credit": "Jorge Ben Jor",
+        "album_hint": "Jorge Ben",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r035",
+        "role": "reserve",
+        "title": "Madalena",
+        "artist_credit": "Elis Regina",
+        "album_hint": "Ela",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r036",
+        "role": "reserve",
+        "title": "Chega de saudade",
+        "artist_credit": "João Gilberto",
+        "album_hint": "Chega de Saudade",
+        "release_year_hint": 1959,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r037",
+        "role": "reserve",
+        "title": "La vie en rose",
+        "artist_credit": "Édith Piaf",
+        "album_hint": "La vie en rose",
+        "release_year_hint": 1947,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r038",
+        "role": "reserve",
+        "title": "Ne me quitte pas",
+        "artist_credit": "Jacques Brel",
+        "album_hint": "La Valse à mille temps",
+        "release_year_hint": 1959,
+        "recording_intent": "standard",
+        "performance_sensitive": true
+      },
+      {
+        "candidate_id": "r039",
+        "role": "reserve",
+        "title": "Tous les garçons et les filles",
+        "artist_credit": "Françoise Hardy",
+        "album_hint": "Tous les garçons et les filles",
+        "release_year_hint": 1962,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r040",
+        "role": "reserve",
+        "title": "Joe le taxi",
+        "artist_credit": "Vanessa Paradis",
+        "album_hint": "M&J",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r041",
+        "role": "reserve",
+        "title": "Moi... Lolita",
+        "artist_credit": "Alizée",
+        "album_hint": "Gourmandises",
+        "release_year_hint": 2000,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r042",
+        "role": "reserve",
+        "title": "Ella, elle l'a",
+        "artist_credit": "France Gall",
+        "album_hint": "Babacar",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r043",
+        "role": "reserve",
+        "title": "Major Tom (Völlig losgelöst)",
+        "artist_credit": "Peter Schilling",
+        "album_hint": "Fehler im System",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r044",
+        "role": "reserve",
+        "title": "Da Da Da ich lieb dich nicht du liebst mich nicht aha aha aha",
+        "artist_credit": "Trio",
+        "album_hint": "Trio",
+        "release_year_hint": 1981,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r045",
+        "role": "reserve",
+        "title": "Du hast",
+        "artist_credit": "Rammstein",
+        "album_hint": "Sehnsucht",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r046",
+        "role": "reserve",
+        "title": "Mensch",
+        "artist_credit": "Herbert Grönemeyer",
+        "album_hint": "Mensch",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r047",
+        "role": "reserve",
+        "title": "Nur ein Wort",
+        "artist_credit": "Wir sind Helden",
+        "album_hint": "Von hier an blind",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r048",
+        "role": "reserve",
+        "title": "Kom terug",
+        "artist_credit": "Spinvis",
+        "album_hint": "Tot ziens, Justine Keller",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r049",
+        "role": "reserve",
+        "title": "Zoutelande",
+        "artist_credit": "BLØF feat. Geike Arnaert",
+        "album_hint": "AAN",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r050",
+        "role": "reserve",
+        "title": "Ik wil dansen",
+        "artist_credit": "Froukje",
+        "album_hint": "Licht en donker",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      }
+    ]
+  }
+}

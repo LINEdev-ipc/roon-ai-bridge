@@ -1,0 +1,1646 @@
+{
+  "case_id": "R07",
+  "legacy_prompt_id": "P06",
+  "human_prompt": "Quiero una playlist de 100 remixes y versiones extendidas conocidas para una fiesta.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "response_id": "resp_0d05042dec25ff8b006a695cefe57481a0b7c2d901d9ec6d9b",
+    "started_at": "2026-07-29T01:52:47.149Z",
+    "completed_at": "2026-07-29T01:54:57.641Z",
+    "elapsed_ms": 130492,
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "438f4e22066989a68628065de2b2993fc9a6d32e2df9c3b96a369c565d568c22",
+    "usage": {
+      "input_tokens": 1797,
+      "input_tokens_details": {
+        "cache_write_tokens": 22,
+        "cached_tokens": 1644
+      },
+      "output_tokens": 10374,
+      "output_tokens_details": {
+        "reasoning_tokens": 1075
+      },
+      "total_tokens": 12171
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "100 remixes y versiones extendidas para una fiesta",
+    "description": "Una selección de 100 remixes, mezclas de 12 pulgadas y versiones extendidas muy conocidas, desde disco y synth-pop hasta house, eurodance y pop bailable.",
+    "desired_count": 100,
+    "selection_complexity": "exact_versions",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "candidate_id": "p001",
+        "role": "primary",
+        "title": "Blue Monday (12\" Version)",
+        "artist_credit": "New Order",
+        "album_hint": "Blue Monday",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p002",
+        "role": "primary",
+        "title": "Tainted Love / Where Did Our Love Go (Extended Version)",
+        "artist_credit": "Soft Cell",
+        "album_hint": "Tainted Love",
+        "release_year_hint": 1981,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p003",
+        "role": "primary",
+        "title": "Smalltown Boy (12\" Version)",
+        "artist_credit": "Bronski Beat",
+        "album_hint": "Smalltown Boy",
+        "release_year_hint": 1984,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p004",
+        "role": "primary",
+        "title": "Don't You Want Me (Extended Dance Mix)",
+        "artist_credit": "The Human League",
+        "album_hint": "Don't You Want Me",
+        "release_year_hint": 1981,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p005",
+        "role": "primary",
+        "title": "Sweet Dreams (Are Made of This) (12\" Version)",
+        "artist_credit": "Eurythmics",
+        "album_hint": "Sweet Dreams (Are Made of This)",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p006",
+        "role": "primary",
+        "title": "Relax (New York Mix)",
+        "artist_credit": "Frankie Goes to Hollywood",
+        "album_hint": "Relax",
+        "release_year_hint": 1983,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p007",
+        "role": "primary",
+        "title": "Two Tribes (Annihilation)",
+        "artist_credit": "Frankie Goes to Hollywood",
+        "album_hint": "Two Tribes",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p008",
+        "role": "primary",
+        "title": "You Spin Me Round (Like a Record) (Murder Mix)",
+        "artist_credit": "Dead or Alive",
+        "album_hint": "You Spin Me Round (Like a Record)",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p009",
+        "role": "primary",
+        "title": "West End Girls (Shep Pettibone Mastermix)",
+        "artist_credit": "Pet Shop Boys",
+        "album_hint": "West End Girls",
+        "release_year_hint": 1985,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p010",
+        "role": "primary",
+        "title": "It's a Sin (Disco Mix)",
+        "artist_credit": "Pet Shop Boys",
+        "album_hint": "It's a Sin",
+        "release_year_hint": 1987,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p011",
+        "role": "primary",
+        "title": "Bizarre Love Triangle (Shep Pettibone 12\" Remix)",
+        "artist_credit": "New Order",
+        "album_hint": "Bizarre Love Triangle",
+        "release_year_hint": 1986,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p012",
+        "role": "primary",
+        "title": "The Reflex (Dance Mix)",
+        "artist_credit": "Duran Duran",
+        "album_hint": "The Reflex",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p013",
+        "role": "primary",
+        "title": "Situation (U.S. 12\" Mix)",
+        "artist_credit": "Yazoo",
+        "album_hint": "Situation",
+        "release_year_hint": 1982,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p014",
+        "role": "primary",
+        "title": "People Are People (Different Mix)",
+        "artist_credit": "Depeche Mode",
+        "album_hint": "People Are People",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p015",
+        "role": "primary",
+        "title": "Personal Jesus (Pump Mix)",
+        "artist_credit": "Depeche Mode",
+        "album_hint": "Personal Jesus",
+        "release_year_hint": 1989,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p016",
+        "role": "primary",
+        "title": "Enjoy the Silence (Hands and Feet Mix)",
+        "artist_credit": "Depeche Mode",
+        "album_hint": "Enjoy the Silence",
+        "release_year_hint": 1990,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p017",
+        "role": "primary",
+        "title": "A Little Respect (Extended Mix)",
+        "artist_credit": "Erasure",
+        "album_hint": "A Little Respect",
+        "release_year_hint": 1988,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p018",
+        "role": "primary",
+        "title": "Love to Hate You (LFO Modulated Filter Mix)",
+        "artist_credit": "Erasure",
+        "album_hint": "Love to Hate You",
+        "release_year_hint": 1991,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p019",
+        "role": "primary",
+        "title": "Never Gonna Give You Up (Cake Mix)",
+        "artist_credit": "Rick Astley",
+        "album_hint": "Never Gonna Give You Up",
+        "release_year_hint": 1987,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p020",
+        "role": "primary",
+        "title": "Together Forever (Lover's Leap Extended Remix)",
+        "artist_credit": "Rick Astley",
+        "album_hint": "Together Forever",
+        "release_year_hint": 1988,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p021",
+        "role": "primary",
+        "title": "I Think We're Alone Now (Extended Version)",
+        "artist_credit": "Tiffany",
+        "album_hint": "I Think We're Alone Now",
+        "release_year_hint": 1987,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p022",
+        "role": "primary",
+        "title": "Venus (Extended Version)",
+        "artist_credit": "Bananarama",
+        "album_hint": "Venus",
+        "release_year_hint": 1986,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p023",
+        "role": "primary",
+        "title": "You Keep Me Hangin' On (12\" Mix)",
+        "artist_credit": "Kim Wilde",
+        "album_hint": "You Keep Me Hangin' On",
+        "release_year_hint": 1986,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p024",
+        "role": "primary",
+        "title": "You Came (Shep Pettibone 12\" Mix)",
+        "artist_credit": "Kim Wilde",
+        "album_hint": "You Came",
+        "release_year_hint": 1988,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p025",
+        "role": "primary",
+        "title": "I Should Be So Lucky (Extended Version)",
+        "artist_credit": "Kylie Minogue",
+        "album_hint": "I Should Be So Lucky",
+        "release_year_hint": 1987,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p026",
+        "role": "primary",
+        "title": "Better the Devil You Know (The Mad March Hare Mix)",
+        "artist_credit": "Kylie Minogue",
+        "album_hint": "Better the Devil You Know",
+        "release_year_hint": 1990,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p027",
+        "role": "primary",
+        "title": "Into the Groove (You Can Dance Remix)",
+        "artist_credit": "Madonna",
+        "album_hint": "You Can Dance",
+        "release_year_hint": 1987,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p028",
+        "role": "primary",
+        "title": "Like a Prayer (12\" Dance Mix)",
+        "artist_credit": "Madonna",
+        "album_hint": "Like a Prayer",
+        "release_year_hint": 1989,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p029",
+        "role": "primary",
+        "title": "Vogue (12\" Version)",
+        "artist_credit": "Madonna",
+        "album_hint": "Vogue",
+        "release_year_hint": 1990,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p030",
+        "role": "primary",
+        "title": "Holiday (You Can Dance Remix)",
+        "artist_credit": "Madonna",
+        "album_hint": "You Can Dance",
+        "release_year_hint": 1987,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p031",
+        "role": "primary",
+        "title": "Don't Go (U.S. Remix)",
+        "artist_credit": "Yazoo",
+        "album_hint": "Don't Go",
+        "release_year_hint": 1982,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p032",
+        "role": "primary",
+        "title": "Big in Japan (Extended Remix)",
+        "artist_credit": "Alphaville",
+        "album_hint": "Big in Japan",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p033",
+        "role": "primary",
+        "title": "Take on Me (Extended Version)",
+        "artist_credit": "a-ha",
+        "album_hint": "Take on Me",
+        "release_year_hint": 1985,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p034",
+        "role": "primary",
+        "title": "The Sun Always Shines on T.V. (Extended Version)",
+        "artist_credit": "a-ha",
+        "album_hint": "The Sun Always Shines on T.V.",
+        "release_year_hint": 1985,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p035",
+        "role": "primary",
+        "title": "Everybody Wants to Rule the World (Extended Version)",
+        "artist_credit": "Tears for Fears",
+        "album_hint": "Everybody Wants to Rule the World",
+        "release_year_hint": 1985,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p036",
+        "role": "primary",
+        "title": "Shout (U.S. Remix)",
+        "artist_credit": "Tears for Fears",
+        "album_hint": "Shout",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p037",
+        "role": "primary",
+        "title": "Gold (12\" Mix)",
+        "artist_credit": "Spandau Ballet",
+        "album_hint": "Gold",
+        "release_year_hint": 1983,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p038",
+        "role": "primary",
+        "title": "Dancing with Tears in My Eyes (Special Re-Mix)",
+        "artist_credit": "Ultravox",
+        "album_hint": "Dancing with Tears in My Eyes",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p039",
+        "role": "primary",
+        "title": "Don't You (Forget About Me) (Extended Version)",
+        "artist_credit": "Simple Minds",
+        "album_hint": "Don't You (Forget About Me)",
+        "release_year_hint": 1985,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p040",
+        "role": "primary",
+        "title": "Need You Tonight (Mendelsohn Extended Mix)",
+        "artist_credit": "INXS",
+        "album_hint": "Need You Tonight",
+        "release_year_hint": 1987,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p041",
+        "role": "primary",
+        "title": "Owner of a Lonely Heart (Red and Blue Remix)",
+        "artist_credit": "Yes",
+        "album_hint": "Owner of a Lonely Heart",
+        "release_year_hint": 1983,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p042",
+        "role": "primary",
+        "title": "Sledgehammer (Extended Dance Mix)",
+        "artist_credit": "Peter Gabriel",
+        "album_hint": "Sledgehammer",
+        "release_year_hint": 1986,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p043",
+        "role": "primary",
+        "title": "Atomic (12\" Version)",
+        "artist_credit": "Blondie",
+        "album_hint": "Atomic",
+        "release_year_hint": 1980,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p044",
+        "role": "primary",
+        "title": "Heart of Glass (12\" Version)",
+        "artist_credit": "Blondie",
+        "album_hint": "Heart of Glass",
+        "release_year_hint": 1979,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p045",
+        "role": "primary",
+        "title": "Call Me (12\" Version)",
+        "artist_credit": "Blondie",
+        "album_hint": "Call Me",
+        "release_year_hint": 1980,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p046",
+        "role": "primary",
+        "title": "I Feel Love (Mega Mix)",
+        "artist_credit": "Donna Summer",
+        "album_hint": "I Feel Love / I Feel Megalove",
+        "release_year_hint": 1982,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p047",
+        "role": "primary",
+        "title": "Love Sensation (Shep Pettibone Remix)",
+        "artist_credit": "Loleatta Holloway",
+        "album_hint": "Love Sensation",
+        "release_year_hint": 1983,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p048",
+        "role": "primary",
+        "title": "You Make Me Feel (Mighty Real) (12\" Version)",
+        "artist_credit": "Sylvester",
+        "album_hint": "You Make Me Feel (Mighty Real)",
+        "release_year_hint": 1978,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p049",
+        "role": "primary",
+        "title": "Don't Leave Me This Way (Tom Moulton Mix)",
+        "artist_credit": "Thelma Houston",
+        "album_hint": "Don't Leave Me This Way",
+        "release_year_hint": 1976,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p050",
+        "role": "primary",
+        "title": "Disco Inferno (Tom Moulton Mix)",
+        "artist_credit": "The Trammps",
+        "album_hint": "Disco Inferno",
+        "release_year_hint": 1976,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p051",
+        "role": "primary",
+        "title": "Relight My Fire (12\" Version)",
+        "artist_credit": "Dan Hartman",
+        "album_hint": "Relight My Fire",
+        "release_year_hint": 1979,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p052",
+        "role": "primary",
+        "title": "Boogie Wonderland (Special Disco Version)",
+        "artist_credit": "Earth, Wind & Fire with The Emotions",
+        "album_hint": "Boogie Wonderland",
+        "release_year_hint": 1979,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p053",
+        "role": "primary",
+        "title": "Good Times (12\" Mix)",
+        "artist_credit": "Chic",
+        "album_hint": "Good Times",
+        "release_year_hint": 1979,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p054",
+        "role": "primary",
+        "title": "Le Freak (12\" Version)",
+        "artist_credit": "Chic",
+        "album_hint": "Le Freak",
+        "release_year_hint": 1978,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p055",
+        "role": "primary",
+        "title": "He's the Greatest Dancer (12\" Mix)",
+        "artist_credit": "Sister Sledge",
+        "album_hint": "He's the Greatest Dancer",
+        "release_year_hint": 1979,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p056",
+        "role": "primary",
+        "title": "We Are Family (12\" Version)",
+        "artist_credit": "Sister Sledge",
+        "album_hint": "We Are Family",
+        "release_year_hint": 1979,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p057",
+        "role": "primary",
+        "title": "Lost in Music (Special 1984 Nile Rodgers Remix)",
+        "artist_credit": "Sister Sledge",
+        "album_hint": "Lost in Music",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p058",
+        "role": "primary",
+        "title": "Spacer (12\" Version)",
+        "artist_credit": "Sheila & B. Devotion",
+        "album_hint": "Spacer",
+        "release_year_hint": 1979,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p059",
+        "role": "primary",
+        "title": "Last Dance (12\" Version)",
+        "artist_credit": "Donna Summer",
+        "album_hint": "Last Dance",
+        "release_year_hint": 1978,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p060",
+        "role": "primary",
+        "title": "I Will Survive (12\" Version)",
+        "artist_credit": "Gloria Gaynor",
+        "album_hint": "I Will Survive",
+        "release_year_hint": 1978,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p061",
+        "role": "primary",
+        "title": "Never Can Say Goodbye (12\" Version)",
+        "artist_credit": "Gloria Gaynor",
+        "album_hint": "Never Can Say Goodbye",
+        "release_year_hint": 1974,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p062",
+        "role": "primary",
+        "title": "Y.M.C.A. (12\" Version)",
+        "artist_credit": "Village People",
+        "album_hint": "Y.M.C.A.",
+        "release_year_hint": 1978,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p063",
+        "role": "primary",
+        "title": "In the Navy (12\" Version)",
+        "artist_credit": "Village People",
+        "album_hint": "In the Navy",
+        "release_year_hint": 1979,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p064",
+        "role": "primary",
+        "title": "Rasputin (12\" Version)",
+        "artist_credit": "Boney M.",
+        "album_hint": "Rasputin",
+        "release_year_hint": 1978,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p065",
+        "role": "primary",
+        "title": "Daddy Cool (12\" Version)",
+        "artist_credit": "Boney M.",
+        "album_hint": "Daddy Cool",
+        "release_year_hint": 1976,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p066",
+        "role": "primary",
+        "title": "Supernature (Full Length Album Version)",
+        "artist_credit": "Cerrone",
+        "album_hint": "Cerrone 3: Supernature",
+        "release_year_hint": 1977,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p067",
+        "role": "primary",
+        "title": "Born to Be Alive (12\" Version)",
+        "artist_credit": "Patrick Hernandez",
+        "album_hint": "Born to Be Alive",
+        "release_year_hint": 1978,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p068",
+        "role": "primary",
+        "title": "One Night in Bangkok (Extended Remix)",
+        "artist_credit": "Murray Head",
+        "album_hint": "One Night in Bangkok",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p069",
+        "role": "primary",
+        "title": "Tarzan Boy (Extended Dance Version)",
+        "artist_credit": "Baltimora",
+        "album_hint": "Tarzan Boy",
+        "release_year_hint": 1985,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p070",
+        "role": "primary",
+        "title": "Self Control (Extended Version)",
+        "artist_credit": "Laura Branigan",
+        "album_hint": "Self Control",
+        "release_year_hint": 1984,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p071",
+        "role": "primary",
+        "title": "Boys (Summertime Love) (Extended Mix)",
+        "artist_credit": "Sabrina",
+        "album_hint": "Boys (Summertime Love)",
+        "release_year_hint": 1987,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p072",
+        "role": "primary",
+        "title": "Touch Me (I Want Your Body) (Extended Version)",
+        "artist_credit": "Samantha Fox",
+        "album_hint": "Touch Me (I Want Your Body)",
+        "release_year_hint": 1986,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p073",
+        "role": "primary",
+        "title": "Brother Louie (Special Long Version)",
+        "artist_credit": "Modern Talking",
+        "album_hint": "Brother Louie",
+        "release_year_hint": 1986,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p074",
+        "role": "primary",
+        "title": "You're My Heart, You're My Soul (Extended Version)",
+        "artist_credit": "Modern Talking",
+        "album_hint": "You're My Heart, You're My Soul",
+        "release_year_hint": 1984,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p075",
+        "role": "primary",
+        "title": "Cheri, Cheri Lady (Special Dance Version)",
+        "artist_credit": "Modern Talking",
+        "album_hint": "Cheri, Cheri Lady",
+        "release_year_hint": 1985,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p076",
+        "role": "primary",
+        "title": "Holiday Rap (Extended Version)",
+        "artist_credit": "MC Miker G & DJ Sven",
+        "album_hint": "Holiday Rap",
+        "release_year_hint": 1986,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p077",
+        "role": "primary",
+        "title": "Pump Up the Jam (Vocal Attack)",
+        "artist_credit": "Technotronic featuring Felly",
+        "album_hint": "Pump Up the Jam",
+        "release_year_hint": 1989,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p078",
+        "role": "primary",
+        "title": "Ride on Time (Massive Mix)",
+        "artist_credit": "Black Box",
+        "album_hint": "Ride on Time",
+        "release_year_hint": 1989,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p079",
+        "role": "primary",
+        "title": "The Power (Extended Version)",
+        "artist_credit": "Snap!",
+        "album_hint": "The Power",
+        "release_year_hint": 1990,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p080",
+        "role": "primary",
+        "title": "Rhythm Is a Dancer (12\" Mix)",
+        "artist_credit": "Snap!",
+        "album_hint": "Rhythm Is a Dancer",
+        "release_year_hint": 1992,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p081",
+        "role": "primary",
+        "title": "What Is Love (12\" Mix)",
+        "artist_credit": "Haddaway",
+        "album_hint": "What Is Love",
+        "release_year_hint": 1993,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p082",
+        "role": "primary",
+        "title": "Be My Lover (Club Mix)",
+        "artist_credit": "La Bouche",
+        "album_hint": "Be My Lover",
+        "release_year_hint": 1995,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p083",
+        "role": "primary",
+        "title": "Another Night (Club Mix)",
+        "artist_credit": "Real McCoy",
+        "album_hint": "Another Night",
+        "release_year_hint": 1993,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p084",
+        "role": "primary",
+        "title": "Mr. Vain (Vain Mix)",
+        "artist_credit": "Culture Beat",
+        "album_hint": "Mr. Vain",
+        "release_year_hint": 1993,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p085",
+        "role": "primary",
+        "title": "Show Me Love (StoneBridge Club Mix)",
+        "artist_credit": "Robin S.",
+        "album_hint": "Show Me Love",
+        "release_year_hint": 1992,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p086",
+        "role": "primary",
+        "title": "Finally (12\" Choice Mix)",
+        "artist_credit": "CeCe Peniston",
+        "album_hint": "Finally",
+        "release_year_hint": 1991,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p087",
+        "role": "primary",
+        "title": "Gypsy Woman (She's Homeless) (Strip to the Bone Mix)",
+        "artist_credit": "Crystal Waters",
+        "album_hint": "Gypsy Woman (She's Homeless)",
+        "release_year_hint": 1991,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p088",
+        "role": "primary",
+        "title": "Free (Mood II Swing Extended Vocal Mix)",
+        "artist_credit": "Ultra Naté",
+        "album_hint": "Free",
+        "release_year_hint": 1997,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p089",
+        "role": "primary",
+        "title": "Missing (Todd Terry Club Mix)",
+        "artist_credit": "Everything but the Girl",
+        "album_hint": "Missing",
+        "release_year_hint": 1994,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p090",
+        "role": "primary",
+        "title": "Professional Widow (Armand's Star Trunk Funkin' Mix)",
+        "artist_credit": "Tori Amos",
+        "album_hint": "Professional Widow",
+        "release_year_hint": 1996,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p091",
+        "role": "primary",
+        "title": "Sing It Back (Boris Dlugosch Musical Mix)",
+        "artist_credit": "Moloko",
+        "album_hint": "Sing It Back",
+        "release_year_hint": 1999,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p092",
+        "role": "primary",
+        "title": "Music Sounds Better with You (12\" Club Mix)",
+        "artist_credit": "Stardust",
+        "album_hint": "Music Sounds Better with You",
+        "release_year_hint": 1998,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p093",
+        "role": "primary",
+        "title": "Lady (Hear Me Tonight) (Extended Version)",
+        "artist_credit": "Modjo",
+        "album_hint": "Lady (Hear Me Tonight)",
+        "release_year_hint": 2000,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p094",
+        "role": "primary",
+        "title": "Groovejet (If This Ain't Love) (Extended Vocal Mix)",
+        "artist_credit": "Spiller featuring Sophie Ellis-Bextor",
+        "album_hint": "Groovejet (If This Ain't Love)",
+        "release_year_hint": 2000,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p095",
+        "role": "primary",
+        "title": "The Weekend (Extended Vocal Mix)",
+        "artist_credit": "Michael Gray",
+        "album_hint": "The Weekend",
+        "release_year_hint": 2004,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p096",
+        "role": "primary",
+        "title": "Lola's Theme (Extended Vocal Mix)",
+        "artist_credit": "The Shapeshifters",
+        "album_hint": "Lola's Theme",
+        "release_year_hint": 2004,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p097",
+        "role": "primary",
+        "title": "World, Hold On (Children of the Sky) (Club Mix)",
+        "artist_credit": "Bob Sinclar featuring Steve Edwards",
+        "album_hint": "World, Hold On (Children of the Sky)",
+        "release_year_hint": 2006,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p098",
+        "role": "primary",
+        "title": "Love Generation (Club Mix)",
+        "artist_credit": "Bob Sinclar featuring Gary Pine",
+        "album_hint": "Love Generation",
+        "release_year_hint": 2005,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p099",
+        "role": "primary",
+        "title": "Call on Me (Eric Prydz vs. Retarded Funk Mix)",
+        "artist_credit": "Eric Prydz",
+        "album_hint": "Call on Me",
+        "release_year_hint": 2004,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p100",
+        "role": "primary",
+        "title": "Destination Calabria (Club Mix)",
+        "artist_credit": "Alex Gaudino featuring Crystal Waters",
+        "album_hint": "Destination Calabria",
+        "release_year_hint": 2007,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r001",
+        "role": "reserve",
+        "title": "I Feel for You (Remix)",
+        "artist_credit": "Chaka Khan",
+        "album_hint": "I Feel for You",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r002",
+        "role": "reserve",
+        "title": "Ain't Nobody (Remix)",
+        "artist_credit": "Rufus and Chaka Khan",
+        "album_hint": "Ain't Nobody",
+        "release_year_hint": 1983,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r003",
+        "role": "reserve",
+        "title": "I'm Coming Out (12\" Version)",
+        "artist_credit": "Diana Ross",
+        "album_hint": "I'm Coming Out",
+        "release_year_hint": 1980,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r004",
+        "role": "reserve",
+        "title": "Upside Down (12\" Version)",
+        "artist_credit": "Diana Ross",
+        "album_hint": "Upside Down",
+        "release_year_hint": 1980,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r005",
+        "role": "reserve",
+        "title": "Forget Me Nots (12\" Version)",
+        "artist_credit": "Patrice Rushen",
+        "album_hint": "Forget Me Nots",
+        "release_year_hint": 1982,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r006",
+        "role": "reserve",
+        "title": "Somebody Else's Guy (12\" Version)",
+        "artist_credit": "Jocelyn Brown",
+        "album_hint": "Somebody Else's Guy",
+        "release_year_hint": 1984,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r007",
+        "role": "reserve",
+        "title": "Last Night a D.J. Saved My Life (12\" Mix)",
+        "artist_credit": "Indeep",
+        "album_hint": "Last Night a D.J. Saved My Life",
+        "release_year_hint": 1982,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r008",
+        "role": "reserve",
+        "title": "Can You Feel It (12\" Version)",
+        "artist_credit": "The Jacksons",
+        "album_hint": "Can You Feel It",
+        "release_year_hint": 1980,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r009",
+        "role": "reserve",
+        "title": "Billie Jean (Long Version)",
+        "artist_credit": "Michael Jackson",
+        "album_hint": "Billie Jean",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r010",
+        "role": "reserve",
+        "title": "Rock with You (Frankie Knuckles Remix)",
+        "artist_credit": "Michael Jackson",
+        "album_hint": "The Remix Suite",
+        "release_year_hint": 2009,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r011",
+        "role": "reserve",
+        "title": "Let's Dance (Nile Rodgers' String Version)",
+        "artist_credit": "David Bowie",
+        "album_hint": "Let's Dance (Nile Rodgers' String Version)",
+        "release_year_hint": 2018,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r012",
+        "role": "reserve",
+        "title": "Let's Go Crazy (Special Dance Mix)",
+        "artist_credit": "Prince and The Revolution",
+        "album_hint": "Let's Go Crazy",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r013",
+        "role": "reserve",
+        "title": "Raspberry Beret (New Mix)",
+        "artist_credit": "Prince and The Revolution",
+        "album_hint": "Raspberry Beret",
+        "release_year_hint": 1985,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r014",
+        "role": "reserve",
+        "title": "Kiss (Extended Version)",
+        "artist_credit": "Prince and The Revolution",
+        "album_hint": "Kiss",
+        "release_year_hint": 1986,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r015",
+        "role": "reserve",
+        "title": "I Can't Wait (Long Dutch Mix)",
+        "artist_credit": "Nu Shooz",
+        "album_hint": "I Can't Wait",
+        "release_year_hint": 1985,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r016",
+        "role": "reserve",
+        "title": "Word Up! (12\" Vocal Version)",
+        "artist_credit": "Cameo",
+        "album_hint": "Word Up!",
+        "release_year_hint": 1986,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r017",
+        "role": "reserve",
+        "title": "Fresh (12\" Remix)",
+        "artist_credit": "Kool & the Gang",
+        "album_hint": "Fresh",
+        "release_year_hint": 1984,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r018",
+        "role": "reserve",
+        "title": "We Don't Have to Take Our Clothes Off (Extended Version)",
+        "artist_credit": "Jermaine Stewart",
+        "album_hint": "We Don't Have to Take Our Clothes Off",
+        "release_year_hint": 1986,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r019",
+        "role": "reserve",
+        "title": "Break My Stride (Extended Version)",
+        "artist_credit": "Matthew Wilder",
+        "album_hint": "Break My Stride",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r020",
+        "role": "reserve",
+        "title": "Maniac (Extended Version)",
+        "artist_credit": "Michael Sembello",
+        "album_hint": "Maniac",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r021",
+        "role": "reserve",
+        "title": "Flashdance... What a Feeling (12\" Version)",
+        "artist_credit": "Irene Cara",
+        "album_hint": "Flashdance... What a Feeling",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r022",
+        "role": "reserve",
+        "title": "Fame (12\" Version)",
+        "artist_credit": "Irene Cara",
+        "album_hint": "Fame",
+        "release_year_hint": 1980,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r023",
+        "role": "reserve",
+        "title": "You Should Be Dancing (Serban Mix)",
+        "artist_credit": "Bee Gees",
+        "album_hint": "Saturday Night Fever",
+        "release_year_hint": 2020,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r024",
+        "role": "reserve",
+        "title": "Gimme! Gimme! Gimme! (A Man After Midnight) (Extended Version)",
+        "artist_credit": "ABBA",
+        "album_hint": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+        "release_year_hint": 1979,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r025",
+        "role": "reserve",
+        "title": "Voulez-Vous (Extended Dance Remix)",
+        "artist_credit": "ABBA",
+        "album_hint": "Voulez-Vous",
+        "release_year_hint": 1979,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r026",
+        "role": "reserve",
+        "title": "The Look of Love, Pt. 1 (Special Remix)",
+        "artist_credit": "ABC",
+        "album_hint": "The Look of Love",
+        "release_year_hint": 1982,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r027",
+        "role": "reserve",
+        "title": "Temptation (Brothers in Rhythm Remix)",
+        "artist_credit": "Heaven 17",
+        "album_hint": "Temptation",
+        "release_year_hint": 1992,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r028",
+        "role": "reserve",
+        "title": "Love Action (I Believe in Love) (Extended Version)",
+        "artist_credit": "The Human League",
+        "album_hint": "Love Action (I Believe in Love)",
+        "release_year_hint": 1981,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r029",
+        "role": "reserve",
+        "title": "Love Is a Shield (Extended Version)",
+        "artist_credit": "Camouflage",
+        "album_hint": "Love Is a Shield",
+        "release_year_hint": 1989,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r030",
+        "role": "reserve",
+        "title": "The Promise (Coliseum Club Mix)",
+        "artist_credit": "When in Rome",
+        "album_hint": "The Promise",
+        "release_year_hint": 1988,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r031",
+        "role": "reserve",
+        "title": "Send Me an Angel (Extended Mix)",
+        "artist_credit": "Real Life",
+        "album_hint": "Send Me an Angel",
+        "release_year_hint": 1983,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r032",
+        "role": "reserve",
+        "title": "Living on Video (Original Extended)",
+        "artist_credit": "Trans-X",
+        "album_hint": "Living on Video",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r033",
+        "role": "reserve",
+        "title": "Don't Go Lose It Baby (Extended Version)",
+        "artist_credit": "Hugh Masekela",
+        "album_hint": "Don't Go Lose It Baby",
+        "release_year_hint": 1984,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r034",
+        "role": "reserve",
+        "title": "It's Raining Men (12\" Version)",
+        "artist_credit": "The Weather Girls",
+        "album_hint": "It's Raining Men",
+        "release_year_hint": 1982,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r035",
+        "role": "reserve",
+        "title": "So Many Men, So Little Time (12\" Version)",
+        "artist_credit": "Miquel Brown",
+        "album_hint": "So Many Men, So Little Time",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r036",
+        "role": "reserve",
+        "title": "High Energy (12\" Version)",
+        "artist_credit": "Evelyn Thomas",
+        "album_hint": "High Energy",
+        "release_year_hint": 1984,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r037",
+        "role": "reserve",
+        "title": "Searchin' (I Gotta Find a Man) (12\" Version)",
+        "artist_credit": "Hazell Dean",
+        "album_hint": "Searchin' (I Gotta Find a Man)",
+        "release_year_hint": 1983,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r038",
+        "role": "reserve",
+        "title": "Male Stripper (12\" Version)",
+        "artist_credit": "Man 2 Man Meet Man Parrish",
+        "album_hint": "Male Stripper",
+        "release_year_hint": 1986,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r039",
+        "role": "reserve",
+        "title": "The Rhythm of the Night (Club Mix)",
+        "artist_credit": "Corona",
+        "album_hint": "The Rhythm of the Night",
+        "release_year_hint": 1993,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r040",
+        "role": "reserve",
+        "title": "Saturday Night (Nite Mix)",
+        "artist_credit": "Whigfield",
+        "album_hint": "Saturday Night",
+        "release_year_hint": 1994,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r041",
+        "role": "reserve",
+        "title": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop) (Extended Radio Version)",
+        "artist_credit": "Scatman John",
+        "album_hint": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+        "release_year_hint": 1994,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r042",
+        "role": "reserve",
+        "title": "Blue (Da Ba Dee) (Hannover Remix)",
+        "artist_credit": "Eiffel 65",
+        "album_hint": "Blue (Da Ba Dee)",
+        "release_year_hint": 1998,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r043",
+        "role": "reserve",
+        "title": "Freed from Desire (Full Vocals Mixx)",
+        "artist_credit": "Gala",
+        "album_hint": "Freed from Desire",
+        "release_year_hint": 1996,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r044",
+        "role": "reserve",
+        "title": "Around the World (Extended Version)",
+        "artist_credit": "ATC",
+        "album_hint": "Around the World (La La La La La)",
+        "release_year_hint": 2000,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r045",
+        "role": "reserve",
+        "title": "Better Off Alone (Vocal Club Mix)",
+        "artist_credit": "Alice Deejay",
+        "album_hint": "Better Off Alone",
+        "release_year_hint": 1999,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r046",
+        "role": "reserve",
+        "title": "Sandstorm (Original Mix)",
+        "artist_credit": "Darude",
+        "album_hint": "Sandstorm",
+        "release_year_hint": 1999,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r047",
+        "role": "reserve",
+        "title": "Insomnia (Monster Mix)",
+        "artist_credit": "Faithless",
+        "album_hint": "Insomnia",
+        "release_year_hint": 1995,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r048",
+        "role": "reserve",
+        "title": "Children (Dream Version)",
+        "artist_credit": "Robert Miles",
+        "album_hint": "Children",
+        "release_year_hint": 1995,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r049",
+        "role": "reserve",
+        "title": "9 PM (Till I Come) (Signum Remix)",
+        "artist_credit": "ATB",
+        "album_hint": "9 PM (Till I Come)",
+        "release_year_hint": 1999,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r050",
+        "role": "reserve",
+        "title": "Silence (DJ Tiësto's In Search of Sunrise Remix)",
+        "artist_credit": "Delerium featuring Sarah McLachlan",
+        "album_hint": "Silence",
+        "release_year_hint": 2000,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r051",
+        "role": "reserve",
+        "title": "Lady (Hear Me Tonight) (Roy's Universal Soldiers Mix)",
+        "artist_credit": "Modjo",
+        "album_hint": "Lady (Hear Me Tonight)",
+        "release_year_hint": 2000,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r052",
+        "role": "reserve",
+        "title": "Can't Get You Out of My Head (Blue Monday Mix)",
+        "artist_credit": "Kylie Minogue",
+        "album_hint": "Boombox: The Remix Album 2000–2008",
+        "release_year_hint": 2002,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r053",
+        "role": "reserve",
+        "title": "Murder on the Dancefloor (PNAU Remix)",
+        "artist_credit": "Sophie Ellis-Bextor",
+        "album_hint": "Murder on the Dancefloor (PNAU Remix)",
+        "release_year_hint": 2024,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r054",
+        "role": "reserve",
+        "title": "Hung Up (SDP Extended Vocal)",
+        "artist_credit": "Madonna",
+        "album_hint": "Hung Up",
+        "release_year_hint": 2005,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r055",
+        "role": "reserve",
+        "title": "Don't Start Now (Purple Disco Machine Remix)",
+        "artist_credit": "Dua Lipa",
+        "album_hint": "Club Future Nostalgia",
+        "release_year_hint": 2020,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r056",
+        "role": "reserve",
+        "title": "Levitating (The Blessed Madonna Remix)",
+        "artist_credit": "Dua Lipa featuring Madonna and Missy Elliott",
+        "album_hint": "Club Future Nostalgia",
+        "release_year_hint": 2020,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r057",
+        "role": "reserve",
+        "title": "Cold Heart (PNAU Remix)",
+        "artist_credit": "Elton John and Dua Lipa",
+        "album_hint": "Cold Heart (PNAU Remix)",
+        "release_year_hint": 2021,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r058",
+        "role": "reserve",
+        "title": "Padam Padam (Extended Mix)",
+        "artist_credit": "Kylie Minogue",
+        "album_hint": "Padam Padam",
+        "release_year_hint": 2023,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r059",
+        "role": "reserve",
+        "title": "About Damn Time (Purple Disco Machine Remix)",
+        "artist_credit": "Lizzo",
+        "album_hint": "About Damn Time (Purple Disco Machine Remix)",
+        "release_year_hint": 2022,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r060",
+        "role": "reserve",
+        "title": "Hypnotized (Extended Mix)",
+        "artist_credit": "Purple Disco Machine and Sophie and the Giants",
+        "album_hint": "Hypnotized",
+        "release_year_hint": 2020,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      }
+    ]
+  }
+}

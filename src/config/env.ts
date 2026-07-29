@@ -9,6 +9,8 @@ export type AppConfig = {
   logLevel: string;
   roonExtensionName: string;
   roonExtensionId: string;
+  roonCoreHost: string | null;
+  roonCorePort: number | null;
   dataDir: string;
   enableBrowse: boolean;
   enableMcp: boolean;
@@ -115,6 +117,18 @@ export function loadConfig(): AppConfig {
       : null;
   const envUpdateChannel =
     process.env.UPDATE_CHANNEL === "beta" ? "beta" : "stable";
+  const roonCoreHost =
+    typeof process.env.ROON_CORE_HOST === "string" &&
+    process.env.ROON_CORE_HOST.trim() !== ""
+      ? process.env.ROON_CORE_HOST.trim()
+      : null;
+  const roonCorePort = validPort(process.env.ROON_CORE_PORT);
+
+  if (Boolean(roonCoreHost) !== Boolean(roonCorePort)) {
+    throw new Error(
+      "ROON_CORE_HOST and ROON_CORE_PORT must be configured together"
+    );
+  }
 
   return {
     port,
@@ -125,6 +139,8 @@ export function loadConfig(): AppConfig {
     roonExtensionName: process.env.ROON_EXTENSION_NAME || "RoonIA",
     roonExtensionId:
       process.env.ROON_EXTENSION_ID || "com.local.roon-ai-bridge",
+    roonCoreHost,
+    roonCorePort,
     dataDir,
     enableBrowse: boolFromEnv(process.env.ENABLE_BROWSE),
     enableMcp: boolFromEnv(process.env.ENABLE_MCP),

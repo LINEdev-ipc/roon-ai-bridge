@@ -1,0 +1,601 @@
+{
+  "case_id": "R01",
+  "methodology_version": 1,
+  "status": "frozen_before_execution",
+  "human_prompt": "Crea una playlist con 30 canciones esenciales de The Rolling Stones.",
+  "generation": {
+    "generator": "Codex GPT-5",
+    "catalog_lookups": 0,
+    "manual_post_generation_edits": 0,
+    "notes": "Generated from model knowledge using only the deployed MCP instructions and roon_save_playlist schema."
+  },
+  "mcp_contract": {
+    "server_name": "roon-ai-bridge",
+    "server_version": "0.20.0-beta.15",
+    "deployed_commit": "ac3b577fb059dd78c2bf9b49d39eebba76413a3a",
+    "captured_at": "2026-07-29T00:45:06.036Z",
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "8c4d2b4f4d3285d4642f8896148631e386c94acb551e2c7a8cd23bb1598a122e"
+  },
+  "tool": "roon_save_playlist",
+  "arguments": {
+    "name": "Validación real R01 — The Rolling Stones",
+    "description": "Treinta canciones esenciales de The Rolling Stones, desde sus primeros éxitos hasta etapas posteriores.",
+    "desired_count": 30,
+    "selection_complexity": "standard",
+    "no_adjacent_same_artist": false,
+    "tracks": [
+      {
+        "candidate_id": "R01-001",
+        "role": "primary",
+        "title": "Gimme Shelter",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Let It Bleed",
+        "release_year_hint": 1969,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-002",
+        "role": "primary",
+        "title": "Paint It, Black",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Aftermath",
+        "release_year_hint": 1966,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-003",
+        "role": "primary",
+        "title": "Sympathy for the Devil",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Beggars Banquet",
+        "release_year_hint": 1968,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-004",
+        "role": "primary",
+        "title": "(I Can't Get No) Satisfaction",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Out of Our Heads",
+        "release_year_hint": 1965,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-005",
+        "role": "primary",
+        "title": "You Can't Always Get What You Want",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Let It Bleed",
+        "release_year_hint": 1969,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-006",
+        "role": "primary",
+        "title": "Wild Horses",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Sticky Fingers",
+        "release_year_hint": 1971,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-007",
+        "role": "primary",
+        "title": "Jumpin' Jack Flash",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Jumpin' Jack Flash",
+        "release_year_hint": 1968,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-008",
+        "role": "primary",
+        "title": "Brown Sugar",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Sticky Fingers",
+        "release_year_hint": 1971,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-009",
+        "role": "primary",
+        "title": "Angie",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Goats Head Soup",
+        "release_year_hint": 1973,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-010",
+        "role": "primary",
+        "title": "Start Me Up",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Tattoo You",
+        "release_year_hint": 1981,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-011",
+        "role": "primary",
+        "title": "Honky Tonk Women",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Honky Tonk Women",
+        "release_year_hint": 1969,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-012",
+        "role": "primary",
+        "title": "Tumbling Dice",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Exile on Main St.",
+        "release_year_hint": 1972,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-013",
+        "role": "primary",
+        "title": "Miss You",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Some Girls",
+        "release_year_hint": 1978,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-014",
+        "role": "primary",
+        "title": "Ruby Tuesday",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Between the Buttons",
+        "release_year_hint": 1967,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-015",
+        "role": "primary",
+        "title": "Street Fighting Man",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Beggars Banquet",
+        "release_year_hint": 1968,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-016",
+        "role": "primary",
+        "title": "Beast of Burden",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Some Girls",
+        "release_year_hint": 1978,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-017",
+        "role": "primary",
+        "title": "She's a Rainbow",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Their Satanic Majesties Request",
+        "release_year_hint": 1967,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-018",
+        "role": "primary",
+        "title": "Can't You Hear Me Knocking",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Sticky Fingers",
+        "release_year_hint": 1971,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-019",
+        "role": "primary",
+        "title": "The Last Time",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Out of Our Heads",
+        "release_year_hint": 1965,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-020",
+        "role": "primary",
+        "title": "Under My Thumb",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Aftermath",
+        "release_year_hint": 1966,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-021",
+        "role": "primary",
+        "title": "Dead Flowers",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Sticky Fingers",
+        "release_year_hint": 1971,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-022",
+        "role": "primary",
+        "title": "Waiting on a Friend",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Tattoo You",
+        "release_year_hint": 1981,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-023",
+        "role": "primary",
+        "title": "Let's Spend the Night Together",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Between the Buttons",
+        "release_year_hint": 1967,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-024",
+        "role": "primary",
+        "title": "Get Off of My Cloud",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "December's Children (And Everybody's)",
+        "release_year_hint": 1965,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-025",
+        "role": "primary",
+        "title": "Shine a Light",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Exile on Main St.",
+        "release_year_hint": 1972,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-026",
+        "role": "primary",
+        "title": "Rocks Off",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Exile on Main St.",
+        "release_year_hint": 1972,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-027",
+        "role": "primary",
+        "title": "Happy",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Exile on Main St.",
+        "release_year_hint": 1972,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-028",
+        "role": "primary",
+        "title": "Emotional Rescue",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Emotional Rescue",
+        "release_year_hint": 1980,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-029",
+        "role": "primary",
+        "title": "It's Only Rock 'n Roll (But I Like It)",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "It's Only Rock 'n Roll",
+        "release_year_hint": 1974,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-030",
+        "role": "primary",
+        "title": "Time Is on My Side",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "12 X 5",
+        "release_year_hint": 1964,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-031",
+        "role": "reserve",
+        "title": "Mother's Little Helper",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Aftermath",
+        "release_year_hint": 1966,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-032",
+        "role": "reserve",
+        "title": "Sweet Virginia",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Exile on Main St.",
+        "release_year_hint": 1972,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-033",
+        "role": "reserve",
+        "title": "Monkey Man",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Let It Bleed",
+        "release_year_hint": 1969,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-034",
+        "role": "reserve",
+        "title": "Play with Fire",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Out of Our Heads",
+        "release_year_hint": 1965,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-035",
+        "role": "reserve",
+        "title": "Memory Motel",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Black and Blue",
+        "release_year_hint": 1976,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-036",
+        "role": "reserve",
+        "title": "Doom and Gloom",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "GRRR!",
+        "release_year_hint": 2012,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-037",
+        "role": "reserve",
+        "title": "Love Is Strong",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Voodoo Lounge",
+        "release_year_hint": 1994,
+        "recording_intent": "standard"
+      },
+      {
+        "candidate_id": "R01-038",
+        "role": "reserve",
+        "title": "You Got the Silver",
+        "artist_credit": "The Rolling Stones",
+        "required_credits": [
+          {
+            "name": "The Rolling Stones",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Let It Bleed",
+        "release_year_hint": 1969,
+        "recording_intent": "standard"
+      }
+    ]
+  }
+}

@@ -199,6 +199,18 @@ type CandidateResolutionMetrics = {
   speculative_binding_reused: boolean;
   binding_created: boolean;
   outcome: "accepted" | "rejected";
+  roon_candidate_diagnostics?: Array<{
+    title: string;
+    artist: string | null;
+    version_hint: string;
+    identity_score: number;
+    direct_match: boolean;
+    direct_match_score: number;
+    candidate_identity: boolean;
+    catalog_identity: boolean;
+    version_allowed: boolean;
+    hard_gate: boolean;
+  }>;
 };
 
 export type PlaylistBuildResult = {
@@ -268,8 +280,8 @@ export type PlaylistBuildResult = {
 const RESOLUTION_CONCURRENCY = 6;
 const RESERVE_MULTIPLIERS: Record<PlaylistSelectionComplexity, number> = {
   standard: 1.25,
-  constrained: 1.5,
-  exact_versions: 1.6
+  constrained: 1.6,
+  exact_versions: 2
 };
 
 function objectValue(value: unknown): Record<string, unknown> | null {
@@ -302,7 +314,7 @@ function normalize(value: unknown): string {
 function canonicalTitle(value: unknown): string {
   const raw = String(value || "")
     .replace(/\s*[([]\s*\d{2,3}\s*[\])]\s*$/u, "")
-    .replace(/\s*[\[(]\s*(?:(?:live|en vivo|directo|concert|transition)\b[^)\]]*|[^)\]]*\b(?:remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master|transition)\b[^)\]]*)[\])]\s*$/iu, "")
+    .replace(/\s*[\[(]\s*(?:(?:live|en vivo|directo|concert|transition)\b[^)\]]*|[^)\]]*\b(?:live|en vivo|directo|concert|remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master|transition)\b[^)\]]*)[\])]\s*$/iu, "")
     .replace(/\s+-\s+(?:(?:live|en vivo|directo|concert|transition)\b.*|.*\b(?:remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master|transition)\b.*)$/iu, "")
     .replace(/\s+\b(?:single version|album version|original version|stereo version|mono version)\b.*$/iu, "");
   return normalize(raw);
@@ -334,6 +346,31 @@ function resultCredits(result: MediaResult): string[] {
   ].map(normalize).filter(Boolean)));
 }
 
+function resultPerformerCredits(result: MediaResult): string[] {
+  const displayed = [result.artist, result.subtitle]
+    .map(normalize)
+    .filter(Boolean);
+  if (displayed.length) return Array.from(new Set(displayed));
+  return Array.from(new Set(
+    (result.artists || []).map((artist) => normalize(artist.title)).filter(Boolean)
+  ));
+}
+
+function resultLeadPerformerCredits(result: MediaResult): string[] {
+  const linkedPrimary = normalize(result.links?.artist?.title);
+  if (linkedPrimary) return [linkedPrimary];
+  return resultPerformerCredits(result);
+}
+
+function creditsForRole(
+  result: MediaResult,
+  role: RequiredCredit["role"]
+): string[] {
+  return ["primary", "featured"].includes(role)
+    ? resultPerformerCredits(result)
+    : resultCredits(result);
+}
+
 function versionFamily(result: Pick<MediaResult, "title" | "version_hint">): PlaylistRecordingIntent | "remaster" {
   const title = result.title || "";
   const versionSuffix = /(?:[\[(]\s*[^)\]]*[\])]\s*$|\s+-\s+.+$)/u.test(title);
@@ -353,7 +390,8 @@ function versionFamily(result: Pick<MediaResult, "title" | "version_hint">): Pla
 
 function versionAllowed(
   input: NormalizedCandidate,
-  result: MediaResult
+  result: MediaResult,
+  catalogProfile: TrackCatalogProfile | null = null
 ): boolean {
   const intent = input.recordingIntent;
   const actual = versionFamily(result);
@@ -381,6 +419,19 @@ function versionAllowed(
     // Roon normally exposes it as that artist's standard recording rather than
     // putting the word "cover" in the visible title.
     return actual === "cover" || actual === "standard" || actual === "remaster";
+  }
+  if (
+    (actual === "standard" || actual === "remaster") &&
+    !["live", "acoustic"].includes(intent) &&
+    (
+      catalogRecordingAnchorMatches(catalogProfile, result) ||
+      strongCatalogDirectMatch(input, result, catalogProfile)
+    )
+  ) {
+    // Roon often hides 12-inch/original-mix/live edition labels in search
+    // results. MusicBrainz title + artist + ISRC/duration still identifies the
+    // exact recording without depending on Roon's display label.
+    return true;
   }
   if (
     intent === "live" &&
@@ -450,9 +501,36 @@ function exactRecordingFamily(input: NormalizedCandidate): boolean {
   return input.recordingIntent !== "standard";
 }
 
+function requiresExactCatalogRelease(input: NormalizedCandidate): boolean {
+  if (!input.albumHint || input.recordingIntent === "cover") return false;
+  if (["live", "acoustic"].includes(input.recordingIntent)) return true;
+  return exactRecordingFamily(input) && !hasPublishedVersionLabel(input.title);
+}
+
 function resultIsrcs(result: MediaResult): string[] {
   const observed = result as MediaResult & { isrc?: string | null; isrcs?: string[] };
   return [observed.isrc, ...(observed.isrcs || [])].map(normalize).filter(Boolean);
+}
+
+function catalogRecordingAnchorMatches(
+  catalogProfile: TrackCatalogProfile | null,
+  result: MediaResult
+): boolean {
+  const canonicalIsrcs = new Set(
+    (catalogProfile?.recording?.isrcs || []).map(normalize).filter(Boolean)
+  );
+  if (
+    canonicalIsrcs.size &&
+    resultIsrcs(result).some((isrc) => canonicalIsrcs.has(isrc))
+  ) {
+    return true;
+  }
+  const canonicalDuration = catalogProfile?.recording?.duration_seconds || null;
+  return Boolean(
+    canonicalDuration &&
+    result.duration_seconds &&
+    Math.abs(result.duration_seconds - canonicalDuration) <= 3
+  );
 }
 
 function hasPublishedVersionLabel(title: string): boolean {
@@ -497,6 +575,24 @@ function resultCarriesReleaseAnchor(
   return Boolean(input.releaseYearHint && observedYears.has(input.releaseYearHint));
 }
 
+function resultCarriesCatalogPerformanceAnchor(
+  input: NormalizedCandidate,
+  result: MediaResult,
+  catalogProfile: TrackCatalogProfile | null
+): boolean {
+  if (
+    !["live", "acoustic"].includes(input.recordingIntent) ||
+    !catalogProfile?.recording?.disambiguation ||
+    !hasPublishedVersionLabel(result.title)
+  ) {
+    return false;
+  }
+  const observed = normalize(result.title);
+  const shared = releaseAnchorTokens(catalogProfile.recording.disambiguation)
+    .filter((token) => phraseIncludes(observed, token));
+  return shared.length >= 2;
+}
+
 function recordingEvidenceAllowed(
   input: NormalizedCandidate,
   result: MediaResult,
@@ -505,12 +601,10 @@ function recordingEvidenceAllowed(
   if (!exactRecordingFamily(input) && !input.performanceSensitive) return true;
   if (albumMatchesInput(input, result)) return true;
 
-  const canonicalIsrcs = new Set(
-    (catalogProfile?.recording?.isrcs || []).map(normalize).filter(Boolean)
-  );
+  if (catalogRecordingAnchorMatches(catalogProfile, result)) return true;
   if (
-    canonicalIsrcs.size &&
-    resultIsrcs(result).some((isrc) => canonicalIsrcs.has(isrc))
+    !["live", "acoustic"].includes(input.recordingIntent) &&
+    strongCatalogDirectMatch(input, result, catalogProfile)
   ) {
     return true;
   }
@@ -524,18 +618,8 @@ function recordingEvidenceAllowed(
   }
   if (input.recordingIntent === "cover") return true;
   if (resultCarriesReleaseAnchor(input, result)) return true;
-
-  const canonicalDuration = catalogProfile?.recording?.duration_seconds || null;
-  const durationMatches = Boolean(
-    canonicalDuration &&
-    result.duration_seconds &&
-    Math.abs(result.duration_seconds - canonicalDuration) <= 3
-  );
-  if (!durationMatches) return false;
-  // At this point title, performer and version family already passed the hard
-  // gate. Canonical duration is sufficient to bind the recording even when
-  // Roon omits its album or exposes an equivalent country/service edition.
-  return true;
+  if (resultCarriesCatalogPerformanceAnchor(input, result, catalogProfile)) return true;
+  return false;
 }
 
 function candidateSnapshot(result: MediaResult): Record<string, unknown> {
@@ -553,20 +637,64 @@ function creditMatches(expected: string, credits: string[]): boolean {
 function identityGate(input: NormalizedCandidate, result: MediaResult): boolean {
   if (!result.playable || !result.roon_item_key || result.media_type !== "track") return false;
   if (canonicalTitle(input.title) !== canonicalTitle(result.title)) return false;
-  const credits = resultCredits(result);
   const primaryCredit = input.requiredCredits[0]?.name || input.artist;
-  if (!creditMatches(primaryCredit, credits)) return false;
+  if (!creditMatches(primaryCredit, resultLeadPerformerCredits(result))) return false;
   return true;
 }
 
-function baseGate(input: NormalizedCandidate, result: MediaResult): boolean {
-  return identityGate(input, result) && versionAllowed(input, result);
+function candidateIdentityGate(input: NormalizedCandidate, result: MediaResult): boolean {
+  if (!result.playable || !result.roon_item_key || result.media_type !== "track") return false;
+  if (canonicalTitle(input.title) !== canonicalTitle(result.title)) return false;
+  const primaryCredit = input.requiredCredits[0]?.name || input.artist;
+  return creditMatches(primaryCredit, resultCredits(result));
 }
 
-function hardGate(input: NormalizedCandidate, result: MediaResult): boolean {
-  if (!baseGate(input, result)) return false;
-  const credits = resultCredits(result);
-  if (!input.requiredCredits.every((credit) => creditMatches(credit.name, credits))) return false;
+function strongCatalogDirectMatch(
+  input: NormalizedCandidate,
+  result: MediaResult,
+  catalogProfile: TrackCatalogProfile | null
+): boolean {
+  return Boolean(
+    catalogProfile?.recording &&
+    result.direct_match === true &&
+    (result.direct_match_score || 0) >= 110 &&
+    candidateIdentityGate(input, result)
+  );
+}
+
+function catalogIdentityGate(
+  input: NormalizedCandidate,
+  result: MediaResult,
+  catalogProfile: TrackCatalogProfile | null
+): boolean {
+  return identityGate(input, result) || (
+    Boolean(catalogProfile) &&
+    candidateIdentityGate(input, result) &&
+    (
+      catalogRecordingAnchorMatches(catalogProfile, result) ||
+      strongCatalogDirectMatch(input, result, catalogProfile)
+    )
+  );
+}
+
+function baseGate(
+  input: NormalizedCandidate,
+  result: MediaResult,
+  catalogProfile: TrackCatalogProfile | null = null
+): boolean {
+  return catalogIdentityGate(input, result, catalogProfile) &&
+    versionAllowed(input, result, catalogProfile);
+}
+
+function hardGate(
+  input: NormalizedCandidate,
+  result: MediaResult,
+  catalogProfile: TrackCatalogProfile | null = null
+): boolean {
+  if (!baseGate(input, result, catalogProfile)) return false;
+  if (!input.requiredCredits.every((credit) =>
+    creditMatches(credit.name, creditsForRole(result, credit.role))
+  )) return false;
   return true;
 }
 
@@ -625,11 +753,23 @@ function normalizeCandidate(value: unknown, round: number, index: number): Norma
   const allowedIntents = new Set<PlaylistRecordingIntent>([
     "standard", "live", "remix", "cover", "dub", "acoustic", "alternate"
   ]);
-  const recordingIntent = allowedIntents.has(rawIntent as PlaylistRecordingIntent)
+  let recordingIntent = allowedIntents.has(rawIntent as PlaylistRecordingIntent)
     ? rawIntent as PlaylistRecordingIntent
     : "standard";
   const role = payload.role === "reserve" ? "reserve" : "primary";
   const userMetadata = objectValue(payload.user_metadata);
+  const performanceSensitive = payload.performance_sensitive === true || requiredCredits.some((credit) =>
+    ["performer", "conductor", "orchestra", "ensemble", "soloist"].includes(credit.role)
+  );
+  if (
+    recordingIntent === "acoustic" &&
+    !performanceSensitive &&
+    !/\b(?:acoustic|unplugged|acústico|acustico)\b/iu.test(
+      `${title} ${optionalString(payload.album_hint) || optionalString(payload.album) || ""}`
+    )
+  ) {
+    recordingIntent = "standard";
+  }
   return {
     candidateId: optionalString(payload.candidate_id) || `round-${round}-candidate-${index + 1}`,
     role,
@@ -640,9 +780,7 @@ function normalizeCandidate(value: unknown, round: number, index: number): Norma
     albumHint: optionalString(payload.album_hint) || optionalString(payload.album),
     releaseYearHint: optionalInteger(payload.release_year_hint) ?? optionalInteger(payload.release_year),
     recordingIntent,
-    performanceSensitive: payload.performance_sensitive === true || requiredCredits.some((credit) =>
-      ["performer", "conductor", "orchestra", "ensemble", "soloist"].includes(credit.role)
-    ),
+    performanceSensitive,
     userMetadata,
     round
   };
@@ -914,8 +1052,7 @@ export class PlaylistBuildService {
           artist: candidate.catalogProfile?.recording?.artist_credit[0]?.name
             || candidate.input.artist,
           album_observation: candidate.input.albumHint,
-          require_release_match: exactRecordingFamily(candidate.input) &&
-            Boolean(candidate.input.albumHint),
+          require_release_match: requiresExactCatalogRelease(candidate.input),
           release_year_observation: candidate.input.releaseYearHint,
           version_hint: candidate.input.recordingIntent,
           metadata_depth: "full"
@@ -1066,7 +1203,7 @@ export class PlaylistBuildService {
             }
           }
         })).filter((track) =>
-          hardGate(bindingInput, track) &&
+          hardGate(bindingInput, track, catalogProfile) &&
           recordingEvidenceAllowed(bindingInput, track, catalogProfile)
         );
         if (!tracks.length) continue;
@@ -1230,6 +1367,7 @@ export class PlaylistBuildService {
     let roonAlbumCacheHits = 0;
     let speculativeBindingReused = false;
     let bindingCreated = false;
+    let roonCandidateDiagnostics: CandidateResolutionMetrics["roon_candidate_diagnostics"];
     const metrics = (outcome: CandidateResolutionMetrics["outcome"]): CandidateResolutionMetrics => ({
       candidate_id: candidate.candidateId,
       role: candidate.role,
@@ -1248,7 +1386,10 @@ export class PlaylistBuildService {
       roon_album_cache_hits: roonAlbumCacheHits,
       speculative_binding_reused: speculativeBindingReused,
       binding_created: bindingCreated,
-      outcome
+      outcome,
+      ...(roonCandidateDiagnostics ? {
+        roon_candidate_diagnostics: roonCandidateDiagnostics
+      } : {})
     });
     const rejected = (
       status: RejectedCandidate["status"],
@@ -1281,15 +1422,23 @@ export class PlaylistBuildService {
           title: candidate.title,
           artist: candidate.requiredCredits[0]?.name || candidate.artist,
           album_observation: candidate.albumHint,
-          require_release_match: exactRecordingFamily(candidate) && Boolean(candidate.albumHint),
+          require_release_match: requiresExactCatalogRelease(candidate),
           release_year_observation: candidate.releaseYearHint,
           version_hint: candidate.recordingIntent,
-          metadata_depth: "identity"
+          metadata_depth: "identity",
+          prefer_release_tracklist: Boolean(candidate.albumHint)
         }).then((catalog) => {
           catalogMs = Date.now() - catalogStartedAt;
           const trace = catalog.resolution?.trace;
           musicbrainzRequests = trace?.provider_requests || 0;
-          musicbrainzCacheHits = trace?.cache_hit ? 1 : 0;
+          musicbrainzCacheHits = trace?.cache_hit ||
+            trace?.accepted_warnings?.some((warning) =>
+              warning === "release_tracklist_memory_cache_hit" ||
+              warning === "release_tracklist_persistent_cache_hit" ||
+              warning === "release_tracklist_inflight_cache_hit"
+            )
+            ? 1
+            : 0;
           listenbrainzRequests = trace?.listenbrainz?.provider_requests || 0;
           listenbrainzCacheHits = trace?.listenbrainz?.cache_hits || 0;
           musicbrainzReleaseTracklistRecovered = Boolean(
@@ -1345,14 +1494,15 @@ export class PlaylistBuildService {
         ...candidate,
         title: canonicalTitle,
         artist: bindingArtist,
-        requiredCredits: equivalentCredit
-          ? candidate.requiredCredits
-          : [
-              { name: bindingArtist, role: "primary" },
-              ...candidate.requiredCredits.filter((credit) =>
-                !["primary", "featured"].includes(credit.role)
-              )
-            ]
+        // MusicBrainz has already verified the complete artist credit for this
+        // recording. Roon is only the playable binding and frequently exposes
+        // the lead artist without every featured collaborator.
+        requiredCredits: [
+          { name: bindingArtist, role: "primary" },
+          ...candidate.requiredCredits.filter((credit) =>
+            !["primary", "featured"].includes(credit.role)
+          )
+        ]
       };
     }
     const baseQuery = `${canonicalTitle} ${bindingArtist}`;
@@ -1494,7 +1644,21 @@ export class PlaylistBuildService {
       }
     }
     if (!selected) {
-      const needsEnrichment = resolution.candidates.some((entry) => baseGate(bindingCandidate, entry.result));
+      roonCandidateDiagnostics = resolution.candidates.slice(0, 12).map((entry) => ({
+        title: entry.result.title,
+        artist: entry.result.artist || entry.result.subtitle,
+        version_hint: entry.result.version_hint,
+        identity_score: entry.identity_score,
+        direct_match: entry.result.direct_match === true,
+        direct_match_score: entry.result.direct_match_score || 0,
+        candidate_identity: candidateIdentityGate(bindingCandidate, entry.result),
+        catalog_identity: catalogIdentityGate(bindingCandidate, entry.result, catalogProfile),
+        version_allowed: versionAllowed(bindingCandidate, entry.result, catalogProfile),
+        hard_gate: hardGate(bindingCandidate, entry.result, catalogProfile)
+      }));
+      const needsEnrichment = resolution.candidates.some((entry) =>
+        baseGate(bindingCandidate, entry.result, catalogProfile)
+      );
       return rejected(
         this.trackCatalogService ? "manual_required" : needsEnrichment ? "needs_enrichment" : "missing",
         this.trackCatalogService
@@ -1582,13 +1746,16 @@ export class PlaylistBuildService {
     hydrateResult?: (result: MediaResult) => Promise<HydratedCandidateResult>
   ): Promise<RankedTrackCandidate | null> {
     const identityCandidates = resolution.candidates.filter((candidate) =>
-      identityGate(input, candidate.result)
+      identityGate(input, candidate.result) ||
+      (Boolean(catalogProfile) && candidateIdentityGate(input, candidate.result))
     );
     if (!identityCandidates.length) return null;
     const baseCandidates = identityCandidates.filter((candidate) =>
-      versionAllowed(input, candidate.result)
+      versionAllowed(input, candidate.result, catalogProfile)
     );
-    const strictCandidates = baseCandidates.filter((candidate) => hardGate(input, candidate.result));
+    const strictCandidates = baseCandidates.filter((candidate) =>
+      hardGate(input, candidate.result, catalogProfile)
+    );
     const requiresRecordingEvidence = exactRecordingFamily(input) || input.performanceSensitive;
     const directCanonicalMatches = strictCandidates.filter((candidate) =>
       candidate.result.direct_match === true &&
@@ -1631,7 +1798,7 @@ export class PlaylistBuildService {
           : this.hydrate(candidate.result, input, resolution.queries, catalogProfile)
       )
     })))).filter((entry) =>
-      hardGate(input, entry.hydrated.result) &&
+      hardGate(input, entry.hydrated.result, catalogProfile) &&
       recordingEvidenceAllowed(input, entry.hydrated.result, catalogProfile)
     );
     if (hydrated.length === 1) return hydrated[0].candidate;

@@ -40,6 +40,7 @@ export type TrackResolution = {
 
 const MIN_IDENTITY_SCORE = 90;
 const AMBIGUOUS_IDENTITY_DELTA = 10;
+const MAX_RECONCILIATION_CANDIDATES = 12;
 
 function normalize(value: string | null | undefined): string {
   return String(value || "")
@@ -324,10 +325,10 @@ export class TrackResolutionService {
       candidate.identity_score >= MIN_IDENTITY_SCORE - 15
     );
     if (best && titleOnlyAmbiguity) {
-      return { status: "ambiguous", reason: "multiple_recordings", selected: null, candidates: ranked.slice(0, 5), queries };
+      return { status: "ambiguous", reason: "multiple_recordings", selected: null, candidates: ranked.slice(0, MAX_RECONCILIATION_CANDIDATES), queries };
     }
     if (!best || best.identity_score < MIN_IDENTITY_SCORE) {
-      return { status: "missing", reason: "low_identity_confidence", selected: null, candidates: ranked.slice(0, 5), queries };
+      return { status: "missing", reason: "low_identity_confidence", selected: null, candidates: ranked.slice(0, MAX_RECONCILIATION_CANDIDATES), queries };
     }
 
     const competingRecording = ranked.find((candidate) =>
@@ -336,10 +337,10 @@ export class TrackResolutionService {
       best.identity_score - candidate.identity_score <= AMBIGUOUS_IDENTITY_DELTA
     );
     if (competingRecording) {
-      return { status: "ambiguous", reason: "multiple_recordings", selected: null, candidates: ranked.slice(0, 5), queries };
+      return { status: "ambiguous", reason: "multiple_recordings", selected: null, candidates: ranked.slice(0, MAX_RECONCILIATION_CANDIDATES), queries };
     }
 
-    return { status: "resolved", reason: "selected_equivalent_recording", selected: best, candidates: ranked.slice(0, 5), queries };
+    return { status: "resolved", reason: "selected_equivalent_recording", selected: best, candidates: ranked.slice(0, MAX_RECONCILIATION_CANDIDATES), queries };
   }
 
   private rank(

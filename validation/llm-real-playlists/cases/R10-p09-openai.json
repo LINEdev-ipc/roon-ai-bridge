@@ -1,0 +1,1558 @@
+{
+  "case_id": "R10",
+  "legacy_prompt_id": "P09",
+  "human_prompt": "Crea una playlist de 100 clásicos variados de los años 60, 70 y 80.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "response_id": "resp_049b7e1b7bf1c7c5006a695d80aa6c819f959a8bc44a6cee21",
+    "started_at": "2026-07-29T01:55:11.902Z",
+    "completed_at": "2026-07-29T01:56:54.843Z",
+    "elapsed_ms": 102941,
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "438f4e22066989a68628065de2b2993fc9a6d32e2df9c3b96a369c565d568c22",
+    "usage": {
+      "input_tokens": 1800,
+      "input_tokens_details": {
+        "cache_write_tokens": 25,
+        "cached_tokens": 1644
+      },
+      "output_tokens": 7962,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 9762
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "100 clásicos variados de los 60, 70 y 80",
+    "description": "Un recorrido ecléctico por 100 grandes clásicos del rock, pop, soul, funk, disco, reggae, new wave y synth-pop publicados entre 1960 y 1989.",
+    "desired_count": 100,
+    "selection_complexity": "constrained",
+    "release_year_from": 1960,
+    "release_year_to": 1989,
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "candidate_id": "p001",
+        "role": "primary",
+        "title": "I Want to Hold Your Hand",
+        "artist_credit": "The Beatles",
+        "album_hint": "Meet the Beatles!",
+        "release_year_hint": 1963,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p002",
+        "role": "primary",
+        "title": "(I Can't Get No) Satisfaction",
+        "artist_credit": "The Rolling Stones",
+        "album_hint": "Out of Our Heads",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p003",
+        "role": "primary",
+        "title": "Like a Rolling Stone",
+        "artist_credit": "Bob Dylan",
+        "album_hint": "Highway 61 Revisited",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p004",
+        "role": "primary",
+        "title": "Good Vibrations",
+        "artist_credit": "The Beach Boys",
+        "album_hint": "Smiley Smile",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p005",
+        "role": "primary",
+        "title": "Respect",
+        "artist_credit": "Aretha Franklin",
+        "album_hint": "I Never Loved a Man the Way I Love You",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p006",
+        "role": "primary",
+        "title": "My Girl",
+        "artist_credit": "The Temptations",
+        "album_hint": "The Temptations Sing Smokey",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p007",
+        "role": "primary",
+        "title": "A Change Is Gonna Come",
+        "artist_credit": "Sam Cooke",
+        "album_hint": "Ain't That Good News",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p008",
+        "role": "primary",
+        "title": "You Really Got Me",
+        "artist_credit": "The Kinks",
+        "album_hint": "Kinks",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p009",
+        "role": "primary",
+        "title": "House of the Rising Sun",
+        "artist_credit": "The Animals",
+        "album_hint": "The Animals",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p010",
+        "role": "primary",
+        "title": "California Dreamin'",
+        "artist_credit": "The Mamas & the Papas",
+        "album_hint": "If You Can Believe Your Eyes and Ears",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p011",
+        "role": "primary",
+        "title": "For What It's Worth",
+        "artist_credit": "Buffalo Springfield",
+        "album_hint": "Buffalo Springfield",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p012",
+        "role": "primary",
+        "title": "Somebody to Love",
+        "artist_credit": "Jefferson Airplane",
+        "album_hint": "Surrealistic Pillow",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p013",
+        "role": "primary",
+        "title": "Light My Fire",
+        "artist_credit": "The Doors",
+        "album_hint": "The Doors",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p014",
+        "role": "primary",
+        "title": "Purple Haze",
+        "artist_credit": "The Jimi Hendrix Experience",
+        "album_hint": "Are You Experienced",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p015",
+        "role": "primary",
+        "title": "Sunshine of Your Love",
+        "artist_credit": "Cream",
+        "album_hint": "Disraeli Gears",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p016",
+        "role": "primary",
+        "title": "A Whiter Shade of Pale",
+        "artist_credit": "Procol Harum",
+        "album_hint": "Procol Harum",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p017",
+        "role": "primary",
+        "title": "Brown Eyed Girl",
+        "artist_credit": "Van Morrison",
+        "album_hint": "Blowin' Your Mind!",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p018",
+        "role": "primary",
+        "title": "Mrs. Robinson",
+        "artist_credit": "Simon & Garfunkel",
+        "album_hint": "Bookends",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p019",
+        "role": "primary",
+        "title": "The Weight",
+        "artist_credit": "The Band",
+        "album_hint": "Music from Big Pink",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p020",
+        "role": "primary",
+        "title": "Born to Be Wild",
+        "artist_credit": "Steppenwolf",
+        "album_hint": "Steppenwolf",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p021",
+        "role": "primary",
+        "title": "Dance to the Music",
+        "artist_credit": "Sly & the Family Stone",
+        "album_hint": "Dance to the Music",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p022",
+        "role": "primary",
+        "title": "I Heard It Through the Grapevine",
+        "artist_credit": "Marvin Gaye",
+        "album_hint": "In the Groove",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p023",
+        "role": "primary",
+        "title": "Son of a Preacher Man",
+        "artist_credit": "Dusty Springfield",
+        "album_hint": "Dusty in Memphis",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p024",
+        "role": "primary",
+        "title": "Stand by Me",
+        "artist_credit": "Ben E. King",
+        "album_hint": "Don't Play That Song!",
+        "release_year_hint": 1961,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p025",
+        "role": "primary",
+        "title": "Be My Baby",
+        "artist_credit": "The Ronettes",
+        "album_hint": "Presenting the Fabulous Ronettes Featuring Veronica",
+        "release_year_hint": 1963,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p026",
+        "role": "primary",
+        "title": "Dancing in the Street",
+        "artist_credit": "Martha and the Vandellas",
+        "album_hint": "Dance Party",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p027",
+        "role": "primary",
+        "title": "Reach Out I'll Be There",
+        "artist_credit": "Four Tops",
+        "album_hint": "Reach Out",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p028",
+        "role": "primary",
+        "title": "Soul Man",
+        "artist_credit": "Sam & Dave",
+        "album_hint": "Soul Men",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p029",
+        "role": "primary",
+        "title": "Green Onions",
+        "artist_credit": "Booker T. & the M.G.'s",
+        "album_hint": "Green Onions",
+        "release_year_hint": 1962,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p030",
+        "role": "primary",
+        "title": "Ring of Fire",
+        "artist_credit": "Johnny Cash",
+        "album_hint": "Ring of Fire: The Best of Johnny Cash",
+        "release_year_hint": 1963,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p031",
+        "role": "primary",
+        "title": "Oh, Pretty Woman",
+        "artist_credit": "Roy Orbison",
+        "album_hint": "Orbisongs",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p032",
+        "role": "primary",
+        "title": "Do You Believe in Magic",
+        "artist_credit": "The Lovin' Spoonful",
+        "album_hint": "Do You Believe in Magic",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p033",
+        "role": "primary",
+        "title": "Fortunate Son",
+        "artist_credit": "Creedence Clearwater Revival",
+        "album_hint": "Willy and the Poor Boys",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p034",
+        "role": "primary",
+        "title": "Stairway to Heaven",
+        "artist_credit": "Led Zeppelin",
+        "album_hint": "Led Zeppelin IV",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p035",
+        "role": "primary",
+        "title": "Bohemian Rhapsody",
+        "artist_credit": "Queen",
+        "album_hint": "A Night at the Opera",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p036",
+        "role": "primary",
+        "title": "Hotel California",
+        "artist_credit": "Eagles",
+        "album_hint": "Hotel California",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p037",
+        "role": "primary",
+        "title": "Dreams",
+        "artist_credit": "Fleetwood Mac",
+        "album_hint": "Rumours",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p038",
+        "role": "primary",
+        "title": "Imagine",
+        "artist_credit": "John Lennon",
+        "album_hint": "Imagine",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p039",
+        "role": "primary",
+        "title": "What's Going On",
+        "artist_credit": "Marvin Gaye",
+        "album_hint": "What's Going On",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p040",
+        "role": "primary",
+        "title": "Superstition",
+        "artist_credit": "Stevie Wonder",
+        "album_hint": "Talking Book",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p041",
+        "role": "primary",
+        "title": "Let's Stay Together",
+        "artist_credit": "Al Green",
+        "album_hint": "Let's Stay Together",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p042",
+        "role": "primary",
+        "title": "Tiny Dancer",
+        "artist_credit": "Elton John",
+        "album_hint": "Madman Across the Water",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p043",
+        "role": "primary",
+        "title": "Heroes",
+        "artist_credit": "David Bowie",
+        "album_hint": "Heroes",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p044",
+        "role": "primary",
+        "title": "Baba O'Riley",
+        "artist_credit": "The Who",
+        "album_hint": "Who's Next",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p045",
+        "role": "primary",
+        "title": "Smoke on the Water",
+        "artist_credit": "Deep Purple",
+        "album_hint": "Machine Head",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p046",
+        "role": "primary",
+        "title": "Free Bird",
+        "artist_credit": "Lynyrd Skynyrd",
+        "album_hint": "Pronounced 'Lĕh-'nérd 'Skin-'nérd",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p047",
+        "role": "primary",
+        "title": "More Than a Feeling",
+        "artist_credit": "Boston",
+        "album_hint": "Boston",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p048",
+        "role": "primary",
+        "title": "Go Your Own Way",
+        "artist_credit": "Fleetwood Mac",
+        "album_hint": "Rumours",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p049",
+        "role": "primary",
+        "title": "American Girl",
+        "artist_credit": "Tom Petty and the Heartbreakers",
+        "album_hint": "Tom Petty and the Heartbreakers",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p050",
+        "role": "primary",
+        "title": "The Boys Are Back in Town",
+        "artist_credit": "Thin Lizzy",
+        "album_hint": "Jailbreak",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p051",
+        "role": "primary",
+        "title": "Don't Stop 'Til You Get Enough",
+        "artist_credit": "Michael Jackson",
+        "album_hint": "Off the Wall",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p052",
+        "role": "primary",
+        "title": "September",
+        "artist_credit": "Earth, Wind & Fire",
+        "album_hint": "The Best of Earth, Wind & Fire, Vol. 1",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p053",
+        "role": "primary",
+        "title": "Le Freak",
+        "artist_credit": "Chic",
+        "album_hint": "C'est Chic",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p054",
+        "role": "primary",
+        "title": "Stayin' Alive",
+        "artist_credit": "Bee Gees",
+        "album_hint": "Saturday Night Fever",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p055",
+        "role": "primary",
+        "title": "Dancing Queen",
+        "artist_credit": "ABBA",
+        "album_hint": "Arrival",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p056",
+        "role": "primary",
+        "title": "I Feel Love",
+        "artist_credit": "Donna Summer",
+        "album_hint": "I Remember Yesterday",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p057",
+        "role": "primary",
+        "title": "We Are Family",
+        "artist_credit": "Sister Sledge",
+        "album_hint": "We Are Family",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p058",
+        "role": "primary",
+        "title": "One Way or Another",
+        "artist_credit": "Blondie",
+        "album_hint": "Parallel Lines",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p059",
+        "role": "primary",
+        "title": "London Calling",
+        "artist_credit": "The Clash",
+        "album_hint": "London Calling",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p060",
+        "role": "primary",
+        "title": "Blitzkrieg Bop",
+        "artist_credit": "Ramones",
+        "album_hint": "Ramones",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p061",
+        "role": "primary",
+        "title": "Psycho Killer",
+        "artist_credit": "Talking Heads",
+        "album_hint": "Talking Heads: 77",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p062",
+        "role": "primary",
+        "title": "Roxanne",
+        "artist_credit": "The Police",
+        "album_hint": "Outlandos d'Amour",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p063",
+        "role": "primary",
+        "title": "Is This Love",
+        "artist_credit": "Bob Marley & The Wailers",
+        "album_hint": "Kaya",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p064",
+        "role": "primary",
+        "title": "The Logical Song",
+        "artist_credit": "Supertramp",
+        "album_hint": "Breakfast in America",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p065",
+        "role": "primary",
+        "title": "Heart of Glass",
+        "artist_credit": "Blondie",
+        "album_hint": "Parallel Lines",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p066",
+        "role": "primary",
+        "title": "Sultans of Swing",
+        "artist_credit": "Dire Straits",
+        "album_hint": "Dire Straits",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p067",
+        "role": "primary",
+        "title": "Dream On",
+        "artist_credit": "Aerosmith",
+        "album_hint": "Aerosmith",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p068",
+        "role": "primary",
+        "title": "Billie Jean",
+        "artist_credit": "Michael Jackson",
+        "album_hint": "Thriller",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p069",
+        "role": "primary",
+        "title": "Like a Prayer",
+        "artist_credit": "Madonna",
+        "album_hint": "Like a Prayer",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p070",
+        "role": "primary",
+        "title": "Purple Rain",
+        "artist_credit": "Prince and the Revolution",
+        "album_hint": "Purple Rain",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p071",
+        "role": "primary",
+        "title": "With or Without You",
+        "artist_credit": "U2",
+        "album_hint": "The Joshua Tree",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p072",
+        "role": "primary",
+        "title": "Every Breath You Take",
+        "artist_credit": "The Police",
+        "album_hint": "Synchronicity",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p073",
+        "role": "primary",
+        "title": "Sweet Child o' Mine",
+        "artist_credit": "Guns N' Roses",
+        "album_hint": "Appetite for Destruction",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p074",
+        "role": "primary",
+        "title": "Livin' on a Prayer",
+        "artist_credit": "Bon Jovi",
+        "album_hint": "Slippery When Wet",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p075",
+        "role": "primary",
+        "title": "Don't Stop Believin'",
+        "artist_credit": "Journey",
+        "album_hint": "Escape",
+        "release_year_hint": 1981,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p076",
+        "role": "primary",
+        "title": "You Shook Me All Night Long",
+        "artist_credit": "AC/DC",
+        "album_hint": "Back in Black",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p077",
+        "role": "primary",
+        "title": "Another One Bites the Dust",
+        "artist_credit": "Queen",
+        "album_hint": "The Game",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p078",
+        "role": "primary",
+        "title": "Born in the U.S.A.",
+        "artist_credit": "Bruce Springsteen",
+        "album_hint": "Born in the U.S.A.",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p079",
+        "role": "primary",
+        "title": "The Boys of Summer",
+        "artist_credit": "Don Henley",
+        "album_hint": "Building the Perfect Beast",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p080",
+        "role": "primary",
+        "title": "Summer of '69",
+        "artist_credit": "Bryan Adams",
+        "album_hint": "Reckless",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p081",
+        "role": "primary",
+        "title": "Take on Me",
+        "artist_credit": "a-ha",
+        "album_hint": "Hunting High and Low",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p082",
+        "role": "primary",
+        "title": "Everybody Wants to Rule the World",
+        "artist_credit": "Tears for Fears",
+        "album_hint": "Songs from the Big Chair",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p083",
+        "role": "primary",
+        "title": "Don't You (Forget About Me)",
+        "artist_credit": "Simple Minds",
+        "album_hint": "The Breakfast Club: Original Motion Picture Soundtrack",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p084",
+        "role": "primary",
+        "title": "Just Can't Get Enough",
+        "artist_credit": "Depeche Mode",
+        "album_hint": "Speak & Spell",
+        "release_year_hint": 1981,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p085",
+        "role": "primary",
+        "title": "Blue Monday",
+        "artist_credit": "New Order",
+        "album_hint": "Power, Corruption & Lies",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p086",
+        "role": "primary",
+        "title": "Once in a Lifetime",
+        "artist_credit": "Talking Heads",
+        "album_hint": "Remain in Light",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p087",
+        "role": "primary",
+        "title": "Love Will Tear Us Apart",
+        "artist_credit": "Joy Division",
+        "album_hint": "Substance",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p088",
+        "role": "primary",
+        "title": "Just Like Heaven",
+        "artist_credit": "The Cure",
+        "album_hint": "Kiss Me, Kiss Me, Kiss Me",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p089",
+        "role": "primary",
+        "title": "How Soon Is Now?",
+        "artist_credit": "The Smiths",
+        "album_hint": "Hatful of Hollow",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p090",
+        "role": "primary",
+        "title": "West End Girls",
+        "artist_credit": "Pet Shop Boys",
+        "album_hint": "Please",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p091",
+        "role": "primary",
+        "title": "Girls Just Want to Have Fun",
+        "artist_credit": "Cyndi Lauper",
+        "album_hint": "She's So Unusual",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p092",
+        "role": "primary",
+        "title": "What's Love Got to Do with It",
+        "artist_credit": "Tina Turner",
+        "album_hint": "Private Dancer",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p093",
+        "role": "primary",
+        "title": "I Wanna Dance with Somebody (Who Loves Me)",
+        "artist_credit": "Whitney Houston",
+        "album_hint": "Whitney",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p094",
+        "role": "primary",
+        "title": "Faith",
+        "artist_credit": "George Michael",
+        "album_hint": "Faith",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p095",
+        "role": "primary",
+        "title": "Wake Me Up Before You Go-Go",
+        "artist_credit": "Wham!",
+        "album_hint": "Make It Big",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p096",
+        "role": "primary",
+        "title": "Karma Chameleon",
+        "artist_credit": "Culture Club",
+        "album_hint": "Colour by Numbers",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p097",
+        "role": "primary",
+        "title": "Africa",
+        "artist_credit": "Toto",
+        "album_hint": "Toto IV",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p098",
+        "role": "primary",
+        "title": "Down Under",
+        "artist_credit": "Men at Work",
+        "album_hint": "Business as Usual",
+        "release_year_hint": 1981,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p099",
+        "role": "primary",
+        "title": "Fast Car",
+        "artist_credit": "Tracy Chapman",
+        "album_hint": "Tracy Chapman",
+        "release_year_hint": 1988,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p100",
+        "role": "primary",
+        "title": "Walk This Way",
+        "artist_credit": "Run-D.M.C. feat. Aerosmith",
+        "required_credits": [
+          {
+            "name": "Run-D.M.C.",
+            "role": "primary"
+          },
+          {
+            "name": "Aerosmith",
+            "role": "featured"
+          }
+        ],
+        "album_hint": "Raising Hell",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r001",
+        "role": "reserve",
+        "title": "The Sound of Silence",
+        "artist_credit": "Simon & Garfunkel",
+        "album_hint": "Sounds of Silence",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r002",
+        "role": "reserve",
+        "title": "God Only Knows",
+        "artist_credit": "The Beach Boys",
+        "album_hint": "Pet Sounds",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r003",
+        "role": "reserve",
+        "title": "In the Midnight Hour",
+        "artist_credit": "Wilson Pickett",
+        "album_hint": "In the Midnight Hour",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r004",
+        "role": "reserve",
+        "title": "Mustang Sally",
+        "artist_credit": "Wilson Pickett",
+        "album_hint": "The Wicked Pickett",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r005",
+        "role": "reserve",
+        "title": "Hold On, I'm Comin'",
+        "artist_credit": "Sam & Dave",
+        "album_hint": "Hold On, I'm Comin'",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r006",
+        "role": "reserve",
+        "title": "Unchained Melody",
+        "artist_credit": "The Righteous Brothers",
+        "album_hint": "Just Once in My Life",
+        "release_year_hint": 1965,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r007",
+        "role": "reserve",
+        "title": "These Boots Are Made for Walkin'",
+        "artist_credit": "Nancy Sinatra",
+        "album_hint": "Boots",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r008",
+        "role": "reserve",
+        "title": "Happy Together",
+        "artist_credit": "The Turtles",
+        "album_hint": "Happy Together",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r009",
+        "role": "reserve",
+        "title": "Crimson and Clover",
+        "artist_credit": "Tommy James and the Shondells",
+        "album_hint": "Crimson & Clover",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r010",
+        "role": "reserve",
+        "title": "Piece of My Heart",
+        "artist_credit": "Big Brother & the Holding Company",
+        "album_hint": "Cheap Thrills",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r011",
+        "role": "reserve",
+        "title": "Build Me Up Buttercup",
+        "artist_credit": "The Foundations",
+        "album_hint": "Build Me Up Buttercup",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r012",
+        "role": "reserve",
+        "title": "Suspicious Minds",
+        "artist_credit": "Elvis Presley",
+        "album_hint": "From Elvis in Memphis",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r013",
+        "role": "reserve",
+        "title": "Space Oddity",
+        "artist_credit": "David Bowie",
+        "album_hint": "David Bowie",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r014",
+        "role": "reserve",
+        "title": "Gimme Shelter",
+        "artist_credit": "The Rolling Stones",
+        "album_hint": "Let It Bleed",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r015",
+        "role": "reserve",
+        "title": "Sweet Caroline",
+        "artist_credit": "Neil Diamond",
+        "album_hint": "Brother Love's Travelling Salvation Show",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r016",
+        "role": "reserve",
+        "title": "Bridge Over Troubled Water",
+        "artist_credit": "Simon & Garfunkel",
+        "album_hint": "Bridge Over Troubled Water",
+        "release_year_hint": 1970,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r017",
+        "role": "reserve",
+        "title": "Your Song",
+        "artist_credit": "Elton John",
+        "album_hint": "Elton John",
+        "release_year_hint": 1970,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r018",
+        "role": "reserve",
+        "title": "Me and Bobby McGee",
+        "artist_credit": "Janis Joplin",
+        "album_hint": "Pearl",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r019",
+        "role": "reserve",
+        "title": "Maggie May",
+        "artist_credit": "Rod Stewart",
+        "album_hint": "Every Picture Tells a Story",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r020",
+        "role": "reserve",
+        "title": "Lean on Me",
+        "artist_credit": "Bill Withers",
+        "album_hint": "Still Bill",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r021",
+        "role": "reserve",
+        "title": "Long Train Runnin'",
+        "artist_credit": "The Doobie Brothers",
+        "album_hint": "The Captain and Me",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r022",
+        "role": "reserve",
+        "title": "Takin' Care of Business",
+        "artist_credit": "Bachman-Turner Overdrive",
+        "album_hint": "Bachman-Turner Overdrive II",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r023",
+        "role": "reserve",
+        "title": "Can't Get Enough",
+        "artist_credit": "Bad Company",
+        "album_hint": "Bad Company",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r024",
+        "role": "reserve",
+        "title": "Sweet Home Alabama",
+        "artist_credit": "Lynyrd Skynyrd",
+        "album_hint": "Second Helping",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r025",
+        "role": "reserve",
+        "title": "You Ain't Seen Nothing Yet",
+        "artist_credit": "Bachman-Turner Overdrive",
+        "album_hint": "Not Fragile",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r026",
+        "role": "reserve",
+        "title": "That's the Way (I Like It)",
+        "artist_credit": "KC and the Sunshine Band",
+        "album_hint": "KC and the Sunshine Band",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r027",
+        "role": "reserve",
+        "title": "Low Rider",
+        "artist_credit": "War",
+        "album_hint": "Why Can't We Be Friends?",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r028",
+        "role": "reserve",
+        "title": "Play That Funky Music",
+        "artist_credit": "Wild Cherry",
+        "album_hint": "Wild Cherry",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r029",
+        "role": "reserve",
+        "title": "Barracuda",
+        "artist_credit": "Heart",
+        "album_hint": "Little Queen",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r030",
+        "role": "reserve",
+        "title": "Carry on Wayward Son",
+        "artist_credit": "Kansas",
+        "album_hint": "Leftoverture",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r031",
+        "role": "reserve",
+        "title": "Two Tickets to Paradise",
+        "artist_credit": "Eddie Money",
+        "album_hint": "Eddie Money",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r032",
+        "role": "reserve",
+        "title": "Baker Street",
+        "artist_credit": "Gerry Rafferty",
+        "album_hint": "City to City",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r033",
+        "role": "reserve",
+        "title": "My Sharona",
+        "artist_credit": "The Knack",
+        "album_hint": "Get the Knack",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r034",
+        "role": "reserve",
+        "title": "Brass in Pocket",
+        "artist_credit": "Pretenders",
+        "album_hint": "Pretenders",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r035",
+        "role": "reserve",
+        "title": "Video Killed the Radio Star",
+        "artist_credit": "The Buggles",
+        "album_hint": "The Age of Plastic",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r036",
+        "role": "reserve",
+        "title": "Back on the Chain Gang",
+        "artist_credit": "Pretenders",
+        "album_hint": "Learning to Crawl",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r037",
+        "role": "reserve",
+        "title": "Jessie's Girl",
+        "artist_credit": "Rick Springfield",
+        "album_hint": "Working Class Dog",
+        "release_year_hint": 1981,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r038",
+        "role": "reserve",
+        "title": "Tainted Love",
+        "artist_credit": "Soft Cell",
+        "album_hint": "Non-Stop Erotic Cabaret",
+        "release_year_hint": 1981,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r039",
+        "role": "reserve",
+        "title": "Don't Dream It's Over",
+        "artist_credit": "Crowded House",
+        "album_hint": "Crowded House",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r040",
+        "role": "reserve",
+        "title": "The Power of Love",
+        "artist_credit": "Huey Lewis and the News",
+        "album_hint": "Back to the Future: Music from the Motion Picture Soundtrack",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r041",
+        "role": "reserve",
+        "title": "You Spin Me Round (Like a Record)",
+        "artist_credit": "Dead or Alive",
+        "album_hint": "Youthquake",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r042",
+        "role": "reserve",
+        "title": "Maniac",
+        "artist_credit": "Michael Sembello",
+        "album_hint": "Flashdance: Original Soundtrack from the Motion Picture",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r043",
+        "role": "reserve",
+        "title": "Footloose",
+        "artist_credit": "Kenny Loggins",
+        "album_hint": "Footloose: Original Soundtrack of the Paramount Motion Picture",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r044",
+        "role": "reserve",
+        "title": "99 Luftballons",
+        "artist_credit": "Nena",
+        "album_hint": "Nena",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r045",
+        "role": "reserve",
+        "title": "The Look",
+        "artist_credit": "Roxette",
+        "album_hint": "Look Sharp!",
+        "release_year_hint": 1988,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r046",
+        "role": "reserve",
+        "title": "Need You Tonight",
+        "artist_credit": "INXS",
+        "album_hint": "Kick",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r047",
+        "role": "reserve",
+        "title": "She Drives Me Crazy",
+        "artist_credit": "Fine Young Cannibals",
+        "album_hint": "The Raw & the Cooked",
+        "release_year_hint": 1988,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r048",
+        "role": "reserve",
+        "title": "Ain't Nobody",
+        "artist_credit": "Rufus and Chaka Khan",
+        "album_hint": "Stompin' at the Savoy",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r049",
+        "role": "reserve",
+        "title": "Love Shack",
+        "artist_credit": "The B-52's",
+        "album_hint": "Cosmic Thing",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r050",
+        "role": "reserve",
+        "title": "Free Fallin'",
+        "artist_credit": "Tom Petty",
+        "album_hint": "Full Moon Fever",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      }
+    ]
+  }
+}

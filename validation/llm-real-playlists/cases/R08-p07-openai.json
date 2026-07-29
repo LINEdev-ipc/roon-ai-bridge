@@ -1,0 +1,1495 @@
+{
+  "case_id": "R08",
+  "legacy_prompt_id": "P07",
+  "human_prompt": "Haz una playlist de 100 grabaciones en directo que transmitan bien la energía del concierto.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "response_id": "resp_00568f00fa8275e5006a695cef4ea08191909ac364579cd84e",
+    "started_at": "2026-07-29T01:52:46.433Z",
+    "completed_at": "2026-07-29T01:54:33.970Z",
+    "elapsed_ms": 107537,
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "438f4e22066989a68628065de2b2993fc9a6d32e2df9c3b96a369c565d568c22",
+    "usage": {
+      "input_tokens": 1798,
+      "input_tokens_details": {
+        "cache_write_tokens": 23,
+        "cached_tokens": 1644
+      },
+      "output_tokens": 7627,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 9425
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "Energía en directo: 100 conciertos esenciales",
+    "description": "100 grabaciones en directo elegidas por su intensidad, interacción con el público, improvisación y capacidad de transmitir la energía de estar allí. Rock, soul, funk, punk, metal, jazz, reggae, electrónica y música latina.",
+    "desired_count": 100,
+    "selection_complexity": "exact_versions",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "role": "primary",
+        "title": "Thunder Road",
+        "artist_credit": "Bruce Springsteen & The E Street Band",
+        "album_hint": "Live/1975-85",
+        "release_year_hint": 1986,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "I Want You to Want Me",
+        "artist_credit": "Cheap Trick",
+        "album_hint": "Cheap Trick at Budokan",
+        "release_year_hint": 1979,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Don't Let Me Be Misunderstood",
+        "artist_credit": "Nina Simone",
+        "album_hint": "Nina Simone at Town Hall",
+        "release_year_hint": 1959,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "No Woman, No Cry",
+        "artist_credit": "Bob Marley & The Wailers",
+        "album_hint": "Live!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "A Song for You",
+        "artist_credit": "Donny Hathaway",
+        "album_hint": "Live",
+        "release_year_hint": 1972,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Whipping Post",
+        "artist_credit": "The Allman Brothers Band",
+        "album_hint": "At Fillmore East",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Try a Little Tenderness",
+        "artist_credit": "Otis Redding",
+        "album_hint": "Live in Europe",
+        "release_year_hint": 1967,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Folsom Prison Blues",
+        "artist_credit": "Johnny Cash",
+        "album_hint": "At Folsom Prison",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Soul Sacrifice",
+        "artist_credit": "Santana",
+        "album_hint": "Woodstock: Music from the Original Soundtrack and More",
+        "release_year_hint": 1970,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "The Who - A Quick One, While He's Away",
+        "artist_credit": "The Who",
+        "album_hint": "The Rolling Stones Rock and Roll Circus",
+        "release_year_hint": 1996,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Machine Gun",
+        "artist_credit": "Jimi Hendrix",
+        "album_hint": "Band of Gypsys",
+        "release_year_hint": 1970,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Somebody to Love",
+        "artist_credit": "Queen",
+        "album_hint": "Queen Rock Montreal",
+        "release_year_hint": 2007,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Gimme Shelter",
+        "artist_credit": "The Rolling Stones",
+        "album_hint": "Brussels Affair (Live 1973)",
+        "release_year_hint": 2011,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Whole Lotta Rosie",
+        "artist_credit": "AC/DC",
+        "album_hint": "If You Want Blood You've Got It",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Detroit Rock City",
+        "artist_credit": "KISS",
+        "album_hint": "Alive!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "The Spirit of Radio",
+        "artist_credit": "Rush",
+        "album_hint": "Exit... Stage Left",
+        "release_year_hint": 1981,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Comfortably Numb",
+        "artist_credit": "Pink Floyd",
+        "album_hint": "Pulse",
+        "release_year_hint": 1995,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Sultans of Swing",
+        "artist_credit": "Dire Straits",
+        "album_hint": "Alchemy: Dire Straits Live",
+        "release_year_hint": 1984,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Cocaine",
+        "artist_credit": "Eric Clapton",
+        "album_hint": "Just One Night",
+        "release_year_hint": 1980,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Smoke on the Water",
+        "artist_credit": "Deep Purple",
+        "album_hint": "Made in Japan",
+        "release_year_hint": 1972,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Since I've Been Loving You",
+        "artist_credit": "Led Zeppelin",
+        "album_hint": "How the West Was Won",
+        "release_year_hint": 2003,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Burn",
+        "artist_credit": "Deep Purple",
+        "album_hint": "Made in Europe",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Rock and Roll All Nite",
+        "artist_credit": "KISS",
+        "album_hint": "Alive!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Bad",
+        "artist_credit": "U2",
+        "album_hint": "Wide Awake in America",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Where the Streets Have No Name",
+        "artist_credit": "U2",
+        "album_hint": "U2 Go Home: Live from Slane Castle, Ireland",
+        "release_year_hint": 2003,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Psycho Killer",
+        "artist_credit": "Talking Heads",
+        "album_hint": "Stop Making Sense",
+        "release_year_hint": 1984,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Life During Wartime",
+        "artist_credit": "Talking Heads",
+        "album_hint": "Stop Making Sense",
+        "release_year_hint": 1984,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Radio Radio",
+        "artist_credit": "Elvis Costello & The Attractions",
+        "album_hint": "Live at the El Mocambo",
+        "release_year_hint": 1993,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Gloria",
+        "artist_credit": "Patti Smith Group",
+        "album_hint": "Set Free: The Best of Patti Smith",
+        "release_year_hint": 1996,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Kick Out the Jams",
+        "artist_credit": "MC5",
+        "album_hint": "Kick Out the Jams",
+        "release_year_hint": 1969,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Search and Destroy",
+        "artist_credit": "Iggy & The Stooges",
+        "album_hint": "Metallic K.O.",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Complete Control",
+        "artist_credit": "The Clash",
+        "album_hint": "From Here to Eternity: Live",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Blitzkrieg Bop",
+        "artist_credit": "Ramones",
+        "album_hint": "It's Alive",
+        "release_year_hint": 1979,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "London Calling",
+        "artist_credit": "The Clash",
+        "album_hint": "From Here to Eternity: Live",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Sonic Reducer",
+        "artist_credit": "Dead Boys",
+        "album_hint": "Night of the Living Dead Boys",
+        "release_year_hint": 1981,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Waiting Room",
+        "artist_credit": "Fugazi",
+        "album_hint": "Instrument Soundtrack",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Minor Threat",
+        "artist_credit": "Minor Threat",
+        "album_hint": "Live at the 9:30 Club",
+        "release_year_hint": 2017,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "New Noise",
+        "artist_credit": "Refused",
+        "album_hint": "The Shape of Punk to Come: A Chimerical Bombination in 12 Bursts (Deluxe Edition)",
+        "release_year_hint": 2010,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Territorial Pissings",
+        "artist_credit": "Nirvana",
+        "album_hint": "Live at Reading",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Alive",
+        "artist_credit": "Pearl Jam",
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Jesus Christ Pose",
+        "artist_credit": "Soundgarden",
+        "album_hint": "Live on I-5",
+        "release_year_hint": 2011,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Would?",
+        "artist_credit": "Alice in Chains",
+        "album_hint": "Unplugged",
+        "release_year_hint": 1996,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Bullet in the Head",
+        "artist_credit": "Rage Against the Machine",
+        "album_hint": "Live at the Grand Olympic Auditorium",
+        "release_year_hint": 2003,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Sabotage",
+        "artist_credit": "Beastie Boys",
+        "album_hint": "Live at Glasgow 1999",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Stockholm Syndrome",
+        "artist_credit": "Muse",
+        "album_hint": "HAARP",
+        "release_year_hint": 2008,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Plug In Baby",
+        "artist_credit": "Muse",
+        "album_hint": "Hullabaloo Soundtrack",
+        "release_year_hint": 2002,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Brianstorm",
+        "artist_credit": "Arctic Monkeys",
+        "album_hint": "At the Apollo",
+        "release_year_hint": 2008,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "When You Were Young",
+        "artist_credit": "The Killers",
+        "album_hint": "Live from the Royal Albert Hall",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Mr. Brightside",
+        "artist_credit": "The Killers",
+        "album_hint": "Live from the Royal Albert Hall",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Reptilia",
+        "artist_credit": "The Strokes",
+        "album_hint": "Live in Iceland 2002",
+        "release_year_hint": 2002,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Take Me Out",
+        "artist_credit": "Franz Ferdinand",
+        "album_hint": "Live Tonight",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Common People",
+        "artist_credit": "Pulp",
+        "album_hint": "Party Clowns: Live in London 1991",
+        "release_year_hint": 2012,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Girls & Boys",
+        "artist_credit": "Blur",
+        "album_hint": "Parklive",
+        "release_year_hint": 2012,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "I Am the Resurrection",
+        "artist_credit": "The Stone Roses",
+        "album_hint": "The Complete Stone Roses",
+        "release_year_hint": 1995,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "There Is a Light That Never Goes Out",
+        "artist_credit": "The Smiths",
+        "album_hint": "Rank",
+        "release_year_hint": 1988,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Disorder",
+        "artist_credit": "Joy Division",
+        "album_hint": "Les Bains Douches 18 December 1979",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Ceremony",
+        "artist_credit": "New Order",
+        "album_hint": "BBC Radio 1 Live in Concert",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "A Forest",
+        "artist_credit": "The Cure",
+        "album_hint": "Concert: The Cure Live",
+        "release_year_hint": 1984,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Bela Lugosi's Dead",
+        "artist_credit": "Bauhaus",
+        "album_hint": "Press the Eject and Give Me the Tape",
+        "release_year_hint": 1982,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "She Sells Sanctuary",
+        "artist_credit": "The Cult",
+        "album_hint": "Live at the Marquee",
+        "release_year_hint": 1993,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Ace of Spades",
+        "artist_credit": "Motörhead",
+        "album_hint": "No Sleep 'til Hammersmith",
+        "release_year_hint": 1981,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "The Trooper",
+        "artist_credit": "Iron Maiden",
+        "album_hint": "Live After Death",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Creeping Death",
+        "artist_credit": "Metallica",
+        "album_hint": "Live Shit: Binge & Purge",
+        "release_year_hint": 1993,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "War Pigs",
+        "artist_credit": "Black Sabbath",
+        "album_hint": "Reunion",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Victim of Changes",
+        "artist_credit": "Judas Priest",
+        "album_hint": "Unleashed in the East",
+        "release_year_hint": 1979,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Over the Mountain",
+        "artist_credit": "Ozzy Osbourne",
+        "album_hint": "Tribute",
+        "release_year_hint": 1987,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Cowboys from Hell",
+        "artist_credit": "Pantera",
+        "album_hint": "Official Live: 101 Proof",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Raining Blood",
+        "artist_credit": "Slayer",
+        "album_hint": "Decade of Aggression",
+        "release_year_hint": 1991,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Holy Wars... The Punishment Due",
+        "artist_credit": "Megadeth",
+        "album_hint": "That One Night: Live in Buenos Aires",
+        "release_year_hint": 2007,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Ghost of Perdition",
+        "artist_credit": "Opeth",
+        "album_hint": "The Roundhouse Tapes",
+        "release_year_hint": 2007,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Deliverance",
+        "artist_credit": "Opeth",
+        "album_hint": "Garden of the Titans: Live at Red Rocks Amphitheatre",
+        "release_year_hint": 2018,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Bleed",
+        "artist_credit": "Meshuggah",
+        "album_hint": "The Ophidian Trek",
+        "release_year_hint": 2014,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Pull Me Under",
+        "artist_credit": "Dream Theater",
+        "album_hint": "Live at the Marquee",
+        "release_year_hint": 1993,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Freeway Jam",
+        "artist_credit": "Jeff Beck with the Jan Hammer Group",
+        "album_hint": "Jeff Beck with the Jan Hammer Group Live",
+        "release_year_hint": 1977,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Chameleon",
+        "artist_credit": "Herbie Hancock",
+        "album_hint": "Flood",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "What Is Hip?",
+        "artist_credit": "Tower of Power",
+        "album_hint": "Soul Vaccination: Live",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "The Chicken",
+        "artist_credit": "Jaco Pastorius",
+        "album_hint": "Invitation",
+        "release_year_hint": 1983,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Spanish Moon",
+        "artist_credit": "Little Feat",
+        "album_hint": "Waiting for Columbus",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "The Ghetto",
+        "artist_credit": "Donny Hathaway",
+        "album_hint": "Live",
+        "release_year_hint": 1972,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Cold Sweat",
+        "artist_credit": "James Brown",
+        "album_hint": "Live at the Apollo, Volume II",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "I Got You (I Feel Good)",
+        "artist_credit": "James Brown",
+        "album_hint": "Live at the Apollo, Volume II",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Land of 1000 Dances",
+        "artist_credit": "Wilson Pickett",
+        "album_hint": "Live in Japan",
+        "release_year_hint": 1974,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Respect",
+        "artist_credit": "Aretha Franklin",
+        "album_hint": "Aretha Live at Fillmore West",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Dr. Feelgood",
+        "artist_credit": "Aretha Franklin",
+        "album_hint": "Aretha Live at Fillmore West",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "I Can't Turn You Loose",
+        "artist_credit": "Otis Redding",
+        "album_hint": "In Person at the Whisky a Go Go",
+        "release_year_hint": 1968,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Chain of Fools",
+        "artist_credit": "The Commitments",
+        "album_hint": "The Commitments Vol. 2",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Bring It on Home to Me",
+        "artist_credit": "Sam Cooke",
+        "album_hint": "Live at the Harlem Square Club, 1963",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Twistin' the Night Away",
+        "artist_credit": "Sam Cooke",
+        "album_hint": "Live at the Harlem Square Club, 1963",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Proud Mary",
+        "artist_credit": "Ike & Tina Turner",
+        "album_hint": "What You Hear Is What You Get: Live at Carnegie Hall",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Ain't No Way",
+        "artist_credit": "Patti LaBelle",
+        "album_hint": "Live! One Night Only",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Tyrone",
+        "artist_credit": "Erykah Badu",
+        "album_hint": "Live",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Home",
+        "artist_credit": "Beyoncé",
+        "album_hint": "I Am... World Tour",
+        "release_year_hint": 2010,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Purple Rain",
+        "artist_credit": "Prince and the Revolution",
+        "album_hint": "Purple Rain Deluxe Expanded Edition",
+        "release_year_hint": 2017,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "The Beautiful Ones",
+        "artist_credit": "Prince",
+        "album_hint": "One Nite Alone... Live!",
+        "release_year_hint": 2002,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "I'll Take You There",
+        "artist_credit": "The Staple Singers",
+        "album_hint": "The Last Waltz",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Caravan",
+        "artist_credit": "Van Morrison",
+        "album_hint": "It's Too Late to Stop Now",
+        "release_year_hint": 1974,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Mannish Boy",
+        "artist_credit": "Muddy Waters",
+        "album_hint": "Muddy \"Mississippi\" Waters Live",
+        "release_year_hint": 1979,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Sweet Home Chicago",
+        "artist_credit": "Buddy Guy and Junior Wells",
+        "album_hint": "Drinkin' TNT 'n' Smokin' Dynamite",
+        "release_year_hint": 1982,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Stormy Monday",
+        "artist_credit": "B.B. King",
+        "album_hint": "Live at the Regal",
+        "release_year_hint": 1965,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "I Just Want to Make Love to You",
+        "artist_credit": "Etta James",
+        "album_hint": "Etta James Rocks the House",
+        "release_year_hint": 1964,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Born to Run",
+        "artist_credit": "Bruce Springsteen & The E Street Band",
+        "album_hint": "Live/1975-85",
+        "release_year_hint": 1986,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Maybe I'm Amazed",
+        "artist_credit": "Paul McCartney and Wings",
+        "album_hint": "Wings over America",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Show Me the Way",
+        "artist_credit": "Peter Frampton",
+        "album_hint": "Frampton Comes Alive!",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Do You Feel Like We Do",
+        "artist_credit": "Peter Frampton",
+        "album_hint": "Frampton Comes Alive!",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Statesboro Blues",
+        "artist_credit": "The Allman Brothers Band",
+        "album_hint": "At Fillmore East",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Midnight Rambler",
+        "artist_credit": "The Rolling Stones",
+        "album_hint": "Get Yer Ya-Ya's Out!",
+        "release_year_hint": 1970,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Dazed and Confused",
+        "artist_credit": "Led Zeppelin",
+        "album_hint": "The Song Remains the Same",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Won't Get Fooled Again",
+        "artist_credit": "The Who",
+        "album_hint": "Live at Leeds",
+        "release_year_hint": 1995,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Highway Star",
+        "artist_credit": "Deep Purple",
+        "album_hint": "Made in Japan",
+        "release_year_hint": 1972,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Let There Be Rock",
+        "artist_credit": "AC/DC",
+        "album_hint": "If You Want Blood You've Got It",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "La Grange",
+        "artist_credit": "ZZ Top",
+        "album_hint": "Fandango!",
+        "release_year_hint": 1975,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Free Bird",
+        "artist_credit": "Lynyrd Skynyrd",
+        "album_hint": "One More from the Road",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Turn the Page",
+        "artist_credit": "Bob Seger & The Silver Bullet Band",
+        "album_hint": "Live Bullet",
+        "release_year_hint": 1976,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "25 or 6 to 4",
+        "artist_credit": "Chicago",
+        "album_hint": "Chicago at Carnegie Hall",
+        "release_year_hint": 1971,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Rockin' in the Free World",
+        "artist_credit": "Neil Young & Crazy Horse",
+        "album_hint": "Weld",
+        "release_year_hint": 1991,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Cortez the Killer",
+        "artist_credit": "Neil Young & Crazy Horse",
+        "album_hint": "Weld",
+        "release_year_hint": 1991,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Down by the River",
+        "artist_credit": "Neil Young & Crazy Horse",
+        "album_hint": "Live at the Fillmore East",
+        "release_year_hint": 2006,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Rhiannon",
+        "artist_credit": "Fleetwood Mac",
+        "album_hint": "The Dance",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "The Chain",
+        "artist_credit": "Fleetwood Mac",
+        "album_hint": "The Dance",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Go Your Own Way",
+        "artist_credit": "Fleetwood Mac",
+        "album_hint": "Live",
+        "release_year_hint": 1980,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Running on Empty",
+        "artist_credit": "Jackson Browne",
+        "album_hint": "Running on Empty",
+        "release_year_hint": 1977,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Doctor My Eyes",
+        "artist_credit": "Jackson Browne",
+        "album_hint": "Solo Acoustic, Vol. 1",
+        "release_year_hint": 2005,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "The Load-Out / Stay",
+        "artist_credit": "Jackson Browne",
+        "album_hint": "Running on Empty",
+        "release_year_hint": 1977,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Hotel California",
+        "artist_credit": "Eagles",
+        "album_hint": "Hell Freezes Over",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Take It Easy",
+        "artist_credit": "Eagles",
+        "album_hint": "Eagles Live",
+        "release_year_hint": 1980,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Rosanna",
+        "artist_credit": "Toto",
+        "album_hint": "Absolutely Live",
+        "release_year_hint": 1993,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Africa",
+        "artist_credit": "Toto",
+        "album_hint": "Live in Amsterdam",
+        "release_year_hint": 2003,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Don't Stop Believin'",
+        "artist_credit": "Journey",
+        "album_hint": "Captured",
+        "release_year_hint": 1981,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Separate Ways (Worlds Apart)",
+        "artist_credit": "Journey",
+        "album_hint": "Live in Houston 1981: The Escape Tour",
+        "release_year_hint": 2005,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "More Than a Feeling",
+        "artist_credit": "Boston",
+        "album_hint": "Live at the Agora Ballroom 1976",
+        "release_year_hint": 2015,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Renegade",
+        "artist_credit": "Styx",
+        "album_hint": "Caught in the Act",
+        "release_year_hint": 1984,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Carry On Wayward Son",
+        "artist_credit": "Kansas",
+        "album_hint": "Two for the Show",
+        "release_year_hint": 1978,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Barracuda",
+        "artist_credit": "Heart",
+        "album_hint": "The Road Home",
+        "release_year_hint": 1995,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Dream On",
+        "artist_credit": "Aerosmith",
+        "album_hint": "A Little South of Sanity",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Paradise City",
+        "artist_credit": "Guns N' Roses",
+        "album_hint": "Live Era '87-'93",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "You Could Be Mine",
+        "artist_credit": "Guns N' Roses",
+        "album_hint": "Live Era '87-'93",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Panama",
+        "artist_credit": "Van Halen",
+        "album_hint": "Live: Right Here, Right Now",
+        "release_year_hint": 1993,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Still of the Night",
+        "artist_credit": "Whitesnake",
+        "album_hint": "Live... in the Shadow of the Blues",
+        "release_year_hint": 2006,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Rock You Like a Hurricane",
+        "artist_credit": "Scorpions",
+        "album_hint": "World Wide Live",
+        "release_year_hint": 1985,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Crazy Train",
+        "artist_credit": "Ozzy Osbourne",
+        "album_hint": "Tribute",
+        "release_year_hint": 1987,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Fear of the Dark",
+        "artist_credit": "Iron Maiden",
+        "album_hint": "Rock in Rio",
+        "release_year_hint": 2002,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Master of Puppets",
+        "artist_credit": "Metallica",
+        "album_hint": "S&M",
+        "release_year_hint": 1999,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "South of Heaven",
+        "artist_credit": "Slayer",
+        "album_hint": "Decade of Aggression",
+        "release_year_hint": 1991,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Walk",
+        "artist_credit": "Pantera",
+        "album_hint": "Official Live: 101 Proof",
+        "release_year_hint": 1997,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Wait and Bleed",
+        "artist_credit": "Slipknot",
+        "album_hint": "9.0: Live",
+        "release_year_hint": 2005,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Duality",
+        "artist_credit": "Slipknot",
+        "album_hint": "Day of the Gusano: Live in Mexico",
+        "release_year_hint": 2017,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Chop Suey!",
+        "artist_credit": "System of a Down",
+        "album_hint": "Live at the Astoria",
+        "release_year_hint": 2005,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Killing in the Name",
+        "artist_credit": "Rage Against the Machine",
+        "album_hint": "Live at the Grand Olympic Auditorium",
+        "release_year_hint": 2003,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "In Bloom",
+        "artist_credit": "Nirvana",
+        "album_hint": "Live at Reading",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Black",
+        "artist_credit": "Pearl Jam",
+        "album_hint": "Live on Two Legs",
+        "release_year_hint": 1998,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Rusty Cage",
+        "artist_credit": "Soundgarden",
+        "album_hint": "Live on I-5",
+        "release_year_hint": 2011,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Cherub Rock",
+        "artist_credit": "The Smashing Pumpkins",
+        "album_hint": "Earphoria",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Song 2",
+        "artist_credit": "Blur",
+        "album_hint": "Parklive",
+        "release_year_hint": 2012,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Knights of Cydonia",
+        "artist_credit": "Muse",
+        "album_hint": "HAARP",
+        "release_year_hint": 2008,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "All These Things That I've Done",
+        "artist_credit": "The Killers",
+        "album_hint": "Live from the Royal Albert Hall",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Idioteque",
+        "artist_credit": "Radiohead",
+        "album_hint": "I Might Be Wrong: Live Recordings",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Everything in Its Right Place",
+        "artist_credit": "Radiohead",
+        "album_hint": "I Might Be Wrong: Live Recordings",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Hyperballad",
+        "artist_credit": "Björk",
+        "album_hint": "Homogenic Live",
+        "release_year_hint": 2003,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Cowgirl",
+        "artist_credit": "Underworld",
+        "album_hint": "Everything, Everything",
+        "release_year_hint": 2000,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Born Slippy .NUXX",
+        "artist_credit": "Underworld",
+        "album_hint": "Everything, Everything",
+        "release_year_hint": 2000,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Da Funk / Daftendirekt",
+        "artist_credit": "Daft Punk",
+        "album_hint": "Alive 1997",
+        "release_year_hint": 2001,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      }
+    ]
+  }
+}

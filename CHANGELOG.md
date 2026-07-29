@@ -3,6 +3,25 @@
 All notable production changes are documented here. Validation evidence for
 each release lives under [`docs/`](docs/README.md).
 
+## 0.20.0 Beta 16 - Unreleased
+
+- Make the playlist MCP contract generate larger, better-structured reserve
+  pools for constrained and exact-version requests, with explicit official
+  audio release, collaborator, native-title and permanent-playlist guidance.
+- Reject MusicBrainz video recordings and video-only ListenBrainz identities
+  while recovering the corresponding official audio recording when evidence
+  uniquely identifies it.
+- Resolve additional exact live, remix and alternate recordings through
+  release-specific ListenBrainz evidence, collective artist equivalence and
+  normalized MusicBrainz release metadata without weakening version gates.
+- Recover safe Roon bindings when linked performer credits or an exact
+  MusicBrainz live-performance location identify the playable result, while
+  continuing to reject another concert or an unanchored generic live result.
+- Retain more reconciliation candidates and share provider work so reserve
+  tracks can replace genuine conflicts without repeating unnecessary searches.
+- Add an optional direct Roon Core connection for routed or VLAN environments
+  together with isolated local validation start and stop scripts.
+
 ## 0.20.0 Beta 15 - Unreleased
 
 - Recover failed MusicBrainz identities from a cached release tracklist while

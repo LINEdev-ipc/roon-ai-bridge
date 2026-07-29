@@ -212,7 +212,7 @@ test("playlist build reports the adaptive reserve policy and stops after reachin
   assert.equal(completed.playlist.tracks_count, 2);
   assert.deepEqual(completed.performance.reserve_policy, {
     complexity: "exact_versions",
-    multiplier: 1.6,
+    multiplier: 2,
     desired_count: 2,
     recommended_candidates: 4,
     supplied_candidates: 4,
@@ -251,6 +251,78 @@ test("playlist build rejects an unintended live result and fills the target from
   assert.equal(result.rejected[0].candidate_id, "p1");
   assert.equal(result.rejected[0].status, "missing");
   assert.equal(result.accepted[0].role, "reserve");
+});
+
+test("playlist build never treats a composer credit as the primary performer", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const wrongPerformer = mediaTrack(
+    "wrong-performer",
+    "Honky Tonk Women",
+    "TSM Makol",
+    {
+      extra: {
+        artists: [
+          { type: "artist", title: "TSM Makol", artist: null, result_id: null },
+          { type: "artist", title: "The Rolling Stones", artist: null, result_id: null }
+        ],
+        links: {
+          artist: {
+            type: "artist",
+            title: "TSM Makol",
+            artist: null,
+            result_id: "artist-tsm-makol"
+          },
+          artists: [
+            {
+              type: "artist",
+              title: "TSM Makol",
+              artist: null,
+              result_id: "artist-tsm-makol"
+            },
+            {
+              type: "artist",
+              title: "The Rolling Stones",
+              artist: null,
+              result_id: "artist-rolling-stones"
+            }
+          ],
+          album: null
+        },
+        composer: "The Rolling Stones"
+      }
+    }
+  );
+  const media = fakeMedia((request) => {
+    if (request.query.includes("Honky Tonk Women")) return [wrongPerformer];
+    if (request.query.includes("Brown Sugar")) {
+      return [mediaTrack("reserve-stones", "Brown Sugar", "The Rolling Stones")];
+    }
+    return [];
+  });
+
+  const result = await new PlaylistBuildService(playlistService, media).build({
+    name: "Primary performer gate",
+    desired_count: 1,
+    tracks: [
+      {
+        candidate_id: "wrong",
+        title: "Honky Tonk Women",
+        artist_credit: "The Rolling Stones",
+        required_credits: [{ name: "The Rolling Stones", role: "primary" }]
+      },
+      {
+        candidate_id: "reserve",
+        role: "reserve",
+        title: "Brown Sugar",
+        artist_credit: "The Rolling Stones",
+        required_credits: [{ name: "The Rolling Stones", role: "primary" }]
+      }
+    ]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.accepted[0].candidate_id, "reserve");
+  assert.equal(result.rejected[0].candidate_id, "wrong");
 });
 
 test("playlist build never promotes two indistinguishable strict matches out of ambiguity", async () => {
@@ -601,8 +673,12 @@ test("published remixes and covers bind without requiring unavailable Roon album
     provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
     warnings: []
   });
+  const catalogInputs = [];
   const trackCatalogService = {
-    resolve: async (input) => ({ resolution: { status: "exact" }, profile: profile(input) }),
+    resolve: async (input) => {
+      catalogInputs.push(input);
+      return { resolution: { status: "exact" }, profile: profile(input) };
+    },
     bind: () => ({ status: "observed" })
   };
   const enrichmentCalls = [];
@@ -661,6 +737,10 @@ test("published remixes and covers bind without requiring unavailable Roon album
     ["depeche-home-remix", "cat-power-cover"]
   );
   assert.equal(enrichmentCalls.length, 2);
+  assert.deepEqual(
+    catalogInputs.map((input) => input.require_release_match),
+    [false, false]
+  );
 });
 
 test("a Roon live suffix must carry the requested release anchor before fast binding", async () => {
@@ -762,6 +842,107 @@ test("a Roon live suffix must carry the requested release anchor before fast bin
 
   assert.equal(result.complete, true);
   assert.equal(result.playlist.tracks[0].resolution.selected_result_id, "nina-town-hall-fast");
+});
+
+test("exact live binding matches a Roon venue suffix to the MusicBrainz performance", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => [
+    mediaTrack(
+      "muse-rome",
+      "Hysteria (Rome Olympic Stadium Live)",
+      "Matthew Bellamy, Muse",
+      { versionHint: "live" }
+    ),
+    mediaTrack(
+      "muse-wembley",
+      "Hysteria (Wembley Stadium Live)",
+      "Matthew Bellamy, Muse",
+      { versionHint: "live" }
+    )
+  ]);
+  const profile = {
+    status: "exact",
+    reason: "unique_compatible_recording_from_release_observation_identity_only",
+    recording: {
+      musicbrainz_id: "mb-muse-wembley",
+      title: "Hysteria",
+      artist_credit: [{ musicbrainz_id: "muse", name: "Muse", join_phrase: "" }],
+      disambiguation: "live, 2007-06-16: Wembley Stadium, London, England, UK",
+      duration_seconds: null,
+      duration_source: null,
+      isrcs: []
+    },
+    composers: [],
+    lyricists: [],
+    genres: [],
+    release_group: {
+      musicbrainz_id: "group-haarp",
+      title: "HAARP",
+      artist_credit: [],
+      first_release_date: "2008",
+      release_year: 2008,
+      primary_type: "Album",
+      secondary_types: ["Live"],
+      disambiguation: null,
+      selection_reason: "catalog_album_matches_observed_album"
+    },
+    release: null,
+    work: null,
+    credits: [],
+    cover_art: null,
+    roon_binding: null,
+    provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+    warnings: []
+  };
+  const trackCatalogService = {
+    resolve: async () => ({ resolution: { status: "exact" }, profile }),
+    bind: () => ({ status: "observed" })
+  };
+  const metadataService = {
+    enrichResult: async (result, hints) => {
+      assert.equal(result.result_id, "muse-wembley");
+      assert.equal(hints.verify_release, false);
+      return {
+        result,
+        audio_metadata: {
+          title: result.title,
+          artist: result.artist,
+          album: null,
+          metadata_status: "partial"
+        },
+        report: {
+          observed_at: "2026-07-29T00:00:00.000Z",
+          album_result_id: null,
+          warnings: []
+        }
+      };
+    }
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    metadataService,
+    trackCatalogService
+  );
+
+  const result = await builder.build({
+    name: "Wembley performance anchor",
+    desired_count: 1,
+    enqueue_metadata_enrichment: false,
+    tracks: [{
+      title: "Hysteria",
+      artist_credit: "Muse",
+      album_hint: "HAARP",
+      release_year_hint: 2008,
+      recording_intent: "live",
+      performance_sensitive: true
+    }]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.playlist.tracks[0].resolution.selected_result_id, "muse-wembley");
 });
 
 test("exact live binding rejects another concert and selects the requested release", async () => {
@@ -1109,6 +1290,33 @@ test("dub is treated as a genre word unless the title identifies a dub version",
   assert.equal(explicitVersion.added_count, 1, JSON.stringify(explicitVersion));
 });
 
+test("naturally acoustic songs remain standard unless an acoustic version is explicit", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => {
+    return [mediaTrack("pink-moon", "Pink Moon", "Nick Drake", {
+      album: "Pink Moon"
+    })];
+  });
+  const builder = new PlaylistBuildService(playlistService, media);
+
+  const result = await builder.build({
+    name: "Acoustic mood",
+    tracks: [{
+      title: "Pink Moon",
+      artist_credit: "Nick Drake",
+      album_hint: "Pink Moon",
+      recording_intent: "acoustic",
+      performance_sensitive: false
+    }]
+  });
+
+  assert.equal(result.added_count, 1, JSON.stringify(result));
+  assert.equal(
+    result.playlist.tracks[0].user_metadata.llm_hints.recording_intent,
+    "standard"
+  );
+});
+
 test("playlist preflight overlaps speculative Roon discovery with MusicBrainz and persists canonical identity", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const roonTrack = mediaTrack("canonical-roon", "Canonical Song", "Canonical Artist, Secondary Credit", {
@@ -1148,6 +1356,7 @@ test("playlist preflight overlaps speculative Roon discovery with MusicBrainz an
       assert.equal(input.release_year, undefined);
       assert.equal(input.release_year_observation, 2011);
       assert.equal(input.metadata_depth, "identity");
+      assert.equal(input.prefer_release_tracklist, true);
       return {
         resolution: { status: "exact" },
         profile: {
@@ -1217,6 +1426,7 @@ test("playlist preflight overlaps speculative Roon discovery with MusicBrainz an
   const result = await builder.prepareCandidate({
     title: "Model Song",
     artist_credit: "Model Artist",
+    album_hint: "Model Album",
     release_year_hint: 2011
   });
 
@@ -1238,6 +1448,95 @@ test("playlist preflight overlaps speculative Roon discovery with MusicBrainz an
     "Canonical Song Canonical Artist"
   ]);
   assert.equal(enrichmentCalls, 1);
+});
+
+test("playlist binding trusts MusicBrainz featured credits when Roon exposes only the lead artist", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const media = fakeMedia(() => [
+    mediaTrack("rumble-roon", "Rumble", "Skrillex", {
+      album: "Rumble",
+      durationSeconds: 146
+    })
+  ]);
+  const trackCatalogService = {
+    resolve: async () => ({
+      resolution: {
+        status: "exact",
+        trace: {
+          provider_requests: 1,
+          cache_hit: false,
+          listenbrainz: null
+        }
+      },
+      profile: {
+        status: "exact",
+        reason: "unique_compatible_recording_identity_only",
+        recording: {
+          musicbrainz_id: "rumble-recording",
+          title: "Rumble",
+          artist_credit: [
+            { musicbrainz_id: "skrillex", name: "Skrillex", join_phrase: ", " },
+            { musicbrainz_id: "fred-again", name: "Fred again..", join_phrase: " & " },
+            { musicbrainz_id: "flowdan", name: "Flowdan", join_phrase: "" }
+          ],
+          disambiguation: null,
+          duration_seconds: 146,
+          duration_source: "musicbrainz_recording_median",
+          isrcs: []
+        },
+        composers: [],
+        lyricists: [],
+        genres: [],
+        release_group: {
+          musicbrainz_id: "rumble-group",
+          title: "Rumble",
+          artist_credit: [],
+          first_release_date: "2023-01-04",
+          release_year: 2023,
+          primary_type: "Single",
+          secondary_types: [],
+          disambiguation: null,
+          selection_reason: "earliest_official_single"
+        },
+        release: null,
+        work: null,
+        credits: [],
+        cover_art: null,
+        roon_binding: null,
+        provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+        warnings: ["metadata_enrichment_pending"]
+      }
+    }),
+    bind: () => ({ status: "observed" })
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    undefined,
+    trackCatalogService
+  );
+
+  const result = await builder.build({
+    name: "Collaborations",
+    desired_count: 1,
+    enqueue_metadata_enrichment: false,
+    tracks: [{
+      title: "Rumble",
+      artist_credit: "Skrillex, Fred again.. & Flowdan",
+      required_credits: [
+        { name: "Skrillex", role: "primary" },
+        { name: "Fred again..", role: "featured" },
+        { name: "Flowdan", role: "featured" }
+      ],
+      album_hint: "Rumble"
+    }]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.added_count, 1);
+  assert.equal(result.accepted[0].musicbrainz_recording_id, "rumble-recording");
 });
 
 test("playlist binding accepts equivalent Roon editions when canonical duration agrees", async () => {
@@ -1330,6 +1629,114 @@ test("playlist binding accepts equivalent Roon editions when canonical duration 
     mode: "disabled",
     queued_tracks: 1
   });
+});
+
+test("playlist binding uses a high-confidence Roon match when the performer follows linked contributors", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const roonTrack = mediaTrack(
+    "blue-monday-original",
+    "Blue Monday",
+    "Bernard Sumner, Peter Hook, Stephen Morris, Gillian Gilbert, New Order",
+    {
+      extra: {
+        direct_match_score: 120,
+        artists: [
+          { type: "artist", title: "Bernard Sumner", artist: null, result_id: null },
+          { type: "artist", title: "Peter Hook", artist: null, result_id: null },
+          { type: "artist", title: "Stephen Morris", artist: null, result_id: null },
+          { type: "artist", title: "Gillian Gilbert", artist: null, result_id: null },
+          { type: "artist", title: "New Order", artist: null, result_id: null }
+        ],
+        links: {
+          artist: {
+            type: "artist",
+            title: "Bernard Sumner",
+            artist: null,
+            result_id: "artist-bernard-sumner"
+          },
+          artists: [],
+          album: null
+        }
+      }
+    }
+  );
+  const media = fakeMedia(() => [roonTrack]);
+  const trackCatalogService = {
+    resolve: async () => ({
+      resolution: {
+        status: "exact",
+        trace: {
+          provider_requests: 1,
+          cache_hit: false,
+          listenbrainz: null
+        }
+      },
+      profile: {
+        status: "exact",
+        reason: "unique_compatible_recording_identity_only",
+        recording: {
+          musicbrainz_id: "blue-monday-original-recording",
+          title: "Blue Monday",
+          artist_credit: [{
+            musicbrainz_id: "new-order",
+            name: "New Order",
+            join_phrase: ""
+          }],
+          disambiguation: "original 12-inch version",
+          duration_seconds: 449,
+          duration_source: "musicbrainz_recording_median",
+          isrcs: ["GBCRL1100216"]
+        },
+        composers: [],
+        lyricists: [],
+        genres: [],
+        release_group: {
+          musicbrainz_id: "substance-group",
+          title: "Substance",
+          artist_credit: [],
+          first_release_date: "1987-08-17",
+          release_year: 1987,
+          primary_type: "Album",
+          secondary_types: ["Compilation"],
+          disambiguation: null,
+          selection_reason: "compatible_release"
+        },
+        release: null,
+        work: null,
+        credits: [],
+        cover_art: null,
+        roon_binding: null,
+        provenance: { canonical_metadata: "musicbrainz", cover_art: null, playback: null },
+        warnings: ["metadata_enrichment_pending"]
+      }
+    }),
+    bind: () => ({ status: "observed" })
+  };
+  const builder = new PlaylistBuildService(
+    playlistService,
+    media,
+    undefined,
+    "streaming_first",
+    undefined,
+    trackCatalogService
+  );
+
+  const result = await builder.build({
+    name: "Canonical alternate",
+    desired_count: 1,
+    enqueue_metadata_enrichment: false,
+    tracks: [{
+      title: "Blue Monday (12-inch Version)",
+      artist_credit: "New Order",
+      required_credits: [{ name: "New Order", role: "primary" }],
+      album_hint: "Substance",
+      recording_intent: "alternate"
+    }]
+  });
+
+  assert.equal(result.complete, true);
+  assert.equal(result.added_count, 1);
+  assert.equal(result.playlist.tracks[0].resolution.selected_candidate.result_id, "blue-monday-original");
 });
 
 test("playlist creation queues full MusicBrainz enrichment after the playable list is saved", async () => {

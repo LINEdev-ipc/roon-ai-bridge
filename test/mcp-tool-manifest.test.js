@@ -270,6 +270,8 @@ test("HTTP MCP tools/list exposes v2 intents plus six focused read-only render t
     assert.match(savePlaylist.description, /call this tool once/i);
     assert.match(savePlaylist.description, /125%/);
     assert.match(savePlaylist.description, /160%/);
+    assert.match(savePlaylist.description, /200%/);
+    assert.match(savePlaylist.description, /video-only releases are ineligible/i);
     assert.ok(savePlaylist.inputSchema.properties.release_year_from);
     assert.ok(savePlaylist.inputSchema.properties.release_year_to);
     assert.match(

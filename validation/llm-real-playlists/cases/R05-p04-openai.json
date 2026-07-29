@@ -1,0 +1,1548 @@
+{
+  "case_id": "R05",
+  "legacy_prompt_id": "P04",
+  "human_prompt": "Haz una playlist de 100 canciones de rock de los últimos 20 años.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "response_id": "resp_09144825da409262006a695c6eadac819f849bed790f6780a7",
+    "started_at": "2026-07-29T01:50:37.934Z",
+    "completed_at": "2026-07-29T01:52:16.268Z",
+    "elapsed_ms": 98334,
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "438f4e22066989a68628065de2b2993fc9a6d32e2df9c3b96a369c565d568c22",
+    "usage": {
+      "input_tokens": 1795,
+      "input_tokens_details": {
+        "cache_write_tokens": 20,
+        "cached_tokens": 1644
+      },
+      "output_tokens": 7749,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 9544
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "Rock de los últimos 20 años — 100 canciones",
+    "description": "Una selección amplia de rock publicado entre 2006 y 2026: indie, alternativo, garage, hard rock, punk, metal y art rock.",
+    "desired_count": 100,
+    "selection_complexity": "constrained",
+    "release_year_from": 2006,
+    "release_year_to": 2026,
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "candidate_id": "p001",
+        "role": "primary",
+        "title": "Do I Wanna Know?",
+        "artist_credit": "Arctic Monkeys",
+        "album_hint": "AM",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p002",
+        "role": "primary",
+        "title": "The Pretender",
+        "artist_credit": "Foo Fighters",
+        "album_hint": "Echoes, Silence, Patience & Grace",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p003",
+        "role": "primary",
+        "title": "Sex on Fire",
+        "artist_credit": "Kings of Leon",
+        "album_hint": "Only by the Night",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p004",
+        "role": "primary",
+        "title": "Uprising",
+        "artist_credit": "Muse",
+        "album_hint": "The Resistance",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p005",
+        "role": "primary",
+        "title": "Lonely Boy",
+        "artist_credit": "The Black Keys",
+        "album_hint": "El Camino",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p006",
+        "role": "primary",
+        "title": "Radioactive",
+        "artist_credit": "Imagine Dragons",
+        "album_hint": "Night Visions",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p007",
+        "role": "primary",
+        "title": "Knights of Cydonia",
+        "artist_credit": "Muse",
+        "album_hint": "Black Holes and Revelations",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p008",
+        "role": "primary",
+        "title": "My Songs Know What You Did in the Dark (Light Em Up)",
+        "artist_credit": "Fall Out Boy",
+        "album_hint": "Save Rock and Roll",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p009",
+        "role": "primary",
+        "title": "Ain't No Rest for the Wicked",
+        "artist_credit": "Cage the Elephant",
+        "album_hint": "Cage the Elephant",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p010",
+        "role": "primary",
+        "title": "Little Talks",
+        "artist_credit": "Of Monsters and Men",
+        "album_hint": "My Head Is an Animal",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p011",
+        "role": "primary",
+        "title": "I Bet You Look Good on the Dancefloor",
+        "artist_credit": "Arctic Monkeys",
+        "album_hint": "Whatever People Say I Am, That's What I'm Not",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p012",
+        "role": "primary",
+        "title": "No One Knows",
+        "artist_credit": "Queens of the Stone Age",
+        "album_hint": "Songs for the Deaf",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p013",
+        "role": "primary",
+        "title": "Use Somebody",
+        "artist_credit": "Kings of Leon",
+        "album_hint": "Only by the Night",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p014",
+        "role": "primary",
+        "title": "Take Me Out",
+        "artist_credit": "Franz Ferdinand",
+        "album_hint": "Franz Ferdinand",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p015",
+        "role": "primary",
+        "title": "Mountain at My Gates",
+        "artist_credit": "Foals",
+        "album_hint": "What Went Down",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p016",
+        "role": "primary",
+        "title": "Gold on the Ceiling",
+        "artist_credit": "The Black Keys",
+        "album_hint": "El Camino",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p017",
+        "role": "primary",
+        "title": "Figure It Out",
+        "artist_credit": "Royal Blood",
+        "album_hint": "Royal Blood",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p018",
+        "role": "primary",
+        "title": "The Sound",
+        "artist_credit": "The 1975",
+        "album_hint": "I Like It When You Sleep, for You Are So Beautiful yet So Unaware of It",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p019",
+        "role": "primary",
+        "title": "Believer",
+        "artist_credit": "Imagine Dragons",
+        "album_hint": "Evolve",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p020",
+        "role": "primary",
+        "title": "Walk",
+        "artist_credit": "Foo Fighters",
+        "album_hint": "Wasting Light",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p021",
+        "role": "primary",
+        "title": "Pumped Up Kicks",
+        "artist_credit": "Foster the People",
+        "album_hint": "Torches",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p022",
+        "role": "primary",
+        "title": "Somebody Else",
+        "artist_credit": "The 1975",
+        "album_hint": "I Like It When You Sleep, for You Are So Beautiful yet So Unaware of It",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p023",
+        "role": "primary",
+        "title": "Are You Gonna Be My Girl",
+        "artist_credit": "Jet",
+        "album_hint": "Get Born",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p024",
+        "role": "primary",
+        "title": "Still Into You",
+        "artist_credit": "Paramore",
+        "album_hint": "Paramore",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p025",
+        "role": "primary",
+        "title": "Heathens",
+        "artist_credit": "Twenty One Pilots",
+        "album_hint": "Suicide Squad: The Album",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p026",
+        "role": "primary",
+        "title": "Tighten Up",
+        "artist_credit": "The Black Keys",
+        "album_hint": "Brothers",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p027",
+        "role": "primary",
+        "title": "Brianstorm",
+        "artist_credit": "Arctic Monkeys",
+        "album_hint": "Favourite Worst Nightmare",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p028",
+        "role": "primary",
+        "title": "I Will Wait",
+        "artist_credit": "Mumford & Sons",
+        "album_hint": "Babel",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p029",
+        "role": "primary",
+        "title": "Starlight",
+        "artist_credit": "Muse",
+        "album_hint": "Black Holes and Revelations",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p030",
+        "role": "primary",
+        "title": "Shake It Out",
+        "artist_credit": "Florence + the Machine",
+        "album_hint": "Ceremonials",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p031",
+        "role": "primary",
+        "title": "My Number",
+        "artist_credit": "Foals",
+        "album_hint": "Holy Fire",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p032",
+        "role": "primary",
+        "title": "Come a Little Closer",
+        "artist_credit": "Cage the Elephant",
+        "album_hint": "Melophobia",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p033",
+        "role": "primary",
+        "title": "Misery Business",
+        "artist_credit": "Paramore",
+        "album_hint": "Riot!",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p034",
+        "role": "primary",
+        "title": "Jumpsuit",
+        "artist_credit": "Twenty One Pilots",
+        "album_hint": "Trench",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p035",
+        "role": "primary",
+        "title": "Little Black Submarines",
+        "artist_credit": "The Black Keys",
+        "album_hint": "El Camino",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p036",
+        "role": "primary",
+        "title": "Supermassive Black Hole",
+        "artist_credit": "Muse",
+        "album_hint": "Black Holes and Revelations",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p037",
+        "role": "primary",
+        "title": "The Less I Know the Better",
+        "artist_credit": "Tame Impala",
+        "album_hint": "Currents",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p038",
+        "role": "primary",
+        "title": "R U Mine?",
+        "artist_credit": "Arctic Monkeys",
+        "album_hint": "AM",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p039",
+        "role": "primary",
+        "title": "Cough Syrup",
+        "artist_credit": "Young the Giant",
+        "album_hint": "Young the Giant",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p040",
+        "role": "primary",
+        "title": "Dog Days Are Over",
+        "artist_credit": "Florence + the Machine",
+        "album_hint": "Lungs",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p041",
+        "role": "primary",
+        "title": "Breezeblocks",
+        "artist_credit": "alt-J",
+        "album_hint": "An Awesome Wave",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p042",
+        "role": "primary",
+        "title": "What You Know",
+        "artist_credit": "Two Door Cinema Club",
+        "album_hint": "Tourist History",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p043",
+        "role": "primary",
+        "title": "Trouble's Coming",
+        "artist_credit": "Royal Blood",
+        "album_hint": "Typhoons",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p044",
+        "role": "primary",
+        "title": "The Adults Are Talking",
+        "artist_credit": "The Strokes",
+        "album_hint": "The New Abnormal",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p045",
+        "role": "primary",
+        "title": "Feel It Still",
+        "artist_credit": "Portugal. The Man",
+        "album_hint": "Woodstock",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p046",
+        "role": "primary",
+        "title": "Dreaming",
+        "artist_credit": "Smallpools",
+        "album_hint": "LOVETAP!",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p047",
+        "role": "primary",
+        "title": "Chocolate",
+        "artist_credit": "The 1975",
+        "album_hint": "The 1975",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p048",
+        "role": "primary",
+        "title": "Electric Feel",
+        "artist_credit": "MGMT",
+        "album_hint": "Oracular Spectacular",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p049",
+        "role": "primary",
+        "title": "Lisztomania",
+        "artist_credit": "Phoenix",
+        "album_hint": "Wolfgang Amadeus Phoenix",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p050",
+        "role": "primary",
+        "title": "Sweet Disposition",
+        "artist_credit": "The Temper Trap",
+        "album_hint": "Conditions",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p051",
+        "role": "primary",
+        "title": "My God Is the Sun",
+        "artist_credit": "Queens of the Stone Age",
+        "album_hint": "...Like Clockwork",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p052",
+        "role": "primary",
+        "title": "The Wire",
+        "artist_credit": "HAIM",
+        "album_hint": "Days Are Gone",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p053",
+        "role": "primary",
+        "title": "Ways to Go",
+        "artist_credit": "Grouplove",
+        "album_hint": "Spreading Rumours",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p054",
+        "role": "primary",
+        "title": "Anna Sun",
+        "artist_credit": "Walk the Moon",
+        "album_hint": "Walk the Moon",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p055",
+        "role": "primary",
+        "title": "Kathleen",
+        "artist_credit": "Catfish and the Bottlemen",
+        "album_hint": "The Balcony",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p056",
+        "role": "primary",
+        "title": "Something Good Can Work",
+        "artist_credit": "Two Door Cinema Club",
+        "album_hint": "Tourist History",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p057",
+        "role": "primary",
+        "title": "Genghis Khan",
+        "artist_credit": "Miike Snow",
+        "album_hint": "iii",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p058",
+        "role": "primary",
+        "title": "1901",
+        "artist_credit": "Phoenix",
+        "album_hint": "Wolfgang Amadeus Phoenix",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p059",
+        "role": "primary",
+        "title": "Tongue Tied",
+        "artist_credit": "Grouplove",
+        "album_hint": "Never Trust a Happy Song",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p060",
+        "role": "primary",
+        "title": "Shut Up and Dance",
+        "artist_credit": "Walk the Moon",
+        "album_hint": "Talking Is Hard",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p061",
+        "role": "primary",
+        "title": "When You Were Young",
+        "artist_credit": "The Killers",
+        "album_hint": "Sam's Town",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p062",
+        "role": "primary",
+        "title": "Naive",
+        "artist_credit": "The Kooks",
+        "album_hint": "Inside In/Inside Out",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p063",
+        "role": "primary",
+        "title": "Chelsea Dagger",
+        "artist_credit": "The Fratellis",
+        "album_hint": "Costello Music",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p064",
+        "role": "primary",
+        "title": "Young Blood",
+        "artist_credit": "The Naked and Famous",
+        "album_hint": "Passive Me, Aggressive You",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p065",
+        "role": "primary",
+        "title": "Greek Tragedy",
+        "artist_credit": "The Wombats",
+        "album_hint": "Glitterbug",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p066",
+        "role": "primary",
+        "title": "Diane Young",
+        "artist_credit": "Vampire Weekend",
+        "album_hint": "Modern Vampires of the City",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p067",
+        "role": "primary",
+        "title": "Robbers",
+        "artist_credit": "The 1975",
+        "album_hint": "The 1975",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p068",
+        "role": "primary",
+        "title": "Little Monster",
+        "artist_credit": "Royal Blood",
+        "album_hint": "Royal Blood",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p069",
+        "role": "primary",
+        "title": "Inhaler",
+        "artist_credit": "Foals",
+        "album_hint": "Holy Fire",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p070",
+        "role": "primary",
+        "title": "Ready to Start",
+        "artist_credit": "Arcade Fire",
+        "album_hint": "The Suburbs",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p071",
+        "role": "primary",
+        "title": "Reptilia",
+        "artist_credit": "The Strokes",
+        "album_hint": "Room on Fire",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p072",
+        "role": "primary",
+        "title": "Sleep Now in the Fire",
+        "artist_credit": "Rage Against the Machine",
+        "album_hint": "The Battle of Los Angeles",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p073",
+        "role": "primary",
+        "title": "Savior",
+        "artist_credit": "Rise Against",
+        "album_hint": "Appeal to Reason",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p074",
+        "role": "primary",
+        "title": "Make It Stop (September's Children)",
+        "artist_credit": "Rise Against",
+        "album_hint": "Endgame",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p075",
+        "role": "primary",
+        "title": "I Don't Care",
+        "artist_credit": "Fall Out Boy",
+        "album_hint": "Folie à Deux",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p076",
+        "role": "primary",
+        "title": "Decode",
+        "artist_credit": "Paramore",
+        "album_hint": "Twilight: Original Motion Picture Soundtrack",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p077",
+        "role": "primary",
+        "title": "The Diary of Jane",
+        "artist_credit": "Breaking Benjamin",
+        "album_hint": "Phobia",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p078",
+        "role": "primary",
+        "title": "Animal I Have Become",
+        "artist_credit": "Three Days Grace",
+        "album_hint": "One-X",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p079",
+        "role": "primary",
+        "title": "Monster",
+        "artist_credit": "Skillet",
+        "album_hint": "Awake",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p080",
+        "role": "primary",
+        "title": "Face Down",
+        "artist_credit": "The Red Jumpsuit Apparatus",
+        "album_hint": "Don't You Fake It",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p081",
+        "role": "primary",
+        "title": "Prayer of the Refugee",
+        "artist_credit": "Rise Against",
+        "album_hint": "The Sufferer & the Witness",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p082",
+        "role": "primary",
+        "title": "Psychosocial",
+        "artist_credit": "Slipknot",
+        "album_hint": "All Hope Is Gone",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p083",
+        "role": "primary",
+        "title": "The Stage",
+        "artist_credit": "Avenged Sevenfold",
+        "album_hint": "The Stage",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p084",
+        "role": "primary",
+        "title": "Square Hammer",
+        "artist_credit": "Ghost",
+        "album_hint": "Popestar",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p085",
+        "role": "primary",
+        "title": "The Motherload",
+        "artist_credit": "Mastodon",
+        "album_hint": "Once More 'Round the Sun",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p086",
+        "role": "primary",
+        "title": "Cirice",
+        "artist_credit": "Ghost",
+        "album_hint": "Meliora",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p087",
+        "role": "primary",
+        "title": "Do Your Worst",
+        "artist_credit": "Rival Sons",
+        "album_hint": "Feral Roots",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p088",
+        "role": "primary",
+        "title": "When the Curtain Falls",
+        "artist_credit": "Greta Van Fleet",
+        "album_hint": "Anthem of the Peaceful Army",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p089",
+        "role": "primary",
+        "title": "Safari Song",
+        "artist_credit": "Greta Van Fleet",
+        "album_hint": "From the Fires",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p090",
+        "role": "primary",
+        "title": "Death by Rock and Roll",
+        "artist_credit": "The Pretty Reckless",
+        "album_hint": "Death by Rock and Roll",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p091",
+        "role": "primary",
+        "title": "I Sat by the Ocean",
+        "artist_credit": "Queens of the Stone Age",
+        "album_hint": "...Like Clockwork",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p092",
+        "role": "primary",
+        "title": "Highway Tune",
+        "artist_credit": "Greta Van Fleet",
+        "album_hint": "From the Fires",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p093",
+        "role": "primary",
+        "title": "Seventeen",
+        "artist_credit": "Sharon Van Etten",
+        "album_hint": "Remind Me Tomorrow",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p094",
+        "role": "primary",
+        "title": "Kyoto",
+        "artist_credit": "Phoebe Bridgers",
+        "album_hint": "Punisher",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p095",
+        "role": "primary",
+        "title": "Chaise Longue",
+        "artist_credit": "Wet Leg",
+        "album_hint": "Wet Leg",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p096",
+        "role": "primary",
+        "title": "Not Strong Enough",
+        "artist_credit": "boygenius",
+        "album_hint": "the record",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p097",
+        "role": "primary",
+        "title": "The Death of Peace of Mind",
+        "artist_credit": "Bad Omens",
+        "album_hint": "The Death of Peace of Mind",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p098",
+        "role": "primary",
+        "title": "Doomsday",
+        "artist_credit": "Architects",
+        "album_hint": "Holy Hell",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p099",
+        "role": "primary",
+        "title": "Lost",
+        "artist_credit": "Bring Me the Horizon",
+        "album_hint": "POST HUMAN: NeX GEn",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p100",
+        "role": "primary",
+        "title": "Never Fight a Man with a Perm",
+        "artist_credit": "IDLES",
+        "album_hint": "Joy as an Act of Resistance",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r001",
+        "role": "reserve",
+        "title": "Dance Macabre",
+        "artist_credit": "Ghost",
+        "album_hint": "Prequelle",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r002",
+        "role": "reserve",
+        "title": "Amsterdam",
+        "artist_credit": "Nothing but Thieves",
+        "album_hint": "Nothing but Thieves",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r003",
+        "role": "reserve",
+        "title": "Trip Switch",
+        "artist_credit": "Nothing but Thieves",
+        "album_hint": "Nothing but Thieves",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r004",
+        "role": "reserve",
+        "title": "Out of the Black",
+        "artist_credit": "Royal Blood",
+        "album_hint": "Royal Blood",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r005",
+        "role": "reserve",
+        "title": "Why'd You Only Call Me When You're High?",
+        "artist_credit": "Arctic Monkeys",
+        "album_hint": "AM",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r006",
+        "role": "reserve",
+        "title": "Times Like These",
+        "artist_credit": "Foo Fighters",
+        "album_hint": "One by One",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r007",
+        "role": "reserve",
+        "title": "Pyro",
+        "artist_credit": "Kings of Leon",
+        "album_hint": "Come Around Sundown",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r008",
+        "role": "reserve",
+        "title": "Howlin' for You",
+        "artist_credit": "The Black Keys",
+        "album_hint": "Brothers",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r009",
+        "role": "reserve",
+        "title": "Pressure",
+        "artist_credit": "Muse",
+        "album_hint": "Simulation Theory",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r010",
+        "role": "reserve",
+        "title": "Take a Walk",
+        "artist_credit": "Passion Pit",
+        "album_hint": "Gossamer",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r011",
+        "role": "reserve",
+        "title": "Houdini",
+        "artist_credit": "Foster the People",
+        "album_hint": "Torches",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r012",
+        "role": "reserve",
+        "title": "Sit Next to Me",
+        "artist_credit": "Foster the People",
+        "album_hint": "Sacred Hearts Club",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r013",
+        "role": "reserve",
+        "title": "Take a Slice",
+        "artist_credit": "Glass Animals",
+        "album_hint": "How to Be a Human Being",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r014",
+        "role": "reserve",
+        "title": "Human",
+        "artist_credit": "The Killers",
+        "album_hint": "Day & Age",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r015",
+        "role": "reserve",
+        "title": "Spaceman",
+        "artist_credit": "The Killers",
+        "album_hint": "Day & Age",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r016",
+        "role": "reserve",
+        "title": "Oxford Comma",
+        "artist_credit": "Vampire Weekend",
+        "album_hint": "Vampire Weekend",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r017",
+        "role": "reserve",
+        "title": "A-Punk",
+        "artist_credit": "Vampire Weekend",
+        "album_hint": "Vampire Weekend",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r018",
+        "role": "reserve",
+        "title": "Tessellate",
+        "artist_credit": "alt-J",
+        "album_hint": "An Awesome Wave",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r019",
+        "role": "reserve",
+        "title": "Left Hand Free",
+        "artist_credit": "alt-J",
+        "album_hint": "This Is All Yours",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r020",
+        "role": "reserve",
+        "title": "Sail",
+        "artist_credit": "AWOLNATION",
+        "album_hint": "Megalithic Symphony",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r021",
+        "role": "reserve",
+        "title": "Renegades",
+        "artist_credit": "X Ambassadors",
+        "album_hint": "VHS",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r022",
+        "role": "reserve",
+        "title": "Dangerous",
+        "artist_credit": "Big Data feat. Joywave",
+        "album_hint": "2.0",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r023",
+        "role": "reserve",
+        "title": "Desire",
+        "artist_credit": "Meg Myers",
+        "album_hint": "Sorry",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r024",
+        "role": "reserve",
+        "title": "I Wanna Get Better",
+        "artist_credit": "Bleachers",
+        "album_hint": "Strange Desire",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r025",
+        "role": "reserve",
+        "title": "Clearest Blue",
+        "artist_credit": "CHVRCHES",
+        "album_hint": "Every Open Eye",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r026",
+        "role": "reserve",
+        "title": "Burning",
+        "artist_credit": "The War on Drugs",
+        "album_hint": "A Deeper Understanding",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r027",
+        "role": "reserve",
+        "title": "Red Eyes",
+        "artist_credit": "The War on Drugs",
+        "album_hint": "Lost in the Dream",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r028",
+        "role": "reserve",
+        "title": "Pedestrian at Best",
+        "artist_credit": "Courtney Barnett",
+        "album_hint": "Sometimes I Sit and Think, and Sometimes I Just Sit",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r029",
+        "role": "reserve",
+        "title": "Your Best American Girl",
+        "artist_credit": "Mitski",
+        "album_hint": "Puberty 2",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r030",
+        "role": "reserve",
+        "title": "Nobody",
+        "artist_credit": "Mitski",
+        "album_hint": "Be the Cowboy",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r031",
+        "role": "reserve",
+        "title": "The Steps",
+        "artist_credit": "HAIM",
+        "album_hint": "Women in Music Pt. III",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r032",
+        "role": "reserve",
+        "title": "Silk Chiffon",
+        "artist_credit": "MUNA feat. Phoebe Bridgers",
+        "album_hint": "MUNA",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r033",
+        "role": "reserve",
+        "title": "Be Sweet",
+        "artist_credit": "Japanese Breakfast",
+        "album_hint": "Jubilee",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r034",
+        "role": "reserve",
+        "title": "Los Ageless",
+        "artist_credit": "St. Vincent",
+        "album_hint": "Masseduction",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r035",
+        "role": "reserve",
+        "title": "Now or Never Now",
+        "artist_credit": "Metric",
+        "album_hint": "Art of Doubt",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r036",
+        "role": "reserve",
+        "title": "Black Sheep",
+        "artist_credit": "Metric",
+        "album_hint": "Scott Pilgrim vs. the World: Original Motion Picture Soundtrack",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r037",
+        "role": "reserve",
+        "title": "Heads Will Roll",
+        "artist_credit": "Yeah Yeah Yeahs",
+        "album_hint": "It's Blitz!",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r038",
+        "role": "reserve",
+        "title": "Sacrilege",
+        "artist_credit": "Yeah Yeah Yeahs",
+        "album_hint": "Mosquito",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r039",
+        "role": "reserve",
+        "title": "New Born",
+        "artist_credit": "Muse",
+        "album_hint": "Origin of Symmetry",
+        "release_year_hint": 2001,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r040",
+        "role": "reserve",
+        "title": "Dead Inside",
+        "artist_credit": "Muse",
+        "album_hint": "Drones",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r041",
+        "role": "reserve",
+        "title": "A Little Piece of Heaven",
+        "artist_credit": "Avenged Sevenfold",
+        "album_hint": "Avenged Sevenfold",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r042",
+        "role": "reserve",
+        "title": "Nightmare",
+        "artist_credit": "Avenged Sevenfold",
+        "album_hint": "Nightmare",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r043",
+        "role": "reserve",
+        "title": "Duality",
+        "artist_credit": "Slipknot",
+        "album_hint": "Vol. 3: (The Subliminal Verses)",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r044",
+        "role": "reserve",
+        "title": "Rats",
+        "artist_credit": "Ghost",
+        "album_hint": "Prequelle",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r045",
+        "role": "reserve",
+        "title": "Unsainted",
+        "artist_credit": "Slipknot",
+        "album_hint": "We Are Not Your Kind",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r046",
+        "role": "reserve",
+        "title": "The Summoning",
+        "artist_credit": "Sleep Token",
+        "album_hint": "Take Me Back to Eden",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r047",
+        "role": "reserve",
+        "title": "Circle With Me",
+        "artist_credit": "Spiritbox",
+        "album_hint": "Eternal Blue",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r048",
+        "role": "reserve",
+        "title": "Holiday",
+        "artist_credit": "Turnstile",
+        "album_hint": "Glow On",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r049",
+        "role": "reserve",
+        "title": "Starburster",
+        "artist_credit": "Fontaines D.C.",
+        "album_hint": "Romance",
+        "release_year_hint": 2024,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r050",
+        "role": "reserve",
+        "title": "Favourite",
+        "artist_credit": "Fontaines D.C.",
+        "album_hint": "Romance",
+        "release_year_hint": 2024,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      }
+    ]
+  }
+}

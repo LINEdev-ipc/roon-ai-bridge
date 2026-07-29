@@ -1,0 +1,1476 @@
+{
+  "case_id": "R06-mcp2",
+  "legacy_prompt_id": "P05",
+  "human_prompt": "Crea una playlist de 100 canciones internacionales en distintos idiomas para descubrir música de otros países.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.4",
+    "reasoning_effort": "medium",
+    "response_id": "resp_0b3bb58f615f27a9006a69d16d4cc0819dabcc5b8839a0304b",
+    "started_at": "2026-07-29T10:09:46.560Z",
+    "completed_at": "2026-07-29T10:11:21.099Z",
+    "elapsed_ms": 94539,
+    "instructions_sha256": "79ccba3c437ba5127e2e9023c69f863b36cb6660c5324c329f17be486eab2da9",
+    "tool_description_sha256": "7339f7ebdaaa306044ac6116f4dbb3f0e20849ef2d7d79b177211f943ed9c445",
+    "tool_schema_sha256": "51d4b261ee6f5ae7d4df750051463a9fe78da9520432553180f9be25f3bd677e",
+    "usage": {
+      "input_tokens": 2052,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1664
+      },
+      "output_tokens": 7835,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 9887
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "Vuelta al mundo en 100 canciones",
+    "description": "100 canciones internacionales en distintos idiomas para descubrir música de otros países y escenas: pop, rock, folk, electrónica, rap y clásicos modernos de todo el mundo.",
+    "desired_count": 100,
+    "selection_complexity": "standard",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "role": "primary",
+        "title": "La vie en rose",
+        "artist_credit": "Édith Piaf",
+        "album_hint": "Chansons parisiennes",
+        "release_year_hint": 1946,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Tous les mêmes",
+        "artist_credit": "Stromae",
+        "album_hint": "Racine carrée",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Formidable",
+        "artist_credit": "Stromae",
+        "album_hint": "Racine carrée",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Je veux",
+        "artist_credit": "Zaz",
+        "album_hint": "Zaz",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Dernière danse",
+        "artist_credit": "Indila",
+        "album_hint": "Mini World",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Non, je ne regrette rien",
+        "artist_credit": "Édith Piaf",
+        "album_hint": "Édith Piaf (No Regrets)",
+        "release_year_hint": 1960,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Volare (Nel blu dipinto di blu)",
+        "artist_credit": "Domenico Modugno",
+        "album_hint": "Domenico Modugno e il suo grande successo",
+        "release_year_hint": 1958,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Azzurro",
+        "artist_credit": "Adriano Celentano",
+        "album_hint": "Azzurro/Una carezza in un pugno",
+        "release_year_hint": 1968,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Caruso",
+        "artist_credit": "Lucio Dalla",
+        "album_hint": "DallAmeriCaruso",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Con te partirò",
+        "artist_credit": "Andrea Bocelli",
+        "album_hint": "Bocelli",
+        "release_year_hint": 1995,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "L'italiano",
+        "artist_credit": "Toto Cutugno",
+        "album_hint": "L'italiano",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Senza una donna",
+        "artist_credit": "Zucchero",
+        "album_hint": "Blue's",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Sodade",
+        "artist_credit": "Cesária Évora",
+        "album_hint": "Miss Perfumado",
+        "release_year_hint": 1992,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Chega de Saudade",
+        "artist_credit": "João Gilberto",
+        "album_hint": "Chega de Saudade",
+        "release_year_hint": 1959,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Águas de Março",
+        "artist_credit": "Elis Regina & Tom Jobim",
+        "required_credits": [
+          {
+            "name": "Elis Regina",
+            "role": "primary"
+          },
+          {
+            "name": "Tom Jobim",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Elis & Tom",
+        "release_year_hint": 1974,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Mas, que Nada!",
+        "artist_credit": "Jorge Ben Jor",
+        "album_hint": "Samba Esquema Novo",
+        "release_year_hint": 1963,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Construção",
+        "artist_credit": "Chico Buarque",
+        "album_hint": "Construção",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Ai, ai, ai...",
+        "artist_credit": "Vanessa da Mata",
+        "album_hint": "Essa boneca tem manual",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Desafinado",
+        "artist_credit": "Stan Getz & João Gilberto",
+        "required_credits": [
+          {
+            "name": "Stan Getz",
+            "role": "primary"
+          },
+          {
+            "name": "João Gilberto",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Getz/Gilberto",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Djobi, Djoba",
+        "artist_credit": "Gipsy Kings",
+        "album_hint": "Gipsy Kings",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Ne me quitte pas",
+        "artist_credit": "Jacques Brel",
+        "album_hint": "La valse à mille temps",
+        "release_year_hint": 1959,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "99 Luftballons",
+        "artist_credit": "Nena",
+        "album_hint": "Nena",
+        "release_year_hint": 1983,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Major Tom (völlig losgelöst)",
+        "artist_credit": "Peter Schilling",
+        "album_hint": "Fehler im System",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Männer",
+        "artist_credit": "Herbert Grönemeyer",
+        "album_hint": "4630 Bochum",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Atemlos durch die Nacht",
+        "artist_credit": "Helene Fischer",
+        "album_hint": "Farbenspiel",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Da Da Da ich lieb dich nicht du liebst mich nicht aha aha aha",
+        "artist_credit": "Trio",
+        "album_hint": "Trio",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Jeanny",
+        "artist_credit": "Falco",
+        "album_hint": "Falco 3",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Eisbär",
+        "artist_credit": "Grauzone",
+        "album_hint": "Grauzone",
+        "release_year_hint": 1981,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Prisencolinensinainciusol",
+        "artist_credit": "Adriano Celentano",
+        "album_hint": "Nostalrock",
+        "release_year_hint": 1972,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Du hast",
+        "artist_credit": "Rammstein",
+        "album_hint": "Sehnsucht",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Zitti e buoni",
+        "artist_credit": "Måneskin",
+        "album_hint": "Teatro d'ira: Vol. I",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Voyage, voyage",
+        "artist_credit": "Desireless",
+        "album_hint": "François",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Ça plane pour moi",
+        "artist_credit": "Plastic Bertrand",
+        "album_hint": "An 1",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Eres tú",
+        "artist_credit": "Mocedades",
+        "album_hint": "Mocedades 5",
+        "release_year_hint": 1973,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Todo cambia",
+        "artist_credit": "Mercedes Sosa",
+        "album_hint": "Mujeres argentinas",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Gracias a la vida",
+        "artist_credit": "Violeta Parra",
+        "album_hint": "Las últimas composiciones de Violeta Parra",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Mujer amante",
+        "artist_credit": "Rata Blanca",
+        "album_hint": "Magos, espadas y rosas",
+        "release_year_hint": 1990,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "De música ligera",
+        "artist_credit": "Soda Stereo",
+        "album_hint": "Canción animal",
+        "release_year_hint": 1990,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Lucha de gigantes",
+        "artist_credit": "Nacha Pop",
+        "album_hint": "El momento",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Maldición, va a ser un día hermoso",
+        "artist_credit": "Él Mató a un Policía Motorizado",
+        "album_hint": "La dinastía Scorpio",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "La flaca",
+        "artist_credit": "Jarabe de Palo",
+        "album_hint": "La flaca",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Obsesión",
+        "artist_credit": "Aventura",
+        "album_hint": "We Broke the Rules",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Chan Chan",
+        "artist_credit": "Buena Vista Social Club",
+        "album_hint": "Buena Vista Social Club",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Oye cómo va",
+        "artist_credit": "Tito Puente",
+        "album_hint": "El rey bravo",
+        "release_year_hint": 1962,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Burbujas de amor",
+        "artist_credit": "Juan Luis Guerra 4.40",
+        "album_hint": "Bachata Rosa",
+        "release_year_hint": 1990,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Llorarás",
+        "artist_credit": "Oscar D'León",
+        "album_hint": "Con bajo y todo",
+        "release_year_hint": 1975,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Te recuerdo Amanda",
+        "artist_credit": "Víctor Jara",
+        "album_hint": "Pongo en tus manos abiertas",
+        "release_year_hint": 1969,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Matador",
+        "artist_credit": "Los Fabulosos Cadillacs",
+        "album_hint": "Vasos vacíos",
+        "release_year_hint": 1993,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Lamento boliviano",
+        "artist_credit": "Enanitos Verdes",
+        "album_hint": "Big Bang",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Latinoamérica",
+        "artist_credit": "Calle 13",
+        "album_hint": "Entren los que quieran",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Cucurrucucú paloma",
+        "artist_credit": "Caetano Veloso",
+        "album_hint": "Fina estampa ao vivo",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "La llorona",
+        "artist_credit": "Chavela Vargas",
+        "album_hint": "Macorina",
+        "release_year_hint": 1961,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Volver a los 17",
+        "artist_credit": "Mercedes Sosa",
+        "album_hint": "Gestos de amor",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Take Me to Church",
+        "artist_credit": "Hozier",
+        "album_hint": "Hozier",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Mmm Mmm Mmm Mmm",
+        "artist_credit": "Crash Test Dummies",
+        "album_hint": "God Shuffled His Feet",
+        "release_year_hint": 1993,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Biko",
+        "artist_credit": "Peter Gabriel",
+        "album_hint": "Peter Gabriel",
+        "release_year_hint": 1980,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Zombie",
+        "artist_credit": "Fela Kuti",
+        "album_hint": "Zombie",
+        "release_year_hint": 1976,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Jerusalema",
+        "artist_credit": "Master KG",
+        "album_hint": "Jerusalema",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Pata Pata",
+        "artist_credit": "Miriam Makeba",
+        "album_hint": "Pata Pata",
+        "release_year_hint": 1967,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Malaika",
+        "artist_credit": "Miriam Makeba",
+        "album_hint": "The World of Miriam Makeba",
+        "release_year_hint": 1963,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Yamore",
+        "artist_credit": "Salif Keita",
+        "album_hint": "Amen",
+        "release_year_hint": 1991,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "7 Seconds",
+        "artist_credit": "Youssou N'Dour & Neneh Cherry",
+        "required_credits": [
+          {
+            "name": "Youssou N'Dour",
+            "role": "primary"
+          },
+          {
+            "name": "Neneh Cherry",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "The Guide (Wommat)",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Agolo",
+        "artist_credit": "Angélique Kidjo",
+        "album_hint": "Fifa",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Waka Waka (This Time for Africa)",
+        "artist_credit": "Shakira",
+        "album_hint": "Sale el sol",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Habib Galbi",
+        "artist_credit": "A-WA",
+        "album_hint": "Habib Galbi",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "عبد القادر",
+        "artist_credit": "Khaled",
+        "album_hint": "Sahra",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "تملي معاك",
+        "artist_credit": "عمرو دياب",
+        "album_hint": "تملي معاك",
+        "release_year_hint": 2000,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Ya Rayah",
+        "artist_credit": "Rachid Taha",
+        "album_hint": "Diwan",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Nací en Alamo",
+        "artist_credit": "Tinariwen",
+        "album_hint": "Aman Iman: Water Is Life",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Hava Nagila",
+        "artist_credit": "Ofra Haza",
+        "album_hint": "Shirey Moledet 3",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Im Nin'alu",
+        "artist_credit": "Ofra Haza",
+        "album_hint": "Shaday",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "أهواك",
+        "artist_credit": "Fairuz",
+        "album_hint": "Fairuz: The Very Best of Arabic Songs",
+        "release_year_hint": 1960,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Düm Tek Tek",
+        "artist_credit": "Hadise",
+        "album_hint": "Fast Life",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Şımarık",
+        "artist_credit": "Tarkan",
+        "album_hint": "Ölürüm Sana",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Büklüm Büklüm",
+        "artist_credit": "Sezen Aksu",
+        "album_hint": "Gülümse",
+        "release_year_hint": 1991,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Diva",
+        "artist_credit": "Dana International",
+        "album_hint": "Diva Ha'Osef",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Moustahil",
+        "artist_credit": "Souad Massi",
+        "album_hint": "Raoui",
+        "release_year_hint": 2001,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "ज़िंदा",
+        "artist_credit": "Siddharth Mahadevan",
+        "album_hint": "Bhaag Milkha Bhaag",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "जय हो",
+        "artist_credit": "A. R. Rahman",
+        "album_hint": "Slumdog Millionaire",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "लग जा गले",
+        "artist_credit": "Lata Mangeshkar",
+        "album_hint": "Woh Kaun Thi?",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "पिया तू अब तो आजा",
+        "artist_credit": "Asha Bhosle",
+        "album_hint": "Caravan",
+        "release_year_hint": 1971,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "तुझे देखा तो",
+        "artist_credit": "Lata Mangeshkar & Kumar Sanu",
+        "required_credits": [
+          {
+            "name": "Lata Mangeshkar",
+            "role": "primary"
+          },
+          {
+            "name": "Kumar Sanu",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Dilwale Dulhania Le Jayenge",
+        "release_year_hint": 1995,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "ਚੁੰਨੀ",
+        "artist_credit": "Harbhajan Mann",
+        "album_hint": "Jee Aayan Nu",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Tajdar-e-Haram",
+        "artist_credit": "Atif Aslam",
+        "album_hint": "Coke Studio Season 8",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Pasoori",
+        "artist_credit": "Ali Sethi & Shae Gill",
+        "required_credits": [
+          {
+            "name": "Ali Sethi",
+            "role": "primary"
+          },
+          {
+            "name": "Shae Gill",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Pasoori",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "আমার পরান যাহা চায়",
+        "artist_credit": "Rezwana Choudhury Bannya",
+        "album_hint": "Tagore Songs",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "風になって",
+        "artist_credit": "森山直太朗",
+        "album_hint": "風待ち交差点",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "上を向いて歩こう",
+        "artist_credit": "坂本九",
+        "album_hint": "上を向いて歩こう",
+        "release_year_hint": 1961,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "真夜中のドア〜stay with me",
+        "artist_credit": "松原みき",
+        "album_hint": "POCKET PARK",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "君は天然色",
+        "artist_credit": "大滝詠一",
+        "album_hint": "A LONG VACATION",
+        "release_year_hint": 1981,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "紅蓮華",
+        "artist_credit": "LiSA",
+        "album_hint": "LEO-NiNE",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "First Love",
+        "artist_credit": "宇多田ヒカル",
+        "album_hint": "First Love",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "プラスティック・ラブ",
+        "artist_credit": "竹内まりや",
+        "album_hint": "VARIETY",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "涙そうそう",
+        "artist_credit": "夏川りみ",
+        "album_hint": "涙そうそう",
+        "release_year_hint": 2001,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "恋",
+        "artist_credit": "星野源",
+        "album_hint": "POP VIRUS",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Gangnam Style",
+        "artist_credit": "PSY",
+        "album_hint": "PSY 6 (Six Rules), Part 1",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "좋은 날",
+        "artist_credit": "아이유",
+        "album_hint": "Real",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "벚꽃 엔딩",
+        "artist_credit": "버스커 버스커",
+        "album_hint": "버스커 버스커 1집",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "삐삐",
+        "artist_credit": "아이유",
+        "album_hint": "삐삐",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "바람기억",
+        "artist_credit": "나얼",
+        "album_hint": "Principle Of My Soul",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "月亮代表我的心",
+        "artist_credit": "鄧麗君",
+        "album_hint": "島國之情歌第六集: 小城故事",
+        "release_year_hint": 1977,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "甜蜜蜜",
+        "artist_credit": "鄧麗君",
+        "album_hint": "難忘的Teresa Teng",
+        "release_year_hint": 1979,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "夜来香",
+        "artist_credit": "周璇",
+        "album_hint": "上海老歌绝版珍藏系列",
+        "release_year_hint": 1944,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "童话",
+        "artist_credit": "光良",
+        "album_hint": "童话",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "小幸运",
+        "artist_credit": "田馥甄",
+        "album_hint": "我的少女時代 電影原聲帶",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "朋友",
+        "artist_credit": "周华健",
+        "album_hint": "朋友",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "รักติดไซเรน",
+        "artist_credit": "ไอซ์ พาริส",
+        "album_hint": "รักติดไซเรน",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "เพื่อเธอตลอดไป",
+        "artist_credit": "ศักดา พัทธสีมา",
+        "album_hint": "เพื่อเธอตลอดไป",
+        "release_year_hint": 2001,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Bóng phù hoa",
+        "artist_credit": "Phương Thanh",
+        "album_hint": "Một thời đã xa",
+        "release_year_hint": 2001,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Sempurna",
+        "artist_credit": "Andra and The Backbone",
+        "album_hint": "Andra and The Backbone",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Bengawan Solo",
+        "artist_credit": "Gesang",
+        "album_hint": "Bengawan Solo",
+        "release_year_hint": 1940,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Anak",
+        "artist_credit": "Freddie Aguilar",
+        "album_hint": "Anak",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "214",
+        "artist_credit": "Rivermaya",
+        "album_hint": "Rivermaya",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Getaran Jiwa",
+        "artist_credit": "P. Ramlee",
+        "album_hint": "Dendang Perantau",
+        "release_year_hint": 1960,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Belaian Jiwa",
+        "artist_credit": "Innuendo",
+        "album_hint": "Belaian Jiwa",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Zorba's Dance",
+        "artist_credit": "Mikis Theodorakis",
+        "album_hint": "Zorba the Greek",
+        "release_year_hint": 1964,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Den eimai allos",
+        "artist_credit": "Sakis Rouvas",
+        "album_hint": "S'eho Eroteftei",
+        "release_year_hint": 2000,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Dragostea Din Tei",
+        "artist_credit": "O-Zone",
+        "album_hint": "DiscO-Zone",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Ederlezi",
+        "artist_credit": "Goran Bregović",
+        "album_hint": "Time of the Gypsies",
+        "release_year_hint": 1988,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Molitva",
+        "artist_credit": "Marija Šerifović",
+        "album_hint": "Nisam anđeo",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Lejla",
+        "artist_credit": "Hari Mata Hari",
+        "album_hint": "Lejla",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "1944",
+        "artist_credit": "Jamala",
+        "album_hint": "1944",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Весна",
+        "artist_credit": "Воплі Відоплясова",
+        "album_hint": "Музіка",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Группа крови",
+        "artist_credit": "Кино",
+        "album_hint": "Группа крови",
+        "release_year_hint": 1988,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Океанами стали",
+        "artist_credit": "Мачете",
+        "album_hint": "Родина мира",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Waltz for Koop",
+        "artist_credit": "Koop",
+        "album_hint": "Waltz for Koop: Alternative Takes",
+        "release_year_hint": 2001,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Leva's Polka",
+        "artist_credit": "Loituma",
+        "album_hint": "Things of Beauty",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Mångata",
+        "artist_credit": "Mando Diao",
+        "album_hint": "Infruset",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Take Me to Church",
+        "artist_credit": "Sinéad O'Connor",
+        "album_hint": "Theology",
+        "release_year_hint": 2007,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Hoppípolla",
+        "artist_credit": "Sigur Rós",
+        "album_hint": "Takk...",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Ég anda",
+        "artist_credit": "Sigur Rós",
+        "album_hint": "Kveikur",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Take on Me",
+        "artist_credit": "a-ha",
+        "album_hint": "Hunting High and Low",
+        "release_year_hint": 1985,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Den du vet",
+        "artist_credit": "Niklas Strömstedt",
+        "album_hint": "Halvvägs till framtiden",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Jeg vil la' lyset brænde",
+        "artist_credit": "Ray Dee Ohh",
+        "album_hint": "Ray Dee Ohh",
+        "release_year_hint": 1990,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Hyvää huomenta Suomi",
+        "artist_credit": "Kirka",
+        "album_hint": "Hetki lyö",
+        "release_year_hint": 1984,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Kanulinnut",
+        "artist_credit": "Värttinä",
+        "album_hint": "Vihma",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Maan korvessa kulkevi",
+        "artist_credit": "Vesa-Matti Loiri",
+        "album_hint": "Eino Leino",
+        "release_year_hint": 1978,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Mia",
+        "artist_credit": "Gorki",
+        "album_hint": "Mia",
+        "release_year_hint": 1992,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Het is een nacht... (Levensecht)",
+        "artist_credit": "Guus Meeuwis & Vagant",
+        "required_credits": [
+          {
+            "name": "Guus Meeuwis",
+            "role": "primary"
+          },
+          {
+            "name": "Vagant",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Verbazing",
+        "release_year_hint": 1995,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Pastorale",
+        "artist_credit": "Ramses Shaffy & Liesbeth List",
+        "required_credits": [
+          {
+            "name": "Ramses Shaffy",
+            "role": "primary"
+          },
+          {
+            "name": "Liesbeth List",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Shaffy Chantant",
+        "release_year_hint": 1966,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Jóga",
+        "artist_credit": "Björk",
+        "album_hint": "Homogenic",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Svefn-g-englar",
+        "artist_credit": "Sigur Rós",
+        "album_hint": "Ágætis byrjun",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "À la claire fontaine",
+        "artist_credit": "Nana Mouskouri",
+        "album_hint": "Nana Mouskouri à l'Olympia",
+        "release_year_hint": 1961,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Voilà",
+        "artist_credit": "Barbara Pravi",
+        "album_hint": "On n'enferme pas les oiseaux",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Alors on danse",
+        "artist_credit": "Stromae",
+        "album_hint": "Cheese",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Bella ciao",
+        "artist_credit": "Modena City Ramblers",
+        "album_hint": "Riportando tutto a casa",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Felicità",
+        "artist_credit": "Al Bano & Romina Power",
+        "required_credits": [
+          {
+            "name": "Al Bano",
+            "role": "primary"
+          },
+          {
+            "name": "Romina Power",
+            "role": "primary"
+          }
+        ],
+        "album_hint": "Felicità",
+        "release_year_hint": 1982,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Mambo Italiano",
+        "artist_credit": "Mina",
+        "album_hint": "Mina",
+        "release_year_hint": 1962,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Lambada",
+        "artist_credit": "Kaoma",
+        "album_hint": "Worldbeat",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Ai se eu te pego!",
+        "artist_credit": "Michel Teló",
+        "album_hint": "Na balada",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      }
+    ]
+  }
+}

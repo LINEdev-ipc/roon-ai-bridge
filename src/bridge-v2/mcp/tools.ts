@@ -44,20 +44,20 @@ const mediaSelector = z.object({
 }).refine((value) => Boolean(value.result_id || value.query), "result_id or query is required");
 const looseObject = z.object({}).catchall(z.unknown());
 const requiredCredit = z.object({
-  name: z.string().min(1),
+  name: z.string().min(1).describe("One exact credited artist name. Never combine several artists in one entry."),
   role: z.enum(["primary", "featured", "performer", "soloist", "conductor", "orchestra", "ensemble", "composer"]).default("primary")
 });
 const playlistBuildCandidate = z.object({
   candidate_id: z.string().min(1).optional(),
   role: z.enum(["primary", "reserve"]).default("primary"),
   result_id: z.string().min(1).optional().describe("Optional fresh Roon result reference from a prior user-driven or manual search. Do not call roon_search_media merely to populate it: playlist creation discovers and binds Roon internally."),
-  title: z.string().min(1),
-  artist_credit: z.string().min(1),
-  required_credits: z.array(requiredCredit).min(1).max(12).optional(),
-  album_hint: z.string().min(1).optional().describe("Album believed to contain this recording. Include every known source album, including standard songs; it enables cached release-tracklist recovery after a direct miss. It is mandatory for live, acoustic, cover, remix or other exact performances."),
+  title: z.string().min(1).describe("Exact official published title. For non-Latin catalogs prefer the native-script title when known rather than a transliteration."),
+  artist_credit: z.string().min(1).describe("Published display credit. If it names multiple artists, also list each artist separately in required_credits."),
+  required_credits: z.array(requiredCredit).min(1).max(12).optional().describe("One entry per actual named artist whenever artist_credit contains collaborators; mark the lead primary and guests featured. Do not add a remixer or mix/version name found only inside the title unless the release explicitly credits that person as an artist."),
+  album_hint: z.string().min(1).optional().describe("Actual release believed to contain this recording. Include known source albums for standard songs and exact versions. For remix/live/acoustic, prefer an official broadly streamed album or single; avoid bootleg, promo, vinyl-only, radio-only and DJ-only releases unless requested."),
   release_year_hint: z.number().int().min(1000).max(3000).optional().describe("Approximate release year when known. Global date constraints belong in release_year_from/release_year_to and are verified by MusicBrainz."),
   recording_intent: z.enum(["standard", "live", "remix", "cover", "dub", "acoustic", "alternate"]).default("standard")
-    .describe("Recording version, never genre. A dub-genre song is standard unless its title identifies a Dub Mix/Version. For remix, live and acoustic, provide the published version title and album_hint. For cover, use the covering artist and its album; the visible title does not need the word cover."),
+    .describe("Separately published recording version, never genre, mood or instrumentation. Ordinary dub music and naturally acoustic songs are standard; use acoustic only for an explicit Acoustic/Unplugged version. For remix, live and acoustic versions, provide the published version title and album_hint. For cover, use the covering artist and its album; the visible title need not say cover."),
   performance_sensitive: z.boolean().default(false).describe("Set true for jazz, classical or another selection where a particular performance matters."),
   user_metadata: looseObject.optional()
 });
@@ -317,7 +317,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
 
   register("roon_save_playlist", {
     title: "Save RoonIA Playlist",
-    description: "Use this whenever the user asks to create, make, prepare, build, generate or curate a playlist/lista de reproducción, whether or not they explicitly say save or permanent. This creates a normal visible permanent playlist. Do not use the temporary tool for any request that names a playlist or list. Generate the full structured candidate pool yourself and call this tool once; do not call roon_search_media first. RoonIA performs MusicBrainz/ListenBrainz identity discovery, Roon playback discovery and binding internally in parallel. Set desired_count and selection_complexity. Supply at least 125% of desired_count for standard requests, 150% for niche/date/constrained requests, or 160% for exact remixes, live versions, covers, soundtracks or performance-sensitive requests. Mark the first desired_count strong choices primary and the rest reserve. Include title, artist_credit, every known album_hint, release_year_hint and credits when known. Exact remix/live/acoustic candidates need their published version title and album_hint; covers need the covering artist and its album even when the title has no cover label. Set no_adjacent_same_artist=false for a one-artist playlist or any request where repetition is intentional. RoonIA stops when the target is reached and saves a verified partial playlist if it cannot reach it; always report added_count and missing_count.",
+    description: "Use this whenever the user asks to create, make, prepare, build, generate or curate a playlist/lista de reproducción, whether or not they explicitly say save or permanent. This creates a normal visible permanent playlist. Do not use the temporary tool for any request that names a playlist or list. Generate the full structured candidate pool yourself and call this tool once; do not call roon_search_media first. RoonIA performs MusicBrainz/ListenBrainz identity discovery, Roon playback discovery and binding internally in parallel. Set desired_count and selection_complexity. Supply at least 125% of desired_count for standard requests, 160% for niche/date/constrained requests, or 200% for exact remixes, live versions, covers, soundtracks or performance-sensitive requests. Mark the first desired_count strong choices primary and the rest reserve. Use official published titles, native script for non-Latin catalogs when known, and one required_credits entry per actual named collaborator. Include every known actual album_hint and release_year_hint. For exact live/remix lists, build the pool around well-documented official audio albums or digital audio singles that are broadly streamed and reuse a verified release for several tracks when appropriate. Concert films, video albums, DVDs, Blu-rays and video-only releases are ineligible unless the same performance has a separate official audio edition; use that audio edition in album_hint. Copy each published audio track title exactly; never invent a '- Live', venue, date or mix suffix from memory. Avoid bootlegs, promos and vinyl/radio/DJ-only releases. A remixer named only inside the title is not an artist credit. Naturally acoustic songs remain standard. Covers need the covering artist and its album even when the title has no cover label. Set no_adjacent_same_artist=false for a one-artist playlist or any request where repetition is intentional. RoonIA stops when the target is reached and saves a verified partial playlist if it cannot reach it; always report added_count and missing_count.",
     annotations: write,
     inputSchema: {
       playlist_id: z.string().optional(),
@@ -325,7 +325,7 @@ export function registerBridgeV2Tools(server: McpServer, context: BridgeV2Contex
       description: z.string().optional(),
       desired_count: z.number().int().min(1).max(500).optional(),
       selection_complexity: z.enum(["standard", "constrained", "exact_versions"]).default("standard")
-        .describe("Controls the required one-call reserve pool: standard=125%, constrained=150%, exact_versions=160%. Use constrained for niche genres/date rules and exact_versions for named remixes, live recordings, covers, soundtracks or performance-sensitive selections."),
+        .describe("Controls the required one-call reserve pool: standard=125%, constrained=160%, exact_versions=200%. Use constrained for niche genres/date rules and exact_versions for named remixes, live recordings, covers, soundtracks or performance-sensitive selections."),
       release_year_from: z.number().int().min(1000).max(3000).optional()
         .describe("Minimum MusicBrainz first-publication year, inclusive. Convert relative user constraints to an explicit year."),
       release_year_to: z.number().int().min(1000).max(3000).optional()

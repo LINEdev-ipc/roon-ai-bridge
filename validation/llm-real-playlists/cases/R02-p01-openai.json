@@ -1,0 +1,1296 @@
+{
+  "case_id": "R02",
+  "legacy_prompt_id": "P01",
+  "human_prompt": "Crea una playlist de 100 canciones de electrónica con bajos potentes.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "response_id": "resp_0350d6930bd0eb38006a695b756f4081a181e60c2b71926a28",
+    "started_at": "2026-07-29T01:46:27.893Z",
+    "completed_at": "2026-07-29T01:47:59.763Z",
+    "elapsed_ms": 91870,
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "438f4e22066989a68628065de2b2993fc9a6d32e2df9c3b96a369c565d568c22",
+    "usage": {
+      "input_tokens": 1794,
+      "input_tokens_details": {
+        "cache_write_tokens": 1663,
+        "cached_tokens": 0
+      },
+      "output_tokens": 6577,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 8371
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "Electrónica: Bajos Potentes",
+    "description": "100 descargas de electrónica con graves profundos y contundentes: dubstep, drum & bass, bass house, trap, techno, breaks y electro.",
+    "desired_count": 100,
+    "selection_complexity": "standard",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "candidate_id": "p001",
+        "role": "primary",
+        "title": "Scary Monsters and Nice Sprites",
+        "artist_credit": "Skrillex",
+        "album_hint": "Scary Monsters and Nice Sprites",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p002",
+        "role": "primary",
+        "title": "Ghosts 'n' Stuff",
+        "artist_credit": "deadmau5 feat. Rob Swire",
+        "album_hint": "For Lack of a Better Name",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p003",
+        "role": "primary",
+        "title": "Baddadan",
+        "artist_credit": "Chase & Status feat. Bou, Irah, Flowdan, Trigga & Takura",
+        "album_hint": "2 RUFF, Vol. 1",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p004",
+        "role": "primary",
+        "title": "Tarantula",
+        "artist_credit": "Pendulum feat. DJ Fresh, $pyda & Tenor Fly",
+        "album_hint": "Hold Your Colour",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p005",
+        "role": "primary",
+        "title": "Bass Head",
+        "artist_credit": "Bassnectar",
+        "album_hint": "Timestretch",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p006",
+        "role": "primary",
+        "title": "I Can't Stop",
+        "artist_credit": "Flux Pavilion",
+        "album_hint": "Lines in Wax",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p007",
+        "role": "primary",
+        "title": "Bonfire",
+        "artist_credit": "Knife Party",
+        "album_hint": "Rage Valley",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p008",
+        "role": "primary",
+        "title": "Get Free",
+        "artist_credit": "Major Lazer feat. Amber Coffman",
+        "album_hint": "Free the Universe",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p009",
+        "role": "primary",
+        "title": "Genesis",
+        "artist_credit": "Justice",
+        "album_hint": "†",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p010",
+        "role": "primary",
+        "title": "Derezzed",
+        "artist_credit": "Daft Punk",
+        "album_hint": "TRON: Legacy",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p011",
+        "role": "primary",
+        "title": "Go",
+        "artist_credit": "The Chemical Brothers feat. Q-Tip",
+        "album_hint": "Born in the Echoes",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p012",
+        "role": "primary",
+        "title": "Firestarter",
+        "artist_credit": "The Prodigy",
+        "album_hint": "The Fat of the Land",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p013",
+        "role": "primary",
+        "title": "Core",
+        "artist_credit": "RL Grime",
+        "album_hint": "VOID",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p014",
+        "role": "primary",
+        "title": "Purple Lamborghini",
+        "artist_credit": "Skrillex & Rick Ross",
+        "album_hint": "Suicide Squad: The Album",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p015",
+        "role": "primary",
+        "title": "Internet Friends",
+        "artist_credit": "Knife Party",
+        "album_hint": "100% No Modern Talking",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p016",
+        "role": "primary",
+        "title": "Feel the Volume",
+        "artist_credit": "Jauz",
+        "album_hint": "Feel the Volume",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p017",
+        "role": "primary",
+        "title": "Deep Down Low",
+        "artist_credit": "Valentino Khan",
+        "album_hint": "Deep Down Low",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p018",
+        "role": "primary",
+        "title": "Losing It",
+        "artist_credit": "FISHER",
+        "album_hint": "Losing It",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p019",
+        "role": "primary",
+        "title": "Turn Off the Lights",
+        "artist_credit": "Chris Lake feat. Alexis Roberts",
+        "album_hint": "Turn Off the Lights",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p020",
+        "role": "primary",
+        "title": "Pump the Brakes",
+        "artist_credit": "Dom Dolla",
+        "album_hint": "Pump the Brakes",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p021",
+        "role": "primary",
+        "title": "Take It",
+        "artist_credit": "Dom Dolla",
+        "album_hint": "Take It",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p022",
+        "role": "primary",
+        "title": "Where You Are",
+        "artist_credit": "John Summit & Hayla",
+        "album_hint": "Comfort in Chaos",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p023",
+        "role": "primary",
+        "title": "Dashstar*",
+        "artist_credit": "Knock2",
+        "album_hint": "ROOM202 EP",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p024",
+        "role": "primary",
+        "title": "Rumble",
+        "artist_credit": "Skrillex, Fred again.. & Flowdan",
+        "album_hint": "Quest for Fire",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p025",
+        "role": "primary",
+        "title": "Afterparty",
+        "artist_credit": "Habstrakt",
+        "album_hint": "Afterparty",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p026",
+        "role": "primary",
+        "title": "Street",
+        "artist_credit": "NGHTMRE",
+        "album_hint": "NGHTMRE",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p027",
+        "role": "primary",
+        "title": "Tell Me",
+        "artist_credit": "RL Grime & What So Not",
+        "album_hint": "Tell Me",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p028",
+        "role": "primary",
+        "title": "You & Me (Flume Remix)",
+        "artist_credit": "Disclosure feat. Eliza Doolittle",
+        "album_hint": "Settle: The Remixes",
+        "release_year_hint": 2013,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p029",
+        "role": "primary",
+        "title": "Never Be Like You",
+        "artist_credit": "Flume feat. Kai",
+        "album_hint": "Skin",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p030",
+        "role": "primary",
+        "title": "Say My Name",
+        "artist_credit": "ODESZA feat. Zyra",
+        "album_hint": "In Return",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p031",
+        "role": "primary",
+        "title": "Innerbloom",
+        "artist_credit": "RÜFÜS DU SOL",
+        "album_hint": "Bloom",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p032",
+        "role": "primary",
+        "title": "Limit to Your Love",
+        "artist_credit": "James Blake",
+        "album_hint": "James Blake",
+        "release_year_hint": 2010,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p033",
+        "role": "primary",
+        "title": "Archangel",
+        "artist_credit": "Burial",
+        "album_hint": "Untrue",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p034",
+        "role": "primary",
+        "title": "Midnight Request Line",
+        "artist_credit": "Skream",
+        "album_hint": "Skream!",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p035",
+        "role": "primary",
+        "title": "Night",
+        "artist_credit": "Benga & Coki",
+        "album_hint": "Diary of an Afro Warrior",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p036",
+        "role": "primary",
+        "title": "Anti War Dub",
+        "artist_credit": "Digital Mystikz",
+        "album_hint": "Anti War Dub",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p037",
+        "role": "primary",
+        "title": "Cockney Thug",
+        "artist_credit": "Rusko",
+        "album_hint": "Babylon, Vol. 1",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p038",
+        "role": "primary",
+        "title": "Eastern Jam",
+        "artist_credit": "Chase & Status",
+        "album_hint": "More Than Alot",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p039",
+        "role": "primary",
+        "title": "Blind Faith",
+        "artist_credit": "Chase & Status feat. Liam Bailey",
+        "album_hint": "No More Idols",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p040",
+        "role": "primary",
+        "title": "Gold Dust",
+        "artist_credit": "DJ Fresh",
+        "album_hint": "Kryptonite",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p041",
+        "role": "primary",
+        "title": "Afterglow",
+        "artist_credit": "Wilkinson feat. Becky Hill",
+        "album_hint": "Lazers Not Included",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p042",
+        "role": "primary",
+        "title": "Solar System",
+        "artist_credit": "Sub Focus",
+        "album_hint": "Solar System / Siren",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p043",
+        "role": "primary",
+        "title": "Ready to Fly",
+        "artist_credit": "Sub Focus & Dimension",
+        "album_hint": "Evolve",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p044",
+        "role": "primary",
+        "title": "Desire",
+        "artist_credit": "Dimension",
+        "album_hint": "Organ",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p045",
+        "role": "primary",
+        "title": "Disconnect",
+        "artist_credit": "Becky Hill & Chase & Status",
+        "album_hint": "Believe Me Now?",
+        "release_year_hint": 2023,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p046",
+        "role": "primary",
+        "title": "Messy in Heaven",
+        "artist_credit": "venbee & goddard.",
+        "album_hint": "zero experience",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p047",
+        "role": "primary",
+        "title": "Original Nuttah 25",
+        "artist_credit": "UK Apache & Shy FX",
+        "album_hint": "Original Nuttah 25",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p048",
+        "role": "primary",
+        "title": "Circles",
+        "artist_credit": "Adam F",
+        "album_hint": "Colours",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p049",
+        "role": "primary",
+        "title": "Brown Paper Bag",
+        "artist_credit": "Roni Size / Reprazent",
+        "album_hint": "New Forms",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p050",
+        "role": "primary",
+        "title": "Valley of the Shadows",
+        "artist_credit": "Origin Unknown",
+        "album_hint": "Valley of the Shadows",
+        "release_year_hint": 1993,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p051",
+        "role": "primary",
+        "title": "No Problem",
+        "artist_credit": "Chase & Status",
+        "album_hint": "No More Idols",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p052",
+        "role": "primary",
+        "title": "Dead Limit",
+        "artist_credit": "Noisia & The Upbeats",
+        "album_hint": "Dead Limit",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p053",
+        "role": "primary",
+        "title": "Stigma",
+        "artist_credit": "Noisia",
+        "album_hint": "Split the Atom",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p054",
+        "role": "primary",
+        "title": "Centipede",
+        "artist_credit": "Knife Party",
+        "album_hint": "Rage Valley",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p055",
+        "role": "primary",
+        "title": "Cracks (Flux Pavilion Remix)",
+        "artist_credit": "Freestylers feat. Belle Humble",
+        "album_hint": "Cracks",
+        "release_year_hint": 2010,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p056",
+        "role": "primary",
+        "title": "Promises",
+        "artist_credit": "Nero",
+        "album_hint": "Welcome Reality",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p057",
+        "role": "primary",
+        "title": "Me and You",
+        "artist_credit": "Nero",
+        "album_hint": "Welcome Reality",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p058",
+        "role": "primary",
+        "title": "Gold (Stupid Love)",
+        "artist_credit": "Excision & ILLENIUM feat. Shallows",
+        "album_hint": "Apex",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p059",
+        "role": "primary",
+        "title": "Throwin' Elbows",
+        "artist_credit": "Excision & Space Laces",
+        "album_hint": "Virus",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p060",
+        "role": "primary",
+        "title": "Vault",
+        "artist_credit": "Excision",
+        "album_hint": "Virus",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p061",
+        "role": "primary",
+        "title": "Griztronics",
+        "artist_credit": "GRiZ & Subtronics",
+        "album_hint": "Griztronics",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p062",
+        "role": "primary",
+        "title": "Scream Saver",
+        "artist_credit": "Subtronics",
+        "album_hint": "Scream Saver",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p063",
+        "role": "primary",
+        "title": "Laserbeam",
+        "artist_credit": "Ray Volpe",
+        "album_hint": "Legend of the Volpetron",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p064",
+        "role": "primary",
+        "title": "Chaos",
+        "artist_credit": "MUST DIE!",
+        "album_hint": "Crisis Vision",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p065",
+        "role": "primary",
+        "title": "Woo Boost",
+        "artist_credit": "Rusko",
+        "album_hint": "O.M.G.!",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p066",
+        "role": "primary",
+        "title": "Experts",
+        "artist_credit": "SKisM",
+        "album_hint": "Experts",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p067",
+        "role": "primary",
+        "title": "Like a Bitch",
+        "artist_credit": "Zomboy",
+        "album_hint": "Neon Grave",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p068",
+        "role": "primary",
+        "title": "Terror Squad",
+        "artist_credit": "Zomboy",
+        "album_hint": "Reanimated EP",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p069",
+        "role": "primary",
+        "title": "Get with the Program",
+        "artist_credit": "Zomboy feat. O.V",
+        "album_hint": "Rott N' Roll, Pt. 1",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p070",
+        "role": "primary",
+        "title": "Front to Back",
+        "artist_credit": "Buku",
+        "album_hint": "Front to Back",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p071",
+        "role": "primary",
+        "title": "Mosh",
+        "artist_credit": "NGHTMRE & Flux Pavilion feat. Smokepurpp",
+        "album_hint": "NGHTMRE",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p072",
+        "role": "primary",
+        "title": "Gemini",
+        "artist_credit": "What So Not feat. George Maple",
+        "album_hint": "Gemini EP",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p073",
+        "role": "primary",
+        "title": "High You Are (Branchez Remix)",
+        "artist_credit": "What So Not",
+        "album_hint": "High You Are",
+        "release_year_hint": 2013,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p074",
+        "role": "primary",
+        "title": "Goosebumps (HVME Remix)",
+        "artist_credit": "Travis Scott",
+        "album_hint": "Goosebumps (Remix)",
+        "release_year_hint": 2020,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p075",
+        "role": "primary",
+        "title": "Do It To It",
+        "artist_credit": "ACRAZE feat. Cherish",
+        "album_hint": "Do It To It",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p076",
+        "role": "primary",
+        "title": "Ferrari",
+        "artist_credit": "James Hype & Miggy Dela Rosa",
+        "album_hint": "Ferrari",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p077",
+        "role": "primary",
+        "title": "Drugs from Amsterdam",
+        "artist_credit": "Mau P",
+        "album_hint": "Drugs from Amsterdam",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p078",
+        "role": "primary",
+        "title": "The Drop",
+        "artist_credit": "Dimitri Vegas, David Guetta, Nicole Scherzinger & Azteck",
+        "album_hint": "The Drop",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p079",
+        "role": "primary",
+        "title": "Dashstar* (VIP)",
+        "artist_credit": "Knock2",
+        "album_hint": "ROOM202 dlux",
+        "release_year_hint": 2023,
+        "recording_intent": "alternate",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p080",
+        "role": "primary",
+        "title": "Behemoth",
+        "artist_credit": "SVDDEN DEATH",
+        "album_hint": "VOYD Vol. I",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p081",
+        "role": "primary",
+        "title": "The Paradox",
+        "artist_credit": "Seven Lions, Wooli & Trivecta",
+        "album_hint": "The Paradox",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p082",
+        "role": "primary",
+        "title": "Island",
+        "artist_credit": "Seven Lions, Wooli & Trivecta feat. Nevve",
+        "album_hint": "Island",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p083",
+        "role": "primary",
+        "title": "Shatterpoint",
+        "artist_credit": "Trivecta",
+        "album_hint": "The Way Back Up",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p084",
+        "role": "primary",
+        "title": "Another Me",
+        "artist_credit": "Seven Lions, Excision & Wooli feat. Dylan Matthew",
+        "album_hint": "Another Me",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p085",
+        "role": "primary",
+        "title": "Supersonic (My Existence)",
+        "artist_credit": "Skrillex, Noisia, josh pan & Dylan Brady",
+        "album_hint": "Quest for Fire",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p086",
+        "role": "primary",
+        "title": "Mumbai Power",
+        "artist_credit": "Skrillex feat. Beam",
+        "album_hint": "Show Tracks",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p087",
+        "role": "primary",
+        "title": "Shellshock",
+        "artist_credit": "NGHTMRE & Zomboy feat. Georgia Ku",
+        "album_hint": "DRMVRSE",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p088",
+        "role": "primary",
+        "title": "Gassed Up",
+        "artist_credit": "Zeds Dead & Subtronics feat. Flowdan",
+        "album_hint": "Gassed Up",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p089",
+        "role": "primary",
+        "title": "Collapse",
+        "artist_credit": "Zeds Dead feat. Memorecks",
+        "album_hint": "Northern Lights",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p090",
+        "role": "primary",
+        "title": "Eyes on Fire (Zeds Dead Remix)",
+        "artist_credit": "Blue Foundation",
+        "album_hint": "Eyes on Fire Remixes",
+        "release_year_hint": 2009,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p091",
+        "role": "primary",
+        "title": "In for the Kill (Skream's Let's Get Ravey Remix)",
+        "artist_credit": "La Roux",
+        "album_hint": "In for the Kill",
+        "release_year_hint": 2009,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p092",
+        "role": "primary",
+        "title": "Hold On (Sub Focus Remix)",
+        "artist_credit": "Rusko feat. Amber Coffman",
+        "album_hint": "O.M.G.!",
+        "release_year_hint": 2010,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p093",
+        "role": "primary",
+        "title": "Bass Cannon",
+        "artist_credit": "Flux Pavilion",
+        "album_hint": "Bass Cannon",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p094",
+        "role": "primary",
+        "title": "Raise Your Weapon",
+        "artist_credit": "deadmau5 feat. Greta Svabo Bech",
+        "album_hint": "4×4=12",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p095",
+        "role": "primary",
+        "title": "The Veldt",
+        "artist_credit": "deadmau5 feat. Chris James",
+        "album_hint": "Album Title Goes Here",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p096",
+        "role": "primary",
+        "title": "Opus",
+        "artist_credit": "Eric Prydz",
+        "album_hint": "Opus",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p097",
+        "role": "primary",
+        "title": "Atlas",
+        "artist_credit": "Bicep",
+        "album_hint": "Isles",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p098",
+        "role": "primary",
+        "title": "Glue",
+        "artist_credit": "Bicep",
+        "album_hint": "Bicep",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p099",
+        "role": "primary",
+        "title": "Emerald Rush",
+        "artist_credit": "Jon Hopkins",
+        "album_hint": "Singularity",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p100",
+        "role": "primary",
+        "title": "Windowlicker",
+        "artist_credit": "Aphex Twin",
+        "album_hint": "Windowlicker",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r001",
+        "role": "reserve",
+        "title": "Smack My Bitch Up",
+        "artist_credit": "The Prodigy",
+        "album_hint": "The Fat of the Land",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r002",
+        "role": "reserve",
+        "title": "Block Rockin' Beats",
+        "artist_credit": "The Chemical Brothers",
+        "album_hint": "Dig Your Own Hole",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r003",
+        "role": "reserve",
+        "title": "Stress",
+        "artist_credit": "Justice",
+        "album_hint": "†",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r004",
+        "role": "reserve",
+        "title": "Phantom Pt. II",
+        "artist_credit": "Justice",
+        "album_hint": "†",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r005",
+        "role": "reserve",
+        "title": "Propane Nightmares",
+        "artist_credit": "Pendulum",
+        "album_hint": "In Silico",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r006",
+        "role": "reserve",
+        "title": "Blood Sugar",
+        "artist_credit": "Pendulum",
+        "album_hint": "Blood Sugar / Axle Grinder",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r007",
+        "role": "reserve",
+        "title": "X-Ray",
+        "artist_credit": "Sub Focus",
+        "album_hint": "Sub Focus",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r008",
+        "role": "reserve",
+        "title": "Witchcraft",
+        "artist_credit": "Pendulum",
+        "album_hint": "Immersion",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r009",
+        "role": "reserve",
+        "title": "Tidal Wave",
+        "artist_credit": "Sub Focus feat. Alpines",
+        "album_hint": "Torus",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r010",
+        "role": "reserve",
+        "title": "Rock It",
+        "artist_credit": "Sub Focus",
+        "album_hint": "Sub Focus",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r011",
+        "role": "reserve",
+        "title": "All Night",
+        "artist_credit": "Camo & Krooked",
+        "album_hint": "Mosaik",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r012",
+        "role": "reserve",
+        "title": "Sientelo",
+        "artist_credit": "Mefjus & Camo & Krooked",
+        "album_hint": "Sientelo",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r013",
+        "role": "reserve",
+        "title": "Hackers",
+        "artist_credit": "Metrik",
+        "album_hint": "Ex Machina",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r014",
+        "role": "reserve",
+        "title": "We Got It",
+        "artist_credit": "Metrik feat. Rothwell",
+        "album_hint": "LIFE/THRILLS",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r015",
+        "role": "reserve",
+        "title": "Mr Happy",
+        "artist_credit": "DJ Hazard & D Minds",
+        "album_hint": "Mr Happy / Super Drunk",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r016",
+        "role": "reserve",
+        "title": "Bricks Don't Roll",
+        "artist_credit": "DJ Hazard",
+        "album_hint": "Bricks Don't Roll",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r017",
+        "role": "reserve",
+        "title": "Timewarp",
+        "artist_credit": "Sub Focus",
+        "album_hint": "Sub Focus",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r018",
+        "role": "reserve",
+        "title": "Siren",
+        "artist_credit": "Sub Focus",
+        "album_hint": "Solar System / Siren",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r019",
+        "role": "reserve",
+        "title": "Take You Higher",
+        "artist_credit": "Wilkinson",
+        "album_hint": "Lazers Not Included",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r020",
+        "role": "reserve",
+        "title": "Sweet Lies",
+        "artist_credit": "Wilkinson feat. Karen Harding",
+        "album_hint": "Hypnotic",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r021",
+        "role": "reserve",
+        "title": "Bad Company",
+        "artist_credit": "Bad Company UK",
+        "album_hint": "Inside the Machine",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r022",
+        "role": "reserve",
+        "title": "The Nine",
+        "artist_credit": "Bad Company UK",
+        "album_hint": "The Nine / The Bridge",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r023",
+        "role": "reserve",
+        "title": "Deep Space",
+        "artist_credit": "Space Laces",
+        "album_hint": "Vaultage 001",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r024",
+        "role": "reserve",
+        "title": "Dominate",
+        "artist_credit": "Space Laces",
+        "album_hint": "Dominate",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r025",
+        "role": "reserve",
+        "title": "Horizon",
+        "artist_credit": "Seven Lions feat. Tritonal & Kill the Noise",
+        "album_hint": "Where I Won't Be Found",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      }
+    ]
+  }
+}

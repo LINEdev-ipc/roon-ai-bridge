@@ -27,6 +27,7 @@ This documentation covers the current v0.20.0 beta repository:
 - [v0.20.0 Beta 13 Release-Anchored Binding Validation](v0.20.0-beta.13-release-anchored-binding-validation.md)
 - [v0.20.0 Beta 14 Tiered Recording Evidence Validation](v0.20.0-beta.14-tiered-recording-evidence-validation.md)
 - [v0.20.0 Beta 15 Release Tracklist Recovery Validation](v0.20.0-beta.15-release-tracklist-recovery-validation.md)
+- [v0.20.0 Beta 16 Official Audio and Exact-Version Validation](v0.20.0-beta.16-official-audio-exact-version-validation.md)
 - [v0.18.0 Release Notes](v0.18.0-release-notes.md)
 - [v0.18.0 Validation](v0.18.0-validation.md)
 - [v0.18.0 Architecture Validation](v0.18.0-architecture-validation.md)

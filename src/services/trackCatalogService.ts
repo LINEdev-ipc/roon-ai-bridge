@@ -103,6 +103,7 @@ type ResolveCatalogInput = {
   duration_seconds?: number | null;
   release_year_observation?: number | null;
   metadata_depth?: "identity" | "full";
+  prefer_release_tracklist?: boolean;
   release_year?: number | null;
   track_number?: number | null;
   disc_number?: number | null;

@@ -53,6 +53,8 @@ export function createRoonClient(
   let knownOutputsById = new Map<string, RoonOutput>();
   let started = false;
   let stopped = false;
+  let directConnection: any | null = null;
+  let directReconnectTimer: NodeJS.Timeout | null = null;
 
   function portalWebsite(): string {
     const address = Object.values(os.networkInterfaces())
@@ -378,6 +380,41 @@ export function createRoonClient(
       if (started && !stopped) return;
       started = true;
       stopped = false;
+      if (config.roonCoreHost && config.roonCorePort) {
+        const connectDirectly = (): void => {
+          if (stopped || directConnection) return;
+          logger.info("Connecting directly to Roon Core", {
+            host: config.roonCoreHost,
+            port: config.roonCorePort
+          });
+          directConnection = (roon as any).ws_connect({
+            host: config.roonCoreHost,
+            port: config.roonCorePort,
+            onclose: () => {
+              directConnection = null;
+              if (stopped) return;
+              logger.warn("Direct Roon Core connection closed; retrying", {
+                retryInMs: 5_000
+              });
+              directReconnectTimer = setTimeout(() => {
+                directReconnectTimer = null;
+                connectDirectly();
+              }, 5_000);
+            },
+            onerror: () => {
+              logger.error("Direct Roon Core connection error", {
+                host: config.roonCoreHost,
+                port: config.roonCorePort
+              });
+            }
+          });
+        };
+        logger.info(
+          "Authorization pending: enable the extension in Roon Settings > Setup > Extensions"
+        );
+        connectDirectly();
+        return;
+      }
       logger.info("Starting Roon Core discovery");
       logger.info(
         "Authorization pending: enable the extension in Roon Settings > Setup > Extensions"
@@ -389,6 +426,15 @@ export function createRoonClient(
       stopped = true;
       logger.info("Stopping Roon Core discovery and connections");
       try {
+        if (directReconnectTimer) {
+          clearTimeout(directReconnectTimer);
+          directReconnectTimer = null;
+        }
+        try {
+          directConnection?.transport?.close?.();
+        } finally {
+          directConnection = null;
+        }
         (roon as any).stop_discovery?.();
       } finally {
         (roon as any).disconnect_all?.();

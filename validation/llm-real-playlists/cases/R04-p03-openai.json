@@ -1,0 +1,1296 @@
+{
+  "case_id": "R04",
+  "legacy_prompt_id": "P03",
+  "human_prompt": "Prepara una playlist de 100 canciones para hacer HIIT en casa mezclando géneros, pero sin metal.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "response_id": "resp_028d5eeccaa8bc88006a695c076b3481a29e46141973d3ff05",
+    "started_at": "2026-07-29T01:48:54.616Z",
+    "completed_at": "2026-07-29T01:50:25.000Z",
+    "elapsed_ms": 90384,
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "438f4e22066989a68628065de2b2993fc9a6d32e2df9c3b96a369c565d568c22",
+    "usage": {
+      "input_tokens": 1802,
+      "input_tokens_details": {
+        "cache_write_tokens": 27,
+        "cached_tokens": 1644
+      },
+      "output_tokens": 6821,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 8623
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "HIIT en casa: 100 canciones sin metal",
+    "description": "100 temas de alta energía para intervalos HIIT en casa: electrónica, pop, hip-hop, reguetón, rock alternativo, funk, house y ritmos globales, sin metal.",
+    "desired_count": 100,
+    "selection_complexity": "standard",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "candidate_id": "p001",
+        "role": "primary",
+        "title": "Don't Start Now",
+        "artist_credit": "Dua Lipa",
+        "album_hint": "Future Nostalgia",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p002",
+        "role": "primary",
+        "title": "Titanium",
+        "artist_credit": "David Guetta feat. Sia",
+        "album_hint": "Nothing but the Beat",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p003",
+        "role": "primary",
+        "title": "Can't Hold Us",
+        "artist_credit": "Macklemore & Ryan Lewis feat. Ray Dalton",
+        "album_hint": "The Heist",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p004",
+        "role": "primary",
+        "title": "Physical",
+        "artist_credit": "Dua Lipa",
+        "album_hint": "Future Nostalgia",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p005",
+        "role": "primary",
+        "title": "Levels",
+        "artist_credit": "Avicii",
+        "album_hint": "Levels",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p006",
+        "role": "primary",
+        "title": "Run the World (Girls)",
+        "artist_credit": "Beyoncé",
+        "album_hint": "4",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p007",
+        "role": "primary",
+        "title": "Turn Down for What",
+        "artist_credit": "DJ Snake & Lil Jon",
+        "album_hint": "Turn Down for What",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p008",
+        "role": "primary",
+        "title": "Rain on Me",
+        "artist_credit": "Lady Gaga & Ariana Grande",
+        "album_hint": "Chromatica",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p009",
+        "role": "primary",
+        "title": "Party Rock Anthem",
+        "artist_credit": "LMFAO feat. Lauren Bennett & GoonRock",
+        "album_hint": "Sorry for Party Rocking",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p010",
+        "role": "primary",
+        "title": "Blinding Lights",
+        "artist_credit": "The Weeknd",
+        "album_hint": "After Hours",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p011",
+        "role": "primary",
+        "title": "We Found Love",
+        "artist_credit": "Rihanna feat. Calvin Harris",
+        "album_hint": "Talk That Talk",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p012",
+        "role": "primary",
+        "title": "One More Time",
+        "artist_credit": "Daft Punk",
+        "album_hint": "Discovery",
+        "release_year_hint": 2000,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p013",
+        "role": "primary",
+        "title": "Break Free",
+        "artist_credit": "Ariana Grande feat. Zedd",
+        "album_hint": "My Everything",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p014",
+        "role": "primary",
+        "title": "I Gotta Feeling",
+        "artist_credit": "The Black Eyed Peas",
+        "album_hint": "The E.N.D.",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p015",
+        "role": "primary",
+        "title": "On the Floor",
+        "artist_credit": "Jennifer Lopez feat. Pitbull",
+        "album_hint": "Love?",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p016",
+        "role": "primary",
+        "title": "Wake Me Up",
+        "artist_credit": "Avicii",
+        "album_hint": "True",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p017",
+        "role": "primary",
+        "title": "Stronger",
+        "artist_credit": "Kelly Clarkson",
+        "album_hint": "Stronger",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p018",
+        "role": "primary",
+        "title": "Where Have You Been",
+        "artist_credit": "Rihanna",
+        "album_hint": "Talk That Talk",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p019",
+        "role": "primary",
+        "title": "Yeah!",
+        "artist_credit": "Usher feat. Lil Jon & Ludacris",
+        "album_hint": "Confessions",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p020",
+        "role": "primary",
+        "title": "Starships",
+        "artist_credit": "Nicki Minaj",
+        "album_hint": "Pink Friday: Roman Reloaded",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p021",
+        "role": "primary",
+        "title": "The Business",
+        "artist_credit": "Tiësto",
+        "album_hint": "Drive",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p022",
+        "role": "primary",
+        "title": "Commander",
+        "artist_credit": "Kelly Rowland feat. David Guetta",
+        "album_hint": "Here I Am",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p023",
+        "role": "primary",
+        "title": "Scream & Shout",
+        "artist_credit": "will.i.am feat. Britney Spears",
+        "album_hint": "#willpower",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p024",
+        "role": "primary",
+        "title": "Pump It",
+        "artist_credit": "The Black Eyed Peas",
+        "album_hint": "Monkey Business",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p025",
+        "role": "primary",
+        "title": "Work Bitch",
+        "artist_credit": "Britney Spears",
+        "album_hint": "Britney Jean",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p026",
+        "role": "primary",
+        "title": "Lose Yourself",
+        "artist_credit": "Eminem",
+        "album_hint": "8 Mile: Music from and Inspired by the Motion Picture",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p027",
+        "role": "primary",
+        "title": "Mi Gente",
+        "artist_credit": "J Balvin & Willy William",
+        "album_hint": "Vibras",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p028",
+        "role": "primary",
+        "title": "POWER",
+        "artist_credit": "Kanye West",
+        "album_hint": "My Beautiful Dark Twisted Fantasy",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p029",
+        "role": "primary",
+        "title": "Gasolina",
+        "artist_credit": "Daddy Yankee",
+        "album_hint": "Barrio Fino",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p030",
+        "role": "primary",
+        "title": "Industry Baby",
+        "artist_credit": "Lil Nas X feat. Jack Harlow",
+        "album_hint": "Montero",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p031",
+        "role": "primary",
+        "title": "Taki Taki",
+        "artist_credit": "DJ Snake feat. Selena Gomez, Ozuna & Cardi B",
+        "album_hint": "Carte Blanche",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p032",
+        "role": "primary",
+        "title": "HUMBLE.",
+        "artist_credit": "Kendrick Lamar",
+        "album_hint": "DAMN.",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p033",
+        "role": "primary",
+        "title": "Pepas",
+        "artist_credit": "Farruko",
+        "album_hint": "La 167",
+        "release_year_hint": 2021,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p034",
+        "role": "primary",
+        "title": "Jump Around",
+        "artist_credit": "House of Pain",
+        "album_hint": "House of Pain",
+        "release_year_hint": 1992,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p035",
+        "role": "primary",
+        "title": "Con Calma",
+        "artist_credit": "Daddy Yankee feat. Snow",
+        "album_hint": "Con Calma & Mis Grandes Éxitos",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p036",
+        "role": "primary",
+        "title": "DNA.",
+        "artist_credit": "Kendrick Lamar",
+        "album_hint": "DAMN.",
+        "release_year_hint": 2017,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p037",
+        "role": "primary",
+        "title": "Danza Kuduro",
+        "artist_credit": "Don Omar & Lucenzo",
+        "album_hint": "Meet the Orphans",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p038",
+        "role": "primary",
+        "title": "Remember the Name",
+        "artist_credit": "Fort Minor feat. Styles of Beyond",
+        "album_hint": "The Rising Tied",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p039",
+        "role": "primary",
+        "title": "Yo Perreo Sola",
+        "artist_credit": "Bad Bunny",
+        "album_hint": "YHLQMDLG",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p040",
+        "role": "primary",
+        "title": "Ante Up (Robbin-Hoodz Theory)",
+        "artist_credit": "M.O.P.",
+        "album_hint": "Warriorz",
+        "release_year_hint": 2000,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p041",
+        "role": "primary",
+        "title": "Rakata",
+        "artist_credit": "Wisin & Yandel",
+        "album_hint": "Pa'l Mundo",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p042",
+        "role": "primary",
+        "title": "Sabotage",
+        "artist_credit": "Beastie Boys",
+        "album_hint": "Ill Communication",
+        "release_year_hint": 1994,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p043",
+        "role": "primary",
+        "title": "Despechá",
+        "artist_credit": "Rosalía",
+        "album_hint": "Motomami +",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p044",
+        "role": "primary",
+        "title": "X Gon' Give It to Ya",
+        "artist_credit": "DMX",
+        "album_hint": "The Best of DMX",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p045",
+        "role": "primary",
+        "title": "China",
+        "artist_credit": "Anuel AA, Daddy Yankee, Karol G, Ozuna & J Balvin",
+        "album_hint": "Emmanuel",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p046",
+        "role": "primary",
+        "title": "Till I Collapse",
+        "artist_credit": "Eminem feat. Nate Dogg",
+        "album_hint": "The Eminem Show",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p047",
+        "role": "primary",
+        "title": "Bichota",
+        "artist_credit": "Karol G",
+        "album_hint": "KG0516",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p048",
+        "role": "primary",
+        "title": "Simon Says",
+        "artist_credit": "Pharoahe Monch",
+        "album_hint": "Internal Affairs",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p049",
+        "role": "primary",
+        "title": "Saoko",
+        "artist_credit": "Rosalía",
+        "album_hint": "Motomami",
+        "release_year_hint": 2022,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p050",
+        "role": "primary",
+        "title": "All the Way Up",
+        "artist_credit": "Fat Joe & Remy Ma feat. French Montana & Infared",
+        "album_hint": "Plata O Plomo",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p051",
+        "role": "primary",
+        "title": "Animals",
+        "artist_credit": "Martin Garrix",
+        "album_hint": "Animals",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p052",
+        "role": "primary",
+        "title": "Song 2",
+        "artist_credit": "Blur",
+        "album_hint": "Blur",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p053",
+        "role": "primary",
+        "title": "Sandstorm",
+        "artist_credit": "Darude",
+        "album_hint": "Before the Storm",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p054",
+        "role": "primary",
+        "title": "Take Me Out",
+        "artist_credit": "Franz Ferdinand",
+        "album_hint": "Franz Ferdinand",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p055",
+        "role": "primary",
+        "title": "Boneless",
+        "artist_credit": "Steve Aoki, Chris Lake & Tujamo",
+        "album_hint": "Neon Future I",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p056",
+        "role": "primary",
+        "title": "Chelsea Dagger",
+        "artist_credit": "The Fratellis",
+        "album_hint": "Costello Music",
+        "release_year_hint": 2006,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p057",
+        "role": "primary",
+        "title": "Greyhound",
+        "artist_credit": "Swedish House Mafia",
+        "album_hint": "Until Now",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p058",
+        "role": "primary",
+        "title": "Tick Tick Boom",
+        "artist_credit": "The Hives",
+        "album_hint": "The Black and White Album",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p059",
+        "role": "primary",
+        "title": "Tremor",
+        "artist_credit": "Dimitri Vegas, Martin Garrix & Like Mike",
+        "album_hint": "Tremor",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p060",
+        "role": "primary",
+        "title": "Club Foot",
+        "artist_credit": "Kasabian",
+        "album_hint": "Kasabian",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p061",
+        "role": "primary",
+        "title": "Heads Will Roll (A-Trak Remix)",
+        "artist_credit": "Yeah Yeah Yeahs",
+        "album_hint": "Heads Will Roll Remixes",
+        "release_year_hint": 2009,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p062",
+        "role": "primary",
+        "title": "The Pretender",
+        "artist_credit": "Foo Fighters",
+        "album_hint": "Echoes, Silence, Patience & Grace",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p063",
+        "role": "primary",
+        "title": "Genesis",
+        "artist_credit": "Justice",
+        "album_hint": "Cross",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p064",
+        "role": "primary",
+        "title": "Reptilia",
+        "artist_credit": "The Strokes",
+        "album_hint": "Room on Fire",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p065",
+        "role": "primary",
+        "title": "Bangarang",
+        "artist_credit": "Skrillex feat. Sirah",
+        "album_hint": "Bangarang",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p066",
+        "role": "primary",
+        "title": "Are You Gonna Be My Girl",
+        "artist_credit": "Jet",
+        "album_hint": "Get Born",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p067",
+        "role": "primary",
+        "title": "Firestarter",
+        "artist_credit": "The Prodigy",
+        "album_hint": "The Fat of the Land",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p068",
+        "role": "primary",
+        "title": "Electric Feel",
+        "artist_credit": "MGMT",
+        "album_hint": "Oracular Spectacular",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p069",
+        "role": "primary",
+        "title": "Go",
+        "artist_credit": "The Chemical Brothers",
+        "album_hint": "Born in the Echoes",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p070",
+        "role": "primary",
+        "title": "Electric Worry",
+        "artist_credit": "Clutch",
+        "album_hint": "From Beale Street to Oblivion",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p071",
+        "role": "primary",
+        "title": "Galvanize",
+        "artist_credit": "The Chemical Brothers feat. Q-Tip",
+        "album_hint": "Push the Button",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p072",
+        "role": "primary",
+        "title": "Lonely Boy",
+        "artist_credit": "The Black Keys",
+        "album_hint": "El Camino",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p073",
+        "role": "primary",
+        "title": "Losing It",
+        "artist_credit": "FISHER",
+        "album_hint": "Losing It",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p074",
+        "role": "primary",
+        "title": "My Number",
+        "artist_credit": "Foals",
+        "album_hint": "Holy Fire",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p075",
+        "role": "primary",
+        "title": "Breathe",
+        "artist_credit": "The Prodigy",
+        "album_hint": "The Fat of the Land",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p076",
+        "role": "primary",
+        "title": "Temperature",
+        "artist_credit": "Sean Paul",
+        "album_hint": "The Trinity",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p077",
+        "role": "primary",
+        "title": "Freed from Desire",
+        "artist_credit": "Gala",
+        "album_hint": "Come into My Life",
+        "release_year_hint": 1996,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p078",
+        "role": "primary",
+        "title": "Pon de Replay",
+        "artist_credit": "Rihanna",
+        "album_hint": "Music of the Sun",
+        "release_year_hint": 2005,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p079",
+        "role": "primary",
+        "title": "Pump Up the Jam",
+        "artist_credit": "Technotronic feat. Felly",
+        "album_hint": "Pump Up the Jam: The Album",
+        "release_year_hint": 1989,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p080",
+        "role": "primary",
+        "title": "Move Ya Body",
+        "artist_credit": "Nina Sky feat. Jabba",
+        "album_hint": "Nina Sky",
+        "release_year_hint": 2004,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p081",
+        "role": "primary",
+        "title": "Push It",
+        "artist_credit": "Salt-N-Pepa",
+        "album_hint": "Hot, Cool & Vicious",
+        "release_year_hint": 1987,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p082",
+        "role": "primary",
+        "title": "Murder She Wrote",
+        "artist_credit": "Chaka Demus & Pliers",
+        "album_hint": "Tease Me",
+        "release_year_hint": 1992,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p083",
+        "role": "primary",
+        "title": "Gonna Make You Sweat (Everybody Dance Now)",
+        "artist_credit": "C+C Music Factory feat. Freedom Williams",
+        "album_hint": "Gonna Make You Sweat",
+        "release_year_hint": 1990,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p084",
+        "role": "primary",
+        "title": "Boombastic",
+        "artist_credit": "Shaggy",
+        "album_hint": "Boombastic",
+        "release_year_hint": 1995,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p085",
+        "role": "primary",
+        "title": "Rhythm Is a Dancer",
+        "artist_credit": "Snap!",
+        "album_hint": "The Madman's Return",
+        "release_year_hint": 1992,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p086",
+        "role": "primary",
+        "title": "Get Busy",
+        "artist_credit": "Sean Paul",
+        "album_hint": "Dutty Rock",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p087",
+        "role": "primary",
+        "title": "Everybody Everybody",
+        "artist_credit": "Black Box",
+        "album_hint": "Dreamland",
+        "release_year_hint": 1990,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p088",
+        "role": "primary",
+        "title": "Watch Out for This (Bumaye)",
+        "artist_credit": "Major Lazer feat. Busy Signal, The Flexican & FS Green",
+        "album_hint": "Free the Universe",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p089",
+        "role": "primary",
+        "title": "Insomnia",
+        "artist_credit": "Faithless",
+        "album_hint": "Reverence",
+        "release_year_hint": 1995,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p090",
+        "role": "primary",
+        "title": "Makeba",
+        "artist_credit": "Jain",
+        "album_hint": "Zanaka",
+        "release_year_hint": 2015,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p091",
+        "role": "primary",
+        "title": "Destination Calabria",
+        "artist_credit": "Alex Gaudino feat. Crystal Waters",
+        "album_hint": "My Destination",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p092",
+        "role": "primary",
+        "title": "Jerusalema",
+        "artist_credit": "Master KG feat. Nomcebo Zikode",
+        "album_hint": "Jerusalema",
+        "release_year_hint": 2019,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p093",
+        "role": "primary",
+        "title": "Satisfaction",
+        "artist_credit": "Benny Benassi presents The Biz",
+        "album_hint": "Hypnotica",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p094",
+        "role": "primary",
+        "title": "Waka Waka (This Time for Africa)",
+        "artist_credit": "Shakira feat. Freshlyground",
+        "album_hint": "Sale el Sol",
+        "release_year_hint": 2010,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p095",
+        "role": "primary",
+        "title": "Better Off Alone",
+        "artist_credit": "Alice Deejay",
+        "album_hint": "Who Needs Guitars Anyway?",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p096",
+        "role": "primary",
+        "title": "Alors on danse",
+        "artist_credit": "Stromae",
+        "album_hint": "Cheese",
+        "release_year_hint": 2009,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p097",
+        "role": "primary",
+        "title": "Be Faithful",
+        "artist_credit": "Fatman Scoop feat. The Crooklyn Clan",
+        "album_hint": "Party Breaks, Vol. 1",
+        "release_year_hint": 1999,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p098",
+        "role": "primary",
+        "title": "Calabria 2007",
+        "artist_credit": "Enur feat. Natasja",
+        "album_hint": "Raggatronic",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p099",
+        "role": "primary",
+        "title": "Born Slippy .NUXX",
+        "artist_credit": "Underworld",
+        "album_hint": "Trainspotting: Music from the Motion Picture",
+        "release_year_hint": 1995,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "p100",
+        "role": "primary",
+        "title": "Don't Leave Me This Way",
+        "artist_credit": "The Communards with Sarah Jane Morris",
+        "album_hint": "Communards",
+        "release_year_hint": 1986,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r101",
+        "role": "reserve",
+        "title": "Levitating",
+        "artist_credit": "Dua Lipa",
+        "album_hint": "Future Nostalgia",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r102",
+        "role": "reserve",
+        "title": "This Is What You Came For",
+        "artist_credit": "Calvin Harris feat. Rihanna",
+        "album_hint": "This Is What You Came For",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r103",
+        "role": "reserve",
+        "title": "Good as Hell",
+        "artist_credit": "Lizzo",
+        "album_hint": "Coconut Oil",
+        "release_year_hint": 2016,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r104",
+        "role": "reserve",
+        "title": "Feel So Close",
+        "artist_credit": "Calvin Harris",
+        "album_hint": "18 Months",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r105",
+        "role": "reserve",
+        "title": "Hey Ya!",
+        "artist_credit": "Outkast",
+        "album_hint": "Speakerboxxx/The Love Below",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r106",
+        "role": "reserve",
+        "title": "I Like It",
+        "artist_credit": "Cardi B, Bad Bunny & J Balvin",
+        "album_hint": "Invasion of Privacy",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r107",
+        "role": "reserve",
+        "title": "Uptown Funk",
+        "artist_credit": "Mark Ronson feat. Bruno Mars",
+        "album_hint": "Uptown Special",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r108",
+        "role": "reserve",
+        "title": "Don't Stop the Music",
+        "artist_credit": "Rihanna",
+        "album_hint": "Good Girl Gone Bad",
+        "release_year_hint": 2007,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r109",
+        "role": "reserve",
+        "title": "Give Me Everything",
+        "artist_credit": "Pitbull feat. Ne-Yo, Afrojack & Nayer",
+        "album_hint": "Planet Pit",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r110",
+        "role": "reserve",
+        "title": "Runaway (U & I)",
+        "artist_credit": "Galantis",
+        "album_hint": "Pharmacy",
+        "release_year_hint": 2014,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r111",
+        "role": "reserve",
+        "title": "Mundian To Bach Ke",
+        "artist_credit": "Panjabi MC",
+        "album_hint": "Legalised",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r112",
+        "role": "reserve",
+        "title": "The Rockafeller Skank",
+        "artist_credit": "Fatboy Slim",
+        "album_hint": "You've Come a Long Way, Baby",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r113",
+        "role": "reserve",
+        "title": "Can't Get You Out of My Head",
+        "artist_credit": "Kylie Minogue",
+        "album_hint": "Fever",
+        "release_year_hint": 2001,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r114",
+        "role": "reserve",
+        "title": "I Love It",
+        "artist_credit": "Icona Pop feat. Charli XCX",
+        "album_hint": "This Is... Icona Pop",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r115",
+        "role": "reserve",
+        "title": "Move Your Feet",
+        "artist_credit": "Junior Senior",
+        "album_hint": "D-D-Don't Don't Stop the Beat",
+        "release_year_hint": 2002,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r116",
+        "role": "reserve",
+        "title": "Get Up (Rattle)",
+        "artist_credit": "Bingo Players feat. Far East Movement",
+        "album_hint": "Get Up (Rattle)",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r117",
+        "role": "reserve",
+        "title": "Pursuit of Happiness (Steve Aoki Dance Remix)",
+        "artist_credit": "Kid Cudi feat. MGMT & Ratatat",
+        "album_hint": "Pursuit of Happiness Remixes",
+        "release_year_hint": 2009,
+        "recording_intent": "remix",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r118",
+        "role": "reserve",
+        "title": "Black Skinhead",
+        "artist_credit": "Kanye West",
+        "album_hint": "Yeezus",
+        "release_year_hint": 2013,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r119",
+        "role": "reserve",
+        "title": "Dákiti",
+        "artist_credit": "Bad Bunny & Jhay Cortez",
+        "album_hint": "El Último Tour del Mundo",
+        "release_year_hint": 2020,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r120",
+        "role": "reserve",
+        "title": "Dura",
+        "artist_credit": "Daddy Yankee",
+        "album_hint": "Dura",
+        "release_year_hint": 2018,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r121",
+        "role": "reserve",
+        "title": "Body Movin'",
+        "artist_credit": "Beastie Boys",
+        "album_hint": "Hello Nasty",
+        "release_year_hint": 1998,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r122",
+        "role": "reserve",
+        "title": "Block Rockin' Beats",
+        "artist_credit": "The Chemical Brothers",
+        "album_hint": "Dig Your Own Hole",
+        "release_year_hint": 1997,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r123",
+        "role": "reserve",
+        "title": "Let's Go",
+        "artist_credit": "Calvin Harris feat. Ne-Yo",
+        "album_hint": "18 Months",
+        "release_year_hint": 2012,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r124",
+        "role": "reserve",
+        "title": "Good Feeling",
+        "artist_credit": "Flo Rida",
+        "album_hint": "Wild Ones",
+        "release_year_hint": 2011,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "candidate_id": "r125",
+        "role": "reserve",
+        "title": "Dance Wiv Me",
+        "artist_credit": "Dizzee Rascal feat. Calvin Harris & Chrome",
+        "album_hint": "Tongue n' Cheek",
+        "release_year_hint": 2008,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,1590 @@
+{
+  "case_id": "R09",
+  "legacy_prompt_id": "P08",
+  "human_prompt": "Prepara una playlist de 100 canciones acústicas y versiones para una tarde tranquila.",
+  "status": "frozen_before_execution",
+  "methodology": {
+    "candidate_source": "openai_model_tool_call",
+    "musicbrainz_search_before_freeze": false,
+    "roon_search_before_freeze": false,
+    "manual_candidate_repair": false,
+    "retries": 0
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "response_id": "resp_0b9299faa26b3ef9006a695d7efe508192b1a0969a4fbba1cd",
+    "started_at": "2026-07-29T01:55:10.154Z",
+    "completed_at": "2026-07-29T01:56:56.702Z",
+    "elapsed_ms": 106548,
+    "instructions_sha256": "a43912a2a951e50f71b87e597785eb9646f8b38feedcd7d1b17d6bbbe62a9c79",
+    "tool_description_sha256": "50d72d5d113f9b634542d756d701d9c3050e22cf235bd0b69a5fbb90a6abbb1c",
+    "tool_schema_sha256": "438f4e22066989a68628065de2b2993fc9a6d32e2df9c3b96a369c565d568c22",
+    "usage": {
+      "input_tokens": 1796,
+      "input_tokens_details": {
+        "cache_write_tokens": 21,
+        "cached_tokens": 1644
+      },
+      "output_tokens": 7864,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 9660
+    },
+    "validation_errors": []
+  },
+  "arguments": {
+    "name": "Tarde tranquila: acústicas y versiones",
+    "description": "100 interpretaciones acústicas, unplugged y versiones delicadas para acompañar una tarde tranquila.",
+    "desired_count": 100,
+    "selection_complexity": "exact_versions",
+    "no_adjacent_same_artist": true,
+    "tracks": [
+      {
+        "role": "primary",
+        "title": "Heartbeats",
+        "artist_credit": "José González",
+        "album_hint": "Veneer",
+        "release_year_hint": 2003,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "The Book of Love",
+        "artist_credit": "Peter Gabriel",
+        "album_hint": "Scratch My Back",
+        "release_year_hint": 2010,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Song to the Siren",
+        "artist_credit": "This Mortal Coil",
+        "album_hint": "It'll End in Tears",
+        "release_year_hint": 1984,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Sea of Love",
+        "artist_credit": "Cat Power",
+        "album_hint": "The Covers Record",
+        "release_year_hint": 2000,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Harvest Moon",
+        "artist_credit": "Cassandra Wilson",
+        "album_hint": "New Moon Daughter",
+        "release_year_hint": 1995,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Wild Horses",
+        "artist_credit": "The Sundays",
+        "album_hint": "Blind",
+        "release_year_hint": 1992,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Fields of Gold",
+        "artist_credit": "Eva Cassidy",
+        "album_hint": "Live at Blues Alley",
+        "release_year_hint": 1996,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Pink Moon",
+        "artist_credit": "Nick Drake",
+        "album_hint": "Pink Moon",
+        "release_year_hint": 1972,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Fast Car",
+        "artist_credit": "Tracy Chapman",
+        "album_hint": "Tracy Chapman",
+        "release_year_hint": 1988,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Bloom (Bonus Track)",
+        "artist_credit": "The Paper Kites",
+        "album_hint": "Woodland - EP",
+        "release_year_hint": 2013,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Naked as We Came",
+        "artist_credit": "Iron & Wine",
+        "album_hint": "Our Endless Numbered Days",
+        "release_year_hint": 2004,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Flightless Bird, American Mouth",
+        "artist_credit": "Iron & Wine",
+        "album_hint": "The Shepherd's Dog",
+        "release_year_hint": 2007,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "To Be Alone With You",
+        "artist_credit": "Sufjan Stevens",
+        "album_hint": "Seven Swans",
+        "release_year_hint": 2004,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Lua",
+        "artist_credit": "Bright Eyes",
+        "album_hint": "I'm Wide Awake, It's Morning",
+        "release_year_hint": 2005,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Poison & Wine",
+        "artist_credit": "The Civil Wars",
+        "album_hint": "Barton Hollow",
+        "release_year_hint": 2011,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Rivers and Roads",
+        "artist_credit": "The Head and the Heart",
+        "album_hint": "The Head and the Heart",
+        "release_year_hint": 2011,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Old Pine",
+        "artist_credit": "Ben Howard",
+        "album_hint": "Every Kingdom",
+        "release_year_hint": 2011,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Anchor",
+        "artist_credit": "Novo Amor",
+        "album_hint": "Bathing Beach",
+        "release_year_hint": 2017,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Big Black Car",
+        "artist_credit": "Gregory Alan Isakov",
+        "album_hint": "This Empty Northern Hemisphere",
+        "release_year_hint": 2009,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "The Stable Song",
+        "artist_credit": "Gregory Alan Isakov",
+        "album_hint": "That Sea, the Gambler",
+        "release_year_hint": 2007,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Orange Sky",
+        "artist_credit": "Alexi Murdoch",
+        "album_hint": "Time Without Consequence",
+        "release_year_hint": 2006,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Santa Monica Dream",
+        "artist_credit": "Angus & Julia Stone",
+        "album_hint": "Down the Way",
+        "release_year_hint": 2010,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Featherstone",
+        "artist_credit": "The Paper Kites",
+        "album_hint": "Woodland - EP",
+        "release_year_hint": 2011,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Blue Spotted Tail",
+        "artist_credit": "Fleet Foxes",
+        "album_hint": "Helplessness Blues",
+        "release_year_hint": 2011,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Northern Sky",
+        "artist_credit": "Nick Drake",
+        "album_hint": "Bryter Layter",
+        "release_year_hint": 1971,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Suzanne",
+        "artist_credit": "Leonard Cohen",
+        "album_hint": "Songs of Leonard Cohen",
+        "release_year_hint": 1967,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "The Only Living Boy in New York",
+        "artist_credit": "Simon & Garfunkel",
+        "album_hint": "Bridge over Troubled Water",
+        "release_year_hint": 1970,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "April Come She Will",
+        "artist_credit": "Simon & Garfunkel",
+        "album_hint": "Sounds of Silence",
+        "release_year_hint": 1966,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Blackbird",
+        "artist_credit": "The Beatles",
+        "album_hint": "The Beatles",
+        "release_year_hint": 1968,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Going to California",
+        "artist_credit": "Led Zeppelin",
+        "album_hint": "Led Zeppelin IV",
+        "release_year_hint": 1971,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Landslide",
+        "artist_credit": "Fleetwood Mac",
+        "album_hint": "Fleetwood Mac",
+        "release_year_hint": 1975,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Dust in the Wind",
+        "artist_credit": "Kansas",
+        "album_hint": "Point of Know Return",
+        "release_year_hint": 1977,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Fire and Rain",
+        "artist_credit": "James Taylor",
+        "album_hint": "Sweet Baby James",
+        "release_year_hint": 1970,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "A Case of You",
+        "artist_credit": "Joni Mitchell",
+        "album_hint": "Blue",
+        "release_year_hint": 1971,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Vincent",
+        "artist_credit": "Don McLean",
+        "album_hint": "American Pie",
+        "release_year_hint": 1971,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Operator (That's Not the Way It Feels)",
+        "artist_credit": "Jim Croce",
+        "album_hint": "You Don't Mess Around with Jim",
+        "release_year_hint": 1972,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "If You Could Read My Mind",
+        "artist_credit": "Gordon Lightfoot",
+        "album_hint": "Sit Down Young Stranger",
+        "release_year_hint": 1970,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "I Will Follow You into the Dark",
+        "artist_credit": "Death Cab for Cutie",
+        "album_hint": "Plans",
+        "release_year_hint": 2005,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Heart of Gold",
+        "artist_credit": "Neil Young",
+        "album_hint": "Harvest",
+        "release_year_hint": 1972,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Wild World",
+        "artist_credit": "Cat Stevens",
+        "album_hint": "Tea for the Tillerman",
+        "release_year_hint": 1970,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "First Day of My Life",
+        "artist_credit": "Bright Eyes",
+        "album_hint": "I'm Wide Awake, It's Morning",
+        "release_year_hint": 2005,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Such Great Heights",
+        "artist_credit": "Iron & Wine",
+        "album_hint": "Such Great Heights",
+        "release_year_hint": 2003,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Friday I'm in Love",
+        "artist_credit": "Phoebe Bridgers",
+        "album_hint": "Friday I'm in Love",
+        "release_year_hint": 2019,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "You Missed My Heart",
+        "artist_credit": "Phoebe Bridgers",
+        "album_hint": "Stranger in the Alps",
+        "release_year_hint": 2017,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Between the Bars",
+        "artist_credit": "Madeleine Peyroux",
+        "album_hint": "Careless Love",
+        "release_year_hint": 2004,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Everybody's Talkin'",
+        "artist_credit": "Madeleine Peyroux",
+        "album_hint": "The Blue Room",
+        "release_year_hint": 2013,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Hallelujah",
+        "artist_credit": "Jeff Buckley",
+        "album_hint": "Grace",
+        "release_year_hint": 1994,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Hallelujah",
+        "artist_credit": "k.d. lang",
+        "album_hint": "Hymns of the 49th Parallel",
+        "release_year_hint": 2004,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "I Can't Make You Love Me",
+        "artist_credit": "Bon Iver",
+        "album_hint": "Calgary",
+        "release_year_hint": 2011,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Skinny Love",
+        "artist_credit": "Birdy",
+        "album_hint": "Birdy",
+        "release_year_hint": 2011,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "People Help the People",
+        "artist_credit": "Birdy",
+        "album_hint": "Birdy",
+        "release_year_hint": 2011,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Your Song",
+        "artist_credit": "Ellie Goulding",
+        "album_hint": "Bright Lights",
+        "release_year_hint": 2010,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Can't Help Falling in Love",
+        "artist_credit": "Ingrid Michaelson",
+        "album_hint": "Be OK",
+        "release_year_hint": 2008,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Make You Feel My Love",
+        "artist_credit": "Adele",
+        "album_hint": "19",
+        "release_year_hint": 2008,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "The First Cut Is the Deepest",
+        "artist_credit": "Sheryl Crow",
+        "album_hint": "The Very Best of Sheryl Crow",
+        "release_year_hint": 2003,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Romeo and Juliet",
+        "artist_credit": "The Killers",
+        "album_hint": "Sawdust",
+        "release_year_hint": 2007,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Please, Please, Please, Let Me Get What I Want",
+        "artist_credit": "The Dream Academy",
+        "album_hint": "Ferris Bueller's Day Off",
+        "release_year_hint": 1986,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Mad World",
+        "artist_credit": "Gary Jules",
+        "album_hint": "Trading Snakeoil for Wolftickets",
+        "release_year_hint": 2001,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Nothing Compares 2 U",
+        "artist_credit": "Chris Cornell",
+        "album_hint": "Nothing Compares 2 U",
+        "release_year_hint": 2015,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Patience",
+        "artist_credit": "Chris Cornell",
+        "album_hint": "No One Sings Like You Anymore, Vol. 1",
+        "release_year_hint": 2020,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "True Colors",
+        "artist_credit": "Eva Cassidy",
+        "album_hint": "American Tune",
+        "release_year_hint": 2003,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Time After Time",
+        "artist_credit": "Eva Cassidy",
+        "album_hint": "Time After Time",
+        "release_year_hint": 2000,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Fields of Gold",
+        "artist_credit": "Sting",
+        "album_hint": "The Living Sea",
+        "release_year_hint": 1995,
+        "recording_intent": "acoustic",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Tears in Heaven",
+        "artist_credit": "Eric Clapton",
+        "album_hint": "Unplugged",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Layla",
+        "artist_credit": "Eric Clapton",
+        "album_hint": "Unplugged",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "About a Girl",
+        "artist_credit": "Nirvana",
+        "album_hint": "MTV Unplugged in New York",
+        "release_year_hint": 1994,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "The Man Who Sold the World",
+        "artist_credit": "Nirvana",
+        "album_hint": "MTV Unplugged in New York",
+        "release_year_hint": 1994,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Nutshell",
+        "artist_credit": "Alice in Chains",
+        "album_hint": "Unplugged",
+        "release_year_hint": 1996,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "No Excuses",
+        "artist_credit": "Alice in Chains",
+        "album_hint": "Unplugged",
+        "release_year_hint": 1996,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Black",
+        "artist_credit": "Pearl Jam",
+        "album_hint": "MTV Unplugged",
+        "release_year_hint": 1992,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Take on Me",
+        "artist_credit": "a-ha",
+        "album_hint": "MTV Unplugged: Summer Solstice",
+        "release_year_hint": 2017,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "The Killing Moon",
+        "artist_credit": "Echo & the Bunnymen",
+        "album_hint": "Live at the Royal Albert Hall",
+        "release_year_hint": 2009,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Everlong (Acoustic Version)",
+        "artist_credit": "Foo Fighters",
+        "album_hint": "Greatest Hits",
+        "release_year_hint": 2009,
+        "recording_intent": "acoustic",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Times Like These (Acoustic Version)",
+        "artist_credit": "Foo Fighters",
+        "album_hint": "One by One",
+        "release_year_hint": 2002,
+        "recording_intent": "acoustic",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Drive",
+        "artist_credit": "Incubus",
+        "album_hint": "Make Yourself",
+        "release_year_hint": 1999,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Plush (Acoustic)",
+        "artist_credit": "Stone Temple Pilots",
+        "album_hint": "Thank You",
+        "release_year_hint": 2003,
+        "recording_intent": "acoustic",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "High and Dry",
+        "artist_credit": "Radiohead",
+        "album_hint": "The Bends",
+        "release_year_hint": 1995,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Fake Plastic Trees",
+        "artist_credit": "Radiohead",
+        "album_hint": "The Bends",
+        "release_year_hint": 1995,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Yellow (Acoustic Version)",
+        "artist_credit": "Coldplay",
+        "album_hint": "Yellow",
+        "release_year_hint": 2000,
+        "recording_intent": "acoustic",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Chasing Cars (Acoustic)",
+        "artist_credit": "Snow Patrol",
+        "album_hint": "Chasing Cars",
+        "release_year_hint": 2006,
+        "recording_intent": "acoustic",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Half the World Away",
+        "artist_credit": "Oasis",
+        "album_hint": "The Masterplan",
+        "release_year_hint": 1998,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "One",
+        "artist_credit": "Damien Rice",
+        "album_hint": "One",
+        "release_year_hint": 2011,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Creep",
+        "artist_credit": "Scala & Kolacny Brothers",
+        "album_hint": "Scala & Kolacny Brothers",
+        "release_year_hint": 2011,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Across the Universe",
+        "artist_credit": "Fiona Apple",
+        "album_hint": "Pleasantville: Music from the Motion Picture",
+        "release_year_hint": 1998,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Here Comes the Sun",
+        "artist_credit": "Nina Simone",
+        "album_hint": "Here Comes the Sun",
+        "release_year_hint": 1971,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Don't Let Me Be Misunderstood",
+        "artist_credit": "Santa Esmeralda",
+        "album_hint": "Don't Let Me Be Misunderstood",
+        "release_year_hint": 1977,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Just Like Heaven",
+        "artist_credit": "Katie Melua",
+        "album_hint": "Piece by Piece",
+        "release_year_hint": 2005,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "What a Wonderful World",
+        "artist_credit": "Katie Melua and Eva Cassidy",
+        "album_hint": "What a Wonderful World",
+        "release_year_hint": 2007,
+        "required_credits": [
+          {
+            "name": "Katie Melua",
+            "role": "primary"
+          },
+          {
+            "name": "Eva Cassidy",
+            "role": "primary"
+          }
+        ],
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Lovesong",
+        "artist_credit": "Adele",
+        "album_hint": "21",
+        "release_year_hint": 2011,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Songbird",
+        "artist_credit": "Eva Cassidy",
+        "album_hint": "Songbird",
+        "release_year_hint": 1998,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Everybody Hurts",
+        "artist_credit": "The Corrs",
+        "album_hint": "The Corrs Unplugged",
+        "release_year_hint": 1999,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Dreams",
+        "artist_credit": "The Corrs",
+        "album_hint": "Talk on Corners",
+        "release_year_hint": 1997,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Ain't No Sunshine",
+        "artist_credit": "Eva Cassidy",
+        "album_hint": "Time After Time",
+        "release_year_hint": 2000,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Blue Moon",
+        "artist_credit": "Beck",
+        "album_hint": "Morning Phase",
+        "release_year_hint": 2014,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Morning",
+        "artist_credit": "Beck",
+        "album_hint": "Morning Phase",
+        "release_year_hint": 2014,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Society",
+        "artist_credit": "Eddie Vedder",
+        "album_hint": "Into the Wild",
+        "release_year_hint": 2007,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Guaranteed",
+        "artist_credit": "Eddie Vedder",
+        "album_hint": "Into the Wild",
+        "release_year_hint": 2007,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Moon Song",
+        "artist_credit": "Phoebe Bridgers",
+        "album_hint": "Punisher",
+        "release_year_hint": 2020,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "primary",
+        "title": "Cherry Wine (Live)",
+        "artist_credit": "Hozier",
+        "album_hint": "Hozier",
+        "release_year_hint": 2014,
+        "recording_intent": "live",
+        "performance_sensitive": true
+      },
+      {
+        "role": "primary",
+        "title": "Like Real People Do",
+        "artist_credit": "Hozier",
+        "album_hint": "Hozier",
+        "release_year_hint": 2014,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Into My Arms",
+        "artist_credit": "Nick Cave & The Bad Seeds",
+        "album_hint": "The Boatman's Call",
+        "release_year_hint": 1997,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Famous Blue Raincoat",
+        "artist_credit": "Leonard Cohen",
+        "album_hint": "Songs of Love and Hate",
+        "release_year_hint": 1971,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Place to Be",
+        "artist_credit": "Nick Drake",
+        "album_hint": "Pink Moon",
+        "release_year_hint": 1972,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Cannonball",
+        "artist_credit": "Damien Rice",
+        "album_hint": "O",
+        "release_year_hint": 2002,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "The Blower's Daughter",
+        "artist_credit": "Damien Rice",
+        "album_hint": "O",
+        "release_year_hint": 2002,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Crosses",
+        "artist_credit": "José González",
+        "album_hint": "Veneer",
+        "release_year_hint": 2003,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Stay Alive",
+        "artist_credit": "José González",
+        "album_hint": "The Secret Life of Walter Mitty",
+        "release_year_hint": 2013,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Mystery of Love",
+        "artist_credit": "Sufjan Stevens",
+        "album_hint": "Call Me by Your Name",
+        "release_year_hint": 2017,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Should Have Known Better",
+        "artist_credit": "Sufjan Stevens",
+        "album_hint": "Carrie & Lowell",
+        "release_year_hint": 2015,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Holocene",
+        "artist_credit": "Bon Iver",
+        "album_hint": "Bon Iver",
+        "release_year_hint": 2011,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Re: Stacks",
+        "artist_credit": "Bon Iver",
+        "album_hint": "For Emma, Forever Ago",
+        "release_year_hint": 2007,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Poison Oak",
+        "artist_credit": "Bright Eyes",
+        "album_hint": "I'm Wide Awake, It's Morning",
+        "release_year_hint": 2005,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "New Slang",
+        "artist_credit": "The Shins",
+        "album_hint": "Oh, Inverted World",
+        "release_year_hint": 2001,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Casimir Pulaski Day",
+        "artist_credit": "Sufjan Stevens",
+        "album_hint": "Illinois",
+        "release_year_hint": 2005,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Only Love",
+        "artist_credit": "Ben Howard",
+        "album_hint": "Every Kingdom",
+        "release_year_hint": 2011,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Promise",
+        "artist_credit": "Ben Howard",
+        "album_hint": "Every Kingdom",
+        "release_year_hint": 2011,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "San Luis",
+        "artist_credit": "Gregory Alan Isakov",
+        "album_hint": "Evening Machines",
+        "release_year_hint": 2018,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Amsterdam",
+        "artist_credit": "Gregory Alan Isakov",
+        "album_hint": "The Weatherman",
+        "release_year_hint": 2013,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "To Build a Home",
+        "artist_credit": "The Cinematic Orchestra feat. Patrick Watson",
+        "album_hint": "Ma Fleur",
+        "release_year_hint": 2007,
+        "required_credits": [
+          {
+            "name": "The Cinematic Orchestra",
+            "role": "primary"
+          },
+          {
+            "name": "Patrick Watson",
+            "role": "featured"
+          }
+        ],
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "The Wolves (Act I and II)",
+        "artist_credit": "Bon Iver",
+        "album_hint": "For Emma, Forever Ago",
+        "release_year_hint": 2007,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Heartbeats",
+        "artist_credit": "The Knife",
+        "album_hint": "Deep Cuts",
+        "release_year_hint": 2003,
+        "recording_intent": "standard",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Angel from Montgomery",
+        "artist_credit": "Bonnie Raitt",
+        "album_hint": "Streetlights",
+        "release_year_hint": 1974,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "River",
+        "artist_credit": "Sarah McLachlan",
+        "album_hint": "Wintersong",
+        "release_year_hint": 2006,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Both Sides Now",
+        "artist_credit": "Emilia Jones",
+        "album_hint": "CODA (Soundtrack from the Apple Original Film)",
+        "release_year_hint": 2021,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Songbird",
+        "artist_credit": "Willie Nelson",
+        "album_hint": "Songbird",
+        "release_year_hint": 2006,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Don't Think Twice, It's All Right",
+        "artist_credit": "Susan Tedeschi",
+        "album_hint": "Wait for Me",
+        "release_year_hint": 2002,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "You're Gonna Make Me Lonesome When You Go",
+        "artist_credit": "Madeleine Peyroux",
+        "album_hint": "Careless Love",
+        "release_year_hint": 2004,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Dancing in the Dark",
+        "artist_credit": "Lucy Rose",
+        "album_hint": "Like I Used To",
+        "release_year_hint": 2012,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Sweet Child o' Mine",
+        "artist_credit": "Taken by Trees",
+        "album_hint": "Open Field",
+        "release_year_hint": 2007,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Love Will Tear Us Apart",
+        "artist_credit": "José González",
+        "album_hint": "Remain EP",
+        "release_year_hint": 2003,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Teardrop",
+        "artist_credit": "José González",
+        "album_hint": "In Our Nature",
+        "release_year_hint": 2007,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "One of Us Cannot Be Wrong",
+        "artist_credit": "Father John Misty",
+        "album_hint": "I'm Your Man",
+        "release_year_hint": 2017,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "The Scientist",
+        "artist_credit": "Willie Nelson",
+        "album_hint": "Heroes",
+        "release_year_hint": 2012,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Don't Dream It's Over",
+        "artist_credit": "Angus & Julia Stone",
+        "album_hint": "Like a Version",
+        "release_year_hint": 2010,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "This Must Be the Place (Naive Melody)",
+        "artist_credit": "Iron & Wine and Ben Bridwell",
+        "album_hint": "Sing Into My Mouth",
+        "release_year_hint": 2015,
+        "required_credits": [
+          {
+            "name": "Iron & Wine",
+            "role": "primary"
+          },
+          {
+            "name": "Ben Bridwell",
+            "role": "primary"
+          }
+        ],
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "No Surprises",
+        "artist_credit": "Regina Spektor",
+        "album_hint": "No Surprises",
+        "release_year_hint": 2010,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Maps",
+        "artist_credit": "Freya Ridings",
+        "album_hint": "Live at St Pancras Old Church",
+        "release_year_hint": 2018,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "I Wanna Dance with Somebody (Who Loves Me)",
+        "artist_credit": "Ben Rector",
+        "album_hint": "I Wanna Dance with Somebody (Who Loves Me)",
+        "release_year_hint": 2018,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Believe",
+        "artist_credit": "DMA'S",
+        "album_hint": "MTV Unplugged: Live",
+        "release_year_hint": 2019,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Dancing on My Own",
+        "artist_credit": "Calum Scott",
+        "album_hint": "Only Human",
+        "release_year_hint": 2018,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "I Want to Know What Love Is",
+        "artist_credit": "Amber Leigh Irish",
+        "album_hint": "I Want to Know What Love Is",
+        "release_year_hint": 2015,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Everywhere",
+        "artist_credit": "Paolo Nutini",
+        "album_hint": "Radio 1's Live Lounge, Volume 2",
+        "release_year_hint": 2007,
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Harvest Moon",
+        "artist_credit": "Poolside",
+        "album_hint": "Pacific Standard Time",
+        "release_year_hint": 2012,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Real Love Baby",
+        "artist_credit": "The Staves",
+        "album_hint": "Real Love Baby",
+        "release_year_hint": 2017,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "God Only Knows",
+        "artist_credit": "John Legend and Cynthia Erivo",
+        "album_hint": "The Beach Boys: Pet Sounds 50th Anniversary",
+        "release_year_hint": 2016,
+        "required_credits": [
+          {
+            "name": "John Legend",
+            "role": "primary"
+          },
+          {
+            "name": "Cynthia Erivo",
+            "role": "primary"
+          }
+        ],
+        "recording_intent": "cover",
+        "performance_sensitive": true
+      },
+      {
+        "role": "reserve",
+        "title": "Bridge over Troubled Water",
+        "artist_credit": "Johnny Cash",
+        "album_hint": "American IV: The Man Comes Around",
+        "release_year_hint": 2002,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Hurt",
+        "artist_credit": "Johnny Cash",
+        "album_hint": "American IV: The Man Comes Around",
+        "release_year_hint": 2002,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Personal Jesus",
+        "artist_credit": "Johnny Cash",
+        "album_hint": "American IV: The Man Comes Around",
+        "release_year_hint": 2002,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "One",
+        "artist_credit": "Johnny Cash",
+        "album_hint": "American III: Solitary Man",
+        "release_year_hint": 2000,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Solitary Man",
+        "artist_credit": "Johnny Cash",
+        "album_hint": "American III: Solitary Man",
+        "release_year_hint": 2000,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Nothing Else Matters",
+        "artist_credit": "Phoebe Bridgers",
+        "album_hint": "The Metallica Blacklist",
+        "release_year_hint": 2021,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Fade Into You",
+        "artist_credit": "Ben Harper",
+        "album_hint": "Fade Into You",
+        "release_year_hint": 2014,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Wonderwall",
+        "artist_credit": "Ryan Adams",
+        "album_hint": "Love Is Hell, Pt. 1",
+        "release_year_hint": 2003,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Wicked Game",
+        "artist_credit": "Gemma Hayes",
+        "album_hint": "Wicked Game",
+        "release_year_hint": 2012,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Under the Milky Way",
+        "artist_credit": "Sia",
+        "album_hint": "Under the Milky Way",
+        "release_year_hint": 2010,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Every Breath You Take",
+        "artist_credit": "Denmark + Winter",
+        "album_hint": "Every Breath You Take",
+        "release_year_hint": 2014,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "The Sound of Silence",
+        "artist_credit": "Nouela",
+        "album_hint": "The Sound of Silence",
+        "release_year_hint": 2012,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Dreams",
+        "artist_credit": "The Kills",
+        "album_hint": "Dreams",
+        "release_year_hint": 2012,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Dancing in the Dark",
+        "artist_credit": "Amy Macdonald",
+        "album_hint": "Under Stars",
+        "release_year_hint": 2017,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Don't Know Why",
+        "artist_credit": "Norah Jones",
+        "album_hint": "Come Away with Me",
+        "release_year_hint": 2002,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Turn Me On",
+        "artist_credit": "Norah Jones",
+        "album_hint": "Come Away with Me",
+        "release_year_hint": 2002,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Covers Me",
+        "artist_credit": "Vic Chesnutt",
+        "album_hint": "West of Rome",
+        "release_year_hint": 1991,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Clay Pigeons",
+        "artist_credit": "John Prine",
+        "album_hint": "Fair & Square",
+        "release_year_hint": 2005,
+        "recording_intent": "cover",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "If We Were Vampires",
+        "artist_credit": "Jason Isbell and the 400 Unit",
+        "album_hint": "The Nashville Sound",
+        "release_year_hint": 2017,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "All I Want",
+        "artist_credit": "Kodaline",
+        "album_hint": "In a Perfect World",
+        "release_year_hint": 2013,
+        "recording_intent": "acoustic",
+        "performance_sensitive": false
+      },
+      {
+        "role": "reserve",
+        "title": "Falling Slowly",
+        "artist_credit": "Glen Hansard and Markéta Irglová",
+        "album_hint": "Once",
+        "release_year_hint": 2007,
+        "required_credits": [
+          {
+            "name": "Glen Hansard",
+            "role": "primary"
+          },
+          {
+            "name": "Markéta Irglová",
+            "role": "primary"
+          }
+        ],
+        "recording_intent": "acoustic",
+        "performance_sensitive": true
+      }
+    ]
+  }
+}

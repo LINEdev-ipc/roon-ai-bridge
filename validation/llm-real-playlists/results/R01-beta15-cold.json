@@ -1,0 +1,126 @@
+{
+  "case_id": "R01",
+  "run_id": "R01-beta15-cold",
+  "input_sha256": "8f74446c6450a1b01fb5cdc9ee91659b919f0b2f890b727d4d76fe38afccc8c8",
+  "executed_at": "2026-07-29T00:47:45.432Z",
+  "server_version": "0.20.0-beta.15",
+  "deployed_commit": "ac3b577fb059dd78c2bf9b49d39eebba76413a3a",
+  "playlist_id": "validacia-n-real-r01-a-the-rolling-stones",
+  "execution_note": "The PowerShell transport decoded the UTF-8 playlist name and description with the Windows default encoding. Candidate titles, artists, albums, years, roles and credits were ASCII and reached RoonIA unchanged. Future runs must force UTF-8 at the transport boundary.",
+  "result": {
+    "status": "completed",
+    "verified": true,
+    "complete": false,
+    "desired_count": 30,
+    "added_count": 22,
+    "missing_count": 8,
+    "input_candidates": 38,
+    "rejected_candidates": 16,
+    "elapsed_ms": 109773,
+    "action_duration_ms": 109790,
+    "musicbrainz_requests": 42,
+    "musicbrainz_cache_hits": 0,
+    "listenbrainz_requests": 0,
+    "listenbrainz_cache_hits": 76,
+    "roon_searches": 52,
+    "bindings_created": 22,
+    "release_tracklist_recovery": {
+      "musicbrainz_candidates": 1,
+      "roon_candidates": 4,
+      "roon_album_cache_hits": 0
+    },
+    "missing_metadata_tracks": 7
+  },
+  "rejection_summary": {
+    "musicbrainz_ambiguous": 15,
+    "roon_binding_required": 1
+  },
+  "rejected": [
+    {
+      "candidate_id": "R01-001",
+      "title": "Gimme Shelter",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-004",
+      "title": "(I Can't Get No) Satisfaction",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-005",
+      "title": "You Can't Always Get What You Want",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-006",
+      "title": "Wild Horses",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-007",
+      "title": "Jumpin' Jack Flash",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-008",
+      "title": "Brown Sugar",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-009",
+      "title": "Angie",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-011",
+      "title": "Honky Tonk Women",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-014",
+      "title": "Ruby Tuesday",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-015",
+      "title": "Street Fighting Man",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-016",
+      "title": "Beast of Burden",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-018",
+      "title": "Can't You Hear Me Knocking",
+      "reason": "roon_binding_required:no_results"
+    },
+    {
+      "candidate_id": "R01-020",
+      "title": "Under My Thumb",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-023",
+      "title": "Let's Spend the Night Together",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-027",
+      "title": "Happy",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    },
+    {
+      "candidate_id": "R01-030",
+      "title": "Time Is on My Side",
+      "reason": "musicbrainz_ambiguous:multiple_compatible_recordings"
+    }
+  ],
+  "gate": {
+    "passed": false,
+    "required_added_count": 30,
+    "required_wrong_bindings": 0,
+    "required_unclassified_failures": 0
+  }
+}
