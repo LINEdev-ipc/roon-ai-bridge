@@ -872,6 +872,92 @@ test("exact live binding rejects another concert and selects the requested relea
   assert.equal(result.playlist.tracks[0].album, "Nina Simone at Town Hall");
 });
 
+test("playlist build reuses one verified Roon album tracklist for failed standard searches", async () => {
+  const playlistService = new PlaylistService(tempConfig());
+  const album = mediaAlbum("beggars-banquet-album", "Beggars Banquet", "The Rolling Stones", {
+    releaseYear: 1968
+  });
+  const albumTracks = [
+    mediaTrack("sympathy-album-track", "Sympathy for the Devil", "The Rolling Stones", {
+      album: "Beggars Banquet",
+      albumArtist: "The Rolling Stones",
+      releaseYear: 1968,
+      durationSeconds: 381,
+      trackNumber: 1
+    }),
+    mediaTrack("street-album-track", "Street Fighting Man", "The Rolling Stones", {
+      album: "Beggars Banquet",
+      albumArtist: "The Rolling Stones",
+      releaseYear: 1968,
+      durationSeconds: 195,
+      trackNumber: 6
+    })
+  ];
+  const media = fakeMedia(
+    (request) => request.types?.includes("album") ? [album] : [],
+    {
+      "beggars-banquet-album": {
+        album,
+        description: null,
+        tracks: albumTracks,
+        related_tracks: [],
+        data_origin: "roon_search_session",
+        completeness: "complete",
+        ordered: true,
+        identity_verified: true,
+        warnings: []
+      }
+    }
+  );
+  let albumDetailCalls = 0;
+  const getAlbumDetail = media.getAlbumDetail.bind(media);
+  media.getAlbumDetail = async (...args) => {
+    albumDetailCalls += 1;
+    return getAlbumDetail(...args);
+  };
+
+  const result = await new PlaylistBuildService(playlistService, media).build({
+    name: "Shared verified release",
+    desired_count: 2,
+    no_adjacent_same_artist: false,
+    tracks: [
+      {
+        title: "Sympathy for the Devil",
+        artist_credit: "The Rolling Stones",
+        album_hint: "Beggars Banquet",
+        release_year_hint: 1968
+      },
+      {
+        title: "Street Fighting Man",
+        artist_credit: "The Rolling Stones",
+        album_hint: "Beggars Banquet",
+        release_year_hint: 1968
+      }
+    ]
+  });
+
+  assert.equal(result.complete, true);
+  assert.deepEqual(
+    result.playlist.tracks.map((track) => track.resolution.stage),
+    ["verified_release_tracklist", "verified_release_tracklist"]
+  );
+  assert.equal(
+    media.searches.filter((request) => request.types?.includes("album")).length,
+    1
+  );
+  assert.equal(albumDetailCalls, 1);
+  assert.deepEqual(result.performance.release_tracklist_recovery, {
+    musicbrainz_candidates: 0,
+    roon_candidates: 2,
+    roon_album_cache_hits: 2
+  });
+  assert.ok(result.playlist.tracks.every((track) =>
+    track.resolution.roon_observation.warnings.includes(
+      "roon_binding_recovered_from_verified_release_tracklist"
+    )
+  ));
+});
+
 test("an empty diagnostic build preserves every rejection in the error details", async () => {
   const playlistService = new PlaylistService(tempConfig());
   const builder = new PlaylistBuildService(playlistService, fakeMedia(() => []));

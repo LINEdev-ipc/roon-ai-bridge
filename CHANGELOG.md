@@ -3,6 +3,17 @@
 All notable production changes are documented here. Validation evidence for
 each release lives under [`docs/`](docs/README.md).
 
+## 0.20.0 Beta 15 - Unreleased
+
+- Recover failed MusicBrainz identities from a cached release tracklist while
+  preserving title, artist, release and recording-version gates.
+- Recover playable Roon tracks through an ordered, identity-verified album
+  tracklist and share album searches and details across one playlist build.
+- Refuse to substitute an unrelated compilation or reissue when an observed
+  album has no compatible MusicBrainz release-group candidate.
+- Tell playlist clients to supply every known album and to disable artist
+  adjacency for deliberate one-artist selections.
+
 ## 0.20.0 Beta 7 - Unreleased
 
 - Make MusicBrainz recording identity authoritative for stored title, artist,

@@ -247,6 +247,79 @@ test("identity metadata depth resolves from one search request and defers full e
   assert.ok(result.trace.accepted_warnings.includes("metadata_enrichment_pending"));
 });
 
+test("MusicBrainz recovers standard recordings from a shared release tracklist cache", async () => {
+  const queries = [];
+  const releaseTracks = [
+    {
+      id: "stones-sympathy",
+      title: "Sympathy for the Devil",
+      length: 381000,
+      score: 100,
+      "artist-credit": [{ name: "The Rolling Stones" }],
+      releases: [{
+        title: "Beggars Banquet",
+        date: "1968",
+        status: "Official",
+        "release-group": {
+          id: "beggars-banquet",
+          title: "Beggars Banquet",
+          "primary-type": "Album",
+          "secondary-types": []
+        }
+      }]
+    },
+    {
+      id: "stones-street-fighting",
+      title: "Street Fighting Man",
+      length: 195000,
+      score: 100,
+      "artist-credit": [{ name: "The Rolling Stones" }],
+      releases: [{
+        title: "Beggars Banquet",
+        date: "1968",
+        status: "Official",
+        "release-group": {
+          id: "beggars-banquet",
+          title: "Beggars Banquet",
+          "primary-type": "Album",
+          "secondary-types": []
+        }
+      }]
+    }
+  ];
+  const service = new RecordingMetadataService(async (url) => {
+    const query = url.searchParams.get("query");
+    queries.push(query);
+    return new Response(JSON.stringify({
+      recordings: query.startsWith('release:"Beggars Banquet"')
+        ? releaseTracks
+        : []
+    }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const first = await service.lookup({
+    title: "Sympathy for the Devil",
+    artist: "The Rolling Stones",
+    album_observation: "Beggars Banquet",
+    metadata_depth: "identity"
+  });
+  const second = await service.lookup({
+    title: "Street Fighting Man",
+    artist: "The Rolling Stones",
+    album_observation: "Beggars Banquet",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(first.status, "exact");
+  assert.equal(first.metadata.recording_id, "stones-sympathy");
+  assert.equal(first.reason, "unique_compatible_recording_from_release_tracklist_identity_only");
+  assert.ok(first.trace.accepted_warnings.includes("recording_recovered_from_release_tracklist"));
+  assert.equal(second.status, "exact");
+  assert.equal(second.metadata.recording_id, "stones-street-fighting");
+  assert.ok(second.trace.accepted_warnings.includes("release_tracklist_memory_cache_hit"));
+  assert.equal(queries.filter((query) => query.startsWith('release:"Beggars Banquet"')).length, 1);
+});
+
 test("version searches fall back to core title words when MusicBrainz omits the supplied mix name", async () => {
   const queries = [];
   const service = new RecordingMetadataService(async (url) => {
@@ -328,6 +401,47 @@ test("MusicBrainz can identify a plain remix title from its remix release", asyn
 
   assert.equal(result.status, "exact");
   assert.equal(result.metadata.recording_id, "people-remix");
+});
+
+test("MusicBrainz recovers a transition from a release-group remix tracklist", async () => {
+  const service = new RecordingMetadataService(async (url) => {
+    const query = url.searchParams.get("query");
+    return new Response(JSON.stringify({ recordings:
+      query.startsWith('release:"Love"')
+        ? [{
+            id: "eleanor-julia-transition",
+            title: "Eleanor Rigby / Julia",
+            length: 225000,
+            score: 100,
+            "artist-credit": [{ name: "The Beatles" }],
+            releases: [{
+              title: "Love",
+              date: "2006",
+              status: "Official",
+              "release-group": {
+                id: "love-group",
+                title: "Love",
+                "primary-type": "Album",
+                "secondary-types": ["Remix"]
+              }
+            }]
+          }]
+        : []
+    }), { status: 200 });
+  }, { minRequestIntervalMs: 0 });
+
+  const result = await service.lookup({
+    title: "Eleanor Rigby / Julia (transition)",
+    artist: "The Beatles",
+    album_observation: "Love",
+    require_release_match: true,
+    version_hint: "remix",
+    metadata_depth: "identity"
+  });
+
+  assert.equal(result.status, "exact");
+  assert.equal(result.metadata.recording_id, "eleanor-julia-transition");
+  assert.ok(result.trace.accepted_warnings.includes("recording_recovered_from_release_tracklist"));
 });
 
 test("MusicBrainz uses an unplugged release to identify an acoustic recording", async () => {

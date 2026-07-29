@@ -520,6 +520,12 @@ export class TrackCatalogService {
     let compatible = album
       ? candidates.filter((candidate) => normalize(candidate.title) === normalize(album))
       : [];
+    if (album && !compatible.length) {
+      // An observed release is an identity anchor, not permission to replace
+      // it with an unrelated compilation or later reissue returned by the
+      // bounded MusicBrainz recording payload.
+      return { group: null, edition: null };
+    }
     let reason = album && compatible.length ? "catalog_album_matches_observed_album" : "earliest_primary_release_group";
     compatible = (compatible.length ? compatible : candidates).slice().sort(candidateOrder);
     if (!compatible.length) return { group: null, edition: null };

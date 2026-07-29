@@ -557,6 +557,18 @@ function releaseTitles(recording: JsonRecord): string[] {
     .filter(Boolean);
 }
 
+function releaseVariantEvidence(recording: JsonRecord): string {
+  return records(recording.releases).flatMap((release) => {
+    const group = releaseGroup(release);
+    return [
+      typeof release.title === "string" ? release.title : "",
+      typeof group?.title === "string" ? group.title : "",
+      typeof group?.["primary-type"] === "string" ? group["primary-type"] : "",
+      ...strings(group?.["secondary-types"])
+    ];
+  }).filter(Boolean).join(" ");
+}
+
 function releaseGroup(release: JsonRecord): JsonRecord | null {
   return objectValue(release["release-group"]);
 }
@@ -624,6 +636,11 @@ export class RecordingMetadataService {
   private readonly cache = new Map<string, { expiresAt: number; value: RecordingCatalogResolution }>();
   private readonly releaseTrackCache = new Map<string, { expiresAt: number; value: ReleaseTrackCatalogResolution }>();
   private readonly recordingReleasesCache = new Map<string, { expiresAt: number; value: RecordingReleasesCatalogResult }>();
+  private readonly releaseRecordingSearchCache = new Map<string, {
+    expiresAt: number;
+    value: JsonRecord[];
+  }>();
+  private readonly activeReleaseRecordingSearches = new Map<string, Promise<JsonRecord[]>>();
   private readonly recordingReleaseAnchorCache = new Map<string, {
     expiresAt: number;
     value: RecordingReleaseAnchorCatalogResult;
@@ -743,7 +760,7 @@ export class RecordingMetadataService {
       input.release_year_observation || "",
       input.metadata_depth || "full"
     ].join("|");
-    return `recording-resolution:v9:${crypto.createHash("sha256").update(material).digest("hex")}`;
+    return `recording-resolution:v10:${crypto.createHash("sha256").update(material).digest("hex")}`;
   }
 
   private remember(cacheKey: string, value: RecordingCatalogResolution): RecordingCatalogResolution {
@@ -826,6 +843,81 @@ export class RecordingMetadataService {
       ttlMs
     });
     return value;
+  }
+
+  private releaseRecordingSearchCacheKey(releaseTitle: string, artist: string): string {
+    const material = `${releaseKey(releaseTitle)}|${normalize(artist)}`;
+    return `release-recordings:v1:${crypto.createHash("sha256").update(material).digest("hex")}`;
+  }
+
+  private async searchReleaseRecordings(
+    releaseTitle: string,
+    artist: string,
+    trace: MutableCatalogProviderTrace
+  ): Promise<JsonRecord[]> {
+    const cacheKey = this.releaseRecordingSearchCacheKey(releaseTitle, artist);
+    const cached = this.releaseRecordingSearchCache.get(cacheKey);
+    if (cached && cached.expiresAt > Date.now()) {
+      trace.accepted_warnings.push("release_tracklist_memory_cache_hit");
+      return cached.value;
+    }
+    const persisted = this.persistentCache?.get<JsonRecord[]>(MUSICBRAINZ_PROVIDER, cacheKey);
+    if (persisted) {
+      this.releaseRecordingSearchCache.set(cacheKey, {
+        expiresAt: Date.parse(persisted.expires_at),
+        value: persisted.payload
+      });
+      trace.accepted_warnings.push("release_tracklist_persistent_cache_hit");
+      return persisted.payload;
+    }
+    const active = this.activeReleaseRecordingSearches.get(cacheKey);
+    if (active) {
+      trace.accepted_warnings.push("release_tracklist_inflight_cache_hit");
+      return active;
+    }
+
+    const pending = (async () => {
+      const releaseAlias = releaseSearchAlias(releaseTitle);
+      const terms = [
+        `release:"${lucene(releaseAlias)}"`,
+        `artistname:"${lucene(artist)}"`,
+        "video:false"
+      ];
+      const url = new URL("https://musicbrainz.org/ws/2/recording");
+      url.searchParams.set("query", terms.join(" AND "));
+      url.searchParams.set("fmt", "json");
+      url.searchParams.set("limit", "100");
+      const response = await this.requestJson(url, trace);
+      const recordings = records(response.recordings);
+      trace.search_attempts.push({
+        title: "[release tracklist]",
+        artist,
+        album: releaseTitle,
+        result_count: recordings.length
+      });
+      const ttlMs = recordings.length ? EXACT_CACHE_TTL_MS : NOT_FOUND_CACHE_TTL_MS;
+      this.releaseRecordingSearchCache.set(cacheKey, {
+        expiresAt: Date.now() + ttlMs,
+        value: recordings
+      });
+      this.persistentCache?.set({
+        provider: MUSICBRAINZ_PROVIDER,
+        cacheKey,
+        entityType: "release_recordings",
+        status: recordings.length ? "exact" : "not_found",
+        payload: recordings,
+        ttlMs
+      });
+      return recordings;
+    })();
+    this.activeReleaseRecordingSearches.set(cacheKey, pending);
+    try {
+      return await pending;
+    } finally {
+      if (this.activeReleaseRecordingSearches.get(cacheKey) === pending) {
+        this.activeReleaseRecordingSearches.delete(cacheKey);
+      }
+    }
   }
 
   async findRecordingReleasesByTitle(
@@ -1088,7 +1180,8 @@ export class RecordingMetadataService {
       const variantEvidence = [
         detail.title,
         disambiguation,
-        ...releaseTitles(detail)
+        ...releaseTitles(detail),
+        releaseVariantEvidence(detail)
       ].filter(Boolean).join(" ");
       if (variantStrength(requestedVariant, variantEvidence) === null) {
         rejectionReasons.push("variant_mismatch");
@@ -1210,7 +1303,7 @@ export class RecordingMetadataService {
         if (input.duration_seconds && duration && Math.abs(duration - input.duration_seconds) > 2) reasons.push("duration_mismatch");
         const disambiguation = typeof recording.disambiguation === "string" ? recording.disambiguation : "";
         const variantEvidence = versionSpecific
-          ? `${recording.title} ${disambiguation} ${releaseTitles(recording).join(" ")}`
+          ? `${recording.title} ${disambiguation} ${releaseVariantEvidence(recording)}`
           : `${recording.title} ${disambiguation}`;
         const strength = variantStrength(requestedVariant, variantEvidence);
         if (strength === null) reasons.push("variant_mismatch");
@@ -1281,6 +1374,23 @@ export class RecordingMetadataService {
         ranked = rank(recordings, requiredRelease);
         trace.accepted_warnings.push("version_search_used_core_title_fallback");
       }
+      if (!ranked.length && releaseTitle) {
+        const releaseRecordings = await this.searchReleaseRecordings(
+          releaseTitle,
+          input.artist,
+          trace
+        );
+        const mergedRecordings = new Map<string, JsonRecord>();
+        for (const recording of [...recordings, ...releaseRecordings]) {
+          if (typeof recording.id === "string") mergedRecordings.set(recording.id, recording);
+        }
+        recordings = [...mergedRecordings.values()];
+        ranked = rank(recordings, releaseTitle);
+        if (ranked.length) {
+          trace.accepted_warnings.push("recording_recovered_from_release_tracklist");
+          resolutionReason = "unique_compatible_recording_from_release_tracklist";
+        }
+      }
       trace.candidate_counts = { returned: recordings.length, accepted: ranked.length, rejected: recordings.length - ranked.length };
       const snapshots = ranked.slice(0, 8).map(({ recording }) => candidateSnapshot(recording));
       if (!ranked.length) {
@@ -1314,9 +1424,12 @@ export class RecordingMetadataService {
         });
       }
       const selected = top.recording;
-      if (input.album_observation && releaseTitle && releaseTitles(selected).some((title) =>
-        compatibleTitle(releaseTitle, title)
-      )) {
+      if (
+        resolutionReason === "unique_compatible_recording" &&
+        input.album_observation &&
+        releaseTitle &&
+        releaseTitles(selected).some((title) => compatibleTitle(releaseTitle, title))
+      ) {
         resolutionReason = "unique_compatible_recording_from_release_observation";
       }
       if (identityOnly) {

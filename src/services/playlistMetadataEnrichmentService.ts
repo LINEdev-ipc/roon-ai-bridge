@@ -160,6 +160,10 @@ function recordingSnapshot(metadata: RecordingCatalogMetadata): PlaylistRecordin
 export class PlaylistMetadataEnrichmentService {
   private readonly activeTrackRefreshes = new Map<string, Promise<{ track: VirtualPlaylistTrack; report: MetadataEnrichmentReport }>>();
   private readonly artistReleaseCache = new Map<string, { expiresAt: number; promise: Promise<MediaResult[]> }>();
+  private readonly albumDetailCache = new Map<string, {
+    expiresAt: number;
+    promise: Promise<Awaited<ReturnType<RoonMediaService["getAlbumDetail"]>>>;
+  }>();
 
   constructor(
     private readonly playlistService: PlaylistService,
@@ -177,7 +181,7 @@ export class PlaylistMetadataEnrichmentService {
     release: PlaylistReleaseMetadata;
     warnings: string[];
   } | null> {
-    const detail = await this.mediaService.getAlbumDetail(albumResultId, undefined, 500);
+    const detail = await this.loadAlbumDetail(albumResultId);
     const matched = [...(detail.tracks || []), ...(detail.related_tracks || [])].find((candidate) =>
       sameRecordingTitle(candidate.title, source.title) &&
       artistMatches(candidate, source.artist) &&
@@ -216,6 +220,37 @@ export class PlaylistMetadataEnrichmentService {
       },
       warnings: detail.warnings || []
     };
+  }
+
+  rememberAlbumDetail(
+    albumResultId: string,
+    detail: Awaited<ReturnType<RoonMediaService["getAlbumDetail"]>>
+  ): void {
+    this.albumDetailCache.set(albumResultId, {
+      expiresAt: Date.now() + 10 * 60 * 1000,
+      promise: Promise.resolve(detail)
+    });
+  }
+
+  private async loadAlbumDetail(
+    albumResultId: string
+  ): Promise<Awaited<ReturnType<RoonMediaService["getAlbumDetail"]>>> {
+    const cached = this.albumDetailCache.get(albumResultId);
+    if (cached && cached.expiresAt > Date.now()) return cached.promise;
+    const pending = this.mediaService.getAlbumDetail(albumResultId, undefined, 500);
+    const entry = {
+      expiresAt: Date.now() + 10 * 60 * 1000,
+      promise: pending
+    };
+    this.albumDetailCache.set(albumResultId, entry);
+    try {
+      return await pending;
+    } catch (error) {
+      if (this.albumDetailCache.get(albumResultId) === entry) {
+        this.albumDetailCache.delete(albumResultId);
+      }
+      throw error;
+    }
   }
 
   async enrichResult(

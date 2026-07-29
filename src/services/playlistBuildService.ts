@@ -1,4 +1,5 @@
 import {
+  AlbumMediaDetail,
   MediaResult,
   RoonMediaService,
   SourcePreference,
@@ -20,6 +21,7 @@ import {
 import {
   RankedTrackCandidate,
   TrackResolution,
+  TrackResolutionRequest,
   TrackResolutionService
 } from "./trackResolutionService";
 
@@ -164,6 +166,18 @@ type BuildSession = {
   candidateMetrics: CandidateResolutionMetrics[];
   diagnostics: boolean;
   enqueueMetadataEnrichment: boolean;
+  resolutionContext: ResolutionContext;
+};
+
+type ResolutionContext = {
+  albumSearches: Map<string, Promise<MediaResult[]>>;
+  albumDetails: Map<string, Promise<AlbumMediaDetail>>;
+};
+
+type VerifiedRoonReleaseMatch = {
+  resolution: TrackResolution;
+  albumResultId: string;
+  album: MediaResult;
 };
 
 type CandidateResolutionMetrics = {
@@ -179,6 +193,9 @@ type CandidateResolutionMetrics = {
   roon_fallback_ms: number;
   roon_searches: number;
   hydration_ms: number;
+  musicbrainz_release_tracklist_recovered: boolean;
+  roon_release_tracklist_recovered: boolean;
+  roon_album_cache_hits: number;
   speculative_binding_reused: boolean;
   binding_created: boolean;
   outcome: "accepted" | "rejected";
@@ -221,6 +238,11 @@ export type PlaylistBuildResult = {
     roon_fallback_ms_total: number;
     roon_searches: number;
     hydration_ms_total: number;
+    release_tracklist_recovery: {
+      musicbrainz_candidates: number;
+      roon_candidates: number;
+      roon_album_cache_hits: number;
+    };
     speculative_bindings_reused: number;
     canonical_roon_fallbacks: number;
     bindings_created: number;
@@ -280,8 +302,8 @@ function normalize(value: unknown): string {
 function canonicalTitle(value: unknown): string {
   const raw = String(value || "")
     .replace(/\s*[([]\s*\d{2,3}\s*[\])]\s*$/u, "")
-    .replace(/\s*[\[(]\s*(?:(?:live|en vivo|directo|concert)\b[^)\]]*|[^)\]]*\b(?:remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master)\b[^)\]]*)[\])]\s*$/iu, "")
-    .replace(/\s+-\s+(?:(?:live|en vivo|directo|concert)\b.*|.*\b(?:remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master)\b.*)$/iu, "")
+    .replace(/\s*[\[(]\s*(?:(?:live|en vivo|directo|concert|transition)\b[^)\]]*|[^)\]]*\b(?:remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master|transition)\b[^)\]]*)[\])]\s*$/iu, "")
+    .replace(/\s+-\s+(?:(?:live|en vivo|directo|concert|transition)\b.*|.*\b(?:remix|rework|refix|dub mix|dub version|radio edit|acoustic(?: version)?|unplugged|acapella|instrumental|demo|karaoke|cover version|remaster(?:ed|ing)?|digital master|transition)\b.*)$/iu, "")
     .replace(/\s+\b(?:single version|album version|original version|stereo version|mono version)\b.*$/iu, "");
   return normalize(raw);
 }
@@ -410,6 +432,18 @@ function albumMatchesInput(input: NormalizedCandidate, result: MediaResult): boo
       phraseIncludes(normalize(result.album), normalize(input.albumHint))
     )
   );
+}
+
+function canonicalAlbumTitle(value: unknown): string {
+  return normalize(String(value || "")
+    .replace(/\s*[([]\s*(?:(?:19|20)\d{2}|(?:super\s+)?deluxe(?:\s+edition)?|expanded(?:\s+edition)?|remaster(?:ed)?(?:\s+(?:19|20)\d{2})?)\s*[\])]\s*$/iu, " ")
+    .replace(/\b(?:super deluxe(?: edition)?|deluxe edition|expanded edition)\b/giu, " "));
+}
+
+function sameAlbumTitle(expected: unknown, observed: unknown): boolean {
+  const left = canonicalAlbumTitle(expected);
+  const right = canonicalAlbumTitle(observed);
+  return Boolean(left && right && left === right);
 }
 
 function exactRecordingFamily(input: NormalizedCandidate): boolean {
@@ -671,7 +705,11 @@ export class PlaylistBuildService {
 
   async prepareCandidate(value: unknown): Promise<PlaylistCandidatePreflightResult> {
     const candidate = normalizeCandidate(value, 0, 0);
-    const outcome = await this.resolveCandidate(candidate);
+    const outcome = await this.resolveCandidate(
+      candidate,
+      { from: null, to: null },
+      this.resolutionContext()
+    );
     if ("rejected" in outcome) {
       return { accepted: false, rejection: outcome.rejected };
     }
@@ -750,7 +788,8 @@ export class PlaylistBuildService {
       expiryDays,
       candidateMetrics: [],
       diagnostics: request.diagnostics === true,
-      enqueueMetadataEnrichment: request.enqueue_metadata_enrichment !== false
+      enqueueMetadataEnrichment: request.enqueue_metadata_enrichment !== false,
+      resolutionContext: this.resolutionContext()
     };
     for (const [field, value] of [
       ["release_year_from", session.releaseYearFrom],
@@ -914,6 +953,165 @@ export class PlaylistBuildService {
     }
   }
 
+  private resolutionContext(): ResolutionContext {
+    return {
+      albumSearches: new Map(),
+      albumDetails: new Map()
+    };
+  }
+
+  private async resolveFromVerifiedRoonRelease(
+    input: NormalizedCandidate,
+    bindingInput: NormalizedCandidate,
+    request: TrackResolutionRequest,
+    catalogProfile: TrackCatalogProfile | null,
+    resolver: TrackResolutionService,
+    context: ResolutionContext,
+    recordSearch: () => void,
+    recordCacheHit: () => void
+  ): Promise<VerifiedRoonReleaseMatch | null> {
+    if (!input.albumHint) return null;
+    const albumTitles = Array.from(new Map([
+      input.albumHint,
+      catalogProfile?.release_group?.title || null
+    ].filter((title): title is string => Boolean(title))
+      .map((title) => [canonicalAlbumTitle(title), title])).values());
+    for (const albumTitle of albumTitles) {
+      const searchKey = `${canonicalAlbumTitle(albumTitle)}|${this.sourcePreference}`;
+      let searchPromise = context.albumSearches.get(searchKey);
+      if (!searchPromise) {
+        recordSearch();
+        searchPromise = this.mediaService.search({
+          query: albumTitle,
+          types: ["album"],
+          count: 12,
+          sourcePreference: this.sourcePreference
+        }).then((response) => response.results.filter((result) =>
+          result.media_type === "album" &&
+          sameAlbumTitle(albumTitle, result.title)
+        ));
+        context.albumSearches.set(searchKey, searchPromise);
+      } else {
+        recordCacheHit();
+      }
+      let albums: MediaResult[];
+      try {
+        albums = await searchPromise;
+      } catch (error) {
+        if (context.albumSearches.get(searchKey) === searchPromise) {
+          context.albumSearches.delete(searchKey);
+        }
+        this.logger?.warn("Verified Roon release search failed", {
+          album: albumTitle,
+          error: error instanceof Error ? error.message : String(error)
+        });
+        continue;
+      }
+      const orderedAlbums = albums.slice().sort((left, right) => {
+        const expectedYear = input.releaseYearHint;
+        const leftYear = expectedYear && left.release_year === expectedYear ? 1 : 0;
+        const rightYear = expectedYear && right.release_year === expectedYear ? 1 : 0;
+        const leftArtist = resultCredits(left).some((credit) =>
+          creditMatches(bindingInput.artist, [credit])
+        ) ? 1 : 0;
+        const rightArtist = resultCredits(right).some((credit) =>
+          creditMatches(bindingInput.artist, [credit])
+        ) ? 1 : 0;
+        return rightYear - leftYear || rightArtist - leftArtist || left.roon_rank - right.roon_rank;
+      });
+      for (const album of orderedAlbums.slice(0, 4)) {
+        let detailPromise = context.albumDetails.get(album.result_id);
+        if (!detailPromise) {
+          detailPromise = this.mediaService.getAlbumDetail(album.result_id, undefined, 500);
+          context.albumDetails.set(album.result_id, detailPromise);
+        } else {
+          recordCacheHit();
+        }
+        let detail: AlbumMediaDetail;
+        try {
+          detail = await detailPromise;
+          this.metadataService.rememberAlbumDetail(album.result_id, detail);
+        } catch (error) {
+          if (context.albumDetails.get(album.result_id) === detailPromise) {
+            context.albumDetails.delete(album.result_id);
+          }
+          this.logger?.warn("Verified Roon release tracklist failed", {
+            album: album.title,
+            resultId: album.result_id,
+            error: error instanceof Error ? error.message : String(error)
+          });
+          continue;
+        }
+        if (
+          !detail.ordered ||
+          !detail.identity_verified ||
+          !sameAlbumTitle(albumTitle, detail.album.title)
+        ) {
+          continue;
+        }
+        const albumArtist = detail.album.album_artist || detail.album.artist;
+        const tracks = detail.tracks.map((track) => ({
+          ...track,
+          album: detail.album.title,
+          album_artist: track.album_artist || albumArtist,
+          release_year: track.release_year || detail.album.release_year,
+          image_key: track.image_key || detail.album.image_key,
+          links: {
+            ...track.links,
+            album: {
+              type: "album" as const,
+              title: detail.album.title,
+              artist: albumArtist,
+              result_id: album.result_id
+            }
+          }
+        })).filter((track) =>
+          hardGate(bindingInput, track) &&
+          recordingEvidenceAllowed(bindingInput, track, catalogProfile)
+        );
+        if (!tracks.length) continue;
+
+        const canonicalIsrcs = new Set(
+          (catalogProfile?.recording?.isrcs || []).map(normalize).filter(Boolean)
+        );
+        const isrcMatches = canonicalIsrcs.size
+          ? tracks.filter((track) =>
+              resultIsrcs(track).some((isrc) => canonicalIsrcs.has(isrc))
+            )
+          : [];
+        const canonicalDuration = catalogProfile?.recording?.duration_seconds || null;
+        const durationMatches = canonicalDuration
+          ? tracks.filter((track) =>
+              Boolean(track.duration_seconds) &&
+              Math.abs(track.duration_seconds! - canonicalDuration) <= 3
+            )
+          : [];
+        const equivalentKeys = tracks
+          .map((track) => observedRecordingKey(track))
+          .filter((key): key is string => Boolean(key));
+        const selectedTrack = tracks.length === 1
+          ? tracks[0]
+          : isrcMatches.length
+            ? isrcMatches[0]
+            : durationMatches.length
+              ? durationMatches[0]
+              : equivalentKeys.length === tracks.length && new Set(equivalentKeys).size === 1
+                ? tracks[0]
+                : null;
+        if (!selectedTrack) continue;
+        const queries = [`roon-release:${album.title}`];
+        const resolution = resolver.reconcile(request, [selectedTrack], queries);
+        if (!resolution.candidates.length) continue;
+        return {
+          resolution,
+          albumResultId: album.result_id,
+          album: detail.album
+        };
+      }
+    }
+    return null;
+  }
+
   private async processCandidates(session: BuildSession, candidates: NormalizedCandidate[]): Promise<void> {
     const target = session.desiredCount || null;
     for (let offset = 0; offset < candidates.length;) {
@@ -943,6 +1141,9 @@ export class PlaylistBuildService {
               roon_fallback_ms: 0,
               roon_searches: 0,
               hydration_ms: 0,
+              musicbrainz_release_tracklist_recovered: false,
+              roon_release_tracklist_recovered: false,
+              roon_album_cache_hits: 0,
               speculative_binding_reused: false,
               binding_created: false,
               outcome: "rejected" as const
@@ -954,7 +1155,7 @@ export class PlaylistBuildService {
           return await this.resolveCandidate(candidate, {
             from: session.releaseYearFrom,
             to: session.releaseYearTo
-          });
+          }, session.resolutionContext);
         } catch (error) {
           this.logger?.warn("Playlist candidate preflight failed", {
             candidateId: candidate.candidateId,
@@ -975,6 +1176,9 @@ export class PlaylistBuildService {
               roon_fallback_ms: 0,
               roon_searches: 0,
               hydration_ms: 0,
+              musicbrainz_release_tracklist_recovered: false,
+              roon_release_tracklist_recovered: false,
+              roon_album_cache_hits: 0,
               speculative_binding_reused: false,
               binding_created: false,
               outcome: "rejected" as const
@@ -1005,7 +1209,8 @@ export class PlaylistBuildService {
 
   private async resolveCandidate(
     candidate: NormalizedCandidate,
-    releaseRange: { from: number | null; to: number | null } = { from: null, to: null }
+    releaseRange: { from: number | null; to: number | null } = { from: null, to: null },
+    context: ResolutionContext = this.resolutionContext()
   ): Promise<
     | { prepared: PreparedCandidate; metrics: CandidateResolutionMetrics }
     | { rejected: RejectedCandidate; metrics: CandidateResolutionMetrics }
@@ -1020,6 +1225,9 @@ export class PlaylistBuildService {
     let roonFallbackMs = 0;
     let roonSearches = 0;
     let hydrationMs = 0;
+    let musicbrainzReleaseTracklistRecovered = false;
+    let roonReleaseTracklistRecovered = false;
+    let roonAlbumCacheHits = 0;
     let speculativeBindingReused = false;
     let bindingCreated = false;
     const metrics = (outcome: CandidateResolutionMetrics["outcome"]): CandidateResolutionMetrics => ({
@@ -1035,6 +1243,9 @@ export class PlaylistBuildService {
       roon_fallback_ms: roonFallbackMs,
       roon_searches: roonSearches,
       hydration_ms: hydrationMs,
+      musicbrainz_release_tracklist_recovered: musicbrainzReleaseTracklistRecovered,
+      roon_release_tracklist_recovered: roonReleaseTracklistRecovered,
+      roon_album_cache_hits: roonAlbumCacheHits,
       speculative_binding_reused: speculativeBindingReused,
       binding_created: bindingCreated,
       outcome
@@ -1081,6 +1292,9 @@ export class PlaylistBuildService {
           musicbrainzCacheHits = trace?.cache_hit ? 1 : 0;
           listenbrainzRequests = trace?.listenbrainz?.provider_requests || 0;
           listenbrainzCacheHits = trace?.listenbrainz?.cache_hits || 0;
+          musicbrainzReleaseTracklistRecovered = Boolean(
+            trace?.accepted_warnings?.includes("recording_recovered_from_release_tracklist")
+          );
           return catalog;
         })
       : Promise.resolve(null);
@@ -1175,6 +1389,7 @@ export class PlaylistBuildService {
       catalogProfile,
       (result) => hydrateCached(result, resolution.queries)
     );
+    let verifiedReleaseMatch: VerifiedRoonReleaseMatch | null = null;
     let stage = selected ? "speculative_title_artist" : "canonical_title_artist";
     speculativeBindingReused = Boolean(selected);
     const canonicalAlreadySearched = speculativeResolution.queries.some((query) =>
@@ -1191,6 +1406,37 @@ export class PlaylistBuildService {
         catalogProfile,
         (result) => hydrateCached(result, resolution.queries)
       );
+    }
+    if (
+      !selected &&
+      candidate.albumHint &&
+      (exactRecordingFamily(candidate) || candidate.performanceSensitive)
+    ) {
+      const fallbackStartedAt = Date.now();
+      const releaseMatch = await this.resolveFromVerifiedRoonRelease(
+        candidate,
+        bindingCandidate,
+        canonicalRequest,
+        catalogProfile,
+        resolver,
+        context,
+        () => { roonSearches += 1; },
+        () => { roonAlbumCacheHits += 1; }
+      );
+      roonFallbackMs += Date.now() - fallbackStartedAt;
+      if (releaseMatch) {
+        resolution = releaseMatch.resolution;
+        selected = await this.selectStrictCandidate(
+          bindingCandidate,
+          resolution,
+          catalogProfile
+        );
+        if (selected) {
+          verifiedReleaseMatch = releaseMatch;
+          roonReleaseTracklistRecovered = true;
+          stage = "verified_release_tracklist";
+        }
+      }
     }
     if (!selected && candidate.albumHint) {
       stage = "title_artist_album";
@@ -1214,6 +1460,38 @@ export class PlaylistBuildService {
         catalogProfile,
         (result) => hydrateCached(result, resolution.queries)
       );
+    }
+    if (
+      !selected &&
+      candidate.albumHint &&
+      !exactRecordingFamily(candidate) &&
+      !candidate.performanceSensitive
+    ) {
+      const fallbackStartedAt = Date.now();
+      const releaseMatch = await this.resolveFromVerifiedRoonRelease(
+        candidate,
+        bindingCandidate,
+        canonicalRequest,
+        catalogProfile,
+        resolver,
+        context,
+        () => { roonSearches += 1; },
+        () => { roonAlbumCacheHits += 1; }
+      );
+      roonFallbackMs += Date.now() - fallbackStartedAt;
+      if (releaseMatch) {
+        resolution = releaseMatch.resolution;
+        selected = await this.selectStrictCandidate(
+          bindingCandidate,
+          resolution,
+          catalogProfile
+        );
+        if (selected) {
+          verifiedReleaseMatch = releaseMatch;
+          roonReleaseTracklistRecovered = true;
+          stage = "verified_release_tracklist";
+        }
+      }
     }
     if (!selected) {
       const needsEnrichment = resolution.candidates.some((entry) => baseGate(bindingCandidate, entry.result));
@@ -1240,6 +1518,18 @@ export class PlaylistBuildService {
           false
         )
       : await hydrateCached(selected.result, resolution.queries);
+    if (verifiedReleaseMatch) {
+      hydrated.observation.album_detail = {
+        attempted: true,
+        album_result_id: verifiedReleaseMatch.albumResultId,
+        album: candidateSnapshot(verifiedReleaseMatch.album),
+        matched_track: candidateSnapshot(hydrated.result)
+      };
+      hydrated.observation.warnings = Array.from(new Set([
+        ...hydrated.observation.warnings,
+        "roon_binding_recovered_from_verified_release_tracklist"
+      ]));
+    }
     hydrationMs = Date.now() - hydrationStartedAt;
     const result = hydrated.result;
     if (catalogProfile?.recording && this.trackCatalogService) {
@@ -1618,6 +1908,14 @@ export class PlaylistBuildService {
         roon_fallback_ms_total: sum("roon_fallback_ms"),
         roon_searches: sum("roon_searches"),
         hydration_ms_total: sum("hydration_ms"),
+        release_tracklist_recovery: {
+          musicbrainz_candidates: session.candidateMetrics
+            .filter((entry) => entry.musicbrainz_release_tracklist_recovered).length,
+          roon_candidates: session.candidateMetrics
+            .filter((entry) => entry.roon_release_tracklist_recovered).length,
+          roon_album_cache_hits: session.candidateMetrics
+            .reduce((total, entry) => total + entry.roon_album_cache_hits, 0)
+        },
         speculative_bindings_reused: session.candidateMetrics
           .filter((entry) => entry.speculative_binding_reused).length,
         canonical_roon_fallbacks: session.candidateMetrics

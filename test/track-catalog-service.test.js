@@ -406,3 +406,53 @@ test("normalizes an album to its release group without guessing a country editio
     fs.rmSync(dataDir, { recursive: true, force: true });
   }
 });
+
+test("does not substitute an unrelated release group for an observed album", async () => {
+  const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), "roonia-track-catalog-"));
+  const database = createDatabase(config(dataDir));
+  try {
+    const metadata = catalogMetadata();
+    metadata.release_candidates = metadata.release_candidates.map((release) => ({
+      ...release,
+      release_id: "compilation-release",
+      release_group_id: "compilation-group",
+      title: "Kid A / Amnesiac",
+      date: "2001-11-12",
+      release_year: 2001
+    }));
+    metadata.release_groups = [{
+      musicbrainz_id: "compilation-group",
+      title: "Kid A / Amnesiac",
+      first_release_date: "2001-11-12",
+      primary_type: "Album",
+      secondary_types: ["Compilation"],
+      disambiguation: null
+    }];
+    const service = new TrackCatalogService(database, {
+      lookup: async () => ({
+        status: "exact",
+        reason: "unique_compatible_recording",
+        metadata,
+        candidates: [],
+        trace: trace()
+      }),
+      lookupReleaseTrack: async () => {
+        throw new Error("an unrelated release must never be selected");
+      }
+    });
+
+    const { profile } = await service.resolve({
+      title: "Everything in Its Right Place",
+      artist: "Radiohead",
+      album_observation: "Kid A",
+      metadata_depth: "identity"
+    });
+
+    assert.equal(profile.status, "exact");
+    assert.equal(profile.release_group, null);
+    assert.equal(profile.release, null);
+  } finally {
+    database.close();
+    fs.rmSync(dataDir, { recursive: true, force: true });
+  }
+});
